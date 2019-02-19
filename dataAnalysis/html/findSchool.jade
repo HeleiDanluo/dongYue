@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+html(lang="zh-CN")
+  head
+    include head.jade
+  body
+    include header2.jade
+    .studentClass
+      .choose
+        span 选择范围:
+        ul(class="address clearfix")
+          li(class="btn-small focus") 全部
+          li(class="btn-small sheng")
+            span 省
+            ul(class="btn-small")
+              .limit
+                
+          li(class="btn-small shi")
+            span 市
+            ul(class="btn-small")
+              .limit
+                li(class="btn-small") 请先选择省
+          li(class="btn-small qu")
+            span 区/县
+            ul(class="btn-small")
+              .limit
+                li(class="btn-small") 请先选择市
+      .choose        
+        span 查找学校:
+        input(class="time btn-big"
+        placeholder="请输入学校名称")
+        input(type="button"
+          class="btn-small btn-green"
+          value="搜索")
+      .healthyBox(class="clearfix")
+        .top
+          span(class="left") 小学
+        .center
+          .list
+            .row
+              a(href="#" class="school txt-blue") 圣菲小学
+              span(class="add") 成都市双流县航空港
+            .row
+              a(href="#" class="school txt-blue") 圣菲小学
+              span(class="add") 成都市双流县航空港
+            .row
+              a(href="#" class="school txt-blue") 圣菲小学
+              span(class="add") 成都市双流县航空港
+            .row
+              a(href="#" class="school txt-blue") 圣菲小学
+              span(class="add") 成都市双流县航空港
+            .row
+              a(href="#" class="school txt-blue") 圣菲小学
+              span(class="add") 成都市双流县航空港
+          .row.cb
+            span(class="handle  txt-blue")
+              .more 查看更多
+        .top
+          span(class="left") 小学
+        .center
+          .list
+            .row
+              a(href="#" class="school txt-blue") 圣菲小学
+              span(class="add") 成都市双流县航空港
+            .row
+              a(href="#" class="school txt-blue") 圣菲小学
+              span(class="add") 成都市双流县航空港
+            .row
+              a(href="#" class="school txt-blue") 圣菲小学
+              span(class="add") 成都市双流县航空港
+            .row
+              a(href="#" class="school txt-blue") 圣菲小学
+              span(class="add") 成都市双流县航空港
+            .row
+              a(href="#" class="school txt-blue") 圣菲小学
+              span(class="add") 成都市双流县航空港
+          .row.cb
+            span(class="handle  txt-blue")
+              .more 查看更多

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>医生服务详情</title>
+    <link rel="stylesheet" href="photoUpdate.css">
+    <script src="../../js/baseJs/jquery.js"></script>
+    <script src="../../js/baseJs/flexible.js"></script>
+    <script src="../../js/baseJs/flexible_css.js"></script>
+</head>
+<body flex="dir:top">
+<header flex-box="0" flex="dir:left" font="16">
+    <a href="javascript:history.go(-1) " flex-box="0">返回</a>
+    <div class="title" flex-box="1">咨询讯息</div>
+    <a href="javascript:void(0)" flex-box="0"></a>
+</header>
+<section flex-box="1" class="update can-scroll" font="14">
+    <div class="relativeBox">
+        <div class="title" flex="cross:center">
+            请按照如下样式拍摄照片上传
+        </div>
+        <div class="imgBox" flex="dir:left box:mean">
+            <img src="../../img/boy1.png">
+            <img src="../../img/girl1.png">
+        </div>
+        <div class="sendBox" flex="box:mean">
+            <div class="box" flex="cross:center main:center">
+                <input type="file" class="front" >
+                </input>
+                <div class="bottom" flex="cross:center main:center dir:top">
+                    <i class="icon-tianjia" font="32"></i>
+                    <div>上传正面</div>
+                </div>
+            </div>
+            <div class="box" flex="cross:center main:center">
+                <input type="file" class="side">
+                </input>
+                <div class="bottom" flex="cross:center main:center dir:top">
+                    <i class="icon-tianjia" font="32"></i>
+                    <div>上传侧面</div>
+                </div>
+            </div>
+        </div>
+        <a class="sendBtn" flex="cross:center main:center">
+            提交
+        </a>
+    </div>
+</section>
+</body>
+</html>

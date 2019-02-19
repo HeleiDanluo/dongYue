@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>体质数据</title>
+    <link rel="stylesheet" href="bodyData.css">
+    <script src="../../js/baseJs/jquery.js"></script>
+    <script src="../../js/baseJs/flexible.js"></script>
+    <script src="../../js/baseJs/flexible_css.js"></script>
+    <script src="../../js/baseJs/echart.js"></script>
+    <script src="../../js/jsPlug/bodyData.js"></script>
+    <script src="../../js/jsPlug/main.js"></script>
+</head>
+
+<body flex="dir:top">
+    <header flex-box="0" flex="dir:left" font="16">
+        <a href="javascript:history.go(-1) " flex-box="0">返回</a>
+        <div class="title" flex-box="1">问答详情</div>
+        <a href="javascript:void(0)" flex-box="0"></a>
+    </header>
+    <section flex-box="1" class="bodyData can-scroll" font="14">
+        <div class="user">
+            <div class="relativeBox" flex="dir:left cross:center">
+                <h1>欧阳修</h1>
+                <h2>男</h2>
+                <h3>1000米跑</h3>
+                <h4>倒计时:12.23</h4>
+            </div>
+        </div>
+        <div class="nav">
+            <ul class="relativeBox" flex="box:mean cross:center">
+                <li><a href="javascript:void(0)">基本信息</a></li>
+                <li class="focus"><a href="javascript:void(0)">体质数据</a></li>
+                <li><a href="javascript:void(0)">运动处方</a></li>
+                <li><a href="javascript:void(0)">问答消息</a></li>
+            </ul>
+        </div>
+        <div class="studentsGrade" flex="dir:top" font="12">
+            <div class="aboutUser">
+                <div class="relativeBox">
+                    <div class="name" flex="cross:center">
+                        <span font="18">张明远</span>
+                        <span class="num">的学校成绩</span>
+                    </div>
+                    <div class="level-letter" flex="dir:left cross:center">
+                        <ul class="letter" flex-box="1" flex="dir:left cross:center">
+                            <li flex="cross:center main:center" class="letter_s focus" font="18">S</li>
+                            <li class="letter_a" font="18">A</li>
+                            <li class="letter_b" font="18">B</li>
+                            <li class="letter_c" font="18">F</li>
+                        </ul>
+                        <div class="grade letter_b" flex-box="1">97</div>
+                    </div>
+                    <div class="grade-lever" flex="dir:left box:mean">
+                        <div class="left" flex="dir:top">
+                            <span>优秀(S):90~120分</span>
+                            <span>及格(B):60~79分</span>
+                        </div>
+                        <div class="right" flex="dir:top">
+                            <span>良好(B):80~89分</span>
+                            <span>不及格(B):0~59分</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body-quality-wrapper">
+                <div class="tab-menu bodyQuality menu" data-aim="bodyQuality" flex="main:center box:mean" font="12">
+                    <a href="javascript:void(0)" class="active">身体素质</a>
+                    <a href="javascript:void(0)">运动素质</a>
+                </div>
+                <div class="box_echart">
+                    <div class="ul-box" data-tabName="bodyQuality">
+                        <ul>
+                            <li class="shentisuzhi"></li>
+                            <li class="yundongsuzhi">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="somedata" font="14">
+                <div class="chunk">
+                    <div class="relativeBox">
+                        <div class="top" flex="dir:left cross:center" font="16">
+                            <h1 flex-box="1">体重指数</h1>
+                            <div flex-box="1">
+                                <span class="bold" font="16">22</span>
+                                <span class="light" font="12">（超重：85分）</span>
+                            </div>
+                            <a flex-box="1" href="javascript:void(0)" font="12">历史数据</a>
+                        </div>
+                        <div class="bottom" flex="dir:top">
+                            <ul class="items" flex="dir:left box:mean">
+                                <li>低体重</li>
+                                <li>正常</li>
+                                <li>超重</li>
+                                <li>肥胖</li>
+                            </ul>
+                            <ul class="color" flex="dir:left box:mean">
+                                <li class="color_1 focus">
+                                    <span class="category_1">18.5</span>
+                                </li>
+                                <li class="color_2">
+                                    <span class="category_2">24</span>
+                                </li>
+                                <li class="color_3">
+                                    <span class="category_3">28</span>
+                                </li>
+                                <li class="color_4"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="chunk">
+                    <div class="relativeBox">
+                        <div class="top" flex="dir:left cross:center" font="16">
+                            <h1 flex-box="1">体重指数</h1>
+                            <div flex-box="1">
+                                <span class="bold" font="16">22</span>
+                                <span class="light" font="12">（超重：85分）</span>
+                            </div>
+                            <a flex-box="1" href="javascript:void(0)" font="12">历史数据</a>
+                        </div>
+                        <div class="bottom" flex="dir:top">
+                            <ul class="items" flex="dir:left box:mean">
+                                <li>低体重</li>
+                                <li>正常</li>
+                                <li>超重</li>
+                                <li>肥胖</li>
+                            </ul>
+                            <ul class="color" flex="dir:left box:mean">
+                                <li class="color_5 focus">
+                                    <span class="category_1">18.5</span>
+                                </li>
+                                <li class="color_4">
+                                    <span class="category_2">24</span>
+                                </li>
+                                <li class="color_1">
+                                    <span class="category_3">28</span>
+                                </li>
+                                <li class="color_3"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="information">
+                <div class="relativeBox">
+                    <div class="msg" font="10">
+                        <h1>以上数据是根据孩子身体数据计算得出的结果</h1>
+                        <h1>如有较大变动，请更新孩子数据</h1>
+                    </div>
+                    <a flex="cross:center main:center" href="javascript:void(0)">
+                    更新数据
+                </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+<script>
+    $(function(){
+        setTimeout(function() {
+            var libHtml='\
+                <div class="libab" font="14">\
+                    <p class="top"><em font="20">数据未展示</em>请用以下方法解决</p>\
+                    <p class="focus">1.前往[帐号设置]处关联学籍号</p>\
+                    <p class="focus">2.查看学籍号与姓名是否正确</p>\
+                    <p class="bottom">如以上方法还无法正常显示,学校可能没有上传学生数据</p>\
+                </div>\
+            '
+            $('.yundongsuzhi>div').append(libHtml)
+        },200);
+    })
+</script>
+
+</html>

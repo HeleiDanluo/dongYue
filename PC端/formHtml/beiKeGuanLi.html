@@ -1,0 +1,66 @@
+ <div class="alert-box alertType animated fadeIn">
+    <div class="alert-div form-box teacher_preview back_white animated fadeInDownBig">
+        <div class="form-head t_r">
+            <div style="margin-top:25px" class="col-16-16 no-padding t_l f24 teacher_preview_title">
+				<span>
+                    上午 / 第一节
+				</span>
+                <a href="javascript:void(0)" title="如临时不上课或请假,请点击按钮延后课程" week="$!week" class="curriculumDelays f16" style="border: 1px solid #82b64a;padding: 10px 10px;color: #82b64a; margin-left: 20px;">课程延后</a>
+                <a href="javascript:void(0)" title="选取其他教学内容" week="$!week" class="curriculumDelays f16 changeClassContent" style="border: 1px solid #82b64a;padding: 10px 10px;color: #82b64a; margin-left: 20px;">课程调整</a>
+            </div>
+            <a class="close-btn f12 icon-guanbi" href="javascript:;"></a>
+        </div>
+        <div class="teacher_preview_nav f16">
+            <ul class="clearfix">
+				<!-- #foreach($!data in $!schoolTimeTableList)
+					#set($dt = $!timeTable.classId*1 - $!data.classId)
+					#if($dt == 0)
+						<li class="focus classId" schoolTimeTableId="$!data.schoolTimeTableId" classId="$!data.classId">$!data.className</li>
+					#else
+						<li class="classId"  schoolTimeTableId="$!data.schoolTimeTableId" classId="$!data.classId">$!data.className</li>
+					#end
+                #end -->
+				<li class="focus classId" schoolTimeTableId="$!data.schoolTimeTableId" classId="$!data.classId">$!data.className</li>             
+            </ul>
+        </div>
+        <div>
+            <div class="clearfix teacher_preview_chunk">
+                <div class="teacher_preview_chunk_students">
+                    <h1 class="form-model-title f14">授课学生</h1>
+                    <ul class="clearfix">
+                        <li>
+                            <a href="/classSchedul/studentsChart.do?classId=$!timeTable.classId&detailId=$!planPrivate.teachingContentDetailId&level=1">
+                                <span class="back_pink f24">$!num</span>
+                                <p>高水平学生/人</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/classSchedul/studentsChart.do?classId=$!timeTable.classId&detailId=$!planPrivate.teachingContentDetailId&level=2">
+                                <span class="back_yellow f24">$!middle</span>
+                                <p>中水平学生</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/classSchedul/studentsChart.do?classId=$!timeTable.classId&detailId=$!planPrivate.teachingContentDetailId&level=3">
+                                <span class="back_blue f24">$!low</span>
+                                <p>低水平学生</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/classSchedul/studentsChart.do?classId=$!timeTable.classId&detailId=$!planPrivate.teachingContentDetailId&level=4">
+                                <span class="back_theme f24">$!specialNum</span>
+                                <p>特殊学生</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <hr  class="cut_line"/>
+                    <h1 class="f14">授课教案</h1>
+                    <div class="preview-btn">
+                        <a href="/LessonPlanPrivatelContent/getLessonPlanPrivatelContent.do?lessonPlanPrivateId=$!planPrivate.lessonPlanPrivateId&returnPath=$!returnPath" lessonPlanId="$!planPrivate.lessonPlanPrivateId"  class="blockBtn themeBtn">$!planPrivate.lessonPlanName</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/each/beiKeGuanLi.js"></script>

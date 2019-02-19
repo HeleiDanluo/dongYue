@@ -1,0 +1,43 @@
+.txtapf-page-body {
+  width: 100%;
+  height: calc(100% - 100px);
+  padding: 4% 70px 100px 120px;
+  box-sizing: border-box;
+}
+.txtapf-page-body .item-box {
+  width: 48%;
+  height: 50%;
+  float: left;
+  margin: .5%;
+  position: relative;
+}
+.txtapf-page-body .item-box .left-txt {
+  width: 55%;
+  height: 100%;
+  float: left;
+  padding: 5% 5% 0;
+}
+.txtapf-page-body .item-box .left-txt .title {
+  color: #f5841c;
+  margin-bottom: 2%;
+}
+.txtapf-page-body .item-box .right-pic {
+  width: 45%;
+  float: left;
+  height: 100%;
+  clip-path: polygon(0 50%, 30% 0, 100% 0, 100% 100%, 30% 100%);
+}
+.txtapf-page-body .item-box .right-pic img {
+  width: 100%;
+  height: 100%;
+}
+.txtapf-page-body .item-box:nth-child(2n) .left-txt {
+  float: right;
+}
+.txtapf-page-body .item-box:nth-child(2n) .left-txt .title {
+  color: #319095;
+}
+.txtapf-page-body .item-box:nth-child(2n) .right-pic {
+  float: right;
+  clip-path: polygon(0 0%, 70% 0, 100% 50%, 70% 100%, 0% 100%);
+}

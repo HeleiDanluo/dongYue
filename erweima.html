@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>动跃科技</title>
+</head>
+
+<body>
+  <div class="erweima">
+    <form name="homeInformation" method="post" action="http://web.jiankangtiyu.com/index/saveApplyUserFirstPage.do">
+      <p>
+        <label for="userName">
+          <span>*</span>
+          姓名
+        </label>
+        <input placeholder="请输入您的姓名" type="text" id="userName" name="user[name]" data-vv-id="1" aria-required="true"
+          aria-invalid="false">
+        <span style="display: none;">姓名不能为空</span>
+      </p>
+      <p>
+        <label for="userScholl">
+          <span>*</span>
+          学校
+        </label>
+        <input placeholder="请输入省市+学校全称，如北京市中关村第一小学。" type="text" id="userSchool" name="user[School]" data-vv-id="2"
+          aria-required="true" aria-invalid="false">
+        <span style="display: none;">学校名称不能为空</span>
+      </p>
+      <p>
+        <label for="userScholl">
+          <span>*</span>
+          类别
+        </label>
+        <select type="text" id="userCategory" name="user[School]" data-vv-id="3" aria-required="true" aria-invalid="false">
+          <option value="小学" selected="selected">小学</option>
+          <option value="初中">初中</option>
+          <option value="高中">高中</option>
+        </select>
+        <span style="display: none;">请选择学校类别</span>
+      </p>
+      <p>
+        <label for="userAddress">
+          <span>*</span>
+          地址
+        </label>
+        <input placeholder="请输入学校地址" type="text" id="userAddress" name="user[addRess]" data-vv-id="4" aria-required="true"
+          aria-invalid="false">
+        <span style="display: none;">学校地址不能为空</span>
+      </p>
+      <p>
+        <label for="userTel">
+          <span>*</span>
+          电话
+        </label>
+        <input placeholder="请输入您的电话号码" type="text" id="userTel" name="user[tel]" data-vv-id="5" aria-required="true"
+          aria-invalid="false">
+        <span style="display: none;">电话格式不正确</span>
+      </p>
+      <p>
+        <label for="userMessage">
+          <span>*</span>
+          邮箱
+        </label>
+        <input placeholder="请输入您的邮箱" type="text" id="userMessage" name="user[message]" data-vv-id="6" aria-required="true"
+          aria-invalid="false">
+        <span style="display: none;">
+          邮箱格式不正确
+        </span>
+      </p>
+      <p>
+        <button type="submit">立即申请</button>
+      </p>
+    </form>
+  </div>
+
+</body>
+<style lang="less">
+  .erweima{
+
+  }
+</style>
+</html>

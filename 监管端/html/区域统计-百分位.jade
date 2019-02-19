@@ -1,0 +1,114 @@
+html(lang="zh-CN")
+  head
+    include head.jade
+    script(src="../js/each/cityChoose.js")
+    script(src="../js/each/passRate.js")
+    script(type='text/javascript').
+      $(function(){
+        $('.leftNav>ul>li').removeClass('focus')
+        $('.leftNav>ul>li').eq(1).addClass('focus')
+        $('.leftNav>ul>li>ul>li').removeClass('focus')
+        $('.leftNav>ul>li>ul>li').eq(3).addClass('focus')
+      })
+  body
+    include header2.jade
+    .passRate
+      .choose
+        .year
+          span.title 区域范围：
+          span.box
+            span.focus.findcity(areacode="510600") 德阳市
+            span.findcity(areacode="510100") 成都市
+        .grade
+          span.title 区域范围：
+          span.box.multi.cityresult
+            span 渝中区
+            span 九龙坡
+            span 江北区
+            span.focus 沙坪坝区
+        .qujian
+          span.title 区域范围：
+          span.box
+            span 城市
+            span 乡村
+            span.focus 全部
+        .class
+          span.title 性别：
+          span.box
+            span 男生
+            span.focus 女生
+        .class
+          span.title 可选项目：
+          span.box
+            span 总成绩
+            span 50米
+            span.focus BMI
+            span 坐位体前屈
+            span 一分钟跳绳
+            span 一分钟仰卧起坐
+      .table-box-new
+        table
+          caption 城乡 男生 一分钟跳绳 百分位数
+          thead(class="tbl-bder-bottom")
+            tr(class="tbl-bder-bottom")
+              th 年龄/岁
+              th P
+                sub 3
+              th P
+                sub 5
+              th P
+                sub 10
+              th P
+                sub 25
+              th P
+                sub 50
+              th P
+                sub 75
+              th P
+                sub 90
+              th P
+                sub 95
+          tbody(class="tbl-bder-bottom")
+            tr
+              td 6
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+            tr
+              td 6
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+            tr
+              td 6
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+            tr
+              td 6
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+
+
+            

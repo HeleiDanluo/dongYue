@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <script src="../../js/flexible/flexible_css.js"></script>
+    <script src="../../js/flexible/flexible.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/each/tingPingKe.js"></script>
+    <script type="text/javascript" src="//player.youku.com/jsapi"></script>
+    <title>动跃科技</title>
+</head>
+
+<body flex="dir:top">
+    <header flex-box="0" flex="dir:left" font="18">
+        <a href="javascript:history.go(-1)" flex-box="0">
+            <i class="icon-back"></i>
+        </a>
+        <div class="title" flex-box="1" font="14">听评课教学</div>
+        <a href="javascript:void(0)" flex-box="0"></a>
+    </header>
+    <section flex-box="1" flex="dir:top" class="hide-video tingpingke-body" >
+    <!-- 优酷 -->
+    <div class="tingpingke-video" flex-box="0">
+        <div id="youkuplayer"></div>
+    </div>
+        <!-- 菜单 -->
+        <div class="white-back header-link-menu" flex-box="0">
+            <ul>
+                <li font="12"><a href="javascript:void(0)">教学设计</a></li>
+                <li font="12"><a href="javascript:void(0)">教学教案</a></li>
+                <li font="12"><a href="javascript:void(0)">课堂报告</a></li>
+                <li font="12" class="current"><a href="javascript:void(0)">听评课表</a></li>
+                <li font="12"><a href="javascript:void(0)">讨论区</a></li>
+            </ul>
+        </div>
+        <div class="white-back sub-menu" flex-box="0">
+            <select id="" class="select-tpkb">
+                <option value="“有效课堂”评价表">"有效课堂"评价表</option>
+                <option value="授课评分">授课评分</option>
+                <option value="“三动课堂”评价表">"三动课堂"评价表</option>
+                <option value="“有效教学”评价表">"有效教学"评价表</option>
+                <option value="教学重难点及教法学法检测表">教学重难点及教法学法检测表</option>
+                <option value="教师讲解示范观察表">教师讲解示范观察表</option>
+                <option value="提问互动评价表" selected>提问互动评价表</option>
+            </select>
+        </div>
+        <!-- 内容 -->
+        <div class="add-question">
+            新增问题记录
+        </div>
+        <div class="teachPlan-detail-wrapper can-scroll" flex-box="1">
+            <div class="input-area white-back">
+                <h1 font="16">问题简述</h1><br>
+                <div font="16" class="select-box-tpkb-delet-item">删除</div>
+                <textarea name="" id="" ></textarea>
+                <div class="select-box-tpkb" style="padding:0;align-items:center">
+                    <span font="16">问题类型</span>
+                    <select id="" style="height: .8rem;">
+                        <option value="先讲解，再示范">先讲解，再示范</option>
+                        <option value="边讲解，边示范">边讲解，边示范</option>
+                        <option value="先示范，后讲解">先示范，后讲解</option>
+                    </select>
+                </div>
+                <div class="select-box-tpkb" style="padding:0;align-items:center">
+                    <span font="16">学生回答方式</span>
+                    <select id="" style="height: .8rem;">
+                        <option value="先讲解，再示范">先讲解，再示范</option>
+                        <option value="边讲解，边示范">边讲解，边示范</option>
+                        <option value="先示范，后讲解">先示范，后讲解</option>
+                    </select>
+                </div>
+                <div class="select-box-tpkb" style="padding:0;align-items:center">
+                    <span font="16">教师引导</span>
+                    <select id="" style="height: .8rem;">
+                        <option value="先讲解，再示范">先讲解，再示范</option>
+                        <option value="边讲解，边示范">边讲解，边示范</option>
+                        <option value="先示范，后讲解">先示范，后讲解</option>
+                    </select>
+                </div>
+                <div class="teachPlan-model" style="margin-top: .2rem">
+                    <span font="14">是否有效</span>
+                    &nbsp;&nbsp;&nbsp;
+                    <span>
+                        <input type="radio" name="tingpingkebiao" id="good-jxxg">
+                        <label for="good-jxxg">有效</label>
+                    </span>
+                    &nbsp;&nbsp;
+                    <span>
+                        <input type="radio" name="tingpingkebiao" id="normal-jxxg">
+                        <label for="normal-jxxg">无效</label>
+                    </span>
+                </div>
+                
+            </div>
+
+            <div class="input-area white-back" id="submit-btn-box">
+                <a href="javascript:void(0)" font="14" class="jiaoxuejianyi-submit btn btn-full-theme">保存</a>
+            </div>
+        
+        
+    
+    <!-- 播放按钮 -->
+    <div class="side-play-btn">
+        <i class="icon-xl paly-ctr-btn"></i>
+        <i class="icon-close paly-ctr-btn hidden"></i>
+    </div>
+    </section>
+    <footer flex-box="0" flex="dir:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           left box:mean" font="12">
+        <a href="" flex="main:center dir:top">
+            <i class="icon-sy" font="24"></i>
+            <span>首页</span>
+        </a>
+        <a href="" flex="main:center dir:top">
+            <i class="icon-xsq" font="24"></i>
+            <span>学生圈</span>
+        </a>
+        <a href="" flex="main:center dir:top">
+            <i class="icon-wode" font="24"></i>
+            <span>我的</span>
+        </a>
+    </footer>
+</body>
+<script>
+    // 移除问题
+    $('body').on('click', '.select-box-tpkb-delet-item', function () {
+        $(this).parent().remove();
+    });
+    // 添加问题
+    $('body').on('click', '.add-question', function () {
+        $('#submit-btn-box').before(`<div class="input-area white-back">
+                <h1 font="16">问题简述</h1><br>
+                <div font="16" class="select-box-tpkb-delet-item">删除</div>
+                <textarea name="" id="" ></textarea>
+                <div class="select-box-tpkb" style="padding:0;align-items:center">
+                    <span font="16">问题类型</span>
+                    <select id="" style="height: .8rem;">
+                        <option value="先讲解，再示范">先讲解，再示范</option>
+                        <option value="边讲解，边示范">边讲解，边示范</option>
+                        <option value="先示范，后讲解">先示范，后讲解</option>
+                    </select>
+                </div>
+                <div class="select-box-tpkb" style="padding:0;align-items:center">
+                    <span font="16">学生回答方式</span>
+                    <select id="" style="height: .8rem;">
+                        <option value="先讲解，再示范">先讲解，再示范</option>
+                        <option value="边讲解，边示范">边讲解，边示范</option>
+                        <option value="先示范，后讲解">先示范，后讲解</option>
+                    </select>
+                </div>
+                <div class="select-box-tpkb" style="padding:0;align-items:center">
+                    <span font="16">教师引导</span>
+                    <select id="" style="height: .8rem;">
+                        <option value="先讲解，再示范">先讲解，再示范</option>
+                        <option value="边讲解，边示范">边讲解，边示范</option>
+                        <option value="先示范，后讲解">先示范，后讲解</option>
+                    </select>
+                </div>
+                <div class="teachPlan-model" style="margin-top: .2rem">
+                    <span font="14">是否有效</span>
+                    &nbsp;&nbsp;&nbsp;
+                    <span>
+                        <input type="radio" name="tingpingkebiao" id="good-jxxg">
+                        <label for="good-jxxg">有效</label>
+                    </span>
+                    &nbsp;&nbsp;
+                    <span>
+                        <input type="radio" name="tingpingkebiao" id="normal-jxxg">
+                        <label for="normal-jxxg">无效</label>
+                    </span>
+                </div>
+                
+            </div>`);
+    });
+</script>
+
+</html>

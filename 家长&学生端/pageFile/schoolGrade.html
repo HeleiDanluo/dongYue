@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <script src="../js/flexible/flexible_css.js"></script>
+    <script src="../js/flexible/flexible.js"></script>
+    <link rel="stylesheet" href="../css/studentMain.css">
+    <link rel="stylesheet" href="../js/swiper/swiper.min.css">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/echart/echart.js"></script>
+    <script src="../js/swiper/swiper.jquery.min.js"></script>
+    <script src="../js/studentMain.js"></script>
+    <title>动跃科技</title>
+</head>
+<body flex="dir:top">
+<header flex-box="0" flex="dir:left" font="16">
+    <a href="javascript:history.go(-1) " flex-box="0">返回</a>
+    <div class="title" flex-box="1"></div>
+    <a href="javascript:void(0)" flex-box="0"></a>
+</header>
+<section flex-box="1" class="">
+    <div class="tab-menu border-top" flex="box:mean" font="14">
+        <a href="javascript:void(0)">成绩录入</a>
+        <a href="javascript:void(0)">自测成绩</a>
+        <a href="javascript:void(0)" class="active">学校成绩</a>
+        <a href="javascript:void(0)">健康报告</a>
+    </div>
+    <div class="quelity-chart">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide grade">
+                <div class='swiper-title' flex="box:mean">
+                    <h1 font="14">身体素质</h1>
+                    <div class="tips" flex="cross:center dir:right">
+                        <div flex="cross:center">
+                            <span class="biaozhun"></span>
+                            <b font="12">85分</b>
+                        </div>
+                        <div flex="cross:center">
+                            <span class="myself"></span>
+                            <b font="12">85分</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="chart-box body">
+
+                </div>
+            </div>
+            <div class="swiper-slide point">
+                <div class='swiper-title' flex="box:mean">
+                    <h1 font="14">运动素质</h1>
+                    <div class="tips" flex="cross:center dir:right">
+                        <div flex="cross:center">
+                            <span class="biaozhun"></span>
+                            <b font="12">85分</b>
+                        </div>
+                        <div flex="cross:center">
+                            <span class="myself"></span>
+                            <b font="12">85分</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="chart-box sport">
+
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <hr class="splite-area">
+    <div class="page-model"  font="12">
+        <h1 class="title" font="14" flex="box:mean">
+            <span>单项指标成绩</span>
+            <span class="t_r">左右滑动切换图表</span>
+        </h1>
+        <div class="tip-color" flex="box:mean cross:center">
+            <span class="youxiu">优秀</span>
+            <span class="lianghao">良好</span>
+            <span class="jige">及格</span>
+            <span class="bujige">不及格</span>
+        </div>
+    </div>
+    <div class="school-chart-wrapper">
+        <div class="school-chart-model">
+            <div class="chart-tab" data-index="1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide body">
+                    </div>
+                    <div class="swiper-slide sport">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="school-chart-model">
+            <div class="chart-tab" data-index="2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide body">
+                    </div>
+                    <div class="swiper-slide sport">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer flex-box="0" flex="dir:left box:mean">
+    <a href="home.html" flex="main:center cross:center"><i class="icon-home" font="24"></i></a>
+    <a href="mine.html" flex="main:center cross:center"><i class="icon-gerzhongxin" font="24"></i></a>
+</footer>
+</body>
+<script src="../js/each/schoolGrade.js"></script>
+</html>

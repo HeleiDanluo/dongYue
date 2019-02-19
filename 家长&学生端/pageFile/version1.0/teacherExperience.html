@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <script src="../../js/flexible/flexible_css.js"></script>
+    <script src="../../js/flexible/flexible.js"></script>
+    <link rel="stylesheet" href="../../css/studentMain.css">
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/studentMain.js"></script>
+    <title>动跃健康</title>
+</head>
+<body flex="dir:top">
+<header flex-box="0" flex="dir:left" font="16">
+    <a href="javascript:history.go(-1) " flex-box="0">返回</a>
+    <div class="title" flex-box="1"></div>
+    <a href="javascript:void(0)" flex-box="0"></a>
+</header>
+<section flex-box="1" class="white-back">
+    <div class="experience-wrapper">
+        <div class="star-select" data-select="">
+            <h1 font="14">（家长填）评价孩子的完成情况</h1>
+            <div class="icon-group-box">
+                <span font="32" data-num="1" class="light"><i class="icon-wujiaoxing"></i></span>
+                <span font="32" data-num="2"><i class="icon-wujiaoxing"></i></span>
+                <span font="32" data-num="3"><i class="icon-wujiaoxing"></i></span>
+                <span font="32" data-num="4"><i class="icon-wujiaoxing"></i></span>
+                <span font="32" data-num="5"><i class="icon-wujiaoxing"></i></span>
+            </div>
+        </div>
+        <div class="face-select">
+            <h1 font="14">（学生填）请选择今天的感受</h1>
+            <div class="icon-group-box"flex="cross:center main:center">
+                <label>
+                    <i font="32" class="icon-meinandu"></i>
+                    <input type="radio" name="feelLevel" value="1">
+                    <p class="face-desc" font="12">没难度</p>
+                </label>
+                <label >
+                    <i font="32" class="icon-henqinsong"></i>
+                    <input type="radio" name="feelLevel" value="2">
+                    <p class="face-desc" font="12">很轻松</p>
+                </label>
+                <label >
+                    <i font="32" class="icon-gangghao"></i>
+                    <input type="radio" name="feelLevel" value="3">
+                    <p class="face-desc" font="12">刚刚好</p>
+                </label>
+                <label>
+                    <i font="32" class="icon-youxielei"></i>
+                    <input type="radio" name="feelLevel" value="4">
+                    <p class="face-desc" font="12">有些累</p>
+                </label>
+                <label>
+                    <i font="32" class="icon-shoubuliao"></i>
+                    <input type="radio" name="feelLevel" value="5">
+                    <p class="face-desc" font="12">受不了</p>
+                </label>
+            </div>
+        </div>
+        <div class="reply-box">
+            <textarea id="remark" name="" font="14" placeholder=""></textarea>
+            <div class="bottom-btn" font="14">
+                <a href="javascript:void(0)" class="reply-btn"><i class="icon-caidan" font="24"></i><b>快捷选择</b></a>
+            </div>
+        </div>
+        <div class="upload-img-wrapper clear">
+                
+            <div class="add-img">
+                <label flex="main:center cross:center">
+                    <input type="file" name="training-img" class="training-img">
+                    <i class="icon-tianjia" font="32" ></i>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="form-submitt">
+        <a href="javascript:void(0)" font="14" class="btn-full-theme" onclick="saveSystem()">确定</a>
+    </div>
+    
+</section>
+<footer flex-box="0" flex="dir:left box:mean">
+    <a href="home.html" flex="main:center cross:center"><i class="icon-home" font="24"></i></a>
+    <a href="mine.html" flex="main:center cross:center"><i class="icon-gerzhongxin" font="24"></i></a>
+</footer>
+<div class="finishHomework" font="14">
+        <div class="hm-box">
+            <div class="top">
+                <img src="../../img/hm-bg.png">
+            </div>
+            <div class="middle">
+                <h2>恭喜您完成家庭作业</h2>
+            </div>
+            <div class="foot" onclick="finishHomeWork()">
+                谢 谢
+            </div>
+        </div>
+</div>
+<script src="../../js/each/experience.js"></script>
+<script>
+    function saveSystem(){
+        $('.finishHomework').css({'display':'block'}).animate({'opacity':'1'},300);
+        setTimeout(function(){
+            finishHomeWork();
+        }, 5000);
+    };
+    function finishHomeWork(){
+        alert('跳转页面');
+    }
+</script>
+</body>
+</html>

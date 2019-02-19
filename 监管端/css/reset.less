@@ -1,0 +1,447 @@
+@charset "utf-8";
+@import "varible";
+@import "alert";
+@import "icon";
+@import 'btn';
+@import 'animate';
+/*=======Pisen 创建2014.3.4========*/
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  width: 100%;
+}
+body {
+  font-family: Arial, 'Microsoft Yahei', sans-serif,"iconfont"!important; 
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #595959;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+address,
+cite,
+dfn,
+em,
+var {
+  font-style: normal;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: courier new, courier, monospace;
+}
+small {
+  font-size: 12px;
+}
+ul,
+ol {
+  list-style: none;
+}
+.noscroll {
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.t_c {
+  text-align: center;
+}
+/*=链接样式/颜色=*/
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #595959;
+  outline: none;
+  transition-property: background-color, border-color, height, width;
+  -webkit-transition-property: background-color, border-color, height, width;
+  -o-transition-property: background-color, border-color, height, width;
+  transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+}
+
+
+input, textarea, button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: none;
+  color:#595959;
+}
+
+input[type=text],
+input[type=button],
+input[type=submit],
+input[type=password],
+input[type=file],
+input[type=date] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type=text],
+input[type=password]{
+  border: 1px solid #eee;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=button]:focus,
+input[type=submit]:focus {
+  outline: none;
+  border-color: @themeColor;
+}
+
+button{
+  border: 0;
+}
+
+/*IE*/
+input::-ms-clear {
+  display: none;
+}
+input::-ms-reveal {
+  display: none;
+}
+input[type=button]::-moz-focus-inner {
+  outline: 0;
+}
+/*火狐*/
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type=text],
+textarea {
+  -webkit-appearance: none;
+}
+img {
+  outline: none;
+  border: none;
+}
+/*清除浮动*/
+.cf:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.cf {
+  *zoom: 1;
+}
+.f_l {
+  float: left;
+}
+.f_r {
+  float: right;
+}
+.ml3 {
+  margin-left: 3px;
+}
+.ml5 {
+  margin-left: 5px;
+}
+.ml10 {
+  margin-left: 10px;
+}
+.ml25 {
+  margin-left: 25px;
+}
+.mt5 {
+  margin-top: 5px;
+}
+.mt10 {
+  margin-top: 10px;
+}
+.mt20{
+  margin-top: 20px;
+}
+.mt30{
+  margin-top: 30px;
+}
+.mt40{
+  margin-top: 40px;
+}
+.mr10 {
+  margin-right: 10px;
+}
+.mr35 {
+  margin-right: 35px;
+}
+img {
+  vertical-align: middle;
+}
+.v_m{
+  vertical-align: middle;
+}
+.ls2 {
+  letter-spacing: 2px;
+}
+.ls3 {
+  letter-spacing: 3px;
+}
+.ls4 {
+  letter-spacing: 4px;
+}
+.ls6 {
+  letter-spacing: 6px;
+}
+.f12 {
+  font-size: 12px!important;
+}
+.f14 {
+  font-size: 14px!important;
+}
+.f16 {
+  font-size: 16px!important;
+}
+.f18 {
+  font-size: 18px!important;
+}
+.f24 {
+  font-size: 24px!important;
+}
+.f28 {
+  font-size: 28px!important;
+}
+.f32 {
+  font-size: 32px!important;
+}
+.f20 {
+  font-size: 20px!important;
+}
+.w10{
+  width: 10%;
+}
+.w20{
+  width: 20%;
+}
+.w30{
+  width: 30%;
+}
+.w40{
+  width: 40%;
+}
+.w50{
+  width: 50%;
+}
+.w60{
+  width: 60%;
+}
+.w70{
+  width: 70%;
+}
+.w80{
+  width: 80%;
+}
+.w90{
+  width: 90%;
+}
+.w100{
+  width: 100%;
+}
+.vt {
+  vertical-align: top;
+}
+.dn {
+  display: none;
+}
+.db {
+  display: block;
+}
+.t_l {
+  text-align: left;
+}
+.t_r {
+  text-align: right;
+}
+//字体颜色
+.txt_w{
+  color: #fff;
+}
+.txt_b{
+  color:#333;
+}
+/*tips-alert弹出样式*/
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+//背景色处理
+.back_theme{
+  background: @themeColor!important;
+}
+.back_pink{
+  background: @pinkColor!important;
+}
+.back_blue{
+  background: @blueColor!important;
+}
+.back_yellow{
+  background: @yellowColor!important; ;
+}
+.back_white{
+  background: #fff!important;
+}
+.back_gray{
+  background: @lighterGray!important;
+}
+.back_grayer{
+  background: @lightGray!important;
+}
+.f_theme{
+  color: @themeColor;
+}
+.f_pink{
+  color: @pinkColor;
+}
+.f_blue{
+  color: @blueColor;
+}
+.f_yellow{
+  color: @yellowColor ;
+}
+//行距
+.l_h20{
+  line-height: 20px;
+}
+.l_h25{
+  line-height: 25px;
+}
+.l_h30{
+  line-height: 30px;
+}
+.l_h36{
+  line-height: 36px;
+}
+.l_h40{
+  line-height: 40px;
+}
+//去内边距
+.no-padding{
+  padding: 0!important;
+}
+//百分之百高度
+.height_100{
+  height:100%;
+}
+.t_j{
+  text-align: justify;
+}
+//垂直剧中，向上，向下
+.table-box{
+  display: table;
+  width: 100%;
+  height:100%;
+  .middle-box{
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .bottom-box{
+    display: table-cell;
+    vertical-align: bottom;
+  }
+  .top-box{
+    display: table-cell;
+    vertical-align: top;
+  }
+}
+//红色边框
+.redBox{
+  border:1px solid #e4393c;
+  -webkit-box-shadow: 0 0 10px #e4393c;
+  -moz-box-shadow: 0 0 10px #e4393c;
+  box-shadow: 0 0 10px #e4393c;
+}
+.cantClickCss{
+  cursor: not-allowed;
+  background: #eee!important;
+}
+.h_40{
+  height:42px!important;
+}
+.hidden-node{
+  display: none;
+}
+
+//设置默认滚动条的样式
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 6px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  height: 5px;
+  background-color: rgba(125, 125, 125, 0.5);
+  -webkit-border-radius: 6px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  width: 5px;
+  background-color: rgba(125, 125, 125, 0.5);
+  -webkit-border-radius: 6px;
+  cursor: pointer;
+}

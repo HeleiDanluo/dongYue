@@ -1,0 +1,39 @@
+.header
+  .logo
+    img(src="../images/logo.png", alt="")
+    span.name 动跃科技数据分析平台
+  span.back
+    a(onclick="window.history.go(-1)") 返回上一级
+  .user
+    a(href="#").name 测试名字
+    //- a(href="./findPass.html").pass
+    //-   i(class="icon-xgmm")
+    //-   |密码设置
+    a(href="#").logout 
+      i(class="icon-logout")
+      |退出
+.leftNav
+  ul
+    li.focus
+      i(class="icon-home")
+      a(href="./findSchool.html") 首页
+    li.show
+      i(class="icon-tzsj-xstzsj")
+      span 区域统计
+      i(class="icon-xia")
+      ul
+        li: a(href="./区域统计-项目等级统计.html") 项目等级统计
+        li: a(href="./区域统计-均值对比.html") 均值对比
+        li: a(href="./区域统计-检出率对比.html") 检出率对比
+        li: a(href="./区域统计-百分位.html") 百分位
+        //- li: a(href="./studentEqipment.html") 学校器械教具
+    li.show
+      i(class="icon-sjfx")
+      span 数据分析
+      i(class="icon-xia")
+      ul
+        li: a(href="./healthyList.html") 体质健康统计
+        li: a(href="./studentClass.html") 学校课程课时
+        li: a(href="./xueXiaoJiaoWuTongJi.html") 学校教务统计
+        li: a(href="./xueXiaoZuoYeTongJi") 学校作业统计
+        //- li: a(href="./studentEqipment.html") 学校器械教具

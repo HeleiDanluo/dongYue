@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <script src="../js/flexible/flexible_css.js"></script>
+    <script src="../js/flexible/flexible.js"></script>
+    <link rel="stylesheet" href="../css/studentMain.css">
+    <link rel="stylesheet" href="../js/mobiscroll2/mobiscroll.custom-2.17.0.min.css">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/mobiscroll2/mobiscroll.custom-2.17.0.min.js"></script>
+    <script src="../js/studentMain.js"></script>
+    <title>动跃科技</title>
+</head>
+<body flex="dir:top">
+<header flex-box="0" flex="dir:left" font="16">
+    <a href="javascript:history.go(-1) " flex-box="0">返回</a>
+    <div class="title" flex-box="1"></div>
+    <a href="javascript:void(0)" flex-box="0"></a>
+</header>
+<section flex-box="1" class="" font="16">
+    <a class="head-img-change" flex="cross:center">
+        <span class="head-img-box" flex-box="0">
+            <img src="../img/defaultHeadImg.png" alt="">
+        </span>
+        <div class="personal-msg" flex-box="1">
+            <p>修改头像</p>
+        </div>
+    </a>
+    <div class="my-msg-change">
+        <label class="border-form-item">
+            <span>姓名</span>
+            <input type="text" name="xingming" placeholder="请输入您的姓名">
+        </label>
+        <label class="border-form-item">
+            <span>性别</span>
+            <input type="text" name="xingming" placeholder="请选择您的性别">
+        </label>
+        <label class="border-form-item">
+            <span>年级</span>
+            <select id="class-select">
+                <option value="0">请选择您的年级</option>
+                <option value="1">一年级</option>
+                <option value="2">二年级</option>
+                <option value="3">三年级</option>
+                <option value="4">四年级</option>
+                <option value="5">五年级</option>
+                <option value="6">六年级</option>
+            </select>
+        </label>
+        <label class="border-form-item">
+            <span>学籍号</span>
+            <input type="number" name="xueji" placeholder="请输入您的学籍号">
+        </label>
+    </div>
+    <div class="form-submit new">
+        <a href="javascript:void(0)" class="btn-full-theme">确定</a>
+    </div>
+    <div class="login-tishi">
+        <h3>学籍号绑定学生失败，可能有以下原因：</h3>
+        <h4>1.学籍号或姓名输入错误，请核对后再试；</h4>
+        <h4>2.学籍号或姓名与学校录入不一致，请与学校管理员确认，重新绑定；</h4>
+        <h4>3.该学籍号尚未录入系统，请联系学校管理员录入，然后绑定。</h4>
+    </div>
+</section>
+<footer flex-box="0" flex="dir:left box:mean">
+    <a href="" flex="main:center cross:center"><i class="icon-home" font="24"></i></a>
+    <a href="mine.html" flex="main:center cross:center"><i class="icon-gerzhongxin" font="24"></i></a>
+</footer>
+</body>
+<script src="../js/each/headMsg.js"></script>
+</html>

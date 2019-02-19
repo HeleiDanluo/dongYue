@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta HTTP-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href=" css/main.css">
+    <link rel="stylesheet" href=" css/icon.css">
+    <link rel="stylesheet" href=" plugins/animate.min.css">
+    <link rel="stylesheet" href=" plugins/datepicker.css">
+    <script src=" js/jquery.min.js"></script>
+    <script src=" plugins/jquery.slimscroll.js"></script>
+    <script src=" js/pageInit.js"></script>
+    <script src=" js/main.js"></script>
+    <title>生成班级课表</title>
+</head>
+<body>
+<div class="pageContent">
+    <div class="left-menu">
+        <a class="logo-box">
+        <span class="logo-img">
+        </span>
+        </a>
+        <ul class="menu-list f16">
+            <li class="current"><a href="" class=""><i class="icon-home">&nbsp;</i>主页</a></li>
+            <li class=""><a href="" class=""><i class="icon-group">&nbsp;</i>教研群组</a></li>
+            <li class=""><a href="" class=""><i class="icon-teachManage">&nbsp;</i>教学管理</a></li>
+            <li class=""><a href="" class=""><i class="icon-import">&nbsp;</i>数据录入</a></li>
+            <li class=""><a href="" class=""><i class="icon-homeWork">&nbsp;</i>家庭作业</a></li>
+        </ul>
+        <ul class="bottom-menu menu-list f16">
+            <li class=""><a href="" class=""><i class="icon-add">&nbsp;</i>收藏</a></li>
+            <li class=""><a href="" class=""><i class="icon-setting">&nbsp;</i>设置</a></li>
+            <li class=""><a href="" class=""><i class="icon-back">&nbsp;</i>返回启动页</a></li>
+        </ul>
+    </div>
+    <div class="rightPage">
+        <div class="page-head">
+            <div class="bread-nav-box txt_w">
+                <a href="javascript:;"><b>教学管理</b></a> >
+                <a href="javascript:;"><b>计划管理</b></a> >
+                <a href="javascript:;"><b>班级课表</b></a>
+            </div>
+            <div class="head-menu">
+                <ul class="head-menu-ul f16">
+                    <li class="head-menu-item"><a href="javascript:;" class="txt_w">退出</a></li>
+                    <li class="head-menu-item"><a href="javascript:;" class="txt_w">账户信息<i class="icon-hehe"></i></a>
+                    </li>
+                    <li class="head-menu-item"><a href="javascript:;" class="txt_w">欢迎页</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-section">
+            <a href="javascript:;" class="open btn yellowBtn">打开</a>
+            <a href="javascript:;" class="haha btn blueBtn">打开</a>
+            <a href="javascript:;" class="hehe btn pinkBtn">打开</a>
+            <a href="javascript:void(0);" class="test btn pinkBtn">測試</a>
+            <a href="javascript:void(0);" class="test2 btn pinkBtn">測試</a>
+            <a href="javascript:void(0);" class="test3 btn pinkBtn">測試</a>
+            <a href="javascript:void(0);" class="test4 btn pinkBtn">測試</a>
+            <a href="javascript:void(0);" class="test5 btn pinkBtn">測試</a>
+            <a href="javascript:void(0);" class="test6 btn pinkBtn">測試</a>
+            <br>
+            <br>
+            <div class="form-inline">
+                <label class="form-control">
+                    <textarea class="change"></textarea>
+                </label>
+            </div>
+            <br>
+            <br>
+            <br>
+            <video width="320" height="240" controls="controls">
+                <source src="images/test/xiaoyang1.mp4" type='video/mp4' />
+                你的浏览器不只吃MP4
+            </video>
+        </div>
+    </div>
+</div>
+<div class="toolTips">
+    <div class="arrow-position">
+        <div class="tooltip-arrow"></div>
+    </div>
+    <div class="tooltip-content" data-stu="{'name':'张三','data':[{time:'周一','detail':'味道'},{},{}]}">
+        <p>张三考勤：</p>
+        <p>周一：缺席</p>
+        <p>周一：缺席</p>
+        <p>周一：缺席</p>
+        <p>周一：缺席</p>
+        <p>周一：缺席</p>
+        <p>周一：缺席</p>
+    </div>
+</div>
+<script src=" plugins/alert.js"></script>
+</body>
+<script>
+    /*$(".open").click(function () {
+        <!--Alert.globalWarning({-->
+        <!--times:500,-->
+        <!--type:"error",-->
+        <!--words:"这里是全局提醒",-->
+        <!--callBack:function(){-->
+        <!--alert("设置的time后要执行的回掉")-->
+        <!--}-->
+        <!--})-->
+//    Alert.dialogBox("alert-default","提醒内容")
+        callAlert("playVideoForm.html", {
+            prevStr: "formHtml/",
+            initFn: function () {
+                var playVideo = new Player($(".action-player"),{
+                    videoUrl:"http://image.jiankangtiyu.com//video/5077af7a-7e72-4727-828a-49385f421394.mp4",
+                    audioUrl:"http://image.jiankangtiyu.com//audio/09032429-30c8-4879-9923-eaa0f6d402b2.mp3"
+                });
+                playVideo.init();
+            }
+        })
+//        callAlert("addTasteClassForm.html", {
+//            prevStr: "formHtml/",
+//            initFn: function () {
+//                new ConstractMultiSelect($(".classYear"),{
+//                    initFn:null,
+//                    placeholder:"多选框",
+//                })
+//            }
+//        })
+//        callAlert("tasteClassSignUpForm.html", {
+//            prevStr: "formHtml/",
+//            initFn: function () {
+//                new ConstractMultiSelect($(".classYear"),{
+//                    initFn:null,
+//                })
+//            }
+//        })
+    })
+    */
+    $(".haha").click(function () {
+        Alert.seeSchedule({
+            words: "课程表",
+        })
+    })
+    $(".change")[0].onkeyup = function () {
+        console.log("ASdas");
+    }
+    $(".hehe").click(function () {
+        Alert.dialogBox("alert-talk","改变学年开始时间会初始化学期时间",{
+            confirmFn:function(){
+                console.log("点击了确定");
+                Alert.removeDialog("alertType")
+            }
+        });
+    })
+    $(".test").click(function () {
+        callAlert("teacherPreviewForm.html", {
+            prevStr: "formHtml/",
+            initFn:function () {
+                $('.clearfix li').click(function(){
+                    $(this).siblings().removeClass('focus')
+                    $(this).addClass('focus')
+                    var count=$(this).index()
+                    var chunk=$('.teacher_preview_chunk')
+                    chunk.hide();
+                    chunk.eq(count).show();
+                })
+            }
+        })
+    })
+
+    $('.test2').click(function(){
+        Alert.dialogBox('alert-default','测试文字',{
+            confirmFn:function(){
+                console.log('test2的回调函数')
+            }
+        })
+    })
+
+    $('.test3').click(function(){
+        Alert.dialogBox('alert-talk','测试文字',{
+            confirmFn:function(){
+                console.log('test3的回调函数')
+            }
+        })
+    })
+
+    $('.test4').click(function(){
+        Alert.globalWarning({type:'error',words:'删除成功'})
+    })
+</script>
+</html>

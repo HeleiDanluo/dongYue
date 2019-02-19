@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta HTTP-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/icon.css">
+    <link rel="stylesheet" href="../plugins/animate.min.css">
+    <link rel="stylesheet" href="../css/scroll.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../plugins/mousewheel.js"></script>
+    <script src="../plugins/jquery.slimscroll.js"></script>
+    <script src="../js/pageInit.js"></script>
+    <script src="../js/main.js"></script>
+    <title>兴趣班报名管理</title>
+    <script>
+    </script>
+</head>
+<body>
+<div class="pageContent">
+    <div class="left-menu">
+        <a class="logo-box">
+        <span class="logo-img">
+        </span>
+        </a>
+        <ul class="menu-list f16">
+            <li class="current"><a href="" class=""><i class="icon-home">&nbsp;</i>主页</a></li>
+            <li class=""><a href="" class=""><i class="icon-group">&nbsp;</i>教研群组</a></li>
+            <li class=""><a href="" class=""><i class="icon-teachManage">&nbsp;</i>教学管理</a></li>
+            <li class=""><a href="" class=""><i class="icon-import">&nbsp;</i>数据录入</a></li>
+            <li class=""><a href="" class=""><i class="icon-homeWork">&nbsp;</i>家庭作业</a></li>
+        </ul>
+        <ul class="bottom-menu menu-list f16">
+            <li class=""><a href="" class=""><i class="icon-add">&nbsp;</i>收藏</a></li>
+            <li class=""><a href="" class=""><i class="icon-setting">&nbsp;</i>设置</a></li>
+            <li class=""><a href="" class=""><i class="icon-back">&nbsp;</i>返回启动页</a></li>
+        </ul>
+    </div>
+    <div class="rightPage">
+        <div class="page-head">
+            <div class="bread-nav-box txt_w">
+                <a href="javascript:;"><b>教学管理</b></a> >
+                <a href="javascript:;"><b>班级管理</b></a> >
+                <a href="javascript:;"><b>报名管理</b></a>
+            </div>
+            <div class="head-menu">
+                <ul class="head-menu-ul f16">
+                    <li class="head-menu-item"><a href="javascript:;" class="txt_w">退出</a></li>
+                    <li class="head-menu-item"><a href="javascript:;" class="txt_w">账户信息<i class="icon-hehe"></i></a>
+                    </li>
+                    <li class="head-menu-item"><a href="javascript:;" class="txt_w">欢迎页</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-section">
+            <p class="page-title form-inline f18">篮球兴趣班报名管理</p>
+            <div class="current-class-edit clearfix mt20">
+                <div class="condition-edit-block back_white">
+                    <p class="condition-title">报名时间</p>
+                    <div class="table-row mt10">
+                        <div class="col-7-16">
+                            <label for="" class="form-control">
+                                <input type="" class="" id="test" placeholder="请选择开始时间" readonly />
+                            </label>
+                        </div>
+                        <div class="col-2-16 toLines">
+                            <hr>
+                        </div>
+                        <div class="col-7-16">
+                            <label for="" class="form-control">
+                                <input type="" class="" placeholder="请选择截至时间" readonly />
+                            </label>
+                        </div>
+                    </div>
+                    <p class="condition-title mt20">报名名额</p>
+                    <div class="table-row mt10">
+                        <div class="col-7-16">
+                            <label class="form-control planList select">
+                                <input type="text" placeholder="选取所属教学计划" readonly="">
+                                <span class="caret icon-hehe"></span>
+                                <ul class="select-list" style="display: none;">
+                                    <li><a href="javascript:;" data-val="455">三年级(1)班</a></li>
+                                    <li><a href="javascript:;" data-val="635">三年级(2)班</a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div class="col-9-16 l_h36">人</div>
+                    </div>
+                </div>
+                <div class="condition-edit-block back_white">
+                    <p class="condition-title">报名要求</p>
+                    <div class="form-inline clearfix">
+                        <input id="teacherId" type="hidden" value="">
+                        <label class="form-control zonghedefen select">
+                            <input type="text" id="yearVal" placeholder="综合得分" readonly="">
+                            <span class="caret icon-hehe"></span>
+                            <ul class="select-list" style="display: none;">
+                                <li><a href="javascript:;" data-val="1">综合得分</a></li>
+                                <li><a href="javascript:;" data-val="1">肌耐力</a></li>
+                                <li><a href="javascript:;" data-val="2">心肺</a></li>
+                            </ul>
+                        </label>
+                    </div>
+                    <div class="condition-list">
+                        <div class="col-8-16 mt10">
+                            <a href="javascript:;" class="condition-link">优秀：90~100分</a>
+                        </div>
+                        <div class="col-8-16 mt10">
+                            <a href="javascript:;" class="condition-link">良好：80~89分</a>
+                        </div>
+                        <div class="col-8-16 mt10">
+                            <a href="javascript:;" class="condition-link select">及格：60~79分</a>
+                        </div>
+                        <div class="col-8-16 mt10">
+                            <a href="javascript:;" class="condition-link">不及格：0~59分</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="condition-edit-block back_white">
+                    <p class="condition-title">报名年级</p>
+                    <div class="condition-list">
+                        <div class="col-8-16 mt10">
+                            <a href="javascript:;" class="condition-link">一年级</a>
+                        </div>
+                        <div class="col-8-16 mt10">
+                            <a href="javascript:;" class="condition-link">二年级</a>
+                        </div>
+                        <div class="col-8-16 mt10">
+                            <a href="javascript:;" class="condition-link select">三年级</a>
+                        </div>
+                        <div class="col-8-16 mt10">
+                            <a href="javascript:;" class="condition-link">四年级</a>
+                        </div>
+                        <div class="col-8-16 mt10">
+                            <a href="javascript:;" class="condition-link">五年级</a>
+                        </div>
+                        <div class="col-8-16 mt10">
+                            <a href="javascript:;" class="condition-link">六年级</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="submit-button l_h36 mt20 clearfix">
+                <div class="col-14-16 no-padding">
+                    <a href="javascript:;" class="btn pinkBtn jieshao-mubiao">课程介绍及目标</a>
+                    <a href="javascript:;" class="btn themeBtn xueshengg-mubiao">查看学生目标</a>
+                </div>
+                <div class="col-2-16 t_r no-padding">
+                    <a href="javascript:;" class="btn themeBtn">确定</a>
+                </div>
+            </div>
+            <hr class="mt30 cut-line">
+            <div class="signUp-list mt30">
+                <div class="form-inline l_h36 clearfix">
+                    <div class="col-8-16 f16">目前已报名人数：<span class="signed-num">12</span>人</div>
+                    <div class="col-2-16 col-offset-6 no-padding">
+                        <a href="javascript:;" class="blockBtn pinkBtn addBySelf">自选添加</a>
+                    </div>
+                </div>
+                <div class="widthTable mt10">
+                    <div class="table-content">
+                        <div class="table-box excel-table">
+                            <div class="table-row f16 t_c">
+                                <div class="col-1-32"><span class="icon-setting"></span></div>
+                                <div class="col-2-32"><a href="javascript:;">姓名</a></div>
+                                <div class="col-1-32"><a href="javascript:;">性别<i class="icon-top"></i></a></div>
+                                <div class="col-2-32"><a href="javascript:;">年级</a><i class="icon-top"></i></div>
+                                <div class="col-2-32">所在兴趣班</div>
+                                <div class="col-2-32"><a href="javascript:;">体重指数</a><i class="icon-top"></i></div>
+                                <div class="col-2-32"><a href="javascript:;">肺活量</a><i class="icon-top"></i></div>
+                                <div class="col-2-32"><a href="javascript:;">50米跑</a><i class="icon-top"></i></div>
+                                <div class="col-3-32"><a href="javascript:;">坐位体前屈</a><i class="icon-top"></i></div>
+                                <div class="col-2-32"><a href="javascript:;">立定跳远</a><i class="icon-top"></i></div>
+                                <div class="col-2-32"><a href="javascript:;">引体向上</a><i class="icon-top"></i></div>
+                                <div class="col-3-32"><a href="javascript:;">仰卧起坐/min<i class="icon-top"></i></a></div>
+                                <div class="col-3-32"><a href="javascript:;">1000米跑（男）<i class="icon-top"></i></a></div>
+                                <div class="col-3-32"><a href="javascript:;">800米跑（女）<i class="icon-top"></i></a></div>
+                                <div class="col-2-32"><a href="javascript:;">素质得分<i class="icon-top"></i></a></div>
+                            </div>
+                            <div class="list-content t_c">
+                                <div class="table-row back_white table-item txt_b">
+                                    <div class="col-1-32"><a href="javascript:;" class="icon-bin"></a></div>
+                                    <div class="col-2-32">小明</div>
+                                    <div class="col-1-32">男</div>
+                                    <div class="col-2-32">一年级</div>
+                                    <div class="col-2-32">篮球班</div>
+                                    <div class="col-2-32">87</div>
+                                    <div class="col-2-32">89</div>
+                                    <div class="col-2-32">54</div>
+                                    <div class="col-3-32">54</div>
+                                    <div class="col-2-32">54</div>
+                                    <div class="col-2-32">54</div>
+                                    <div class="col-3-32">54</div>
+                                    <div class="col-3-32">54</div>
+                                    <div class="col-3-32">54</div>
+                                    <div class="col-2-32">54</div>
+                                </div>
+                                <div class="table-row back_white table-item txt_b">
+                                    <div class="col-1-32"><a href="javascript:;" class="icon-bin"></a></div>
+                                    <div class="col-2-32">小明</div>
+                                    <div class="col-1-32">男</div>
+                                    <div class="col-2-32">一年级</div>
+                                    <div class="col-2-32">篮球班</div>
+                                    <div class="col-2-32">87</div>
+                                    <div class="col-2-32">89</div>
+                                    <div class="col-2-32">54</div>
+                                    <div class="col-3-32">54</div>
+                                    <div class="col-2-32">54</div>
+                                    <div class="col-2-32">54</div>
+                                    <div class="col-3-32">54</div>
+                                    <div class="col-3-32">54</div>
+                                    <div class="col-3-32">54</div>
+                                    <div class="col-2-32">54</div>
+                                </div>
+                                <div class="table-row back_white table-item txt_b">
+                                    <div class="col-1-32"><a href="javascript:;" class="icon-bin"></a></div>
+                                    <div class="col-2-32">小明</div>
+                                    <div class="col-1-32">男</div>
+                                    <div class="col-2-32">一年级</div>
+                                    <div class="col-2-32">篮球班</div>
+                                    <div class="col-2-32">87</div>
+                                    <div class="col-2-32">89</div>
+                                    <div class="col-2-32">54</div>
+                                    <div class="col-3-32">54</div>
+                                    <div class="col-2-32">54</div>
+                                    <div class="col-2-32">54</div>
+                                    <div class="col-3-32">54</div>
+                                    <div class="col-3-32">54</div>
+                                    <div class="col-3-32">54</div>
+                                    <div class="col-2-32">54</div>
+                                </div>
+                                <div class="table-row back_white table-item txt_b">
+                                    <div class="col-1-32"><a href="javascript:;" class="icon-bin"></a></div>
+                                    <div class="col-2-32">小明</div>
+                                    <div class="col-1-32">男</div>
+                                    <div class="col-2-32">一年级</div>
+                                    <div class="col-2-32">篮球班</div>
+                                    <div class="col-2-32">87</div>
+                                    <div class="col-2-32">89</div>
+                                    <div class="col-2-32">54</div>
+                                    <div class="col-3-32">54</div>
+                                    <div class="col-2-32">54</div>
+                                    <div class="col-2-32">54</div>
+                                    <div class="col-3-32">54</div>
+                                    <div class="col-3-32">54</div>
+                                    <div class="col-3-32">54</div>
+                                    <div class="col-2-32">54</div>
+                                </div>
+                                <div class="table-row back_white table-item txt_b">
+                                    <div class="col-1-32"><a href="javascript:;" class="icon-bin"></a></div>
+                                    <div class="col-2-32">小明</div>
+                                    <div class="col-1-32">男</div>
+                                    <div class="col-2-32">一年级</div>
+                                    <div class="col-2-32">篮球班</div>
+                                    <div class="col-2-32">87</div>
+                                    <div class="col-2-32">89</div>
+                                    <div class="col-2-32">54</div>
+                                    <div class="col-3-32">54</div>
+                                    <div class="col-2-32">54</div>
+                                    <div class="col-2-32">54</div>
+                                    <div class="col-3-32">54</div>
+                                    <div class="col-3-32">54</div>
+                                    <div class="col-3-32">54</div>
+                                    <div class="col-2-32">54</div>
+                                </div>
+                                <div class="table-row back_white table-item txt_b">
+                                    <div class="col-1-32"><a href="javascript:;" class="icon-bin"></a></div>
+                                    <div class="col-2-32">小明</div>
+                                    <div class="col-1-32">男</div>
+                                    <div class="col-2-32">一年级</div>
+                                    <div class="col-2-32">篮球班</div>
+                                    <div class="col-2-32">87</div>
+                                    <div class="col-2-32">89</div>
+                                    <div class="col-2-32">54</div>
+                                    <div class="col-3-32">54</div>
+                                    <div class="col-2-32">54</div>
+                                    <div class="col-2-32">54</div>
+                                    <div class="col-3-32">54</div>
+                                    <div class="col-3-32">54</div>
+                                    <div class="col-3-32">54</div>
+                                    <div class="col-2-32">54</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../plugins/alert.js"></script>
+<script src="../js/each/eachTasteClass.js"></script>
+<script src="../plugins/laydate/laydate.js"></script>
+<script>
+    laydate.render({
+        elem: '#test', //指定元素
+        type: 'datetime',
+        format: 'yyyy-MM-dd HH:mm',
+        done: function(value){
+            console.log(value); //得到日期生成的值，如：2017-08-18
+            console.log($('#test').val());
+            $('#test').val("")
+        }
+    });
+</script>
+</body>
+</html>

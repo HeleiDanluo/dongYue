@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+html(lang="zh-CN")
+  head
+    include head.jade
+    <script>
+    $(function(){
+    $('.leftNav>ul>li').removeClass('focus')
+    $('.leftNav>ul>li').eq(1).addClass('focus')
+    $('.leftNav>ul>li>ul>li').removeClass('focus')
+    $('.leftNav>ul>li>ul>li').eq(0).addClass('focus')
+    })  
+    </script> 
+  body
+    include header2.jade
+    .healthyList
+      .choosee
+        span 选择范围:
+        ul(class="address clearfix")
+          li(class="btn-small focus") 全部
+          li(class="btn-small sheng")
+            span 省
+            ul(class="btn-small")
+              .limit
+                
+          li(class="btn-small shi")
+            span 市
+            ul(class="btn-small")
+              .limit
+                li(class="btn-small") 请先选择省
+          li(class="btn-small qu")
+            span 区/县
+            ul(class="btn-small")
+              .limit
+                li(class="btn-small") 请先选择市
+      .choose        
+        span 选择时间:
+        select(class="time btn-big")
+          option(value="2017~2018学年") 2017~2018学年
+          option(value="2017~2018学年") 2017~2018学年
+          option(value="2017~2018学年") 2017~2018学年
+          option(value="2017~2018学年") 2017~2018学年
+          option(value="2017~2018学年") 2017~2018学年
+      .healthyBox
+        .top
+          span(class="left") 健康等级分布
+          span(class="center")
+            a(href="./healthyList.html" class="focus") 列表
+            span /
+            a(href="./healthyChart.html") 图表
+          span(class="right btn-small btn-green") 导出
+        .center
+          .row
+            span(class="num") 序号
+            span(class="school") 学校名称
+            span(class="category") 学校样本总数
+            span(class="category") 优秀人数
+            span(class="category") 良好人数
+            span(class="category") 及格人数
+            span(class="category") 不及格人数
+          .row.sp
+            span(class="num") 1
+            span(class="school") 圣菲小学
+            span(class="category") 1299(男234/女235)
+            span(class="category") 1299(男234/女235)
+            span(class="category") 1299(男234/女235)
+            span(class="category") 1299(男234/女235)
+            span(class="category") 1299(男234/女235)
+          .row.sp
+            span(class="num") 2
+            span(class="school") 益州小学
+            span(class="category") 890(男12/女21)
+            span(class="category") 890(男12/女21)
+            span(class="category") 890(男12/女21)
+            span(class="category") 890(男12/女21)
+            span(class="category") 890(男12/女21)
+        .mydataChoose
+          ul.num
+            
+          select
+            option(value="1") 1
+            option(value="2") 2
+            option(value="3") 3
+            option(value="4") 4
+            option(value="5") 5
+            option(value="6") 6
+            option(value="7") 7
+          span.left 跳转到
+            input
+          span.right
+            确定  
+

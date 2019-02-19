@@ -1,0 +1,11 @@
+$(function(){
+  Dy.dropDownMenu({
+    targetBtn:$(".selectWeek")
+  })
+  $(".week-option-list").on("click",">a",function(){
+    Dy.alert({
+      type:"error",
+      text:"操作失败"
+    })
+  })
+})

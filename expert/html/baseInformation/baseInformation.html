@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基本信息</title>
+    <link rel="stylesheet" href="baseInformation.css">
+    <script src="../../js/baseJs/jquery.js"></script>
+    <script src="../../js/baseJs/flexible.js"></script>
+    <script src="../../js/baseJs/flexible_css.js"></script>
+    <script src="slide.js"></script>
+</head>
+<body flex="dir:top">
+<header flex-box="0" flex="dir:left" font="16">
+    <a href="javascript:history.go(-1) " flex-box="0">返回</a>
+    <div class="title" flex-box="1">问答详情</div>
+    <a href="javascript:void(0)" flex-box="0"></a>
+</header>
+<section flex-box="1"  class="baseInformation can-scroll" font="14">
+    <div class="user">
+        <div class="relativeBox" flex="dir:left cross:center">
+            <h1>欧阳修</h1>
+            <h2>男</h2>
+            <h3>1000米跑</h3>
+            <h4>倒计时:12.23</h4>
+        </div>
+    </div>
+    <div class="nav">
+        <ul class="relativeBox" flex="box:mean cross:center">
+           <li class="focus">基本信息</li>
+           <li>体质数据</li>
+           <li>运动处方</li>
+           <li>问答消息</li>
+        </ul>
+    </div>
+    <div class="information" flex="dir:top">
+            <div class="video">
+                <img src="../../img/boy1.png">
+                <img src="../../img/girl1.png">
+            </div>
+            <div class="persen">
+                <div class="title">
+                    <div class="relBox" flex="cross:center">
+                        <h1>个人信息</h1>
+                        <i class="icon-up"></i>
+                    </div>
+                </div>
+                <div class="relBox">
+                    <div class="box">
+                        <div>生日:2017-5-5</div>
+                        <div>生日:2017-5-5</div>
+                        <div>生日:2017-5-5</div>
+                        <div>生日:2017-5-5</div>
+                        <div>生日:2017-5-5</div>
+                        <div>生日:2017-5-5</div>
+                        <div>生日:2017-5-5</div>
+                        <div>生日:2017-5-5</div>
+                        <h1 class="detail">
+                            备注
+                            <span class="msg">文字文字文字文字文字文字
+                            文字文字文字文字文字文字文字文字文字文字</span>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>
+<footer data-value="1" flex-box="0" flex="dir:left box:mean">
+    <a href="javascript:void(0)" class="focus" flex=" dir:top main:center cross:center">
+        <i class="icon-home" font="24"></i>
+        <span>首页</span>
+    </a>
+    <a href="javascript:void(0)" flex="main:center cross:center dir:top">
+        <i class="icon-gerzhongxin" font="24"></i>
+        <span>我的</span>
+    </a>
+</footer>
+</body>
+<script style="display: none">
+    $(function(){
+        $('.information').slide()
+    })
+</script>
+</html>

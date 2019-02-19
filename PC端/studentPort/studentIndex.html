@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta HTTP-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/icon.css">
+    <link rel="stylesheet" href="../plugins/animate.min.css">
+    <link rel="stylesheet" href="../css/scroll.css">
+    <link rel="stylesheet" href="../plugins/datepicker.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../plugins/mousewheel.js"></script>
+    <script src="../plugins/jquery.slimscroll.js"></script>
+    <script src="../js/pageInit.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../plugins/echart.js"></script>
+    <title>我的信息</title>
+</head>
+
+<body>
+    <div class="pageContent">
+        <div class="left-menu">
+            <a class="logo-box">
+                <span class="logo-img">
+                </span>
+            </a>
+            <ul class="menu-list f16">
+                <li class=""><a href="" class=""><i class="icon-home">&nbsp;</i>主页</a></li>
+                <li class="current"><a href="" class=""><i class="icon-group">&nbsp;</i>教研群组</a></li>
+                <li class=""><a href="" class=""><i class="icon-teachManage">&nbsp;</i>教学管理</a></li>
+                <li class=""><a href="" class=""><i class="icon-import">&nbsp;</i>数据录入</a></li>
+                <li class=""><a href="" class=""><i class="icon-homeWork">&nbsp;</i>家庭作业</a></li>
+            </ul>
+            <ul class="bottom-menu menu-list f16">
+                <li class=""><a href="" class=""><i class="icon-add">&nbsp;</i>收藏</a></li>
+                <li class=""><a href="" class=""><i class="icon-setting">&nbsp;</i>设置</a></li>
+                <li class=""><a href="" class=""><i class="icon-back">&nbsp;</i>返回启动页</a></li>
+            </ul>
+        </div>
+        <div class="rightPage">
+            <div class="page-head">
+                <div class="bread-nav-box txt_w">
+                    <a href="javascript:;"><b>我的成绩</b></a>
+                </div>
+                <div class="head-menu">
+                    <ul class="head-menu-ul f16">
+                        <li class="head-menu-item"><a href="javascript:;" class="txt_w">退出</a></li>
+                        <li class="head-menu-item"><a href="javascript:;" class="txt_w">账户信息<i class="icon-hehe"></i></a>
+                        </li>
+                        <li class="head-menu-item"><a href="javascript:;" class="txt_w">欢迎页</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="top-option clearfix mt10">
+                    <div class="col-16-16 no-padding">
+                        <div class="f_r">
+                            <a href="javascript:void(0)" id="print" class="yellowBtn btn mr10">打印</a>
+                        </div>
+                    </div>
+                </div><br>
+                <div id="id" class="teacher-msg back_white clearfix">
+                    <div class="col-4-16">
+                        <p class="l_h36">
+                            <span class="title">个人信息</span>&nbsp;
+                        </p>
+                        <ul class="l_h36 list">
+                            <li>姓名：<span>小明</span></li>
+                            <li>年龄：<span>123</span></li>
+                            <li>性别：<span>男</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-8-16">
+                        <p class="l_h36">
+                            <span class="title">健康档案(家长填写)</span>&nbsp;
+                        </p>
+                        <div class="l_h36 dangan">
+                            <div class="col-5-18">
+                                <ul class="l_h36 list">
+                                    <li>血型：<span>O型</span></li>
+                                    <li>脊柱健康：<span>123</span></li>
+                                    <li>备注：<span></span></li>
+                                </ul>
+                            </div>
+                            <div class="col-7-18">
+                                <ul class="l_h36 list">
+                                    <li>左/右眼视力：<span>4.7/5.0</span></li>
+                                    <li style="width:540px">既往病史：<span>i速度如果后i速度放缓够狠i速度如果后i速度放缓够狠i速度如果后i速度放缓够狠i速度如果后i速度放缓够狠i速度如果后i速度放缓够狠i速度如果后i速度放缓够狠</span></li>
+                                </ul>
+                            </div>
+                            <div class="col-6-18">过敏源：<span>草莓</span></div>
+                        </div>
+                    </div>
+                    <div class="col-4-16 clearfix">
+                        <div class="teacherGrade">
+                            <span class="gradeNum">82</span>
+                            <p>综合评分</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="personal-chart back_white clearfix mt20">
+                    <div class="radar-tab-btn mt10">
+                        <a href="#body" class="btn yellowBtn">身体素质</a>
+                        <a href="#sport" class="btn">运动素质</a>
+                    </div>
+                    <div id="personal-radar-img" class="personal-chart-box mt20">
+                        <div class="radar-centent body show" id="body"></div>
+                        <div class="radar-centent sport" id="sport"></div>
+                    </div>
+                </div>
+                <div class="radar-tab-btn mt40 ml20 new-btn-tab clearfix">
+                    <a href="#tizhi" class="btn yellowBtn">体质指标</a>
+                    <a href="#xueye" class="btn">学业成绩</a>
+                    <a href="#xing-qu-ban" class="btn">兴趣班</a>
+                    <a href="#chu-qin" class="btn">出勤</a>
+                    <a href="#wan-cheng-zuo-ye" class="btn">完成作业</a>
+                    <a href="#tizhi-ketanghyd" class="btn">课堂活跃度</a>
+                    <br>
+                    <br>
+                </div>
+
+                <div class="tizhi-xueye-box">
+                    <!-- 体制指标 -->
+                    <div class="tizhi-xueye tizhi show">
+                        <div class="health-data-table">
+                            <table class="data-table t_c mt20" border="0" cellspacing="0" cellpadding="0">
+                                <thead>
+                                    <tr>
+                                        <td>项目</td>
+                                        <td>一年级</td>
+                                        <td>得分</td>
+                                        <td>二年级</td>
+                                        <td>得分</td>
+                                        <td>三年级</td>
+                                        <td>得分</td>
+                                        <td>三年级</td>
+                                        <td>得分</td>
+                                        <td>三年级</td>
+                                        <td>得分</td>
+                                        <td>三年级</td>
+                                        <td>得分</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>体重指数</td>
+                                        <td>13.1</td>
+                                        <td>60</td>
+                                        <td>13.1</td>
+                                        <td>60</td>
+                                        <td>13.1</td>
+                                        <td>60</td>
+                                        <td>13.1</td>
+                                        <td>60</td>
+                                        <td>13.1</td>
+                                        <td>60</td>
+                                        <td>13.1</td>
+                                        <td>60</td>
+                                    </tr>
+                                    <tr>
+                                        <td>体重指数</td>
+                                        <td>13.1</td>
+                                        <td>60</td>
+                                        <td>13.1</td>
+                                        <td>60</td>
+                                        <td>13.1</td>
+                                        <td>60</td>
+                                        <td>13.1</td>
+                                        <td>60</td>
+                                        <td>13.1</td>
+                                        <td>60</td>
+                                        <td>13.1</td>
+                                        <td>60</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="health-line-box">
+                            <div class="health-line-item num1 back_white mt20">
+                                <h4 class="model-title l_h36">肺活量</h4>
+                                <div class="chart-tab-btn l_h36">
+                                    <a href="javascript:void(0)" class="btn yellowBtn" data-href="point">得分</a>
+                                    <a href="javascript:void(0)" class="btn" data-href="grade">成绩</a>
+                                </div>
+                                <div class="chart-tab-box">
+                                    <div class="point chart-content show"></div>
+                                    <div class="grade chart-content"></div>
+                                </div>
+                            </div>
+                            <div class="health-line-item num2 back_white mt20">
+                                <h4 class="model-title l_h36">坐位体前屈</h4>
+                                <div class="chart-tab-btn l_h36">
+                                    <a href="javascript:void(0)" class="btn yellowBtn" data-href="point">得分</a>
+                                    <a href="javascript:void(0)" class="btn" data-href="grade">成绩</a>
+                                </div>
+                                <div class="chart-tab-box">
+                                    <div class="point chart-content show"></div>
+                                    <div class="grade chart-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 学业成绩 -->
+                    <div class="tizhi-xueye xueye">
+                        <div class="health-data-table">
+                            <div style="overflow:auto;max-height:80vh">
+                                <table class="data-table t_c mt20" border="0" cellspacing="0" cellpadding="0">
+                                    <thead>
+                                        <tr>
+                                            <td>项目</td>
+                                            <td>一年级上学期</td>
+                                            <td>一年级下学期</td>
+                                            <td>二年级上学期</td>
+                                            <td>二年级下学期</td>
+                                            <td>三年级上学期</td>
+                                            <td>三年级下学期</td>
+                                            <td>四年级上学期</td>
+                                            <td>四年级下学期</td>
+                                            <td>五年级上学期</td>
+                                            <td>五年级下学期</td>
+                                            <td>六年级上学期</td>
+                                            <td>六年级下学期</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>基础素质得分</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                        </tr>
+                                        <tr>
+                                            <td>体育基础课与特色课运动技术与能力测试</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                        </tr>
+                                        <tr>
+                                            <td>理论考试</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                        </tr>
+                                        <tr>
+                                            <td>技评得分</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                        </tr>
+                                        <tr>
+                                            <td>过程性评价Ⅰ</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                        </tr>
+                                        <tr>
+                                            <td>过程性评价Ⅱ</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>13.1</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>60</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                        </tr>
+                                        <tr>
+                                            <td>过程性评价Ⅲ</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>13.1</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>60</td>
+                                        </tr>
+                                        <tr>
+                                            <td>过程性评价Ⅳ</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                        </tr>
+                                        <tr>
+                                            <td>总成绩</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>13.1</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>13.1</td>
+                                            <td>60</td>
+                                            <td>60</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="health-line-box">
+                            <div class="health-line-item num1 back_white mt20">
+                                <h4 class="model-title l_h36">理论考试</h4>
+                                <div class="chart-tab-box">
+                                    <div class="point chart-content show" id="lilunkaoshi"></div>
+                                </div>
+                            </div>
+                            <div class="health-line-item num2 back_white mt20">
+                                <h4 class="model-title l_h36">技评得分</h4>
+                                <div class="chart-tab-box">
+                                    <div class="point chart-content show" id="jipingdefen"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 兴趣班 -->
+                    <div class="tizhi-xueye xing-qu-ban">
+                        <!-- 内容 -->
+                        <div class="content">
+                            <div class="content-box">
+                                <!-- 头部 -->
+                                <div class="content-item">
+                                    <div class="item-left new">
+                                      
+                                    </div>
+                                    <div class="item-right">
+                                        <div class="item class-name"><b></b></div>
+                                        <div class="item one">我的课程目标</div>
+                                        <div class="item two">教师评价</div>
+                                        <div class="item three">教师评分</div>
+                                    </div>
+                                </div>
+                                <!-- 一个 -->
+                                <div class="content-item">
+                                    <div class="item-left">
+                                        <span class="time">2018-2019</span>
+                                        <span class="time">上学期</span>
+                                    </div>
+                                    <div class="item-right">
+                                        <div class="item class-name"><b>羽毛球班</b></div>
+                                        <div class="item one">我的课程目标我的课程目标我的课程目标我的课程目标</div>
+                                        <div class="item two">教师评价教师评价教师评价教师评价教师评价教师评价教师评价教师评价教师评价教师评价教师评价教师评价教师评价教师评价</div>
+                                        <div class="item three">9</div>
+                                    </div>
+                                </div>
+                                <!-- 一个 -->
+                                <div class="content-item">
+                                    <div class="item-left">
+                                        <span class="time">2018-2019</span>
+                                        <span class="time">下学期</span>
+                                    </div>
+                                    <div class="item-right">
+                                        <div class="item class-name"><b>田径特长班</b></div>
+                                        <div class="item one">我的课程目标我的课程目标我的课程目标我的课程目标</div>
+                                        <div class="item two">教师评价教师评价价教师评价教师评价教师评价教师评价教师评价教师评价</div>
+                                        <div class="item three">9</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- 完成作业 -->
+                    <div class="tizhi-xueye wan-cheng-zuo-ye">
+                        <div class="health-data-table">
+                            <table class="data-table t_c mt20" border="0" cellspacing="0" cellpadding="0">
+                                <thead>
+                                    <tr>
+                                        <td>学期</td>
+                                        <td>学期布置作业</td>
+                                        <td>完成作业</td>
+                                        <td>完成推荐作业</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>一年级上学期</td>
+                                        <td>60</td>
+                                        <td>13.1</td>
+                                        <td>60</td>
+                                    </tr>
+                                    <tr>
+                                        <td>一年级下学期</td>
+                                        <td>60</td>
+                                        <td>13.1</td>
+                                        <td>60</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="mt10">
+                                <span>更多详情查看</span>
+                                <a href="http://www.baidu.com" class="form-link">作业完成统计</a>
+                            </div>
+                        </div>
+                        <div class="health-line-box">
+                            <div class="health-line-item num1 back_white mt20">
+                                <h4 class="model-title l_h36">完成作业</h4>
+                                <div class="chart-tab-box">
+                                    <div id="wanChengZuoYe" class="chart-content show"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- 出勤 -->
+                    <div class="tizhi-xueye chu-qin">
+                        <div class="center">
+                            <h3>在校出勤率</h3>
+                            <div class="row">
+                                <span class="name">学校名称</span>
+                                <div class="limit">
+                                    <span style="width:50%" class="color_1"></span>
+                                    <span>&emsp;不及格：50%</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <span class="name">学校名称</span>
+                                <div class="limit">
+                                    <span style="width:80%" class="color_1"></span>
+                                    <span>&emsp;不及格：80%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bar-chart-content">
+                            <div class="column-chart clearfix mt20" id="a">
+                                <!-- 图形加载位置 -->
+                            </div>
+
+                            <div class="column-chart clearfix" id="b">
+                                <!-- 图形加载位置 -->
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- 课堂活跃度 -->
+                    <div class="tizhi-xueye tizhi-ketanghyd show">
+                        <div class="health-data-table">
+                            <table class="data-table t_c mt20" border="0" cellspacing="0" cellpadding="0">
+                                <thead>
+                                    <tr>
+                                        <td>序号</td>
+                                        <td>项目</td>
+                                        <td>平均心率</td>
+                                        <td>班级平均心率</td>
+                                        <td>结果</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>一年级上学期</td>
+                                        <td>90</td>
+                                        <td>80</td>
+                                        <td>
+                                            <span>活跃</span>
+                                            <a href="javascript:;" class="color-blue see-detail">详情</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>一年级上学期</td>
+                                        <td>90</td>
+                                        <td>80</td>
+                                        <td class="bg-yellow">
+                                            <span>不活跃</span>
+                                            <a href="javascript:;" class="color-blue see-detail">详情</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>一年级上学期</td>
+                                        <td>90</td>
+                                        <td>80</td>
+                                        <td>
+                                            <span>活跃</span>
+                                            <a href="javascript:;" class="color-blue see-detail">详情</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="../plugins/alert.js"></script>
+    <script src="../js/each/studentIndex.js"></script>
+    <!-- <script src="../js/each/studentIndexNew.js"></script> -->
+
+    <!-- 出勤和 完成作业 图形 -->
+    <script src="../js/each/studentIndex-完成作业.js"></script>
+
+    <!-- 课堂活跃度 图形 -->
+    <script src="../js/each/studentIndex-课堂活跃度.js"></script>
+
+    <!-- 数据为空插件 -->
+    <!-- <script src="http://w3more.cn/assets/js/dataNull.min.js"></script> -->
+    <script>
+        // new dataNull({
+        //     'eleId':'id',
+        //     'top':'0',
+        //     'img': 5,
+        //     'text': '没有数据，快滚！',
+        // });
+
+        // 打印
+        $('body').on('click', '#print', function(){
+            pageToPrint();
+        })
+
+        //调整页面到打印排版
+        function pageToPrint(){
+            $('.pageContent').addClass('pageContent-print').removeClass('pageContent');//修改滚动class
+            $('.left-menu').remove(); //去除左边菜单
+            $('.page-head').remove(); //去除头菜单
+            $('#chat').remove();//去除人工客服
+            $('.top-option').remove();//去除顶部按钮
+            $('body').addClass('print'); //添加调整后的样式
+            // resizeLineChart.resize();
+            resizeChart1.resize();
+            resizeChart2.resize();
+            // setTimeout(function(){
+                //     window.print();
+                // }, 500);
+            }
+        window.onresize = function(){
+            resizeChart2.resize();
+            resizeChart1.resize();
+        }
+    </script>
+</body>
+
+</html>

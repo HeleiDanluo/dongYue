@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <meta charset="utf-8">
+    <title>动跃数据分析平台</title>
+    <link rel="stylesheet" href="../css/main.min.css">
+    <link rel="stylesheet" href="../css/date.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/echarts.js"></script>
+    <script src="../js/schedule.js"></script>
+    <script src="../js/each/buyRecord.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <a href="#" class="logo fl">
+        <img src="../images/logo.png" alt="">
+        <span class="name">动跃科技数据分析平台</span>
+      </a>
+      <span class="time ml15 row10 dib colorWhite">登陆时间:2017-9-19 11:16</span>
+      <div class="user">
+        <a href="#" class="name">测试名字</a>
+  
+        <a href="./findPass.html" class="pass">
+          <i class="icon-pass"></i>
+          密码设置
+        </a>
+  
+        <a href="#" class="logout">
+          <i class="icon-logout"></i>
+          退出
+        </a>
+        <!-- <a onclick="window.history.go(-1)" class="logout">返回</a> -->
+      </div>
+    </div>
+    <div class="leftNav col2 row10 bkGrey">
+      <ul class="col10">
+        <li class="col10 focus">
+          <a class="dib h50 lh50 col10" href="#">
+            <i class="icon-home ml20 font16"></i>
+            <span class="ml10">首页</span>
+          </a>
+        </li>
+        <li class="col10">
+          <a class="dib h50 lh50 col10" href="#">
+            <i class="icon-apply ml20 font16"></i>
+            <span class="ml10">学校申请</span>
+          </a>
+        </li>
+        <li class="col10">
+          <a class="dib h50 lh50 col10" href="#">
+            <i class="icon-school ml20 font16"></i>
+            <span class="ml10">学校管理</span>
+          </a>
+        </li>
+        <li class="col10">
+          <a class="dib h50 lh50 col10" href="#">
+            <i class="icon-manage ml20 font16"></i>
+            <span class="ml10">运营管理</span>
+          </a>
+        </li>
+        <li class="col10">
+          <a class="dib h50 lh50 col10" href="#">
+            <i class="icon-search ml20 font16"></i>
+            <span class="ml10">记录查询</span>
+          </a>
+        </li>
+        <li class="col10">
+          <a class="dib h50 lh50 col10" href="#">
+            <i class="icon-key ml20 font16"></i>
+            <span class="ml10">激活码管理</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="caption">
+      <div class="choose font14">
+        <a class="dib w150 h35 lh35 tc borderGreen fl ">购买记录</a>
+        <a class="dib w150 h35 lh35 tc borderGreen btn-green fl">激活记录</a>
+        <span class="fl dib row10 lh35 ml10">查询条件:</span>
+        <input class="input-center w100 fl ml10 dateinput" placeholder="请选择开始">
+        <div id="buyschedule-box"></div>
+        <input class="input-center w100 fl ml10 dateinput" placeholder="请选择结束">
+        <a class="btn-small btn-green fl h35 lh35 ml10">导出列表</a>
+      </div>
+      <div class="listBox pt30 pl10 pb50 pr10">
+        <div class="special">
+          <span class="dib h40 lh40 tc col1">序号</span>
+          <span class="dib h40 lh40 tc col2">下单时间</span>
+          <span class="dib h40 lh40 tc col2">订单号码</span>
+          <span class="dib h40 lh40 tc col2">激活码</span>
+          <span class="dib h40 lh40 tc col1">使用年限</span>
+          <span class="dib h40 lh40 tc col1">金额</span>
+        </div>
+        <div>
+          <span class="dib h40 lh40 tc col1">1</span>
+          <span class="dib h40 lh40 tc col2">2017-2-20 12:30</span>
+          <span class="dib h40 lh40 tc col2">123123123</span>
+          <span class="dib h40 lh40 tc col2">sadfasdfasdf</span>
+          <span class="dib h40 lh40 tc col1">2年</span>
+          <span class="dib h40 lh40 tc col1 colorGreen">50.00</span>
+        </div>
+        <div>
+          <span class="dib h40 lh40 tc col1">1</span>
+          <span class="dib h40 lh40 tc col2">2017-2-20 12:30</span>
+          <span class="dib h40 lh40 tc col2">123123123</span>
+          <span class="dib h40 lh40 tc col2">sadfasdfasdf</span>
+          <span class="dib h40 lh40 tc col1">2年</span>
+          <span class="dib h40 lh40 tc col1 colorGreen">50.00</span>
+        </div>
+        <div>
+          <span class="dib h40 lh40 tc col1">1</span>
+          <span class="dib h40 lh40 tc col2">2017-2-20 12:30</span>
+          <span class="dib h40 lh40 tc col2">123123123</span>
+          <span class="dib h40 lh40 tc col2">sadfasdfasdf</span>
+          <span class="dib h40 lh40 tc col1">2年</span>
+          <span class="dib h40 lh40 tc col1 colorGreen">50.00</span>
+        </div>
+        <p class="col10 mt15">
+          总计金额:80.00元
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

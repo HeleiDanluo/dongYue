@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <title>动跃科技</title>
+    <meta id="viewport" name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/resize.js"></script>
+    <link rel="stylesheet" href="../css/appMain.css">
+    <link rel="stylesheet" href="../css/flex.css">
+    <link rel="stylesheet" href="../css/icon.css">
+</head>
+<body ontouchstart="">
+<div class="pageContent">
+    <div class="page-login">
+        <div class="login-top-back" flex="dir:top main:justify">
+            <div class="back-btn"><a class="txt_w f14 t_c"><i class="icon-arrow-left"></i></a></div>
+            <div class="select-option">
+                <ul  flex="box:mean">
+                    <li>
+                        <a href="#login" data-index="1" class="login-link txt_w h_100" flex="main:center cross:center">
+                        登录
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#forgetPassword" data-index="2" class="login-link txt_w h_100" flex="main:center cross:center">
+                        忘记密码
+                        </a>
+                    </li>
+                </ul>
+                <span class="arrow-now"></span>
+            </div>
+        </div>
+        <div class="login-form-box">
+            <div class="login" id="login">
+                <div class="form-line">
+                    <label class="form-control login" flex="">
+                        <span class="iconTip f14 txt-theme" flex-box="0"><i class="icon-userName"></i></span>
+                        <input type="text" flex-box="1" placeholder="请输入手机号码">
+                    </label>
+                </div>
+                <div class="form-line mt10">
+                    <label class="form-control login" flex="">
+                        <span class="iconTip f14 txt-theme" flex-box="0"><i class="icon-passwd2"></i></span>
+                        <input type="password" flex-box="1" placeholder="请输入登录密码">
+                    </label>
+                </div>
+                <div class="form-line mt10">
+                    <a href="javascript:void (0)" class="btn btn-green">确定</a>
+                </div>
+            </div>
+            <div class="forget-password" id="forgetPassword">
+                <div class="form-line">
+                    <label class="form-control login" flex="">
+                        <span class="iconTip f14 txt-theme" flex-box="0"><i class="icon-userName"></i></span>
+                        <input type="text" flex-box="1" placeholder="请输入手机号码">
+                    </label>
+                </div>
+                <div class="form-line mt10 clearfix">
+                    <div class="col-12-18 no-padding">
+                        <label class="form-control login" flex="">
+                            <span class="iconTip f14 txt-theme" flex-box="0"><i class="icon-voliCode"></i></span>
+                            <input type="password" flex-box="1" placeholder="请输入验证码">
+                        </label>
+                    </div>
+                    <div class="col-5-18 col-offset-1-18 no-padding">
+                        <a href="javascript:void (0)" class="btn btn-yellow txt_b f6 getVoliCode">获取验证码</a>
+                    </div>
+                </div>
+                <div class="form-line mt10">
+                    <label class="form-control login" flex="">
+                        <span class="iconTip f14 txt-theme" flex-box="0"><i class="icon-passwd2"></i></span>
+                        <input type="password" flex-box="1" placeholder="请输入登录密码">
+                    </label>
+                </div>
+                <div class="form-line mt10">
+                    <a href="../index/index.html" class="btn btn-green">确定</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../js/main.js"></script>
+<script src="../js/each/login.js"></script>
+</html>

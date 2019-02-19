@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人信息</title>
+    <link rel="stylesheet" href="personInformation.css">
+    <script src="../../js/baseJs/jquery.js"></script>
+    <script src="../../js/baseJs/flexible.js"></script>
+    <script src="../../js/baseJs/flexible_css.js"></script>
+</head>
+<body flex="dir:top">
+<header flex-box="0" flex="dir:left" font="16">
+    <a href="javascript:history.go(-1) " flex-box="0">返回</a>
+    <div class="title" flex-box="1">问答详情</div>
+    <a href="javascript:void(0)" flex-box="0"></a>
+</header>
+<section flex-box="1" class="personInformation can-scroll" font="14">
+    <div class="information">
+        <div class="relativeBox">
+            <a href="javascript:void(0)" class="photo" flex="box:mean cross:center">
+                <div class="user">头像</div>
+                <div class="pic">
+                    <img src="../../img/boy.png">
+                    <span>
+                        <i class="icon-照相机"></i>
+                        <input type="file" class="testSend">
+                    </span>
+                </div>
+            </a>
+            <div class="one" flex="cross:center">
+                <span flex-box="0">姓       名 :</span>
+                <input type="text" placeholder="请输入你的姓名">
+            </div>
+            <div class="one" flex="cross:center">
+                <span flex-box="0">职       称 :</span>
+                <input type="text" placeholder="请输入你的姓名">
+            </div>
+            <div class="one" flex="cross:center">
+                <span flex-box="0">联系方式 :</span>
+                <input type="text" placeholder="请输入你的姓名">
+            </div>
+            <div class="one" flex="cross:center">
+                <span flex-box="0">个人简介 :</span>
+            </div>
+            <textarea class="text" placeholder="请输入文字" contenteditable="true"></textarea>
+            <div class="sendBtn" flex="cross:center main:center">确认提交</div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

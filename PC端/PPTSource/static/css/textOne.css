@@ -1,0 +1,26 @@
+.textone-page-body {
+  width: 100%;
+  height: calc(100% - 100px);
+  padding: 6% 153px 100px 180px;
+}
+.textone-page-body .music-play {
+  position: absolute;
+  cursor: pointer;
+  top: 20%;
+  right: 5%;
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  background-color: #f5841c;
+  box-shadow: 0px 0px 12px 0px rgba(245, 132, 28, 0.22);
+  border: solid 1px #f1821c;
+  text-align: center;
+}
+.textone-page-body .music-play img {
+  margin-top: 20%;
+  width: 40px;
+  height: 40px;
+}
+.textone-page-body .text-content .item {
+  line-height: 2.5em;
+}

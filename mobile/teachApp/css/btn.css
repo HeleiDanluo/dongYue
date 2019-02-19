@@ -1,0 +1,56 @@
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  border-radius: .15625rem;
+  border: none;
+}
+.btn:focus {
+  outline: 0;
+}
+.btn-default,
+.btn-red,
+.btn-yellow,
+.btn-blue,
+.btn-green {
+  display: block;
+  text-align: center;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  font-size: .875rem;
+}
+.btn-default {
+  background: #dbdbdb;
+  color: #fff;
+}
+.btn-default:active {
+  background: #c2c2c2;
+}
+.btn-red {
+  background: #f43530;
+  color: #fff;
+}
+.btn-red:active {
+  background: #e5120c;
+}
+.btn-yellow {
+  background: #f5b82c;
+  color: #fff;
+}
+.btn-yellow:active {
+  background: #e3a20b;
+}
+.btn-blue {
+  background: #3fbefe;
+  color: #fff;
+}
+.btn-blue:active {
+  background: #0cadfe;
+}
+.btn-green {
+  background: #7cb54a;
+  color: #fff;
+}
+.btn-green:active {
+  background: #63913b;
+}

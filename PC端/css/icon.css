@@ -1,0 +1,365 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?1cy08');
+  src:  url('../fonts/icomoon.eot?1cy08#iefix') format('embedded-opentype'),
+  url('../fonts/icomoon.ttf?1cy08') format('truetype'),
+  url('../fonts/icomoon.woff?1cy08') format('woff'),
+  url('../fonts/icomoon.svg?1cy08#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-lianjie:before {
+  content: "\e900";
+}
+.icon-bianji:before {
+  content: "\e901";
+}
+.icon-chakan:before {
+  content: "\e902";
+}
+.icon-selected-gougou:before {
+  content: "\e903";
+}
+.icon-toRight:before {
+  content: "\e904";
+}
+.icon-toLeft:before {
+  content: "\e905";
+}
+.icon-beikeguanli:before {
+  content: "\e906";
+}
+.icon-jiaojuguanli:before {
+  content: "\e907";
+}
+.icon-zhongkaochengji:before {
+  content: "\e908";
+}
+.icon-addItem:before {
+  content: "\e909";
+}
+.icon-classManage:before {
+  content: "\e90a";
+}
+.icon-costRegister:before {
+  content: "\e90b";
+}
+.icon-delete:before {
+  content: "\e90c";
+}
+.icon-errorTip:before {
+  content: "\e90d";
+}
+.icon-gou-nocked:before {
+  content: "\e90e";
+}
+.icon-guanbi:before {
+  content: "\e90f";
+}
+.icon-jxgl-jtzy:before {
+  content: "\e910";
+}
+.icon-process:before {
+  content: "\e911";
+}
+.icon-tzsj-xssjlr:before {
+  content: "\e912";
+}
+.icon-unitPlan:before {
+  content: "\e913";
+}
+.icon-xinlv:before {
+  content: "\e914";
+}
+.icon-jkda:before {
+  content: "\e915";
+}
+.icon-boyandgirl:before {
+  content: "\e916";
+}
+.icon-ktbg:before {
+  content: "\e917";
+}
+.icon-girl:before {
+  content: "\e918";
+}
+.icon-boy:before {
+  content: "\e919";
+}
+.icon-banjiguanli:before {
+  content: "\e91a";
+}
+.icon-banjikebiao:before {
+  content: "\e91b";
+}
+.icon-baomingguanli:before {
+  content: "\e91c";
+}
+.icon-chengjiguanli:before {
+  content: "\e91d";
+}
+.icon-jihuajindu:before {
+  content: "\e91e";
+}
+.icon-jiatingzuoye:before {
+  content: "\e91f";
+}
+.icon-jiaoxuejihua:before {
+  content: "\e920";
+}
+.icon-jiaoxuejiaoan:before {
+  content: "\e921";
+}
+.icon-richangguanli:before {
+  content: "\e922";
+}
+.icon-xueshengkaoqin:before {
+  content: "\e923";
+}
+.icon-zhangkaochengji:before {
+  content: "\e924";
+}
+.icon-default-head:before {
+  content: "\e925";
+}
+.icon-bjlr:before {
+  content: "\e926";
+}
+.icon-left-jxzy:before {
+  content: "\e927";
+}
+.icon-left-sybz:before {
+  content: "\e928";
+}
+.icon-left-tzsj:before {
+  content: "\e929";
+}
+.icon-left-zzpx:before {
+  content: "\e92a";
+}
+.icon-tzsj-bjsjtj:before {
+  content: "\e92b";
+}
+.icon-jxgl-bmgl:before {
+  content: "\e92c";
+}
+.icon-tzsj-xssjtb:before {
+  content: "\e92d";
+}
+.icon-tzsj-xstzsj:before {
+  content: "\e92e";
+}
+.icon-add:before {
+  content: "\e92f";
+}
+.icon-allSelect:before {
+  content: "\e930";
+}
+.icon-back:before {
+  content: "\e931";
+}
+.icon-backComment:before {
+  content: "\e932";
+}
+.icon-batchUpdate:before {
+  content: "\e933";
+}
+.icon-borrow:before {
+  content: "\e934";
+}
+.icon-broken:before {
+  content: "\e935";
+}
+.icon-classExcel:before {
+  content: "\e936";
+}
+.icon-commentTotal:before {
+  content: "\e937";
+}
+.icon-dec:before {
+  content: "\e938";
+}
+.icon-edit:before {
+  content: "\e939";
+}
+.icon-gradeManage:before {
+  content: "\e93a";
+}
+.icon-group:before {
+  content: "\e93b";
+}
+.icon-hehe:before {
+  content: "\e93c";
+}
+.icon-history:before {
+  content: "\e93d";
+}
+.icon-home:before {
+  content: "\e93e";
+}
+.icon-homeWork:before {
+  content: "\e93f";
+}
+.icon-import:before {
+  content: "\e940";
+}
+.icon-itemSelect:before {
+  content: "\e941";
+}
+.icon-maintain:before {
+  content: "\e942";
+}
+.icon-output:before {
+  content: "\e943";
+}
+.icon-phone:before {
+  content: "\e944";
+}
+.icon-save:before {
+  content: "\e945";
+}
+.icon-schedule:before {
+  content: "\e946";
+}
+.icon-search:before {
+  content: "\e947";
+}
+.icon-setting:before {
+  content: "\e948";
+}
+.icon-stgList:before {
+  content: "\e949";
+}
+.icon-teachManage:before {
+  content: "\e94a";
+}
+.icon-teachPlan:before {
+  content: "\e94b";
+}
+.icon-teachProject:before {
+  content: "\e94c";
+}
+.icon-testOption:before {
+  content: "\e94d";
+}
+.icon-tips:before {
+  content: "\e94e";
+}
+.icon-download:before {
+  content: "\e94f";
+}
+.icon-toolManage:before {
+  content: "\e950";
+}
+.icon-top:before {
+  content: "\e951";
+}
+.icon-totalNum:before {
+  content: "\e952";
+}
+.icon-uploadImg:before {
+  content: "\e953";
+}
+.icon-userHead:before {
+  content: "\e954";
+}
+.icon-voliError:before {
+  content: "\e955";
+}
+.icon-userName:before {
+  content: "\e956";
+}
+.icon-voliCode:before {
+  content: "\e957";
+}
+.icon-voliPass:before {
+  content: "\e958";
+}
+.icon-bjxsgl:before {
+  content: "\e959";
+}
+.icon-tzsjshsb:before {
+  content: "\e95a";
+}
+.icon-passWord:before {
+  content: "\e95b";
+}
+.icon-toolImport:before {
+  content: "\e95c";
+}
+.icon-bjtzsj:before {
+  content: "\e95d";
+}
+.icon-bjsjbb:before {
+  content: "\e95e";
+}
+.icon-njsjdc:before {
+  content: "\e95f";
+}
+.icon-tzsjlrtjsh:before {
+  content: "\e960";
+}
+.icon-gou-cked:before {
+  content: "\e961";
+}
+.icon-up:before {
+  content: "\e962";
+}
+.icon-right:before {
+  content: "\e963";
+}
+.icon-down:before {
+  content: "\e964";
+}
+.icon-spinner:before {
+  content: "\e97a";
+}
+.icon-spinner3:before {
+  content: "\e97c";
+}
+.icon-enlarge2:before {
+  content: "\e98b";
+}
+.icon-bin:before {
+  content: "\e9ac";
+}
+.icon-play2:before {
+  content: "\ea15";
+}
+.icon-pause:before {
+  content: "\ea16";
+}
+.icon-play3:before {
+  content: "\ea1c";
+}
+.icon-pause2:before {
+  content: "\ea1d";
+}
+.icon-volume-medium:before {
+  content: "\ea27";
+}
+.icon-volume-mute2:before {
+  content: "\ea2a";
+}
+.icon-arrow-left:before {
+  content: "\ea38";
+}
+.icon-arrow-left2:before {
+  content: "\ea40";
+}

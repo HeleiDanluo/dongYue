@@ -1,0 +1,97 @@
+html(lang="zh-CN")
+  head
+    include head.jade
+    script(src="../js/echarts.js")
+  body
+    include header2.jade
+    .tiZhiChengJiTongJi.pic
+      .choose
+        .year
+          span.title 学年：
+          span.box
+            span.focus 2017~2018
+            span 2017~2018
+        .grade
+          span.title 年级：
+          span.box
+            span 一年级
+            span 二年级
+            span 三年级
+            span 四年级
+            span 五年级
+            span.focus 所有
+      .sub-choose
+        span.item.one 选择内容：
+          span 
+            a(href="tiZhiChengJiTongJiTableJust.html") 查看成绩构成
+          i &nbsp;&nbsp;/&nbsp;&nbsp;
+          span.active 
+            a(href="tiZhiChengJiTongJiTable.html") 查看成绩统计
+        span.item.two 查看方式：
+          span 
+            a(href="tiZhiChengJiTongJiTable.html") 列表
+          i &nbsp;&nbsp;/&nbsp;&nbsp;
+          span.active 
+            a(href="tiZhiChengJiTongJiPic.html") 图表
+        span.item.three 选择范围：
+          span.active 全部
+          i &nbsp;&nbsp;/&nbsp;&nbsp;
+          span 只看男生
+          i &nbsp;&nbsp;/&nbsp;&nbsp;
+          span 只看女生
+      .pic-content
+        span.title 一年级考核项目：
+        .pic-box
+          .pic-left 2017-2018学年
+          .pic-center
+            .pic 
+              span.one(style="width:25%")
+              span.two(style="width:25%")
+              span.thr(style="width:25%")
+              span.for(style="width:25%")
+            .txt
+              span.one
+                sapn 优秀
+                sapn 25%
+              span.two
+                sapn 良好
+                sapn 25%
+              span.thr
+                sapn 及格
+                sapn 25%
+              span.for
+                sapn 不及格
+                sapn 25%
+          .pic-right
+            span 优秀率
+            span.color 50%
+            span 合格率
+            span.color 50%
+      .pic-content
+        span.title 二年级考核项目：
+        .pic-box
+          .pic-left 2017-2018学年
+          .pic-center
+            .pic 
+              span.one(style="width:25%")
+              span.two(style="width:25%")
+              span.thr(style="width:25%")
+              span.for(style="width:25%")
+            .txt
+              span.one
+                sapn 优秀
+                sapn 25%
+              span.two
+                sapn 良好
+                sapn 25%
+              span.thr
+                sapn 及格
+                sapn 25%
+              span.for
+                sapn 不及格
+                sapn 25%
+          .pic-right
+            span 优秀率
+            span.color 50%
+            span 合格率
+            span.color 50%

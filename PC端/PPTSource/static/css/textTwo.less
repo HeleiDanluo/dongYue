@@ -1,0 +1,65 @@
+.texttwo-page-body{
+  width: 100%;
+  height: calc(~'100% - 100px');
+  padding: 6% 0 0;
+  position: relative;
+  .content{
+    height: 220px;
+    position: absolute;
+    .liubianxing{
+      @myHeight:220px;
+      @genHaoSan:1.73205080;//根号三的接近值
+      width: calc(~'@{genHaoSan} * @{myHeight} / 2');//高度的二分之根号三
+      height: @myHeight;
+      clip-path: polygon(
+        //六个点的坐标
+        0 25%,
+        50% 0,
+        100% 25%,
+        100% 75%,
+        50% 100%,
+        0 75%
+      );
+      float: left;
+      text-align: center;
+      color: #fff;
+      padding-top: 3em;
+      p{
+        font-size: 3em;
+      }
+    }
+    .txt{
+      width: 60%;
+      font-size: 1.8em;
+      line-height: 120%;
+      float: left;
+      padding: 8% 0 0 3%;
+    }
+    &.one{
+      margin-left: calc(~'50% - 95px');
+      .liubianxing{
+        background: #046588;
+      }
+    }
+    &.two{
+      margin-top: 175px;
+      margin-left: calc(~'50% - 195px');
+      .liubianxing{
+        background: #f5841c;
+      }
+      .txt{
+        position: absolute;
+        margin-top: 50px;
+        width: 170%;
+        right: 120%;
+      }
+    }
+    &.three{
+      margin-left: calc(~'50% + 5px');
+      margin-top: 175px;
+      .liubianxing{
+        background: #a0bf0d;
+      }
+    }
+  }
+}

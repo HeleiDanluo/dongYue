@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <title>成绩列表</title>
+    <meta id="viewport" name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/resize.js"></script>
+    <link rel="stylesheet" href="../css/appMain.css">
+    <link rel="stylesheet" href="../css/flex.css">
+    <link rel="stylesheet" href="../css/icon.css">
+</head>
+<body ontouchstart="" class="position">
+<div class="pageContent back-gray" flex="dir:top">
+    <div class="header-nav-bar back-white" flex-box="0">
+        <div flex="dir:left box:justify" class="h_100">
+            <a class="left-keys backBtn txt-theme" href="../login/login.html" flex="main:center cross:center">
+                <i class="icon-leftArrow txt-theme"></i>
+            </a>
+            <a href="javascript:void (0)" class="title-div f10 selectWeek" flex="main:center cross:center">
+                <span>请选择班级</span><i class="animate icon-dropDown"></i></a>
+            <a class="right-keys" flex="main:center cross:center">
+            </a>
+        </div>
+    </div>
+    <div class="page-section" flex-box="1">
+        <div class="student-msg-list">
+            <ul class="student-msg-ul f8 l_h28">
+                <li class="student-msg-item" data-grade="90">
+                    <a href="studentMsgDetail.html" class="clearfix">
+                        <div class="col-4-18 t_c">
+                            <i class="icon-userHead"></i><!--
+                            --><span class="student-name">小明小明</span>
+                        </div>
+                        <div class="col-14-18">
+                            <div class="h_100" flex="main:center cross:center">
+                                <div class="process-line">
+                                    <span class="now-data"></span>
+                                    <span class="data-num f7 txt_w"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="student-msg-item" data-grade="80">
+                    <a href="javascript:void (0)" class="clearfix">
+                        <div class="col-4-18 t_c">
+                            <i class="icon-userHead"></i><!--
+                            --><span class="student-name">小明小明</span>
+                        </div>
+                        <div class="col-14-18">
+                            <div class="h_100" flex="main:center cross:center">
+                                <div class="process-line">
+                                    <span class="now-data"></span>
+                                    <span class="data-num f7 txt_w"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="student-msg-item" data-grade="75">
+                    <a href="javascript:void (0)" class="clearfix">
+                        <div class="col-4-18 t_c">
+                            <i class="icon-userHead"></i><!--
+                            --><span class="student-name">小明小明</span>
+                        </div>
+                        <div class="col-14-18">
+                            <div class="h_100" flex="main:center cross:center">
+                                <div class="process-line">
+                                    <span class="now-data"></span>
+                                    <span class="data-num f7 txt_w"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="student-msg-item" data-grade="49">
+                    <a href="javascript:void (0)" class="clearfix">
+                        <div class="col-4-18 t_c">
+                            <i class="icon-userHead"></i><!--
+                            --><span class="student-name">小明小明</span>
+                        </div>
+                        <div class="col-14-18">
+                            <div class="h_100" flex="main:center cross:center">
+                                <div class="process-line">
+                                    <span class="now-data"></span>
+                                    <span class="data-num f7 txt_w"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="student-msg-item" data-grade="50">
+                    <a href="javascript:void (0)" class="clearfix">
+                        <div class="col-4-18 t_c">
+                            <i class="icon-userHead"></i><!--
+                            --><span class="student-name">小明小明</span>
+                        </div>
+                        <div class="col-14-18">
+                            <div class="h_100" flex="main:center cross:center">
+                                <div class="process-line">
+                                    <span class="now-data"></span>
+                                    <span class="data-num f7 txt_w"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="student-msg-item" data-grade="60">
+                    <a href="javascript:void (0)" class="clearfix">
+                        <div class="col-4-18 t_c">
+                            <i class="icon-userHead"></i><!--
+                            --><span class="student-name">小明小明</span>
+                        </div>
+                        <div class="col-14-18">
+                            <div class="h_100" flex="main:center cross:center">
+                                <div class="process-line">
+                                    <span class="now-data"></span>
+                                    <span class="data-num f7 txt_w"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="student-msg-item" data-grade="30">
+                    <a href="javascript:void (0)" class="clearfix">
+                        <div class="col-4-18 t_c">
+                            <i class="icon-userHead"></i><!--
+                            --><span class="student-name">小明小明</span>
+                        </div>
+                        <div class="col-14-18">
+                            <div class="h_100" flex="main:center cross:center">
+                                <div class="process-line">
+                                    <span class="now-data"></span>
+                                    <span class="data-num f7 txt_w"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="student-msg-item" data-grade="88">
+                    <a href="javascript:void (0)" class="clearfix">
+                        <div class="col-4-18 t_c">
+                            <i class="icon-userHead"></i><!--
+                            --><span class="student-name">小明小明</span>
+                        </div>
+                        <div class="col-14-18">
+                            <div class="h_100" flex="main:center cross:center">
+                                <div class="process-line">
+                                    <span class="now-data"></span>
+                                    <span class="data-num f7 txt_w"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="student-msg-item" data-grade="89">
+                    <a href="javascript:void (0)" class="clearfix">
+                        <div class="col-4-18 t_c">
+                            <i class="icon-userHead"></i><!--
+                            --><span class="student-name">小明小明</span>
+                        </div>
+                        <div class="col-14-18">
+                            <div class="h_100" flex="main:center cross:center">
+                                <div class="process-line">
+                                    <span class="now-data"></span>
+                                    <span class="data-num f7 txt_w"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="student-msg-item" data-grade="90">
+                    <a href="javascript:void (0)" class="clearfix">
+                        <div class="col-4-18 t_c">
+                            <i class="icon-userHead"></i><!--
+                            --><span class="student-name">小明小明</span>
+                        </div>
+                        <div class="col-14-18">
+                            <div class="h_100" flex="main:center cross:center">
+                                <div class="process-line">
+                                    <span class="now-data"></span>
+                                    <span class="data-num f7 txt_w"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="student-msg-item" data-grade="95">
+                    <a href="javascript:void (0)" class="clearfix">
+                        <div class="col-4-18 t_c">
+                            <i class="icon-userHead"></i><!--
+                            --><span class="student-name">小明小明</span>
+                        </div>
+                        <div class="col-14-18">
+                            <div class="h_100" flex="main:center cross:center">
+                                <div class="process-line">
+                                    <span class="now-data"></span>
+                                    <span class="data-num f7 txt_w"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="student-msg-item" data-grade="25">
+                    <a href="javascript:void (0)" class="clearfix">
+                        <div class="col-4-18 t_c">
+                            <i class="icon-userHead"></i><!--
+                            --><span class="student-name">小明小明</span>
+                        </div>
+                        <div class="col-14-18">
+                            <div class="h_100" flex="main:center cross:center">
+                                <div class="process-line">
+                                    <span class="now-data"></span>
+                                    <span class="data-num f7 txt_w"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="student-msg-item" data-grade="55">
+                    <a href="javascript:void (0)" class="clearfix">
+                        <div class="col-4-18 t_c">
+                            <i class="icon-userHead"></i><!--
+                            --><span class="student-name">小明小明</span>
+                        </div>
+                        <div class="col-14-18">
+                            <div class="h_100" flex="main:center cross:center">
+                                <div class="process-line">
+                                    <span class="now-data"></span>
+                                    <span class="data-num f7 txt_w"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="student-msg-item" data-grade="68">
+                    <a href="javascript:void (0)" class="clearfix">
+                        <div class="col-4-18 t_c">
+                            <i class="icon-userHead"></i><!--
+                            --><span class="student-name">小明小明</span>
+                        </div>
+                        <div class="col-14-18">
+                            <div class="h_100" flex="main:center cross:center">
+                                <div class="process-line">
+                                    <span class="now-data"></span>
+                                    <span class="data-num f7 txt_w"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="student-msg-item" data-grade="75">
+                    <a href="javascript:void (0)" class="clearfix">
+                        <div class="col-4-18 t_c">
+                            <i class="icon-userHead"></i><!--
+                            --><span class="student-name">小明小明</span>
+                        </div>
+                        <div class="col-14-18">
+                            <div class="h_100" flex="main:center cross:center">
+                                <div class="process-line">
+                                    <span class="now-data"></span>
+                                    <span class="data-num f7 txt_w"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="dropDown-menu-mask">
+    <div class="menu-content back-white">
+        <div class="week-option-list f8 clearfix">
+            <a href="javascript:void (0)" class="week-option-item disabled-btn">第一教学周</a>
+            <a href="javascript:void (0)" class="week-option-item">第一教学周</a>
+            <a href="javascript:void (0)" class="week-option-item">第一教学周</a>
+            <a href="javascript:void (0)" class="week-option-item">第一教学周</a>
+            <a href="javascript:void (0)" class="week-option-item">第一教学周</a>
+            <a href="javascript:void (0)" class="week-option-item">第一教学周</a>
+            <a href="javascript:void (0)" class="week-option-item">第一教学周</a>
+            <a href="javascript:void (0)" class="week-option-item">第一教学周</a>
+            <a href="javascript:void (0)" class="week-option-item">第一教学周</a>
+            <a href="javascript:void (0)" class="week-option-item">第一教学周</a>
+            <a href="javascript:void (0)" class="week-option-item">第一教学周</a>
+            <a href="javascript:void (0)" class="week-option-item">第一教学周</a>
+            <a href="javascript:void (0)" class="week-option-item">第一教学周</a>
+            <a href="javascript:void (0)" class="week-option-item">第一教学周</a>
+            <a href="javascript:void (0)" class="week-option-item">第一教学周</a>
+            <a href="javascript:void (0)" class="week-option-item">第一教学周</a>
+            <a href="javascript:void (0)" class="week-option-item">第一教学周</a>
+            <a href="javascript:void (0)" class="week-option-item">第一教学周</a>
+            <a href="javascript:void (0)" class="week-option-item">第一教学周</a>
+        </div>
+    </div>
+</div>
+<script src="../js/main.js"></script>
+<script src="../js/each/studentMsg.js"></script>
+</body>
+</html>

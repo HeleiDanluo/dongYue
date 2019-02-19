@@ -1,0 +1,27 @@
+.btn-big {
+  display: inline-block;
+  height: 38px;
+  width: 318px;
+  line-height: 38px;
+  text-align: center;
+  cursor: pointer;
+}
+.btn-small {
+  display: inline-block;
+  height: 38px;
+  width: 99px;
+  line-height: 38px;
+  text-align: center;
+  cursor: pointer;
+}
+.input-big {
+  display: inline-block;
+  height: 38px;
+  width: 318px;
+  line-height: 38px;
+  padding-left: 10px;
+}
+.btn-green {
+  color: #fff;
+  background-color: #82b64a;
+}

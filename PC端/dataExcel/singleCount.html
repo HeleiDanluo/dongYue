@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta HTTP-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/icon.css">
+    <link rel="stylesheet" href="../plugins/animate.min.css">
+    <link rel="stylesheet" href="../css/scroll.css">
+    <link rel="stylesheet" href="../plugins/datepicker.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../plugins/mousewheel.js"></script>
+    <script src="../plugins/jquery.slimscroll.js"></script>
+    <script src="../js/pageInit.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../plugins/echart.js"></script>
+    <title>数据报表</title>
+</head>
+
+<body>
+    <div class="pageContent">
+        <div class="left-menu">
+            <a class="logo-box">
+                <span class="logo-img">
+                </span>
+            </a>
+            <ul class="menu-list f16">
+                <li class=""><a href="" class=""><i class="icon-home">&nbsp;</i>主页</a></li>
+                <li class="current"><a href="" class=""><i class="icon-group">&nbsp;</i>教研群组</a></li>
+                <li class=""><a href="" class=""><i class="icon-teachManage">&nbsp;</i>教学管理</a></li>
+                <li class=""><a href="" class=""><i class="icon-import">&nbsp;</i>数据录入</a></li>
+                <li class=""><a href="" class=""><i class="icon-homeWork">&nbsp;</i>家庭作业</a></li>
+            </ul>
+            <ul class="bottom-menu menu-list f16">
+                <li class=""><a href="" class=""><i class="icon-add">&nbsp;</i>收藏</a></li>
+                <li class=""><a href="" class=""><i class="icon-setting">&nbsp;</i>设置</a></li>
+                <li class=""><a href="" class=""><i class="icon-back">&nbsp;</i>返回启动页</a></li>
+            </ul>
+        </div>
+        <div class="rightPage">
+            <div class="page-head">
+                <div class="bread-nav-box txt_w">
+                    <a href="javascript:;"><b>数据报表</b></a>
+                </div>
+                <div class="head-menu">
+                    <ul class="head-menu-ul f16">
+                        <li class="head-menu-item"><a href="javascript:;" class="txt_w">退出</a></li>
+                        <li class="head-menu-item"><a href="javascript:;" class="txt_w">账户信息<i class="icon-hehe"></i></a>
+                        </li>
+                        <li class="head-menu-item"><a href="javascript:;" class="txt_w">欢迎页</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-section">
+                <p class="page-title form-inline f18">班级数据</p>
+                <div class="top-option clearfix mt10">
+                    <div class="col-8-16 no-padding">
+                        <div class="option-btn-grp">
+                            <a href="" class="current">学生列表</a>
+                            <a href="">单项统计</a>
+                        </div>
+                    </div>
+                    <div class="col-7-16 no-padding">
+                        <label for="" class="form-search">
+                            <i class="icon-search f18"></i>
+                            <input type="text" placeholder="请输入搜索内容" />
+                        </label>
+                    </div>
+                    <div class="col-1-16 no-padding">
+                        <a href="javascript:void (0)" class="blockBtn themeBtn">搜索</a>
+                    </div>
+                </div>
+                <div class="select-menu mt40 back_white">
+                    <div class="select-menu-line clearfix">
+                        <div class="col-1-16"><b>学年：</b></div>
+                        <div class="col-15-16">
+                            <div class="link-box">
+                                <a href="javascript:void(0)" class=" current">2015-2016</a>
+                                <a href="javascript:void(0)" class="">2016-2017</a>
+                                <a href="javascript:void(0)" class="">所有</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="select-menu-line clearfix">
+                        <div class="col-1-16"><b>年级：</b></div>
+                        <div class="col-15-16">
+                            <div class="link-box">
+                                <a href="javascript:void(0)" class=" current">一年级</a>
+                                <a href="javascript:void(0)">一年级</a>
+                                <a href="javascript:void(0)">一年级</a>
+                                <a href="javascript:void(0)">一年级</a>
+                                <a href="javascript:void(0)">一年级</a>
+                                <a href="javascript:void(0)">一年级</a>
+                                <a href="javascript:void(0)">所有</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="select-menu-line clearfix">
+                        <div class="col-1-16"><b>班级：</b></div>
+                        <div class="col-15-16">
+                            <div class="link-box">
+                                <a href="javascript:void(0)" class=" current">(1)班级</a>
+                                <a href="javascript:void(0)">（2）班级</a>
+                                <a href="javascript:void(0)">（3）班级</a>
+                                <a href="javascript:void(0)">（4）班级</a>
+                                <a href="javascript:void(0)">（5）班级</a>
+                                <a href="javascript:void(0)">（6）班级</a>
+                                <a href="javascript:void(0)">所有</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="select-menu-line clearfix">
+                        <div class="col-1-16"><b>指标：</b></div>
+                        <div class="col-15-16">
+                            <div class="link-box sportItem">
+                                <a href="javascript:void(0)" class=" current">体重指标</a>
+                                <a href="javascript:void(0)">肺活量</a>
+                                <a href="javascript:void(0)">坐位体前屈</a>
+                                <a href="javascript:void(0)">一分钟跳绳</a>
+                                <a href="javascript:void(0)">一分钟仰卧起坐</a>
+                                <a href="javascript:void(0)">50*8往返跑</a>
+                                <a href="javascript:void(0)">立定跳远</a>
+                                <a href="javascript:void(0)">引体向上</a>
+                                <a href="javascript:void(0)">1000米跑</a>
+                                <a href="javascript:void(0)">800米跑</a>
+                                <a href="javascript:void(0)">所有</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-count-chart mt40">
+                </div>
+                
+                
+                    <!-- 弹窗html -->
+                
+                    <div class="table-box" style="padding:20px">
+                        <a href="/planHistory/teachPlanListHistory.do" class="btn themeBtn">导出到文件</a>
+                        <br>
+                        <br>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>学籍号</td>
+                                    <td>班级</td>
+                                    <td>姓名</td>
+                                    <td>性别</td>
+                                    <td>BMI指数</td>
+                                    <td>得分</td>
+                                    <td>等级</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>G111**********0123</td>
+                                    <td>四年级(1)班</td>
+                                    <td><a href="javascript:void(0);" onclick="window.open('/teachingComment/studentIndex.do?studentEvalId=47331')"
+                                            class="color-blue">袁宇</a></td>
+                                    <td>女</td>
+                                    <td>22</td>
+                                    <td>100</td>
+                                    <td>正常</td>
+                                </tr>
+                                <tr>
+                                    <td>G111**********0123</td>
+                                    <td>四年级(1)班</td>
+                                    <td><a href="javascript:void(0);" onclick="window.open('/teachingComment/studentIndex.do?studentEvalId=47331')"
+                                            class="color-blue">袁宇</a></td>
+                                    <td>女</td>
+                                    <td>22</td>
+                                    <td>100</td>
+                                    <td>正常</td>
+                                </tr>
+                                <tr>
+                                    <td>G111**********0123</td>
+                                    <td>四年级(1)班</td>
+                                    <td><a href="javascript:void(0);" onclick="window.open('/teachingComment/studentIndex.do?studentEvalId=47331')"
+                                            class="color-blue">袁宇</a></td>
+                                    <td>女</td>
+                                    <td>22</td>
+                                    <td>100</td>
+                                    <td>正常</td>
+                                </tr>
+                                <tr>
+                                    <td>G111**********0123</td>
+                                    <td>四年级(1)班</td>
+                                    <td><a href="javascript:void(0);" onclick="window.open('/teachingComment/studentIndex.do?studentEvalId=47331')"
+                                            class="color-blue">袁宇</a></td>
+                                    <td>女</td>
+                                    <td>22</td>
+                                    <td>100</td>
+                                    <td>正常</td>
+                                </tr>
+                                <tr>
+                                    <td>G111**********0123</td>
+                                    <td>四年级(1)班</td>
+                                    <td><a href="javascript:void(0);" onclick="window.open('/teachingComment/studentIndex.do?studentEvalId=47331')"
+                                            class="color-blue">袁宇</a></td>
+                                    <td>女</td>
+                                    <td>22</td>
+                                    <td>100</td>
+                                    <td>正常</td>
+                                </tr>
+                                <tr>
+                                    <td>G111**********0123</td>
+                                    <td>四年级(1)班</td>
+                                    <td><a href="javascript:void(0);" onclick="window.open('/teachingComment/studentIndex.do?studentEvalId=47331')"
+                                            class="color-blue">袁宇</a></td>
+                                    <td>女</td>
+                                    <td>22</td>
+                                    <td>100</td>
+                                    <td>正常</td>
+                                </tr>
+                                <tr>
+                                    <td>G111**********0123</td>
+                                    <td>四年级(1)班</td>
+                                    <td><a href="javascript:void(0);" onclick="window.open('/teachingComment/studentIndex.do?studentEvalId=47331')"
+                                            class="color-blue">袁宇</a></td>
+                                    <td>女</td>
+                                    <td>22</td>
+                                    <td>100</td>
+                                    <td>正常</td>
+                                </tr>
+                                <tr>
+                                    <td>G111**********0123</td>
+                                    <td>四年级(1)班</td>
+                                    <td><a href="javascript:void(0);" onclick="window.open('/teachingComment/studentIndex.do?studentEvalId=47331')"
+                                            class="color-blue">袁宇</a></td>
+                                    <td>女</td>
+                                    <td>22</td>
+                                    <td>100</td>
+                                    <td>正常</td>
+                                </tr>
+                                <tr>
+                                    <td>G111**********0123</td>
+                                    <td>四年级(1)班</td>
+                                    <td><a href="javascript:void(0);" onclick="window.open('/teachingComment/studentIndex.do?studentEvalId=47331')"
+                                            class="color-blue">袁宇</a></td>
+                                    <td>女</td>
+                                    <td>22</td>
+                                    <td>100</td>
+                                    <td>正常</td>
+                                </tr>
+                                <tr>
+                                    <td>G111**********0123</td>
+                                    <td>四年级(1)班</td>
+                                    <td><a href="javascript:void(0);" onclick="window.open('/teachingComment/studentIndex.do?studentEvalId=47331')"
+                                            class="color-blue">袁宇</a></td>
+                                    <td>女</td>
+                                    <td>22</td>
+                                    <td>100</td>
+                                    <td>正常</td>
+                                </tr>
+                                <tr>
+                                    <td>G111**********0123</td>
+                                    <td>四年级(1)班</td>
+                                    <td><a href="javascript:void(0);" onclick="window.open('/teachingComment/studentIndex.do?studentEvalId=47331')"
+                                            class="color-blue">袁宇</a></td>
+                                    <td>女</td>
+                                    <td>22</td>
+                                    <td>100</td>
+                                    <td>正常</td>
+                                </tr>
+                                <tr>
+                                    <td>G111**********0123</td>
+                                    <td>四年级(1)班</td>
+                                    <td><a href="javascript:void(0);" onclick="window.open('/teachingComment/studentIndex.do?studentEvalId=47331')"
+                                            class="color-blue">袁宇</a></td>
+                                    <td>女</td>
+                                    <td>22</td>
+                                    <td>100</td>
+                                    <td>正常</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script src="../plugins/alert.js"></script>
+    <script src="../js/each/singleCount.js"></script>
+</body>
+
+</html>

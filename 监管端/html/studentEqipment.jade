@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+html(lang="zh-CN")
+  head
+    include head.jade
+    <script>
+    $(function(){
+    $('.leftNav>ul>li').removeClass('focus')
+    $('.leftNav>ul>li').eq(1).addClass('focus')
+    $('.leftNav>ul>li>ul>li').removeClass('focus')
+    $('.leftNav>ul>li>ul>li').eq(3).addClass('focus')
+    })  
+    </script> 
+  body
+    include header2.jade
+    .studentEqipment
+      .choosee
+        span 选择范围:
+        ul(class="address clearfix")
+          li(class="btn-small focus") 全部
+          li(class="btn-small sheng")
+            span 省
+            ul(class="btn-small")
+              .limit
+                
+          li(class="btn-small shi")
+            span 市
+            ul(class="btn-small")
+              .limit
+                li(class="btn-small") 请先选择省
+          li(class="btn-small qu")
+            span 区/县
+            ul(class="btn-small")
+              .limit
+                li(class="btn-small") 请先选择市
+      .choose        
+        span 关键词搜索:
+        input(class="time btn-big"
+        placeholder="请输入关键词")
+        input(type="button"
+          class="btn-small btn-green"
+          value="搜索")
+      .healthyBox
+        .top
+          span(class="left") 学校课程课时
+        .center
+          .row
+            span(class="num") 序号
+            span(class="school") 学校名称
+            span(class="category") 巡查时间
+            span(class="category") 固定器材(数量)
+            span(class="category") 消耗器材(数量)
+            span(class="cb") 检查问题器材教具(数量)
+            span(class="handle") 操作
+          .row.sp
+            span(class="num") 1
+            span(class="school") 测试小学
+            span(class="category") 2017-08-23
+            span(class="category") 2086
+            span(class="category") 12086
+            span(class="cb red")  12
+            span(class="handle") 
+              a(href="./equipmentDetails.html") 查看更多 
+          .row.sp
+            span(class="num") 1
+            span(class="school") 测试小学
+            span(class="category") 2017-08-23
+            span(class="category") 2086
+            span(class="category") 12086
+            span(class="cb red")  12
+            span(class="handle")
+              a(href="./equipmentDetails.html") 查看更多 
+      .mydataChoose
+          ul.num
+            
+          select
+            option(value="1") 1
+            option(value="2") 2
+            option(value="3") 3
+            option(value="4") 4
+            option(value="5") 5
+            option(value="6") 6
+            option(value="7") 7
+          span.left 跳转到
+            input
+          span.right
+            确定   
+
+          
+

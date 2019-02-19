@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>动跃数据分析</title>
+  <link rel="stylesheet" href="../css/main.css" />
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/each/healthyList.js"></script>
+  <script src="../js/each/dataChoose.js"></script>
+  <script src="../js/each/cityChoose.js"></script>
+  <script src="../js/public.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo">
+      <img src="../images/logo.png" alt="" />
+      <span class="name">动跃科技数据分析平台</span>
+    </div>
+    <div class="user">
+      <a href="#" class="name">测试名字</a>
+      <a href="./findPass.html" class="pass">
+        <i class="icon-xgmm"></i>密码设置</a>
+      <a href="#" class="logout">
+        <i class="icon-logout"></i>退出</a>
+    </div>
+  </div>
+  <div class="leftNav">
+    <ul>
+      <li class="focus">
+        <i class="icon-home"></i>
+        <a href="./findSchool.html">查找学校</a>
+      </li>
+      <li class="show">
+        <i class="icon-sjfx"></i>
+        <span>数据分析</span>
+        <i class="icon-xia"></i>
+        <ul>
+          <li>
+            <a href="./healthyList.html">健康等级分布</a>
+          </li>
+          <li>
+            <a href="./passRate.html">学校成绩分布</a>
+          </li>
+          <li>
+            <a href="./studentClass.html">学校课程课时</a>
+          </li>
+          <li>
+            <a href="./studentEqipment.html">学校器械教具</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="homepage">
+    <div class="caption">圣菲小学
+      <span class="address">四川省成都市双流航空巷</span>
+    </div>
+    <div class="informationBox">
+      <div class="relevantData">
+        <div class="title">相关数据</div>
+        <div class="data">
+          <ul>
+            <li>
+              <div class="top">在校生</div>
+              <div class="bottom">2832
+                <span>人 </span>
+              </div>
+            </li>
+            <li>
+              <div class="top">体育教师</div>
+              <div class="bottom">7
+                <span>人 </span>
+              </div>
+            </li>
+            <li>
+              <div class="top">班级数</div>
+              <div class="bottom">36
+                <span>班 </span>
+              </div>
+            </li>
+            <li>
+              <div class="top">全校总课时数</div>
+              <div class="bottom">2934
+                <span>课时</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="chartList">
+        <div class="left">
+          <div class="title">健康等级分布
+            <a href="./healthyDistribute.html">查看更多</a>
+          </div>
+          <div class="caption">
+            <span>优秀占比:
+              <span class="color_1"></span>
+            </span>
+            <span>良好占比:
+              <span class="color_2"></span>
+            </span>
+            <span>及格占比:
+              <span class="color_3"></span>
+            </span>
+            <span>不及格占比:
+              <span class="color_4"></span>
+            </span>
+          </div>
+          <div class="list">
+            <span style="width:20%" class="color_1">20%</span>
+            <span style="width:40%" class="color_2">40%</span>
+            <span style="width:30%" class="color_3">30%</span>
+            <span style="width:10%" class="color_4">10%</span>
+          </div>
+        </div>
+        <div class="right">
+          <div class="title">达标率</div>
+          <div class="caption">
+            <span>
+              <span class="color_1"></span>
+            </span>
+            <span>
+              <span class=""></span>
+            </span>
+          </div>
+          <div class="list">
+            <span style="width:90%" class="color_1">90%</span>
+            <span style="width:10%" class="color_2">&nbsp;</span>
+          </div>
+        </div>
+        <div class="right">
+          <div class="title">优良率</div>
+          <div class="caption">
+            <span>
+              <span class="color_3"></span>
+            </span>
+            <span>
+              <span class=""></span>
+            </span>
+          </div>
+          <div class="list">
+            <span style="width:60%" class="color_3">60%</span>
+            <span style="width:40%" class="color_4">&nbsp;</span>
+          </div>
+        </div>
+        <div class="right">
+          <div class="title">男女占比</div>
+          <div class="caption">
+            <span>男:
+              <span class="color_1"></span>
+            </span>
+            <span>女:
+              <span class="color_2"></span>
+            </span>
+          </div>
+          <div class="list">
+            <span style="width:42%" class="color_1">42%</span>
+            <span style="width:58%" class="color_2">58%</span>
+          </div>
+        </div>
+      </div>
+      <div class="class">
+        <div class="top">课程开展情况:
+          <a href="./healthyClass.html">查看更多</a>
+        </div>
+        <div class="center">
+          <div class="left">
+            <span>2934</span>
+            <span>课时</span>
+          </div>
+          <div class="right">
+            <div class="top">
+              <ul>
+                <li>篮球</li>
+                <li>田径</li>
+                <li>健美操</li>
+                <li>武术</li>
+                <li>足球</li>
+              </ul>
+            </div>
+            <div class="bottom">
+              <ul>
+                <li>450</li>
+                <li>337</li>
+                <li>621</li>
+                <li>821</li>
+                <li>705</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="equipment">
+        <div class="top">器材教具情况:
+          <a href="./equipmentDetails.html">查看更多</a>
+        </div>
+        <div class="center">
+          <div class="top">
+            <ul>
+              <li>巡查时间</li>
+              <li>固定器材(数量)</li>
+              <li>消耗器材(数量)</li>
+              <li>检查问题器械教具</li>
+            </ul>
+          </div>
+          <div class="bottom">
+            <ul>
+              <li>2017-8-23</li>
+              <li>2086</li>
+              <li>1208</li>
+              <li>121</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

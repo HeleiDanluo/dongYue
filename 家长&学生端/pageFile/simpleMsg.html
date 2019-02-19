@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <script src="../js/flexible/flexible_css.js"></script>
+    <script src="../js/flexible/flexible.js"></script>
+    <link rel="stylesheet" href="../css/studentMain.css">
+    <link rel="stylesheet" href="../js/mobiscroll2/mobiscroll.custom-2.17.0.min.css">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/mobiscroll2/mobiscroll.custom-2.17.0.min.js"></script>
+    <script src="../js/studentMain.js"></script>
+    <title>动跃科技</title>
+</head>
+<body flex="dir:top">
+<header flex-box="0" flex="dir:left" font="16">
+    <a href="javascript:history.go(-1) " flex-box="0">返回</a>
+    <div class="title" flex-box="1"></div>
+    <a href="javascript:void(0)" flex-box="0"></a>
+</header>
+<section flex-box="1" class="">
+    <div class="simple-form-wrapper" font="14">
+        <div class="simple-form-item" flex="cross:center">
+            <span class="label-name" flex-box="0">姓名</span>
+            <input type="text" flex-box="1" placeholder="请输入您的姓名">
+        </div>
+        <div class="simple-form-item" flex="cross:center">
+            <span class="label-name" flex-box="0">生日</span>
+            <input type="text" class="select-birthday" flex-box="1" placeholder="请选择您的生日">
+        </div>
+        <div class="simple-form-item" flex="cross:center">
+            <span class="label-name" flex-box="0">性别</span>
+            <div class="select-box gender" flex-box="1">
+                <label class="radio-select">
+                    <input type="radio" name="gender" value="1">
+                    <span class="select-circle"></span>男
+                </label>
+                <label class="radio-select">
+                    <input type="radio" name="gender" value="0">
+                    <span class="select-circle"></span>女
+                </label>
+            </div>
+        </div>
+        <div class="simple-form-item" flex="cross:center">
+            <span class="label-name" flex-box="0">血型</span>
+            <div class="select-box blood" flex-box="1">
+                <input type="text" readonly class="select-blood" flex-box="1" placeholder="请选择血型">
+                <i class="icon-jiantou"></i>
+            </div>
+        </div>
+        <div class="simple-form-item" flex="cross:center">
+            <span class="label-name" flex-box="0">民族</span>
+            <input type="text" flex-box="1" placeholder="请输入您的民族">
+        </div>
+        <div class="simple-form-item" flex="cross:center">
+            <span class="label-name" flex-box="0">过敏</span>
+            <input type="text" flex-box="1" placeholder="请输入您的过敏史">
+        </div>
+        <div class="simple-form-item" flex="cross:center">
+            <span class="label-name" flex-box="0">左眼视力</span>
+            <input type="number" flex-box="1" placeholder="请输入您的左眼视力（如：5.0）">
+        </div>
+        <div class="simple-form-item" flex="cross:center">
+            <span class="label-name" flex-box="0">右眼视力</span>
+            <input type="number" flex-box="1" placeholder="请输入您的右眼视力（如：5.0）">
+        </div>
+        <div class="simple-form-item" flex="cross:center">
+            <span class="label-name" flex-box="0">脊柱</span>
+            <div class="select-box blood" flex-box="1">
+                <input type="text" readonly class="select-jizhu" flex-box="1" placeholder="请选择脊柱情况">
+                <i class="icon-jiantou f_r"></i>
+            </div>
+        </div>
+        <div class="simple-form-item" flex="cross:center">
+            <span class="label-name" flex-box="0">重要病史</span>
+            <div class="multiSelect-box" flex-box="1">
+                <label class="sick-select">
+                    <input type="checkbox" name="sickHistory" value="0">
+                    <span class="select-square"></span>
+                    <b class="item-name">心脏病</b>
+                </label>
+                <label class="sick-select">
+                    <input type="checkbox" name="sickHistory" value="1">
+                    <span class="select-square"></span>
+                    <b class="item-name">癫痫病</b>
+                </label>
+                <label class="sick-select">
+                    <input type="checkbox" name="sickHistory" value="2">
+                    <span class="select-square"></span>
+                    <b class="item-name">肾病</b>
+                </label>
+                <label class="sick-select">
+                    <input type="checkbox" name="sickHistory" value="3">
+                    <span class="select-square"></span>
+                    <b class="item-name">骨折</b>
+                </label>
+                <label class="sick-select">
+                    <input type="checkbox" name="sickHistory" value="4">
+                    <span class="select-square"></span>
+                    <b class="item-name">低血糖</b>
+                </label>
+                <label class="sick-select">
+                    <input type="checkbox" name="sickHistory" value="5">
+                    <span class="select-square"></span>
+                    <b class="item-name">哮喘</b>
+                </label>
+            </div>
+        </div>
+        <div class="simple-form-item" flex="cross:center">
+            <span class="label-name" flex-box="0">备注</span>
+            <input type="text" flex-box="1" placeholder="如有其他请输入">
+        </div>
+        <ul id="sex-list" style="display: none">  
+            <li>先生</li>  
+            <li>女士</li>  
+        </ul>  
+        <div class="form-submit">
+            <a href="javascript:void(0)" class="btn-full-theme">确定</a>
+        </div>
+    </div>
+    <!-- 血型列表 -->
+    <div class="listWapper blood">
+        <div class="black"></div>
+        <div class="wapper-box">
+            <ul class="wapper-list-content">
+                <li class="wapper-list">A型<i></i></li>
+                <li class="wapper-list">B型<i></i></li>
+                <li class="wapper-list">O型<i></i></li>
+                <li class="wapper-list">AB型<i></i></li>
+                <li class="wapper-list">不知道<i></i></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 脊柱列表 -->
+    <div class="listWapper jiZhu">
+        <div class="black"></div>
+        <div class="wapper-box">
+            <ul class="wapper-list-content">
+                <li class="wapper-list">正常<i></i></li>
+                <li class="wapper-list">侧弯<i></i></li>
+                <li class="wapper-list">驼背<i></i></li>
+                <li class="wapper-list">颈椎曲度异常<i></i></li>
+                <li class="wapper-list">腰椎曲度异常<i></i></li>
+            </ul>   
+        </div>
+    </div>
+</section>
+<footer flex-box="0" flex="dir:left box:mean">
+    <a href="home.html" flex="main:center cross:center"><i class="icon-home" font="24"></i></a>
+    <a href="mine.html" flex="main:center cross:center"><i class="icon-gerzhongxin" font="24"></i></a>
+</footer>
+<script src="../js/each/simpleMsg.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+html(lang="zh-CN")
+  head
+    include head.jade
+    script(type='text/javascript').
+      $(function(){
+        $('.leftNav>ul>li').removeClass('focus')
+        $('.leftNav>ul>li').eq(1).addClass('focus')
+        $('.leftNav>ul>li>ul>li').removeClass('focus')
+        $('.leftNav>ul>li>ul>li').eq(0).addClass('focus')
+      })
+  body
+    include header2.jade
+    .healthyList
+      .choosee
+        span 选择范围:
+        ul(class="address clearfix")
+          li(class="btn-small focus") 全部
+          li(class="btn-small sheng")
+            span 省
+            ul(class="btn-small")
+              .limit
+                
+          li(class="btn-small shi")
+            span 市
+            ul(class="btn-small")
+              .limit
+                li(class="btn-small") 请先选择省
+          li(class="btn-small qu")
+            span 区/县
+            ul(class="btn-small")
+              .limit
+                li(class="btn-small") 请先选择市
+      .choose        
+        span 选择时间:
+        select(class="time btn-big")
+          option(value="2017~2018学年") 2017~2018学年
+          option(value="2017~2018学年") 2017~2018学年
+          option(value="2017~2018学年") 2017~2018学年
+          option(value="2017~2018学年") 2017~2018学年
+          option(value="2017~2018学年") 2017~2018学年
+      .healthyBox
+        .top
+          span(class="left") 学校布置作业统计
+        .title
+          span 2018~2019学年 上学期
+        .center
+          .row
+            span(class="school") 学校名称
+            span(class="category") 学期总课时
+            span(class="category") 已备课课时数
+            span(class="category") 教案修改统计
+            span(class="category") 添加教学反思
+          .row.sp
+            span(class="school")
+              a(href="#") 益州小学
+            span(class="category") 1299
+            span(class="category") 433
+            span(class="category") 465
+            span(class="category") 1299
+          .row.sp
+            span(class="school")
+              a(href="#") 益州小学
+            span(class="category") 1299
+            span(class="category") 433
+            span(class="category") 465
+            span(class="category") 1299
+          .row.sp
+            span(class="school")
+              a(href="#") 益州小学
+            span(class="category") 1299
+            span(class="category") 433
+            span(class="category") 465
+            span(class="category") 1299
+        .see-more
+          a 查看更多
+        .title
+          span 2018~2019学年 下学期
+        .center
+          .row
+            span(class="school") 学校名称
+            span(class="category") 学期总课时
+            span(class="category") 已备课课时数
+            span(class="category") 教案修改统计
+            span(class="category") 添加教学反思
+          .row.sp
+            span(class="school")
+              a(href="#") 益州小学
+            span(class="category") 1299
+            span(class="category") 433
+            span(class="category") 465
+            span(class="category") 1299
+          .row.sp
+            span(class="school")
+              a(href="#") 益州小学
+            span(class="category") 1299
+            span(class="category") 433
+            span(class="category") 465
+            span(class="category") 1299
+        .see-more
+          a 查看更多

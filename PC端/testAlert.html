@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta HTTP-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/icon.css">
+    <link rel="stylesheet" href="plugins/animate.min.css">
+    <link rel="stylesheet" href="plugins/datepicker.css">
+	<link rel="stylesheet" href="css/scroll.css">
+    <script src="js/jquery.min.js"></script>
+	<script src="plugins/mousewheel.js"></script>
+    <script src="plugins/jquery.slimscroll.js"></script>
+    <script src="js/pageInit.js"></script>
+    <script src="js/main.js"></script>
+	<script src="js/baseIsNotNum.js"></script>
+    <title>教学管理</title>
+    <script>
+    </script>
+</head>
+<body>
+
+<div class="alert-test" style="height: 100%;background:#000;color:#fff;">
+    <button onclick="a()">弹窗一</button>
+    <button onclick="b()">弹窗2</button>
+    <input type="text" id="strSrc" value="aDv123456c">
+    <input type="submit" name="" onclick="test()" id="">
+</div>
+
+<script src="plugins/alert.js"></script>
+<script>
+    function a(){
+        Alert.twoBtn({
+            btnLeft:'确认',
+            btnRight:'取消',
+            btnRightGray:true,
+            words:'<div style="color:#fc862f;margin-top:-50px">\
+                        <i class="icon-tips" style="font-size:55px;"></i>\
+                    </div>\
+                    <h4 style="color:#666666;line-height:40px;margin-top:15px;">当前还有（7）个内容没有添加，确认保存吗?</h4>\
+                    <span style="font-size:16px;color:#666666;">您还可以点击<span style="color:#0594d6"> " 编辑 " </span>选择<span style="color:#0594d6"> " 编辑单元计划 " </span>继续添加</span>',
+            callBack:function(){
+                $('#btn-left').click(function(){
+                    alert('点击左边');
+                });
+                $('#btn-right').click(function(){
+                    Alert.removeDialog("formType");
+                });
+            }
+        })
+    }
+    function b(){
+        Alert.twoBtn({
+            btnLeft:'保存并发布',
+            btnRight:'取消',
+            btnRightGray:true,
+            words:'<div style="color:#82b64a;margin-top:-50px">\
+                        <i class="icon-voliPass" style="font-size:55px;"></i>\
+                    </div>\
+                    <h4 style="color:#666666;line-height:30px;margin-top:15px;text-align:left">全部内容已添加完成，点击保存将单元计划内容发布至计划进度，以完成备课</h4>\
+                    <p style="font-size:16px;color:#fc862f;text-align:left;line-height:18px;margin-top:20px;">将单元计划内容发布至计划进度后，会自动填充至每周班级课表，自动完成备课</p>\
+                    <p style="font-size:14px;color:#666666;text-align:left;line-height:18px;margin-top:20px;">您也可以在每周上课前进入<span style="color:#0594d6"> "【教学管理】-【备课】" </span>页面完成</p>',
+            callBack:function(){
+                $('#btn-left').click(function(){
+                    alert('点击左边');
+                });
+                $('#btn-right').click(function(){
+                    Alert.removeDialog("formType");
+                });
+            }
+        })
+    }
+    function test(){
+        var srcStr = $('#strSrc').val().trim();
+        var letterExp=/^[A-Za-z0-9]+$/;
+        var res = false;
+        for(var i=0; i<srcStr.length; i++){
+            if(i < 3){
+                res = isLetter(srcStr[i]);
+                if(!res){
+                    break;
+                }
+            }else if(i<9){
+                res = isNumber(srcStr[i]);
+                if(!res){
+                    break;
+                }
+            }else{
+                res = isLetter(srcStr[i]);
+                if(!res){
+                    break;
+                }
+            }
+        }
+    }
+    //判断大小写字母函数
+    function isLetter(value){
+        var strExp=/^[A-Za-z]+$/;
+        if(strExp.test(value)){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    // 判断数字函数
+    function isNumber(value){
+        if(!isNaN(value)){
+            return true;
+        }else{
+            return false;
+        }
+    }
+</script>
+</body>
+</html>

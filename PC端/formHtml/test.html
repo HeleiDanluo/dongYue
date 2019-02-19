@@ -1,0 +1,70 @@
+
+13:56:32
+南城旧梦丶 2017/10/11 13:56:32
+<div class="alert-box formType animated fadeIn">
+<div class="alert-div form-box back_white animated fadeInDownBig videoBox">
+    <div class="form-head t_r">
+		<div class="col-16-16 no-padding t_l l_h30 f16">
+				$!action.actName
+        </div>
+		<a class="close-btn f18" href="javascript:;">×</a>
+	</div>
+    <div class="form-content no-padding">
+        <div class="video-play clearfix action-player">
+			<input id="actVidUrl" type="hidden" value="${imageServer}/$!action.actVidUrl"/>
+			<input id="actAudUrl" type="hidden" value="${imageServer}/$!action.actAudUrl"/>
+            <video id="videoPlayer" autoplay class="videoPlayer" loop controls ><source src="" type="video/mp4"/> 对不起，您的浏览器版本过低，请升级浏览器版本后进行查看！</video>
+            <audio style="display: none" autoplay id="audioPlayer" class="audioPlayer"  src=""></audio>
+            <div class="control-box l_h36 clearfix VideoControls">
+                <div class="col-4-16 no-padding t_c">
+                    <span class="now-time">00:00:00</span> /
+                    <span class="total-time"></span>
+                </div>
+                <div class="col-9-16">
+                    <div class="process-line">
+                        <div class="played-line"></div>
+                        <span class="dragPlay" draggable="true"></span>
+                    </div>
+                </div>
+                <div class="col-2-16 col-offset-1">
+                    <span class="play-btn control-btn f32"><i class="icon-play3"></i></span>
+                </div>
+            </div>
+            <div class="load">
+                <i class="icon-spinner"></i>
+            </div>
+            <div class="playIcon">
+                <i class="icon-play2"></i>
+            </div>
+        </div>
+        <div class="video-introl">
+            <div class="l_h36 video-link-box clearfix">
+                <div class="col-2-16">
+                    标签：
+                </div>
+                <div class="col-14-16">
+					#foreach($data in $labList)
+                    <a href="javascript:;" class="video-link">$!data</a>
+					#end
+                </div>
+            </div>
+            <div class="action clearfix mt10">
+                <div class="col-2-16">
+                    动作：
+                </div>
+                <div class="col-14-16">
+                   $!action.actSummary
+                </div>
+            </div>
+            <div class="jiqiao clearfix mt10">
+                <div class="col-2-16">
+                    要领：
+                </div>
+                <div class="col-14-16">
+                   $!action.actPoints
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

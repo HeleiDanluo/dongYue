@@ -1,0 +1,329 @@
+@import "../../css/reset";
+@import "../../css/tool";
+@import "../../css/flex";
+@import "../../css/icons";
+@import "../../css/animate";
+
+/* 公共 */
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  font-family: Microsoft YaHei, Helvetica, Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: @lighterDark;
+  position: relative;
+}
+a {
+  color: @lighterDark;
+}
+a:link, a:visited,
+a:hover, a:active {
+  text-decoration: none;
+}
+input, textarea, select {
+  font-family: Microsoft YaHei, Helvetica, Arial, sans-serif;
+  color: @lighterDark;
+}
+.can-scroll {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+header {
+  height: 1.333rem;
+  background: @white;
+  border-bottom: 1px solid @line;
+  a {
+    width: 2.033rem;
+    height: 1.333rem;
+    line-height: 1.333rem;
+    text-align: center;
+  }
+
+  .title {
+    line-height: 1.333rem;
+    text-align: center;
+  }
+}
+section[flex-box] {
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+footer {
+  height: 1.173rem;
+  background: #393A3F;
+  z-index: 10;
+  a {
+    color: @lighterGrey;
+    text-align: center;
+    &.focus{
+      color: @themeColor;
+    }
+    &:not(:first-child) {
+      border-left: 1px solid @line;
+    }
+  }
+}
+
+.relBox{
+  height:100%;
+  width:100%;
+  padding:0 0.467rem;
+}
+
+.tab-menu {
+  height: 1.067rem;
+  background: #fff;
+  a {
+    text-decoration: none;
+    height: 100%;
+    width: 1.533rem;
+    line-height: 1.067rem;
+    text-align: center;
+    margin: 0 0.333rem;
+    color:@lighterGrey;
+    &:hover{
+      text-decoration: none;
+    }
+    &.active {
+      position: relative;
+      color:@themeColor;
+      &:after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 0.073rem;
+        background: @themeColor;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+}
+
+::-webkit-scrollbar{
+  display:none;
+}
+
+  .user {
+    background-color: @white;
+    border-bottom: 1px solid @line;
+    .relativeBox {
+      height: 1.86rem;
+      padding: 0 0.467rem;
+      > h1 {
+        font-size: 0.37rem;
+        margin-right: 0.8rem;
+        font-weight: bold;
+      }
+      > h2 {
+        font-size: 0.37rem;
+        margin-right: 0.8rem;
+        font-weight: bold;
+      }
+      > h3 {
+        font-size: 0.37rem;
+        font-weight: bold;
+      }
+      > h4 {
+        font-size: 0.37rem;
+        margin-left: 1.7rem;
+        text-align: right;
+        color: @themeColor;
+      }
+    }
+  }
+  .nav {
+    background-color: @white;
+    margin-bottom: 0.233rem;
+    .relativeBox {
+      overflow: visible;
+      height: 1.227rem;
+      padding: 0 0.467rem;
+      color: @lighterGrey;
+      text-align: center;
+      > li {
+        position: relative;
+        overflow: visible;
+        font-size: 0.426rem;
+        &.focus {
+          color: #000;
+          &:after {
+            content: '';
+            position: absolute;
+            display: block;
+            height: 3px;
+            width: 70%;
+            left: 15%;
+            top: 160%;
+            background-color: @themeColor;
+          }
+        }
+      }
+    }
+  }
+
+
+.sportsRecipe{
+  .counter{
+    height:1.86rem;
+    background-color: @white;
+    .relativeBox{
+      overflow: visible;
+      padding: 0 0.467rem;
+      .limitBox{
+        width:50%;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling:touch;
+      }
+      ul{
+        width:220%;
+        >li{
+          height:1.06rem;
+          width:1.06rem;
+          -webkit-border-radius:50%;
+          -moz-border-radius:50%;
+          border-radius:50%;
+          line-height: 1.06rem;
+          text-align: center;
+          margin-right:0.467rem;
+          border:1px solid #666;
+          float: left;
+          >a{
+            &.focus{
+              color: #fff;
+              background-color: @themeColor;
+            }
+            display: block;
+            height:100%;
+            width:100%;
+          }
+        }
+      }
+    }
+  }
+  .boxChunk{
+    padding: 0 0.467rem;
+    margin-top:0.467rem;
+    .once{
+      opacity:0;
+    }
+    .chunk{
+      padding:0 0.467rem;
+      background-color: @white;
+      margin-bottom: 0.467rem;
+      .top{
+        height:1.73rem;
+        >div{
+          width:1.5rem;
+          font-weight: bold;
+        }
+        >a{
+          width:1.7rem;
+          margin-left: 0.467rem;
+          font-size: 0.35rem;
+        }
+        .first{
+          color: @lighterGrey;
+          margin-left: 0.233rem;
+        }
+        .second{
+          color: @lighterGrey;
+          margin-left:3rem;
+        }
+      }
+      .bottom{
+        padding-bottom: 0.467rem;
+        >a{
+          position: relative;
+          height: 2rem;
+          width: 2rem;
+          >img{
+            height: 100%;
+            width:100%;
+          }
+          >span{
+            position: absolute;
+            bottom: 0;
+            left:0;
+            background-color: #000;
+            color: white;
+            width:100%;
+            height:0.5rem;
+            text-align: center;
+            line-height: 0.5rem;
+          }
+        }
+        .detail{
+          margin-left:0.467rem;
+          >h1{
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+          }
+          >input{
+            padding: 0.1rem 0;
+            color: @lighterGrey;
+          }
+        }
+      }
+    }
+  }
+  .addBox{
+    height:1.03rem;
+    padding:0 0.467rem;
+    margin-bottom: 0.467rem;
+    .add{
+      height:100%;
+      background-color: @white;
+      >i{
+        color: @themeColor;
+      }
+      >span{
+        margin-left: 0.1rem;
+        font-weight: bold;
+      }
+    }
+  }
+  .sendBox{
+    height:1.03rem;
+    padding:0 0.467rem;
+    margin-bottom: 1rem;
+    .send{
+      height:100%;
+      background-color: @themeColor;
+      -webkit-border-radius:0.1rem;
+      -moz-border-radius:0.1rem;
+      border-radius:0.1rem;
+      >span{
+        color: @white;
+      }
+    }
+  }
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: #C6C6C6;
+  font-size: 0.3rem;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #C6C6C6;
+  font-size: 0.3rem;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #C6C6C6;
+  font-size: 0.3rem;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #C6C6C6;
+  font-size: 0.3rem;
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8"></meta>
+
+  <title>动跃数据分析</title>
+
+  <link rel="stylesheet" href="../css/main.css"></link>
+
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/each/healthyList.js"></script>
+  <script src="../js/each/dataChoose.js"></script>
+  <script src="../js/each/cityChoose.js"></script>
+  <script src="../js/public.js"></script>
+  <script src="../js/echarts.js"></script>
+  <script src="../js/each/healthyDistribute.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo">
+      <img src="../images/logo.png" alt="">
+
+      <span class="name">动跃科技数据分析平台</span>
+    </div>
+
+    <div class="user">
+      <a href="#" class="name">测试名字</a>
+
+      <a href="./findPass.html" class="pass">
+        <i class="icon-xgmm"></i>
+        密码设置
+      </a>
+
+      <a href="#" class="logout">
+        <i class="icon-logout"></i>
+        退出
+      </a>
+    </div>
+  </div>
+
+  <div class="leftNav">
+    <ul>
+      <li class="focus">
+        <i class="icon-home"></i>
+
+        <a href="./findSchool.html">查找学校</a>
+      </li>
+
+      <li class="show">
+        <i class="icon-sjfx"></i>
+
+        <span>数据分析</span>
+
+        <i class="icon-xia"></i>
+
+        <ul>
+          <li>
+            <a href="./healthyList.html">健康等级分布</a>
+          </li>
+
+          <li>
+            <a href="./passRate.html">学校成绩分布</a>
+          </li>
+
+          <li>
+            <a href="./studentClass.html">学校课程课时</a>
+          </li>
+
+          <li>
+            <a href="./studentEqipment.html">学校器械教具</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="healthyDistribute">
+    <div class="choose">
+      <div class="year">
+        <span class="title">学年</span>
+
+        <span class="box">
+          <span class="focus">2017~2018</span>
+
+          <span>2017~2018</span>
+        </span>
+      </div>
+
+      <div class="grade">
+        <span class="title">年级</span>
+
+        <span class="box">
+          <span>一年级</span>
+
+          <span>二年级</span>
+
+          <span>三年级</span>
+
+          <span>四年级</span>
+
+          <span>五年级</span>
+
+          <span class="focus">所有</span>
+        </span>
+      </div>
+
+      <div class="class">
+        <span class="title">班级</span>
+
+        <span class="box">
+          <span>三年级(1)班</span>
+
+          <span>三年级(1)班</span>
+
+          <span>三年级(1)班</span>
+
+          <span>三年级(1)班</span>
+
+          <span>三年级(1)班</span>
+
+          <span class="focus">所有</span>
+        </span>
+      </div>
+
+      <div class="limit">
+        <span class="title">指标</span>
+
+        <span class="box">
+          <span class="focus">体重指标</span>
+
+          <span>肺活量</span>
+
+          <span>坐位体前屈</span>
+
+          <span>一分钟跳绳</span>
+
+          <span>一分钟仰卧起左</span>
+
+          <span>所有</span>
+        </span>
+      </div>
+    </div>
+
+    <div class="chart">
+      <div class="chartTitle">体重指标图表</div>
+
+      <div class="chartBox"></div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+html(lang="zh-CN")
+  head
+    include head.jade
+    script(src="../js/echarts.js")
+    script(src="../js/each/healthyDistribute.js")
+  body
+    include header2.jade
+    .healthyDistribute
+      .school-title 圣菲小学
+      .choose
+        .year
+          span.title 学年：
+          span.box
+            span.focus 2017~2018
+            span 2017~2018
+        .grade
+          span.title 年级：
+          span.box
+            span 一年级
+            span 二年级
+            span 三年级
+            span 四年级
+            span 五年级
+            span.focus 所有
+        .class
+          span.title 班级：
+          span.box
+            span 三年级(1)班
+            span 三年级(1)班
+            span 三年级(1)班
+            span 三年级(1)班
+            span 三年级(1)班
+            span.focus 所有
+        .limit
+          span.title 指标：
+          span.box
+            span.focus 体重指标
+            span 肺活量
+            span 坐位体前屈
+            span 一分钟跳绳
+            span 一分钟仰卧起左
+            span 50*80往返跑
+            span 50米
+            span 总成绩
+            span 所有
+      .chart
+        .chartBox#line-chart
+

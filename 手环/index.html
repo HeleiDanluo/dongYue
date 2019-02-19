@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>手环数据</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="index-box">
+    <!-- 头部分 -->
+    <div class="index-top">
+      <!-- 顶部按钮 -->
+      <div class="index-head clearfix">
+
+        <div class="col-6-18">
+          <div class="col-6-18">
+            <div class="btn themeBtn t_c">开始</div>
+          </div>
+          <div class="col-6-18"></div>
+          <div class="col-6-18">
+          </div>
+        </div>
+        
+        <div class="col-6-18">
+          <h2 class="t_c">深圳梅林小学</h2>
+        </div>
+        
+        <div class="col-6-18">
+          <div class="col-6-18"></div>
+          <div class="col-6-18 f_r t_c setting-menu-box">
+            <div class="btn themeBtn">设置</div>
+            <div class="menu-dialog at-right setting-dialog">
+              <div class="md-content my-box-shadow">
+                <ul class="t_l">
+                  <li onclick="banJiXueShengGuanLi()">班级学生管理</li>
+                  <li onclick="tiYuHuoDongXiang()">体育活动项</li>
+                  <li onclick="yunDongXiangMuXuanXiang()">运动项目选项</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-6-18 f_r">
+            <div class="btn themeBtn t_c" onclick="huanBan()">换班</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 菜单 -->
+      <nav class="nav-box t_c">
+        <ul>
+          <li class="menu-item f_l">卡路里</li>
+          <li class="menu-item f_l active">心率</li>
+          <li class="menu-item f_l">运动强度</li>
+          <li class="menu-item f_l">步数</li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- 主体  心率矩阵 -->
+    <div class="matrix-box clearfix">
+      
+      <!-- 红色心率 -->
+      <article class="martrix-item-box level-one f_l">
+        <header>#301</header>
+        <main>
+          <section class="heart-rate clearfix">
+            <div class="heart-rate-num f_l">170</div>
+            <div class="heart-rate-icon f_l">
+                <div class="icon-jkda"></div>
+                <div class="i-txt">bpm</div>
+            </div>
+          </section>
+          <section class="other-details t_c">
+            <span>卡路里180</span>
+            <span>强度158</span>
+            <span>步数56741</span>
+          </section>
+        </main>
+      </article>
+      <article class="martrix-item-box level-one f_l">
+        <header>#301</header>
+        <main>
+          <section class="heart-rate clearfix">
+            <div class="heart-rate-num f_l">170</div>
+            <div class="heart-rate-icon f_l">
+                <div class="icon-jkda"></div>
+                <div class="i-txt">bpm</div>
+            </div>
+          </section>
+          <section class="other-details t_c">
+            <span>卡路里180</span>
+            <span>强度158</span>
+            <span>步数56741</span>
+          </section>
+        </main>
+      </article>
+
+      <!-- 黄色心率 -->
+      <article class="martrix-item-box level-two f_l">
+        <header>#301</header>
+        <main>
+          <section class="heart-rate clearfix">
+            <div class="heart-rate-num f_l">170</div>
+            <div class="heart-rate-icon f_l">
+                <div class="icon-jkda"></div>
+                <div class="i-txt">bpm</div>
+            </div>
+          </section>
+          <section class="other-details t_c">
+            <span>卡路里180</span>
+            <span>强度158</span>
+            <span>步数56741</span>
+          </section>
+        </main>
+      </article>
+
+      <!-- 粉心率 -->
+      <article class="martrix-item-box level-three f_l">
+        <header>#301</header>
+        <main>
+          <section class="heart-rate clearfix">
+            <div class="heart-rate-num f_l">170</div>
+            <div class="heart-rate-icon f_l">
+                <div class="icon-jkda"></div>
+                <div class="i-txt">bpm</div>
+            </div>
+          </section>
+          <section class="other-details t_c">
+            <span>卡路里180</span>
+            <span>强度158</span>
+            <span>步数56741</span>
+          </section>
+        </main>
+      </article>
+
+      <!-- 蓝色心率 -->
+      <article class="martrix-item-box level-four f_l">
+        <header>#301</header>
+        <main>
+          <section class="heart-rate clearfix">
+            <div class="heart-rate-num f_l">170</div>
+            <div class="heart-rate-icon f_l">
+                <div class="icon-jkda"></div>
+                <div class="i-txt">bpm</div>
+            </div>
+          </section>
+          <section class="other-details t_c">
+            <span>卡路里180</span>
+            <span>强度158</span>
+            <span>步数56741</span>
+          </section>
+        </main>
+      </article>
+
+      <!-- 绿色心率 -->
+      <article class="martrix-item-box level-five f_l">
+        <header>#301</header>
+        <main>
+          <section class="heart-rate clearfix">
+            <div class="heart-rate-num f_l">170</div>
+            <div class="heart-rate-icon f_l">
+                <div class="icon-jkda"></div>
+                <div class="i-txt">bpm</div>
+            </div>
+          </section>
+          <section class="other-details t_c">
+            <span>卡路里180</span>
+            <span>强度158</span>
+            <span>步数56741</span>
+          </section>
+        </main>
+      </article>
+
+      <article class="martrix-item-box level-five f_l">
+        <header>#301</header>
+        <main>
+          <section class="heart-rate clearfix">
+            <div class="heart-rate-num f_l">170</div>
+            <div class="heart-rate-icon f_l">
+                <div class="icon-jkda"></div>
+                <div class="i-txt">bpm</div>
+            </div>
+          </section>
+          <section class="other-details t_c">
+            <span>卡路里180</span>
+            <span>强度158</span>
+            <span>步数56741</span>
+          </section>
+        </main>
+      </article>
+
+      <article class="martrix-item-box level-five f_l">
+        <header>#301</header>
+        <main>
+          <section class="heart-rate clearfix">
+            <div class="heart-rate-num f_l">170</div>
+            <div class="heart-rate-icon f_l">
+                <div class="icon-jkda"></div>
+                <div class="i-txt">bpm</div>
+            </div>
+          </section>
+          <section class="other-details t_c">
+            <span>卡路里180</span>
+            <span>强度158</span>
+            <span>步数56741</span>
+          </section>
+        </main>
+      </article>
+
+      <article class="martrix-item-box level-five f_l">
+        <header>#301</header>
+        <main>
+          <section class="heart-rate clearfix">
+            <div class="heart-rate-num f_l">170</div>
+            <div class="heart-rate-icon f_l">
+                <div class="icon-jkda"></div>
+                <div class="i-txt">bpm</div>
+            </div>
+          </section>
+          <section class="other-details t_c">
+            <span>卡路里180</span>
+            <span>强度158</span>
+            <span>步数56741</span>
+          </section>
+        </main>
+      </article>
+
+
+    </div>
+
+    <div class="index-bottom">
+      <div class="level-item level-one"></div>
+      <div class="level-item level-two"></div>
+      <div class="level-item level-three"></div>
+      <div class="level-item level-four"></div>
+      <div class="level-item level-five"></div>
+    </div>
+  </div>
+  
+  <script src="js/jquery.min.js"></script>
+  <script src="plugins/alert.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+html(lang="zh-CN")
+  head
+    include head.jade
+    <script>
+    $(function(){
+    $('.leftNav>ul>li').removeClass('focus')
+    $('.leftNav>ul>li').eq(1).addClass('focus')
+    $('.leftNav>ul>li>ul>li').removeClass('focus')
+    $('.leftNav>ul>li>ul>li').eq(2).addClass('focus')
+    })  
+    </script> 
+  body
+    include header2.jade
+    .healthyClass
+      .choose
+        span.year 选择查看学年
+        select
+          option(value="") 请选择
+          option(value="2017~2018") 2017~2018学年 
+          option(value="2017~2018") 2017~2018学年 
+          option(value="2017~2018") 2017~2018学年
+        span.grade 选择查看年级
+        select 
+          option(value="") 请选择
+          option(value="一年级") 一年级
+          option(value="二年级") 二年级
+          option(value="三年级") 三年级
+          option(value="四年级") 四年级
+      .box
+        p.num 1
+        .content
+          span.title 课次内容
+          span.inner 跳绳:学习双脚并脚连续跳
+        .aim
+          span.title 教学目标
+          span.inner 1.认知:通过学习双脚并脚连续跳,激发学生积极参加跳绳的兴趣 2.情感:让学生体验到跳绳的快乐,建立良好的人际关系 3:技能:70%以上的学生能独自完成双脚并脚连续跳10个,30%~40%的学生能够体验到双脚交换跳
+        .point
+          span.title 教学重难点
+          span.inner 教学重点:落地缓冲;教学难点:手脚配合,动作协调连贯 
+        .count
+          span.title 课时
+          span.inner 1课时
+      .box
+        p.num 1
+        .content
+          span.title 课次内容
+          span.inner 测试文字测试文字
+        .aim
+          span.title 教学目标
+          span.inner 测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字
+        .point
+          span.title 教学重难点
+          span.inner 测试文字测试文字测试文字测试文字测试文字
+        .count
+          span.title 课时
+          span.inner 1课时

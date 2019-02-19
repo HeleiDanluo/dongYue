@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta HTTP-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/icon.css">
+    <link rel="stylesheet" href="../css/scroll.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../plugins/echart.js"></script>
+    <script src="../plugins/jquery.slimscroll.js"></script>
+    <script src="../js/pageInit.js"></script>
+    <script src="../js/main.js"></script>
+    <title>教学管理</title>
+    <script>
+    </script>
+</head>
+<body>
+<div class="pageContent">
+    <div class="left-menu">
+        <a class="logo-box">
+        <span class="logo-img">
+        </span>
+        </a>
+        <ul class="menu-list f16">
+            <li class="current"><a href="" class=""><i class="icon-home">&nbsp;</i>主页</a></li>
+            <li class=""><a href="" class=""><i class="icon-group">&nbsp;</i>教研群组</a></li>
+            <li class=""><a href="" class=""><i class="icon-teachManage">&nbsp;</i>教学管理</a></li>
+            <li class=""><a href="" class=""><i class="icon-import">&nbsp;</i>数据录入</a></li>
+            <li class=""><a href="" class=""><i class="icon-homeWork">&nbsp;</i>家庭作业</a></li>
+        </ul>
+        <ul class="bottom-menu menu-list f16">
+            <li class=""><a href="" class=""><i class="icon-add">&nbsp;</i>收藏</a></li>
+            <li class=""><a href="" class=""><i class="icon-setting">&nbsp;</i>设置</a></li>
+            <li class=""><a href="" class=""><i class="icon-back">&nbsp;</i>返回启动页</a></li>
+        </ul>
+    </div>
+    <div class="rightPage">
+        <div class="page-head">
+            <div class="bread-nav-box txt_w">
+                <a href="javascript:;"><b>选择工作内容</b></a> >
+                <a href="javascript:;"><b>计划进度</b></a>
+            </div>
+            <div class="head-menu">
+                <ul class="head-menu-ul f16">
+                    <!-- <li class="head-menu-item"><a href="javascript:;" class="txt_w">退出</a></li> -->
+                    <li class="head-menu-item" id="dropDown-menu-head"><a href="javascript:;" class="txt_w">账户信息<i class="icon-hehe"></i></a>
+                        <div class="dropdown-content active-drop">
+                            <ul>
+                                <li id="cg-pass">修改密码</li>
+                                <li><a href="#">退出登录</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="head-menu-item"><a href="javascript:;" class="txt_w">欢迎页</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-section kaoqin kaoqin-new">
+            <!-- 标题 -->
+            <div class="title f_l clearfix">
+                <!-- 一级标题 -->
+                <div class="title-first">
+                    <span><a>班级考勤统计</a></span>
+                    <span class="active"><a>月度考勤统计</a></span>
+                    <span><a>学生出勤明细</a></span>
+                    <span><a>过往考勤</a></span>
+                </div>
+            </div>
+            <!-- 过往考勤内容 -->
+            <div class="gw-content f_l clearfix">
+                <div class="caption mt20">
+                    <span>考勤周期统计：</span>
+                    <span>2018.3.5~2018.6.30</span>
+                    <span class="title-r-btn mr20">查看年级统计</span>
+                </div>
+              
+                <div class="center xueNian clearfix mb20">
+                    <div class="row clearfix">
+                        <div class="class-item active">一年级</div>
+                        <div class="class-item">二年级</div>
+                        <div class="class-item">三年级</div>
+                        <div class="class-item">四年级</div>
+                        <div class="class-item">五年级</div>
+                        <div class="class-item">六年级</div>
+                        <div class="legend mr10">
+                            <span class="legend-color green"></span>
+                            <span>出勤（含迟到）</span>
+                            <span class="legend-color yellow"></span>
+                            <span>缺勤</span>
+                            <span class="legend-color blue"></span>
+                            <span>请假</span>
+                        </div>
+                    </div>
+                    <div class="column-chart clearfix" id="a">
+                        <!-- 图形加载位置 -->
+                    </div>
+                    <div class="column-chart clearfix" id="b">
+                        <!-- 图形加载位置 -->
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../plugins/alert.js"></script>
+<script src="../js/each/kaoQinChartNew.js"></script>
+<script src="../js/each/kaoQinNew.js"></script>
+<script>
+    
+</script>
+</body>
+</html>

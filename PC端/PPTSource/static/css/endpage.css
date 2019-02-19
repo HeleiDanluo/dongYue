@@ -1,0 +1,65 @@
+.end-page-body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.end-page-body .top-bg {
+  position: absolute;
+  width: 100%;
+  height: 64%;
+}
+.end-page-body .top-bg img {
+  width: 100%;
+  height: 100%;
+}
+.end-page-body .bottom-bg {
+  position: absolute;
+  width: 42%;
+  height: 30%;
+  bottom: 0;
+  right: 0;
+}
+.end-page-body .bottom-bg img {
+  width: 100%;
+  height: 100%;
+}
+.end-page-body .title-index {
+  position: absolute;
+  top: 22%;
+  left: 42%;
+  width: 40%;
+  height: 15.6%;
+}
+.end-page-body .title-index .num {
+  font-family: Calibri;
+  font-weight: bold;
+  font-size: 170px;
+  color: #826c4a;
+}
+.end-page-body .title-index .english {
+  font-family: Calibri;
+  font-size: 60px;
+  color: #d9d9d9;
+}
+.end-page-body .txt-box {
+  position: absolute;
+  width: 100%;
+  height: 35%;
+  margin-top: 22%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.end-page-body .txt-box .left-pic {
+  margin-top: -100px;
+  margin-right: 20px;
+}
+.end-page-body .txt-box .right-pic {
+  margin-top: 100px;
+}
+.end-page-body .txt-box .txt {
+  letter-spacing: 20px;
+  font-size: 6em;
+  font-weight: bold;
+  color: #319095;
+}

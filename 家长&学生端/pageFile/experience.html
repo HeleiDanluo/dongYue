@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <script src="../js/flexible/flexible_css.js"></script>
+    <script src="../js/flexible/flexible.js"></script>
+    <link rel="stylesheet" href="../css/studentMain.css">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/upload/jquery.uploadify.min.js"></script>
+    <script src="../js/studentMain.js"></script>
+    <title>动跃科技</title>
+</head>
+<body flex="dir:top">
+<header flex-box="0" flex="dir:left" font="16">
+    <a href="javascript:history.go(-1) " flex-box="0">返回</a>
+    <div class="title" flex-box="1"></div>
+    <a href="javascript:void(0)" flex-box="0"></a>
+</header>
+<section flex-box="1" class="white-back">
+    <div class="experience-wrapper">
+        <div class="star-select" data-select="">
+            <h1 font="14">（家长填）评价孩子的完成情况</h1>
+            <div class="icon-group-box">
+                <span font="32" data-num="1"><i class="icon-wujiaoxing"></i></span>
+                <span font="32" data-num="2"><i class="icon-wujiaoxing"></i></span>
+                <span font="32" data-num="3"><i class="icon-wujiaoxing"></i></span>
+                <span font="32" data-num="4"><i class="icon-wujiaoxing"></i></span>
+                <span font="32" data-num="5"><i class="icon-wujiaoxing"></i></span>
+            </div>
+        </div>
+        <div class="face-select">
+            <h1 font="14">（学生填）请选择今天的感受</h1>
+            <div class="icon-group-box">
+                <label class="meinandu">
+                    <i font="32" class="icon-meinandu"></i>
+                    <input type="radio" name="face" value="5">
+                    <p class="face-desc" font="12">没难度</p>
+                </label>
+                <label class="henqingsong">
+                    <i font="32" class="icon-henqinsong"></i>
+                    <input type="radio" name="face" value="5">
+                    <p class="face-desc" font="12">很轻松</p>
+                </label>
+                <label class="gangganghao">
+                    <i font="32" class="icon-meinandu"></i>
+                    <input type="radio" name="face" value="5">
+                    <p class="face-desc" font="12">刚刚好</p>
+                </label>
+                <label class="youxielei">
+                    <i font="32" class="icon-meinandu"></i>
+                    <input type="radio" name="face" value="5">
+                    <p class="face-desc" font="12">有些累</p>
+                </label>
+                <label class="shoubuliao">
+                    <i font="32" class="icon-meinandu"></i>
+                    <input type="radio" name="face" value="5">
+                    <p class="face-desc" font="12">受不了</p>
+                </label>
+            </div>
+        </div>
+        <div class="reply-box">
+            <textarea name="" font="14" placeholder="今天锻炼的非常棒"></textarea>
+            <div class="bottom-btn" font="14">
+                <a href="javascript:void(0)" class="reply-btn"><i class="icon-caidan" font="24"></i><b>快捷选择</b></a>
+            </div>
+        </div>
+        <div class="upload-img-wrapper clear">
+            <div class="img-box">
+                <img src="../img/weixin.png" alt="">
+                <span class="delete" font="12"><i class="icon-guanbi"></i></span>
+            </div>
+            <div class="add-img">
+                <label flex="main:center cross:center">
+                    <input type="file" name="training-img" id="training-img">
+                    <span class="icon-tianjia2" font="32"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+</section>
+<footer flex-box="0" flex="dir:left box:mean">
+    <a href="home.html" flex="main:center cross:center"><i class="icon-home" font="24"></i></a>
+    <a href="mine.html" flex="main:center cross:center"><i class="icon-gerzhongxin" font="24"></i></a>
+</footer>
+<div class="reply-select-Mask" flex="main:center cross:center">
+    <div class="reply-msg-box" flex="dir:top" font="14">
+        <div class="box-title" flex-box="0">请选择您的回复语</div>
+        <div flex-box="1" class="can-scroll txt-list">
+            <ul>
+                <li>你今天表现棒极了！</li>
+                <li>最近有很大进步，继续努力！</li>
+                <li>继续加油，你是个出色的孩子！</li>
+                <li>加油，成功是属于你的！</li>
+                <li>表现很出色，你真优秀！</li>
+                <li>进步可真大，为你感到高兴！</li>
+                <li>你是最棒的孩子！</li>
+                <li>做的真好，你是好样的！</li>
+                <li>你真行，一次比一次有进步！</li>
+                <li>再接再厉，相信你能行！</li>
+                <li>表现不错，有进步，继续加油哦！</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="../js/each/experience.js"></script>
+</body>
+</html>

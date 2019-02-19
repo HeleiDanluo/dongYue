@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>无标题文档</title>
+    <link href="http://cloud.youku.com/assets/lib/bootstrap2.1.0/css/bootstrap.css" rel="stylesheet">
+    <link href="http://cloud.youku.com/assets/lib/bootstrap2.1.0/css/bootstrap-responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <script src="http://cloud.youku.com/assets/lib/jquery-1.8.1.min.js"></script>
+    <script>
+        $(function(){
+            //所有视频
+            var data1 = {
+                client_id:   '78b2cfcefe58c217',
+                access_token:'82cb52003686195f7201fae835cb867f',
+            }
+            $.ajax({
+                url: "https://api.youku.com/videos/by_me.json", 
+                type:'get', 
+                dataType: 'json',
+                data: data1,
+                success: function(res){
+                    console.log(res);
+                }
+            });
+
+            //单个视频
+            var data2 = {
+                client_id:   '78b2cfcefe58c217',
+                video_id:'XMzY3MzU3OTkxNg==',
+                ext:'show'
+            }
+            $.ajax({
+                url: "https://api.youku.com/videos/show.json", 
+                type:'get', 
+                dataType: 'json',
+                data: data2,
+                success: function(res){
+                    console.log(res);
+                }
+            });
+                
+        })
+    </script>
+</body>
+
+</html>

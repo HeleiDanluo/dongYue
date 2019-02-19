@@ -1,0 +1,44 @@
+.leftxtmultpic-page-body {
+  width: 100%;
+  height: calc(100% - 100px);
+  padding: 6% 10% 0px 10%;
+  box-sizing: border-box;
+}
+.leftxtmultpic-page-body .left {
+  width: 55%;
+  height: 80%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.leftxtmultpic-page-body .left .item .item-left {
+  float: left;
+  width: 78px;
+  height: 78px;
+}
+.leftxtmultpic-page-body .left .item .item-left img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: solid 1px #319095;
+}
+.leftxtmultpic-page-body .left .item .item-right {
+  float: left;
+  width: calc(100% - 110px);
+  margin-left: 32px;
+}
+.leftxtmultpic-page-body .right {
+  width: 40%;
+  height: 100%;
+  margin-left: 5%;
+  margin-top: -5%;
+  float: left;
+}
+.leftxtmultpic-page-body .right img {
+  float: left;
+  width: 50%;
+  height: 33.33333333%;
+  cursor: pointer;
+  clip-path: inset(2% round 20% 0% 20% 0%);
+}

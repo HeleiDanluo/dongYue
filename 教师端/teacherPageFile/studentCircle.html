@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <script src="../js/flexible/flexible_css.js"></script>
+    <script src="../js/flexible/flexible.js"></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../js/mobiscroll2/mobiscroll.custom-2.17.0.min.css">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/mobiscroll2/mobiscroll.custom-2.17.0.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/enlargeImg.js"></script>
+    <title>动跃科技</title>
+    <style>
+        header{
+            position: relative;
+        }
+
+        #special{
+            position: absolute;
+            right: 0.4rem;
+            top:0.3rem;
+            width: 1.333rem;
+            height: 1.333rem;
+            line-height: 1.333rem;
+            text-align: center;
+        }
+        header .title{
+            margin-left: 0.5rem;
+            width:5rem;
+            z-index:999;
+            text-align: left;
+        }
+        header .title>input{
+            width: 100%;
+            margin-left: 1.5rem;
+            text-align: left !important;
+        }
+        header .alert{
+            position: absolute;
+            left:5.8rem;
+            height:100%;
+            width:2rem;
+            color:#85B351;
+        }
+
+        header .date{
+            position:absolute;
+            right:0;
+            height: 100%;
+            width: 2rem;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .history{
+            height: 1rem;
+            margin-top: 0.15rem;
+            background-color: #fff;
+        }
+
+        .history>span{
+            margin-left: 0.4rem;
+        }
+
+        .history>div{
+            margin-left: 0.2rem;
+        }
+
+        .thinking-item{
+            border-top:0 !important;
+            margin-top: 0.15rem;
+            background-color: #fff;
+        }
+
+        header .bianji{
+            position:absolute;
+            display: inline-block;
+            width: 1.5rem;
+            right: 0.4rem;
+        }
+    </style>
+</head>
+<body flex="dir:top">
+<header style="position: relative" flex-box="0" flex="dir:left" font="18">
+    <a href="javascript:history.go(-1)" flex-box="0">
+        <i class="icon-back"></i>
+    </a>
+    <div class="title" font="14">
+        <select id="selectClass">
+            <option value="1">一年级一班</option>
+            <option value="2">一年级二班</option>
+            <option value="3" selected>二年级一班</option>
+            <option value="4">二年级二班</option>
+            <option value="5">三年级一班</option>
+            <option value="6">三年级二班</option>
+            <option value="7">四年级一班</option>
+        </select>
+    </div>
+    <span class="alert" font="12" flex="cross:center">切换班级</span>
+    <a class="bianji" href="javascript:void(0)" flex-box="0" font="12">
+        发布评语
+    </a>
+</header>
+<section flex-box="1">
+    <div class="history" flex="cross:center">
+        <span font="14">历史记录:</span>
+        <div class="date" flex="cross:center" style="z-index:999;" font="14">
+            <select id="selectDate">
+            </select>
+        </div>
+    </div>
+    <div class="studentCircle-wrapper">
+        <div class="clearfix thinking-list" font="12">
+            <div class="thinking-item" flex="dir:left">
+                <div class="issue-headImg" flex-box="0" flex="main:center cross:center">
+                    <span>
+                        <img src="../img/girl.png" alt="">
+                    </span>
+                </div>
+                <div flex-box="1" class="issue-content">
+                    <p class="name" flex="cross:center">
+                        <em>教师评语</em>
+                        <span class="star-icon star1" font="18"></span>
+                        <span class="face-icon face1" font="18"></span>
+                    </p>
+                    <div class="issue-txt">
+                    每个人都要有责任感，在体育中也是一样：你会因此而成为靓丽的风景！
+                    </div>
+                    <div class="issue-img-content clearfix enlarge">
+                        <div>
+                            <img class="enlarge-img" src="../img/test/test2.jpg" alt="">
+                        </div>
+                        <div>
+                            <img class="enlarge-img" src="../img/test/test1.jpg" alt="">
+                        </div>
+                        <div>
+                            <img class="enlarge-img" src="../img/test/test1.jpg" alt="">
+                        </div>
+                        <div>
+                            <img class="enlarge-img" src="../img/test/test2.jpg" alt="">
+                        </div>
+                        <div>
+                            <img class="enlarge-img" src="../img/test/test1.jpg" alt="">
+                        </div>
+                        <div>
+                            <img class="enlarge-img" src="../img/test/test2.jpg" alt="">
+                        </div>
+                    </div>
+                    <p class="issue-time">2017-6-19</p>
+                    <a href="javascript:void(0)" class="complete-status" flex="dir:left cross:center">
+                        <p flex-box="1">作业完成情况：2/32</p>
+                        <span flex="main:right" flex-box="0">
+                            <i class="icon-list-back" font="18"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="thinking-item" flex="dir:left">
+                <div class="issue-headImg" flex-box="0" flex="main:center cross:center">
+                    <span>
+                        <img src="../img/girl.png" alt="">
+                    </span>
+                </div>
+                <div flex-box="1" class="issue-content">
+                    <p class="name" flex="cross:center">
+                        <em>教师评语</em>
+                        <span class="star-icon star2" font="18"></span>
+                        <span class="face-icon face2" font="18"></span>
+                    </p>
+                    <div class="issue-txt">
+                        每个人都要有责任感，在体育中也是一样：你会因此而成为靓丽的风景！
+                    </div>
+                    <p class="issue-time">2017-6-19</p>
+                </div>
+            </div>
+            <div class="thinking-item" flex="dir:left">
+                <div class="issue-headImg" flex-box="0" flex="main:center cross:center">
+                    <span>
+                        <img src="../img/girl.png" alt="">
+                    </span>
+                </div>
+                <div flex-box="1" class="issue-content">
+                    <p class="name" flex="cross:center">
+                        <em>教师评语</em>
+                        <span class="star-icon star3" font="18"></span>
+                        <span class="face-icon face3" font="18"></span>
+                    </p>
+                    <div class="issue-txt">
+                        每个人都要有责任感，在体育中也是一样：你会因此而成为靓丽的风景！
+                    </div>
+                    <p class="issue-time">2017-6-19</p>
+                </div>
+            </div>
+            <div class="thinking-item" flex="dir:left">
+                <div class="issue-headImg" flex-box="0" flex="main:center cross:center">
+                    <span>
+                        <img src="../img/girl.png" alt="">
+                    </span>
+                </div>
+                <div flex-box="1" class="issue-content">
+                    <p class="name" flex="cross:center">
+                        <em>教师评语</em>
+                        <span class="star-icon star4" font="18"></span>
+                        <span class="face-icon face4" font="18"></span>
+                    </p>
+                    <div class="issue-txt">
+                        每个人都要有责任感，在体育中也是一样：你会因此而成为靓丽的风景！
+                    </div>
+                    <p class="issue-time">2017-6-19</p>
+                </div>
+            </div>
+            <div class="thinking-item" flex="dir:left">
+                <div class="issue-headImg" flex-box="0" flex="main:center cross:center">
+                    <span>
+                        <img src="../img/girl.png" alt="">
+                    </span>
+                </div>
+                <div flex-box="1" class="issue-content">
+                    <p class="name" flex="cross:center">
+                        <em>教师评语</em>
+                        <span class="star-icon star5" font="18"></span>
+                        <span class="face-icon face5" font="18"></span>
+                    </p>
+                    <div class="issue-txt">
+                        每个人都要有责任感，在体育中也是一样：你会因此而成为靓丽的风景！
+                    </div>
+                    <p class="issue-time">2017-6-19</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer flex-box="0" flex="dir:left box:mean" font="12">
+    <a href="" flex="main:center dir:top">
+        <i class="icon-sy" font="24"></i>
+        <span>首页</span>
+    </a>
+    <a href="" flex="main:center dir:top">
+        <i class="icon-xsq" font="24"></i>
+        <span>学生圈</span>
+    </a>
+    <a href="" flex="main:center dir:top">
+        <i class="icon-wode" font="24"></i>
+        <span>我的</span>
+    </a>
+</footer>
+<script src="../js/each/studentCircle.js"></script>
+</body>
+</html>

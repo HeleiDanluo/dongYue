@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+html(lang="zh-CN")
+  head
+    include head.jade
+    script(src="../js/each/passRate.js")
+  body
+    include header2.jade
+    .passRate
+      .choosee
+        span 选择范围:
+        ul(class="address clearfix")
+          li(class="btn-small focus") 全部
+          li(class="btn-small sheng")
+            span 省
+            ul(class="btn-small")
+              .limit
+                
+          li(class="btn-small shi")
+            span 市
+            ul(class="btn-small")
+              .limit
+                li(class="btn-small") 请先选择省
+          li(class="btn-small qu")
+            span 区/县
+            ul(class="btn-small")
+              .limit
+                li(class="btn-small") 请先选择市
+      .chooseTop        
+        span 选择时间:
+        select.time.btn-big
+          option(value="2017~2018学年") 2017~2018学年
+          option(value="2017~2018学年") 2017~2018学年
+          option(value="2017~2018学年") 2017~2018学年
+          option(value="2017~2018学年") 2017~2018学年
+          option(value="2017~2018学年") 2017~2018学年   
+      .top
+        span(class="left") 健康等级分布
+        span(class="right btn-small btn-green") 导出
+      .choose
+        .year
+          span.title 指标
+          span.box
+            span.focus 总分成绩
+            span 体重指数
+            span 肺活量
+            span 1000米跑
+            span 坐立体前屈
+            span 一分钟跳绳
+            span 50X8往返跑
+        .grade
+          span.title 选项
+          span.box
+            span 达标率
+            span 优秀率
+            span 良好率
+            span 及格率
+            span 不及格率
+            span.focus 所有
+        .class
+          span.title 排序
+          span.box
+            span 由高到低
+            span.focus 由低到高
+        .limit
+      .grade
+        .once
+          span.school 测试小学
+          .limit
+            span.slide(style="width:93%") 93%
+        .once
+          span.school 测试小学
+          .limit
+            span.slide(style="width:80%") 80%
+      .mydataChoose
+          ul.num
+            
+          select
+            option(value="1") 1
+            option(value="2") 2
+            option(value="3") 3
+            option(value="4") 4
+            option(value="5") 5
+            option(value="6") 6
+            option(value="7") 7
+          span.left 跳转到
+            input
+          span.right
+            确定   

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta HTTP-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/icon.css">
+    <link rel="stylesheet" href="../plugins/animate.min.css">
+    <link rel="stylesheet" href="../css/scroll.css">
+    <link rel="stylesheet" href="../plugins/datepicker.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../plugins/mousewheel.js"></script>
+    <script src="../plugins/jquery.slimscroll.js"></script>
+    <script src="../js/pageInit.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../plugins/echart.js"></script>
+    <title>学生成绩详情</title>
+</head>
+
+<body>
+    <div id="tanchu"></div>
+    <div class="pageContent">
+        <div class="left-menu">
+            <a class="logo-box">
+                <span class="logo-img">
+                </span>
+            </a>
+            <ul class="menu-list f16">
+                <li class="">
+                    <a href="" class="">
+                        <i class="icon-home">&nbsp;</i>主页</a>
+                </li>
+                <li class="current">
+                    <a href="" class="">
+                        <i class="icon-group">&nbsp;</i>教研群组</a>
+                </li>
+                <li class="">
+                    <a href="" class="">
+                        <i class="icon-teachManage">&nbsp;</i>教学管理</a>
+                </li>
+                <li class="">
+                    <a href="" class="">
+                        <i class="icon-import">&nbsp;</i>数据录入</a>
+                </li>
+                <li class="">
+                    <a href="" class="">
+                        <i class="icon-homeWork">&nbsp;</i>家庭作业</a>
+                </li>
+            </ul>
+            <ul class="bottom-menu menu-list f16">
+                <li class="">
+                    <a href="" class="">
+                        <i class="icon-add">&nbsp;</i>收藏</a>
+                </li>
+                <li class="">
+                    <a href="" class="">
+                        <i class="icon-setting">&nbsp;</i>设置</a>
+                </li>
+                <li class="">
+                    <a href="" class="">
+                        <i class="icon-back">&nbsp;</i>返回启动页</a>
+                </li>
+            </ul>
+        </div>
+        <div class="rightPage">
+            <div class="page-head">
+                <div class="bread-nav-box txt_w">
+                    <a href="javascript:;">
+                        <b>教学管理</b>
+                    </a> >
+                    <a href="javascript:;">
+                        <b>毕业班成绩</b>
+                    </a>
+                </div>
+                <div class="head-menu">
+                    <ul class="head-menu-ul f16">
+                        <li class="head-menu-item">
+                            <a href="javascript:;" class="txt_w">退出</a>
+                        </li>
+                        <li class="head-menu-item">
+                            <a href="javascript:;" class="txt_w">账户信息
+                                <i class="icon-hehe"></i>
+                            </a>
+                        </li>
+                        <li class="head-menu-item">
+                            <a href="javascript:;" class="txt_w">欢迎页</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="setHomeWork-wrapper zhongkao">
+                    <div class="detail-title">
+                        <b>
+                            <span class="name">
+                                李梦语
+                            </span>
+                            <span class="sex">
+                                <!-- 女生图标 -->
+                                <i class="icon-girl"></i>
+                                <!-- 男生图标 -->
+                                <!-- <i class="icon-boy"></i> -->
+                            </span>
+                            <span class="age">
+                                3岁
+                            </span>
+                            <span class="className">
+                                初三（2）班
+                            </span>
+                        </b>
+                    </div>
+                    <div class="detail-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>项目</td>
+                                    <td>
+                                        耐力跑成绩
+                                        <div class="nlp">女:800m / 男:1000m</div>
+                                    </td>
+                                    <td>得分</td>
+                                    <td>立定跳远成绩</td>
+                                    <td>得分</td>
+                                    <td>坐位体前屈成绩</td>
+                                    <td>得分</td>
+                                    <td>总成绩</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>初一终测成绩</td>
+                                    <td>4分50秒</td>
+                                    <td>15</td>
+                                    <td>165cm</td>
+                                    <td>15</td>
+                                    <td>50cm</td>
+                                    <td>15</td>
+                                    <td>50</td>
+                                </tr>
+                                <tr>
+                                    <td>初二第一次成绩</td>
+                                    <td>4分50秒</td>
+                                    <td>15</td>
+                                    <td>165cm</td>
+                                    <td>15</td>
+                                    <td>50cm</td>
+                                    <td>15</td>
+                                    <td>50</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- 耐力跑成绩曲线 -->
+                    <div class="detail-chart" id="barFirst"></div>
+                    <!-- 立定跳远成绩曲线 -->
+                    <div class="detail-chart" id="barSecond"></div>
+                    <!-- 座位体前屈成绩曲线 -->
+                    <div class="detail-chart" id="barThird"></div>
+                    <!-- 总成绩曲线 -->
+                    <div class="detail-chart" id="barFourth"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="../plugins/alert.js"></script>
+    <script src="../js/each/zhongkao.js"></script>
+    <script>
+        // 柱状图调用
+        Chart.bar({
+            element:'barFirst',
+            title: '耐力跑成绩曲线',
+            xAxis:['初一终测成绩','初二第一次成绩','初二终测成绩','初三第一次成绩','初三第二次成绩','初三第三次成绩','初三终测成绩'],
+            data:[15, 20, 35, 42, 32, 12, 32],
+        });
+        Chart.bar({
+            element:'barSecond',
+            title: '立定跳远成绩曲线',
+            xAxis:['初一终测成绩','初二第一次成绩','初二终测成绩','初三第一次成绩','初三第二次成绩','初三第三次成绩','初三终测成绩'],
+            data:[15, 20, 35, 42, 32, 12, 32],
+        });
+        Chart.bar({
+            element:'barThird',
+            title: '座位体前屈成绩曲线',
+            xAxis:['初一终测成绩','初二第一次成绩','初二终测成绩','初三第一次成绩','初三第二次成绩','初三第三次成绩','初三终测成绩'],
+            data:[15, 20, 35, 42, 32, 12, 32],
+        });
+        Chart.bar({
+            element:'barFourth',
+            title: '总成绩曲线',
+            xAxis:['初一终测成绩','初二第一次成绩','初二终测成绩','初三第一次成绩','初三第二次成绩','初三第三次成绩','初三终测成绩'],
+            data:[15, 20, 35, 42, 32, 12, 32],
+        });
+    </script>
+</body>
+
+</html>

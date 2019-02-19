@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <meta HTTP-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit|ie-comp|ie-stand">
+  <meta name="renderer" content="webkit">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/icon.css">
+  <link rel="stylesheet" href="../plugins/animate.min.css">
+  <link rel="stylesheet" href="../css/scroll.css">
+  <link rel="stylesheet" href="../plugins/datepicker.css">
+  <script src="../js/jquery.min.js"></script>
+  <script src="../plugins/mousewheel.js"></script>
+  <script src="../plugins/jquery.slimscroll.js"></script>
+  <script src="../js/pageInit.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/each/dataChoose.js"></script>
+  <title>成绩管理</title>
+</head>
+
+<body>
+  <div class="pageContent">
+    <div class="left-menu">
+      <a class="logo-box">
+        <span class="logo-img">
+        </span>
+      </a>
+      <ul class="menu-list f16">
+        <li class="current">
+          <a href="" class="">
+            <i class="icon-home">&nbsp;</i>主页</a>
+        </li>
+        <li class="">
+          <a href="" class="">
+            <i class="icon-group">&nbsp;</i>教研群组</a>
+        </li>
+        <li class="">
+          <a href="" class="">
+            <i class="icon-teachManage">&nbsp;</i>教学管理</a>
+        </li>
+        <li class="">
+          <a href="" class="">
+            <i class="icon-import">&nbsp;</i>数据录入</a>
+        </li>
+        <li class="">
+          <a href="" class="">
+            <i class="icon-homeWork">&nbsp;</i>家庭作业</a>
+        </li>
+      </ul>
+      <ul class="bottom-menu menu-list f16">
+        <li class="">
+          <a href="" class="">
+            <i class="icon-add">&nbsp;</i>收藏</a>
+        </li>
+        <li class="">
+          <a href="" class="">
+            <i class="icon-setting">&nbsp;</i>设置</a>
+        </li>
+        <li class="">
+          <a href="" class="">
+            <i class="icon-back">&nbsp;</i>返回启动页</a>
+        </li>
+      </ul>
+    </div>
+    <div class="rightPage">
+      <div class="page-head">
+        <div class="bread-nav-box txt_w">
+          <a href="javascript:;">
+            <b>教学管理</b>
+          </a> >
+          <a href="javascript:;">
+            <b>成绩管理</b>
+          </a>
+        </div>
+        <div class="head-menu">
+          <ul class="head-menu-ul f16">
+            <li class="head-menu-item">
+              <a href="javascript:;" class="txt_w">退出</a>
+            </li>
+            <li class="head-menu-item">
+              <a href="javascript:;" class="txt_w">账户信息
+                <i class="icon-hehe"></i>
+              </a>
+            </li>
+            <li class="head-menu-item">
+              <a href="javascript:;" class="txt_w">欢迎页</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="datelimit">
+        <div class="healthyChart">
+          <div class="choosee">
+            <span>选择范围:</span>
+
+            <ul class="address clearfix">
+              <li class="btn-small focus">全校</li>
+
+              <li class="btn-small sheng">
+                <span>年级</span>
+              </li>
+
+              <li class="btn-small shi">
+                <span>班级</span>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="choose btn-small btn-green" style="margin-left:40px;">
+            数据导出
+          </div>
+
+          <div style="clear:both;"></div>
+
+
+          <div class="choosegrade">
+            <span>选择年级:</span>
+            <ul>
+              <li class="focus">一年级</li>
+              <li>二年级</li>
+              <li>三年级</li>
+            </ul>
+          </div>
+          <div class="chooseclass">
+            <span>选择班级:</span>
+            <ul>
+              <li>1班</li>
+              <li>2班</li>
+              <li>3班</li>
+            </ul>
+          </div>
+
+          <div class="healthyBox">
+            <div class="top">
+              <span class="left">(对比种类)</span>
+
+              <span class="center">
+                <span>展示切换:</span>
+                <a href="./healthyList.html">列表</a>
+
+                <span>/</span>
+
+                <a href="./healthyChart.html" class="focus">图表</a>
+              </span>
+              <span class="center">
+                <span>性别切换:</span>
+                <a href="javascript:void(0)">全部</a>
+
+                <span>/</span>
+
+                <a href="javascript:void(0)" class="focus">男</a>
+                <span>/</span>
+
+                <a href="javascript:void(0)">女</a>
+              </span>
+            </div>
+
+            <div class="caption">
+              <span class="check focus">优良率</span>
+              <span class="check">合格率</span>
+              <span>
+                优秀占比:
+
+                <span class="color_1"></span>
+              </span>
+
+              <span>
+                良好占比:
+
+                <span class="color_2"></span>
+              </span>
+
+              <span>
+                及格占比:
+
+                <span class="color_3"></span>
+              </span>
+
+              <span>
+                不及格占比:
+
+                <span class="color_4"></span>
+              </span>
+            </div>
+
+            <div class="center">
+              <div class="row">
+                <span class="name">2017~2018学年 全校:</span>
+
+                <div class="limit">
+                  <span style="width:20%" class="color_1"></span>
+
+                  <span style="width:40%" class="color_2"></span>
+
+                  <span style="width:30%" class="color_3"></span>
+
+                  <span style="width:10%" class="color_4"></span>
+                  <p>
+                    <span>优秀：0.00%&nbsp;&nbsp;</span>
+                    <span>良好：44.44%&nbsp;&nbsp;</span>
+                    <span>及格：55.55%&nbsp;&nbsp;</span>
+                    <span>不及格：0.00%</span>
+                  </p>
+                </div>
+                <div class="sex">
+                  <span>优良率:</span>
+                  <div>
+                    <span class="youliang">60%</span>
+                  </div>
+                  <span>合格率:</span>
+                  <div>
+                    <span class="hege">80%</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <span class="name">2017~2018学年 全校:</span>
+
+                <div class="limit">
+                  <span style="width:20%" class="color_1"></span>
+
+                  <span style="width:33%" class="color_2"></span>
+
+                  <span style="width:40%" class="color_3"></span>
+
+                  <span style="width:7%" class="color_4"></span>
+                  <p>
+                    <span>优秀：0.00%&nbsp;&nbsp;</span>
+                    <span>良好：44.44%&nbsp;&nbsp;</span>
+                    <span>及格：55.55%&nbsp;&nbsp;</span>
+                    <span>不及格：0.00%</span>
+                  </p>
+                </div>
+
+                <div class="sex">
+                    <span>优良率:</span>
+                    <div>
+                      <span class="youliang">60%</span>
+                    </div>
+                    <span>合格率:</span>
+                    <div>
+                      <span class="hege">80%</span>
+                    </div>
+                  </div>
+              </div>
+              <div class="row">
+                <span class="name">2017~2018学年 全校:</span>
+
+                <div class="limit">
+                  <span style="width:20%" class="color_1"></span>
+
+                  <span style="width:33%" class="color_2"></span>
+
+                  <span style="width:40%" class="color_3"></span>
+
+                  <span style="width:7%" class="color_4"></span>
+                  <p>
+                    <span>优秀：0.00%&nbsp;&nbsp;</span>
+                    <span>良好：44.44%&nbsp;&nbsp;</span>
+                    <span>及格：55.55%&nbsp;&nbsp;</span>
+                    <span>不及格：0.00%</span>
+                  </p>
+                </div>
+
+                <div class="sex">
+                    <span>优良率:</span>
+                    <div>
+                      <span class="youliang">60%</span>
+                    </div>
+                    <span>合格率:</span>
+                    <div>
+                      <span class="hege">80%</span>
+                    </div>
+                  </div>
+              </div>
+              <div class="row">
+                <span class="name">2017~2018学年 全校:</span>
+
+                <div class="limit">
+                  <span style="width:20%" class="color_1"></span>
+
+                  <span style="width:33%" class="color_2"></span>
+
+                  <span style="width:40%" class="color_3"></span>
+
+                  <span style="width:7%" class="color_4"></span>
+                  <p>
+                    <span>优秀：0.00%&nbsp;&nbsp;</span>
+                    <span>良好：44.44%&nbsp;&nbsp;</span>
+                    <span>及格：55.55%&nbsp;&nbsp;</span>
+                    <span>不及格：0.00%</span>
+                  </p>
+                </div>
+
+                <div class="sex">
+                    <span>优良率:</span>
+                    <div>
+                      <span class="youliang">60%</span>
+                    </div>
+                    <span>合格率:</span>
+                    <div>
+                      <span class="hege">80%</span>
+                    </div>
+                  </div>
+              </div>
+
+              
+            </div>
+
+            <div class="mydataChoose">
+              <ul class="num"></ul>
+
+              <select>
+                <option value="1">1</option>
+
+                <option value="2">2</option>
+
+                <option value="3">3</option>
+
+                <option value="4">4</option>
+
+                <option value="5">5</option>
+
+                <option value="6">6</option>
+
+                <option value="7">7</option>
+              </select>
+
+              <span class="left">
+                跳转到
+
+                <input></input>
+              </span>
+
+              <span class="right">确定</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../plugins/alert.js"></script>
+    <script src="../js/each/addTestItem.js"></script>
+</body>
+
+</html>

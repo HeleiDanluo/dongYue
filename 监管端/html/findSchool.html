@@ -1,0 +1,137 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <title>动跃数据分析</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/each/healthyList.js"></script>
+    <script src="../js/each/dataChoose.js"></script>
+    <script src="../js/each/cityChoose.js"></script>
+    <script src="../js/public.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo"><img src="../images/logo.png" alt=""><span class="name">动跃科技数据分析平台</span></div><span class="back"><a onclick="window.history.go(-1)">返回上一级</a></span>
+      <div class="user"><a class="name" href="#">测试名字</a><a class="logout" href="#"> <i class="icon-logout"></i>退出</a></div>
+    </div>
+    <div class="leftNav">
+      <ul>
+        <li class="focus"><i class="icon-home"></i><a href="./findSchool.html">首页</a></li>
+        <li class="show"><i class="icon-tzsj-xstzsj"></i><span>区域统计</span><i class="icon-xia"></i>
+          <ul>
+            <li><a href="./区域统计-项目等级统计.html">项目等级统计</a></li>
+            <li><a href="./区域统计-均值对比.html">均值对比</a></li>
+            <li><a href="./区域统计-检出率对比.html">检出率对比</a></li>
+            <li><a href="./区域统计-百分位.html">百分位</a></li>
+          </ul>
+        </li>
+        <li class="show"><i class="icon-sjfx"></i><span>数据分析</span><i class="icon-xia"></i>
+          <ul>
+            <li><a href="./healthyList.html">体质健康统计</a></li>
+            <li><a href="./studentClass.html">学校课程课时</a></li>
+            <li><a href="./xueXiaoJiaoWuTongJi.html">学校教务统计</a></li>
+            <li><a href="./xueXiaoZuoYeTongJi">学校作业统计</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="studentClass">
+      <div class="choose"><span>选择范围:</span>
+        <ul class="address clearfix">
+          <li class="btn-small focus">全部</li>
+          <li class="btn-small sheng cant-click"><span>省</span>
+            <ul class="btn-small">
+              <div class="limit"></div>
+            </ul>
+          </li>
+          <li class="btn-small shi"><span>市</span>
+            <ul class="btn-small">
+              <div class="limit">
+                <li class="btn-small">请先选择省</li>
+              </div>
+            </ul>
+          </li>
+          <li class="btn-small qu"><span>区/县</span>
+            <ul class="btn-small">
+              <div class="limit">
+                <li class="btn-small">请先选择市</li>
+              </div>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="choose">       <span>查找学校:</span>
+        <input class="time btn-big" placeholder="请输入学校名称">
+        <input class="btn-small btn-green" type="button" value="搜索">
+        <input class="btn-small blueBtn" type="button" value="清空">
+      </div>
+      <div class="healthyBox clearfix">
+        <div class="top"><span class="left">小学</span></div>
+        <div class="center">
+          <div class="list">
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+          </div>
+          <div class="row cb"><span class="handle  txt-blue">
+              <div class="more">查看更多</div></span></div>
+        </div>
+        <div class="top"><span class="left">小学</span></div>
+        <div class="center">
+          <div class="list">
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+            <div class="row"><a class="school txt-blue" href="homePage.html">圣菲小学</a><span class="add">成都市双流县航空港</span></div>
+          </div>
+          <div class="row cb"><span class="handle  txt-blue">
+              <div class="more">查看更多</div></span></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

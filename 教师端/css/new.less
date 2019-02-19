@@ -1,0 +1,770 @@
+/* 圆角 */
+.border-radius(@tl: 0.067rem, @tr: 0.067rem, @bl: 0.067rem, @br: 0.067rem) {
+  //上左
+  border-top-left-radius: @tl;
+  -webkit-border-top-left-radius: @tl;
+  -moz-border-radius-topleft: @tl;
+  //上右
+  border-top-right-radius: @tr;
+  -webkit-border-top-right-radius: @tr;
+  -moz-border-radius-topright: @tr;
+  //下左
+  border-bottom-left-radius: @bl;
+  -webkit-border-bottom-left-radius: @bl;
+  -moz-border-radius-bottomleft: @bl;
+  //下右
+  border-bottom-right-radius: @br;
+  -webkit-border-bottom-right-radius: @br;
+  -moz-border-radius-bottomright: @br;
+}
+
+// 我的反思
+.wodefansi{
+  background-color: #EFEFF1;
+  height:365/75rem;
+
+  .content{
+    margin:30/75rem;
+    padding:25/75rem 35/75rem;
+    background-color: #fff;
+    .border-radius(20/75rem,20/75rem,20/75rem,20/75rem);
+   
+  }
+  .head{ 
+    height:85/75rem;
+    line-height:85/75rem;
+    border-bottom:1px solid #E5E5E5;
+  }
+  .main{
+    
+    p{
+      width: 100%;
+      text-overflow : ellipsis;
+      overflow: hidden;
+      margin:25/75rem 0;
+      .shengluehao
+    }
+  }
+  .foot div{
+    color:#7CB54A;
+    text-align: right;
+    i{
+      vertical-align: super;
+    }
+    a{
+      color:#7CB54A;
+      overflow: hidden;
+      max-width: 87%;
+      height: 0.5rem;
+      display: inline-block;
+       /*一行表示**/
+     overflow: hidden;
+     white-space: nowrap;
+     text-overflow: ellipsis;
+    }
+  }
+}
+//教学反思 复用了我的反思样式
+.fansi-detail-content{
+  height: auto !important;
+}
+.fansi-detail-foot{
+  margin-top: auto !important;
+}
+.jiaoxuefansi .content{
+    height: 1000/75rem;
+    .main{
+      height: 540/75rem;
+      p{
+        height: 540/75rem;
+        overflow:auto;
+        -webkit-line-clamp: 100000;
+      }
+    } 
+    .foot{
+      margin-top:230/75rem;
+    }
+  }
+  //我的反思详情,样式内容重写
+.fansi-detail{
+  height: auto !important;
+  >textarea{
+    width: 100%;
+    text-align: justify;
+  }
+}
+#finish{
+  display: none;
+}
+.fansi-detail-img-box{
+  width:100%;
+  img{
+    width: 100%;
+    padding: 5px 0px;
+  }
+}
+.jiaoxuefansifooter{
+  .left{
+    border-right:1px solid #E5E5E5;
+  }
+}
+//反思编辑
+.fansibianji{
+  background-color: #EFEFF1;
+  .content{
+    height: 880/75rem;
+    padding:25/75rem 35/75rem;
+    background-color: #fff;
+    .head{
+      input{
+        height: 100/75rem;
+        line-height: 100/75rem;
+        border-top:1px solid #eee;
+        border-bottom:1px solid #eee;
+        color:#bbb;
+        width: 100%;
+      }
+    }
+    .main{
+      padding:30/75rem 0;
+      height: 605/75rem;
+      overflow: hidden;
+      textarea{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .foot{
+      height: 150/75rem;
+      .img-res{
+        height: 150/75rem;
+        width: 7rem;
+        overflow-x: auto;
+        overflow-y: hidden;
+        .img-outbox{
+          height: 100%;
+          width:8rem;
+          >div{
+            float: left;
+            display: inline-block;
+            height: 100%;
+            width: 1.3rem !important;
+            border:1px dashed #ddd;
+            margin: 0 0.2rem;
+            >img{
+              width: 100%;
+              height: 80%;
+            }
+          }
+        }
+        
+      }
+      .limit{
+        height: 100%;
+        >ul{
+          width:20rem;
+          height:100%;
+          >li{
+            height:100%;
+            float: left;
+            >img{
+              height:100%;
+            }
+          }
+        }
+      }
+      .right{
+        text-align: right;
+        line-height: 150/75rem;
+        color:#7CB54A;
+      }
+      //文件上传样式修改
+      .left{
+        float: left;
+        position: relative !important;
+        padding-top: 0.2rem;
+        i{
+          position: relative;
+          padding: 0.2rem;
+          width: 120/75rem;
+          height: 120/75rem;
+          border:1px dashed #ddd;
+          color:#BFBFBF;
+          line-height: 120/75rem;
+          text-align: center;
+        }
+        input{
+          opacity: 0;
+          position: absolute !important;
+          left: 0;
+          top:0.35rem;
+          z-index: 200;
+          width: 96/75rem;
+          height: 96/75rem;
+        }
+      }
+    }
+  }
+}
+
+
+//家庭作业
+.jiatingzuoye{
+  .title{
+    >a{
+      position: relative;
+      &.focus{
+        color: #FF962F;
+        &:after{
+          content:'';
+          display: inline-block;
+          width:60%;
+          height:10px;
+          background-color:#FF962F ;
+          position: absolute;
+          bottom: 0;
+          left:20%;
+        }
+      }
+    }
+  }
+  .boxChunk{
+    .box{
+      height:1.64rem;
+      width: 100%;
+      .relative{
+        height:100%;
+        width:100%;
+        padding: 0 0.467rem;
+        position: relative;
+        >div{
+          position: absolute;
+          right: 0.467rem;
+          >span{
+            color: #A1A1A1;
+            &.focus{
+              color:#000;
+            }
+          }
+          >i{
+            margin-left: 0.2rem;
+          }
+        }
+      }
+    }
+  }
+  >footer{
+    >a{
+      &.focus{
+        color: #FF962F;
+      }
+    }
+  }
+}
+
+//查看学生
+.chakanxuesheng{
+  >header{
+    .title{
+      >a{
+        position: relative;
+        &.focus{
+          color:#FF962F;
+          &:after{
+            content:"";
+            height: 10px;
+            width:50%;
+            left:25%;
+            background: #FF962F;
+            display: inline-block;
+            bottom: 0;
+            position: absolute;
+          }
+        }
+      }
+      
+    }
+  }
+  section{
+    .choose-class{
+      height: 1.37rem;
+      padding: 0 0.467rem;
+      background: #ECECEC;
+      .class-fullname{
+        position: absolute;
+        right: 0.467rem;
+        >i{
+          color:#676767;
+        }
+      }
+    }
+    .name-box{
+      height: 2rem;
+      border-bottom: 1px solid #DDDDE7;
+      padding: 0 0.467rem;
+      .head-name{
+        >img{
+          width: 1.4rem;
+          height:1.4rem;
+        }
+      }
+      .name-detail{
+        margin-left: 0.57rem;
+        .stu-name{
+          color:#333333;
+        }
+        .stu-class{
+          color: #999999;
+        }
+      }
+    }
+  }
+}
+
+
+
+//更新数据
+.data-update{
+  position: absolute;
+  right: 0.373rem;
+  top:0.23rem;
+  height: 0.85rem;
+}
+.droplist{
+  span{
+    min-width:2.5rem;
+    text-align: left;
+  }
+}
+.data-update-content-box{
+  width: 100%;
+  height: 200%;
+  background: rgba(0, 0, 0, 0.59);
+  position:fixed;
+  opacity:0;
+  top:1.33rem;
+  left:0;
+  z-index: 100000000;
+  display: none;
+}
+.blank-content{
+  width:100%;
+  height: 100%;
+  opacity: 0;
+}
+.data-update-content{
+  background: #fff;
+  //height: 15rem;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  top:-2rem;
+  zoom: 1;
+  .exit{
+    height: 1.76rem;
+    .border-bottom;
+    >i{
+      position: absolute;
+      right: 0.467rem;
+    }
+  }
+
+  .data-update-detail-box{
+    max-height: 14rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    .drop-menu-list{
+      display: none;
+    }
+  }
+  .data-update-detail{
+    clear: both;
+    height: 1.28rem;
+    line-height: 1.28rem;
+    .border-bottom;
+    padding: 0 0.467rem;
+    position: relative;
+    >span{
+      display: inline-block;
+      line-height: 1.28rem;
+    }
+    >i{
+      display: inline-block;
+      line-height: 1.28rem;
+      position: absolute;
+      right: 0.467rem;
+      color: #82B64A;
+    }
+    &:after{
+      clear: both;
+      content: ".";
+      display: block;
+      height: 0;
+      width: 0;
+      visibility: hidden;
+    }
+  }
+}
+
+.border-bottom{
+  border-bottom: solid 1px #EEEEEE;
+} 
+
+// 立定跳远
+.studentlist-wrapper{
+  .page-title{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    margin-top: -1px;
+    // -webkit-transform: translate3d(0,0,0);
+    // transform: translate3d(0,0,0);
+  }
+  >div{
+    padding-top: 0.88rem;
+  }
+  .student-list{
+    padding-bottom:3rem;
+    >li{
+      position: relative;
+      height: 1.667rem;
+      .border-bottom;
+      .input-msg{
+        width: 5.5rem;
+      }
+      .input-num{
+        input{
+          width:2.5rem;
+          height: 0.8rem;
+          text-indent: 0.3rem;
+          border-left: solid 1px #EEEEEE
+        }
+        span{
+          color: rgb(34, 34, 34);
+        }
+      }
+      .fenmiao{
+        input{
+          width: 1rem;
+        }
+      }
+    }
+  }
+
+}
+.ldty-ok-box{
+  height: 2rem;
+  position: fixed;
+  bottom: 1.34rem;
+  width:100%;
+  button{
+    background: #7CB54A;
+    color:#fff;
+    width:9.2rem;
+    height: 1.12rem;
+    border-radius: 0.1rem;
+  }
+
+}
+.bg-black{
+  background: #393a3f !important;
+}
+//心得体会
+.xinDeTiHui{
+  header{
+    padding: 0 35/75rem;
+    height: 90/75rem;
+    line-height: 90/75rem;
+  }
+  .pingjia{
+    height: 185/75rem;
+    padding: 0 35/75rem;
+    .title{
+      width: 100%;
+      height: 90/75rem;
+      span{
+        vertical-align: middle
+      }
+    }
+    .stars{
+      width:520/75rem;
+      height: 105/75rem;
+      margin: 0 auto;
+      color: #e5e5e5;
+      div{
+        text-align: center;
+        i{
+          font-size: 52/75rem;
+        }
+      }
+      .active{
+        color: #FCBC62;
+      }
+    }
+    .face{
+      color:#999999 !important;
+    }
+  }
+  
+  .kjxz{
+    height: 288/75rem;
+    width: 100%;
+    padding: 55/75rem 35/75rem 0;
+    .txtarea-box{
+      width: 100%;
+      height: 198/75rem;
+      border: solid 1px #E9E9E9;
+      border-radius: 5px;
+      box-shadow: 2px 3px 20px #ddd;
+      padding: 13/75rem 35/75rem;
+      .txtarea{
+        width: 100%;
+        height: 104/75rem;
+        
+        >textarea{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .kjxz-btn{
+        height: 80/75rem;
+        span{
+          text-indent: 24/75rem;
+        }
+      }
+    }
+  }
+  .add-chunk{
+    width: 100%;
+    padding: 0 35/75rem;
+    .add-box{
+      width: 122/75rem;
+      height: 115/75rem;
+      border: solid 1px #e8e8e8;
+      position: relative;
+      >div{
+        width: 52/75rem;
+        height: 52/75rem;
+        border-radius: 52/75/2rem;
+        border: solid 1px #c9c9c9;
+      }
+      >input{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        opacity: 0;
+      }
+    }
+    .box-img{
+      margin-left: 0.2rem;
+    }
+  }
+  .btn-ok{
+    width: 100%;
+    height: 1rem;
+    
+    button{
+      height: 1rem;
+      width: 670/75rem;
+      margin: 0 auto;
+      background: #ff962f;
+      color: #fff;
+    }
+  }
+}
+.jiaoanliebiao{
+  .article{
+    .shengluehao
+  }
+}
+
+// 三行省略号
+.shengluehao(@lineNum:3){
+      // 三行省略号
+      display: -webkit-box;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-wrap: break-word;
+      white-space: normal !important;
+      -webkit-line-clamp: @lineNum;
+      -webkit-box-orient: vertical;
+      height: auto !important;
+}
+
+//个人资料
+.gerenziliao{
+  .myhead{
+    a{
+      margin-left:0.3rem;
+    }
+  }
+  //头像
+  .head-zl{
+    background: #fff;
+    height: 190/75rem;
+    width: 100%;
+    border-bottom: solid 1px #eaeaea;
+    padding: 0 33/75rem;
+    .head-img-zl{
+      width: 120/75rem;
+      height: 120/75rem;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    span{
+      color:#818181;
+      margin-left: 40/75rem;
+    }
+  }
+  // 输入框
+  .input-zl-box{
+    background: #fff;
+    height: 120/75rem;
+    width: 100%;
+    padding:0 15/75rem;
+    div{
+      width: 100%;
+      height: 120/75rem;
+      .myborder-bottom;    
+      span{
+        display: inline-block;
+        padding-left: 21/75rem;
+      }
+      input{
+        position: absolute;
+        left: 206/75rem;
+      }
+      .myradio{
+        &:before{
+          content: "";
+          height: 30/75rem;
+          width: 30/75rem;
+          display: inline-block;
+          border: solid 1px #a0a0a0;
+          border-radius: 15/75rem;
+          vertical-align: middle;
+          margin:0 17/75rem 0 40/75rem;
+        }
+        &.active{
+          &:before{
+            background: #ff962f;
+            border: solid 1px #ff962f;
+          }
+        }
+      }
+    }
+  }
+  .sbumit-box{
+    width: 100%;
+    .submit-grzl{
+      color: #fff;
+      background: #ff962f;
+      width: 660/75rem;
+      height: 85/75rem;
+      margin: 1rem auto 0;
+    }
+  }
+  //下划线颜色
+
+  .myborder-bottom{
+    border-bottom: solid 1px #ededed;
+  }
+}
+
+//家庭作业-图文
+.box-chunk{
+  height: 100%;
+  overflow-y: auto;
+  .content-box{
+    padding: 30/75rem 32/75rem;
+    border-bottom: solid 1px #e8e8e8;
+    .img-box{
+      width: 240/75rem;
+      img{
+        width: 100%;
+        height: 140/75rem;
+      }
+    }
+    .txt-box{
+      padding: 0 37/75rem;
+      width: 482/75rem;
+      span{
+        color: #8a8a8a;
+        .shengluehao(2);
+      }
+    }
+  }
+}
+.ksxl{
+  width:100%;
+  height: 88/75rem;
+  background: #ff963f;
+  a{
+    color:#fff;
+  }
+}
+// 考勤
+.kaoqinbiao{
+  .student-list{
+    padding-bottom: 2rem;
+    .stu-name{
+      width: 200/75rem;
+    }
+    .operate{
+      font-size: 0;
+      a{
+        font-size: 25/75rem;
+        display: inline-block;
+        width: 140/75rem;
+        height: 46/75rem;
+        border: 1px solid #e2e2e2;
+        line-height: 46/75rem;
+        text-align: center;
+        &:not(:last-child){
+          margin-right:25/75rem;
+        }
+        &.green-all{
+          color:#79b941;
+          border-color: #79b941;
+        }
+        &.blue-all{
+          color:#11a0ff;
+          border-color: #11a0ff;
+        }
+        &.yellow-all{
+          color:#e3be31;
+          border-color: #e3be31;
+        }
+      }
+    }
+  }
+  .ldty-ok-box{
+    bottom: 0;
+    padding-bottom: 0.1rem;
+    background: #fff;
+    padding-top: 0;
+  }
+}
+.xuesengkaoqin{
+  div{
+    padding: 0;
+  }
+  .student-list{
+    a{
+      width: 100%;
+      div{
+        float: left;
+        line-height: 1.667rem;
+      }
+    }
+    .operate{
+      position: absolute;
+      right:0;
+    }
+  }
+}
+.green-all{
+  color:#79b941;
+}

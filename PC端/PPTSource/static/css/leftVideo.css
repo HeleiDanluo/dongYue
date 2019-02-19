@@ -1,0 +1,43 @@
+.leftvideo-page-body {
+  width: 100%;
+  height: calc(100% - 100px);
+  padding: 6% 7% 0px 7%;
+  box-sizing: border-box;
+}
+.leftvideo-page-body .left {
+  width: 40%;
+  height: 80%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.leftvideo-page-body .left .item .item-left {
+  float: left;
+  width: 78px;
+  height: 78px;
+}
+.leftvideo-page-body .left .item .item-left img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: solid 1px #319095;
+}
+.leftvideo-page-body .left .item .item-right {
+  float: left;
+  width: calc(100% - 110px);
+  margin-left: 32px;
+}
+.leftvideo-page-body .right {
+  background: #dedede;
+  width: 55%;
+  height: 80%;
+  background-color: #d8d0c0;
+  margin-right: 5%;
+  float: left;
+}
+.leftvideo-page-body .right .yk {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}

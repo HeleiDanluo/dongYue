@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta HTTP-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/icon.css">
+    <link rel="stylesheet" href="../plugins/animate.min.css">
+    <link rel="stylesheet" href="../css/scroll.css">
+    <link rel="stylesheet" href="../plugins/datepicker.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../plugins/mousewheel.js"></script>
+    <script src="../plugins/jquery.slimscroll.js"></script>
+    <script src="../js/pageInit.js"></script>
+    <script src="../js/main.js"></script>
+    <title>单元计划</title>
+    <script>
+    </script>
+</head>
+<body>
+<div class="pageContent">
+    <div class="left-menu">
+        <a class="logo-box">
+        <span class="logo-img">
+        </span>
+        </a>
+        <ul class="menu-list f16">
+            <li class="current"><a href="" class=""><i class="icon-home">&nbsp;</i>主页</a></li>
+            <li class=""><a href="" class=""><i class="icon-group">&nbsp;</i>教研群组</a></li>
+            <li class=""><a href="" class=""><i class="icon-teachManage">&nbsp;</i>教学管理</a></li>
+            <li class=""><a href="" class=""><i class="icon-import">&nbsp;</i>数据录入</a></li>
+            <li class=""><a href="" class=""><i class="icon-homeWork">&nbsp;</i>家庭作业</a></li>
+        </ul>
+        <ul class="bottom-menu menu-list f16">
+            <li class=""><a href="" class=""><i class="icon-add">&nbsp;</i>收藏</a></li>
+            <li class=""><a href="" class=""><i class="icon-setting">&nbsp;</i>设置</a></li>
+            <li class=""><a href="" class=""><i class="icon-back">&nbsp;</i>返回启动页</a></li>
+        </ul>
+    </div>
+    <div class="rightPage">
+        <div class="page-head">
+            <div class="bread-nav-box txt_w">
+                <a href="javascript:;"><b>教学管理</b></a> >
+                <a href="javascript:;"><b>单元计划</b></a>
+            </div>
+            <div class="head-menu">
+                <ul class="head-menu-ul f16">
+                    <li class="head-menu-item"><a href="javascript:;" class="txt_w">退出</a></li>
+                    <li class="head-menu-item"><a href="javascript:;" class="txt_w">账户信息<i class="icon-hehe"></i></a>
+                    </li>
+                    <li class="head-menu-item"><a href="javascript:;" class="txt_w">欢迎页</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="table-content">
+                <div class="table-btn-group">
+                    <div class="table-row">
+                        <div class="col-8-16 col-offset-8 t_r">
+                            <a href="javascript:;" class="icon-addItem btn pinkBtn addUnitPlan">&nbsp;新增</a>
+                            <a href="javascript:;" class="icon-batchUpdate btn yellowBtn batchUpdate-btn">&nbsp;批量操作</a>
+                            <div class="batch-box">
+                                <a href="javascript:;" data-select=false class="btn blueBtn icon-allSelect allSelect">
+                                    &nbsp;全选</a>
+                                <a href="javascript:;" class="btn blueBtn icon-output output">&nbsp;导出</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-box excel-table">
+                    <div class="table-row f16">
+                        <div class="col-2-16"><a href="javascript:;">学年<i class="icon-top"></i></a></div>
+                        <div class="col-2-16"><a href="javascript:;">年级<i class="icon-top"></i></a></div>
+                        <div class="col-2-16">学期</div>
+                        <div class="col-2-16">教学计划</div>
+                        <div class="col-2-16">单元计划</div>
+                        <div class="col-2-16">编辑人</div>
+                        <div class="col-1-16"><a href="javascript:;">状态<i class="icon-top"></i></a></div>
+                        <div class="col-2-16">发布人</div>
+                        <div class="col-1-16 t_c">选项</div>
+                    </div>
+                    <div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">跨年级</div>
+                        <div class="col-2-16">上学期</div>
+                        <div class="col-2-16">篮球教学计划</div>
+                        <div class="col-2-16">单元计划</div>
+                        <div class="col-2-16">赵某某</div>
+                        <div class="col-1-16">已发布</div>
+                        <div class="col-2-16">赵某某</div>
+                        <div class="col-1-16 t_c selectItem">
+                            <a href="javascript:;" class="selectItemBtn icon-itemSelect f20"></a>
+                            <div class="selectBox">
+                                <p><a href="javascript:;" class="txt_w">发布</a></p>
+                                <p><a href="javascript:;" class="txt_w">修改</a></p>
+                                <p><a href="javascript:;" class="txt_w">导出</a></p>
+                                <p><a href="javascript:;" class="txt_w">删除</a></p>
+                            </div>
+                        </div>
+                        <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label>
+                    </div>
+                    <div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">跨年级</div>
+                        <div class="col-2-16">上学期</div>
+                        <div class="col-2-16">篮球教学计划</div>
+                        <div class="col-2-16">单元计划</div>
+                        <div class="col-2-16">赵某某</div>
+                        <div class="col-1-16">已发布</div>
+                        <div class="col-2-16">赵某某</div>
+                        <div class="col-1-16 t_c selectItem">
+                            <a href="javascript:;" class="selectItemBtn icon-itemSelect f20"></a>
+                            <div class="selectBox">
+                                <p><a href="javascript:;" class="txt_w">发布</a></p>
+                                <p><a href="javascript:;" class="txt_w">修改</a></p>
+                                <p><a href="javascript:;" class="txt_w">导出</a></p>
+                                <p><a href="javascript:;" class="txt_w">删除</a></p>
+                            </div>
+                        </div>
+                        <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="2">
+                            <span class="checkSpan back_white"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="pages">
+                    <div class="goods-pages">
+                        <div class="tcd-page-code">
+                            <span class="pageB disabled"><em class="iconfont icon-left mr5"></em>上一页</span>
+                            <span class="current">1</span>
+                            <a href="javascript:void(0);" class="tcdNumber">2</a>
+                            <a href="javascript:void(0);" class="tcdNumber">3</a>
+                            <span>...</span>
+                            <a href="javascript:void(0);" class="tcdNumber">15</a>
+                            <a href="javascript:void(0);" class="pageB nextPage">下一页></a>
+                            <span class="turnpage3">共<span>15</span>页&nbsp;&nbsp;到第</span>
+                            <input class="turnpage0" type="text" maxlength="3" onafterpaste="BASEisNotNum(this);">
+                            <span>页</span>
+                            <a class="turnpage1 grayBtn">确定</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 引导页 单元计划使用说明-->
+<div class="guide-page">
+    <div class="guide-content">
+        <div class="guide-close" flex="cross:center main:center">
+            <i class="icon-voliError"></i>
+        </div>
+        <div class="articlevideo">
+                <div class="on g">单元计划使用说明</div>
+                <div class="on">教师根据教学计划选择的授课项目及课时，对应安排授课的具体内容。且保证课时数等于教学大纲选择的课时。</div>
+                <div class="on">1. 登录动跃体育教学管理平台后，进入平台操作界面。</div>
+                <div class="on">2.  点击进入教学管理 > 点击教学计划，如下图:</div>
+                <img src="../images/helphome/lazy.png" data-src="../images/helphome/jiaoxueguanli10.png">
+                <div class="on">进入单元计划列表页面后，点击新增按钮，按要求选择后，点击确定保存，如下图:</div>
+                <div class="on">>选择所属教学计划：单元计划需要教学计划安排后，才能选择，单元计划是根据教学计划来安排教学授课内容。</div>
+                <img src="../images/helphome/lazy.png" data-src="../images/helphome/jiaoxueguanli11.png">
+                <div class="on">4. 根据教学计划所选运动项目和教学课时安排教学内容。</div>
+                <div class="on">步骤1：点击基本运动，点击蓝色文本安排内容。</div>
+                <img src="../images/helphome/lazy.png" data-src="../images/helphome/jiaoxueguanli12.png">
+                <div class="on">步骤2：按要求选择填写，点击确定后，即可成功保存教学安排。</div>
+                <div class="on">>选择中间类：教学大类下，分成各个具体的运动项目。</div>
+                <div class="on">>选择更换内容：中间类下面的教案内容，点击保存后，再次点击可更换。</div>
+                <img src="../images/helphome/lazy.png" data-src="../images/helphome/jiaoxueguanli13.png">
+                <div class="on">步骤3：按照上诉方法流程，选择安排所有的教学内容后。</div>
+                <img src="../images/helphome/lazy.png" data-src="../images/helphome/jiaoxueguanli14.png">
+                <div class="on">5.本学期总单元内容 , 必须排满 , 才可以提交信息和预览全部单元内容，如下图:</div>
+                <div class="on">>预览单元计划内容</div>
+                <img src="../images/helphome/lazy.png" data-src="../images/helphome/jiaoxueguanli15.png">
+                <div class="on">>未完成单元计划所有内容时提交信息，提示为完成。</div>
+                <img src="../images/helphome/lazy.png" data-src="../images/helphome/jiaoxueguanli16.png">
+                <div class="on">>全部内容添加完成后，提交保存信息。</div>
+                <img src="../images/helphome/lazy.png" data-src="../images/helphome/jiaoxueguanli17.png">
+                <div class="on">6. 单元计划完成后，需要发布出去才能使用，未发布状态不能使用，点击右边按钮弹出窗口后，点击发布，点击确认后即发布成功。</div>
+                <img src="../images/helphome/lazy.png" data-src="../images/helphome/jiaoxueguanli18.png">        
+        </div>
+    </div>
+</div>
+<script src="../plugins/alert.js"></script>
+<script src="../plugins/pages.js"></script>
+<script src="../js/each/tablePageCommon.js"></script>
+</body>
+</html>

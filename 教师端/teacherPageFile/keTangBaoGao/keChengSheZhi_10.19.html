@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <script src="../../js/flexible/flexible_css.js"></script>
+    <script src="../../js/flexible/flexible.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/icon.css">
+    
+    <!-- 滑动插件 -->
+    <link rel="stylesheet" href="../../css/jquery.range.css">
+
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/main.js"></script>
+    <title>动跃科技</title>
+</head>
+
+<body flex="dir:top">
+    <header class="kc-header" flex-box="0" flex="dir:left" font="18">
+        <a href="javascript:history.go(-1)" flex-box="0">
+            <i class="icon-back"></i>
+        </a>
+        <div class="title" flex-box="2" font="14"><a href="#">课程设置</a></div>
+        <a href="javascript:void(0)" flex-box="0">
+        </a>
+    </header>
+    <section flex-box="1" class="shuZiJiaoXue white-back">
+        <div class="title new">
+            <h3>体育课上课时长<span font="12">（0~60分钟）</span></h3>
+            <div class="slider-box-me">
+                <input class="range-tyk" type="hidden" value="60" />
+            </div>
+        </div>
+
+        <div class="title new">
+            <h3>运动强度设计值<span font="12">（0~100）</span></h3>
+            <div class="slider-box-me">
+                <input class="range-ydqd" type="hidden" value="0,100" />
+            </div>
+        </div>
+
+        <div class="title new">
+            <h3>训练密度设计值<span font="12">（0~100）</span></h3>
+            <div class="slider-box-me">
+                <input class="range-xlmd" type="hidden" value="0,100" />
+            </div>
+        </div>
+
+        <div class="title new">
+            <h3>平均心率区间<span font="12">（50~200）</span></h3>
+            <div class="slider-box-me">
+                <input class="range-xlqj" type="hidden" value="50,200" />
+            </div>
+        </div>
+
+        <div class="button" id="submitkcsz">
+            设置完成
+        </div>
+    </section>
+    <footer flex-box="0" flex="dir:left box:mean" font="12">
+        <a href="" flex="main:center dir:top">
+            <i class="icon-sy" font="24"></i>
+            <span>首页</span>
+        </a>
+        <a href="" flex="main:center dir:top">
+            <i class="icon-xsq" font="24"></i>
+            <span>学生圈</span>
+        </a>
+        <a href="" flex="main:center dir:top">
+            <i class="icon-wode" font="24"></i>
+            <span>我的</span>
+        </a>
+    </footer>
+
+    <script src="../../js/jquery.range-min.js"></script>
+    <script src="../../js/each/kechengshezhi.js"></script>
+</body>
+
+</html>

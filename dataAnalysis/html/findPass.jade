@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+html(lang="zh-CN")
+  head
+    include head.jade
+  body
+    include header1.jade
+    
+    div.findPass
+      div.findPassBox
+        div.caption 重新设置密码
+        div.inputBox
+          input(type="text" class="input-big"
+            placeholder="手机号码/邮箱")
+          input(type="text" class="input-big"
+            placeholder="验证码")
+          span(class="btn-small btn-green")
+            | 获取验证码
+          input(type="password" class="input-big"
+            placeholder="新密码")
+          input(type="password" class="input-big"
+            placeholder="确认新密码")
+          div.send(class="btn-big btn-green")
+            |重置密码
+
+      
+        

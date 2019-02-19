@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta HTTP-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/icon.css">
+    <link rel="stylesheet" href="../plugins/animate.min.css">
+    <link rel="stylesheet" href="../css/scroll.css">
+    <link rel="stylesheet" href="../plugins/datepicker.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../plugins/mousewheel.js"></script>
+    <script src="../plugins/jquery.slimscroll.js"></script>
+    <script src="../js/pageInit.js"></script>
+    <script src="../js/main.js"></script>
+    <title>教学教案</title>
+    <script>
+    </script>
+</head>
+<body>
+<div class="pageContent">
+    <div class="left-menu">
+        <a class="logo-box">
+        <span class="logo-img">
+        </span>
+        </a>
+        <ul class="menu-list f16">
+            <li class="current"><a href="" class=""><i class="icon-home">&nbsp;</i>主页</a></li>
+            <li class=""><a href="" class=""><i class="icon-group">&nbsp;</i>教研群组</a></li>
+            <li class=""><a href="" class=""><i class="icon-teachManage">&nbsp;</i>教学管理</a></li>
+            <li class=""><a href="" class=""><i class="icon-import">&nbsp;</i>数据录入</a></li>
+            <li class=""><a href="" class=""><i class="icon-homeWork">&nbsp;</i>家庭作业</a></li>
+        </ul>
+        <ul class="bottom-menu menu-list f16">
+            <li class=""><a href="" class=""><i class="icon-add">&nbsp;</i>收藏</a></li>
+            <li class=""><a href="" class=""><i class="icon-setting">&nbsp;</i>设置</a></li>
+            <li class=""><a href="" class=""><i class="icon-back">&nbsp;</i>返回启动页</a></li>
+        </ul>
+    </div>
+    <div class="rightPage">
+        <div class="page-head">
+            <div class="bread-nav-box txt_w">
+                <a href="javascript:;"><b>教学管理</b></a> >
+                <a href="javascript:;"><b>教学计划</b></a>
+            </div>
+            <div class="head-menu">
+                <ul class="head-menu-ul f16">
+                    <!-- <li class="head-menu-item"><a href="javascript:;" class="txt_w">退出</a></li> -->
+                    <li class="head-menu-item" id="dropDown-menu-head"><a href="javascript:;" class="txt_w">账户信息<i class="icon-hehe"></i></a>
+                        <div class="dropdown-content active-drop">
+                            <ul>
+                                <li id="cg-pass">修改密码</li>
+                                <li><a href="#">退出登录</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="head-menu-item"><a href="javascript:;" class="txt_w">欢迎页</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="table-content">
+                <div class="table-btn-group">
+                    <div class="table-row">
+
+                        <div class="col-8-16 margin-bottom20">
+                            <a href="javascript:;" class="btn yellowBtn">行政班</a>
+                            <a href="javascript:;" class="btn grayBtn">兴趣班</a>
+                        </div>
+
+                        <div class="col-8-16  margin-bottom20 txt-fr">
+                            <span class="batch-box"></span>
+                            <a href="javascript:;" class="icon-addItem btn pinkBtn">&nbsp;新增</a>
+                            <span href="javascript:;" class="btn p-relative yellowBtn mr5 btn-drop-list-content batchUpdate-btn">
+                                <i class="icon-batchUpdate"></i>&nbsp;批量操作
+                                <div class="btn-drop-list-box">
+                                    <a href="javascript:;" class="drop-item allSelect" data-select='false'>全选</a>
+                                    <a href="javascript:;" class="drop-item daochu-new">导出</a>
+                                </div>
+                            </span>
+                            <a href="javascript:;" class="btn themeBtn">往年教学计划</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-box excel-table">
+                    <!-- 修改 比例为 3 3 3 7 去掉向上箭头 -->
+                    <div class="table-row f16">
+                        <div class="col-2-16">学年</div>
+                        <div class="col-2-16">年级</div>
+                        <div class="col-1-16">学期</div>
+                        <div class="col-2-16">教学计划</div>
+                        <div class="col-1-16">编辑人</div>
+                        <div class="col-2-16">单元计划</div>
+                        <div class="col-1-16">编辑人</div>
+                        <div class="col-2-16">计划进度</div>
+                        <div class="col-3-16">选项</div>
+                    </div>
+
+                    <div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">一年级</div>
+                        <div class="col-1-16">上学期</div>
+                        <div class="col-2-16">
+                            <a class="mr5" href="javascript:;">已选12课时</a>
+                        </div>
+                        <div class="col-1-16">管理</div>
+                        <div class="col-2-16">
+                            <a class="mr5" href="javascript:;">已选：0/12</a>
+                        </div>
+                        <div class="col-1-16">暂无</div>
+                        <div class="col-2-16">已备课</div>
+                        <div class="col-3-16">
+                            <a class="mr5" href="javascript:;">查看 </a>  
+                            <a class="mr5" href="javascript:;">编辑 </a>  
+                            <a class="mr5" href="javascript:;">删除 </a>  
+                            <a class="mr5" href="javascript:;">导出</a> 
+                        </div>
+                        <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label>
+                    </div>
+                    
+
+                    <div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">一年级</div>
+                        <div class="col-1-16">上学期</div>
+                        <div class="col-2-16">
+                            <a class="mr5" href="javascript:;">已选12课时</a>
+                        </div>
+                        <div class="col-1-16">管理</div>
+                        <div class="col-2-16">
+                            <a class="mr5" href="javascript:;">已选：0/12</a>
+                        </div>
+                        <div class="col-1-16">暂无</div>
+                        <div class="col-2-16 color-blue">一键备课</div>
+                        <div class="col-3-16">
+                            <a class="mr5" href="javascript:;">查看 </a>  
+                            <a class="mr5" href="javascript:;">编辑 </a>  
+                            <a class="mr5" href="javascript:;">删除 </a>  
+                            <a class="mr5" href="javascript:;">导出</a> 
+                        </div>
+                        <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label>
+                    </div>
+                    
+                   
+                </div>
+
+
+                <!-- <div class="pages">
+                    <div class="goods-pages">
+                        <div class="tcd-page-code">
+                            <span class="pageB disabled"><em class="iconfont icon-left mr5"></em>上一页</span>
+                            <span class="current">1</span>
+                            <a href="javascript:void(0);" class="tcdNumber">2</a>
+                            <a href="javascript:void(0);" class="tcdNumber">3</a>
+                            <span>...</span>
+                            <a href="javascript:void(0);" class="tcdNumber">15</a>
+                            <a href="javascript:void(0);" class="pageB nextPage">下一页></a>
+                            <span class="turnpage3">共<span>15</span>页&nbsp;&nbsp;到第</span>
+                            <input class="turnpage0" type="text" maxlength="3" />
+                            <span>页</span>
+                            <a class="turnpage1 grayBtn">确定</a></div>
+                    </div>
+                </div> -->
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../plugins/alert.js"></script>
+<script src="../js/each/tablePageCommon.js"></script>
+</body>
+</html>

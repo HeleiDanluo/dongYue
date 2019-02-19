@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta HTTP-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/icon.css">
+    <link rel="stylesheet" href="../plugins/animate.min.css">
+    <link rel="stylesheet" href="../css/scroll.css">
+    <link rel="stylesheet" href="../plugins/datepicker.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../plugins/mousewheel.js"></script>
+    <script src="../plugins/mousewheel.js"></script>
+    <script src="../plugins/jquery.slimscroll.js"></script>
+    <script src="../js/pageInit.js"></script>
+    <script src="../js/main.js"></script>
+    <title>体质数据提交审核</title>
+    <script>
+    </script>
+</head>
+<body>
+<div class="pageContent">
+    <div class="left-menu">
+        <a class="logo-box">
+        <span class="logo-img">
+        </span>
+        </a>
+        <ul class="menu-list f16">
+            <li class="current"><a href="" class=""><i class="icon-home">&nbsp;</i>主页</a></li>
+            <li class=""><a href="" class=""><i class="icon-group">&nbsp;</i>教研群组</a></li>
+            <li class=""><a href="" class=""><i class="icon-teachManage">&nbsp;</i>教学管理</a></li>
+            <li class=""><a href="" class=""><i class="icon-import">&nbsp;</i>数据录入</a></li>
+            <li class=""><a href="" class=""><i class="icon-homeWork">&nbsp;</i>家庭作业</a></li>
+        </ul>
+        <ul class="bottom-menu menu-list f16">
+            <li class=""><a href="" class=""><i class="icon-add">&nbsp;</i>收藏</a></li>
+            <li class=""><a href="" class=""><i class="icon-setting">&nbsp;</i>设置</a></li>
+            <li class=""><a href="" class=""><i class="icon-back">&nbsp;</i>返回启动页</a></li>
+        </ul>
+    </div>
+    <div class="rightPage">
+        <div class="page-head">
+            <div class="bread-nav-box txt_w">
+                <a href="javascript:;"><b>体质数据</b></a> >
+                <a href="javascript:;"><b>体质数据录入提交审核</b></a>
+            </div>
+            <div class="head-menu">
+                <ul class="head-menu-ul f16">
+                    <li class="head-menu-item"><a href="javascript:;" class="txt_w">退出</a></li>
+                    <li class="head-menu-item"><a href="javascript:;" class="txt_w">账户信息<i class="icon-hehe"></i></a>
+                    </li>
+                    <li class="head-menu-item"><a href="javascript:;" class="txt_w">欢迎页</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="table-content">
+                <div class="table-btn-group">
+                    <div class="table-row">
+                        <div class="col-8-16 margin-bottom20">
+                        </div>
+                        <div class="col-8-16 margin-bottom20 t_r">
+                                <a href="javascript:;" class="icon-download btn btn-green">&nbsp;下载模板-小学</a>
+                                <a href="javascript:;" class="icon-import btn pinkBtn">&nbsp;数据录入</a>
+                                <a href="javascript:;" class="icon-import btn pinkBtn">&nbsp;历史数据录入</a>
+                                <!-- <a href="javascript:;" class="icon-batchUpdate btn pinkBtn batchUpdate-btn">&nbsp;批量提交审核</a> -->
+                                <!-- <div class="margin-bottom20 t_r" style="display: inline-block;height: 0px; width: 0px;">
+                                    <div class="batch-box">
+                                    </div>
+                                </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="table-box excel-table">
+                    <div class="table-row f16">
+                        <div class="col-2-16">学年</div>
+                        <div class="col-2-16">年级</div>
+                        <div class="col-3-16">名称</div>
+                        <div class="col-2-16">审核状态</a></div>
+                        <div class="col-6-16">提交状态</a></div>
+                        <div class="col-1-16 t_c">操作</div>
+                    </div>
+                    <div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            已审核
+                        </div>
+                        <div class="col-4-16">
+                            已提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div>
+                    <div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div><div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">9年级</div>
+                        <div class="col-3-16">
+                            三年级一班学生数据
+                            <!-- <a href="javascript:;" class="color-blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;修改名称</a> -->
+                        </div>
+                        <div class="col-2-16">
+                            未审核
+                        </div>
+                        <div class="col-4-16">
+                            未提交
+                        </div>
+                        <div class="col-2-16 txt-fr">
+                            <a href="javascript:;" class="color-blue">查看&提交</a>
+                        </div>
+                        <div class="col-1-16 t_c">
+                            <a href="javascript:;" class="color-blue">导出</a>
+                        </div>
+                        <!-- 添加的选择框 -->
+                        <!-- <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label> -->
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../plugins/alert.js"></script>
+<script src="../js/each/tiZhiShuJuTiJiaoShenHe.js"></script>
+</body>
+</html>

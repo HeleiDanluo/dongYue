@@ -1,0 +1,71 @@
+.tapt-page-body {
+  width: 100%;
+  height: calc(100% - 100px);
+  padding: 4% 70px 70px 120px;
+  box-sizing: border-box;
+}
+.tapt-page-body .item-box {
+  width: 50%;
+  height: 50%;
+  float: left;
+  padding: 2% 0;
+  margin-top: 1%;
+  position: relative;
+}
+.tapt-page-body .item-box .title-box {
+  position: absolute;
+  min-width: 18%;
+  height: 16%;
+  display: flex;
+  align-items: center;
+  background: #5fcacb;
+  color: #fff;
+  padding-right: 6%;
+  margin-top: -3.5%;
+  clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
+}
+.tapt-page-body .item-box .title-arrow {
+  left: 3%;
+  min-width: 18%;
+  background: #319095;
+  position: absolute;
+  height: 16%;
+  margin-top: -3.5%;
+  padding-right: 6%;
+  clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
+}
+.tapt-page-body .item-box .img {
+  float: left;
+  width: 45%;
+  height: 100%;
+}
+.tapt-page-body .item-box .img img {
+  width: 100%;
+  height: 100%;
+}
+.tapt-page-body .item-box .txt-content {
+  float: left;
+  margin-left: 2%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  box-shadow: none !important;
+}
+.tapt-page-body .item-box:nth-child(2) .title-box {
+  background: #a0bf0d;
+}
+.tapt-page-body .item-box:nth-child(2) .title-arrow {
+  background: #788f0a;
+}
+.tapt-page-body .item-box:nth-child(3) .title-box {
+  background: #f5841c;
+}
+.tapt-page-body .item-box:nth-child(3) .title-arrow {
+  background: #c46209;
+}
+.tapt-page-body .item-box:nth-child(4) .title-box {
+  background: #bca98a;
+}
+.tapt-page-body .item-box:nth-child(4) .title-arrow {
+  background: #625137;
+}

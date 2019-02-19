@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="../css/main.css">
+    <title>动跃科技</title>
+</head>
+<body>
+    <div style="display:flex;justify-content: center;align-items: center;width:100%;height:100%">
+        <span style="font-size:20px">
+            您没有访问的权限，
+            <span id="time">3</span>
+            秒钟后自动返回首页
+            <a href="http://web.jiankangtiyu.com/homeIndex/homeIndex.do">立刻跳转</a>
+        </span>
+    </div>
+    <script>
+        var count = 3;
+        var time = setInterval(function(){
+            count--;
+            document.getElementById('time').innerHTML  = count;
+            console.log(count)
+            if(count <= 0){
+                clearInterval(time)
+                window.location.href = 'http://web.jiankangtiyu.com/homeIndex/homeIndex.do'
+            }
+        },1000)
+    </script>
+</body>
+</html>

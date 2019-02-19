@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="../../js/baseJs/jquery.js"></script>
+    <script src="../../js/baseJs/flexible.js"></script>
+    <script src="../../js/baseJs/flexible_css.js"></script>
+    <script src="../../js/jsPlug/main.js"></script>
+</head>
+<body flex="dir:top">
+<header flex-box="0" flex="dir:left" font="16">
+    <a href="history.go(-1)" flex-box="0">返回</a>
+    <div class="title" flex-box="1"></div>
+    <a href="javascript:void(0)" flex-box="0"></a>
+</header>
+<section flex-box="1" class="loginBack">
+    <div class="login-wrapper">
+        <label flex="cross:center" class="login-input" font="16">
+            <span class="input-name" flex-box="0">手机号</span>
+            <input type="tel" flex-box="1" placeholder="请输入电话号码"/>
+            <span class="clear-username" flex-box="0" font="18">×</span>
+        </label>
+        <label flex="cross:center" class="login-input" font="16">
+            <span class="input-name" flex-box="0">密码</span>
+            <input type="password" flex-box="1" placeholder="请输入密码"/>
+        </label>
+        <p class="bottom-link" font="14">
+            <a href="forgetPword.html">忘记密码？</a>
+        </p>
+        <div class="submit-block mt_100" font="14">
+            <a href="" class="btn-full-test">确定</a>
+        </div>
+    </div>
+</section>
+<script>
+    $(function(){
+        $.loading({type:'show'})
+    })
+</script>
+</body>
+</html>

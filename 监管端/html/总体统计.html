@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <title>动跃数据分析</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/public.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        $('.leftNav>ul>li').removeClass('focus')
+        $('.leftNav>ul>li').eq(1).addClass('focus')
+        // $('.leftNav>ul>li').eq(2).click()
+        $('.leftNav>ul>li>ul>li').removeClass('focus')
+        $('.leftNav>ul>li>ul>li').eq(0).addClass('focus')
+      })
+    </script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <!-- <img src="../images/logo.png" alt="">
+        <span class="name">动跃科技数据分析平台</span> -->
+      </div>
+      <span class="back">
+        <a onclick="window.history.go(-1)">返回上一级</a>
+      </span>
+      <div class="user"><a class="name" href="#">测试名字</a><a class="logout" href="#"> <i class="icon-logout"></i>退出</a></div>
+    </div>
+    <div class="leftNav">
+      <ul>
+        <li class="focus"><i class="icon-home"></i><a href="./findSchool.html">首页</a></li>
+        <li class="show"><i class="icon-tzsj-xstzsj"></i><span>区域统计</span><i class="icon-xia"></i>
+          <ul>
+            <li><a href="./区域统计-总体图表.html">总体图表</a></li>
+            <li><a href="./区域统计-项目等级统计.html">项目等级统计</a></li>
+            <li><a href="./区域统计-均值对比.html">均值对比</a></li>
+            <li><a href="./区域统计-检出率对比.html">检出率对比</a></li>
+            <li><a href="./区域统计-百分位.html">百分位</a></li>
+            <li><a href="./区域统计-加分项统计.html">加分项统计</a></li>
+          </ul>
+        </li>
+        <li class="show"><i class="icon-sjfx"></i><span>数据分析</span><i class="icon-xia"></i>
+          <ul>
+            <li><a href="./healthyList.html">体质健康统计</a></li>
+            <li><a href="./studentClass.html">学校课程课时</a></li>
+            <li><a href="./xueXiaoJiaoWuTongJi.html">学校教务统计</a></li>
+            <li><a href="./xueXiaoZuoYeTongJi">学校作业统计</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="passRate">
+      <div class="btn-box-chaxun">
+        <input id="shujuluru" class="btn-small btn-green" type="button" value="数据录入">
+      </div>
+      <div class="charts-content">
+        
+        <div class="chart-item-box">
+          <img class="place-img" src="../images/zongtitubiao/1.png" alt="">
+          <div class="title-btn clearfix">
+              <input class="btn-small zk-select btn-green" id="nan" type="button" value="男生">
+              <input class="btn-small zk-select btn-gray" id="nv" type="button" value="女生">
+              <input class="btn-small zk-select btn-gray" id="zongti" type="button" value="总体">
+              <input class="btn-small btn-green f_r reset-echart" type="button" value="缩小">
+          </div>
+          <div class="item-content active" id="zhongKaoChengJi-nan"></div>
+          <div class="item-content" id="zhongKaoChengJi-nv"></div>
+          <div class="item-content" id="zhongKaoChengJi-zongti"></div>
+          <div class="mask">
+            点击放大查看详情
+          </div>
+          <h5 class="title">中考成绩分布</h5>
+        </div>
+        
+        <div class="chart-item-box">
+          <img class="place-img" src="../images/zongtitubiao/2.png" alt="">
+          <div class="title-btn clearfix">
+            <input class="btn-small  f_r reset-echart" type="button" value="缩小">
+          </div>
+          <div class="item-content" id="wuShiMi"></div>
+          <div class="mask">
+            点击放大查看详情
+          </div>
+          <h5 class="title">50米成绩</h5>
+        </div>
+        
+        <div class="chart-item-box">
+          <img class="place-img" src="../images/zongtitubiao/3.png" alt="">
+          <div class="title-btn clearfix">
+            <input class="btn-small  f_r reset-echart" type="button" value="缩小">
+          </div>
+          <div class="item-content" id="sanFenZhongTiaoSheng"></div>
+          <div class="mask">
+            点击放大查看详情
+          </div>
+          <h5 class="title">3分钟跳绳</h5>
+        </div>
+        
+        <div class="chart-item-box">
+          <img class="place-img" src="../images/zongtitubiao/4.png" alt="">
+          <div class="title-btn clearfix">
+            <input class="btn-small  f_r reset-echart" type="button" value="缩小">
+          </div>
+          <div class="item-content" id="yangWoQiZuo"></div>
+          <div class="mask">
+            点击放大查看详情
+          </div>
+          <h5 class="title">仰卧起坐</h5>
+        </div>
+        
+        <div class="chart-item-box">
+          <img class="place-img" src="../images/zongtitubiao/5.png" alt="">
+          <div class="title-btn clearfix">
+            <input class="btn-small  f_r reset-echart" type="button" value="缩小">
+          </div>
+          <div class="item-content" id="zkcjReLiTu"></div>
+          <div class="mask">
+            点击放大查看详情
+          </div>
+          <h5 class="title">中考成绩得分热力图</h5>
+        </div>
+        
+        <div class="chart-item-box">
+          <img class="place-img" src="../images/zongtitubiao/2.png" alt="">
+          <div class="title-btn clearfix">
+            <input class="btn-small  f_r reset-echart" type="button" value="缩小">
+          </div>
+          <div class="item-content" id="yiQianMi"></div>
+          <div class="mask">
+            点击放大查看详情
+          </div>
+          <h5 class="title">800米/1000米</h5>
+        </div>
+        
+        <div class="chart-item-box">
+          <img class="place-img" src="../images/zongtitubiao/7.png" alt="">
+          <div class="title-btn clearfix">
+            <input class="btn-small  f_r reset-echart" type="button" value="缩小">
+          </div>
+          <div class="item-content" id="yinTiXiangShang"></div>
+          <div class="mask">
+            点击放大查看详情
+          </div>
+          <h5 class="title">引体向上</h5>
+        </div>
+        
+        <div class="chart-item-box">
+          <img class="place-img" src="../images/zongtitubiao/8.png" alt="">
+          <div class="title-btn clearfix">
+            <input class="btn-small  f_r reset-echart" type="button" value="缩小">
+          </div>
+          <div class="item-content" id="shiXinQiu"></div>
+          <div class="mask">
+            点击放大查看详情
+          </div>
+          <h5 class="title">实心球</h5>
+        </div>
+        
+        <div class="chart-item-box">
+          <img class="place-img" src="../images/zongtitubiao/9.png" alt="">
+          <div class="title-btn clearfix">
+            <input class="btn-small  f_r reset-echart" type="button" value="缩小">
+          </div>
+          <div class="item-content" id="liDingTiaoYuan"></div>
+          <div class="mask">
+            点击放大查看详情
+          </div>
+          <h5 class="title">立定跳远</h5>
+        </div>
+        
+        <!-- <div class="chart-item-box">
+          <img class="place-img" src="../images/zongtitubiao/1.png" alt="">
+          <div class="item-content"></div>
+          <div class="mask">
+            点击放大查看详情
+          </div>
+          <h5 class="title">--</h5>
+        </div>
+        
+        <div class="chart-item-box">
+          <img class="place-img" src="../images/zongtitubiao/1.png" alt="">
+          <div class="item-content"></div>
+          <div class="mask">
+            点击放大查看详情
+          </div>
+          <h5 class="title">50x8</h5>
+        </div>
+        
+        <div class="chart-item-box">
+          <img class="place-img" src="../images/zongtitubiao/1.png" alt="">
+          <div class="item-content"></div>
+          <div class="mask">
+            点击放大查看详情
+          </div>
+          <h5 class="title">800/1000米</h5>
+        </div>
+        
+        <div class="chart-item-box">
+          <img class="place-img" src="../images/zongtitubiao/1.png" alt="">
+          <div class="item-content"></div>
+          <div class="mask">
+            点击放大查看详情
+          </div>
+          <h5 class="title">一分钟跳绳</h5>
+        </div>
+        
+        <div class="chart-item-box">
+          <img class="place-img" src="../images/zongtitubiao/1.png" alt="">
+          <div class="item-content"></div>
+          <div class="mask">
+            点击放大查看详情
+          </div>
+          <h5 class="title">引体向上</h5>
+        </div>
+        
+        <div class="chart-item-box">
+          <img class="place-img" src="../images/zongtitubiao/1.png" alt="">
+          <div class="item-content"></div>
+          <div class="mask">
+            点击放大查看详情
+          </div>
+          <h5 class="title">立定跳远</h5>
+        </div> -->
+
+      </div>
+          
+    </div>
+    
+    <div class="tanchuang-content">
+      <form action="">
+        <div class="select-box">
+          <div class="close-tanchuang"><i class="icon-guanbi"></i></div>
+          <h4 class="title">样本数据录入</h4>
+
+          <div class="subtile">
+            <!-- <span>当前选择：</span> -->
+            <select name="" id="year">
+              <option value="2018">2018年</option>
+              <option value="2018">2018年</option>
+              <option value="2018">2018年</option>
+              <option value="2018">2018年</option>
+            </select>
+            <select name="" id="place">
+              <option value="cq" areaCode="510100">成都市</option>
+              <option value="cq" areaCode="510300">自贡市</option>
+              <option value="cq" areaCode="510400">攀枝花市</option>
+              <option value="cq" areaCode="510500">泸州市</option>
+            </select>
+            <select name="" id="subPlace">
+              <option value="cq">重庆市</option>
+              <option value="cq">重庆市</option>
+              <option value="cq">重庆市</option>
+              <option value="cq">重庆市</option>
+            </select>
+          </div>
+
+          <div class="select-item">
+            <select name="" id="school">
+              <option value="">重庆市第一小学</option>
+              <option value="">重庆市第二小学</option>
+              <option value="">重庆市第三小学</option>
+            </select>
+          </div>
+
+          <div class="select-item">
+            <select name="" id="grade" >
+              <option value="">小学一年级</option>
+              <option value="">小学二年级</option>
+              <option value="">小学三年级</option>
+              <option value="">小学三年级</option>
+              <option value="">小学三年级</option>
+              <option value="">小学三年级</option>
+              <option value="">小学三年级</option>
+              <option value="">小学三年级</option>
+              <option value="">小学三年级</option>
+            </select>
+          </div>
+
+          <div class="file-input-box">
+            <input type="file" name="" id="">
+          </div>
+
+          <div class="button-box btn-green">
+            <div class="tc-submit">
+              确定
+            </div>
+          </div>
+
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="../js/echarts.min.js"></script>
+  <script src="../js/each/zongti-chart.js"></script>
+  <script src="../js/each/cityChoose.js"></script>
+  <script>
+    // 弹窗地区联动
+    $('body').on('change', '#place', function () {
+      var selectedAreaCode = $("#place  option:selected").attr('areaCode').trim();
+      var selcedtAreaListObj = areaCode[selectedAreaCode];
+      var selectedReasulOptions = '';
+      for(var item in selcedtAreaListObj ){
+        selectedReasulOptions += "<option>" + selcedtAreaListObj[item] + "</option>";
+      }
+      console.log(selectedReasulOptions)
+      $('#subPlace').empty().append(selectedReasulOptions);
+    })
+  </script>
+</html>

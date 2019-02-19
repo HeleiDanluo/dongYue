@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <script src="../js/flexible/flexible_css.js"></script>
+    <script src="../js/flexible/flexible.js"></script>
+    <link rel="stylesheet" href="../css/studentMain.css">
+    <link rel="stylesheet" href="../js/mobiscroll2/mobiscroll.custom-2.17.0.min.css">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/mobiscroll2/mobiscroll.custom-2.17.0.min.js"></script>
+    <script src="../js/studentMain.js"></script>
+    <script src="../js/each/setRemarkDate.js"></script>
+    <title>动跃科技</title>
+</head>
+<body flex="dir:top">
+<header flex-box="0" flex="dir:left" font="16">
+    <a href="javascript:history.go(-1) " flex-box="0">返回</a>
+    <div class="title" flex-box="1">
+    </div>
+    <a href="javascript:void(0)" flex-box="0"></a>
+</header>
+<section flex-box="1" class="">
+    <h1 class="tab-content">
+        <span class="to-tabone">健康记录</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="to-tabtwo txt-gray">历史记录</span>
+    </h1>
+    <div class="body-record-form tab-one" font="14">
+        <div class="simple-form-item" flex="cross:center">
+            <span class="label-name" flex-box="0">开始时间</span>
+            <input type="text" class="time-select select-RemarkDate" flex-box="1" placeholder="请选择时间">
+        </div>
+        <div class="simple-form-item finish-time" flex="cross:center">
+            <span class="label-name" flex-box="0">结束时间</span>
+            <input type="text" class="time-select select-RemarkDate" flex-box="1" placeholder="请选择时间">
+        </div>
+        <div class="simple-form-item" flex="cross:center">
+            <span class="label-name" flex-box="0">身体状况</span>
+            <div class="multiSelect-box" flex-box="1">
+                <label class="sick-select">
+                    <input type="checkbox" name="sickHistory" value="0">
+                    <span class="select-square"></span>
+                    <b class="item-name">感冒</b>
+                </label>
+                <label class="sick-select">
+                    <input type="checkbox" name="sickHistory" value="1">
+                    <span class="select-square"></span>
+                    <b class="item-name">发烧 </b>
+                </label>
+                <label class="sick-select">
+                    <input type="checkbox" name="sickHistory" value="2">
+                    <span class="select-square"></span>
+                    <b class="item-name">头疼</b>
+                </label>
+                <label class="sick-select">
+                    <input type="checkbox" name="sickHistory" value="3">
+                    <span class="select-square"></span>
+                    <b class="item-name">腹泻</b>
+                </label>
+                <label class="sick-select">
+                    <input type="checkbox" name="sickHistory" value="4">
+                    <span class="select-square"></span>
+                    <b class="item-name">咳嗽</b>
+                </label>
+                <label class="sick-select">
+                    <input type="checkbox" name="sickHistory" value="5">
+                    <span class="select-square"></span>
+                    <b class="item-name">其他</b>
+                </label>
+            </div>
+        </div>
+        <div class="simple-form-item" flex="cross:center">
+            <span class="label-name" flex-box="0">补充说明</span>
+            <input type="text" maxlength="20" flex-box="1" placeholder="请填写症状（20字以内）">
+        </div>
+        <div class="simple-form-item mt20 qingjia" flex="cross:center">
+            <i class="icon-xingbiao" font="24"></i>
+            <span class="" flex-box="0">给孩子请假</span>
+            <div class="" flex-box="1" flex="main:right">
+                <label class="sick-switch" flex-box="0">
+                    <input type="checkbox" class="sickTip" name="sickTip" checked value="1" />
+                    <div flex="cross:center">
+                        <em class="circle"></em>
+                    </div>
+                </label>
+            </div>
+        </div>
+        <div class="form-submit">
+            <a href="javascript:void(0)" class="btn-full-theme">确定添加</a>
+        </div>
+    </div>
+</section>
+<footer flex-box="0" flex="dir:left box:mean">
+    <a href="home.html" flex="main:center cross:center"><i class="icon-home" font="24"></i></a>
+    <a href="mine.html" flex="main:center cross:center"><i class="icon-gerzhongxin" font="24"></i></a>
+</footer>
+<script src="../js/each/bodyRecord.js"></script>
+</body>
+</html>

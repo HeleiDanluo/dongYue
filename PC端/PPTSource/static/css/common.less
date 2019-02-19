@@ -1,0 +1,131 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'MicrosoftYaHei';
+}
+html{
+  height: 100%;
+}
+body{
+  background: url('../img/bg.png');
+  height: 100%;
+  overflow: hidden;
+}
+//清除浮动
+.clearfix:after{
+  content:".";
+  display:block;
+  height:0;
+  clear:both;
+  visibility:hidden
+}
+//统一命名标题和内容，以适应字体
+.title-fs{
+  font-weight: 600;
+}
+
+//动画时间
+@aniTime:.3s;
+
+//大于1920宽度字体变量
+@media all and(min-width:1920px){
+  //通用标题和内容
+  .title-fs{
+    font-size: 50px;
+  }
+  .normal-txt-fs{
+    font-size: 36px;
+    line-height: 50px;
+  }
+  .index-title-fs{
+    font-size: 130px;
+  }
+}
+//小于1920宽度字体变量
+@media all and(max-width:1920px){
+  //通用标题和内容
+  .title-fs{
+    font-size: 50px;
+  }
+  .normal-txt-fs{
+    font-size: 36px;
+    line-height: 50px;
+  }
+  .index-title-fs{
+    font-size: 120px;
+  }
+}
+@media all and(max-width:1600px){
+  //通用标题和内容
+  .title-fs{
+    font-size: 42px;
+  }
+  .normal-txt-fs{
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .index-title-fs{
+    font-size: 105px;
+  }
+}
+//小于1366宽度字体变量
+@media all and(max-width:1366px){
+  //通用标题和内容
+  .title-fs{
+    font-size: 36px;
+  }
+  .normal-txt-fs{
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .index-title-fs{
+    font-size: 100px;
+  }
+}
+//小于1366宽度字体变量
+@media all and(max-width:1280px){
+  //通用标题和内容
+  .title-fs{
+    font-size: 34px;
+  }
+  .normal-txt-fs{
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .index-title-fs{
+    font-size: 80px;
+  }
+}
+//鼠标覆盖效果
+.hover-effect:hover{
+  transform: scale(1.1);
+  z-index: 1000000;
+  background: #fff;
+  .txt-content{
+    box-shadow: 0 0 .8rem rgba(0,0,0,.2);
+  }
+}
+.hover-effect,.click-effect{
+  transition: @aniTime;
+}
+//鼠标点击效果
+.click-effect:active{
+  transform: scale(.98);
+}
+// 高度100%
+.height_100p{
+  height: 100%;
+}
+// 宽度100%
+.width_100p{
+  width: 100%;
+}
+//文本居中
+.t-c{
+  text-align: center;
+}
+//margin-top
+.mt20{
+  margin-top: 20px;;
+}

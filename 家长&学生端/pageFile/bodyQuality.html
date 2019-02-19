@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <script src="../js/flexible/flexible_css.js"></script>
+    <script src="../js/flexible/flexible.js"></script>
+    <link rel="stylesheet" href="../css/studentMain.css">
+    <link rel="stylesheet" href="../js/swiper/swiper.min.css">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/echart/echart.js"></script>
+    <script src="../js/swiper/swiper.jquery.min.js"></script>
+    <script src="../js/studentMain.js"></script>
+    <title>动跃科技</title>
+</head>
+<body flex="dir:top">
+<header flex-box="0" flex="dir:left" font="16">
+    <a href="javascript:history.go(-1) " flex-box="0">返回</a>
+    <div class="title" flex-box="1"></div>
+    <a href="javascript:void(0)" flex-box="0"></a>
+</header>
+<section flex-box="1">
+    <div class="body-quality-wrapper">
+        <div class="tab-menu bodyQuality" data-aim="bodyQuality" flex="main:center" font="12">
+            <a href="javascript:void(0)" class="active">身体素质</a>
+            <a href="javascript:void(0)">运动素质</a>
+        </div>
+        <div class="body-chart-wrapper">
+            <div class="ul-box" data-tabName="bodyQuality">
+                <ul>
+                    <li class="shentisuzhi"></li>
+                    <li class="yundongsuzhi"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bar-chart-group">
+            <div class="tab-menu" font="12" flex="main:center">
+                <a href="javascript:void(0)" class="active">单项指标</a>
+                <a href="healthyReport.html">健康报告</a>
+            </div>
+            <div class="bar-chart-model">
+                <div font="12" class="level-tip" flex="dir:right">
+                    <div class="level-item" flex="cross:center">
+                        <span class="bujige"></span>
+                        <b>不及格</b>
+                    </div>
+                    <div class="level-item" flex="cross:center">
+                        <span class="jige"></span>
+                        <b>及格</b>
+                    </div>
+                    <div class="level-item" flex="cross:center">
+                        <span class="lianghao"></span>
+                        <b>良好</b>
+                    </div>
+                    <div class="level-item" flex="cross:center">
+                        <span class="youxiu"></span>
+                        <b>优秀</b>
+                    </div>
+                </div>
+                <div class="chart-tab" data-index="1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide grade">
+                        </div>
+                        <div class="swiper-slide point">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="bar-chart-model">
+                <div font="12" class="level-tip" flex="dir:right">
+                    <div class="level-item" flex="cross:center">
+                        <span class="bujige"></span>
+                        <b>不及格</b>
+                    </div>
+                    <div class="level-item" flex="cross:center">
+                        <span class="jige"></span>
+                        <b>及格</b>
+                    </div>
+                    <div class="level-item" flex="cross:center">
+                        <span class="lianghao"></span>
+                        <b>良好</b>
+                    </div>
+                    <div class="level-item" flex="cross:center">
+                        <span class="youxiu"></span>
+                        <b>优秀</b>
+                    </div>
+                </div>
+                <div class="chart-tab" data-index="1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide grade">
+                        </div>
+                        <div class="swiper-slide point">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer flex-box="0" flex="dir:left box:mean">
+    <a href="home.html" flex="main:center cross:center"><i class="icon-home" font="24"></i></a>
+    <a href="mine.html" flex="main:center cross:center"><i class="icon-gerzhongxin" font="24"></i></a>
+</footer>
+<script src="../js/each/bodyQuality.js"></script>
+</body>
+</html>

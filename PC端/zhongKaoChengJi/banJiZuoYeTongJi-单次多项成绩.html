@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta HTTP-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/icon.css">
+    <link rel="stylesheet" href="../plugins/animate.min.css">
+    <link rel="stylesheet" href="../css/scroll.css">
+    <link rel="stylesheet" href="../plugins/datepicker.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../plugins/mousewheel.js"></script>
+    <script src="../plugins/jquery.slimscroll.js"></script>
+    <script src="../js/pageInit.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../plugins/echart.js"></script>
+    <title>单次多项成绩</title>
+</head>
+
+<body>
+    <div id="tanchu"></div>
+    <div class="pageContent">
+        <div class="left-menu">
+            <a class="logo-box">
+                <span class="logo-img">
+                </span>
+            </a>
+            <ul class="menu-list f16">
+                <li class="">
+                    <a href="" class="">
+                        <i class="icon-home">&nbsp;</i>主页</a>
+                </li>
+                <li class="current">
+                    <a href="" class="">
+                        <i class="icon-group">&nbsp;</i>教研群组</a>
+                </li>
+                <li class="">
+                    <a href="" class="">
+                        <i class="icon-teachManage">&nbsp;</i>教学管理</a>
+                </li>
+                <li class="">
+                    <a href="" class="">
+                        <i class="icon-import">&nbsp;</i>数据录入</a>
+                </li>
+                <li class="">
+                    <a href="" class="">
+                        <i class="icon-homeWork">&nbsp;</i>家庭作业</a>
+                </li>
+            </ul>
+            <ul class="bottom-menu menu-list f16">
+                <li class="">
+                    <a href="" class="">
+                        <i class="icon-add">&nbsp;</i>收藏</a>
+                </li>
+                <li class="">
+                    <a href="" class="">
+                        <i class="icon-setting">&nbsp;</i>设置</a>
+                </li>
+                <li class="">
+                    <a href="" class="">
+                        <i class="icon-back">&nbsp;</i>返回启动页</a>
+                </li>
+            </ul>
+        </div>
+        <div class="rightPage">
+            <div class="page-head">
+                <div class="bread-nav-box txt_w">
+                    <a href="javascript:;">
+                        <b>教学管理</b>
+                    </a> >
+                    <a href="javascript:;">
+                        <b>毕业班成绩</b>
+                    </a>
+                </div>
+                <div class="head-menu">
+                    <ul class="head-menu-ul f16">
+                        <li class="head-menu-item">
+                            <a href="javascript:;" class="txt_w">退出</a>
+                        </li>
+                        <li class="head-menu-item">
+                            <a href="javascript:;" class="txt_w">账户信息
+                                <i class="icon-hehe"></i>
+                            </a>
+                        </li>
+                        <li class="head-menu-item">
+                            <a href="javascript:;" class="txt_w">欢迎页</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="setHomeWork-wrapper zhongkao">
+                    <div class="hwork-head-menu">
+                        <a href="javascript:void(0)" class="dxdc">单项多次成绩</a>
+                        <a href="javascript:void(0)" class="dcdx current">单次多项成绩</a>
+                        <a href="javascript:void(0)" class="tjtb">成绩统计图表</a>
+                        <span class="btn mybtn themeBtn f_r mt10 mr50">
+                            <a href="javascrip:;" class="zk-download">
+                                导出
+                            </a>
+                        </span>
+                        <span class="btn  f_r pinkBtn mt10 mr20 inport-tizhi">体质成绩导入</span>
+                        <span class="btn mybtn yellowBtn f_r mt10">
+                            <a href="javascrip:;" class="zk-download">
+                                模板下载
+                            </a>
+                        </span>
+                    </div>
+                    <div class="s-menu">
+                        <!-- 单次多项成绩 -->
+                        <div class="class-select dcdx current">
+                            <div class="form-inline clearfix">
+                                <div class="col-1-16 label-name">班级</div>
+                                <div class="col-15-16 year-link-group link-group">
+                                    <a href="javascript:void(0)" class="current">（2）班</a>
+                                    <a href="javascript:void(0)">（3）班</a>
+                                </div>
+                            </div>
+                            <div class="form-inline clearfix">
+                                <div class="col-1-16 label-name">项目</div>
+                                <div class="col-15-16 year-link-group link-group">
+                                    <a href="javascript:void(0)" class="current">第一次成绩</a>
+                                    <a href="javascript:void(0)">第二次成绩</a>
+                                    <a href="javascript:void(0)">第三次成绩</a>
+                                    <a href="javascript:void(0)">终测成绩</a>
+                                </div>
+                            </div>
+                            <div class="form-inline clearfix">
+                                <div class="col-1-16 label-name">分段</div>
+                                <div class="col-15-16 year-link-group link-group multi">
+                                    <a href="javascript:void(0)" class="current">50分</a>
+                                    <a href="javascript:void(0)">48~45分</a>
+                                    <a href="javascript:void(0)">45分以下</a>
+                                    <a href="javascript:void(0)" class="txt">全选查看全部成绩</a>
+                                    <a href="javascript:void(0)" class="search-all btn yellowBtn">查询</a>
+                                </div>
+                            </div>
+                            <!-- 查询按钮 -->
+                            <!-- <div class="form-inline clearfix">
+                                <div class="col-1-16 label-name" style="visibility: hidden">分段</div>
+                                <div class="col-15-16 year-link-group link-group multi">
+                                    <a class="search-all btn yellowBtn mt10">查询</a>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="zk-table mt20 clearfix s-menu">
+                    <!-- 单次多项成绩 table-->
+                    <div class="table-content current dcdx">
+                        <!-- 切换菜单 -->
+                        <div class="title clearfix">
+                            <!-- 饼状图 菜单 -->
+                            <span class="menu icon-stgList menu-circle"></span>
+                            <!-- 表格 菜单 -->
+                            <span class="menu icon-itemSelect current menu-table"></span>
+                        </div>
+                        <!-- 图形 -->
+                        <div class="table mt20 clearfix circle-table">
+                            <!-- 班级个分段人数占比 -->
+                            <div class="circle-item" id="first"></div>
+                            <!-- 耐力跑(女:800m / 男:1000m) -->
+                            <div class="circle-item" id="second"></div>
+                            <!-- 坐位体前屈 -->
+                            <div class="circle-item" id="third"></div>
+                            <!-- 立定跳远 -->
+                            <div class="circle-item" id="fourth"></div>
+                            <!-- 耐力跑/立定跳远/坐位体前屈满分人数 -->
+                            <div class="circle-item" id="fifth"></div>
+                        </div>
+                        <!-- 表格 -->
+                        <div class="table my-width mt20 clearfix color-table">
+                            <table border="1px">
+                                <thead>
+                                    <tr>
+                                        <td rowspan="2">序号</td>
+                                        <td rowspan="2">学籍号</td>
+                                        <td rowspan="2">班级</td>
+                                        <td rowspan="2">姓名</td>
+                                        <td rowspan="2">性别</td>
+                                        <td colspan="19">第一次成绩</td>
+                                    </tr>
+                                    <tr>
+                                        <td>总分</td>
+                                        <td>200m</p></td>
+                                        <td>得分</td>
+                                        <td>800m / 1000m</p></td>
+                                        <td>得分</td>
+                                        <td>立定跳远</td>
+                                        <td>得分</td>
+                                        <td>投掷实心球</td>
+                                        <td>得分</td>
+                                        <td>引体向上</td>
+                                        <td>得分</td>
+                                        <td>仰卧起坐</td>
+                                        <td>得分</td>
+                                        <td>一分钟跳绳</td>
+                                        <td>得分</td>
+                                        <td>半场来回运球上篮</td>
+                                        <td>得分</td>
+                                        <td>100米游泳</td>
+                                        <td>得分</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- 得分列表 -->
+                                    <tr>
+                                        <td>1</td>
+                                        <td>GD000********0002</td>
+                                        <td>初一（1）班</td>
+                                        <td><a href="#">欧阳</a></td>
+                                        <td>男</td>
+                                        <td>50</td>
+                                        <td>50秒</td>
+                                        <td>20</td>
+                                        <td>3分50秒</td>
+                                        <td>15</td>
+                                        <td>2m</td>
+                                        <td>15</td>
+                                        <td>14m</td>
+                                        <td>15</td>
+                                        <td>20次</td>
+                                        <td>15</td>
+                                        <td>20次</td>
+                                        <td>15</td>
+                                        <td>20次</td>
+                                        <td>15</td>
+                                        <td>9秒</td>
+                                        <td>15</td>
+                                        <td>3分50秒</td>
+                                        <td>15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>GD000********0002</td>
+                                        <td>初一（1）班</td>
+                                        <td><a href="#">欧阳</a></td>
+                                        <td>男</td>
+                                        <td>50</td>
+                                        <td>50秒</td>
+                                        <td>20</td>
+                                        <td>3分50秒</td>
+                                        <td>15</td>
+                                        <td>2m</td>
+                                        <td>15</td>
+                                        <td>14m</td>
+                                        <td>15</td>
+                                        <td>20次</td>
+                                        <td>15</td>
+                                        <td>20次</td>
+                                        <td>15</td>
+                                        <td>20次</td>
+                                        <td>15</td>
+                                        <td>9秒</td>
+                                        <td>15</td>
+                                        <td>3分50秒</td>
+                                        <td>15</td>
+                                    </tr>
+
+                                    <!-- 总分 -->
+                                    <tr class="zongfen">
+                                        <td colspan="5">总分平均</td>
+                                        <td>48</td>
+                                        <td colspan="2">18</td>
+                                        <td colspan="2">15</td>
+                                        <td colspan="2">15</td>
+                                        <td colspan="2">18</td>
+                                        <td colspan="2">15</td>
+                                        <td colspan="2">15</td>
+                                        <td colspan="2">18</td>
+                                        <td colspan="2">15</td>
+                                        <td colspan="2">15</td>
+                                    </tr>
+                                    <!-- 人数 -->
+                                    <tr class="zongfen">
+                                        <td colspan="5">人数</td>
+                                        <td>48</td>
+                                        <td colspan="2">18</td>
+                                        <td colspan="2">15</td>
+                                        <td colspan="2">15</td>
+                                        <td colspan="2">18</td>
+                                        <td colspan="2">15</td>
+                                        <td colspan="2">15</td>
+                                        <td colspan="2">18</td>
+                                        <td colspan="2">15</td>
+                                        <td colspan="2">15</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- 页码 -->
+                <div class="pages">
+                    <div class="goods-pages">
+                        <div class="tcd-page-code">
+                            <span class="pageB disabled"><em class="iconfont icon-left mr5"></em>上一页</span>
+                            <span class="current">1</span>
+                            <a href="javascript:void(0);" class="tcdNumber">2</a>
+                            <a href="javascript:void(0);" class="tcdNumber">3</a>
+                            <span>...</span>
+                            <a href="javascript:void(0);" class="tcdNumber">15</a>
+                            <a href="javascript:void(0);" class="pageB nextPage">下一页></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="../plugins/alert.js"></script>
+    <script src="../js/each/zhongkao.js"></script>
+    <script>
+        // 饼状图调用
+        Chart.pie({
+        element: 'first',
+        title: '班级个分段人数占比',
+        data: [
+            {value:20, name:'50分', score: '2',status:'1'},
+            {value:20, name:'48~45分', score: '3',status:'2'},
+            {value:20, name:'45分以下', score: '4',status:'3'},
+            ],
+        //添加回掉函数,res为点击扇形的标题和值
+        callBack:function(res){
+            console.log(res);
+            console.log(res.score);
+            console.log(res.status);
+        }
+        });
+        Chart.pie({
+        element: 'second',
+        title: '耐力跑(女:800m / 男:1000m)',
+        data: [
+            {value:20, name:'15分'},
+            {value:20, name:'13~10分'},
+            {value:20, name:'9分以下'},
+            ]
+        });
+        Chart.pie({
+        element: 'third',
+        title: '坐位体前屈',
+        data: [
+            {value:20, name:'15分'},
+            {value:20, name:'13~12分'},
+            {value:20, name:'11分以下'},
+            ]
+        });
+        Chart.pie({
+        element: 'fourth',
+        title: '立定跳远',
+        data: [
+            {value:20, name:'20分'},
+            {value:20, name:'18~17分'},
+            {value:20, name:'15分以下'},
+            ]
+        });
+        Chart.pie({
+        element: 'fifth',
+        title: '耐力跑/立定跳远/坐位体前屈满分人数',
+        data: [
+            {value:20, name:'耐力跑'},
+            {value:20, name:'立定跳远'},
+            {value:20, name:'坐位体前屈'},
+            ]
+        });
+
+    </script>
+
+    <!-- 导出弹窗 -->
+<!-- <div class="alert-box formType animated fadeIn">
+    <div class="alert-div form-box back_white animated fadeInDownBig" style="margin-top: -200.5px;">
+        <div class="form-head t_r">
+            <a class="close-btn f18" href="javascript:;">×</a>
+        </div>
+        <h3 class="form-title t_c">体质成绩导出</h3>
+        <div class="form-content">
+            <div class="form-inline clearfix mt20">
+                <label class="form-control classNum select" id="gradeList">
+                    <input type="text" placeholder="选择班级" readonly="">
+                    <span class="caret icon-hehe"></span>
+                    <ul class="select-list" style="display: none;">
+                        <li>
+                            <a href="javascript:;" data-val="1">初三（1）班</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" data-val="1">初三（2）班</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" data-val="1">初三（3）班</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" data-val="1">初三（4）班</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" data-val="1">初三（5）班</a>
+                        </li>
+
+                    </ul>
+                </label>
+            </div>
+        </div>
+        <div class="form-content">
+            <div class="form-inline clearfix">
+                <label class="form-control classNum select" id="gradeList">
+                    <input type="text" placeholder="选择次数" readonly="">
+                    <span class="caret icon-hehe"></span>
+                    <ul class="select-list" style="display: none;">
+                        <li>
+                            <a href="javascript:;" data-val="1">初三第一次成绩</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" data-val="1">初三第二次成绩</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" data-val="1">初三第三次成绩</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" data-val="1">终测成绩</a>
+                        </li>
+                    </ul>
+                </label>
+            </div>
+        </div>
+        <div class="form-content">
+            <div class="clearfix alertmult">
+                <span class="btn grayBtn current">50分</span>
+                <span class="btn grayBtn">48~45分</span>
+                <span class="btn grayBtn">45分以下</span>
+            </div>
+            <div class="form-line submitBtn mt10 clearfix">
+                <a href="javascript:;" class="blockBtn themeBtn form-confirm" year="2017-2018">确定</a>
+            </div>
+        </div>
+
+    </div>
+</div> -->
+<!-- 点击饼状图弹窗 -->
+<!-- <div class="alert-box animated fadeIn alertType">
+    <div class="alert-box formType animated fadeIn">
+        <div class="mid-form form-box back_white animated fadeInDownBig" style="margin-left: -409.797px; margin-top: -11%;">
+            <div class="form-head t_r">
+                <a class="close-btn icon-guanbi f12" href="javascript:;"></a>
+            </div>
+            <div class="circle-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <td rowspan="2">序号</td>
+                            <td rowspan="2">学籍号</td>
+                            <td rowspan="2">班级</td>
+                            <td rowspan="2">姓名</td>
+                            <td rowspan="2">性别</td>
+                            <td colspan="2">众测成绩</td>
+                        </tr>
+                        <tr>
+                            <td>立定跳远</td>
+                            <td>得分</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>GD000*******002</td>
+                            <td>初一(1)班</td>
+                            <td><a href="" class="txt-green">欧阳</a></td>
+                            <td>男</td>
+                            <td>120cm</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>GD000*******002</td>
+                            <td>初一(1)班</td>
+                            <td><a href="" class="txt-green">欧阳</a></td>
+                            <td>男</td>
+                            <td>120cm</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>GD000*******002</td>
+                            <td>初一(1)班</td>
+                            <td><a href="" class="txt-green">欧阳</a></td>
+                            <td>男</td>
+                            <td>120cm</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>GD000*******002</td>
+                            <td>初一(1)班</td>
+                            <td><a href="" class="txt-green">欧阳</a></td>
+                            <td>男</td>
+                            <td>120cm</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>GD000*******002</td>
+                            <td>初一(1)班</td>
+                            <td><a href="" class="txt-green">欧阳</a></td>
+                            <td>男</td>
+                            <td>120cm</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>GD000*******002</td>
+                            <td>初一(1)班</td>
+                            <td><a href="" class="txt-green">欧阳</a></td>
+                            <td>男</td>
+                            <td>120cm</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>GD000*******002</td>
+                            <td>初一(1)班</td>
+                            <td><a href="" class="txt-green">欧阳</a></td>
+                            <td>男</td>
+                            <td>120cm</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>GD000*******002</td>
+                            <td>初一(1)班</td>
+                            <td><a href="" class="txt-green">欧阳</a></td>
+                            <td>男</td>
+                            <td>120cm</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>GD000*******002</td>
+                            <td>初一(1)班</td>
+                            <td><a href="" class="txt-green">欧阳</a></td>
+                            <td>男</td>
+                            <td>120cm</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>GD000*******002</td>
+                            <td>初一(1)班</td>
+                            <td><a href="" class="txt-green">欧阳</a></td>
+                            <td>男</td>
+                            <td>120cm</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>GD000*******002</td>
+                            <td>初一(1)班</td>
+                            <td><a href="" class="txt-green">欧阳</a></td>
+                            <td>男</td>
+                            <td>120cm</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>GD000*******002</td>
+                            <td>初一(1)班</td>
+                            <td><a href="" class="txt-green">欧阳</a></td>
+                            <td>男</td>
+                            <td>120cm</td>
+                            <td>80</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+</body>
+
+</html>

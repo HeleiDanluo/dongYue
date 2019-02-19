@@ -1,0 +1,28 @@
+.header
+  .logo
+    img(src="../images/logo.png", alt="")
+    span.name 动跃科技数据分析平台
+  span.back
+    a(onclick="window.history.go(-1)") 返回上一级
+  .user
+    a(href="#").name 测试名字
+    //- a(href="./findPass.html").pass
+    //-   i(class="icon-xgmm")
+    //-   |密码设置
+    a(href="#").logout 
+      i(class="icon-logout")
+      |退出
+.leftNav
+  ul
+    li.focus
+      i(class="icon-home")
+      a(href="./findSchool.html") 首页
+    li.show
+      i(class="icon-sjfx")
+      span 数据分析
+      i(class="icon-xia")
+      ul
+        li: a(href="./healthyList.html") 健康等级分布
+        li: a(href="./passRate.html") 学校成绩分布
+        li: a(href="./studentClass.html") 学校课程课时
+        //- li: a(href="./studentEqipment.html") 学校器械教具

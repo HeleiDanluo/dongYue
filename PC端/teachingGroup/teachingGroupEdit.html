@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta HTTP-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/icon.css">
+    <link rel="stylesheet" href="../plugins/animate.min.css">
+    <link rel="stylesheet" href="../css/scroll.css">
+    <link rel="stylesheet" href="../plugins/datepicker.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../plugins/mousewheel.js"></script>
+    <script src="../plugins/jquery.slimscroll.js"></script>
+    <script src="../js/pageInit.js"></script>
+    <script src="../js/main.js"></script>
+    <title>教学群组</title>
+    <script>
+    </script>
+</head>
+<body>
+<div class="pageContent">
+    <div class="left-menu">
+        <a class="logo-box">
+        <span class="logo-img">
+        </span>
+        </a>
+        <ul class="menu-list f16">
+            <li class=""><a href="" class=""><i class="icon-home">&nbsp;</i>主页</a></li>
+            <li class="current"><a href="" class=""><i class="icon-group">&nbsp;</i>教研群组</a></li>
+            <li class=""><a href="" class=""><i class="icon-teachManage">&nbsp;</i>教学管理</a></li>
+            <li class=""><a href="" class=""><i class="icon-import">&nbsp;</i>数据录入</a></li>
+            <li class=""><a href="" class=""><i class="icon-homeWork">&nbsp;</i>家庭作业</a></li>
+        </ul>
+        <ul class="bottom-menu menu-list f16">
+            <li class=""><a href="" class=""><i class="icon-add">&nbsp;</i>收藏</a></li>
+            <li class=""><a href="" class=""><i class="icon-setting">&nbsp;</i>设置</a></li>
+            <li class=""><a href="" class=""><i class="icon-back">&nbsp;</i>返回启动页</a></li>
+        </ul>
+    </div>
+    <div class="rightPage">
+        <div class="page-head">
+            <div class="bread-nav-box txt_w">
+                <a href="javascript:;"><b>教研群组</b></a>
+            </div>
+            <div class="head-menu">
+                <ul class="head-menu-ul f16">
+                    <li class="head-menu-item"><a href="javascript:;" class="txt_w">退出</a></li>
+                    <li class="head-menu-item"><a href="javascript:;" class="txt_w">账户信息<i class="icon-hehe"></i></a>
+                    </li>
+                    <li class="head-menu-item"><a href="javascript:;" class="txt_w">欢迎页</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="middle-content">
+            <div class="position-content">
+                <!-- 添加的tab切换 通过showPage属性对应class名字进行切换 js在底部-->
+                <div class="tab-teacher">
+                    <div class="tab-item active" showPage="jiaoshi-active">教师账号</div>
+                    <div class="tab-item" showPage="xiaozhang-active">校长账号</div>
+                </div>
+
+                <!-- 教师账号页 -->
+                <div class="middle-content-scroll jiaoshi-active active">
+                    <ul class="edit-teacher-list p_bottom m-bottom">
+                        <!-- 原来的 开始 -->
+                        <li class="edit-teacher-item">
+                            <a href="javascript:;" class="clearfix">
+                                <div class="col-13-16">
+                                    <p><i class="icon-userHead">&nbsp;</i>李老师-教研管理</p>
+                                    <p><i class="icon-phone">&nbsp;</i>18225255656</p>
+                                </div>
+                                <div class="col-3-16">
+                                    <span href="javasscript:;" class="edit-btn">编辑</span>
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="delete-teacher">×</a>
+                        </li>
+                        <!-- 原来的 结束 -->
+
+                        <!-- 修改过的 开始 -->
+                        <div class="edit-teacher-box">
+                            <!-- 正面 开始 -->
+                            <li class="edit-teacher-item front">
+                                <a href="javascript:;" class="clearfix">
+                                    <div class="col-13-16">
+                                        <p><i class="icon-userHead">&nbsp;</i>666老师</p>
+                                        <p><i class="icon-phone">&nbsp;</i>18225255656</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- 正面 结束 -->
+                            <!-- 反面 开始 -->
+                            <li class="edit-teacher-item back">
+                                <div href="javascript:;" class="clearfix ddd">
+                                    <div class="col-16-16">
+                                        <p>
+                                            <i class="icon-userHead">&nbsp;</i>
+                                            <span class="tchr-name">666老师</span>
+                                            <span>-18225255656</span>
+                                        </p>
+                                        <div class="quanxian-list">
+                                            <span class="item">学校管理</span>
+                                            <span class="item">教研管理</span>
+                                            <span class="item">教师</span>
+                                            <span class="item">教具管理</span>
+                                            <span class="item">生活教师</span>
+                                        </div>
+                                    </div>
+                                    <div class="teacher-edit-btn clearfix">
+                                        <div class="icon">
+                                            <i class="icon-toLeft"></i>
+                                        </div>
+                                        <div class="opts-panel">
+                                            <!-- 点击效果的js在底部 -->
+                                            <a href="javascript:void(0)" id="tchr-edit">编辑</a>
+                                            <a href="javascript:void(0)" id="tchr-delete">删除</a>
+                                            <a href="javascript:void(0)" id="tchr-trans">转让管理员</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- 反面 结束 -->
+                        </div>
+                        <!-- 修改过的 结束 -->
+
+                        <!-- 修改过的 开始 -->
+                        <div class="edit-teacher-box">
+                            <!-- 正面 开始 -->
+                            <li class="edit-teacher-item front">
+                                <a href="javascript:;" class="clearfix">
+                                    <div class="col-13-16">
+                                        <p><i class="icon-userHead">&nbsp;</i>666老师</p>
+                                        <p><i class="icon-phone">&nbsp;</i>18225255656</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- 正面 结束 -->
+                            <!-- 反面 开始 -->
+                            <li class="edit-teacher-item back">
+                                <div href="javascript:;" class="clearfix ddd">
+                                    <div class="col-16-16">
+                                        <p>
+                                            <i class="icon-userHead">&nbsp;</i>
+                                            <span class="tchr-name">666老师</span>
+                                            <span>-18225255656</span>
+                                        </p>
+                                        <div class="quanxian-list">
+                                            <span class="item">学校管理</span>
+                                            <span class="item">教研管理</span>
+                                            <span class="item">教师</span>
+                                            <span class="item">教具管理</span>
+                                            <span class="item">生活教师</span>
+                                        </div>
+                                    </div>
+                                    <div class="teacher-edit-btn clearfix">
+                                        <div class="icon">
+                                            <i class="icon-toLeft"></i>
+                                        </div>
+                                        <div class="opts-panel">
+                                            <!-- 点击效果的js在底部 -->
+                                            <a href="javascript:void(0)" id="tchr-edit">编辑</a>
+                                            <a href="javascript:void(0)" id="tchr-delete">删除</a>
+                                            <!-- <a href="javascript:void(0)" id="tchr-trans">转让管理员</a> -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- 反面 结束 -->
+                        </div>
+                        <!-- 修改过的 结束 -->
+
+                        <!-- 修改过的 开始 -->
+                        <div class="edit-teacher-box">
+                            <!-- 正面 开始 -->
+                            <li class="edit-teacher-item front">
+                                <a href="javascript:;" class="clearfix">
+                                    <div class="col-13-16">
+                                        <p><i class="icon-userHead">&nbsp;</i>666老师</p>
+                                        <p><i class="icon-phone">&nbsp;</i>18225255656</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- 正面 结束 -->
+                            <!-- 反面 开始 -->
+                            <li class="edit-teacher-item back">
+                                <div href="javascript:;" class="clearfix ddd">
+                                    <div class="col-16-16">
+                                        <p>
+                                            <i class="icon-userHead">&nbsp;</i>
+                                            <span class="tchr-name">666老师</span>
+                                            <span>-18225255656</span>
+                                        </p>
+                                        <div class="quanxian-list">
+                                            <span class="item">学校管理</span>
+                                            <span class="item">教研管理</span>
+                                            <span class="item">教师</span>
+                                            <span class="item">教具管理</span>
+                                            <span class="item">生活教师</span>
+                                        </div>
+                                    </div>
+                                    <div class="teacher-edit-btn clearfix">
+                                        <div class="icon">
+                                            <i class="icon-toLeft"></i>
+                                        </div>
+                                        <div class="opts-panel">
+                                            <!-- 点击效果的js在底部 -->
+                                            <a href="javascript:void(0)" id="tchr-edit">编辑</a>
+                                            <a href="javascript:void(0)" id="tchr-delete">删除</a>
+                                            <a href="javascript:void(0)" id="tchr-trans">转让管理员</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- 反面 结束 -->
+                        </div>
+                        <!-- 修改过的 结束 -->
+
+                        <!-- 修改过的 开始 -->
+                        <div class="edit-teacher-box">
+                            <!-- 正面 开始 -->
+                            <li class="edit-teacher-item front">
+                                <a href="javascript:;" class="clearfix">
+                                    <div class="col-13-16">
+                                        <p><i class="icon-userHead">&nbsp;</i>666老师</p>
+                                        <p><i class="icon-phone">&nbsp;</i>18225255656</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- 正面 结束 -->
+                            <!-- 反面 开始 -->
+                            <li class="edit-teacher-item back">
+                                <div href="javascript:;" class="clearfix ddd">
+                                    <div class="col-16-16">
+                                        <p>
+                                            <i class="icon-userHead">&nbsp;</i>
+                                            <span class="tchr-name">666老师</span>
+                                            <span>-18225255656</span>
+                                        </p>
+                                        <div class="quanxian-list">
+                                            <span class="item">学校管理</span>
+                                            <span class="item">教研管理</span>
+                                            <span class="item">教师</span>
+                                            <span class="item">教具管理</span>
+                                            <span class="item">生活教师</span>
+                                        </div>
+                                    </div>
+                                    <div class="teacher-edit-btn clearfix">
+                                        <div class="icon">
+                                            <i class="icon-toLeft"></i>
+                                        </div>
+                                        <div class="opts-panel">
+                                            <!-- 点击效果的js在底部 -->
+                                            <a href="javascript:void(0)" id="tchr-edit">编辑</a>
+                                            <a href="javascript:void(0)" id="tchr-delete">删除</a>
+                                            <a href="javascript:void(0)" id="tchr-trans">转让管理员</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- 反面 结束 -->
+                        </div>
+                        <!-- 修改过的 结束 -->
+
+                        <!-- 修改过的 开始 -->
+                        <div class="edit-teacher-box">
+                            <!-- 正面 开始 -->
+                            <li class="edit-teacher-item front">
+                                <a href="javascript:;" class="clearfix">
+                                    <div class="col-13-16">
+                                        <p><i class="icon-userHead">&nbsp;</i>666老师</p>
+                                        <p><i class="icon-phone">&nbsp;</i>18225255656</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- 正面 结束 -->
+                            <!-- 反面 开始 -->
+                            <li class="edit-teacher-item back">
+                                <div href="javascript:;" class="clearfix ddd">
+                                    <div class="col-16-16">
+                                        <p>
+                                            <i class="icon-userHead">&nbsp;</i>
+                                            <span class="tchr-name">666老师</span>
+                                            <span>-18225255656</span>
+                                        </p>
+                                        <div class="quanxian-list">
+                                            <span class="item">学校管理</span>
+                                            <span class="item">教研管理</span>
+                                            <span class="item">教师</span>
+                                            <span class="item">教具管理</span>
+                                            <span class="item">生活教师</span>
+                                        </div>
+                                    </div>
+                                    <div class="teacher-edit-btn clearfix">
+                                        <div class="icon">
+                                            <i class="icon-toLeft"></i>
+                                        </div>
+                                        <div class="opts-panel">
+                                            <!-- 点击效果的js在底部 -->
+                                            <a href="javascript:void(0)" id="tchr-edit">编辑</a>
+                                            <a href="javascript:void(0)" id="tchr-delete">删除</a>
+                                            <a href="javascript:void(0)" id="tchr-trans">转让管理员</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- 反面 结束 -->
+                        </div>
+                        <!-- 修改过的 结束 -->
+
+                    </ul>
+                </div>
+
+                <!-- 校长账号页 -->
+                <div class="middle-content-scroll xiaozhang-active">
+                    <ul class="edit-teacher-list p_bottom m-bottom">
+                        <!-- 修改过的 开始 -->
+                        <div class="edit-teacher-box">
+                            <!-- 正面 开始 -->
+                            <li class="edit-teacher-item front">
+                                <a href="javascript:;" class="clearfix">
+                                    <div class="col-13-16">
+                                        <p><i class="icon-userHead">&nbsp;</i>X校长</p>
+                                        <p><i class="icon-phone">&nbsp;</i>18225255656</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- 正面 结束 -->
+                            <!-- 反面 开始 -->
+                            <li class="edit-teacher-item back">
+                                <div href="javascript:;" class="clearfix ddd">
+                                    <div class="col-16-16">
+                                        <p>
+                                            <i class="icon-userHead">&nbsp;</i>
+                                            <span class="tchr-name">X校长</span>
+                                            <span>-18225255656</span>
+                                        </p>
+                                        <div class="quanxian-list">
+                                            <span class="item">学校管理</span>
+                                            <span class="item">教研管理</span>
+                                            <span class="item">教师</span>
+                                            <span class="item">教具管理</span>
+                                            <span class="item">生活教师</span>
+                                        </div>
+                                    </div>
+                                    <div class="teacher-edit-btn clearfix">
+                                        <div class="icon">
+                                            <i class="icon-toLeft"></i>
+                                        </div>
+                                        <div class="opts-panel">
+                                            <!-- 点击效果的js在底部 -->
+                                            <a href="javascript:void(0)" id="tchr-edit">编辑</a>
+                                            <a href="javascript:void(0)" id="tchr-delete">删除</a>
+                                            <a href="javascript:void(0)" id="tchr-trans">转让管理员</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- 反面 结束 -->
+                        </div>
+                        <!-- 修改过的 结束 -->    
+                    </ul>
+                </div>
+                <div class="button btn-new btn-newAdd">
+                    <a href="javascript:void(0)" class="jiaoshi-active active">生成教师帐号</a>
+                    <a href="javascript:void(0)" class="xiaozhang-active">生成校长账号</a>
+                </div>
+            </div>
+        </div>
+        <div class="right-section bigPadding">
+            <div class="add-teacher teacher-setting-model back_white clearfix">
+                <h3 class="t_c">请选择转让教师</h3>
+                <div class="col-10-16 col-offset-3 mt30" title="123123">
+                    <div class="form-inline mt20">
+                    <!-- <div class="form-inline mt20 cant-click"> 不能点击样式 -->
+                        <label class="form-control classYear select">
+                            <input type="text" placeholder="请选择教师" />
+                            <span class="caret icon-hehe"></span>
+                            <ul class="select-list" style="display: none;">
+                                <li><a href="javascript:;">测试名字</a></li>
+                                <li><a href="javascript:;">测试名字</a></li>
+                                <li><a href="javascript:;">测试名字</a></li>
+                                <li><a href="javascript:;">测试名字</a></li>
+                                <li><a href="javascript:;">测试名字</a></li>
+                                <li><a href="javascript:;">测试名字</a></li>
+                                <li><a href="javascript:;">测试名字</a></li>
+                                <li><a href="javascript:;">测试名字</a></li>
+                            </ul>
+                        </label>
+                    </div>
+                    <div class="form-inline mt20 quanxian-option">
+                        <input  class="radio-btn" type="checkbox" name="quanxian" value="a" id="one"><label for="one" class="txt">校验管理</label>
+                        <input  class="radio-btn" type="checkbox" name="quanxian" value="a" id="two"><label for="two" class="txt">教师</label>
+                        <input  class="radio-btn" type="checkbox" name="quanxian" value="a" id="thr"><label for="thr" class="txt">教具管理</label>
+                        <input  class="radio-btn" type="checkbox" name="quanxian" value="a" id="fou"><label for="fou" class="txt">生活教师</label>
+                    </div>
+                    <div class="form-inline mt20">
+                        <a href="javascript:;" class="blockBtn themeBtn">确认</a>
+                    </div>
+                </div>
+            </div>
+            <script>
+                selectNew();
+            </script>
+        </div>
+    </div>
+
+</div>
+<script src="../plugins/datepicker.js"></script>
+<script src="../plugins/alert.js"></script>
+<script>
+    // 删除
+    $('body').on('click', '#tchr-delete', function(){
+        Alert.twoBtn({
+            words: '确认删除吗？',
+            btnLeft: '确认',
+            btnRight: '取消',
+            btnLeftGray: false,//是否灰色
+            btnRightGray:  true,//是否灰色
+            callBack: function(){
+                //确认
+                $('#btn-left').click(function(){
+                    alert('确认删除');
+                    $(".close-btn").click();//移除弹窗
+                });
+                //取消
+                $('#btn-right').click(function(){
+                    $(".close-btn").click();//移除弹窗
+                });
+            }
+        })
+    })
+    // 转让
+    $('body').on('click', '#tchr-trans', function(){
+        var thisTeacherName = $(this).parent().parent().parent().find('.tchr-name').text();
+        Alert.twoBtn({
+            words: '这会使你失去学校管理员权限，确认要将学校管理员转让给 '+ thisTeacherName +' 吗？',
+            btnLeft: '确认',
+            btnRight: '取消',
+            btnLeftGray: false,//是否灰色
+            btnRightGray:  true,//是否灰色
+            callBack: function(){
+                //确认
+                $('#btn-left').click(function(){
+                    alert('确认转让');
+                    $(".close-btn").click();//移除弹窗
+                });
+                //取消
+                $('#btn-right').click(function(){
+                    $(".close-btn").click();//移除弹窗
+                });
+            }
+        })
+    })
+
+    //切换教师和校长
+    $('body').on('click', '.tab-teacher .tab-item', function(){
+        var $this = $(this);
+        var showPage = $this.attr('showPage');
+        $this.addClass('active').siblings().removeClass('active');
+        $this.parent().parent().find('.'+showPage).addClass('active').siblings().removeClass('active');
+        console.log(showPage)
+        console.log($this.parent().parent().find('.'+showPage))
+    })
+</script>
+</body>
+</html>

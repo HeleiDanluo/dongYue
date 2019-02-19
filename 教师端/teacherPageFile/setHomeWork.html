@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <script src="../js/flexible/flexible_css.js"></script>
+    <script src="../js/flexible/flexible.js"></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/main.js"></script>
+    <title>动跃科技</title>
+</head>
+<body flex="dir:top">
+<header flex-box="0" flex="dir:left" font="18">
+    <a href="javascript:history.go(-1)" flex-box="0">
+        <i class="icon-back"></i>
+    </a>
+    <div class="title" flex-box="1" font="14">
+        <div class="title-menu" flex="dir:left main:center">
+            <a href="javascript:void(0)" class="current">一键生成作业</a>
+            <a href="javascript:void(0)">自定义作业</a>
+        </div>
+    </div>
+    <a href="javascript:void(0)" flex-box="0"></a>
+</header>
+<section flex-box="1" flex="dir:top">
+    <div class="header-class-select" flex-box="0" font="14" flex="cross:center">
+        <span class="class-name" flex-box="0">三年级</span>
+        <div class="class-number-box" flex-box="1" font="12">
+            <span class="completed all">全年级</span>
+            <span class="completed active">1班</span>
+            <span class="completed">2班</span>
+        </div>
+    </div>
+    <div class="homework-card-list can-scroll clearfix" flex-box="1">
+        <div class="card-item">
+            <h1 class="homework-title" flex="box:mean" font="14">
+                <span flex-box="2">作业1</span>
+                <a class="hwork-link" flex-box="1">修改</a>
+                <a class="hwork-link" flex-box="1">查看详情</a>
+            </h1>
+            <div class="homework-detail" flex="dir:left">
+                    <span class="homework-img" flex-box="0">
+                        <img src="../img/default-hw.jpg" alt="">
+                    </span>
+                <div class="homework-desc" flex-box="1" flex="dir:top main:justify">
+                    <p class="sport-name" font="16">跑步</p>
+                    <p class="task-plan">两组，每组10分钟</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-item">
+            <h1 class="homework-title" flex="box:mean" font="14">
+                <span flex-box="2">作业1</span>
+                <a class="hwork-link" flex-box="1">修改</a>
+                <a class="hwork-link" flex-box="1">查看详情</a>
+            </h1>
+            <div class="homework-detail" flex="dir:left">
+                    <span class="homework-img" flex-box="0">
+                        <img src="../img/default-hw.jpg" alt="">
+                    </span>
+                <div class="homework-desc" flex-box="1" flex="dir:top main:justify">
+                    <p class="sport-name" font="16">跑步</p>
+                    <p class="task-plan">两组，每组10分钟</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-confirm" flex-box="0">
+        <a href="setSchoolName.html" font="14" class="btn-full-theme">确定</a>
+    </div>
+</section>
+<footer flex-box="0" flex="dir:left box:mean" font="12">
+    <a href="" flex="main:center dir:top">
+        <i class="icon-sy" font="24"></i>
+        <span>首页</span>
+    </a>
+    <a href="" flex="main:center dir:top">
+        <i class="icon-xsq" font="24"></i>
+        <span>学生圈</span>
+    </a>
+    <a href="" flex="main:center dir:top">
+        <i class="icon-wode" font="24"></i>
+        <span>我的</span>
+    </a>
+</footer>
+<script>
+    $('body').on('click','.all', function(){
+        // if(!this.hasClass('active')){
+            $.dialog("confirm", "为当前所有已选班级生成作业，已发布的班级作业将被覆盖", {
+                callback: function (result) {
+                    console.log(result);
+                }
+            })
+        // }
+    })
+</script>
+</body>
+</html>

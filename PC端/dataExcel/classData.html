@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta HTTP-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/icon.css">
+    <link rel="stylesheet" href="../plugins/animate.min.css">
+    <link rel="stylesheet" href="../css/scroll.css">
+    <link rel="stylesheet" href="../plugins/datepicker.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../plugins/mousewheel.js"></script>
+    <script src="../plugins/jquery.slimscroll.js"></script>
+    <script src="../js/pageInit.js"></script>
+    <script src="../js/main.js"></script>
+    <title>数据报表</title>
+</head>
+<body>
+<div class="pageContent">
+    <div class="left-menu">
+        <a class="logo-box">
+        <span class="logo-img">
+        </span>
+        </a>
+        <ul class="menu-list f16">
+            <li class=""><a href="" class=""><i class="icon-home">&nbsp;</i>主页</a></li>
+            <li class="current"><a href="" class=""><i class="icon-group">&nbsp;</i>教研群组</a></li>
+            <li class=""><a href="" class=""><i class="icon-teachManage">&nbsp;</i>教学管理</a></li>
+            <li class=""><a href="" class=""><i class="icon-import">&nbsp;</i>数据录入</a></li>
+            <li class=""><a href="" class=""><i class="icon-homeWork">&nbsp;</i>家庭作业</a></li>
+        </ul>
+        <ul class="bottom-menu menu-list f16">
+            <li class=""><a href="" class=""><i class="icon-add">&nbsp;</i>收藏</a></li>
+            <li class=""><a href="" class=""><i class="icon-setting">&nbsp;</i>设置</a></li>
+            <li class=""><a href="" class=""><i class="icon-back">&nbsp;</i>返回启动页</a></li>
+        </ul>
+    </div>
+    <div class="rightPage">
+        <div class="page-head">
+            <div class="bread-nav-box txt_w">
+                <a href="javascript:;"><b>数据报表</b></a>
+            </div>
+            <div class="head-menu">
+                <ul class="head-menu-ul f16">
+                    <li class="head-menu-item"><a href="javascript:;" class="txt_w">退出</a></li>
+                    <li class="head-menu-item"><a href="javascript:;" class="txt_w">账户信息<i class="icon-hehe"></i></a>
+                    </li>
+                    <li class="head-menu-item"><a href="javascript:;" class="txt_w">欢迎页</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-section">
+            <!-- <p class="page-title form-inline f18">班级数据</p>
+            <div class="top-option clearfix mt10">
+                <div class="col-8-16 no-padding">
+                    <div class="option-btn-grp">
+                        <a href="" class="current">学生列表</a>
+                        <a href="">单项统计</a>
+                    </div>
+                </div>
+                <div class="col-7-16 no-padding">
+                    <label for="" class="form-search">
+                        <i class="icon-search f18"></i>
+                        <input type="text" placeholder="请输入搜索内容"/>
+                    </label>
+                </div>
+                <div class="col-1-16 no-padding">
+                    <a href="javascript:void (0)" class="blockBtn themeBtn">搜索</a>
+                </div>
+            </div> -->
+            <div class="select-menu mt40 back_white">
+                <!-- 搜索框 -->
+                <div class="select-menu-line clearfix">
+                    <div class="top-option clearfix mt10">
+                        <div class="col-8-16 no-padding">
+                             &nbsp;
+                        </div>
+                        <div class="col-7-16 no-padding">
+                            <label for="" class="form-search">
+                                <i class="icon-search f18"></i>
+                                <input type="text" placeholder="请输入搜索内容"/>
+                            </label>
+                        </div>
+                        <div class="col-1-16 no-padding">
+                            <a href="javascript:void (0)" class="blockBtn themeBtn">搜索</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="select-menu-line clearfix">
+                    <div class="col-1-16"><b>学年：</b></div>
+                    <div class="col-15-16">
+                        <div class="link-box">
+                            <a href="javascript:void(0)" class=" current">2015-2016</a>
+                            <a href="javascript:void(0)" class="">2016-2017</a>
+                            <a href="javascript:void(0)" class="">所有</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="select-menu-line clearfix">
+                    <div class="col-1-16"><b>年级：</b></div>
+                    <div class="col-15-16">
+                        <div class="link-box">
+                            <a href="javascript:void(0)" class=" current">一年级</a>
+                            <a href="javascript:void(0)">一年级</a>
+                            <a href="javascript:void(0)">一年级</a>
+                            <a href="javascript:void(0)">一年级</a>
+                            <a href="javascript:void(0)">一年级</a>
+                            <a href="javascript:void(0)">一年级</a>
+                            <a href="javascript:void(0)">所有</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="select-menu-line clearfix">
+                    <div class="col-1-16"><b>班级：</b></div>
+                    <div class="col-15-16">
+                        <div class="link-box">
+                            <a href="javascript:void(0)" class=" current">(1)班级</a>
+                            <a href="javascript:void(0)">（2）班级</a>
+                            <a href="javascript:void(0)">（3）班级</a>
+                            <a href="javascript:void(0)">（4）班级</a>
+                            <a href="javascript:void(0)">（5）班级</a>
+                            <a href="javascript:void(0)">（6）班级</a>
+                            <a href="javascript:void(0)">所有</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="select-menu-line sportType clearfix projectItem">
+                    <div class="col-1-16"><b>指标：</b></div>
+                    <div class="col-15-16">
+                        <div class="link-box">
+                            <a href="javascript:void(0)" data-sportId="1">体重指标</a>
+                            <a href="javascript:void(0)" data-sportId="2">肺活量</a>
+                            <a href="javascript:void(0)" data-sportId="3">坐位体前屈</a>
+                            <a href="javascript:void(0)" data-sportId="4">一分钟跳绳</a>
+                            <a href="javascript:void(0)" data-sportId="5">一分钟仰卧起坐</a>
+                            <a href="javascript:void(0)" data-sportId="6">50*8往返跑</a>
+                            <a href="javascript:void(0)" data-sportId="7">立定跳远</a>
+                            <a href="javascript:void(0)" data-sportId="8">引体向上</a>
+                            <a href="javascript:void(0)" data-sportId="9">1000米跑</a>
+                            <a href="javascript:void(0)" data-sportId="10">800米跑</a>
+                            <a href="javascript:void(0)" data-sportId="0" class="all">所有</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 筛选 -->
+                
+                <div class="select-menu-line sportType clearfix shaixuan">
+                    <div class="col-1-16"><b>区间</b></div>
+                    <div class="col-2-16">不限/自定义区间</div>
+                    <div class="col-13-16">
+                        <input type="number" class="beginNum just-int" max="100"> -
+                        <input type="number" class="endNum just-int" max="100">
+                        <input type="button" class="shaixuan-btn">
+                        <span  class="shaixuan-btn">筛选</span>
+                    </div>
+                </div>
+            </div>
+            <div class="inside-wrapper" style="overflow: auto">
+                <div class="table-excel mt20" style="transition: all 0.2s">
+                    <table class="t_c" border="0" cellspacing="0" cellpadding="0">
+                        <thead>
+                        <tr>
+                            <td>学籍号</td>
+                            <td>姓名</td>
+                            <td>性别</td>
+                            
+                            <td>班级</td>
+                            <td class="addtd td_1">体重指标</td>
+                            <td class="addtd td_2">肺活量</td>
+                            <td class="addtd td_3">坐位体前屈</td>
+                            <td class="addtd td_4">一分钟跳绳</td>
+                            <td class="addtd td_5">一分钟仰卧起坐</td>
+                            <td class="addtd td_6">50*8往返跑</td>
+                            <td class="addtd td_7">立定跳远</td>
+                            <td class="addtd td_8">引体向上</td>
+                            <td class="addtd td_9">1000米跑</td>
+                            <td class="addtd td_10">800米跑</td>
+                            <td class="control">操作</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>123456484546846</td>
+                            <td>小明</td>
+                            <td>男</td>
+                            
+                            <td>三年级（1）班</td>
+                            <td class="addtd td_1">50</td>
+                            <td class="addtd td_2">50</td>
+                            <td class="addtd td_3">50</td>
+                            <td class="addtd td_4">50</td>
+                            <td class="addtd td_5">50</td>
+                            <td class="addtd td_6">50</td>
+                            <td class="addtd td_7">50</td>
+                            <td class="addtd td_8">50</td>
+                            <td class="addtd td_9">50</td>
+                            <td class="addtd td_10">50</td>
+                            <td class="control">
+                                <a href="javascript:void(0)" class="form-link">转班</a>
+                                <a href="javascript:void(0)" class="ml10 form-link">退学</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>123456484546846</td>
+                            <td>小明</td>
+                            <td>男</td>
+                            
+                            <td>三年级（1）班</td>
+                            <td class="addtd td_1">50</td>
+                            <td class="addtd td_2">50</td>
+                            <td class="addtd td_3">50</td>
+                            <td class="addtd td_4">50</td>
+                            <td class="addtd td_5">50</td>
+                            <td class="addtd td_6">50</td>
+                            <td class="addtd td_7">50</td>
+                            <td class="addtd td_8">50</td>
+                            <td class="addtd td_9">50</td>
+                            <td class="addtd td_10">50</td>
+                            <td class="control">
+                                <a href="javascript:void(0)" class="form-link">转班</a>
+                                <a href="javascript:void(0)" class="ml10 form-link">退学</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>G231004200003071417</td>
+                            <td>小明</td>
+                            <td>男</td>
+                            
+                            <td>三年级（1）班</td>
+                            <td class="addtd td_1">50</td>
+                            <td class="addtd td_2">50</td>
+                            <td class="addtd td_3">50</td>
+                            <td class="addtd td_4">50</td>
+                            <td class="addtd td_5">50</td>
+                            <td class="addtd td_6">50</td>
+                            <td class="addtd td_7">50</td>
+                            <td class="addtd td_8">50</td>
+                            <td class="addtd td_9">50</td>
+                            <td class="addtd td_10">50</td>
+                            <td class="control">
+                                <a href="javascript:void(0)" class="form-link">转班</a>
+                                <a href="javascript:void(0)" class="ml10 form-link">退学</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>123456484546846</td>
+                            <td>小明小明米</td>
+                            <td>男</td>
+                            
+                            <td>三年级（1）班</td>
+                            <td class="addtd td_1">50</td>
+                            <td class="addtd td_2">50</td>
+                            <td class="addtd td_3">50</td>
+                            <td class="addtd td_4">50</td>
+                            <td class="addtd td_5">50</td>
+                            <td class="addtd td_6">50</td>
+                            <td class="addtd td_7">50</td>
+                            <td class="addtd td_8">50</td>
+                            <td class="addtd td_9">50</td>
+                            <td class="addtd td_10">50</td>
+                            <td class="control">
+                                <a href="javascript:void(0)" class="form-link">转班</a>
+                                <a href="javascript:void(0)" class="ml10 form-link">退学</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>123456484546846</td>
+                            <td>小明</td>
+                            <td>男</td>
+                            
+                            <td>三年级（1）班</td>
+                            <td class="addtd td_1">50</td>
+                            <td class="addtd td_2">50</td>
+                            <td class="addtd td_3">50</td>
+                            <td class="addtd td_4">50</td>
+                            <td class="addtd td_5">50</td>
+                            <td class="addtd td_6">50</td>
+                            <td class="addtd td_7">50</td>
+                            <td class="addtd td_8">50</td>
+                            <td class="addtd td_9">50</td>
+                            <td class="addtd td_10">50</td>
+                            <td class="control">
+                                <a href="javascript:void(0)" class="form-link">转班</a>
+                                <a href="javascript:void(0)" class="ml10 form-link">退学</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>123456484546846</td>
+                            <td>小明</td>
+                            <td>男</td>
+                            
+                            <td>三年级（1）班</td>
+                            <td class="addtd td_1">50</td>
+                            <td class="addtd td_2">50</td>
+                            <td class="addtd td_3">50</td>
+                            <td class="addtd td_4">50</td>
+                            <td class="addtd td_5">50</td>
+                            <td class="addtd td_6">50</td>
+                            <td class="addtd td_7">50</td>
+                            <td class="addtd td_8">50</td>
+                            <td class="addtd td_9">50</td>
+                            <td class="addtd td_10">50</td>
+                            <td class="control">
+                                <a href="javascript:void(0)" class="form-link">转班</a>
+                                <a href="javascript:void(0)" class="ml10 form-link">退学</a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="pages">
+                <div class="goods-pages">
+                    <div class="tcd-page-code">
+                        <span class="pageB disabled"><em class="iconfont icon-left mr5"></em>上一页</span>
+                        <span class="current">1</span>
+                        <a href="javascript:void(0);" class="tcdNumber">2</a>
+                        <a href="javascript:void(0);" class="tcdNumber">3</a>
+                        <span>...</span>
+                        <a href="javascript:void(0);" class="tcdNumber">15</a>
+                        <a href="javascript:void(0);" class="pageB nextPage">下一页></a>
+                        <span class="turnpage3">共<span>15</span>页&nbsp;&nbsp;到第</span>
+                        <input class="turnpage0" type="text" maxlength="3" />
+                        <span>页</span>
+                        <a class="turnpage1 grayBtn">确定</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script >
+    //点击判断是否显示筛选框
+    $('body').on('click', '.projectItem a', function(){
+        if($(this).hasClass('all')){
+            $('.shaixuan').css('display','none')
+        }else{
+            $('.shaixuan').css('display','block')
+        }
+    });
+    //输入值判断
+    $('.shaixuan input').bind('input propertychange', function() {  
+        var beginNum = $('.beginNum').val().trim();
+        var endNum = $('.endNum').val().trim();
+        if($(this).val().trim() > 100 || $(this).val().trim() < 0 ){
+            Alert.globalWarning({
+                'words':'请输入0~100的数字',
+                'type':'no',
+                'callBack':function(){},
+            });
+            $(this).val('');
+        }
+        $('body').on('click','.shaixuan-btn',function(){
+            if(endNum == 0){
+                Alert.globalWarning({
+                    'words':'第二个值不能为 0',
+                    'type':'no',
+                    'callBack':function(){},
+                });
+            }
+            if(beginNum>endNum){
+                Alert.globalWarning({
+                    'words':'请输入正确的范围',
+                    'type':'no',
+                    'callBack':function(){},
+                });
+            }
+        })
+    });  
+</script>
+<script src="../plugins/alert.js"></script>
+<script src="../plugins/pages.js"></script>
+<script src="../js/each/classData.js"></script>
+</body>
+</html>

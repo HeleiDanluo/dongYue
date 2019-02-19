@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta HTTP-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/icon.css">
+    <link rel="stylesheet" href="../plugins/animate.min.css">
+    <link rel="stylesheet" href="../css/scroll.css">
+    <link rel="stylesheet" href="../plugins/datepicker.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../plugins/mousewheel.js"></script>
+    <script src="../plugins/jquery.slimscroll.js"></script>
+    <script src="../js/pageInit.js"></script>
+    <script src="../js/main.js"></script>
+    <title>生成班级课表</title>
+</head>
+<body>
+<div class="pageContent">
+    <div class="left-menu">
+        <a class="logo-box">
+        <span class="logo-img">
+        </span>
+        </a>
+        <ul class="menu-list f16">
+            <li class="current"><a href="" class=""><i class="icon-home">&nbsp;</i>主页</a></li>
+            <li class=""><a href="" class=""><i class="icon-group">&nbsp;</i>教研群组</a></li>
+            <li class=""><a href="" class=""><i class="icon-teachManage">&nbsp;</i>教学管理</a></li>
+            <li class=""><a href="" class=""><i class="icon-import">&nbsp;</i>数据录入</a></li>
+            <li class=""><a href="" class=""><i class="icon-homeWork">&nbsp;</i>家庭作业</a></li>
+        </ul>
+        <ul class="bottom-menu menu-list f16">
+            <li class=""><a href="" class=""><i class="icon-add">&nbsp;</i>收藏</a></li>
+            <li class=""><a href="" class=""><i class="icon-setting">&nbsp;</i>设置</a></li>
+            <li class=""><a href="" class=""><i class="icon-back">&nbsp;</i>返回启动页</a></li>
+        </ul>
+    </div>
+    <div class="rightPage">
+        <div class="page-head">
+            <div class="bread-nav-box txt_w">
+                <a href="javascript:;"><b>教学管理</b></a> >
+                <a href="javascript:;"><b>计划管理</b></a> >
+                <a href="javascript:;"><b>班级课表</b></a>
+            </div>
+            <div class="head-menu">
+                <ul class="head-menu-ul f16">
+                    <li class="head-menu-item"><a href="javascript:;" class="txt_w">退出</a></li>
+                    <li class="head-menu-item"><a href="javascript:;" class="txt_w">账户信息<i class="icon-hehe"></i></a>
+                    </li>
+                    <li class="head-menu-item"><a href="javascript:;" class="txt_w">欢迎页</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-section">
+            <p class="page-title form-inline f18">生成班级课表</p>
+            <div class="class-year-box back_white class-list clearfix mt20">
+                <a href="javascript:;" class="class-year-item selected">一年级</a>
+                <a href="javascript:;" class="class-year-item">二年级</a>
+                <a href="javascript:;" class="class-year-item cantClickCss">三年级</a>
+                <a href="javascript:;" class="class-year-item">四年级</a>
+                <a href="javascript:;" class="class-year-item">五年级</a>
+                <a href="javascript:;" class="class-year-item">六年级</a>
+                <a href="javascript:;" class="class-year-item">六年级</a>
+                <a href="javascript:;" class="class-year-item">六年级</a>
+                <a href="javascript:;" class="class-year-item">六年级</a>
+                <a href="javascript:;" class="class-year-item">六年级</a>
+                <a href="javascript:;" class="class-year-item">六年级</a>
+                <a href="javascript:;" class="class-year-item">六年级</a>
+                <a href="javascript:;" class="class-year-item">六年级</a>
+                <a href="javascript:;" class="class-year-item">六年级</a>
+                <a href="javascript:;" class="class-year-item">六年级</a>
+                <a href="javascript:;" class="class-year-item">六年级</a>
+                <a href="javascript:;" class="class-year-item">六年级</a>
+                <a href="javascript:;" class="class-year-item">六年级</a>
+                <a href="javascript:;" class="class-year-item">六年级</a>
+                <a href="javascript:;" class="class-year-item">六年级</a>
+                <a href="javascript:;" class="class-year-item">六年级</a>
+                <a href="javascript:;" class="class-year-item">六年级</a>
+                <a href="javascript:;" class="class-year-item">六年级</a>
+                <a href="javascript:;" class="class-year-item">六年级</a>
+                <a href="javascript:;" class="class-year-item">六年级</a>
+                <a href="javascript:;" class="class-year-item">跨年级</a>
+            </div>
+            <div class="class-num-box back_white class-list clearfix mt20">
+                <a href="javascript:;" class="class-num-item selected">一年级（1班）</a>
+                <a href="javascript:;" class="class-num-item">一年级（2班）</a>
+                <a href="javascript:;" class="class-num-item">一年级（3班）</a>
+                <a href="javascript:;" class="class-num-item">一年级（4班）</a>
+                <a href="javascript:;" class="class-num-item">一年级（5班）</a>
+                <a href="javascript:;" class="class-num-item">一年级（6班）</a>
+            </div>
+            <div class="select-teachingPlan clearfix back_white mt20">
+                <div class="col-8-16 l_h36 f16">选择班级使用教学计划</div>
+                <div class="col-8-16">
+                    <label class="form-control select teachingPlanSelect">
+                        <input type="text" placeholder="请选择教学计划" readonly>
+                        <span class="caret icon-hehe"></span>
+                        <ul class="select-list">
+                            <li><a href="javascript:;" data-val="1">一年级</a></li>
+                            <li><a href="javascript:;" data-val="2">二年级</a></li>
+                            <li><a href="javascript:;" data-val="3">三年级</a></li>
+                        </ul>
+                    </label>
+                </div>
+            </div>
+            <div class="class-exceil clearfix mt20">
+                <div class="col-3-16 no-padding txt_w">
+                    <div class="schedule-link back_theme">
+                        <span class="icon-box f32"><i class="icon-schedule"></i></span>
+                        <span class="t_c f18">同步授课表</span>
+                    </div>
+                </div>
+                <div class="col-13-16 no-padding">
+                    <div class="schedule-exceil t_c">
+                        <table class="schedule-table" border="0" cellspacing="0" cellpadding="0">
+                            <thead class="txt_w">
+                            <tr>
+                                <td>节</td>
+                                <td class="set-class-item">星期一</td>
+                                <td class="set-class-item">星期二</td>
+                                <td class="set-class-item">星期三</td>
+                                <td class="set-class-item">星期四</td>
+                                <td class="set-class-item">星期五</td>
+                            </tr>
+                            </thead>
+                            <tbody class="back_white">
+                            <tr>
+                                <td>第一节</td>
+                                <td class="cantClick"></td>
+                                <td class="set-class-item"></td>
+                                <td class="set-class-item"></td>
+                                <td class="set-class-item"></td>
+                                <td class="set-class-item"></td>
+                            </tr>
+                            <tr>
+                                <td>第二节</td>
+                                <td class="set-class-item"></td>
+                                <td class="set-class-item"></td>
+                                <td class="set-class-item"></td>
+                                <td class="set-class-item"></td>
+                                <td class="set-class-item"></td>
+                            </tr>
+                            <tr>
+                                <td>第三节</td>
+                                <td class="set-class-item"></td>
+                                <td class="set-class-item"></td>
+                                <td class="set-class-item"></td>
+                                <td class="set-class-item"></td>
+                                <td class="set-class-item"></td>
+                            </tr>
+                            <tr>
+                                <td>第四节</td>
+                                <td class="set-class-item"></td>
+                                <td class="set-class-item"></td>
+                                <td class="set-class-item"></td>
+                                <td class="set-class-item"></td>
+                                <td class="set-class-item"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="6">中午</td>
+                            </tr>
+                            <tr>
+                                <td>第五节</td>
+                                <td class="set-class-item"></td>
+                                <td class="set-class-item"></td>
+                                <td class="set-class-item"></td>
+                                <td class="set-class-item"></td>
+                                <td class="set-class-item"></td>
+                            </tr>
+                            <tr>
+                                <td>第六节</td>
+                                <td class="set-class-item"></td>
+                                <td class="set-class-item"></td>
+                                <td class="set-class-item"></td>
+                                <td class="set-class-item"></td>
+                                <td class="set-class-item"></td>
+                            </tr>
+                            <tr>
+                                <td>第七节</td>
+                                <td class="set-class-item"></td>
+                                <td class="set-class-item"></td>
+                                <td class="set-class-item"></td>
+                                <td class="set-class-item"></td>
+                                <td class="set-class-item"></td>
+                            </tr>
+                            <tr>
+                                <td>第八节</td>
+                                <td class="set-class-item"></td>
+                                <td class="current"></td>
+                                <td class="set-class-item"></td>
+                                <td class="set-class-item"></td>
+                                <td class="set-class-item"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-control-btn mt30 t_r">
+                <div class="form-inline">
+                    <a href="javascript:;" class="btn_l grayBtn">修改</a>
+                    <a href="javascript:;" class="btn_l themeBtn">确定</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 引导页 计划进度使用说明-->
+<!-- <div class="guide-page">
+    <div class="guide-content">
+        <div class="guide-close" flex="cross:center main:center">
+            <i class="icon-voliError"></i>
+        </div>
+        <div class="articlevideo">
+            <div class="on g">班级课表使用说明</div>
+            <div class="on">根据学校安排的排课计划，在系统中对应各教师的授课时间进行同步选择。</div>
+            <div class="on">1. 登录动跃体育教学管理平台后，进入平台操作界面。</div>
+            <div class="on">2. 点击进入教学管理 > 点击班级课表，如下图:</div>
+            <img src="../images/helphome/lazy.png" data-src="../images/helphome/jiaoxueguanli19.png">
+            <div class="on">3. 点击班级课表后，弹出窗口，按授课需求选择对应学年点击确定。</div>
+            <img src="../images/helphome/lazy.png" data-src="../images/helphome/jiaoxueguanli20.png">
+            <div class="on">4. 进入班级课表界面后，选择需要排课的年级，选择该年级下需要排课的班级，教师选择安排该班级使用的教学计划。</div>
+            <img src="../images/helphome/lazy.png" data-src="../images/helphome/jiaoxueguanli21.png">
+            <div class="on">5. 点击解锁按钮，进入课表编辑授课表模式, 点击课表安排课程，如下图:</div>
+            <img src="../images/helphome/lazy.png" data-src="../images/helphome/jiaoxueguanli22.png">
+            <div class="on">6. 点击课表空白格，根据教师实际授课课程情况，进行排课。</div>
+            <img src="../images/helphome/lazy.png" data-src="../images/helphome/jiaoxueguanli23.png">
+            <div class="on">7. 点击保存操作内容，同时退出编辑模式。</div>
+            <img src="../images/helphome/lazy.png" data-src="../images/helphome/jiaoxueguanli24.png">
+        </div>
+    </div>
+</div> -->
+<script src="../plugins/alert.js"></script>
+<script src="../js/each/setClassSchedule.js"></script>
+<script>
+    $(".schedule-table").on("click",".set-class-item",function(){
+        alert("hehe");
+    })
+</script>
+</body>
+</html>

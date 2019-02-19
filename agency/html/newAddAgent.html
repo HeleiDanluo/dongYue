@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <meta charset="utf-8">
+    <title>动跃数据分析平台</title>
+    <link rel="stylesheet" href="../css/main.min.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/echarts.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <a href="#" class="logo fl">
+        <img src="../images/logo.png" alt="">
+        <span class="name">动跃科技数据分析平台</span>
+      </a>
+      <span class="time ml15 row10 dib colorWhite">登陆时间:2017-9-19 11:16</span>
+      <div class="user">
+        <a href="#" class="name">测试名字</a>
+  
+        <a href="./findPass.html" class="pass">
+          <i class="icon-pass"></i>
+          密码设置
+        </a>
+  
+        <a href="#" class="logout">
+          <i class="icon-logout"></i>
+          退出
+        </a>
+        <!-- <a onclick="window.history.go(-1)" class="logout">返回</a> -->
+      </div>
+    </div>
+    <div class="leftNav col2 row10 bkGrey">
+      <ul class="col10">
+        <li class="col10 focus">
+          <a class="dib h50 lh50 col10" href="#">
+            <i class="icon-home ml20 font16"></i>
+            <span class="ml10">首页</span>
+          </a>
+        </li>
+        <li class="col10">
+          <a class="dib h50 lh50 col10" href="#">
+            <i class="icon-apply ml20 font16"></i>
+            <span class="ml10">学校申请</span>
+          </a>
+        </li>
+        <li class="col10">
+          <a class="dib h50 lh50 col10" href="#">
+            <i class="icon-school ml20 font16"></i>
+            <span class="ml10">学校管理</span>
+          </a>
+        </li>
+        <li class="col10">
+          <a class="dib h50 lh50 col10" href="#">
+            <i class="icon-manage ml20 font16"></i>
+            <span class="ml10">运营管理</span>
+          </a>
+        </li>
+        <li class="col10">
+          <a class="dib h50 lh50 col10" href="#">
+            <i class="icon-search ml20 font16"></i>
+            <span class="ml10">记录查询</span>
+          </a>
+        </li>
+        <li class="col10">
+          <a class="dib h50 lh50 col10" href="#">
+            <i class="icon-key ml20 font16"></i>
+            <span class="ml10">激活码管理</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="caption">
+      <div class="newAddAgent w450">
+        <div class="fb col10 tc h40 lh40 font25">新增代理商</div>
+        <form action="#">
+          <p class="font14 tc">
+            <label class="dib col-18 tl">代理商名称:</label>
+            <input class="input-big mt15 ml10 col6"
+              placeholder="请输入代理商名称">
+          </p>
+          <p class="font14 mt10 tc">
+            <label class="dib col-18 tl">代理区域:</label>
+            <select class="h35 borderLine ml10 province col3">
+              <option value="0">请选择</option>  
+            </select>
+            <select class="h35 borderLine city col3">
+              <option value="0">请选择</option>
+            </select>
+          </p>
+          <p class="font14 tc">
+            <label class="dib col-18 tl">负责人:</label>
+            <input class="input-big col6 mt15 ml10"
+              placeholder="请输入负责人姓名">
+          </p>
+          <p class="font14 tc">
+            <label class="dib col-18 tl">手机号码:</label>
+            <input class="input-big col6 mt15 ml10"
+              placeholder="请输入负责人手机号码">
+          </p>
+          <p class="tc">
+            <button class="btn-big btn-green mt20">登陆</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  <script src="../js/each/newAddAgent.js"></script>
+  </body>
+</html>

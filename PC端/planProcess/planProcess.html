@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta HTTP-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/icon.css">
+    <link rel="stylesheet" href="../plugins/animate.min.css">
+    <link rel="stylesheet" href="../css/scroll.css">
+    <link rel="stylesheet" href="../plugins/datepicker.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../plugins/mousewheel.js"></script>
+    <script src="../plugins/jquery.slimscroll.js"></script>
+    <script src="../js/pageInit.js"></script>
+    <script src="../js/main.js"></script>
+    <title>计划进度</title>
+    <script>
+    </script>
+</head>
+<body>
+<div class="pageContent">
+    <div class="left-menu">
+        <a class="logo-box">
+        <span class="logo-img">
+        </span>
+        </a>
+        <ul class="menu-list f16">
+            <li class="current"><a href="" class=""><i class="icon-home">&nbsp;</i>主页</a></li>
+            <li class=""><a href="" class=""><i class="icon-group">&nbsp;</i>教研群组</a></li>
+            <li class=""><a href="" class=""><i class="icon-teachManage">&nbsp;</i>教学管理</a></li>
+            <li class=""><a href="" class=""><i class="icon-import">&nbsp;</i>数据录入</a></li>
+            <li class=""><a href="" class=""><i class="icon-homeWork">&nbsp;</i>家庭作业</a></li>
+        </ul>
+        <ul class="bottom-menu menu-list f16">
+            <li class=""><a href="" class=""><i class="icon-add">&nbsp;</i>收藏</a></li>
+            <li class=""><a href="" class=""><i class="icon-setting">&nbsp;</i>设置</a></li>
+            <li class=""><a href="" class=""><i class="icon-back">&nbsp;</i>返回启动页</a></li>
+        </ul>
+    </div>
+    <div class="rightPage">
+        <div class="page-head">
+            <div class="bread-nav-box txt_w">
+                <a href="javascript:;"><b>选择工作内容</b></a> >
+                <a href="javascript:;"><b>计划进度</b></a>
+            </div>
+            <div class="head-menu">
+                <ul class="head-menu-ul f16">
+                    <!-- <li class="head-menu-item"><a href="javascript:;" class="txt_w">退出</a></li> -->
+                    <li class="head-menu-item" id="dropDown-menu-head"><a href="javascript:;" class="txt_w">账户信息<i class="icon-hehe"></i></a>
+                        <div class="dropdown-content active-drop">
+                            <ul>
+                                <li id="cg-pass">修改密码</li>
+                                <li><a href="#">退出登录</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="head-menu-item"><a href="javascript:;" class="txt_w">欢迎页</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="table-content">
+                <div class="table-btn-group">
+                    <div class="table-row">
+                        <div class="col-8-16 col-offset-8 t_r">
+                            <a href="javascript:;" class="icon-addItem btn pinkBtn planManage">&nbsp;新增</a>
+                            <a href="javascript:;" class="icon-batchUpdate btn yellowBtn batchUpdate-btn">&nbsp;批量操作</a>
+                            <div class="batch-box">
+                                <a href="javascript:;" data-select=false class="btn blueBtn icon-allSelect allSelect">
+                                &nbsp;全选</a>
+                                <a href="javascript:;" class="btn blueBtn icon-output output">&nbsp;导出</a>
+                            </div>
+                            <a href="javascript:;" class="btn themeBtn">&nbsp;历史计划进度</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-box excel-table">
+                    <div class="table-row f16">
+                        <div class="col-2-16"><a href="javascript:;">学年<i class="icon-top"></i></a></div>
+                        <div class="col-2-16"><a href="javascript:;">年级<i class="icon-top"></i></a></div>
+                        <div class="col-1-16">学期</div>
+                        <div class="col-2-16">教学计划</div>
+                        <div class="col-2-16">单元计划</div>
+                        <div class="col-2-16">计划进度</div>
+                        <div class="col-2-16">编辑人</div>
+                        <div class="col-1-16"><a href="javascript:;">状态<i class="icon-top"></i></a></div>
+                        <div class="col-1-16">发布人</div>
+                        <div class="col-1-16 t_c">选项</div>
+                    </div>
+                    <div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">跨年级</div>
+                        <div class="col-1-16">上学期</div>
+                        <div class="col-2-16">篮球教学计划</div>
+                        <div class="col-2-16">单元计划</div>
+                        <div class="col-2-16">计划进度</div>
+                        <div class="col-2-16">赵某某</div>
+                        <div class="col-1-16">已发布</div>
+                        <div class="col-1-16">赵某某</div>
+                        <div class="col-1-16 t_c selectItem">
+                            <a href="javascript:;" class="selectItemBtn icon-itemSelect f20"></a>
+                            <div class="selectBox">
+                                <p><a href="javascript:;" class="txt_w">发布</a></p>
+                                <p><a href="javascript:;" class="txt_w">修改</a></p>
+                                <p><a href="javascript:;" class="txt_w">导出</a></p>
+                                <p><a href="javascript:;" class="txt_w">删除</a></p>
+                            </div>
+                        </div>
+                        <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label>
+                    </div>
+                    <div class="table-row back_white table-item txt_b">
+                        <div class="col-2-16">2016-2017学年</div>
+                        <div class="col-2-16">跨年级</div>
+                        <div class="col-1-16">上学期</div>
+                        <div class="col-2-16">篮球教学计划</div>
+                        <div class="col-2-16">单元计划</div>
+                        <div class="col-2-16">计划进度</div>
+                        <div class="col-2-16">赵某某</div>
+                        <div class="col-1-16">已发布</div>
+                        <div class="col-1-16">赵某某</div>
+                        <div class="col-1-16 t_c selectItem">
+                            <a href="javascript:;" class="selectItemBtn icon-itemSelect f20"></a>
+                            <div class="selectBox">
+                                <p><a href="javascript:;" class="txt_w">发布</a></p>
+                                <p><a href="javascript:;" class="txt_w">修改</a></p>
+                                <p><a href="javascript:;" class="txt_w">导出</a></p>
+                                <p><a href="javascript:;" class="txt_w">删除</a></p>
+                            </div>
+                        </div>
+                        <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="2">
+                            <span class="checkSpan back_white"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 引导页 计划进度使用说明-->
+<!-- <div class="guide-page">
+    <div class="guide-content">
+        <div class="guide-close" flex="cross:center main:center">
+            <i class="icon-voliError"></i>
+        </div>
+        <div class="articlevideo">
+            <div class="on g">计划进度使用说明</div>
+            <div class="on">在计划进度中对已选择的单元计划授课内容,进行授课顺序排序。</div>
+            <div class="on">1.  登录动跃体育教学管理平台后，进入平台操作界面。</div>
+            <div class="on">2.  点击进入教学管理 > 点击计划进度，如下图:</div>
+            <img src="../images/helphome/lazy.png" data-src="../images/helphome/jiaoxueguanli25.png">
+            <div class="on">3. 进入计划进度页面，点击新增按钮，弹出窗口，按要求选择需要的单元计划，点击确定进入下一步骤。</div>
+            <img src="../images/helphome/lazy.png" data-src="../images/helphome/jiaoxueguanli26.png">
+            <div class="on">4. 选择课时内容 , 选择顺序即是授课顺序，点击右侧添加按钮，如下图:</div>
+            <img src="../images/helphome/lazy.png" data-src="../images/helphome/jiaoxueguanli27.png">
+            <div class="on">5. 按照上诉方法，依次选择完成，计划进度就是本学期上课流程。</div>
+            <img src="../images/helphome/lazy.png" data-src="../images/helphome/jiaoxueguanli28.png">
+            <div class="on">6. 本学期总课时 , 必须排满 , 才可以保存信息，如下图:</div>
+            <img src="../images/helphome/lazy.png" data-src="../images/helphome/jiaoxueguanli29.png">
+            <div class="on">7.计划进度完成后，需要发布出去才能使用，未发布状态不能使用，点击右边按钮弹出窗口后，点击发布，点击确认后即发布成功。</div>
+            <img src="../images/helphome/lazy.png" data-src="../images/helphome/jiaoxueguanli30.png">
+        </div>
+    </div>
+</div> -->
+<script src="../plugins/alert.js"></script>
+<script src="../js/each/tablePageCommon.js"></script>
+<script>
+    
+</script>
+</body>
+</html>

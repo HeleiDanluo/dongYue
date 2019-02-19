@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../../js/flexible/flexible_css.js"></script>
+    <script src="../../js/flexible/flexible.js"></script>
+    <link rel="stylesheet" href="../../css/studentMain.css">
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/studentMain.js"></script>
+    <script src="../../js/scroll/scroll.js"></script>
+    <link rel="stylesheet" href="../../js/mobiscroll/mobiscroll.custom-2.17.0.min.css">
+    <script src="../../js/echart/echart.js"></script>
+    <script src="../../js/mobiscroll/mobiscroll.custom-2.17.0.min.js"></script>
+    <style>
+        .load-more{
+            position: absolute;
+            top: 50%;
+            left:50%;
+            margin-top: -90px;
+            margin-left: -90px;
+            z-index: 999;
+        }
+    </style>
+</head>
+<body flex="dir:top">
+    <header flex-box="0" flex="dir:left" font="16">
+    <a href="javascript:history.go(-1) " flex-box="0">返回</a>
+    <div class="title" flex-box="1"></div>
+    <a href="javascript:void(0)" flex-box="0"></a>
+    </header>
+    <section flex-box="1" class="" flex="dir:top">
+        <nav flex-box="0" flex="dir:left" class="test">
+            <a href="javascript:void(0)" class="nofocus" flex-box="1" flex="cross:center main:center">学校家庭作业</a>
+            <a href="javascript:void(0)" class="nofocus" flex-box="1" flex="cross:center main:center">个性化推荐作业</a>
+            <a href="javascript:void(0)" class="focus" flex-box="1" flex="cross:center main:center">锻炼日历</a>
+        </nav>
+        <div flex-box="1" class="can-scroll scroll">
+            <div class="training_record_list clearfix">
+                    <div flex-box="1" class="can-scroll">
+                        <h1 font="16" class="honor-title">
+                            
+                        </h1>
+                        <div class="calendar-wrapper" style="background: #fff">
+                            <div class="calendar-position">
+                                <div class="honor-calendar"></div>
+                            </div>
+                        </div>
+                        <div class="chart-wrapper" style="background: #fff;position:relative;">
+                            <!-- <span style="position:absolute; padding: 0.3rem 0.3rem 0rem 0.3rem">训练目标占比</span> -->
+                            <div class="grade-chart" id="grade-chart"style="min-height:9rem">
+                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="boxChunk" font="14">
+                        <a href="javascript:void(0)">
+                            <div class="icons" flex="dir:left">
+                                                <span flex="main:center cross:center">
+                                                    <i>周一</i>
+                                                </span>
+                                <span flex="main:center cross:center" class="face-color face1">
+                                                    <span class="face-icon face1" font="24"></span>
+                                                </span>
+                            </div>
+                            <div class="relative">
+                                <ul class="items">
+                                    <li>走和跑: 2组,10分钟</li>
+                                    <li>走和跑: 2组,10分钟</li>
+                                    <li>走和跑: 2组,10分钟</li>
+                                    <li>走和跑: 2组,10分钟</li>
+                                    <li>走和跑: 2组,10分钟</li>
+                                </ul>
+                                <div class="img clearfix">
+                                    <img  src="../../img/test/test1.jpg">
+                                    <img  src="../../img/test/test1.jpg">
+                                    <img  src="../../img/test/test1.jpg">
+                                    <img  src="../../img/test/test1.jpg">
+                                    <img  src="../../img/test/test1.jpg">
+                                    <img  src="../../img/test/test1.jpg">
+                                    <img  src="../../img/test/test1.jpg">
+                                    <img  src="../../img/test/test1.jpg">
+                                </div>
+                                <div class="information">
+                                    体育锻炼会增强体内营养物质的消耗,使整个机体的
+                                    体育锻炼会增强体内营养物质的消耗,使整个机体的
+                                    体育锻炼会增强体内营养物质的消耗,使整个机体的
+                                    体育锻炼会增强体内营养物质的消耗,使整个机体的
+                                    体育锻炼会增强体内
+                                </div>
+                                <div class="time" font="12">2016-12-22 17:30</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="boxChunk" font="14">
+                        <a href="javascript:void(0)">
+                            <div class="icons" flex="dir:left">
+                                                <span flex="main:center cross:center">
+                                                    <i>周一</i>
+                                                </span>
+                                <span flex="main:center cross:center" class="face-color face2">
+                                                    <span class="face-icon face2" font="24"></span>
+                                                </span>
+                            </div>
+                            <div class="relative">
+                                <ul class="items">
+                                    <li>走和跑: 2组,10分钟</li>
+                                    <li>走和跑: 2组,10分钟</li>
+                                    <li>走和跑: 2组,10分钟</li>
+                                    <li>走和跑: 2组,10分钟</li>
+                                    <li>走和跑: 2组,10分钟</li>
+                                </ul>
+                                <ul class="img" flex="dir:left">
+                                    <img flex-box="1" src="../../img/test/test1.jpg">
+                                    <img flex-box="1" src="../../img/test/test1.jpg">
+                                    <img flex-box="1" src="../../img/test/test1.jpg">
+                                </ul>
+                                <div class="information">
+                                    体育锻炼会增强体内营养物质的消耗,使整个机体的
+                                    体育锻炼会增强体内营养物质的消耗,使整个机体的
+                                    体育锻炼会增强体内营养物质的消耗,使整个机体的
+                                    体育锻炼会增强体内营养物质的消耗,使整个机体的
+                                    体育锻炼会增强体内
+                                </div>
+                                <div class="time" font="12">2016-12-22 17:30</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="boxChunk" font="14">
+                        <a href="javascript:void(0)">
+                            <div class="icons" flex="dir:left">
+                                                <span flex="main:center cross:center">
+                                                    <i>周一</i>
+                                                </span>
+                                <span flex="main:center cross:center" class="face-color face2">
+                                                    <span class="face-icon face2" font="24"></span>
+                                                </span>
+                            </div>
+                            <div class="relative">
+                                <ul class="items">
+                                    <li>走和跑: 2组,10分钟</li>
+                                    <li>走和跑: 2组,10分钟</li>
+                                    <li>走和跑: 2组,10分钟</li>
+                                    <li>走和跑: 2组,10分钟</li>
+                                    <li>走和跑: 2组,10分钟</li>
+                                </ul>
+                                <ul class="img" flex="dir:left">
+                                    <img flex-box="1" src="../../img/test/test1.jpg">
+                                    <img flex-box="1" src="../../img/test/test1.jpg">
+                                    <img flex-box="1" src="../../img/test/test1.jpg">
+                                </ul>
+                                <div class="information">
+                                    体育锻炼会增强体内营养物质的消耗,使整个机体的
+                                    体育锻炼会增强体内营养物质的消耗,使整个机体的
+                                    体育锻炼会增强体内营养物质的消耗,使整个机体的
+                                    体育锻炼会增强体内营养物质的消耗,使整个机体的
+                                    体育锻炼会增强体内
+                                </div>
+                                <div class="time" font="12">2016-12-22 17:30</div>
+                            </div>
+                        </a>
+                    </div> -->
+            </div>
+        </div>
+    </section>
+    <footer flex-box="0" flex="dir:left box:mean">
+        <a href="home.html" flex="main:center cross:center"><i class="icon-home" font="24"></i></a>
+        <a href="mine.html" flex="main:center cross:center"><i class="icon-gerzhongxin" font="24"></i></a>
+    </footer>
+    <script src="../../js/each/homeWork.js"></script>
+    <script>
+          Chart.pie({
+            element:'grade-chart',
+            title: '',
+            data: [
+              {value:25, name:'耐力值'},
+              {value:5, name:'心肺'},
+              {value:15, name:'柔韧度'},
+              {value:20, name:'平衡'},
+              {value:35, name:'反应'},
+              {value:35, name:'体重指数'},
+              {value:35, name:'下肢'},
+              {value:35, name:'上肢'}
+            ]
+          })
+    </script>
+</body>
+</html>

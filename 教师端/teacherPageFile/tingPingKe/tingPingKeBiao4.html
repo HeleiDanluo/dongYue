@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <script src="../../js/flexible/flexible_css.js"></script>
+    <script src="../../js/flexible/flexible.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/each/tingPingKe.js"></script>
+    <script type="text/javascript" src="//player.youku.com/jsapi"></script>
+    <title>动跃科技</title>
+</head>
+
+<body flex="dir:top">
+    <header flex-box="0" flex="dir:left" font="18">
+        <a href="javascript:history.go(-1)" flex-box="0">
+            <i class="icon-back"></i>
+        </a>
+        <div class="title" flex-box="1" font="14">听评课教学</div>
+        <a href="javascript:void(0)" flex-box="0"></a>
+    </header>
+    <section flex-box="1" flex="dir:top" class="hide-video tingpingke-body" >
+    <!-- 优酷 -->
+    <div class="tingpingke-video" flex-box="0">
+        <div id="youkuplayer"></div>
+    </div>
+        <!-- 菜单 -->
+        <div class="white-back header-link-menu" flex-box="0">
+            <ul>
+                <li font="12"><a href="javascript:void(0)">教学设计</a></li>
+                <li font="12"><a href="javascript:void(0)">教学教案</a></li>
+                <li font="12"><a href="javascript:void(0)">课堂报告</a></li>
+                <li font="12" class="current"><a href="javascript:void(0)">听评课表</a></li>
+                <li font="12"><a href="javascript:void(0)">讨论区</a></li>
+            </ul>
+        </div>
+        <div class="white-back sub-menu" flex-box="0">
+            <select id="" class="select-tpkb">
+                <option value="“有效课堂”评价表">"有效课堂"评价表</option>
+                <option value="授课评分">授课评分</option>
+                <option value="“三动课堂”评价表">"三动课堂"评价表</option>
+                <option value="“有效教学”评价表">"有效教学"评价表</option>
+                <option value="教学重难点及教法学法检测表" selected>教学重难点及教法学法检测表</option>
+                <option value="教师讲解示范观察表">教师讲解示范观察表</option>
+                <option value="提问互动评价表">提问互动评价表</option>
+            </select>
+        </div>
+        <!-- 内容 -->
+        <div class="teachPlan-detail-wrapper can-scroll" flex-box="1">
+
+            <div class="input-area white-back">
+                <h1 font="16">教学内容</h1><br>
+                <textarea name="" id=""  style="width: 90%"></textarea>
+            </div>
+
+            <div class="input-area white-back">
+                <h1 font="16">教学重点</h1><br>
+                <textarea name="" id=""  style="width: 90%"></textarea>
+            </div>
+
+            <div class="input-area white-back">
+                <h1 font="16">教学难点</h1><br>
+                <textarea name="" id=""  style="width: 90%"></textarea>
+            </div>
+
+            <div class="input-area white-back">
+                <h1 font="16" id="1" style="background: #f1f1f1;padding: .1rem; margin-right:1rem">教学环节1</h1><br>
+                <h2 font="14">教的内容</h2><br>
+                <textarea name="" id=""  style="width: 90%"></textarea>
+                <h2 font="14">教的方法</h2><br>
+                <textarea name="" id=""  style="width: 90%"></textarea>
+                <h2 font="14">具体手段</h2><br>
+                <textarea name="" id=""  style="width: 90%"></textarea>
+                <h2 font="14">突破重难点效果</h2><br>
+                <textarea name="" id=""  style="width: 90%"></textarea>
+                <h2 font="14">学的内容</h2><br>
+                <textarea name="" id=""  style="width: 90%"></textarea>
+                <h2 font="14">学的方法</h2><br>
+                <textarea name="" id=""  style="width: 90%"></textarea>
+                <h2 font="14">具体手段</h2><br>
+                <textarea name="" id=""  style="width: 90%"></textarea>
+                <h2 font="14">突破重难点效果</h2><br>
+                <textarea name="" id=""  style="width: 90%"></textarea>
+            </div>
+
+            <div class="input-area white-back" id="item-content-after">
+                <h1 font="16">教学重难点——教法简评</h1><br>
+                <textarea name="" id=""  style="width: 90%"></textarea>
+            </div>
+
+            <div class="input-area white-back">
+                <h1 font="16">教学重难点——学法简评</h1><br>
+                <textarea name="" id=""  style="width: 90%"></textarea>
+            </div>
+
+            <div class="input-area white-back" >
+                <a href="javascript:void(0)" font="14" class="jiaoxuejianyi-submit btn btn-full-theme">保存</a>
+            </div>
+            
+            
+        </div>
+        
+        
+    <!-- 侧边数字 -->
+    <div class="side-munber-box">
+        <ul id="side-box">
+            <!-- 40个数字由js生成 -->
+        </ul>
+    </div>
+    
+    <!-- 播放按钮 -->
+    <div class="side-play-btn">
+        <i class="icon-xl paly-ctr-btn"></i>
+        <i class="icon-close paly-ctr-btn hidden"></i>
+    </div>
+    </section>
+    <footer flex-box="0" flex="dir:left box:mean" font="12">
+        <a href="" flex="main:center dir:top">
+            <i class="icon-sy" font="24"></i>
+            <span>首页</span>
+        </a>
+        <a href="" flex="main:center dir:top">
+            <i class="icon-xsq" font="24"></i>
+            <span>学生圈</span>
+        </a>
+        <a href="" flex="main:center dir:top">
+            <i class="icon-wode" font="24"></i>
+            <span>我的</span>
+        </a>
+    </footer>
+</body>
+<script>
+    // 自动循环生成40个内容
+    var sideEle = '';
+    var contentEle = '';
+    for(let i=0; i<40; i++){
+        // 侧标导航数字
+        if(i==0){
+            sideEle += '<li class="active"><a href="#1">1</a></li>'
+        }else{
+            sideEle += '<li><a href="#' +(i+1)+ '">' +(i+1)+ '</a></li>'
+        }
+        // 内容
+        contentEle += 
+        `<div class="input-area white-back">
+                <h1 font="16" id="`+(i+1)+`" style="background: #f1f1f1;padding: .1rem; margin-right:1rem">教学环节`+(i+1)+`</h1><br>
+                <h2 font="14">教的内容</h2><br>
+                <textarea name="" id=""  style="width: 90%"></textarea>
+                <h2 font="14">教的方法</h2><br>
+                <textarea name="" id=""  style="width: 90%"></textarea>
+                <h2 font="14">具体手段</h2><br>
+                <textarea name="" id=""  style="width: 90%"></textarea>
+                <h2 font="14">突破重难点效果</h2><br>
+                <textarea name="" id=""  style="width: 90%"></textarea>
+                <h2 font="14">学的内容</h2><br>
+                <textarea name="" id=""  style="width: 90%"></textarea>
+                <h2 font="14">学的方法</h2><br>
+                <textarea name="" id=""  style="width: 90%"></textarea>
+                <h2 font="14">具体手段</h2><br>
+                <textarea name="" id=""  style="width: 90%"></textarea>
+                <h2 font="14">突破重难点效果</h2><br>
+                <textarea name="" id=""  style="width: 90%"></textarea>
+            </div>`
+    }
+
+    $('#side-box').append(sideEle);
+    $('#item-content-after').before(contentEle);
+
+    // 点击数字切换激活状态
+    $('body').on('click', '#side-box li', function() {
+        $(this).addClass('active').siblings().removeClass('active');
+    })
+</script>
+
+</html>

@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en" style="height:100%">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="renderer" content="webkit">
+  <title>ppt播放</title>
+
+  <link rel="stylesheet" href="http://web.jiankangtiyu.com/statics/css/main.css">
+  <link rel="stylesheet" href="http://web.jiankangtiyu.com/statics/css/icon.css">
+  <!-- <link rel="stylesheet" href="../css/main.css"> -->
+  <!-- <link rel="stylesheet" href="../css/icon.css"> -->
+  <style>
+    body{
+      overflow: auto;
+    }
+  </style>
+</head>
+
+<body id="paly-body">
+  <div class="select-menu mt40 back_white">
+    <div class="select-menu-line clearfix">
+      <div class="col-1-16">
+        <b>大类：</b>
+      </div>
+      <div class="col-15-16">
+        <div class="link-box" id="dalei-menu">
+          <!-- <a href="javascript:void(0)" class=" current">健康安全</a>
+          <a href="javascript:void(0)" class="">体育知识</a>
+          <a href="javascript:void(0)" class="">体育运动</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="single-count-chart mt40">
+    <p>为您找到相关结果约
+      <span id="ppt-sum">13</span> 个</p>
+    <div class="pptlist-content mt10" id="ppt-item-box">
+      <!-- <div class="ppt-list-item">
+        <img class="ppt-fengmian" src="http://hackbinimg.luokangyuan.com/20180807170810/office-notes-notepad-entrepreneur-preview.jpg"
+          alt="" srcset="">
+        <div class="playmask icon-play2"></div>
+        <div class="ppt-titile">足球</div>
+      </div> -->
+    </div>
+  </div>
+</body>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+<script>
+  // 加载ppt函数
+  //只要把ppt路径传进来就可以了
+  var pptIp = 'http://114.55.92.187/pptCode/#/'  //线上
+  // var pptIp = 'http://localhost:8888/#/' //本地
+  
+  //所有大类
+  var daLei = [{
+      'name': '健康安全',
+      'id': 'jiankanganquan'
+    },
+    {
+      'name': '体育知识',
+      'id': 'tiyuzhishi'
+    },
+    {
+      'name': '体育运动',
+      'id': 'tiyuyundong'
+    }
+  ];
+
+  var pptObj = [
+    {
+      'belongs': 'tiyuzhishi', 
+      'fengmian': 'anquan1.jpg',//封面图片
+      'name': '积极愉快地上好体育课', //ppt的名字
+      'page': [ //ppt名字列表
+        'biaoti',
+        'yi',
+        'er',
+        'san',
+        'si',
+        'wu',
+        'liu',
+        'liul',
+        'liull',
+        'qi',
+        'qiq',
+        'qiqq',
+        'ba',
+        'jiu',
+        'shi',
+        'shiyi',
+        'shier',
+        'shisan',
+        'shisi',
+        'shisisi',
+        'shiwu',
+        'shiliu',
+        'shiqi',
+        'shiba',
+      ], //ppt的页面
+    },
+     //从这里开始复制
+   {
+      'belongs': 'jiankanganquan', 
+      'fengmian': 'anquan1.jpg',//封面图片
+      'name': '坐、立、行我最美', //ppt的名字
+      'page': [ //ppt名字列表
+        'timu',
+        'y',
+        'e',
+        's',
+        'sii',
+        'w',
+        'l',
+        'q',
+        'b',
+        'j',
+        'shii',
+        'shiii',
+        'shiyii',
+        'shiere',
+        'shisans',
+        'shisis',
+        'shiwuw',
+        'shiliul',
+        'shiqiq',
+        'shibab',
+        'shibabb',
+        'shijiuj',
+        'ershi',
+        'ershiyi',
+        'ershier',
+        'ershisan',
+        'theend'
+      ], //ppt的页面
+    },
+    //复制到这里结束
+    {
+      'belongs': 'jiankanganquan', 
+      'fengmian': 'anquan1.jpg',//封面图片
+      'name': '饮水有益于健康', //ppt的名字
+      'page': [ //ppt名字列表
+        'yi_ysyy',
+        'er_ysyy',
+        'san_ysyy',
+        'si_ysyy',
+        'wu_ysyy',
+        'liu_ysyy',
+        'qi_ysyy',
+        'ba_ysyy',
+        'jiu_ysyy',
+        'shi_ysyy',
+        'shiyi_ysyy',
+        'shier_ysyy',
+        'shisan_ysyy',
+        'shisi_ysyy',
+        'shiwu_ysyy',
+        'shiliu_ysyy',
+        'ershisan_ysyy',
+        'shiqi_ysyy',
+        'shiba_ysyy',
+        'ershi_ysyy',
+        'ershiyi_ysyy',
+        'ershier_ysyy',
+      ], //ppt的页面
+    },
+    //复制到这里结束
+     //从这里开始复制
+   {
+      'belongs': 'jiankanganquan', 
+      'fengmian': 'anquan1.jpg',//封面图片
+      'name': '安全地进行游戏', //ppt的名字
+      'page': [ //ppt名字列表
+        'yi_aqyx',
+        'er_aqyx',
+        'san_aqyx',
+        'si_aqyx',
+        'wu_aqyx',
+        'liu_aqyx',
+        'qi_aqyx',
+        'ba_aqyx',
+        'jiu_aqyx',
+        'shi_aqyx',
+        'shiyi_aqyx',
+        'shier_aqyx',
+        'shisan_aqyx',
+        'shisi_aqyx',
+        'shiwu_aqyx',
+        'shiliu_aqyx',
+        'ershisan_aqyx',
+        'shiqi_aqyx',
+        'shiba_aqyx',
+        'shijiu_aqyx',
+        'ershi_aqyx',
+        'ershiyi_aqyx',
+        'ershier_aqyx',
+      ], //ppt的页面
+    },
+    //复制到这里结束
+   //从这里开始复制
+    //从这里开始复制
+    {
+      'belongs': 'jiankanganquan', 
+      'fengmian': 'anquan1.jpg',//封面图片
+      'name': '健康饮水益处多', //ppt的名字
+      'page': [ //ppt名字列表
+        'yi_jkys',
+        'er_jkys',
+        'san_jkys',
+        'si_jkys',
+        'wu_jkys',
+        'liu_jkys',
+        'qi_jkys',
+        'ba_jkys',
+        'jiu_jkys',
+        'shi_jkys',
+        'shiyi_jkys',
+        'shier_jkys',
+        'shisan_jkys',
+        'shisi_jkys',
+        'shiwu_jkys',
+        'shiliu_jkys',
+        'ershisan_jkys',
+        'shiqi_jkys',
+        'shiba_jkys',
+        'shijiu_jkys',
+        'ershi_jkys',
+        'ershiyi_jkys',
+        'ershier_jkys',
+      ], //ppt的页面
+    },
+    //复制到这里结束
+     //从这里开始复制
+   {
+      'belongs': 'jiankanganquan', 
+      'fengmian': 'anquan1.jpg',//封面图片
+      'name': '阳光运动身体好', //ppt的名字
+      'page': [ //ppt名字列表
+        'yi_ygyd',
+        'er_ygyd',
+        'san_ygyd',
+        'si_ygyd',
+        'wu_ygyd',
+        'liu_ygyd',
+        'liul_ygyd',
+        'qi_ygyd',
+        'ba_ygyd',
+        'jiu_ygyd',
+        'shi_ygyd',
+        'shiyi_ygyd',
+        'shier_ygyd',
+        'shisan_ygyd',
+        'shisi_ygyd',
+        'shiwu_ygyd',
+        'shiliu_ygyd',
+        'shiqi_ygyd',
+        'shiba_ygyd',
+        'shijiu_ygyd',
+        'ershi_ygyd',
+        'ershiyi_ygyd',
+        'ershier_ygyd',
+        'ershisan_ygyd',
+      ], //ppt的页面
+    },
+    //复制到这里结束
+     //从这里开始复制
+   {
+      'belongs': 'jiankanganquan', 
+      'fengmian': 'anquan1.jpg',//封面图片
+      'name': '文明如厕讲卫生', //ppt的名字
+      'page': [ //ppt名字列表
+        'yi_wmrc',
+        'er_wmrc',
+        'san_wmrc',
+        'sii_wmrc',
+        'si_wmrc',
+        'wu_wmrc',
+        'liu_wmrc',
+        'liul_wmrc',
+        'qi_wmrc',
+        'ba_wmrc',
+        'shiyi_wmrc',
+        'shier_wmrc',
+        'shisan_wmrc',
+        'shisi_wmrc',
+        'shiwu_wmrc',
+        'shiliu_wmrc',
+        'shiqi_wmrc',
+        'shiba_wmrc',
+        'shijiu_wmrc',
+        'ershiyi_wmrc',
+        'ershier_wmrc',
+        'ershisan_wmrc',
+      ], //ppt的页面
+    },
+    //复制到这里结束
+      //从这里开始复制
+   {
+      'belongs': 'tiyuzhishi', 
+      'fengmian': 'anquan1.jpg',//封面图片
+      'name': '安全运动促健康', //ppt的名字
+      'page': [ //ppt名字列表
+        'yi_aqyd',
+        'er_aqyd',
+        'san_aqyd',
+        'si_aqyd',
+        'wu_aqyd',
+        'liu_aqyd',
+        'qi_aqyd',
+        'ba_aqyd',
+        'jiu_aqyd',
+        'shi_aqyd',
+        'shiyi_aqyd',
+        'shier_aqyd',
+        'shisan_aqyd',
+        'shisi_aqyd',
+        'shiwu_aqyd',
+        'shiliu_aqyd',
+        'ershisan_aqyd',
+        'shiqi_aqyd',
+        'shiba_aqyd',
+        'shijiu_aqyd',
+        'ershi_aqyd',
+        'ershiyi_aqyd',
+        'ershier_aqyd',
+      ], //ppt的页面
+    },
+    //复制到这里结束
+      //从这里开始复制
+   {
+      'belongs': 'jiankanganquan', 
+      'fengmian': 'anquan1.jpg',//封面图片
+      'name': '运动前后的饮食卫生', //ppt的名字
+      'page': [ //ppt名字列表
+        'yi_ydqh',
+        'er_ydqh',
+        'san_ydqh',
+        'si_ydqh',
+        'wu_ydqh',
+        'liu_ydqh',
+        'qi_ydqh',
+        'ba_ydqh',
+        'jiu_ydqh',
+        'shi_ydqh',
+        'shii_ydqh',
+        'shiyi_ydqh',
+        'shier_ydqh',
+        'shisan_ydqh',
+        'shisi_ydqh',
+        'shiwu_ydqh',
+        'shiliu_ydqh',
+        'ershisan_ydqh',
+        'shiqi_ydqh',
+        'shiba_ydqh',
+        'shijiu_ydqh',
+        'ershi_ydqh',
+        'ershiyi_ydqh',
+        'ershier_ydqh',
+      ], //ppt的页面
+    },
+    //复制到这里结束
+     //从这里开始复制
+   {
+      'belongs': 'jiankanganquan', 
+      'fengmian': 'anquan1.jpg',//封面图片
+      'name': '营养不良与肥胖', //ppt的名字
+      'page': [ //ppt名字列表
+        'kaishiye',
+        'diyibufen',
+        'one',
+        'two',
+        'threes',
+        'threess',
+        'threesss',
+        'fours',
+        'fourss',
+        'foursss',
+        'fives',
+        'six',
+        'dierbufen',
+        'reshen',
+        'youximudi',
+        'youxiguize',
+        'youxiguizes',
+        'disanbufen',
+        'xunlianmudi',
+        'xunlianfangfa',
+        'xunlianshipin',
+        'lashenfangfas',
+        'lashenfangfa',
+        'end'
+      ], //ppt的页面
+    },
+    //复制到这里结束
+    //从这里开始复制
+    {
+      'belongs': 'jiankanganquan', 
+      'fengmian': 'anquan1.jpg',//封面图片
+      'name': '生活方式与健康(上)', //ppt的名字
+      'page': [ //ppt名字列表
+        'yi_shfs',
+        'er_shfs',
+        'san_shfs',
+        'si_shfs',
+        'wu_shfs',
+        'qi_shfs',
+        'liu_shfs',
+        'lius_shfs',
+        'ba_shfs',
+        'jiu_shfs',
+        'shi_shfs',
+        'shiyi_shfs',
+        'ershiliu_shfs',
+        'ershiqi_shfs',
+        'sanshiqi_shfs',
+        'sanshis_shfs',
+        'sanshiyis_shfs',
+        'tinengxunlian_shfs',
+        'tinengxunlians_shfs',
+        'tinengxunlianss_shfs',
+        'tinengxunliansss_shfs',
+        'tinengxunlianssss_shfs',
+        'tinengxunliansssss_shfs',
+        'sanshiers_shfs',
+        'sanshisans_shfs',
+        'sanshisis_shfs',
+        'sanshiliu_shfs',
+        ], //ppt的页面
+    },
+    //复制到这里结束
+    //从这里开始复制
+    {
+      'belongs': 'jiankanganquan', 
+      'fengmian': 'anquan1.jpg',//封面图片
+      'name': '生活方式与健康(下)', //ppt的名字
+      'page': [ //ppt名字列表
+        'yis_shfs',
+        'er_shfs',
+        'shier_shfs',
+        'shisan_shfs',
+        'shisi_shfs',
+        'shiwu_shfs',
+        'shiliu_shfs',
+        'shiqi_shfs',
+        'shiba_shfs',
+        'shijiu_shfs',
+        'ershi_shfs',
+        'ershiyi_shfs',
+        'ershier_shfs',
+        'ershisan_shfs',
+        'ershisi_shfs',
+        'ershiwu_shfs',
+        'ershiqi_shfs',
+        'sanshiqi_shfs',
+        'ershiba_shfs',
+        'ershijiu_shfs',
+        'tinengxunlian_shfs',
+        'sanshiyi_shfs',
+        'sanshier_shfs',
+        'sanshisan_shfs',
+        'sanshiba_shfs',
+        'sanshijiu_shfs',
+        'sanshisi_shfs',
+        'sanshiwu_shfs',
+        'sishi_shfs',
+        'sanshiliu_shfs',
+      ], //ppt的页面
+    },
+     //复制到这里结束
+     //从这里开始复制
+    {
+      'belongs': 'tiyuzhishi', 
+      'fengmian': 'anquan1.jpg',//封面图片
+      'name': '每天坚持一小时体育锻炼(上)', //ppt的名字
+      'page': [ //ppt名字列表
+        'yi_mtjc',
+        'er_mtjc',
+        'san_mtjc',
+        'si_mtjc',
+        'wu_mtjc',
+        'liu_mtjc',
+        'qi_mtjc',
+        'ba_mtjc',
+        'jiu_mtjc',
+        'shi_mtjc',
+        'shiyi_mtjc',
+        'shier_mtjc',
+        'shisan_mtjc',
+        'shisi_mtjc',
+        'shiwu_mtjc',
+        'shiliu_mtjc',
+        'shiqi_mtjc',
+        'ershiqi_mtjc',
+        'ershiba_mtjc',
+        'ershijius_mtjc',
+        'sanshis_mtjc',
+        'sanshiers_mtjc',
+        'sanshisans_mtjc',
+        'sanshiwus_mtjc',
+        'sanshiliu_mtjc',
+        'sanshiqis_mtjc',
+        'sanshibas_mtjc',
+        'sanshijius_mtjc',
+        'sishi_mtjc',
+      ], //ppt的页面
+    },
+    //复制到这里结束
+    {
+      'belongs': 'tiyuzhishi', 
+      'fengmian': 'anquan1.jpg',//封面图片
+      'name': '每天坚持一小时体育锻炼(下)', //ppt的名字
+      'page': [ //ppt名字列表
+        'yis_mtjc',
+        'er_mtjc',
+        'shiba_mtjc',
+        'shijiu_mtjc',
+        'ershi_mtjc',
+        'ershiyi_mtjc',
+        'ershier_mtjc',
+        'ershiere_mtjc',
+        'ershisan_mtjc',
+        'ershisi_mtjc',
+        'ershiwuw_mtjc',
+        'ershiwu_mtjc',
+        'ershiliu_mtjc',
+        'ershiqi_mtjc',
+        'ershiba_mtjc',
+        'ershijiu_mtjc',
+        'sanshi_mtjc',
+        'sanshiyi_mtjc',
+        'sanshier_mtjc',
+        'sanshisan_mtjc',
+        'sanshiwu_mtjc',
+        'sanshiqi_mtjc',
+        'sanshiba_mtjc',
+        'sanshijiu_mtjc',
+        'sishi_mtjc',
+      ], //ppt的页面
+    },
+    //复制到这里结束
+    //从这里开始复制
+     {
+      'belongs': 'jiankanganquan', 
+      'fengmian': 'anquan1.jpg',//封面图片
+      'name': '合理膳食、促进健康(上)', //ppt的名字
+      'page': [ //ppt名字列表
+        'yi_hlss',
+        'er_hlss',
+        'san_hlss',
+        'si_hlss',
+        'wu_hlss',
+        'liu_hlss',
+        'qi_hlss',
+        'ba_hlss',
+        'jiu_hlss',
+        'shi_hlss',
+        'shiyi_hlss',
+        'shier_hlss',
+        'ershiqi_hlss',
+        'ershiba_hlss',
+        'ershijius_hlss',
+        'sanshis_hlss',
+        'sanshiyi_hlss',
+        'sanshier_hlss',
+        'sanshisan_hlss',
+        'sanshiwu_hlss',
+        'sanshiliu_hlss',
+        'sanshiqi_hlss',
+        'sanshiba_hlss',
+        'sanshijiu_hlss',
+        'sishi_hlss',
+        ], //ppt的页面
+    },
+    //复制到这里结束
+    {
+      'belongs': 'jiankanganquan', 
+      'fengmian': 'anquan1.jpg',//封面图片
+      'name': '合理膳食、促进健康(下)', //ppt的名字
+      'page': [ //ppt名字列表
+        'yis_hlss',
+        'er_hlss',
+        'shisan_hlss',
+        'shisi_hlss',
+        'shiwu_hlss',
+        'shiliu_hlss',
+        'shiqi_hlss',
+        'shiba_hlss',
+        'shijiu_hlss',
+        'ershi_hlss',
+        'ershiyi_hlss',
+        'ershiqi_hlss',
+        'ershiba_hlss',
+        'ershijiu_hlss',
+        'sanshi_hlss',
+        'sanshiyi_hlss',
+        'sanshiers_hlss',
+        'sanshisans_hlss',
+        'sanshisis_hlss',
+        'sanshiqi_hlss',
+        'sanshiba_hlss',
+        'sanshijiu_hlss',
+        'sishi_hlss',
+      ], //ppt的页面
+    },
+    //复制到这里结束
+    //从这里开始复制
+    {
+      'belongs': 'jiankanganquan', 
+      'fengmian': 'anquan1.jpg',//封面图片
+      'name': '常见传染病的预防(上)', //ppt的名字
+      'page': [ //ppt名字列表
+        'yi_cjcr',
+        'er_cjcr',
+        'san_cjcr',
+        'si_cjcr',
+        'wu_cjcr',
+        'liu_cjcr',
+        'qi_cjcr',
+        'ba_cjcr',
+        'jiu_cjcr',
+        'shi_cjcr',
+        'shiyi_cjcr',
+        'shier_cjcr',
+        'shisan_cjcr',
+        'ershiqi_cjcr',
+        'ershiba_cjcr',
+        'ershijius_cjcr',
+        'sanshis_cjcr',
+        'sanshiyi_cjcr',
+        'sanshiers_cjcr',
+        'sanshisans_cjcr',
+        'sanshiqis_cjcr',
+        'sanshibas_cjcr',
+        'sanshijiu_cjcr',
+        'sishi_cjcr',
+        ], //ppt的页面
+    },
+    //复制到这里结束
+    //从这里开始复制
+    {
+      'belongs': 'jiankanganquan', 
+      'fengmian': 'anquan1.jpg',//封面图片
+      'name': '常见传染病的预防(下)', //ppt的名字
+      'page': [ //ppt名字列表
+        'yis_cjcr',
+        'er_cjcr',
+        'shisi_cjcr',
+        'shisis_cjcr',
+        'shiwu_cjcr',
+        'shiliu_cjcr',
+        'shiqi_cjcr',
+        'shiba_cjcr',
+        'shijiu_cjcr',
+        'ershi_cjcr',
+        'ershiyi_cjcr',
+        'ershier_cjcr',
+        'ershisan_cjcr',
+        'ershisi_cjcr',
+        'ershiqi_cjcr',
+        'ershiba_cjcr',
+        'ershijiu_cjcr',
+        'sanshi_cjcr',
+        'sanshiyi_cjcr',
+        'sanshier_cjcr',
+        'sanshisan_cjcr',
+        'sanshiwu_cjcr',
+        'sanshiliu_cjcr',
+        'sanshiqi_cjcr',
+        'sanshiba_cjcr',
+        'sanshijiu_cjcr',
+        'sishi_cjcr',
+      ], //ppt的页面
+    },
+    //复制到这里结束
+    //从这里开始复制
+    {
+      'belongs': 'jiankanganquan', 
+      'fengmian': 'anquan1.jpg',//封面图片
+      'name': '勇敢面对挫折和困难', //ppt的名字
+      'page': [ //ppt名字列表
+        'yi_ygmd',
+        'er_ygmd',
+        'san_ygmd',
+        'si_ygmd',
+        'wu_ygmd',
+        'liu_ygmd',
+        'qi_ygmd',
+        'ba_ygmd',
+        'jiu_ygmd',
+        'shi_ygmd',
+        'shiyi_ygmd',
+        'shier_ygmd',
+        'shisan_ygmd',
+        'shisi_ygmd',
+        'shiwu_ygmd',
+        'shiliu_ygmd',
+        'shiqi_ygmd',
+        'ershiqi_ygmd',
+        'ershiba_ygmd',
+        'ershijiu_ygmd',
+        'sanshi_ygmd',
+        'sanshis_ygmd',
+        'sanshiyi_ygmd',
+        'sanshier_ygmd',
+        'sanshisan_ygmd',
+        'sanshiwu_ygmd',
+        'sanshiqi_ygmd',
+        'sanshiba_ygmd',
+        'sanshijiu_ygmd',
+        'sishi_ygmd',
+      ], //ppt的页面
+    },
+    //复制到这里结束
+    //从这里开始复制
+    {
+      'belongs': 'tiyuzhishi', 
+      'fengmian': 'anquan1.jpg',//封面图片
+      'name': '科学发展体能', //ppt的名字
+      'page': [ //ppt名字列表
+        'yi_kxfz',
+        'er_kxfz',
+        'san_kxfz',
+        'si_kxfz',
+        'wu_kxfz',
+        'liu_kxfz',
+        'qi_kxfz',
+        'ba_kxfz',
+        'jiu_kxfz',
+        'shi_kxfz',
+        'shiyi_kxfz',
+        'ershiqi_kxfz',
+        'ershiba_kxfz',
+        'ershijiu_kxfz',
+        'sanshi_kxfz',
+        'sanshis_kxfz',
+        'sanshiyi_kxfz',
+        'sanshier_kxfz',
+        'sanshisan_kxfz',
+        'sanshiwu_kxfz',
+        'sanshiqi_kxfz',
+        'sanshiba_kxfz',
+        'sanshijiu_kxfz',
+        'sishi_kxfz',
+      ], //ppt的页面
+    },
+    //复制到这里结束
+    //从这里开始复制
+    {
+      'belongs': 'tiyuzhishi', 
+      'fengmian': 'anquan1.jpg',//封面图片
+      'name': '常见运动损伤与急救', //ppt的名字
+      'page': [ //ppt名字列表
+        'yi_cjyd',
+        'er_cjyd',
+        'san_cjyd',
+        'si_cjyd',
+        'wu_cjyd',
+        'liu_cjyd',
+        'qi_cjyd',
+        'ba_cjyd',
+        'jiu_cjyd',
+        'shi_cjyd',
+        'shiyi_cjyd',
+        'shier_cjyd',
+        'shisan_cjyd',
+        'shisi_cjyd',
+        'shiwu_cjyd',
+        'ershiqi_cjyd',
+        'ershiba_cjyd',
+        'ershijiu_cjyd',
+        'sanshi_cjyd',
+        'sanshis_cjyd',
+        'sanshiyi_cjyd',
+        'sanshier_cjyd',
+        'sanshisan_cjyd',
+        'sanshiwu_cjyd',
+        'sanshiliu_cjyd',
+        'sanshiqi_cjyd',
+        'sanshiba_cjyd',
+        'sanshijiu_cjyd',
+        'sishi_cjyd',
+      ], //ppt的页面
+    },
+    //复制到这里结束  
+    //从这里开始复制
+    {
+      'belongs': 'jiankanganquan', 
+      'fengmian': 'anquan1.jpg',//封面图片
+      'name': '学会与他人交往(上)', //ppt的名字
+      'page': [ //ppt名字列表
+        'yi_xhyt',
+        'er_xhyt',
+        'san_xhyt',
+        'si_xhyt',
+        'wu_xhyt',
+        'liu_xhyt',
+        'qi_xhyt',
+        'ba_xhyt',
+        'jiu_xhyt',
+        'shi_xhyt',
+        'shiyi_xhyt',
+        'shier_xhyt',
+        'shisan_xhyt',
+        'shisi_xhyt',
+        'shiwu_xhyt',
+        'ershiqi_xhyt',
+        'ershiba_xhyt',
+        'ershijiu_xhyt',
+        'sanshi_xhyt',
+        'sanshiyi_xhyt',
+        'sanshier_xhyt',
+        'sanshisan_xhyt',
+        'sanshisi_xhyt',
+        'sanshiwu_xhyt',
+        'sanshiliu_xhyt',
+        'sanshiqi_xhyt',
+        'sanshiba_xhyt',
+        'sanshijiu_xhyt',
+        'sishi_xhyt',
+      ], //ppt的页面
+    },
+    //复制到这里结束
+    //从这里开始复制
+    {
+      'belongs': 'jiankanganquan', 
+      'fengmian': 'anquan1.jpg',//封面图片
+      'name': '学会与他人交往(下)', //ppt的名字
+      'page': [ //ppt名字列表
+        'yis_xhyt',
+        'er_xhyt',
+        'shiliu_xhyt',
+        'shiqi_xhyt',
+        'shiba_xhyt',
+        'shijiu_xhyt',
+        'ershi_xhyt',
+        'ershiyi_xhyt',
+        'ershier_xhyt',
+        'ershisan_xhyt',
+        'ershisi_xhyt',
+        'ershiwu_xhyt',
+        'ershiliu_xhyt',
+        'ershiqi_xhyt',
+        'ershiba_xhyt',
+        'ershijius_xhyt',
+        'sanshis_xhyt',
+        'sanshiyi_xhyt',
+        'sanshiers_xhyt',
+        'sanshisans_xhyt',
+        'sanshisis_xhyt',
+        'sanshiwus_xhyt',
+        'sanshilius_xhyt',
+        'sanshiqis_xhyt',
+        'sanshibas_xhyt',
+        'sanshijius_xhyt',
+        'sishi_xhyt',
+      ], //ppt的页面
+    },
+    //复制到这里结束
+
+
+  ]
+
+</script>
+<script src="../js/each/weiKe.js"></script>
+<!-- <script src="http://114.55.92.187/pptindex/weiKe.js"></script> -->
+</html>

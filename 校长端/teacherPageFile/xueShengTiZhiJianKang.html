@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/flexible/flexible_css.js"></script>
+    <script src="../js/flexible/flexible.js"></script>
+    <title>动跃科技</title>
+</head>
+<body flex="dir:top">
+
+<section flex-box="1" class="xiaoZhang">
+    <div class="select-box" font="14">
+        <select name="" id="" class="select-item">
+            <option value="">一年级</option>
+            <option value="">二年级</option>
+            <option value="">三年级</option>
+        </select>
+        <select name="" id="" class="select-item">
+            <option value="">一年级(1)班</option>
+            <option value="">二年级(1)班</option>
+            <option value="">三年级(1)班</option>
+        </select>
+    </div>
+    <!-- 学生体质健康 -->
+    <div class="xiaozhang-item mt1"> 
+        <div class="title">
+            <p><b>学生体质健康</b></p>
+        </div>
+        <div class="line-chart-box">
+            <div id="xstzjk"></div>
+        </div>
+    </div>
+
+    <div class="slid-tab">
+        <!-- 点击切换js在底部 -->
+        <div class="slid-tab-content">
+            <div class="tab-item">总成绩</div>
+            <div class="tab-item active">BMI指标</div>
+            <div class="tab-item">肺活量</div>
+            <div class="tab-item">50米跑</div>
+            <div class="tab-item">坐位体前屈</div>
+        </div>
+    </div>
+
+    <div class="table-content mt1">
+        <table>
+            <thead>
+                <tr class="txt-gray">
+                    <td>学生姓名</td>
+                    <td>肺活量</td>
+                    <td>得分</td>
+                    <td>成绩</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="mult-line">
+                        <p>科沃斯</p>
+                        <p><i class="icon-by"></i></p>
+                    </td>
+                    <td>91</td>
+                    <td>91</td>
+                    <td>79</td>
+                </tr>
+                <tr>
+                    <td class="mult-line">
+                        <p>科沃斯</p>
+                        <p><i class="icon-nv"></i></p>
+                    </td>
+                    <td>91</td>
+                    <td>91</td>
+                    <td>79</td>
+                </tr>
+                <tr>
+                    <td class="mult-line">
+                        <p>科沃斯</p>
+                        <p><i class="icon-by"></i></p>
+                    </td>
+                    <td>91</td>
+                    <td>91</td>
+                    <td>79</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    
+   
+</section>
+<script src="../js/echart/echart.js"></script>
+<script src="../js/jquery.js"></script>
+<script src="../js/each/xiaoZhangDuanChart.js"></script>
+<script src="../js/each/xiaoZhangDuan.js"></script>
+<script>
+    $('body').on('click', '.slid-tab .tab-item', function(){
+        $(this).addClass('active').siblings().removeClass('active');
+    })
+</script>
+</body>
+</html>

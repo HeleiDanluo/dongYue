@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>运动处方</title>
+    <link rel="stylesheet" href="sportsRecipe.css">
+    <script src="../../js/baseJs/jquery.js"></script>
+    <script src="../../js/baseJs/flexible.js"></script>
+    <script src="../../js/baseJs/flexible_css.js"></script>
+</head>
+<body flex="dir:top">
+<header flex-box="0" flex="dir:left" font="16">
+    <a href="javascript:history.go(-1) " flex-box="0">返回</a>
+    <div class="title" flex-box="1">我的</div>
+    <a href="javascript:void(0)" flex-box="0"></a>
+</header>
+<section flex-box="1" class="sportsRecipe can-scroll" font="14">
+    <div class="user">
+        <div class="relativeBox" flex="dir:left cross:center">
+            <h1>欧阳修</h1>
+            <h2>男</h2>
+            <h3>1000米跑</h3>
+            <h4>倒计时:12.23</h4>
+        </div>
+    </div>
+    <div class="nav">
+        <ul class="relativeBox" flex="box:mean cross:center">
+            <li>基本信息</li>
+            <li class="focus">体质数据</li>
+            <li>运动处方</li>
+            <li>问答消息</li>
+        </ul>
+    </div>
+    <div class="sportsRecipe">
+        <div class="counter" flex="cross:center">
+            <div class="relativeBox" >
+                <div class="limitBox">
+                    <ul class=" clearfix can-scroll" flex="cross:center">
+                        <li><a class="focus" href="javascript:void(0)">1</a></li>
+                        <li><a href="javascript:void(0)">2</a></li>
+                        <li><a href="javascript:void(0)">3</a></li>
+                        <li><a href="javascript:void(0)">4</a></li>
+                        <li><a href="javascript:void(0)">5</a></li>
+                        <li><a href="javascript:void(0)">6</a></li>
+                        <li><a href="javascript:void(0)">7</a></li>
+                        <li><a href="javascript:void(0)">8</a></li>
+                        <li><a href="javascript:void(0)">9</a></li>
+                        <li><a href="javascript:void(0)">10</a></li>
+                        <li><a href="javascript:void(0)">11</a></li>
+                        <li><a href="javascript:void(0)">12</a></li>
+                        <li><a href="javascript:void(0)">13</a></li>
+                        <li><a href="javascript:void(0)">14</a></li>
+                        <li><a href="javascript:void(0)">15</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="boxChunk">
+            <div class="chunk" flex="dir:top">
+                <div class="top" flex="dir:left cross:center">
+                    <div>训练1</div>
+                    <a href="javascript:void(0)">查看详情</a>
+                    <i class="icon-jiantou first"></i>
+                    <i class="icon-guanbi second"></i>
+                </div>
+                <div class="bottom" flex="dir:left">
+                    <a href="javascript:void(0)">
+                        <img src="../../img/boy.png">
+                        <span class="msg" font="10">编辑修改</span>
+                    </a>
+                    <div class="detail">
+                        <h1>仰卧起坐</h1>
+                        <input placeholder="2组,每组10分钟"></input>
+                    </div>
+                </div>
+            </div>
+            <div class="chunk" flex="dir:top">
+                <div class="top" flex="dir:left cross:center">
+                    <div>训练1</div>
+                    <a href="javascript:void(0)">查看详情</a>
+                    <i class="icon-jiantou first"></i>
+                    <i class="icon-guanbi second"></i>
+                </div>
+                <div class="bottom" flex="dir:left">
+                    <a href="javascript:void(0)">
+                        <img src="../../img/boy.png">
+                        <span class="msg" font="10">编辑修改</span>
+                    </a>
+                    <div class="detail">
+                        <h1>仰卧起坐</h1>
+                        <input value="2组,每组10分钟"></input>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="addBox">
+            <a href="javascript:void(0)" class="add" flex="cross:center main:center">
+                <i class="icon-tianjia"></i>
+                <span>添加训练2</span>
+            </a>
+        </div>
+        <div class="sendBox">
+            <a href="javascript:void(0)" class="send" flex="cross:center main:center">
+                <span>确认并发送给用户</span>
+            </a>
+        </div>
+    </div>
+</section>
+<footer data-value="1" font="14" flex-box="0" flex="dir:left box:mean">
+    <a href="javascript:void(0)" class="focus" flex=" dir:top main:center cross:center">
+        <i class="icon-home" font="24"></i>
+        <span>首页</span>
+    </a>
+    <a href="javascript:void(0)" flex="main:center cross:center dir:top">
+        <i class="icon-gerzhongxin" font="24"></i>
+        <span>我的</span>
+    </a>
+</footer>
+</body>
+<script src="sportsRecipe.js"></script>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+html(lang="zh-CN")
+  head
+    include head.jade
+  body
+    include header1.jade
+    div.login
+      div.logBox
+        div.caption 教务监督管理登陆
+        div.inputBox
+          input(type="text" class="input-big"
+            placeholder="手机号码/邮箱")
+          input(type="password" class="input-big"
+            placeholder="密码")
+          a.forget(href="#")
+            span 忘记密码 ?
+          div.send.btn-big.btn-green 登陆
+        

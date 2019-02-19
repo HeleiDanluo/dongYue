@@ -1,0 +1,276 @@
+/* 清除浮动 */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+.loading {
+  position: absolute;
+  z-index: 99999999999;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  left: 0;
+  top: 0;
+}
+.loading .load-circle {
+  display: block;
+  margin: 3rem auto;
+  border: 10px solid #82b64a;
+  border-top-left-radius: 50%;
+  -webkit-border-top-left-radius: 50%;
+  -moz-border-radius-topleft: 50%;
+  border-top-right-radius: 50%;
+  -webkit-border-top-right-radius: 50%;
+  -moz-border-radius-topright: 50%;
+  border-bottom-left-radius: 50%;
+  -webkit-border-bottom-left-radius: 50%;
+  -moz-border-radius-bottomleft: 50%;
+  border-bottom-right-radius: 50%;
+  -webkit-border-bottom-right-radius: 50%;
+  -moz-border-radius-bottomright: 50%;
+  border-bottom-color: transparent;
+  animation: rotate 0.8s linear infinite 0s;
+  -webkit-animation: rotate 0.8s linear infinite 0s;
+  -moz-animation: rotate 0.8s linear infinite 0s;
+  -o-animation: rotate 0.8s linear infinite 0s;
+}
+[data-dpr='1'] .load-circle {
+  width: 60px;
+  height: 60px;
+  border-width: 5px;
+}
+[data-dpr='2'] .load-circle {
+  width: 110px;
+  height: 110px;
+  border-width: 10px;
+}
+[data-dpr='3'] .load-circle {
+  width: 180px;
+  height: 180px;
+  border-width: 15px;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.abso {
+  font-size: 1rem;
+  height: 4rem;
+  width: 100%;
+  line-height: 4rem;
+  text-align: center;
+}
+/* 颜色 */
+/* 文字尺寸 */
+[font~="10"],
+h4 {
+  font-size: 10px;
+}
+[data-dpr="2"] [font~="10"],
+[data-dpr="2"] h4 {
+  font-size: 20px;
+}
+[data-dpr="3"] [font~="10"],
+[data-dpr="3"] h4 {
+  font-size: 30px;
+}
+[font~="12"],
+h4 {
+  font-size: 12px;
+}
+[data-dpr="2"] [font~="12"],
+[data-dpr="2"] h4 {
+  font-size: 24px;
+}
+[data-dpr="3"] [font~="12"],
+[data-dpr="3"] h4 {
+  font-size: 36px;
+}
+[font~="14"],
+h3 {
+  font-size: 14px;
+}
+[data-dpr="2"] [font~="14"],
+[data-dpr="2"] h3 {
+  font-size: 28px;
+}
+[data-dpr="3"] [font~="14"],
+[data-dpr="3"] h3 {
+  font-size: 42px;
+}
+[font~="16"],
+h2 {
+  font-size: 16px;
+}
+[data-dpr="2"] [font~="16"],
+[data-dpr="2"] h2 {
+  font-size: 32px;
+}
+[data-dpr="3"] [font~="16"],
+[data-dpr="3"] h2 {
+  font-size: 48px;
+}
+[font~="18"],
+h1 {
+  font-size: 18px;
+}
+[data-dpr="2"] [font~="18"],
+[data-dpr="2"] h1 {
+  font-size: 36px;
+}
+[data-dpr="3"] [font~="18"],
+[data-dpr="3"] h1 {
+  font-size: 54px;
+}
+[font~="20"] {
+  font-size: 20px;
+}
+[data-dpr="2"] [font~="20"],
+[data-dpr="2"] {
+  font-size: 40px;
+}
+[data-dpr="3"] [font~="20"],
+[data-dpr="3"] {
+  font-size: 60px;
+}
+[font~="24"] {
+  font-size: 24px;
+}
+[data-dpr="2"] [font~="24"],
+[data-dpr="2"] {
+  font-size: 48px;
+}
+[data-dpr="3"] [font~="24"],
+[data-dpr="3"] {
+  font-size: 72px;
+}
+[font~="32"] {
+  font-size: 32px;
+}
+[data-dpr="2"] [font~="32"],
+[data-dpr="2"] {
+  font-size: 64px;
+}
+[data-dpr="3"] [font~="32"],
+[data-dpr="3"] {
+  font-size: 96px;
+}
+[font~="icon"] {
+  display: block;
+  font-size: 20px;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+[data-dpr="2"] [font~="icon"] {
+  font-size: 40px;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+}
+[data-dpr="3"] [font~="icon"] {
+  font-size: 60px;
+  width: 72px;
+  height: 72px;
+  line-height: 72px;
+}
+/* 过度 */
+/* 圆角 */
+/* 3D变换 */
+/* 按钮 */
+.btn-line {
+  border-top-left-radius: 0.067rem;
+  -webkit-border-top-left-radius: 0.067rem;
+  -moz-border-radius-topleft: 0.067rem;
+  border-top-right-radius: 0.067rem;
+  -webkit-border-top-right-radius: 0.067rem;
+  -moz-border-radius-topright: 0.067rem;
+  border-bottom-left-radius: 0.067rem;
+  -webkit-border-bottom-left-radius: 0.067rem;
+  -moz-border-radius-bottomleft: 0.067rem;
+  border-bottom-right-radius: 0.067rem;
+  -webkit-border-bottom-right-radius: 0.067rem;
+  -moz-border-radius-bottomright: 0.067rem;
+  border-width: 2px 2px 2px 2px;
+  border-style: solid;
+  padding: 0 0.267rem;
+}
+[data-dpr="2"] .btn-line {
+  border-width: 4px 4px 4px 4px;
+}
+[data-dpr="3"] .btn-line {
+  border-width: 6px 6px 6px 6px;
+}
+.btn-default {
+  color: #666;
+  border-color: #ccc;
+}
+.btn-test {
+  color: #393a3f;
+  border-color: #393a3f;
+}
+.btn-theme {
+  color: #82b64a;
+  border-color: #82b64a;
+}
+.btn-full-theme {
+  color: #fff;
+  border-color: #82b64a;
+  background-color: #82b64a;
+}
+.btn-full-test {
+  color: #fff;
+  border-color: #393a3f;
+  background-color: #393a3f;
+}
+.btn {
+  border-top-left-radius: 0.067rem;
+  -webkit-border-top-left-radius: 0.067rem;
+  -moz-border-radius-topleft: 0.067rem;
+  border-top-right-radius: 0.067rem;
+  -webkit-border-top-right-radius: 0.067rem;
+  -moz-border-radius-topright: 0.067rem;
+  border-bottom-left-radius: 0.067rem;
+  -webkit-border-bottom-left-radius: 0.067rem;
+  -moz-border-radius-bottomleft: 0.067rem;
+  border-bottom-right-radius: 0.067rem;
+  -webkit-border-bottom-right-radius: 0.067rem;
+  -moz-border-radius-bottomright: 0.067rem;
+  padding: 0 0.267rem;
+  border-width: 2px 2px 2px 2px;
+  border-style: solid;
+}
+.btn-square {
+  height: 100%;
+}
+.btn-square-theme {
+  color: #fff;
+  background-color: #82b64a;
+  text-align: center;
+}
+.btn-square-lighterTheme {
+  color: #fff;
+  background-color: #82b64a;
+  text-align: center;
+}

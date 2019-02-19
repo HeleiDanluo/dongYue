@@ -1,0 +1,55 @@
+.texttwo-page-body {
+  width: 100%;
+  height: calc(100% - 100px);
+  padding: 6% 0 0;
+  position: relative;
+}
+.texttwo-page-body .content {
+  height: 220px;
+  position: absolute;
+}
+.texttwo-page-body .content .liubianxing {
+  width: calc(1.7320508 * 220px / 2);
+  height: 220px;
+  clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+  float: left;
+  text-align: center;
+  color: #fff;
+  padding-top: 3em;
+}
+.texttwo-page-body .content .liubianxing p {
+  font-size: 3em;
+}
+.texttwo-page-body .content .txt {
+  width: 60%;
+  font-size: 1.8em;
+  line-height: 120%;
+  float: left;
+  padding: 8% 0 0 3%;
+}
+.texttwo-page-body .content.one {
+  margin-left: calc(50% - 95px);
+}
+.texttwo-page-body .content.one .liubianxing {
+  background: #046588;
+}
+.texttwo-page-body .content.two {
+  margin-top: 175px;
+  margin-left: calc(50% - 195px);
+}
+.texttwo-page-body .content.two .liubianxing {
+  background: #f5841c;
+}
+.texttwo-page-body .content.two .txt {
+  position: absolute;
+  margin-top: 50px;
+  width: 170%;
+  right: 120%;
+}
+.texttwo-page-body .content.three {
+  margin-left: calc(50% + 5px);
+  margin-top: 175px;
+}
+.texttwo-page-body .content.three .liubianxing {
+  background: #a0bf0d;
+}

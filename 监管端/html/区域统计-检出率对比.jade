@@ -1,0 +1,133 @@
+html(lang="zh-CN")
+  head
+    include head.jade
+    script(src="../js/each/cityChoose.js")
+    script(src="../js/each/passRate.js")
+    script(type='text/javascript').
+      $(function(){
+        $('.leftNav>ul>li').removeClass('focus')
+        $('.leftNav>ul>li').eq(1).addClass('focus')
+        $('.leftNav>ul>li>ul>li').removeClass('focus')
+        $('.leftNav>ul>li>ul>li').eq(2).addClass('focus')
+      })
+  body
+    include header2.jade
+    .passRate
+      .choose
+        .year
+          span.title 区域范围：
+          span.box
+            span.focus.findcity(areacode="510600") 德阳市
+            span.findcity(areacode="510100") 成都市
+            span 选择时间:
+            select(class="time btn-big")
+              option(value="2017~2018学年") 2017~2018学年
+              option(value="2017~2010学年") 2017~2010学年
+              option(value="2017~2018学年") 2017~2018学年
+              option(value="2017~2018学年") 2017~2018学年
+              option(value="2017~2018学年") 2017~2018学年
+        .grade
+          span.title 区域范围：
+          span.box.multi.cityresult
+            span 渝中区
+            span 九龙坡
+            span 江北区
+            span.focus 沙坪坝区
+        .class
+          span.title 性别：
+          span.box
+            span 男生
+            span 女生
+            span.focus 全部
+        .class
+          span.title 可选项目：
+          span.box
+            span 总成绩
+            span 50米
+            span.focus BMI
+            span 坐位体前屈
+            span 一分钟跳绳
+            span 一分钟仰卧起坐
+      .btn-box
+        input(type="button" class="btn-small btn-green" value="年级数据") 
+        input(type="button" class="btn-small" value="年龄数据") 
+      .table-box-new
+        table
+          thead(class="tbl-bder-bottom")
+            tr
+              th(rowspan="2") 
+                div 年级
+              th(colspan="5") 
+                div(class="tbl-bder-bottom") 城市检出率
+              th(colspan="5") 
+                div(class="tbl-bder-bottom") 乡村检出率
+            tr
+              th 样本数
+              th 低体重
+              th 正常
+              th 超重
+              th 肥胖
+              th 样本数
+              th 低体重
+              th 正常
+              th 超重
+              th 肥胖
+          tbody(class="tbl-bder-bottom")
+            tr
+              td 小学一年级
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+            tr
+              td 小学一年级
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+            tr
+              td 小学一年级
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+          tfoot
+            tr
+              td 合计
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+              td 1010
+        br
+        h3 小学一年级 至 高中三年级
+        p 城市  女生 不及格检出率  xx%，比 乡村   女生  高/低  yy%，x²=200.08，p<0.01  ，差异显著，有统计学意义
+        br
+        h3 小学一年级 至 小学六年级
+        p 城市  女生 不及格检出率  xx%，比 乡村   女生  高/低  yy%，x²=200.08，p<0.01  ，差异显著，有统计学意义
+        br
+        h3 初中一年级 至 高中三年级
+        p 城市  女生 不及格检出率  xx%，比 乡村   女生  高/低  yy%，x²=200.08，p<0.01  ，差异显著，有统计学意义

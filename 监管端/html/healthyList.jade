@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+html(lang="zh-CN")
+  head
+    include head.jade
+    script(src="../js/each/passRate.js")
+    script(type='text/javascript').
+      $(function(){
+        $('.leftNav>ul>li').removeClass('focus')
+        $('.leftNav>ul>li').eq(2).addClass('focus')
+        $('.leftNav>ul>li>ul>li').removeClass('focus')
+        $('.leftNav>ul>li').eq(2).find('li').eq(0).addClass('focus')
+      })
+  body
+    include header2.jade
+    .healthyList
+      .choosee
+        span 选择范围:
+        ul(class="address clearfix")
+          li(class="btn-small focus") 全部
+          li(class="btn-small sheng")
+            span 省
+            ul(class="btn-small")
+              .limit
+                
+          li(class="btn-small shi")
+            span 市
+            ul(class="btn-small")
+              .limit
+                li(class="btn-small") 请先选择省
+          li(class="btn-small qu")
+            span 区/县
+            ul(class="btn-small")
+              .limit
+                li(class="btn-small") 请先选择市
+      .choose        
+        span 选择时间:
+        select(class="time btn-big")
+          option(value="2017~2018学年") 2017~2018学年
+          option(value="2017~2018学年") 2017~2018学年
+          option(value="2017~2018学年") 2017~2018学年
+          option(value="2017~2018学年") 2017~2018学年
+          option(value="2017~2018学年") 2017~2018学年
+      br
+      br
+      br
+      .btn-box
+        a.btn-small.ml10.btn-green(href="healthyList.html") 全区学校对比
+        a.btn-small.ml10.btn-gray(href="全区年度对比.html") 全区年度对比
+      .choose.menu
+        .year
+          span.title 指标：
+          span.box
+            span.focus 总成绩
+            span BMI
+            span 肺活量
+            span 50米
+            span 坐位体前屈
+            span 一分钟跳绳
+            span 一分钟仰卧起坐
+            span 50X80往返跑
+        .grade
+          span.title 选项：
+          span.box
+            span.focus 全部
+            span 优良率
+            span 达标率
+            span 优秀占比
+            span 良好占比
+            span 及格占比
+            span 不及格占比
+        .qujian
+          span.title 排序：
+          span.box
+            span 由高到低
+            span.focus 由低到高
+      .btn-box
+        input(type="button" class="btn-small btn-green" value="查询") 
+      .healthyBox.new
+        .top
+          span(class="left") 健康等级分布
+          span(class="center")
+            a(href="./healthyList.html" class="focus") 列表
+            span &nbsp;/&nbsp;
+            a(href="./healthyChart.html") 图表
+          span &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+          span
+            a(href="./healthyList.html" class="focus") 只看男生
+            span &nbsp;/&nbsp;
+            a(href="./healthyChart.html") 只看女生
+            span &nbsp;/&nbsp;
+            a(href="./healthyChart.html") 全部
+          //- span(class="right btn-small btn-green") 导出
+        .center
+          .row
+            span(class="num") 序号
+            span(class="school") 学校名称
+            span(class="category") 学校样本总数
+            span(class="category") 优秀人数
+            span(class="category") 良好人数
+            span(class="category") 及格人数
+            span(class="category") 不及格人数
+          .row.sp
+            span(class="num") 1
+            span(class="school") 圣菲小学
+            span(class="category") 1299(男234/女235)
+            span(class="category") 1299(男234/女235)
+            span(class="category") 1299(男234/女235)
+            span(class="category") 1299(男234/女235)
+            span(class="category") 1299(男234/女235)
+          .row.sp
+            span(class="num") 2
+            span(class="school") 益州小学
+            span(class="category") 890(男12/女21)
+            span(class="category") 890(男12/女21)
+            span(class="category") 890(男12/女21)
+            span(class="category") 890(男12/女21)
+            span(class="category") 890(男12/女21)
+

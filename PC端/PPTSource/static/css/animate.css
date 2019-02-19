@@ -1,0 +1,28 @@
+.toTop-enter-active,
+.transparentAppear-enter-active,
+.toBottom-enter-active,
+.toLeft-enter-active,
+.toRight-enter-active {
+  transition: 0.5s;
+}
+.toTop-enter {
+  transform: translateX(0);
+  transform: translateY(50px);
+  opacity: 0;
+}
+.toBottom-enter {
+  transform: translateX(0);
+  transform: translateY(-50px);
+  opacity: 0;
+}
+.toLeft-enter {
+  transform: translateX(50px);
+  opacity: 0;
+}
+.toRight-enter {
+  transform: translateX(-50px);
+  opacity: 0;
+}
+.transparentAppear-enter {
+  opacity: 0;
+}

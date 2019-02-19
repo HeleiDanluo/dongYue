@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'MicrosoftYaHei';
+}
+html {
+  height: 100%;
+}
+body {
+  background: url('../img/bg.png');
+  height: 100%;
+  overflow: hidden;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.title-fs {
+  font-weight: 600;
+}
+@media all and (min-width: 1920px) {
+  .title-fs {
+    font-size: 50px;
+  }
+  .normal-txt-fs {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  .index-title-fs {
+    font-size: 130px;
+  }
+}
+@media all and (max-width: 1920px) {
+  .title-fs {
+    font-size: 50px;
+  }
+  .normal-txt-fs {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  .index-title-fs {
+    font-size: 120px;
+  }
+}
+@media all and (max-width: 1600px) {
+  .title-fs {
+    font-size: 42px;
+  }
+  .normal-txt-fs {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .index-title-fs {
+    font-size: 105px;
+  }
+}
+@media all and (max-width: 1366px) {
+  .title-fs {
+    font-size: 36px;
+  }
+  .normal-txt-fs {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .index-title-fs {
+    font-size: 100px;
+  }
+}
+@media all and (max-width: 1280px) {
+  .title-fs {
+    font-size: 34px;
+  }
+  .normal-txt-fs {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .index-title-fs {
+    font-size: 80px;
+  }
+}
+.hover-effect:hover {
+  transform: scale(1.1);
+  z-index: 1000000;
+  background: #fff;
+}
+.hover-effect:hover .txt-content {
+  box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.2);
+}
+.hover-effect,
+.click-effect {
+  transition: 0.3s;
+}
+.click-effect:active {
+  transform: scale(0.98);
+}
+.height_100p {
+  height: 100%;
+}
+.width_100p {
+  width: 100%;
+}
+.t-c {
+  text-align: center;
+}
+.mt20 {
+  margin-top: 20px;
+}

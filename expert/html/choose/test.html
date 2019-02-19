@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../../js/baseJs/jquery.js"></script>
+</head>
+<body>
+    <a target="_target">123</a>
+</body>
+<script>
+    $(function(){
+        function newWin(url, id) {
+            var a = document.createElement('a');
+            a.setAttribute('href', url);
+            a.setAttribute('target', '_blank');
+            a.setAttribute('id', id);
+            // 防止反复添加
+            if(!document.getElementById(id)) {
+                document.body.appendChild(a);
+            }
+            a.click();
+        }
+
+        $('a').click(function(){
+            $.ajax({
+                success:function() {
+                for (var i = 0; i < 10; i++) {
+                    (function (i) {
+                        newWin('http://www.baidu.com'+i,'test'+i)
+                        })(i)
+                    }
+                }
+             })
+        })
+    })
+</script>
+</html>

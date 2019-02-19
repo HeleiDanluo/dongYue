@@ -1,0 +1,57 @@
+@import "var";
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  border-radius: .15625rem;
+  border: none
+}
+
+.btn:focus {
+  outline: 0;
+}
+.btn-default, .btn-red , .btn-yellow , .btn-blue,.btn-green{
+  display: block;
+  text-align: center;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  font-size: .875rem;
+  //border-width: 1px;
+  //border-style: solid;
+}
+
+.btn-default{
+  background: @dbdbdbGray;
+  color:#fff;
+}
+.btn-default:active{
+  background: @darkDbdbdbGray;
+}
+.btn-red{
+  background: @redColor;
+  color:#fff;
+}
+.btn-red:active{
+  background: @darkRedColor;
+}
+.btn-yellow{
+  background: @yellowColor;
+  color:#fff;
+}
+.btn-yellow:active{
+  background: @darkYellowColor;
+}
+.btn-blue{
+  background: @blueColor;
+  color:#fff;
+}
+.btn-blue:active{
+  background: @darkBlueColor;
+}
+.btn-green{
+  background: @greenColor;
+  color:#fff;
+}
+.btn-green:active{
+  background: @darkGreenColor;
+}

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8"></meta>
+
+  <title>动跃数据分析</title>
+
+  <link rel="stylesheet" href="../css/main.css"></link>
+
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/each/healthyList.js"></script>
+  <script src="../js/each/dataChoose.js"></script>
+  <script src="../js/each/cityChoose.js"></script>
+  <script src="../js/public.js"></script>
+
+  <script>
+    $(function () {
+      $('.leftNav>ul>li').removeClass('focus')
+      $('.leftNav>ul>li').eq(1).addClass('focus')
+      $('.leftNav>ul>li>ul>li').removeClass('focus')
+      $('.leftNav>ul>li>ul>li').eq(2).addClass('focus')
+    })
+
+  </script>
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo">
+      <img src="../images/logo.png" alt="">
+
+      <span class="name">动跃科技数据分析平台</span>
+    </div>
+
+    <div class="user">
+      <a href="#" class="name">测试名字</a>
+
+      <a href="./findPass.html" class="pass">
+        <i class="icon-xgmm"></i>
+        密码设置
+      </a>
+
+      <a href="#" class="logout">
+        <i class="icon-logout"></i>
+        退出
+      </a>
+    </div>
+  </div>
+
+  <div class="leftNav">
+    <ul>
+      <li class="focus">
+        <i class="icon-home"></i>
+
+        <a href="./findSchool.html">查找学校</a>
+      </li>
+
+      <li class="show">
+        <i class="icon-sjfx"></i>
+
+        <span>数据分析</span>
+
+        <i class="icon-xia"></i>
+
+        <ul>
+          <li>
+            <a href="./healthyList.html">健康等级分布</a>
+          </li>
+
+          <li>
+            <a href="./passRate.html">学校成绩分布</a>
+          </li>
+
+          <li>
+            <a href="./studentClass.html">学校课程课时</a>
+          </li>
+
+          <li>
+            <a href="./studentEqipment.html">学校器械教具</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="studentClass">
+    <div class="choose">
+      <span>选择范围:</span>
+
+      <ul class="address clearfix">
+        <li class="btn-small focus">全部</li>
+
+        <li class="btn-small sheng">
+          <span>省</span>
+
+          <ul class="btn-small">
+            <div class="limit"></div>
+          </ul>
+        </li>
+
+        <li class="btn-small shi">
+          <span>市</span>
+
+          <ul class="btn-small">
+            <div class="limit">
+              <li class="btn-small">请先选择省</li>
+            </div>
+          </ul>
+        </li>
+
+        <li class="btn-small qu">
+          <span>区/县</span>
+
+          <ul class="btn-small">
+            <div class="limit">
+              <li class="btn-small">请先选择市</li>
+            </div>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="choose">
+      <span>关键词搜索:</span>
+
+      <input placeholder="请输入关键词" class="time btn-big"></input>
+
+      <input type="button" value="搜索" class="btn-small btn-green"></input>
+    </div>
+
+    <div class="healthyBox">
+      <div class="top">
+        <span class="left">学校课程课时</span>
+      </div>
+
+      <div class="center">
+        <div class="row">
+          <span class="num">序号</span>
+
+          <span class="school">学校名称</span>
+
+          <span class="category">总课时</span>
+
+          <span class="item">开展项目</span>
+
+          <span class="handle">操作</span>
+        </div>
+
+        <div class="row cb">
+          <span class="num">1</span>
+
+          <span class="school">圣菲小学</span>
+
+          <span class="category">486</span>
+
+          <span class="item">
+            <span>篮球:265</span>
+
+            <span>田径:65</span>
+
+            <span>体操:65</span>
+          </span>
+
+          <span class="handle">
+            <a href="./healthyClass.html">查看更多</a>
+          </span>
+        </div>
+
+        <div class="row cb">
+          <span class="num">2</span>
+
+          <span class="school">益州小学</span>
+
+          <span class="category">576</span>
+
+          <span class="item">
+            <span>足球:265</span>
+
+            <span>田径:65</span>
+
+            <span>乒乓球:65</span>
+
+            <span>武术:65</span>
+          </span>
+
+          <span class="handle">
+            <a href="./healthyClass.html">查看更多</a>
+          </span>
+        </div>
+      </div>
+
+      <div class="mydataChoose">
+        <ul class="num"></ul>
+
+        <select>
+          <option value="1">1</option>
+
+          <option value="2">2</option>
+
+          <option value="3">3</option>
+
+          <option value="4">4</option>
+
+          <option value="5">5</option>
+
+          <option value="6">6</option>
+
+          <option value="7">7</option>
+        </select>
+
+        <span class="left">
+          跳转到
+
+          <input></input>
+        </span>
+
+        <span class="right">确定</span>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,231 @@
+@import './_color.scss';
+
+// 10次循环
+@for $i from 1 through 10{
+
+  // 宽度百分比
+  .col#{$i}{
+    width: $i * 10%;
+  }
+
+  // 高度百分比
+  .row#{$i}{
+    height: $i * 10%;
+  }
+
+  // margin-top
+  .mt#{$i * 5}{
+    margin-top: $i * 5px;
+  }
+
+  // margin-left
+  .ml#{$i * 5}{
+    margin-left: $i * 5px;
+  }
+
+  // margin-bottom
+  .mb#{$i * 5}{
+    margin-bottom: $i * 5px;
+  }
+
+  // padding-right
+  .mr#{$i * 5}{
+    padding-right: $i * 5px;
+  }
+
+  // padding-top
+  .pt#{$i * 5}{
+    padding-top: $i * 5px;
+  }
+
+  // padding-left
+  .pl#{$i * 5}{
+    padding-left: $i * 5px;
+  }
+
+  // padding-bottom
+  .pb#{$i * 5}{
+    padding-bottom: $i * 5px;
+  }
+
+  // padding-right
+  .pr#{$i * 5}{
+    padding-right: $i * 5px;
+  }
+
+  // line-height
+  .lh#{$i * 5}{
+    line-height: $i * 5px;
+  }
+
+}
+
+// 20次循环
+@for $i from 1 through 20{
+  // 字体
+  .font#{10 + $i}{
+    font-size: $i + 10px;
+  }
+
+  .col-#{$i}{
+    width: $i * 1%;
+  }
+
+  //border-radius
+  .br#{$i * 1}{
+    border-radius:$i *1px;
+    -moz-border-radius:$i *1px;
+    -webkit-border-radius:$i *1px;
+    -o-border-radius:$i *1px;
+    -ms-border-radius:$i *1px;
+  }
+}
+
+// 100次循环
+
+@for $i from 1 through 100{
+  // 高
+  .h#{$i * 5}{
+    height: $i * 5px;
+  }
+  // 宽
+  .w#{$i * 5}{
+    width: $i * 5px;
+  }
+}
+
+// 颜色
+
+.colorSky{
+  color: $sky !important;
+}
+
+.colorBlack{
+  color: #000 !important;
+}
+
+.colorWhite{
+  color: #fff !important;
+}
+
+.colorGreen{
+  color: $thinGreen !important;
+}
+
+.colorLine{
+  color:$line;
+}
+
+.colorGrey{
+  color:$lighterGrey;
+}
+
+.colorBrown{
+  color:$brown;
+}
+
+// 背景颜色
+
+.bkSky{
+  background-color: $sky;
+}
+
+.bkWhite{
+  background-color: #fff;
+}
+
+.bkGreen{
+  background-color: $thinGreen;
+}
+
+.bkGrey{
+  background-color: #F5F5F5;
+}
+
+// 水平
+
+.tl{
+  text-align: left;
+}
+
+.tc{
+  text-align: center;
+}
+
+.tr{
+  text-align: right;
+}
+
+// 浮动
+
+.fl{
+  float: left;
+}
+
+.fr{
+  float: right;
+}
+
+// 指针
+
+.point{
+  cursor: pointer;
+}
+
+.text{
+  cursor: text;
+}
+
+// display
+
+.dib{
+  display: inline-block;
+}
+
+.di{
+  display: inline;
+}
+
+.db{
+  display: block;
+}
+
+.dn{
+  display: none;
+}
+
+// font-weight
+
+.fb{
+  font-weight: bold;
+}
+
+// vertical-align
+
+.vm{
+  vertical-align:middle !important;
+}
+
+.vb{
+  vertical-align: bottom !important;
+}
+
+// border
+
+.borderGreen{
+  border: 1px solid $thinGreen;
+}
+
+.borderGrey{
+  border: 1px solid $lighterGrey;
+}
+
+.borderLine{
+  border: 1px solid #E5E5E5;
+}
+
+// z-index
+.z999{
+  z-index: 999;
+}
+

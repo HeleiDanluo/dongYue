@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <script src="../js/flexible/flexible_css.js"></script>
+    <script src="../js/flexible/flexible.js"></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/echart/echart.js"></script>
+    <script src="../js/main.js"></script>
+    <title>动跃科技</title>
+</head>
+<body flex="dir:top">
+<header flex-box="0" flex="dir:left" font="18">
+    <a href="javascript:history.go(-1)" flex-box="0">
+        <i class="icon-back"></i>
+    </a>
+    <div class="title" flex-box="1" font="14">综合素质</div>
+    <a href="javascript:void(0)" flex-box="0"></a>
+</header>
+<section flex-box="1" class="white-back can-scroll">
+    <div class="studentDetail-wrapper">
+        <!-- <h1 class="student-name fw" font="18">张凤连</h1> -->
+        <p class="student-msg" flex="main:center cross:center" font="14">
+            <span flex="cross:center">名字</span>
+            <span flex="cross:center"><em class="girl"><i font="14" class="icon-nv"></i></em></span>
+            <span flex="cross:center">12岁</span>
+        </p>
+        <div class="tab-menu bodyQuality menu" data-aim="bodyQuality" flex="main:center box:mean" font="12">
+            <a href="javascript:void(0)" class="active">身体素质</a>
+            <a href="javascript:void(0)">运动素质</a>
+        </div>
+        <div class="box_echart">
+            <div class="ul-box" data-tabName="bodyQuality">
+                <ul>
+                    <li class="shentisuzhi"></li>
+                    <li class="yundongsuzhi"></li>
+                </ul>
+            </div>
+        </div>
+        <p class="grade-point fw" font="32">86</p>
+        <p class="point-level" font="14">得分等级：<em>优秀</em></p>
+        <!-- <p class="special" font="14">特殊学生<em>心脏病/感冒/发烧</em></p> -->
+    </div>
+    <div class="studentDetail-footer">
+        <p>健康状况：感冒，伴有咳嗽</p>
+        <p>疾病史：近视、肺炎</p>
+    </div>
+</section>
+<footer flex-box="0" flex="dir:left box:mean" font="12">
+    <a href="" flex="main:center dir:top">
+        <i class="icon-sy" font="24"></i>
+        <span>首页</span>
+    </a>
+    <a href="" flex="main:center dir:top">
+        <i class="icon-xsq" font="24"></i>
+        <span>学生圈</span>
+    </a>
+    <a href="" flex="main:center dir:top">
+        <i class="icon-wode" font="24"></i>
+        <span>我的</span>
+    </a>
+</footer>
+</body>
+<script src="../js/each/studentDetail.js"></script>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <script src="../js/flexible/flexible_css.js"></script>
+    <script src="../js/flexible/flexible.js"></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/new.css">
+    <link rel="stylesheet" href="../js/mobiscroll2/mobiscroll.custom-2.17.0.min.css">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/mobiscroll2/mobiscroll.custom-2.17.0.min.js"></script>
+    <script src="../js/main.js"></script>
+    <title>动跃科技</title>
+    <style>
+        header .title>input {
+            width: 100%;
+        }
+
+    </style>
+</head>
+
+<body flex="dir:top">
+    <header flex-box="0" flex="dir:left" font="18">
+        <a href="javascript:history.go(-1)" flex-box="0">
+            <i class="icon-back"></i>
+        </a>
+        <div class="title droplist" id="qhbj" flex="cross:center" style="margin-left: 0.2rem;z-index:999;">
+            <span font="16" id="qhbj-res">一年级一班</span>&nbsp;
+            <i class="icon-up"></i>
+        </div>
+        <div class="data-update droplist" id="gxsj" font="16" flex="cross:center">
+            <span font="16" id="gxsj-res">身体素质综合评分</span>&nbsp;
+            <i class="icon-up"></i>
+        </div>
+        <div class="data-update-content-box" id="data-update-content-box">
+            <div class="data-update-content" flex="dir:top">
+                <!-- 关闭按钮 -->
+                <div class="exit" id="exit" flex="cross:center">
+                    <i class="icon-close"></i>
+                </div>
+                <div class="data-update-detail-box">
+                    <!-- 更新数据 -->
+                    <ul class="drop-menu-list" id="gengxinshuju">
+                        <li class="data-update-detail" flex="cross:center">
+                            <input type="hidden" value="111">
+                            <span>立定跳远</span>
+                            <i class="icon-selected-gougou"></i>
+                        </li>
+                        <li class="data-update-detail" flex="cross:center">
+                            <input type="hidden" value="222">
+                            <span>一分钟跳绳</span>
+                            <i class=""></i>
+                        </li>
+                    </ul>
+                    <!-- 切换班级 -->
+                    <ul class="drop-menu-list" id="qiehuanbanji">
+                        <li class="data-update-detail" flex="cross:center">
+                            <input type="hidden" value="111">
+                            <span>一班</span>
+                            <i class="icon-selected-gougou"></i>
+                        </li>
+                        <li class="data-update-detail" flex="cross:center">
+                            <input type="hidden" value="222">
+                            <span>二班</span>
+                            <i class=""></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <div class="blank-content">
+                1234123
+            </div> -->
+        </div>
+        <a href="javascript:void(0)" flex-box="0"></a>
+    </header>
+    <section flex-box="1" class="white-back" font="14">
+        <div class="studentlist-wrapper" flex="dir:top">
+
+            <h1 class="page-title" flex-box="0" font="14">立定跳远</h1>
+            <div flex-box="1" font="12">
+
+                <ul class="student-list">
+                    <li flex="cross:center">
+                        <div class="input-msg">
+                            <span font="12">2222222222222222222222222</span><br>
+                            <span font="16" class="stu-name">张凤的莲</span>
+                        </div>
+                        <div class="input-num fenmiao" font="16">
+                            <input type="number" placeholder="--" />分
+                            <input type="number" placeholder="--" />秒
+                        </div>
+                    </li>
+                    <li flex="cross:center">
+                    <div class="input-msg">
+                        <span font="12">2222222222222222222222222</span><br>
+                        <span font="16" class="stu-name">张凤的莲</span>
+                    </div>
+                    <div class="input-num fenmiao" font="16">
+                        <input type="number" placeholder="--" />分
+                        <input type="number" placeholder="--" />秒
+                    </div>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="ldty-ok-box" flex="main:center cross:center">
+                <!-- <input type="button" font="16" value="确认"> -->
+                <button type="button" font="16">保存</button>
+            </div>
+        </div>
+    </section>
+    
+    <script src="../js/each/studentList.js"></script>
+
+</body>
+
+</html>

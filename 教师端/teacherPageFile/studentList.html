@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <script src="../js/flexible/flexible_css.js"></script>
+    <script src="../js/flexible/flexible.js"></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/new.css">
+    <link rel="stylesheet" href="../js/mobiscroll2/mobiscroll.custom-2.17.0.min.css">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/mobiscroll2/mobiscroll.custom-2.17.0.min.js"></script>
+    <script src="../js/main.js"></script>
+    <title>动跃科技</title>
+    <style>
+        header .title >input{
+            width: 100%;
+        }
+    </style>
+</head>
+<body flex="dir:top">
+<header flex-box="0" flex="dir:left" font="18">
+    <a href="javascript:history.go(-1)" flex-box="0">
+        <i class="icon-back"></i>
+    </a>
+    <div class="title" font="14" style="margin-left: 0.2rem;width:6rem;z-index:999;">
+        <select id="selectClass">
+            <option value="1">一年级一班</option>
+            <option value="2">一年级二班</option>
+            <option value="3" selected>二年级一班</option>
+            <option value="4">二年级二班</option>
+            <option value="5">三年级一班</option>
+            <option value="6">三年级二班</option>
+            <option value="7">四年级一班</option>
+        </select>
+    </div>
+    <span font="14" flex="cross:center" style="position: absolute;left:6rem;height:1.3rem;width:2rem;color:#85B351;">切换班级</span>
+    <div class="data-update" id="data-update" font="12" flex="cross:center main:center">
+        更新数据
+    </div>
+    <div class="data-update-content-box" id="data-update-content-box">
+        <div class="data-update-content" flex="dir:top">
+            <!-- 关闭按钮 -->
+            <div class="exit" id="exit" flex="cross:center">
+                <i class="icon-close"></i>
+            </div>
+            <div class="data-update-detail-box">
+                    <div class="data-update-detail" flex="cross:center">
+                            <span>立定跳远</span>
+                            <i class="icon-selected-gougou"></i>
+                        </div>
+                        <div class="data-update-detail" flex="cross:center">
+                            <span>一分钟跳绳</span>
+                            <i class=""></i>
+                        </div>
+                        <div class="data-update-detail" flex="cross:center">
+                            <span>投掷实心球</span>
+                            <i class=""></i>
+                        </div>
+                        <div class="data-update-detail" flex="cross:center">
+                            <span>800米跑</span>
+                            <i class=""></i>
+                        </div>
+                        <div class="data-update-detail" flex="cross:center">
+                            <span>100米跑</span>
+                            <i class=""></i>
+                        </div>
+                        <div class="data-update-detail" flex="cross:center">
+                            <span>50米跑</span>
+                            <i class=""></i>
+                        </div>
+                        <div class="data-update-detail" flex="cross:center">
+                            <span>50米跑</span>
+                            <i class=""></i>
+                        </div>
+                        <div class="data-update-detail" flex="cross:center">
+                            <span>50米跑</span>
+                            <i class=""></i>
+                        </div>
+                        <div class="data-update-detail" flex="cross:center">
+                            <span>50米跑</span>
+                            <i class=""></i>
+                        </div>
+            </div>
+        </div>
+        <div class="blank-content">
+            1234123
+        </div>
+    </div>
+    <a href="javascript:void(0)" flex-box="0"></a>
+</header>
+<section flex-box="1" class="white-back" font="14">
+    <div class="studentlist-wrapper" flex="dir:top">
+        <ul class="choose stulist-choose" flex="dir:left box:mean">
+            <li class="focus" flex="cross:center main:center">全部</li>
+            <li flex="cross:center main:center">特殊</li>
+            <li flex="cross:center main:center">高水平</li>
+            <li flex="cross:center main:center">中水平</li>
+            <li flex="cross:center main:center">低水平</li>
+        </ul>
+        <h1 class="page-title stulist-title" flex-box="0" font="14">身体素质综合得分</h1>
+        <div class="stulist-content" flex-box="1" font="12">
+            <div class="none-data" font="14">暂无学生信息</div>
+            <ul class="student-list">
+                <li totalNum="1">
+                    <a href="javascript:void(0)" flex="dir:left cross:center">
+                        <span flex-box="0" font="14" flex="dir:left cross:center main:center">
+                            <span>小名小明</span><i class="icon-by boy" font="18"></i>
+                        </span>
+                        <div class="number" flex="cross:center main:center">
+                            优秀/1
+                        </div>
+                        <div class="grade-box" flex-box="1" flex="cross:center">
+                            <span class="grade-bar grade-S" style="width: 10%">
+                            </span>
+                        </div>
+                    </a>
+                </li>
+                <li totalNum="3">
+                    <a href="javascript:void(0)" flex="dir:left cross:center">
+                        <span flex-box="0" font="14" flex="dir:left cross:center main:center">
+                            <span>小名小明</span><i class="icon-by boy" font="18"></i>
+                        </span>
+                        <div class="number" flex="cross:center main:center">
+                            优秀/3
+                        </div>
+                        <div class="grade-box" flex-box="1" flex="cross:center">
+                            <span class="grade-bar grade-S" style="width: 30%">
+                            </span>
+                        </div>
+                    </a>
+                </li>
+                <li totalNum="2">
+                    <a href="javascript:void(0)" flex="dir:left cross:center">
+                        <span flex-box="0" font="14" flex="dir:left cross:center main:center">
+                            <span>小名小明</span><i class="icon-by boy" font="18"></i>
+                        </span>
+                        <div class="number" flex="cross:center main:center">
+                            优秀/2
+                        </div>
+                        <div class="grade-box" flex-box="1" flex="cross:center">
+                            <span class="grade-bar grade-S" style="width: 20%">
+                            </span>
+                        </div>
+                    </a>
+                </li>
+                <li totalNum="1">
+                    <a href="javascript:void(0)" flex="dir:left cross:center">
+                        <span flex-box="0" font="14" flex="dir:left cross:center main:center">
+                            <span>小名小明</span><i class="icon-by boy" font="18"></i>
+                        </span>
+                        <div class="number" flex="cross:center main:center">
+                            优秀/1
+                        </div>
+                        <div class="grade-box" flex-box="1" flex="cross:center">
+                            <span class="grade-bar grade-S" style="width: 10%">
+                            </span>
+                        </div>
+                    </a>
+                </li>
+                <li totalNum="3">
+                    <a href="javascript:void(0)" flex="dir:left cross:center">
+                        <span flex-box="0" font="14" flex="dir:left cross:center main:center">
+                            <span>小名小明</span><i class="icon-by boy" font="18"></i>
+                        </span>
+                        <div class="number" flex="cross:center main:center">
+                            优秀/3
+                        </div>
+                        <div class="grade-box" flex-box="1" flex="cross:center">
+                            <span class="grade-bar grade-S" style="width: 30%">
+                            </span>
+                        </div>
+                    </a>
+                </li>
+                <li totalNum="2">
+                    <a href="javascript:void(0)" flex="dir:left cross:center">
+                        <span flex-box="0" font="14" flex="dir:left cross:center main:center">
+                            <span>小名小明</span><i class="icon-by boy" font="18"></i>
+                        </span>
+                        <div class="number" flex="cross:center main:center">
+                            优秀/2
+                        </div>
+                        <div class="grade-box" flex-box="1" flex="cross:center">
+                            <span class="grade-bar grade-S" style="width: 20%">
+                            </span>
+                        </div>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</section>
+<footer flex-box="0" flex="dir:left box:mean" font="12">
+    <a href="" flex="main:center dir:top">
+        <i class="icon-sy" font="24"></i>
+        <span>首页</span>
+    </a>
+    <a href="" flex="main:center dir:top">
+        <i class="icon-xsq" font="24"></i>
+        <span>学生圈</span>
+    </a>
+    <a href="" flex="main:center dir:top">
+        <i class="icon-wode" font="24"></i>
+        <span>我的</span>
+    </a>
+</footer>
+<script src="../js/each/studentList.js"></script>
+
+</body>
+</html>

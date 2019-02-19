@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/flexible/flexible_css.js"></script>
+    <script src="../js/flexible/flexible.js"></script>
+    <title>动跃科技</title>
+</head>
+<body flex="dir:top">
+<section flex-box="1" class="xiaoZhang">
+    <div class="select-box" font="14">
+        <select name="" id="" class="select-item">
+            <option value="">一年级</option>
+            <option value="">二年级</option>
+            <option value="">三年级</option>
+        </select>
+        <select name="" id="" class="select-item">
+            <option value="">一年级(1)班</option>
+            <option value="">二年级(1)班</option>
+            <option value="">三年级(1)班</option>
+        </select>
+    </div>
+
+    <div class="xiaozhang-item mt1"> 
+        <div class="title">
+            <p><b>考勤明细</b></p>
+        </div>
+    </div>
+
+    <div class="table-content">
+        <table>
+            <thead>
+                <tr class="txt-gray">
+                    <td class="mult-line">学籍号</td>
+                    <td>考勤次数</td>
+                    <td>出勤</td>
+                    <td>请假</td>
+                    <td>缺勤</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="mult-line">
+                        <p>科沃斯</p>
+                        <p class="txt-gray">512395645645612345</p>
+                    </td>
+                    <td>91</td>
+                    <td>91</td>
+                    <td>79</td>
+                    <td>79</td>
+                </tr>
+                <tr>
+                    <td class="mult-line">
+                        <p>科沃斯</p>
+                        <p class="txt-gray">512395645645612345</p>
+                    </td>
+                    <td>91</td>
+                    <td>91</td>
+                    <td>91</td>
+                    <td>79</td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+
+    
+   
+</section>
+<script src="../js/echart/echart.js"></script>
+<script src="../js/jquery.js"></script>
+<script src="../js/each/xiaoZhangDuanChart.js"></script>
+<script src="../js/each/xiaoZhangDuan.js"></script>
+<script>
+    $('body').on('click', '.slid-tab .tab-item', function(){
+        $(this).addClass('active').siblings().removeClass('active');
+    })
+</script>
+</body>
+</html>

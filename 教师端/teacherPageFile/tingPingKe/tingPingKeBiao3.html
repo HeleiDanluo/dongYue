@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <script src="../../js/flexible/flexible_css.js"></script>
+    <script src="../../js/flexible/flexible.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/each/tingPingKe.js"></script>
+    <script type="text/javascript" src="//player.youku.com/jsapi"></script>
+    <title>动跃科技</title>
+</head>
+
+<body flex="dir:top">
+    <header flex-box="0" flex="dir:left" font="18">
+        <a href="javascript:history.go(-1)" flex-box="0">
+            <i class="icon-back"></i>
+        </a>
+        <div class="title" flex-box="1" font="14">听评课教学</div>
+        <a href="javascript:void(0)" flex-box="0"></a>
+    </header>
+    <section flex-box="1" flex="dir:top" class="hide-video tingpingke-body" >
+    <!-- 优酷 -->
+    <div class="tingpingke-video" flex-box="0">
+        <div id="youkuplayer"></div>
+    </div>
+        <!-- 菜单 -->
+        <div class="white-back header-link-menu" flex-box="0">
+            <ul>
+                <li font="12"><a href="javascript:void(0)">教学设计</a></li>
+                <li font="12"><a href="javascript:void(0)">教学教案</a></li>
+                <li font="12"><a href="javascript:void(0)">课堂报告</a></li>
+                <li font="12" class="current"><a href="javascript:void(0)">听评课表</a></li>
+                <li font="12"><a href="javascript:void(0)">讨论区</a></li>
+            </ul>
+        </div>
+        <div class="white-back sub-menu" flex-box="0">
+            <select id="" class="select-tpkb">
+                <option value="“有效课堂”评价表">"有效课堂"评价表</option>
+                <option value="授课评分">授课评分</option>
+                <option value="“三动课堂”评价表">"三动课堂"评价表</option>
+                <option value="“有效教学”评价表" selected>"有效教学"评价表</option>
+                <option value="教学重难点及教法学法检测表">教学重难点及教法学法检测表</option>
+                <option value="教师讲解示范观察表">教师讲解示范观察表</option>
+                <option value="提问互动评价表">提问互动评价表</option>
+            </select>
+        </div>
+        <!-- 内容 -->
+        <div class="teachPlan-detail-wrapper can-scroll" flex-box="1">
+
+            <!-- <div class="kebiao-item white-back teachPlan-content">
+                <div class="teachPlan-model mt0">
+                    <h1 id="1" font="18" style="background: #f1f1f1;margin:0 .5rem .2rem">1</h1>
+                    <div>
+                        <h1 font="14" style="margin-left: .5rem"><b>学生部分</b></h1>
+                        <div class="select-box-tpkb">
+                            <span>1-1 听讲：</span>
+                            <select id="">
+                                <option value="专注、认真听讲">专注、认真听讲</option>
+                                <option value="认真听讲">认真听讲</option>
+                                <option value="较认真听讲">较认真听讲</option>
+                                <option value="不认真听讲">不认真听讲</option>
+                                <option value="不涉及">不涉及</option>
+                            </select>
+                        </div>
+                        <div class="select-box-tpkb">
+                            <span>1-2 观察：</span>
+                            <select id="">
+                                <option value="观察仔细">观察仔细</option>
+                                <option value="观察较仔细">观察较仔细</option>
+                                <option value="观察不仔细">观察不仔细</option>
+                                <option value="不观察">不观察</option>
+                                <option value="不涉及">不涉及</option>
+                            </select>
+                        </div>
+                        <div class="select-box-tpkb">
+                            <span>1-3 提问讨论：</span>
+                            <select id="">
+                                <option value="主动提问、讨论">主动提问、讨论</option>
+                                <option value="在引导下提问参与讨论">在引导下提问参与讨论</option>
+                                <option value="偶尔参加讨论">偶尔参加讨论</option>
+                                <option value="不提问、不讨论">不提问、不讨论</option>
+                                <option value="不涉及">不涉及</option>
+                            </select>
+                        </div>
+                        <div class="select-box-tpkb">
+                            <span>1-4 练习：</span>
+                            <select id="">
+                                <option value="小组合作练习">小组合作练习</option>
+                                <option value="自主练习">自主练习</option>
+                                <option value="模仿练习">模仿练习</option>
+                                <option value="不练习">不练习</option>
+                                <option value="不涉及">不涉及</option>
+                            </select>
+                        </div>
+                        <div class="select-box-tpkb">
+                            <span>1-5  展示：</span>
+                            <select id="">
+                                <option value="主动展示好">主动展示好</option>
+                                <option value="主动展示较好">主动展示较好</option>
+                                <option value="在引导下展示">在引导下展示</option>
+                                <option value="不展示">不展示</option>
+                                <option value="不涉及">不涉及</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 font="14" style="margin-left: .5rem"><b>教师部分</b></h1>
+                        <div class="select-box-tpkb">
+                            <span>1-1 讲解：</span>
+                            <select id=" ">
+                                <option value="讲解术语准确，口令清楚">讲解术语准确，口令清楚</option>
+                                <option value="讲解术语准确，口令准确">讲解术语准确，口令准确</option>
+                                <option value="讲解术语基本准确，口令无错误">讲解术语基本准确，口令无错误</option>
+                                <option value="讲解术语有错误，口令有错误">讲解术语有错误，口令有错误</option>
+                                <option value="不涉及">不涉及</option>
+                            </select>
+                        </div>
+                        <div class="select-box-tpkb">
+                            <span>1-2 示范：</span>
+                            <select id=" ">
+                                <option value="示范动作优美，准确">示范动作优美，准确</option>
+                                <option value="示范动作正确，无错误">示范动作正确，无错误</option>
+                                <option value="示范动作基本正确，无错误">示范动作基本正确，无错误</option>
+                                <option value="示范动作基本正确，有错误">示范动作基本正确，有错误</option>
+                                <option value="不涉及">不涉及</option>
+                            </select>
+                        </div>
+                        <div class="select-box-tpkb">
+                            <span>1-3 指导：</span>
+                            <select id="">
+                                <option value="指导得当，及时">指导得当，及时</option>
+                                <option value="指导正确 要领得当">指导正确 要领得当</option>
+                                <option value="指导基本正确 要领得当">指导基本正确 要领得当</option>
+                                <option value="指导正确 要领基本得当">指导正确 要领基本得当</option>
+                                <option value="不涉及">不涉及</option>
+                            </select>
+                        </div>
+                        <div class="select-box-tpkb">
+                            <span>1-4 组织：</span>
+                            <select id="">
+                                <option value="组织队伍调动合理">组织队伍调动合理</option>
+                                <option value="组织队伍调动较合理">组织队伍调动较合理</option>
+                                <option value="组织队伍调动6次较频繁">组织队伍调动6次较频繁</option>
+                                <option value="组织队伍调动6次以上，过于频繁">组织队伍调动6次以上，过于频繁</option>
+                                <option value="不涉及">不涉及</option>
+                            </select>
+                        </div>
+                        <div class="select-box-tpkb">
+                            <span>1-5 评价：</span>
+                            <select id="">
+                                <option value="评价得当  即时与点评结合">评价得当&nbsp; 即时与点评结合</option>
+                                <option value="评价及时  即时与点评结合">评价及时&nbsp; 即时与点评结合</option>
+                                <option value="有评价及时  也有即时与点评结合">有评价及时&nbsp; 也有即时与点评结合</option>
+                                <option value="有评价  只有即时与点评结合">有评价&nbsp; 只有即时与点评结合</option>
+                                <option value="不涉及">不涉及</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+
+            <div class="input-area white-back" id="item-content-after">
+                <h1 font="14">学习效果</h1><br>
+                <textarea name="" id=""></textarea>
+            </div>
+
+            <div class="input-area white-back">
+                <h1 font="14">教学效果</h1><br>
+                <textarea name="" id=""></textarea>
+            </div>
+
+            <div class="input-area white-back">
+                <h1 font="14">问题及建议</h1><br>
+                <textarea name="" id=""></textarea>
+            </div>
+
+            <div class="input-area white-back" >
+                <a href="javascript:void(0)" font="14" class="jiaoxuejianyi-submit btn btn-full-theme">保存</a>
+            </div>
+            
+            
+        </div>
+        
+        
+    <!-- 侧边数字 -->
+    <div class="side-munber-box">
+        <ul id="side-box">
+            <!-- 40个数字由js生成 -->
+        </ul>
+    </div>
+    
+    <!-- 播放按钮 -->
+    <div class="side-play-btn">
+        <i class="icon-xl paly-ctr-btn"></i>
+        <i class="icon-close paly-ctr-btn hidden"></i>
+    </div>
+    </section>
+    <footer flex-box="0" flex="dir:left box:mean" font="12">
+        <a href="" flex="main:center dir:top">
+            <i class="icon-sy" font="24"></i>
+            <span>首页</span>
+        </a>
+        <a href="" flex="main:center dir:top">
+            <i class="icon-xsq" font="24"></i>
+            <span>学生圈</span>
+        </a>
+        <a href="" flex="main:center dir:top">
+            <i class="icon-wode" font="24"></i>
+            <span>我的</span>
+        </a>
+    </footer>
+</body>
+<script>
+    // 自动循环生成40个内容
+    var sideEle = '';
+    var contentEle = '';
+    for(let i=0; i<40; i++){
+        // 侧标导航数字
+        if(i==0){
+            sideEle += '<li class="active"><a href="#1">1</a></li>'
+        }else{
+            sideEle += '<li><a href="#' +(i+1)+ '">' +(i+1)+ '</a></li>'
+        }
+        // 内容
+        contentEle += 
+        `<div class="kebiao-item white-back teachPlan-content">
+            <div class="teachPlan-model mt0">
+                <h1 id="` +(i+1)+ `" font="18" style="background: #f1f1f1;margin:0 1rem .2rem .5rem">` +(i+1)+ `</h1>
+                <!-- 学生部分 -->
+                <div>
+                    <h1 font="14" style="margin-left: .5rem"><b>学生部分</b></h1>
+                    <div class="select-box-tpkb">
+                        <span>听讲：</span>
+                        <select id="">
+                            <option value="专注、认真听讲">专注、认真听讲</option>
+                            <option value="认真听讲">认真听讲</option>
+                            <option value="较认真听讲">较认真听讲</option>
+                            <option value="不认真听讲">不认真听讲</option>
+                            <option value="不涉及">不涉及</option>
+                        </select>
+                    </div>
+                    <div class="select-box-tpkb">
+                        <span>观察：</span>
+                        <select id="">
+                            <option value="观察仔细">观察仔细</option>
+                            <option value="观察较仔细">观察较仔细</option>
+                            <option value="观察不仔细">观察不仔细</option>
+                            <option value="不观察">不观察</option>
+                            <option value="不涉及">不涉及</option>
+                        </select>
+                    </div>
+                    <div class="select-box-tpkb">
+                        <span>提问讨论：</span>
+                        <select id="">
+                            <option value="主动提问、讨论">主动提问、讨论</option>
+                            <option value="在引导下提问参与讨论">在引导下提问参与讨论</option>
+                            <option value="偶尔参加讨论">偶尔参加讨论</option>
+                            <option value="不提问、不讨论">不提问、不讨论</option>
+                            <option value="不涉及">不涉及</option>
+                        </select>
+                    </div>
+                    <div class="select-box-tpkb">
+                        <span>练习：</span>
+                        <select id="">
+                            <option value="小组合作练习">小组合作练习</option>
+                            <option value="自主练习">自主练习</option>
+                            <option value="模仿练习">模仿练习</option>
+                            <option value="不练习">不练习</option>
+                            <option value="不涉及">不涉及</option>
+                        </select>
+                    </div>
+                    <div class="select-box-tpkb">
+                        <span>展示：</span>
+                        <select id="">
+                            <option value="主动展示好">主动展示好</option>
+                            <option value="主动展示较好">主动展示较好</option>
+                            <option value="在引导下展示">在引导下展示</option>
+                            <option value="不展示">不展示</option>
+                            <option value="不涉及">不涉及</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- 教师部分 -->
+                <div>
+                    <h1 font="14" style="margin-left: .5rem"><b>教师部分</b></h1>
+                    <div class="select-box-tpkb">
+                        <span>讲解：</span>
+                        <select id=" ">
+                            <option value="讲解术语准确，口令清楚">讲解术语准确，口令清楚</option>
+                            <option value="讲解术语准确，口令准确">讲解术语准确，口令准确</option>
+                            <option value="讲解术语基本准确，口令无错误">讲解术语基本准确，口令无错误</option>
+                            <option value="讲解术语有错误，口令有错误">讲解术语有错误，口令有错误</option>
+                            <option value="不涉及">不涉及</option>
+                        </select>
+                    </div>
+                    <div class="select-box-tpkb">
+                        <span>示范：</span>
+                        <select id=" ">
+                            <option value="示范动作优美，准确">示范动作优美，准确</option>
+                            <option value="示范动作正确，无错误">示范动作正确，无错误</option>
+                            <option value="示范动作基本正确，无错误">示范动作基本正确，无错误</option>
+                            <option value="示范动作基本正确，有错误">示范动作基本正确，有错误</option>
+                            <option value="不涉及">不涉及</option>
+                        </select>
+                    </div>
+                    <div class="select-box-tpkb">
+                        <span>1-3 指导：</span>
+                        <select id="">
+                            <option value="指导得当，及时">指导得当，及时</option>
+                            <option value="指导正确 要领得当">指导正确 要领得当</option>
+                            <option value="指导基本正确 要领得当">指导基本正确 要领得当</option>
+                            <option value="指导正确 要领基本得当">指导正确 要领基本得当</option>
+                            <option value="不涉及">不涉及</option>
+                        </select>
+                    </div>
+                    <div class="select-box-tpkb">
+                        <span>组织：</span>
+                        <select id="">
+                            <option value="组织队伍调动合理">组织队伍调动合理</option>
+                            <option value="组织队伍调动较合理">组织队伍调动较合理</option>
+                            <option value="组织队伍调动6次较频繁">组织队伍调动6次较频繁</option>
+                            <option value="组织队伍调动6次以上，过于频繁">组织队伍调动6次以上，过于频繁</option>
+                            <option value="不涉及">不涉及</option>
+                        </select>
+                    </div>
+                    <div class="select-box-tpkb">
+                        <span>评价：</span>
+                        <select id="">
+                            <option value="评价得当  即时与点评结合">评价得当&nbsp; 即时与点评结合</option>
+                            <option value="评价及时  即时与点评结合">评价及时&nbsp; 即时与点评结合</option>
+                            <option value="有评价及时  也有即时与点评结合">有评价及时&nbsp; 也有即时与点评结合</option>
+                            <option value="有评价  只有即时与点评结合">有评价&nbsp; 只有即时与点评结合</option>
+                            <option value="不涉及">不涉及</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>`
+    }
+
+    $('#side-box').append(sideEle);
+    $('#item-content-after').before(contentEle);
+
+    // 点击数字切换激活状态
+    $('body').on('click', '#side-box li', function() {
+        $(this).addClass('active').siblings().removeClass('active');
+    })
+</script>
+
+</html>

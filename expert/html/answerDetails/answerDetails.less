@@ -1,0 +1,350 @@
+@import "../../css/reset";
+@import "../../css/tool";
+@import "../../css/flex";
+@import "../../css/icons";
+@import "../../css/animate";
+@import "../../css/secondChange";
+
+/* 公共 */
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  font-family: Microsoft YaHei, Helvetica, Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: @lighterDark;
+  position: relative;
+}
+a {
+  color: @lighterDark;
+}
+a:link, a:visited,
+a:hover, a:active {
+  text-decoration: none;
+}
+input, textarea, select {
+  font-family: Microsoft YaHei, Helvetica, Arial, sans-serif;
+  color: @lighterDark;
+}
+.can-scroll {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+header {
+  height: 1.333rem;
+  background: @white;
+  border-bottom: 1px solid @line;
+  a {
+    width: 2.033rem;
+    height: 1.333rem;
+    line-height: 1.333rem;
+    text-align: center;
+  }
+
+  .title {
+    line-height: 1.333rem;
+    text-align: center;
+  }
+}
+section[flex-box] {
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+footer {
+  height: 1.173rem;
+  z-index: 10;
+  background-color: @white;
+  position: relative;
+  .send{
+    height:100%;
+    .relativeBox{
+      height:100%;
+      padding:0 0.467rem;
+      >a{
+        width:1.77rem;
+        height:80%;
+        background-color: #DEDEDE;
+        color: @white;
+        border-radius: 0.1rem;
+        &.focus{
+          background-color: @themeColor;
+        }
+      }
+      .send{
+        width: 1rem;
+        margin-left: 0.333rem;
+      }
+      >input{
+        height:80%;
+        border:0;
+        width:6.1rem;
+        background-color:#F0F0F0;
+        padding-left:0.233rem;
+        margin-left:0.233rem;
+        border-radius: 0.1rem;
+      }
+      .file{
+        height: 0.6rem;
+        width: 0.6rem;
+        position: absolute;
+        left: 7.5rem;
+        top: 0.35rem;
+        opacity: 0;
+      }
+      >i{
+        margin-top:0.1rem;
+        margin-left:-0.65rem;
+        color: @lighterGrey;
+      }
+    }
+  }
+}
+
+.relBox{
+  height:100%;
+  width:100%;
+  padding:0 0.467rem;
+}
+
+.tab-menu {
+  height: 1.067rem;
+  background: #fff;
+  a {
+    text-decoration: none;
+    height: 100%;
+    width: 1.533rem;
+    line-height: 1.067rem;
+    text-align: center;
+    margin: 0 0.333rem;
+    color:@lighterGrey;
+    &:hover{
+      text-decoration: none;
+    }
+    &.active {
+      position: relative;
+      color:@themeColor;
+      &:after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 0.073rem;
+        background: @themeColor;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+}
+
+::-webkit-scrollbar{
+  display:none;
+}
+
+  .user {
+    background-color: @white;
+    border-bottom: 1px solid @line;
+    .relativeBox {
+      height: 1.86rem;
+      padding: 0 0.467rem;
+      > h1 {
+        font-size: 0.37rem;
+        margin-right: 0.8rem;
+        font-weight: bold;
+      }
+      > h2 {
+        font-size: 0.37rem;
+        margin-right: 0.8rem;
+        font-weight: bold;
+      }
+      > h3 {
+        font-size: 0.37rem;
+        font-weight: bold;
+      }
+      > h4 {
+        font-size: 0.37rem;
+        margin-left: 1.7rem;
+        text-align: right;
+        color: @themeColor;
+      }
+    }
+  }
+  .nav {
+    background-color: @white;
+    margin-bottom: 0.233rem;
+    .relativeBox {
+      overflow: visible;
+      height: 1.227rem;
+      padding: 0 0.467rem;
+      color: @lighterGrey;
+      text-align: center;
+      > li {
+        position: relative;
+        overflow: visible;
+        font-size: 0.426rem;
+        &.focus {
+          color: #000;
+          &:after {
+            content: '';
+            position: absolute;
+            display: block;
+            height: 3px;
+            width: 70%;
+            left: 15%;
+            top: 160%;
+            background-color: @themeColor;
+          }
+        }
+      }
+    }
+  }
+
+section{
+  overflow: hidden !important;
+}
+
+.answerDetails{
+  .timer{
+    height:1.867rem;
+    background-color: @white;
+    .relativeBox{
+      padding:0 0.467rem;
+      height:100%;
+      >a{
+        height:1.33rem;
+        width: 1.33rem;
+        display: block;
+        -webkit-border-radius:50%;
+        -moz-border-radius:50%;
+        border-radius:50%;
+        border: 1px solid #666;
+        margin-right:0.2rem;
+        text-align: center;
+        color:@lighterGrey;
+        >span{
+          height: 100%;
+        }
+        &.number{
+          >span{
+            height: 100%;
+          }
+        }
+        &.title{
+          >span{
+            color:@white;
+            background-color: #393A3F;
+          }
+        }
+        &.finish{
+          border: 0;
+          color: @white;
+          background-color: @themeColor;
+        }
+        &.ing{
+          border: 0;
+          color: @white;
+          background-color:#FAB342;
+        }
+      }
+    }
+  }
+  .chat{
+    padding-bottom: 1rem;
+    height: 11rem;
+    overflow: auto;
+    .relativeBox{
+      padding:0 0.467rem;
+      .time{
+        height:0.9rem;
+        color: #666;
+        margin-top:0.467rem;
+      }
+      .ask{
+        margin-top:0.5rem;
+        padding:0.4rem 0.67rem;
+        position: relative;
+        >span{
+          color: @white;
+          padding-top:0.3rem;
+          padding-bottom: 0.3rem;
+          padding-left:0.67rem;
+          padding-right:0.67rem;  
+          line-height: 0.8rem;
+          background-color: @themeColor;
+          border-top-left-radius:1rem ;
+          border-bottom-left-radius: 1rem;
+          border-bottom-right-radius: 1rem;
+        }
+        .img{
+          height: 4rem;
+          width: 4rem;
+          color: @white;
+          line-height: 0.8rem;
+          background-color: @themeColor;
+          border-radius:0.2rem;
+          >img{
+
+          }
+        }
+      }
+      .answer{
+        position: relative;
+        margin-top:0.5rem;
+        >span{
+          padding-top:0.3rem;
+          padding-bottom: 0.3rem;
+          padding-left:0.67rem;
+          padding-right:0.67rem;
+          height:100%;
+          color: #000;
+          max-width: 7rem;
+          display: inline-block;
+          line-height: 0.8rem;
+          background-color: @white;
+          border-top-right-radius: 0.7rem;
+          border-bottom-right-radius: 0.7rem;
+          border-bottom-left-radius: 0.7rem;
+          i{
+            color:#F96750;
+          }
+        }
+        .img{
+          height: 4rem;
+          width: 4rem;
+          color: @white;
+          line-height: 0.8rem;
+          border-radius:0.2rem;
+          background-color: #fff;
+          >img{
+
+          }
+        }
+      }
+    }
+  }
+}
+
+.imgShow{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    background-color:#000;
+    .imgBox{
+        width: 100%;
+        >img{
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <script src="../js/flexible/flexible_css.js"></script>
+    <script src="../js/flexible/flexible.js"></script>
+    <link rel="stylesheet" href="../css/studentMain.css">
+    <link rel="stylesheet" href="../js/mobiscroll/mobiscroll.custom-2.17.0.min.css">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/mobiscroll/mobiscroll.custom-2.17.0.min.js"></script>
+    <script src="../js/studentMain.js"></script>
+    <title>性别</title>
+</head>
+<body flex="dir:top">
+<header flex-box="0" flex="dir:left" font="16">
+    <a href="javascript:history.go(-1) " flex-box="0">返回</a>
+    <div class="title" flex-box="1">请选择您孩子的性别</div>
+    <a href="javascript:void(0)" flex-box="0"></a>
+</header>
+<section flex-box="1" class="loginBack" flex="dir:top">
+    <div class="msg-content" flex-box="1" flex="cross:center">
+        <div class="gender-select">
+            <label font="32">
+                <input type="radio" checked name="gender" value="1">
+                <span>男</span>
+            </label>
+            <hr class="cut-line" />
+            <label font="32">
+                <input type="radio" name="gender" value="0">
+                <span>女</span>
+            </label>
+        </div>
+    </div>
+    <div class="msg-confirm" flex-box="0">
+        <a href="setSchoolName.html" class="btn-full-theme">下一步</a>
+    </div>
+</section>
+</body>
+</html>

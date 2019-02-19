@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <script src="../js/flexible/flexible_css.js"></script>
+    <script src="../js/flexible/flexible.js"></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/echart/echart.js"></script>
+    <script src="../js/main.js"></script>
+    <title>动跃科技</title>
+</head>
+<body flex="dir:top">
+<header flex-box="0" flex="dir:left" font="18">
+    <a href="javascript:history.go(-1)" flex-box="0">
+        <i class="icon-back"></i>
+    </a>
+    <div class="title" flex-box="1" font="14">教案</div>
+    <a href="javascript:void(0)" flex-box="0"></a>
+</header>
+<section flex-box="1" class="white-back">
+    <div class="action-wrapper">
+        <div class="action-media-box">
+            <div class="video-wrapper">
+                <div id="youkuplayer"></div>
+                <script type="text/javascript" src="//player.youku.com/jsapi"></script>
+                <script type="text/javascript">
+                var player = new YKU.Player('youkuplayer',{
+                    styleid: '0',
+                    client_id: '78b2cfcefe58c217',
+                    vid: 'XMzEyMTYwODYwNA',
+                    newPlayer: true,
+                    events:{
+                        onPlayEnd: function(){
+                            playVideo()
+                        }
+                    }
+                });
+                function playVideo(){
+                    player.playVideo();
+                }
+                </script>
+            </div>
+        </div>
+        <div class="action-introl">
+            <div class="introl-model" font="12">
+                <h1 class="model-title" font="14">动作名称：</h1>
+                <p class="model-txt">直臂摆，10分钟</p>
+            </div>
+            <div class="introl-model" font="12">
+                <h1 class="model-title" font="14">作业内容：</h1>
+                <p class="model-txt">上体正直，抬头挺胸，手指轻轻爆发，拇指粘于食指和中指第一节；两臂前后自然摆动，向前摆臂时，手臂伸直，拳眼向上，向前摆动的幅度约90度</p>
+            </div>
+            <div class="introl-model" font="12">
+                <h1 class="model-title" font="14">动作说明：</h1>
+                <p class="model-txt">上体正直，抬头挺胸，手指轻轻爆发，拇指粘于食指和中指第一节；两臂前后自然摆动，向前摆臂时，手臂伸直，拳眼向上，向前摆动的幅度约90度</p>
+            </div>
+            <div class="introl-model" font="12">
+                <h1 class="model-title" font="14">动作要领：</h1>
+                <ul class="model-txt">
+                    <li>1.头正，肩平，胸挺，腰直</li>
+                    <li>1.头正，肩平，胸挺，腰直</li>
+                    <li>1.头正，肩平，胸挺，腰直</li>
+                    <li>1.头正，肩平，胸挺，腰直</li>
+                    <li>1.头正，肩平，胸挺，腰直</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<footer flex-box="0" flex="dir:left box:mean" font="12">
+    <a href="" flex="main:center dir:top">
+        <i class="icon-sy" font="24"></i>
+        <span>首页</span>
+    </a>
+    <a href="" flex="main:center dir:top">
+        <i class="icon-xsq" font="24"></i>
+        <span>学生圈</span>
+    </a>
+    <a href="" flex="main:center dir:top">
+        <i class="icon-wode" font="24"></i>
+        <span>我的</span>
+    </a>
+</footer>
+</body>
+</html>

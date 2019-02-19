@@ -1,0 +1,165 @@
+.btn-big {
+  display: inline-block;
+  height: 38px;
+  width: 318px;
+  line-height: 38px;
+  text-align: center;
+  cursor: pointer;
+}
+.btn-small {
+  display: inline-block;
+  height: 38px;
+  width: 99px;
+  line-height: 38px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+}
+.input-big {
+  display: inline-block;
+  height: 38px;
+  width: 318px;
+  line-height: 38px;
+  padding-left: 10px;
+}
+.btn-green {
+  color: #fff;
+  background-color: #82b64a;
+}
+.btn-gray {
+  color: #595959;
+  background-color: #ddd;
+}
+.btn {
+  padding: 10px 15px;
+  background: #ddd;
+  color: #fff;
+}
+.btn_l {
+  padding: 15px 20px;
+  background: #ddd;
+  color: #fff;
+}
+.blockBtn {
+  display: block;
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  background: #ddd;
+  color: #fff;
+}
+.btn:hover,
+.btn:focus,
+.btn:active {
+  text-decoration: none;
+  color: #FFFFFF;
+  outline: none;
+  cursor: pointer;
+}
+.btn_l.grayBtn,
+.btn.grayBtn,
+.blockBtn.grayBtn {
+  background: #969696;
+}
+.btn_l.grayBtn:hover,
+.btn.grayBtn:hover,
+.blockBtn.grayBtn:hover {
+  background: #7d7d7d;
+}
+.btn_l.grayBtn:active,
+.btn.grayBtn:active,
+.blockBtn.grayBtn:active {
+  background: #636363;
+}
+.btn_l.themeBtn,
+.btn.themeBtn,
+.blockBtn.themeBtn {
+  background: #82b64a;
+}
+.btn_l.themeBtn:hover,
+.btn.themeBtn:hover,
+.blockBtn.themeBtn:hover {
+  background: #68923b;
+}
+.btn_l.themeBtn:active,
+.btn.themeBtn:active,
+.blockBtn.themeBtn:active {
+  background: #4e6e2c;
+}
+.btn_l.pinkBtn,
+.btn.pinkBtn,
+.blockBtn.pinkBtn {
+  background: #fd7aa4;
+}
+.btn_l.pinkBtn:hover,
+.btn.pinkBtn:hover,
+.blockBtn.pinkBtn:hover {
+  background: #fc4882;
+}
+.btn_l.pinkBtn:active,
+.btn.pinkBtn:active,
+.blockBtn.pinkBtn:active {
+  background: #fb165f;
+}
+.btn_l.blueBtn,
+.btn.blueBtn,
+.blockBtn.blueBtn {
+  background: #46c2fb;
+}
+.btn_l.blueBtn:hover,
+.btn.blueBtn:hover,
+.blockBtn.blueBtn:hover {
+  background: #14b2fa;
+}
+.btn_l.blueBtn:active,
+.btn.blueBtn:active,
+.blockBtn.blueBtn:active {
+  background: #0594d6;
+}
+.btn_l.yellowBtn,
+.btn.yellowBtn,
+.blockBtn.yellowBtn {
+  background: #ffb444;
+}
+.btn_l.yellowBtn:hover,
+.btn.yellowBtn:hover,
+.blockBtn.yellowBtn:hover {
+  background: #ffa011;
+}
+.btn_l.yellowBtn:active,
+.btn.yellowBtn:active,
+.blockBtn.yellowBtn:active {
+  background: #dd8400;
+}
+.btn.disabled {
+  background: #dddddd!important;
+  color: #999!important;
+}
+.btn-big {
+  display: inline-block;
+  height: 38px;
+  width: 318px;
+  line-height: 38px;
+  text-align: center;
+  cursor: pointer;
+}
+.btn-mid {
+  display: inline-block;
+  height: 38px;
+  width: 170px;
+  line-height: 38px;
+  text-align: center;
+  cursor: pointer;
+}
+.input-big {
+  display: inline-block;
+  height: 38px;
+  width: 318px;
+  line-height: 38px;
+  padding-left: 10px;
+}
+.btn-green {
+  color: #fff;
+  background-color: #82b64a;
+}

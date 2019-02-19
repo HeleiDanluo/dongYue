@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <script src="../../js/flexible/flexible_css.js"></script>
+    <script src="../../js/flexible/flexible.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/icon.css">
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/echart/echart.js"></script>
+    <title>动跃科技</title>
+</head>
+<body flex="dir:top">
+<header flex-box="0" flex="dir:left" font="18">
+    <a href="javascript:history.go(-1)" flex-box="0">
+        <i class="icon-back"></i>
+    </a>
+    <div class="title" flex-box="1" font="14">三年级一班课堂报告</div>
+    <a href="javascript:void(0)" flex-box="0">
+    </a>
+</header>
+<section flex-box="1">
+    <div class="ketangbaogao">
+        <!-- 基本信息 -->
+        <div class="base-msg white-back">
+            <h4 class="title">基本信息</h4>
+            <div class="details">
+                <h4>授课教师 : 王元</h4>
+                <h4>开始时间 : 2017/10/11 14:00</h4>
+                <h4>结束人员 : 2017/10/11 14:00</h4>
+                <h4>参与人数 : 47/50</h4>
+                <h4>使用设备 : 手环</h4>
+            </div>
+        </div>
+        <!-- 班级整体情况 -->
+        <div class="details-box white-back">
+            <h4 class="title">班级整体情况</h4>
+			<div>
+				 <div class="allClass-title">
+					<div class="text active">全部</div>
+					<div class="text">高水平</div>
+					<div class="text">中水平</div>
+					<div class="text">低水平</div>
+					<div class="text">特殊</div>
+				</div>
+				<div class="class-box">
+                <div class="class-row">
+                    <div class="class-col font-big">统计项</div>
+                    <div class="class-col font-big">期望值</div>
+                    <div class="class-col font-big">实际值</div>
+                    <div class="class-col font-big">成绩</div>
+                </div>
+                <div class="class-row">
+                    <div class="class-col">运动强度</div>
+                    <div class="class-col">60~80</div>
+                    <div class="class-col">45</div>
+                    <div class="class-col txt-green">合格</div>
+                </div>
+                <div class="class-row">
+                    <div class="class-col">运动密度</div>
+                    <div class="class-col">30~40%</div>
+                    <div class="class-col">45</div>
+                    <div class="class-col txt-yellow">偏低</div>
+                </div>
+                <div class="class-row">
+                    <div class="class-col">平均心率<small>(bpm)</small></div>
+                    <div class="class-col">115~165</div>
+                    <div class="class-col">45</div>
+                    <div class="class-col txt-red">偏高</div>
+                </div>
+            </div>
+			</div>
+           
+            
+            <div class="number-box" flex="box:mean">
+                <div class="number">
+                    <h5>平均步数</h5>
+                    <h1>22</h1>
+                </div>
+                <div class="number">
+                    <h5>平均消耗卡路里<span class="des">(Cal)</span></h5>
+                    <h1>60</h1>
+                </div>
+            </div>
+            <div class="look">
+                <a href="javascript:void(0)">身体异常查看(3) ></a>
+            </div>
+        </div>
+        <!-- 班级心率数据 -->
+        <div class="details-box white-back">
+            <h4 class="title">班级心率数据</h4>
+            <div class="xinlv">
+                <div class="xinLv-box" flex="box:mean">
+                    <div></div>
+                    <div class="sex bg-yellow"><i class="icon-boyandgirl"></i></div>
+                    <div class="sex bg-pink"><i class="icon-nv"></i></div>
+                    <div class="sex bg-blue"><i class="icon-by"></i></div>
+                </div>
+                <div class="xinLv-box"  flex="box:mean">
+                    <div>平均心率(min)</div>
+                    <div>121</div>
+                    <div>215</div>
+                    <div>114</div>
+                </div>
+                <div class="xinLv-box"  flex="box:mean">
+                    <div>最高心率(min)</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                </div>
+                <div class="xinLv-box"  flex="box:mean">
+                    <div>最低心率(min)</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                </div>
+            </div>
+            <div class="look green">
+                <a href="javascript:void(0)">查看全班具体数据 ></a>
+            </div>
+        </div>
+        <!-- 班级心率曲线运动图 -->
+        <div class="details-box white-back">
+            <h4 class="title">班级心率曲线运动图</h4>
+            <div class="xinlv-title">
+                <div class="text active">全部</div>
+                <div class="text">高水平</div>
+                <div class="text">中水平</div>
+                <div class="text">低水平</div>
+                <div class="text">特殊</div>
+            </div>
+            <div class="line-chart-title">
+                <span>开始阶段</span>
+                <span>准备阶段</span>
+                <span>基本阶段</span>
+                <span>结束阶段</span>
+            </div>
+            <div class="xinlv" id="chart-line">
+                
+            </div>
+            <!-- <div class="line-chart-title sex">
+                <span class="boy">男生</span>
+                <span class="girl">女生</span>
+                <span class="all">全班</span>
+            </div> -->
+        </div>
+        <!-- 班级分均心率分布 -->
+        <div class="details-box white-back">
+            <h4 class="title">班级分均心率分布</h4>
+            <table border="1px" class="my-table">
+                <tr>
+                    <td>平均心率</td>
+                    <td>人数</td>
+                </tr>
+                <tr>
+                    <td>1~79</td>
+                    <td><a class="txt-green" href="#">1</a></td>
+                </tr>
+                <tr>
+                    <td>80~99</td>
+                    <td><a class="txt-green" href="#">3</a></td>
+                </tr>
+                <tr>
+                    <td>100~119</td>
+                    <td><a class="txt-green" href="#">45</a></td>
+                </tr>
+                <tr>
+                    <td>120~149</td>
+                    <td><a class="txt-green" href="#">149</a></td>
+                </tr>
+                <tr>
+                    <td>150~</td>
+                    <td><a class="txt-green" href="#">45</a></td>
+                </tr>
+            </table>
+            <center><h2>班级分均心率分布</h2></center>
+            <div class="xinlv" id="chart-pie">
+                
+            </div>
+        </div>
+
+    </div>
+
+    <!-- //添加视频 -->
+    <div class="side-video-menu">
+        <div class="play icon-xl"></div>
+        <div class="add icon-sczj"></div>
+    </div>
+    <!-- 添加页面 -->
+    <div class="add-panel">
+        <div class="add-box">
+            <div>
+                <span font="18">视频链接</span>
+                <span class="icon-close"></span>
+            </div>
+            <input id="id-input" type="number"  placeholder="请输入视频ID">
+            <input id="id-submit" type="button" value="确认">
+        </div>
+    </div>
+</section>
+<footer flex-box="0" flex="dir:left box:mean" font="12">
+    <a href="" flex="main:center dir:top">
+        <i class="icon-sy" font="24"></i>
+        <span>首页</span>
+    </a>
+    <a href="" flex="main:center dir:top">
+        <i class="icon-xsq" font="24"></i>
+        <span>学生圈</span>
+    </a>
+    <a href="" flex="main:center dir:top">
+        <i class="icon-wode" font="24"></i>
+        <span>我的</span>
+    </a>
+
+</footer>
+<script src="../../js/each/keTangChart.js"></script>
+<script src="../../js/each/keTangBaoGao.js"></script>
+</body>
+</html>

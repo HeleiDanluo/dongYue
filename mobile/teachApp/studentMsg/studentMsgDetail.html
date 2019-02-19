@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <title>成绩列表</title>
+    <meta id="viewport" name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/resize.js"></script>
+    <link rel="stylesheet" href="../css/appMain.css">
+    <link rel="stylesheet" href="../css/flex.css">
+    <link rel="stylesheet" href="../css/icon.css">
+</head>
+<body ontouchstart="" class="position">
+<div class="pageContent back-gray" flex="dir:top">
+    <div class="header-nav-bar back-white" flex-box="0">
+        <div flex="dir:left box:justify" class="h_100">
+            <a class="left-keys backBtn txt-theme" href="../login/login.html" flex="main:center cross:center">
+                <i class="icon-leftArrow txt-theme"></i>
+            </a>
+            <a href="javascript:void (0)" class="title-div f10 selectWeek" flex="main:center cross:center">
+                <span>综合素质</span></a>
+            <a class="right-keys" flex="main:center cross:center">
+            </a>
+        </div>
+    </div>
+    <div class="page-section" flex-box="1">
+        <div class="grade-show clearfix txt-theme back-white f8 t_c">
+            <div class="col-6-18">
+                姓名：<span class="student-name txt_b">小明</span>
+            </div>
+            <div class="col-6-18">
+                性别：<span class="student-name txt_b">男</span>
+            </div>
+            <div class="col-6-18">
+                年龄：<span class="student-name txt_b">12岁</span>
+            </div>
+        </div>
+        <div class="picture-show back-white">
+            <div class="level-judge" flex="main:right cross:center">
+                <span class="level-img" flex="main:center cross:center">
+                    <div class="t_c txt-red">
+                        <p class="f12">86</p>
+                        <p class="f8">良好</p>
+                    </div>
+                </span>
+            </div>
+            <div class="radar-chart">
+                <div id="personal-radar-img" style="height:14rem;width: 95%;" class="personal-chart-box">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../plugins/echart.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/each/studentMsgDetail.js"></script>
+</body>
+</html>

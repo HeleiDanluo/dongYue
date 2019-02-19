@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <script src="../../js/flexible/flexible_css.js"></script>
+    <script src="../../js/flexible/flexible.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/each/tingPingKe.js"></script>
+    <script type="text/javascript" src="//player.youku.com/jsapi"></script>
+    <title>动跃科技</title>
+</head>
+
+<body flex="dir:top">
+    <header flex-box="0" flex="dir:left" font="18">
+        <a href="javascript:history.go(-1)" flex-box="0">
+            <i class="icon-back"></i>
+        </a>
+        <div class="title" flex-box="1" font="14">听评课教学</div>
+        <a href="javascript:void(0)" flex-box="0"></a>
+    </header>
+    <section flex-box="1" flex="dir:top" class="hide-video tingpingke-body" >
+    <!-- 优酷 -->
+    <div class="tingpingke-video" flex-box="0">
+        <div id="youkuplayer"></div>
+    </div>
+        <!-- 菜单 -->
+        <div class="white-back header-link-menu" flex-box="0">
+            <ul>
+                <li font="12"><a href="javascript:void(0)">教学设计</a></li>
+                <li font="12"><a href="javascript:void(0)">教学教案</a></li>
+                <li font="12"><a href="javascript:void(0)">课堂报告</a></li>
+                <li font="12" class="current"><a href="javascript:void(0)">听评课表</a></li>
+                <li font="12"><a href="javascript:void(0)">讨论区</a></li>
+            </ul>
+        </div>
+        <div class="white-back sub-menu" flex-box="0">
+            <span>“有效课堂”评价</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span>授课评分</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="txt-green">“三动课堂”评价</span>
+        </div>
+        <!-- 内容 -->
+        <div class="teachPlan-detail-wrapper can-scroll" flex-box="1">
+
+           
+            <div class="kebiao-item white-back teachPlan-content">
+                <div class="teachPlan-model mt0">
+                    <h1 font="18">1.思维灵动</h1>
+                    <h1 font="14">1.1 教学目标</h1>
+                    <div class="model-txt">
+                        <p class="txt-lterdark">1. 贯彻课程标准目标,挖掘主教材中思维因子,制定可达成的思维目标,表述准确。</p>
+                        <p class="txt-lterdark">2. 思维目标制定具有可观测、可评价,具有可操作性。</p>
+                        <div class="radio-box">
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="good-mb">
+                                <label for="good-mb">较好</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="normal-mb">
+                                <label for="normal-mb">普通</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="bad-mb">
+                                <label for="bad-mb">待改进</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="kebiao-item white-back teachPlan-content">
+                <div class="teachPlan-model mt0">
+                    <h1 font="14">1.2 重、难点</h1>
+                    <div class="model-txt">
+                        <p class="txt-lterdark">1. 准确分析教材，明确所确定的思维因子在整个教学中的作用。 </p>
+                        <p class="txt-lterdark">2. 在思维训练中的教与学的重点，难点的语言表述准确，明确本节课中要突破的思维训练。</p>
+                        <div class="radio-box">
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="good-znd">
+                                <label for="good-znd">较好</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="normal-znd">
+                                <label for="normal-znd">普通</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="bad-znd">
+                                <label for="bad-znd">待改进</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="kebiao-item white-back teachPlan-content">
+                <div class="teachPlan-model mt0">
+                    <h1 font="14">1.3教学过程-教师活动</h1>
+                    <div class="model-txt">
+                        <p class="txt-lterdark">1.充分体现教师在教学的”主导”作用。</p>
+                        <p class="txt-lterdark">2.引导学生思考切合主题,预设问题有针对性、切实为学生理解主教材服务。</p>
+                        <p class="txt-lterdark">3.在思维方面的评价准确、到位，有正对性,包括过程性评价和总结性评价。</p>
+                        <div class="radio-box">
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="good-jxjf">
+                                <label for="good-jxjf">较好</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="normal-jxjf">
+                                <label for="normal-jxjf">普通</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="bad-jxjf">
+                                <label for="bad-jxjf">待改进</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kebiao-item white-back teachPlan-content">
+                <div class="teachPlan-model mt0">
+                    <h1 font="14">1.3教学过程-学生活动</h1>
+                    <div class="model-txt">
+                        <p class="txt-lterdark">1.学生思维活动设计有针对性、实效性,充分体现学生的“主体”地位。</p>
+                        <p class="txt-lterdark"> 2.在教学的各个环节，有明确的思考主题，学生思考积极、主动，参与全面。</p>
+                        <div class="radio-box">
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="good-jxjf">
+                                <label for="good-jxjf">较好</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="normal-jxjf">
+                                <label for="normal-jxjf">普通</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="bad-jxjf">
+                                <label for="bad-jxjf">待改进</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kebiao-item white-back teachPlan-content">
+                <div class="teachPlan-model mt0">
+                    <h1 font="14">1.3教学过程-教学环节</h1>
+                    <div class="model-txt">
+                        <p class="txt-lterdark">1.思维活动形式符合学科特点，思维训练融入到身体活动当中去</p>
+                        <p class="txt-lterdark">2.思维活动安排步骤清楚、连贯,教学环节完整。</p>
+                        <div class="radio-box">
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="good-jxjf">
+                                <label for="good-jxjf">较好</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="normal-jxjf">
+                                <label for="normal-jxjf">普通</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="bad-jxjf">
+                                <label for="bad-jxjf">待改进</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kebiao-item white-back teachPlan-content">
+                <div class="teachPlan-model mt0">
+                    <h1 font="14">1.4 达成目标</h1>
+                    <div class="model-txt">
+                        <p class="txt-lterdark">1.思维 活动表现积极,能围绕主教材开展积极的思考。</p>
+                        <p class="txt-lterdark">2. 思维表象能帮助更好的理解主教材,整堂课学生思路清晰。</p>
+                        <div class="radio-box">
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="good-jxjf">
+                                <label for="good-jxjf">较好</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="normal-jxjf">
+                                <label for="normal-jxjf">普通</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="bad-jxjf">
+                                <label for="bad-jxjf">待改进</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kebiao-item white-back teachPlan-content">
+                <div class="teachPlan-model mt0">
+                    <h1 font="18">2.身体运动</h1>
+                    <h1 font="14">2.1 设计目标</h1>
+                    <div class="model-txt">
+                        <p class="txt-lterdark">1.贯彻 《体育与健康》课程标准目标，准确把握教材性质、特点和价值,制定切实可行的
+                                身体运动目标,目标设定要符合各个层次的学生。</p>
+                        <p class="txt-lterdark">2.教学目标制定具有可观测、 可评价,具有操作性。</p>
+                        <div class="radio-box">
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="good-jxjf">
+                                <label for="good-jxjf">较好</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="normal-jxjf">
+                                <label for="normal-jxjf">普通</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="bad-jxjf">
+                                <label for="bad-jxjf">待改进</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kebiao-item white-back teachPlan-content">
+                <div class="teachPlan-model mt0">
+                    <h1 font="14">2.2 重、难点</h1>
+                    <div class="model-txt">
+                        <p class="txt-lterdark">正确把握教与学的重点、难点;依据本课应学习技术动作要领找准教材重点难点;对难点教学重难 点的语言表述上文字准确。
+                    </p>
+                        <div class="radio-box">
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="good-jxjf">
+                                <label for="good-jxjf">较好</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="normal-jxjf">
+                                <label for="normal-jxjf">普通</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="bad-jxjf">
+                                <label for="bad-jxjf">待改进</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="kebiao-item white-back teachPlan-content">
+                <div class="teachPlan-model mt0">
+                    <h1 font="14">2.3 教学过程-教师活动</h1>
+                    <div class="model-txt">
+                        <p class="txt-lterdark">1.讲解、示范描述合理、言简意赅、教学组织合理安排,合理安排教学组织。</p>
+                        <p class="txt-lterdark">2.有准确的教学评价，包括过程性评价和总结性评价。 </p>
+                        <div class="radio-box">
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="good-jxjf">
+                                <label for="good-jxjf">较好</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="normal-jxjf">
+                                <label for="normal-jxjf">普通</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="bad-jxjf">
+                                <label for="bad-jxjf">待改进</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kebiao-item white-back teachPlan-content">
+                <div class="teachPlan-model mt0">
+                    <h1 font="14">2.3 教学过程-学生活动</h1>
+                    <div class="model-txt">
+                        <p class="txt-lterdark">1.明确学生在课堂的主体地位，充分发挥学生的主观能动性，学生活动积极主动。</p>
+                        <p class="txt-lterdark">2.学生活动设计有征对性、 实效性，练习负荷、密度适当。</p>
+                        <div class="radio-box">
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="good-jxjf">
+                                <label for="good-jxjf">较好</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="normal-jxjf">
+                                <label for="normal-jxjf">普通</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="bad-jxjf">
+                                <label for="bad-jxjf">待改进</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kebiao-item white-back teachPlan-content">
+                <div class="teachPlan-model mt0">
+                    <h1 font="14">2.3 教学过程-教学环节</h1>
+                    <div class="model-txt">
+                        <p class="txt-lterdark">1.教学步骤清楚、 连贯，教学环节完整，合理调节调度队形变化。</p>
+                        <p class="txt-lterdark">2.教学目标分解层次清晰,关注到每一个层次的孩子。</p>
+                        <div class="radio-box">
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="good-jxjf">
+                                <label for="good-jxjf">较好</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="normal-jxjf">
+                                <label for="normal-jxjf">普通</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="bad-jxjf">
+                                <label for="bad-jxjf">待改进</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kebiao-item white-back teachPlan-content">
+                <div class="teachPlan-model mt0">
+                    <h1 font="14">2.4 目标达成</h1>
+                    <div class="model-txt">
+                        <p class="txt-lterdark">1.学生是否形成所教材运动技能 ;是否发展学生体能与健身能力。</p>
+                        <p class="txt-lterdark">2.以健康为本的练习密度、运动强度预设是否准确、合理、适宜，符合所教教材。练习密度是否到达预设目标。</p>
+                        <div class="radio-box">
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="good-jxjf">
+                                <label for="good-jxjf">较好</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="normal-jxjf">
+                                <label for="normal-jxjf">普通</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="bad-jxjf">
+                                <label for="bad-jxjf">待改进</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kebiao-item white-back teachPlan-content">
+                <div class="teachPlan-model mt0">
+                    <h1 font="14">3. 心理活动</h1>
+                    <h1 font="14">3.1 教学过程-教师活动</h1>
+                    <div class="model-txt">
+                        <p class="txt-lterdark">1. 关注每一个学生课堂表现,根据学生心理变化及时调整教学活动，调整合理，教学活动</p>
+                        <p class="txt-lterdark">2.抓住学生的心理活动及时评价、反馈。</p>
+                        <div class="radio-box">
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="good-jxjf">
+                                <label for="good-jxjf">较好</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="normal-jxjf">
+                                <label for="normal-jxjf">普通</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="bad-jxjf">
+                                <label for="bad-jxjf">待改进</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kebiao-item white-back teachPlan-content">
+                <div class="teachPlan-model mt0">
+                    <h1 font="14">3.1 教学过程-学生活动</h1>
+                    <div class="model-txt">
+                        <p class="txt-lterdark">1. 以学生为主体设计学生活动，活动形式具有多样性、趣味性。</p>
+                        <p class="txt-lterdark">2.学生积极的心理活动带动或影响教学效果 ，学生活动充满正能量
+                            </p>
+                        <div class="radio-box">
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="good-jxjf">
+                                <label for="good-jxjf">较好</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="normal-jxjf">
+                                <label for="normal-jxjf">普通</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="bad-jxjf">
+                                <label for="bad-jxjf">待改进</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="kebiao-item white-back teachPlan-content">
+                <div class="teachPlan-model mt0">
+                    <h1 font="14">3.2 达成目标</h1>
+                    <div class="model-txt">
+                        <p class="txt-lterdark">1.学生参 与的积极性高，学习兴趣和欲望浓厚，学生乐于学习，主动参与。 </p>
+                        <p class="txt-lterdark">2.善于和同伴交流、合作,责任感强 </p>
+                        <div class="radio-box">
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="good-jxjf">
+                                <label for="good-jxjf">较好</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="normal-jxjf">
+                                <label for="normal-jxjf">普通</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="bad-jxjf">
+                                <label for="bad-jxjf">待改进</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="input-area white-back">
+                <a href="javascript:void(0)" font="14" class="jiaoxuejianyi-submit btn btn-full-theme">发布</a>
+            </div>
+
+
+        </div>
+
+    <!-- 播放按钮 -->
+    <div class="side-play-btn">
+        <i class="icon-xl paly-ctr-btn"></i>
+        <i class="icon-close paly-ctr-btn hidden"></i>
+    </div>
+    </section>
+    <footer flex-box="0" flex="dir:left box:mean" font="12">
+        <a href="" flex="main:center dir:top">
+            <i class="icon-sy" font="24"></i>
+            <span>首页</span>
+        </a>
+        <a href="" flex="main:center dir:top">
+            <i class="icon-xsq" font="24"></i>
+            <span>学生圈</span>
+        </a>
+        <a href="" flex="main:center dir:top">
+            <i class="icon-wode" font="24"></i>
+            <span>我的</span>
+        </a>
+    </footer>
+</body>
+<script>
+
+</script>
+
+</html>

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta HTTP-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/icon.css">
+    <link rel="stylesheet" href="../plugins/animate.min.css">
+    <link rel="stylesheet" href="../css/scroll.css">
+    <link rel="stylesheet" href="../js/select/combo.select.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../plugins/mousewheel.js"></script>
+    <script src="../plugins/jquery.slimscroll.js"></script>
+    <script src="../js/pageInit.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/each/editTeachingPlan.js"></script>
+    <script src="../js/select/jquery.combo.select.js"></script>
+    <script src="../js/imgUpload/mobileFix.mini.js"></script>
+    <script src="../js/imgUpload/exif.js"></script>
+    <script src="../js/imgUpload/lrz.js"></script>
+    <script src="../plugins/alert.js"></script>
+    <title>教学管理</title>
+    <script>
+    </script>
+</head>
+<body>
+<div class="pageContent">
+    <div class="left-menu">
+        <a class="logo-box">
+        <span class="logo-img">
+        </span>
+        </a>
+        <ul class="menu-list f16">
+            <li class="current"><a href="" class=""><i class="icon-home">&nbsp;</i>主页</a></li>
+            <li class=""><a href="" class=""><i class="icon-group">&nbsp;</i>教研群组</a></li>
+            <li class=""><a href="" class=""><i class="icon-teachManage">&nbsp;</i>教学管理</a></li>
+            <li class=""><a href="" class=""><i class="icon-import">&nbsp;</i>数据录入</a></li>
+            <li class=""><a href="" class=""><i class="icon-homeWork">&nbsp;</i>家庭作业</a></li>
+        </ul>
+        <ul class="bottom-menu menu-list f16">
+            <li class=""><a href="" class=""><i class="icon-add">&nbsp;</i>收藏</a></li>
+            <li class=""><a href="" class=""><i class="icon-setting">&nbsp;</i>设置</a></li>
+            <li class=""><a href="" class=""><i class="icon-back">&nbsp;</i>返回启动页</a></li>
+        </ul>
+    </div>
+    <div class="rightPage">
+        <div class="page-head">
+            <div class="bread-nav-box txt_w">
+                <a href="javascript:;"><b>教学管理</b></a> >
+                <a href="javascript:;"><b>计划管理</b></a> >
+                <a href="javascript:;"><b>教案修改</b></a>
+            </div>
+            <div class="head-menu">
+                <ul class="head-menu-ul f16">
+                    <!-- <li class="head-menu-item"><a href="javascript:;" class="txt_w">退出</a></li> -->
+                    <li class="head-menu-item" id="dropDown-menu-head"><a href="javascript:;" class="txt_w">账户信息<i class="icon-hehe"></i></a>
+                        <div class="dropdown-content active-drop">
+                            <ul>
+                                <li id="cg-pass">修改密码</li>
+                                <li><a href="#">退出登录</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="head-menu-item"><a href="javascript:;" class="txt_w">欢迎页</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="edit-page">
+<!-- 修改记录   添加 new-form CLass mt20 改为mt10 l_j36还未l_h24 -->
+                <div class="teaching-model back_white mt30 new-form">
+                    <div class="clearfix">
+                        <div class="col-2-16 l_h24 title">
+                            课次名称：
+                        </div>
+                        <div class="col-14-16">
+                            <label class="form-control">
+                                <input type="text" readonly value="课次名课次名课次名">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="clearfix mt10">
+                        <div class="col-2-16 l_h24 title">
+                            所属班级：
+                        </div>
+                        <div class="col-14-16">
+                            <label class="form-control">
+                                <input type="text" readonly value="一年级，二年级，三年级">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="clearfix mt10">
+                        <div class="col-2-16 l_h24 title">
+                            教学内容：
+                        </div>
+                        <div class="col-14-16">
+                            <label class="form-control">
+                                <input type="text" readonly value="所属教学内容" />
+                            </label>
+                        </div>
+                    </div>
+                    <div class="clearfix mt10">
+                        <div class="col-2-16 l_h24 title">
+                            所属分类：
+                        </div>
+                        <div class="col-14-16">
+                            <label class="form-control">
+                                <input type="text" readonly value="所属分类所属分类所属分类" />
+                            </label>
+                        </div>
+                    </div>
+                    <div class="clearfix mt10">
+                        <div class="col-2-16 l_h24 title">
+                            教案作者：
+                        </div>
+                        <div class="col-12-16">
+                            <label class="form-control">
+                                <input type="text" placeholder="请输入作者名" />
+                            </label>
+                        </div>
+                        <!-- <div class="col-2-16">
+                            <a href="javscript:void(0)" class="blockBtn pinkBtn"><i class="icon-save"> </i>保存</a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="teaching-model back_white mt30">
+                    <div class="model-title clearfix l_h36">
+                        <div class="col-8-16 f18">
+                            教学目标
+                        </div>
+                        <div class="col-8-16 t_r">
+                            <a href="javascript:;" class="btn blueBtn">恢复默认</a>
+                            <a href="javascript:;" class="btn yellowBtn add-order">添加</a>
+                            <a href="javascript:;" class="btn pinkBtn">保存</a>
+                        </div>
+                    </div>
+                    <div class="model-list">
+                        <div class="each-model-item edit-teach-item mt20">
+                            <!--<span class="item-num">1</span>-->
+                            <div class="edit-box clearfix">
+                                <div class="icon-delete f20"></div>
+                                <label class="edit-text">
+                                    <textarea rows="1" class="f14 con-text" placeholder="请输入教学目标"></textarea>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="teaching-model back_white mt30">
+                    <div class="model-title clearfix l_h36">
+                        <div class="col-8-16 f18">
+                            教学重点、难点
+                        </div>
+                        <div class="col-8-16 t_r">
+                            <a href="javascript:;" class="btn blueBtn">恢复默认</a>
+                            <a href="javascript:;" class="btn pinkBtn">保存</a>
+                        </div>
+                    </div>
+                    <div class="model-list">
+                        <div class="each-model-item edit-teach-item mt20">
+                            <!--<span class="item-num-word">重点</span>-->
+                            <div class="edit-box clearfix">
+                                <label class="edit-text">
+                                    <textarea rows="1" class="f14 con-text" placeholder="请输入教学重点"></textarea>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="each-model-item edit-teach-item mt20">
+                            <!--<span class="item-num-word">难点</span>-->
+                            <div class="edit-box clearfix">
+                                <label class="edit-text">
+                                    <textarea rows="1" class="f14 con-text" placeholder="请输入教学难点"></textarea>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="teaching-model back_white mt30">
+                    <div class="model-title clearfix l_h36">
+                        <div class="col-8-16 f18">
+                            教学阶段-开始部分
+                        </div>
+                    </div>
+                    <div class="model-title clearfix l_h36 mt20">
+                        <div class="col-8-16 f16">
+                            <b class="f14 mr5">●</b>教学内容
+                        </div>
+                        <div class="col-8-16 t_r">
+                            <a href="javascript:;" class="btn blueBtn">恢复默认</a>
+                            <a href="javascript:;" class="btn yellowBtn add-con">添加</a>
+                            <a href="javascript:;" class="btn pinkBtn">保存</a>
+                        </div>
+                    </div>
+                    <div class="model-list">
+                        <div class="each-model-item edit-teach-item mt20">
+                            <!--<span class="item-num">1</span>-->
+                            <div class="edit-box clearfix">
+                                <div class="icon-delete f20"></div>
+                                <label class="edit-text">
+                                    <textarea rows="1" class="f14 con-text" placeholder="请输入教学内容"></textarea>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-title clearfix l_h36 mt20">
+                        <div class="col-8-16 f16">
+                            <b class="f14 mr5">●</b>添加视频
+                        </div>
+                        <div class="col-8-16 t_r">
+                            <a href="javascript:;" class="btn blueBtn">恢复默认</a>
+                            <a href="javascript:;" class="btn yellowBtn add-redio">添加</a>
+                            <a href="javascript:;" class="btn pinkBtn">保存</a>
+                        </div>
+                    </div>
+                    <div class="model-list">
+                        <div class="each-model-item edit-teach-item mt20">
+                            <!--<span class="item-num">1</span>-->
+                            <div class="edit-box clearfix">
+                                <div class="icon-delete f20"></div>
+                                <div class="edit-text">
+                                    <select>
+                                        <option value="动作1">动作1</option>
+                                        <option value="动作2">动作2</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-title clearfix l_h36 mt20">
+                        <div class="col-8-16 f16">
+                            <b class="f14 mr5">●</b>学生活动
+                        </div>
+                        <div class="col-8-16 t_r">
+                            <a href="javascript:;" class="btn blueBtn">恢复默认</a>
+                            <a href="javascript:;" class="btn yellowBtn add-active">添加</a>
+                            <a href="javascript:;" class="btn pinkBtn">保存</a>
+                        </div>
+                    </div>
+                    <div class="model-list">
+                        <div class="each-model-item edit-teach-item mt20">
+                            <!--<span class="item-num">1</span>-->
+                            <div class="edit-box clearfix">
+                                <div class="icon-delete f20"></div>
+                                <label class="edit-text">
+                                    <textarea rows="1" class="f14 con-text" placeholder="请输入学生活动"></textarea>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="model-title clearfix l_h36 mt20">
+                        <div class="col-8-16 f16">
+                            <b class="f14 mr5">●</b>教师活动
+                        </div>
+                        <div class="col-8-16 t_r">
+                            <a href="javascript:;" class="btn blueBtn">恢复默认</a>
+                            <a href="javascript:;" class="btn yellowBtn add-active-other">添加</a>
+                            <a href="javascript:;" class="btn pinkBtn">保存</a>
+                        </div>
+                    </div>
+                    <div class="model-list">
+                        <div class="each-model-item edit-teach-item mt20">
+                            <!--<span class="item-num">1</span>-->
+                            <div class="edit-box clearfix">
+                                <div class="icon-delete f20"></div>
+                                <label class="edit-text">
+                                    <textarea rows="1" class="f14 con-text" placeholder="请输入教师活动"></textarea>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt20 clearfix">
+                        <ul class="col-12-16 heart">
+                            <li>
+                                <p>时间安排：</p>
+                                <label><input type="text"></label>
+                                <p class="heart-time">分钟</p>
+                            </li>
+                            <li>
+                                <p>心率最高峰值：</p>
+                                <label><input type="text"></label>
+                            </li>
+                            <li>
+                                <p>心率最高时间：</p>
+                                <label><input type="text"></label>
+                            </li>
+                            <li>
+                                <p>心率结束峰值：</p>
+                                <label><input type="text"></label>
+                            </li>
+                        </ul>
+                        <div class="col-4-16 t_r">
+                            <a href="javascript:;" class="btn grayBtn">恢复默认</a>
+                            <a href="javascript:;" class="btn themeBtn mrBtn">保存</a>
+                        </div>
+                    </div>
+
+                    <div class="model-title clearfix l_h36 mt20">
+                        <div class="col-8-16 f16">
+                            <b class="f14 mr5">●</b>组织形式及要求
+                        </div>
+                        <div class="col-8-16 t_r">
+                            <a href="javascript:;" class="btn blueBtn">恢复默认</a>
+                            <a href="javascript:;" class="btn yellowBtn add-img">添加</a>
+                            <a href="javascript:;" class="btn pinkBtn">保存</a>
+                        </div>
+                    </div>
+                    <div class="model-list">
+                        <div class="each-model-item edit-teach-item mt20">
+                            <!--<span class="item-num">1</span>-->
+                            <div class="edit-box clearfix">
+                                <div class="icon-delete f20"></div>
+                                <label class="edit-text">
+                                    <textarea rows="1" class="f14 con-text" placeholder="请输入队列名称"></textarea>
+                                </label>
+                                <div class="upload-img mt20">
+                                    <label>
+                                        <span class="id-photo-img">
+                                            <img src="../images/test/duilie_03.png" alt="">
+                                        </span>
+                                        <span class="id-photo-inp">
+                                            <input type="file"/>
+                                            <em>
+                                                <i class="icon-uploadImg"></i>
+                                                <i class="f14">上传图片（大小<2M）</i>
+                                            </em>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="model-title clearfix l_h36 mt20">
+                        <div class="col-8-16 f16">
+                            <b class="f14 mr5">●</b>场地与器材
+                        </div>
+                        <div class="col-8-16 t_r">
+                            <a href="javascript:;" class="btn blueBtn">恢复默认</a>
+                            <a href="javascript:;" class="btn yellowBtn add-place">添加</a>
+                            <a href="javascript:;" class="btn pinkBtn">保存</a>
+                        </div>
+                    </div>
+                    <div class="model-list">
+                        <div class="each-model-item edit-teach-item mt20">
+                            <!--<span class="item-num">1</span>-->
+                            <div class="edit-box clearfix">
+                                <div class="icon-delete f20"></div>
+                                <label class="edit-text">
+                                    <textarea rows="1" class="f14 con-text" placeholder="请输入场地器材"></textarea>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="teaching-model back_white mt30">
+                    <div class="model-title clearfix l_h36">
+                        <div class="col-8-16 f18">
+                            基础部分2-游戏
+                        </div>
+                        <div class="col-8-16 t_r">
+                            <a href="javascript:void (0)" class="btn yellowBtn addGame">添加</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="teaching-model back_white mt30">
+                    <div class="model-title clearfix l_h36 mt20">
+                        <div class="col-8-16 f16">
+                            <b class="f14 mr5">●</b>训练强度
+                        </div>
+                        <div class="col-8-16 t_r">
+                            <a href="javascript:;" class="btn blueBtn">恢复默认</a>
+                            <a href="javascript:;" class="btn pinkBtn">保存</a>
+                        </div>
+                    </div>
+                    <div class="model-list">
+                        <div class="each-model-item edit-teach-item mt20">
+                            <!--<span class="item-num">1</span>-->
+                            <div class="edit-box clearfix">
+                                <div class="icon-delete f20"></div>
+                                <label class="edit-text">
+                                    <textarea rows="1" class="f14 con-text" placeholder="请输入训练强度"></textarea>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="model-title clearfix l_h36 mt20">
+                        <div class="col-8-16 f16">
+                            <b class="f14 mr5">●</b>练习密度
+                        </div>
+                        <div class="col-8-16 t_r">
+                            <a href="javascript:;" class="btn blueBtn">恢复默认</a>
+                            <a href="javascript:;" class="btn pinkBtn">保存</a>
+                        </div>
+                    </div>
+                    <div class="model-list">
+                        <div class="each-model-item edit-teach-item mt20">
+                            <!--<span class="item-num">1</span>-->
+                            <div class="edit-box clearfix">
+                                <div class="icon-delete f20"></div>
+                                <label class="edit-text">
+                                    <textarea rows="1" class="f14 con-text" placeholder="请输入练习密度"></textarea>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="model-title clearfix l_h36 mt20">
+                        <div class="col-8-16 f16">
+                            <b class="f14 mr5">●</b>平均心率
+                        </div>
+                        <div class="col-8-16 t_r">
+                            <a href="javascript:;" class="btn blueBtn">恢复默认</a>
+                            <a href="javascript:;" class="btn pinkBtn">保存</a>
+                        </div>
+                    </div>
+                    <div class="model-list">
+                        <div class="each-model-item edit-teach-item mt20">
+                            <!--<span class="item-num">1</span>-->
+                            <div class="edit-box clearfix">
+                                <div class="icon-delete f20"></div>
+                                <label class="edit-text">
+                                    <textarea rows="1" class="f14 con-text" placeholder="请输入平均心率"></textarea>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="model-title clearfix l_h36 mt20">
+                        <div class="col-8-16 f16">
+                            <b class="f14 mr5">●</b>注意事项
+                        </div>
+                        <div class="col-8-16 t_r">
+                            <a href="javascript:;" class="btn blueBtn">恢复默认</a>
+                            <a href="javascript:;" class="btn pinkBtn">保存</a>
+                        </div>
+                    </div>
+                    <div class="model-list">
+                        <div class="each-model-item edit-teach-item mt20">
+                            <!--<span class="item-num">1</span>-->
+                            <div class="edit-box clearfix">
+                                <div class="icon-delete f20"></div>
+                                <label class="edit-text">
+                                    <textarea rows="1" class="f14 con-text" placeholder="请输入注意事项"></textarea>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="model-title clearfix l_h36 mt20">
+                        <div class="col-8-16 f16">
+                            <b class="f14 mr5">●</b>预防措施
+                        </div>
+                        <div class="col-8-16 t_r">
+                            <a href="javascript:;" class="btn blueBtn">恢复默认</a>
+                            <a href="javascript:;" class="btn pinkBtn">保存</a>
+                        </div>
+                    </div>
+                    <div class="model-list">
+                        <div class="each-model-item edit-teach-item mt20">
+                            <!--<span class="item-num">1</span>-->
+                            <div class="edit-box clearfix">
+                                <div class="icon-delete f20"></div>
+                                <label class="edit-text">
+                                    <textarea rows="1" class="f14 con-text" placeholder="请输入预防措施"></textarea>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-control-btn mt30 t_r">
+                    <div class="form-inline">
+                        <a href="javascript:;" class="btn_l grayBtn">返回上一层</a>
+                        <a href="javascript:;" class="btn_l themeBtn">确定</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

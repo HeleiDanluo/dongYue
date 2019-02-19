@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+html(lang="zh-CN")
+  head
+    include head.jade
+    script(src="../js/echarts.js")
+    script(src="../js/each/homePage.js")
+  body
+    include header2.jade
+    .homepage
+      .caption 圣菲小学
+        span.address 四川省成都市双流航空巷
+      .informationBox
+        .relevantData
+          .title 相关数据
+          .data
+            ul
+              li
+                .top 在校生
+                .bottom 2832
+                  span 人 
+                .my-bottom 
+                  .num-girl 女生：20%
+                  .num-boy 男生：50%
+              li
+                .top 体育教师
+                .bottom 7
+                  span 人 
+              li
+                .top 班级数
+                .bottom 36
+                  span 班 
+              li
+                .top 全校总课时数
+                .bottom 2934
+                  span 课时
+        .class
+          .top 课程开展情况:
+            a(href="./healthyClass.html") 查看更多
+          .center
+            .left
+              span 2934
+              span 课时
+            .right
+              .top
+                ul
+                  li 基本运动
+                  li 田径
+                  li 球类
+                  li 体操武术
+                  li 其他
+              .bottom
+                ul
+                  li 450
+                  li 337
+                  li 621
+                  li 821
+                  li 705
+        .equipment
+          .top 学生体质健康:
+            a(href="./healthyDistribute.html") 查看更多
+          .my-center
+              #bar-one
+              .legend-box
+                .lgend
+                  .txt 优良率
+                  .txt 60%
+                .lgend
+                  .txt 达标率
+                  .txt 60%
+          .top 体育成绩统计:
+            a(href="./tiZhiChengJiTongJiTable.html") 查看更多
+          .my-center
+              #bar-two
+              .legend-box
+                .lgend
+                  .txt 优良率
+                  .txt 60%
+                .lgend
+                  .txt 达标率
+                  .txt 60%
+          .top 中考成绩统计:
+            a(href="./中考成绩查看更多.html") 查看更多
+          .my-center
+              #bar-three
+              .legend-box
+                .lgend
+                  .txt 优良率
+                  .txt 60%
+                .lgend
+                  .txt 达标率
+                  .txt 60%

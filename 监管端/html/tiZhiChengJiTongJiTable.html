@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <title>动跃数据分析</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/each/healthyList.js"></script>
+    <script src="../js/each/dataChoose.js"></script>
+    <script src="../js/each/cityChoose.js"></script>
+    <script src="../js/public.js"></script>
+    <script src="../js/echarts.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo"><img src="../images/logo.png" alt=""><span class="name">动跃科技数据分析平台</span></div><span class="back"><a onclick="window.history.go(-1)">返回上一级</a></span>
+      <div class="user"><a class="name" href="#">测试名字</a><a class="logout" href="#"> <i class="icon-logout"></i>退出</a></div>
+    </div>
+    <div class="leftNav">
+      <ul>
+        <li class="focus"><i class="icon-home"></i><a href="./findSchool.html">首页</a></li>
+        <li class="show"><i class="icon-sjfx"></i><span>数据分析</span><i class="icon-xia"></i>
+          <ul>
+            <li><a href="./healthyList.html">健康等级分布</a></li>
+            <li><a href="./passRate.html">学校成绩分布</a></li>
+            <li><a href="./studentClass.html">学校课程课时</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="tiZhiChengJiTongJi">
+      <div class="choose">
+        <div class="year"><span class="title">学年：</span><span class="box"><span class="focus">2017~2018</span><span>2017~2018</span></span></div>
+        <div class="grade"><span class="title">年级：</span><span class="box"><span>一年级</span><span>二年级</span><span>三年级</span><span>四年级</span><span>五年级</span><span class="focus">所有</span></span></div>
+      </div>
+      <div class="sub-choose"><span class="item one">选择内容：<span><a href="tiZhiChengJiTongJiTableJust.html">查看成绩构成</a></span><i>&nbsp;&nbsp;/&nbsp;&nbsp;</i><span class="active"> <a href="tiZhiChengJiTongJiTable.html">查看成绩统计</a></span></span><span class="item two">查看方式：<span class="active"> <a href="tiZhiChengJiTongJiPic.html">列表</a></span><i>&nbsp;&nbsp;/&nbsp;&nbsp;</i><span> <a href="tiZhiChengJiTongJiPic.html">图表</a></span></span><span class="item three">选择范围：<span class="active">全部</span><i>&nbsp;&nbsp;/&nbsp;&nbsp;</i><span>只看男生</span><i>&nbsp;&nbsp;/&nbsp;&nbsp;</i><span>只看女生</span></span></div>
+      <div class="table-content"><span class="title">一年级考核项目：</span>
+        <div class="table">
+          <table>
+            <thead>
+              <tr>
+                <td rowspan="2">性别</td>
+                <td rowspan="2"> 人数</td>
+                <td colspan="2">优 (90分以上)</td>
+                <td colspan="2">良 (89-75分)</td>
+                <td colspan="2">及格 (74-60分)</td>
+                <td colspan="2">不及格 (60分以下)</td>
+              </tr>
+              <tr>
+                <td>人</td>
+                <td>%</td>
+                <td>人</td>
+                <td>%</td>
+                <td>人</td>
+                <td>%</td>
+                <td>人</td>
+                <td>%</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>男</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>女</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>合计</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="table-content"><span class="title">二年级考核项目：</span>
+        <div class="table">
+          <table>
+            <thead>
+              <tr>
+                <td rowspan="2">性别</td>
+                <td rowspan="2"> 人数</td>
+                <td colspan="2">优 (90分以上)</td>
+                <td colspan="2">良 (89-75分)</td>
+                <td colspan="2">及格 (74-60分)</td>
+                <td colspan="2">不及格 (60分以下)</td>
+              </tr>
+              <tr>
+                <td>人</td>
+                <td>%</td>
+                <td>人</td>
+                <td>%</td>
+                <td>人</td>
+                <td>%</td>
+                <td>人</td>
+                <td>%</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>男</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>女</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>合计</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+html(lang="zh-CN")
+  head
+    include head.jade
+    <script>
+    $(function(){
+    $('.leftNav>ul>li').removeClass('focus')
+    $('.leftNav>ul>li').eq(1).addClass('focus')
+    $('.leftNav>ul>li>ul>li').removeClass('focus')
+    $('.leftNav>ul>li>ul>li').eq(2).addClass('focus')
+    })  
+    </script> 
+  body
+    include header2.jade
+    .studentClass
+      .choose
+        span 选择范围:
+        ul(class="address clearfix")
+          li(class="btn-small focus") 全部
+          li(class="btn-small sheng")
+            span 省
+            ul(class="btn-small")
+              .limit
+                
+          li(class="btn-small shi")
+            span 市
+            ul(class="btn-small")
+              .limit
+                li(class="btn-small") 请先选择省
+          li(class="btn-small qu")
+            span 区/县
+            ul(class="btn-small")
+              .limit
+                li(class="btn-small") 请先选择市
+      .choose        
+        span 关键词搜索:
+        input(class="time btn-big"
+        placeholder="请输入关键词")
+        input(type="button"
+          class="btn-small btn-green"
+          value="搜索")
+      .healthyBox
+        .top
+          span(class="left") 学校课程课时
+        .center
+          .row
+            span(class="num") 序号
+            span(class="school") 学校名称
+            span(class="category") 总课时
+            span(class="item") 开展项目
+            span(class="handle") 操作
+          .row.cb 
+            span(class="num") 1
+            span(class="school") 圣菲小学
+            span(class="category") 486
+            span(class="item")
+              span 篮球:265
+              span 田径:65
+              span 体操:65
+            span(class="handle")
+              a(href="./healthyClass.html") 查看更多
+          .row.cb
+            span(class="num") 2
+            span(class="school") 益州小学
+            span(class="category") 576
+            span(class="item")
+              span 足球:265
+              span 田径:65
+              span 乒乓球:65
+              span 武术:65
+            span(class="handle")
+              a(href="./healthyClass.html") 查看更多
+        .mydataChoose
+          ul.num
+            
+          select
+            option(value="1") 1
+            option(value="2") 2
+            option(value="3") 3
+            option(value="4") 4
+            option(value="5") 5
+            option(value="6") 6
+            option(value="7") 7
+          span.left 跳转到
+            input
+          span.right
+            确定
+          
+          
+

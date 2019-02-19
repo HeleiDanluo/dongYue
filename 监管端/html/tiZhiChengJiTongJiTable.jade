@@ -1,0 +1,151 @@
+html(lang="zh-CN")
+  head
+    include head.jade
+    script(src="../js/echarts.js")
+  body
+    include header2.jade
+    .tiZhiChengJiTongJi
+      .choose
+        .year
+          span.title 学年：
+          span.box
+            span.focus 2017~2018
+            span 2017~2018
+        .grade
+          span.title 年级：
+          span.box
+            span 一年级
+            span 二年级
+            span 三年级
+            span 四年级
+            span 五年级
+            span.focus 所有
+      .sub-choose
+        span.item.one 选择内容：
+          span
+            a(href="tiZhiChengJiTongJiTableJust.html") 查看成绩构成
+          i &nbsp;&nbsp;/&nbsp;&nbsp;
+          span.active 
+            a(href="tiZhiChengJiTongJiTable.html") 查看成绩统计
+        span.item.two 查看方式：
+          span.active 
+            a(href="tiZhiChengJiTongJiPic.html") 列表
+          i &nbsp;&nbsp;/&nbsp;&nbsp;
+          span 
+            a(href="tiZhiChengJiTongJiPic.html") 图表
+        span.item.three 选择范围：
+          span.active 全部
+          i &nbsp;&nbsp;/&nbsp;&nbsp;
+          span 只看男生
+          i &nbsp;&nbsp;/&nbsp;&nbsp;
+          span 只看女生
+      .table-content
+        span.title 一年级考核项目：
+        .table
+          table
+            thead
+              tr
+                td(rowspan="2") 性别
+                td(rowspan="2")  人数
+                td(colspan="2") 优 (90分以上)
+                td(colspan="2") 良 (89-75分)
+                td(colspan="2") 及格 (74-60分)
+                td(colspan="2") 不及格 (60分以下)
+              tr
+                td 人
+                td %
+                td 人
+                td %
+                td 人
+                td %
+                td 人
+                td %
+            tbody
+              tr
+                td 男
+                td
+                td
+                td
+                td
+                td
+                td
+                td
+                td
+                td
+              tr
+                td 女
+                td
+                td
+                td
+                td
+                td
+                td
+                td
+                td
+                td
+              tr
+                td 合计
+                td
+                td
+                td
+                td
+                td
+                td
+                td
+                td
+                td
+      .table-content
+          span.title 二年级考核项目：
+          .table
+            table
+              thead
+                tr
+                  td(rowspan="2") 性别
+                  td(rowspan="2")  人数
+                  td(colspan="2") 优 (90分以上)
+                  td(colspan="2") 良 (89-75分)
+                  td(colspan="2") 及格 (74-60分)
+                  td(colspan="2") 不及格 (60分以下)
+                tr
+                  td 人
+                  td %
+                  td 人
+                  td %
+                  td 人
+                  td %
+                  td 人
+                  td %
+              tbody
+                tr
+                  td 男
+                  td
+                  td
+                  td
+                  td
+                  td
+                  td
+                  td
+                  td
+                  td
+                tr
+                  td 女
+                  td
+                  td
+                  td
+                  td
+                  td
+                  td
+                  td
+                  td
+                  td
+                tr
+                  td 合计
+                  td
+                  td
+                  td
+                  td
+                  td
+                  td
+                  td
+                  td
+                  td

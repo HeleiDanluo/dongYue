@@ -1,0 +1,30 @@
+<div class="player-sport">
+    <div id="youkuplayer" style="width: 100%;"></div>
+    <script id="_youkujs_" type="text/javascript" src="//player.youku.com/jsapi"></script>
+    <script type="text/javascript">
+        var $youkuplayer = document.getElementById("youkuplayer");
+        var width = $youkuplayer.scrollWidth;
+        $youkuplayer.style.height = (width > 900 ? 600 : width * 6 / 9) + "px";
+        player = new YKU.Player('youkuplayer',{
+            styleid: '2',
+            client_id: 'b10ab8588528b1b1',
+            vid: 'XMzEyMTYwODYwNA',
+            autoplay: true,
+            show_related: false,
+            newPlayer: true,
+            events:{
+                onPlayEnd: function(){
+                    playVideo();
+                }
+            }
+        });
+        function playVideo(){
+          player.playVideo();
+        }
+    </script>
+    <div class="action-desc">
+        <h1 class="action-name">篮球动作范例三</h1>
+        <p class="action-desc-word mt30">1.使用五根手指持球，并将手指向内收缩。在球落下的一刻使用手掌接住</p>
+        <p class="action-desc-word">2.将球放在腰际盘旋，这个动作的关键在于脸面朝前，同时眼睛不要看着球然后做顺时针，逆时针的盘球联练习</p>
+    </div>
+</div>

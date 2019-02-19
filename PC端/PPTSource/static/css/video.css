@@ -1,0 +1,21 @@
+.video-page-body {
+  width: 100%;
+  height: calc(100% - 100px);
+  padding: 2% 7% 0px 7%;
+  box-sizing: border-box;
+}
+.video-page-body .title {
+  text-align: center;
+}
+.video-page-body .right {
+  background: #dedede;
+  width: 77%;
+  height: 80%;
+  float: left;
+  margin-left: 11.5%;
+}
+.video-page-body .right .yk {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}

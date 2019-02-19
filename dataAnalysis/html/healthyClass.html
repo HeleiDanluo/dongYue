@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8"></meta>
+
+  <title>动跃数据分析</title>
+
+  <link rel="stylesheet" href="../css/main.css"></link>
+
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/each/healthyList.js"></script>
+  <script src="../js/each/dataChoose.js"></script>
+  <script src="../js/each/cityChoose.js"></script>
+  <script src="../js/public.js"></script>
+
+  <script>
+    $(function () {
+      $('.leftNav>ul>li').removeClass('focus')
+      $('.leftNav>ul>li').eq(1).addClass('focus')
+      $('.leftNav>ul>li>ul>li').removeClass('focus')
+      $('.leftNav>ul>li>ul>li').eq(2).addClass('focus')
+    })
+
+  </script>
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo">
+      <img src="../images/logo.png" alt="">
+
+      <span class="name">动跃科技数据分析平台</span>
+    </div>
+
+    <div class="user">
+      <a href="#" class="name">测试名字</a>
+
+      <a href="./findPass.html" class="pass">
+        <i class="icon-xgmm"></i>
+        密码设置
+      </a>
+
+      <a href="#" class="logout">
+        <i class="icon-logout"></i>
+        退出
+      </a>
+    </div>
+  </div>
+
+  <div class="leftNav">
+    <ul>
+      <li class="focus">
+        <i class="icon-home"></i>
+
+        <a href="./findSchool.html">查找学校</a>
+      </li>
+
+      <li class="show">
+        <i class="icon-sjfx"></i>
+
+        <span>数据分析</span>
+
+        <i class="icon-xia"></i>
+
+        <ul>
+          <li>
+            <a href="./healthyList.html">健康等级分布</a>
+          </li>
+
+          <li>
+            <a href="./passRate.html">学校成绩分布</a>
+          </li>
+
+          <li>
+            <a href="./studentClass.html">学校课程课时</a>
+          </li>
+
+          <li>
+            <a href="./studentEqipment.html">学校器械教具</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="healthyClass">
+    <div class="choose">
+      <span class="year">选择查看学年</span>
+
+      <select>
+        <option value="">请选择</option>
+
+        <option value="2017~2018">2017~2018学年</option>
+
+        <option value="2017~2018">2017~2018学年</option>
+
+        <option value="2017~2018">2017~2018学年</option>
+      </select>
+
+      <span class="grade">选择查看年级</span>
+
+      <select>
+        <option value="">请选择</option>
+
+        <option value="一年级">一年级</option>
+
+        <option value="二年级">二年级</option>
+
+        <option value="三年级">三年级</option>
+
+        <option value="四年级">四年级</option>
+      </select>
+    </div>
+
+    <div class="box">
+      <p class="num">1</p>
+
+      <div class="content">
+        <span class="title">课次内容</span>
+
+        <span class="inner">跳绳:学习双脚并脚连续跳</span>
+      </div>
+
+      <div class="aim">
+        <span class="title">教学目标</span>
+
+        <span class="inner">
+          1.认知:通过学习双脚并脚连续跳,激发学生积极参加跳绳的兴趣 2.情感:让学生体验到跳绳的快乐,建立良好的人际关系 3:技能:70%以上的学生能独自完成双脚并脚连续跳10个,30%~40%的学生能够体验到双脚交换跳
+        </span>
+      </div>
+
+      <div class="point">
+        <span class="title">教学重难点</span>
+
+        <span class="inner">教学重点:落地缓冲;教学难点:手脚配合,动作协调连贯</span>
+      </div>
+
+      <div class="count">
+        <span class="title">课时</span>
+
+        <span class="inner">1课时</span>
+      </div>
+    </div>
+
+    <div class="box">
+      <p class="num">1</p>
+
+      <div class="content">
+        <span class="title">课次内容</span>
+
+        <span class="inner">测试文字测试文字</span>
+      </div>
+
+      <div class="aim">
+        <span class="title">教学目标</span>
+
+        <span class="inner">
+          测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字测试文字
+        </span>
+      </div>
+
+      <div class="point">
+        <span class="title">教学重难点</span>
+
+        <span class="inner">测试文字测试文字测试文字测试文字测试文字</span>
+      </div>
+
+      <div class="count">
+        <span class="title">课时</span>
+
+        <span class="inner">1课时</span>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

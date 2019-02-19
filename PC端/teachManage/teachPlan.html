@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta HTTP-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/icon.css">
+    <link rel="stylesheet" href="../plugins/animate.min.css">
+    <link rel="stylesheet" href="../css/scroll.css">
+    <link rel="stylesheet" href="../plugins/datepicker.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../plugins/mousewheel.js"></script>
+    <script src="../plugins/jquery.slimscroll.js"></script>
+    <script src="../js/pageInit.js"></script>
+    <script src="../js/main.js"></script>
+    <title>教学管理</title>
+    <script>
+    </script>
+</head>
+<body>
+<div class="pageContent">
+    <div class="left-menu">
+        <a class="logo-box">
+        <span class="logo-img">
+        </span>
+        </a>
+        <ul class="menu-list f16">
+            <li class="current"><a href="" class=""><i class="icon-home">&nbsp;</i>主页</a></li>
+            <li class=""><a href="" class=""><i class="icon-group">&nbsp;</i>教研群组</a></li>
+            <li class=""><a href="" class=""><i class="icon-teachManage">&nbsp;</i>教学管理</a></li>
+            <li class=""><a href="" class=""><i class="icon-import">&nbsp;</i>数据录入</a></li>
+            <li class=""><a href="" class=""><i class="icon-homeWork">&nbsp;</i>家庭作业</a></li>
+        </ul>
+        <ul class="bottom-menu menu-list f16">
+            <li class=""><a href="" class=""><i class="icon-add">&nbsp;</i>收藏</a></li>
+            <li class=""><a href="" class=""><i class="icon-setting">&nbsp;</i>设置</a></li>
+            <li class=""><a href="" class=""><i class="icon-back">&nbsp;</i>返回启动页</a></li>
+        </ul>
+    </div>
+    <div class="rightPage">
+        <div class="page-head">
+            <div class="bread-nav-box txt_w">
+                <a href="javascript:;"><b>教学管理</b></a> >
+                <a href="javascript:;"><b>教学计划</b></a>
+            </div>
+            <div class="head-menu">
+                <ul class="head-menu-ul f16">
+                    <li class="head-menu-item"><a href="javascript:;" class="txt_w">退出</a></li>
+                    <li class="head-menu-item"><a href="javascript:;" class="txt_w">账户信息<i class="icon-hehe"></i></a>
+                    </li>
+                    <li class="head-menu-item"><a href="javascript:;" class="txt_w">欢迎页</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="table-content">
+                <div class="table-btn-group">
+                    <div class="table-row">
+                        <div class="col-8-16">
+                            <a href="javascript:;" class="btn yellowBtn">行政班</a>
+                            <a href="javascript:;" class="btn grayBtn">兴趣班</a>
+                        </div>
+                        <div class="col-8-16 t_r">
+                            <a href="javascript:;" class="icon-addItem btn pinkBtn addPlan">&nbsp;新增</a>
+                            <a href="javascript:;" class="icon-batchUpdate btn yellowBtn batchUpdate-btn">&nbsp;批量操作</a>
+                            <div class="batch-box">
+                                <a href="javascript:;" data-select=false class="btn blueBtn icon-allSelect allSelect">
+                                    &nbsp;全选</a>
+                                <a href="javascript:;" class="btn blueBtn icon-output output">&nbsp;导出</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-box excel-table">
+                    <div class="table-row f16">
+                        <div class="col-3-32">学年</div>
+                        <div class="col-2-32">年级</div>
+                        <div class="col-2-32">学期</div>
+                        <div class="col-4-32">教学计划</div>
+                        <div class="col-3-32">编辑人</div>
+                        <div class="col-4-32">单元计划</div>
+                        <div class="col-4-32">编辑人</div>
+                        <div class="col-4-32">计划进度(备课)</div>
+                        <div class="col-6-32 t_c">选项</div>
+                    </div>
+                    <!-- 一行数据 -->
+                    <div class="table-row back_white table-item txt_b">
+                        <div class="col-3-32">2016&nbsp;-&nbsp;2017</div>
+                        <div class="col-2-32">三年级</div>
+                        <div class="col-2-32">上学期</div>
+                        <div class="col-4-32"><a>已选12课时</a></div>
+                        <div class="col-3-32">赵某某</div>
+                        <div class="col-4-32"><a>已选：00/12</a></div>
+                        <div class="col-4-32">赵某某</div>
+                        <div class="col-4-32"><a style="color:black !important">已备课</a></div>
+                        <div class="col-6-32">
+                            <a href="javascript:;" class="look">查看&nbsp;&nbsp;</a>
+                            <a href="javascript:;" class="edit">编辑&nbsp;&nbsp;</a>
+                            <a href="javascript:;" class="delete">删除&nbsp;&nbsp;</a>
+                            <a href="javascript:;">导出</a>
+                        </div>
+                        <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label>
+                    </div>
+                    <!-- 一行数据 -->
+                    <div class="table-row back_white table-item txt_b">
+                        <div class="col-3-32">2016&nbsp;-&nbsp;2017</div>
+                        <div class="col-2-32">三年级</div>
+                        <div class="col-2-32">上学期</div>
+                        <div class="col-4-32"><a>已选12课时</a></div>
+                        <div class="col-3-32">赵某某</div>
+                        <div class="col-4-32"><a>已选：12/12</a></div>
+                        <div class="col-4-32">赵某某</div>
+                        <div class="col-4-32"><a>一键备课</a></div>
+                        <div class="col-6-32">
+                            <a href="javascript:;" class="look">查看&nbsp;&nbsp;</a>
+                            <a href="javascript:;" class="edit">编辑&nbsp;&nbsp;</a>
+                            <a href="javascript:;" class="delete">删除&nbsp;&nbsp;</a>
+                            <a href="javascript:;">导出</a>
+                        </div>
+                        <label class="checkBox-label batchSelect animated">
+                            <input type="checkbox" name="selectItem" value="1">
+                            <span class="checkSpan back_white"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 引导页 教学计划使用说明-->
+<!-- <div class="guide-page">
+    <div class="guide-content">
+        <div class="guide-close" flex="cross:center main:center">
+            <i class="icon-voliError"></i>
+        </div>
+        <div class="articlevideo">
+                <div class="on g">教学计划使用说明</div>
+                <div class="on">教师制定教学计划，安排本学期课时，即本学期需要授课的课时数量，如本学期上基本运动、田径、球类，及每个授课项目的课时安排。</div>
+                <div class="on">1.登录动跃体育教学管理平台后，进入平台操作界面。</div>
+                <div class="on">2.点击进入教学管理 > 点击教学计划，如下图:</div>
+                <img src="../images/helphome/lazy.png" data-src="../images/helphome/jiaoxueguanli2.png">
+                <div class="on">3.进入教学计划列表页面后，点击新增按钮，按要求选择后，点击确定保存，如下图:</div>
+                <div class="on">>选择学年：选择需要进行教学的学年。</div>
+                <div class="on">>选择年级：选择需要授课的年级，多个年级需要一个一个添加。</div>
+                <div class="on">>选择学期：根据正在上课的日期，选择相对应的学期。</div>
+                <img src="../images/helphome/lazy.png" data-src="../images/helphome/jiaoxueguanli3.png">
+                <div class="on">4.按照步骤依次填写内容</div>
+                <div class="on">步骤1: 填写本学期总课时。</div>
+                <img src="../images/helphome/lazy.png" data-src="../images/helphome/jiaoxueguanli4.png">
+                <div class="on">步骤2: 选择教材内容</div>
+                <div class="on">>教师根据自己授课需要选择本学期授课内容。</div>
+                <img src="../images/helphome/lazy.png" data-src="../images/helphome/jiaoxueguanli5.png">
+                <div class="on">>点击大类后，弹出窗口，显示该分类类别中含有多少个课次，教师输入自己本学期该类别下需要教授多少课时后，即可选择相对应的分类下的课次内容。</div>
+                <img src="../images/helphome/lazy.png" data-src="../images/helphome/jiaoxueguanli6.png">
+                <div class="on">>本学期总课时 , 必须排满 , 才可以提交信息和预览教材内容，所有课时选择完成后，点击确定，进入下一步骤。</div>
+                <img src="../images/helphome/lazy.png" data-src="../images/helphome/jiaoxueguanli7.png">
+                <div class="on">步骤三：保存完成教学计划课时信息。</div>
+                <img src="../images/helphome/lazy.png" data-src="../images/helphome/jiaoxueguanli8.png">
+                <div class="on">5. 教学计划完成后，需要发布出去才能使用，未发布状态不能使用，点击右边按钮弹出窗口后，点击发布，点击确认后即发布成功。</div>
+                <img src="../images/helphome/lazy.png" data-src="../images/helphome/jiaoxueguanli9.png">
+        </div>
+    </div>
+</div> -->
+<script src="../plugins/alert.js"></script>
+<script src="../plugins/datepicker.js"></script>
+<script src="../js/each/tablePageCommon.js"></script>
+<script src="../js/each/teachPlan.js"></script>
+</body>
+</html>

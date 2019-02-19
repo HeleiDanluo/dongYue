@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <title>动跃科技</title>
+    <meta id="viewport" name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/resize.js"></script>
+    <link rel="stylesheet" href="../css/appMain.css">
+    <link rel="stylesheet" href="../css/flex.css">
+    <link rel="stylesheet" href="../css/icon.css">
+    <script src="../plugins/echart.js"></script>
+</head>
+<body ontouchstart="">
+<div class="pageContent back-gray" flex="dir:top">
+    <div class="header-nav-bar back-white" flex-box="0" flex="dir:left box:justify">
+        <a class="left-keys bacckBtn txt-theme" href="../login/login.html" flex="main:center cross:center">
+            <i class="icon-leftArrow"></i>
+        </a>
+        <div class="title-div f10" flex="main:center cross:center">教案</div>
+        <a class="right-keys" flex="main:center cross:center"></a>
+    </div>
+    <div class="page-section" flex-box="1">
+        <p class="teach-page-title txt-theme">
+            心率曲线图
+        </p>
+        <div class="echart-box">
+            <div id="echart-box" style="height:13rem"></div>
+        </div>
+        <div class="sportType-introl">
+            <ul class="introl-list">
+                <li class="introl-item">
+                    <span>强度值：</span>高
+                </li>
+                <li class="introl-item">
+                    <span>练习密度：</span>55%
+                </li>
+                <li class="introl-item">
+                    <span>平均心率：</span>110~125次/分钟
+                </li>
+                <li class="introl-item">
+                    <span>注意事项：</span>肌肉拉伤，扭伤
+                </li>
+                <li class="introl-item">
+                    <span>预防措施：</span>规范动作，低强度，高频率
+                </li>
+            </ul>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+    <div class="footer-page back-white" flex-box="0">
+        <div class="footer-page-btn" flex="dir:left box:mean">
+            <div>
+                <a href="javascript:void(0)" class="t_c page-btn">
+                    <i class="icon-leftArrow1"></i>
+                </a>
+            </div>
+            <div class="t_c">
+                <em class="page-num">
+                    <span class="now">1</span><span class="total f8">/6</span>
+                </em>
+            </div>
+            <div>
+                <a href="detailTeachPlan.html" class="t_c page-btn">
+                    <i class="icon-rightArrow1"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../js/each/chartPage.js"></script>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta HTTP-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/icon.css">
+    <link rel="stylesheet" href="../plugins/animate.min.css">
+    <link rel="stylesheet" href="../css/scroll.css">
+    <link rel="stylesheet" href="../plugins/datepicker.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../plugins/mousewheel.js"></script>
+    <script src="../plugins/jquery.slimscroll.js"></script>
+    <script src="../plugins/echart.js"></script>
+    <script src="../js/pageInit.js"></script>
+    <script src="../js/main.js"></script>
+    <title>数据报表</title>
+</head>
+<body>
+<div class="pageContent">
+    <div class="left-menu">
+        <a class="logo-box">
+        <span class="logo-img">
+        </span>
+        </a>
+        <ul class="menu-list f16">
+            <li class=""><a href="" class=""><i class="icon-home">&nbsp;</i>主页</a></li>
+            <li class="current"><a href="" class=""><i class="icon-group">&nbsp;</i>教研群组</a></li>
+            <li class=""><a href="" class=""><i class="icon-teachManage">&nbsp;</i>教学管理</a></li>
+            <li class=""><a href="" class=""><i class="icon-import">&nbsp;</i>数据录入</a></li>
+            <li class=""><a href="" class=""><i class="icon-homeWork">&nbsp;</i>家庭作业</a></li>
+        </ul>
+        <ul class="bottom-menu menu-list f16">
+            <li class=""><a href="" class=""><i class="icon-add">&nbsp;</i>收藏</a></li>
+            <li class=""><a href="" class=""><i class="icon-setting">&nbsp;</i>设置</a></li>
+            <li class=""><a href="" class=""><i class="icon-back">&nbsp;</i>返回启动页</a></li>
+        </ul>
+    </div>
+    <div class="rightPage">
+        <div class="right-section clearfix">
+            <div class="top-option clearfix mt10">
+                <div class="col-16-16 no-padding">
+                    <div class="f_r">
+                        <a href="javascript:void(0)" class="blueBtn btn">返回</a>
+                    </div>
+                </div>
+            </div>
+            <div class="ktbg-content mt20 clearfix">
+                <div class="title">
+                    <span class="mr20">开始时间：2017-40-23 09:40</span>
+                    <span class="mr20">大课间时长：30分钟</span>
+                    <span class="mr20">数据采集人数：47</span>
+                </div>
+                <!-- 左边 -->
+                <div class="left clearfix left-new">
+                    <div class="list-content clearfix">
+                        <div class="list-left new">
+                            <div class="oneline">
+                                <div><h3>总体情况</h3></div>
+                                <div></div>
+                            </div>
+                            <div class="oneline">
+                                <div>运动强度</div>
+                                <div>70</div>
+                            </div>
+                            <div class="oneline">
+                                <div>运动密度</div>
+                                <div>65</div>
+                            </div>
+                            <div class="oneline">
+                                <div>平均心率</div>
+                                <div>90</div>
+                            </div>
+                            <div class="oneline">
+                                <div>最高心率</div>
+                                <div>90</div>
+                            </div>
+                            <div class="oneline">
+                                <div>最低心率</div>
+                                <div>90</div>
+                            </div>
+                            <div class="oneline">
+                                <div>平均步数</div>
+                                <div>90</div>
+                            </div>
+                            <div class="oneline">
+                                <div>平均消耗卡路里</div>
+                                <div>90</div>
+                            </div>
+              
+                        </div>
+                        <div class="list-right new">
+                            <div class="new-title">
+                                <h3>学生心率分布</h3>
+                            </div>
+                            <div class="banji-chart" id="banji-chart">
+                                <!-- 饼状图加载位置 -->
+                            </div>
+                            <div class="banjipingjun">
+                                    <div class="oneline">
+                                        <div>心率区间</div>
+                                        <div>人数</div>
+                                    </div>
+                                    <div class="oneline">
+                                        <div> 0~79 </div>
+                                        <div>122</div>
+                                    </div>
+                                    <div class="oneline">
+                                        <div> 80~99 </div>
+                                        <div>122</div>
+                                    </div>
+                                    <div class="oneline">
+                                        <div>100~139</div>
+                                        <div>122</div>
+                                    </div>
+                                    <div class="oneline">
+                                        <div>140~170</div>
+                                        <div>122</div>
+                                    </div>
+                                    <div class="oneline">
+                                        <div>>170</div>
+                                        <div>122</div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <!-- 心率图 -->
+                    <div class="mt20" style="margin-left:4%"><h3>学生心率曲线</h3></div>
+                    <div class="line-chart" id="xinlv-chart-simple">
+                    </div>
+                </div>
+
+                <div class="tab-dkj clearfix">
+                    <div class="to-left clearfix"><i class="icon-toLeft"></i></div>
+                    <div class="center clearfix">
+                        <div class="content">
+                            <div class="item">一年级(1)班</div>
+                            <div class="item">一年级(1)班</div>
+                            <div class="item">一年级(1)班</div>
+                            <div class="item">一年级(1)班</div>
+                            <div class="item">一年级(1)班</div>
+                            <div class="item">一年级(1)班</div>
+                            <div class="item">一年级(1)班</div>
+                            <div class="item active">一年级(1)班</div>
+                            <div class="item">一年级(1)班</div>
+                            <div class="item">一年级(1)班</div>
+                            <div class="item">一年级(1)班</div>
+                            <div class="item">一年级(1)班</div>
+                            <div class="item">一年级(1)班</div>
+                            <div class="item">一年级(1)班</div>
+                            <div class="item">一年级(1)班</div>
+                            <div class="item">一年级(1)班</div>
+                        </div>
+                    </div>
+                    <div class="to-right clearfix"><i class="icon-toRight"></i></div>
+                </div>
+                <div class="left clearfix">
+                    <div class="stu-list">
+                        <div class="list-box mytitle clearfix ">
+                            <div class="list">姓名/性别</div>
+                            <div class="list">步数</div>
+                            <div class="list">卡路里cal</div>
+                            <div class="list">最高心率bpm</div>
+                            <div class="list">平均心率bpm</div>
+                            <div class="list">最低心率bpm</div>
+                        </div>
+                        <div class="list-box my-line clearfix active">
+                            <div class="list">
+                                张明佳
+                                <i class="icon-girl"></i>
+                            </div>
+                            <div class="list">2888</div>
+                            <div class="list">9000</div>
+                            <div class="list">754</div>
+                            <div class="list">88</div>
+                            <div class="list">
+                                50
+                                <i class="icon-down1"></i>
+                            </div>
+                            <div class="adline-chart">
+                            </div>
+                        </div>
+                        <div class="list-box my-line clearfix">
+                            <div class="list">
+                                张明佳
+                                <i class="icon-girl"></i>
+                            </div>
+                            <div class="list">2888</div>
+                            <div class="list">9000</div>
+                            <div class="list">754</div>
+                            <div class="list">88</div>
+                            <div class="list">
+                                50
+                                <i class="icon-down1"></i>
+                            </div>
+                            <div class="adline-chart">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="xlycxs">
+                        <div class="title">
+                            心率异常学生
+                        </div>
+                        <div class="sdfsd-list">
+                            <div class="item">
+                                张铭嘉
+                                <i class="sex icon-boy"></i>
+                            </div>
+                            <div class="item">10:41~10:43</div>
+                            <div class="item">
+                                <i class="icon-xinlv"></i>
+                                >220bpm
+                            </div>
+                        </div>
+                        <div class="sdfsd-list">
+                            <div class="item">
+                                张铭嘉
+                                <i class="sex icon-boy"></i>
+                            </div>
+                            <div class="item">10:41~10:43</div>
+                            <div class="item">
+                                <i class="icon-xinlv"></i>
+                                >220bpm
+                            </div>
+                        </div>
+                        <div class="sdfsd-list">
+                            <div class="item">
+                                张铭嘉
+                                <i class="sex icon-girl"></i>
+                            </div>
+                            <div class="item">10:41~10:43</div>
+                            <div class="item">
+                                <i class="icon-xinlv"></i>
+                                >220bpm
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xlycxs">
+                        <div class="title new">
+                            设备未使用学生名单（或数据为0）：3人
+                        </div>
+                        <div class="sdfsd-list-new clearfix">
+                            <div class="item">
+                                <h2 class="icon-boy"></h2>
+                                张铭嘉
+                            </div>
+                            <div class="item">
+                                <h2 class="icon-boy"></h2>
+                                张铭嘉
+                            </div>
+                            <div class="item">
+                                <h2 class="icon-boy"></h2>
+                                张铭嘉
+                            </div>
+                            <div class="item">
+                                <h2 class="icon-boy"></h2>
+                                张铭嘉
+                            </div>
+                            <div class="item">
+                                <h2 class="icon-boy"></h2>
+                                张铭嘉
+                            </div>
+                            <div class="item">
+                                <h2 class="icon-boy"></h2>
+                                张铭嘉
+                            </div>
+                            <div class="item">
+                                <h2 class="icon-boy"></h2>
+                                张铭嘉
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../plugins/alert.js"></script>
+<script src="../plugins/pages.js"></script>
+<script src="../js/each/keTangChart.js"></script>
+<script src="../js/each/daKeJian.js"></script>
+</body>
+</html>

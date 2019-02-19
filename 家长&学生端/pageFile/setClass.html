@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <script src="../js/flexible/flexible_css.js"></script>
+    <script src="../js/flexible/flexible.js"></script>
+    <link rel="stylesheet" href="../css/studentMain.css">
+    <link rel="stylesheet" href="../js/mobiscroll2/mobiscroll.custom-2.17.0.min.css">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/mobiscroll2/mobiscroll.custom-2.17.0.min.js"></script>
+    <script src="../js/studentMain.js"></script>
+    <title>选择年级</title>
+</head>
+<body flex="dir:top">
+<header flex-box="0" flex="dir:left" font="16">
+    <a href="javascript:history.go(-1) " flex-box="0">返回</a>
+    <div class="title" flex-box="1"></div>
+    <a href="javascript:void(0)" flex-box="0"></a>
+</header>
+<section flex-box="1" class="loginBack" flex="dir:top">
+    <div class="msg-content" flex-box="1">
+        <div class="user-birthday msg-form-wrapper">
+            <label flex="cross:center" class="login-input" font="16">
+                <span class="input-name width_more" flex-box="0">年级</span>
+                <select id="class-select">
+                    <option value="0">请选择您的年级</option>
+                    <option value="1">一年级</option>
+                    <option value="2">二年级</option>
+                    <option value="3">三年级</option>
+                    <option value="4">四年级</option>
+                    <option value="5">五年级</option>
+                    <option value="6">六年级</option>
+                </select>
+            </label>
+        </div>
+    </div>
+    <div class="msg-confirm" flex-box="0" font="14">
+        <a href="setGender.html" class="btn-full-theme">完成注册</a>
+    </div>
+</section>
+<script src="../js/each/setClass.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<div class="teachPlan-content tianjiafansi-alert height_100">
+    <div class="alert-fansi teachPlan-item back_white height_100" style="padding-top:0px">
+        <h3 class="t_c">添加反思</h3>
+        <input class="title mt10" type="text" maxlength="20" placeholder="添加标题，20个字以内">
+        <textarea resiz class="txtarea" maxlength="1000" name="" id="" cols="30" rows="10" placeholder="写点对教案的反思吧，1000字以内"></textarea>
+        <div class="img-box">
+            <div class="img-content">
+                <div class="clearfix">
+                    <div class="img">
+                        <img width="100%" height="100%" src="../images/404.png" alt="" srcset="">
+                        <div class="del">
+                            <i class="icon-guanbi"></i>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img width="100%" height="100%" src="../images/404.png" alt="" srcset="">
+                        <div class="del">
+                            <i class="icon-guanbi"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="img add">
+                <input class="upimg" type="file" accept="image/*" multiple onchange="changImg(event)">
+                <i class=" icon-addItem"></i>
+            </div>
+        </div>
+        <div class="radio-box">
+            <input type="radio" name="myRadio">公开
+            <input type="radio" name="myRadio">私密
+        </div>
+        <div class="two-btn">
+            <span class="btn btn-green">保存</span>
+            <span class="btn btn-gray my-close">取消</span>
+        </div>
+    </div>
+</div>
+<script>
+    // 添加反思字数限制
+    $(document).on('input propertychange','.txtarea',function(){
+        var txtLen = $(this).val().length;
+        if(txtLen <= 1000){
+            $('.txt-num').remove();
+            $('.img-box').append('<span style="position:absolute;right:10px;bottom:10px" class="txt-num">' + txtLen +'/1000<span>');
+        };
+    });
+</script>

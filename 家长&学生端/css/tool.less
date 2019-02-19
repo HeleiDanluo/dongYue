@@ -1,0 +1,274 @@
+/* 清除浮动 */
+.clearfix {
+    *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+.clearfix:after {
+    clear: both;
+}
+
+
+/* 颜色 */
+@yellow:#FCBC62;
+@red: #ed1d1d;
+@white: #fff;
+@themeColor:#82b64a;
+@lighterWhite: #c0c7dd;
+@blue: #15244f;
+@gold: #dbb47b;
+@lighterGold: #e9d2b0;
+@lightestGold: #fdf3e4;
+@dark: #222;
+@lighterDark: #333;
+@grey: #666;
+@lighterGrey: #999;
+@lightestGrey: #ccc;
+@line: #eee;
+@opt: #ddd;
+@tip: #35caef;
+
+.not-allowed{
+    cursor: not-allowed !important;
+    background-color: #dedede !important;
+    color:@white !important;
+}
+
+.imgShow{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    background-color:#000;
+    .imgBox{
+        width: 100%;
+        >img{
+            width: 100%;
+        }
+    }
+}
+
+/* 文字尺寸 */
+[font~="10"], h4 {
+    font-size: 10px;
+}
+
+[data-dpr="2"] [font~="10"], [data-dpr="2"] h4 {
+    font-size: 20px;
+}
+
+[data-dpr="3"] [font~="10"], [data-dpr="3"] h4 {
+    font-size: 30px;
+}
+[font~="12"], h4 {
+    font-size: 12px;
+}
+
+[data-dpr="2"] [font~="12"], [data-dpr="2"] h4 {
+    font-size: 24px;
+}
+
+[data-dpr="3"] [font~="12"], [data-dpr="3"] h4 {
+    font-size: 36px;
+}
+
+[font~="14"], h3 {
+    font-size: 14px;
+}
+
+[data-dpr="2"] [font~="14"], [data-dpr="2"] h3  {
+    font-size: 28px;
+}
+
+[data-dpr="3"] [font~="14"], [data-dpr="3"] h3 {
+    font-size: 42px;
+}
+
+[font~="16"], h2 {
+    font-size: 16px;
+}
+
+[data-dpr="2"] [font~="16"], [data-dpr="2"] h2 {
+    font-size: 32px;
+}
+
+[data-dpr="3"] [font~="16"], [data-dpr="3"] h2  {
+    font-size: 48px;
+}
+
+[font~="18"], h1 {
+    font-size: 18px;
+}
+
+[data-dpr="2"] [font~="18"], [data-dpr="2"] h1 {
+    font-size: 36px;
+}
+
+[data-dpr="3"] [font~="18"], [data-dpr="3"] h1 {
+    font-size: 54px;
+}
+
+[font~="20"] {
+    font-size: 20px;
+}
+
+[data-dpr="2"] [font~="20"], [data-dpr="2"] {
+    font-size: 40px;
+}
+
+[data-dpr="3"] [font~="20"], [data-dpr="3"] {
+    font-size: 60px;
+}
+
+[font~="24"] {
+    font-size: 24px;
+}
+
+[data-dpr="2"] [font~="24"], [data-dpr="2"] {
+    font-size: 48px;
+}
+
+[data-dpr="3"] [font~="24"], [data-dpr="3"] {
+    font-size: 72px;
+}
+
+[font~="32"] {
+    font-size: 32px;
+}
+
+[data-dpr="2"] [font~="32"], [data-dpr="2"] {
+    font-size: 64px;
+}
+
+[data-dpr="3"] [font~="32"], [data-dpr="3"] {
+    font-size: 96px;
+}
+
+[font~="icon"] {
+    display: block;
+    font-size: 20px;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+}
+
+[data-dpr="2"] [font~="icon"] {
+    font-size: 40px;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+}
+
+[data-dpr="3"] [font~="icon"] {
+    font-size: 60px;
+    width: 72px;
+    height: 72px;
+    line-height: 72px;
+}
+
+/* 过度 */
+.transition(@type: all,@time:0.4s) {
+    -webkit-transition: @type @time ease 0s;
+    -moz-transition: @type @time ease 0s;
+    -ms-transition: @type @time ease 0s;
+    -o-transition: @type @time ease 0s;
+    transition: @type @time ease 0s;
+}
+
+/* 圆角 */
+.border-radius(@tl: 0.067rem, @tr: 0.067rem, @bl: 0.067rem, @br: 0.067rem) {
+    //上左
+    border-top-left-radius: @tl;
+    -webkit-border-top-left-radius: @tl;
+    -moz-border-radius-topleft: @tl;
+    //上右
+    border-top-right-radius: @tr;
+    -webkit-border-top-right-radius: @tr;
+    -moz-border-radius-topright: @tr;
+    //下左
+    border-bottom-left-radius: @bl;
+    -webkit-border-bottom-left-radius: @bl;
+    -moz-border-radius-bottomleft: @bl;
+    //下右
+    border-bottom-right-radius: @br;
+    -webkit-border-bottom-right-radius: @br;
+    -moz-border-radius-bottomright: @br;
+}
+
+/* 3D变换 */
+.translate3d(@x: 0, @y: 0, @z: 0) {
+    -webkit-transform: translate3d(@x,@y,@z);
+    -moz-transform: translate3d(@x,@y,@z);
+    -ms-transform: translate3d(@x,@y,@z);
+    -o-transform: translate3d(@x,@y,@z);
+    transform: translate3d(@x,@y,@z);
+}
+
+
+.calcLengthWidth(@number){
+    width:@number/75rem;
+}
+.calcLengthHeight(@number){
+    height:@number/75rem;
+}
+/* 按钮 */
+.btn-line {
+    .border-radius();
+    border-width: 2px 2px 2px 2px;
+    border-style: solid;
+    padding: 0 0.267rem;
+}
+
+[data-dpr="2"] .btn-line {
+    border-width: 4px 4px 4px 4px;
+}
+
+[data-dpr="3"] .btn-line {
+    border-width: 6px 6px 6px 6px;
+}
+
+.btn-default {
+    color: @grey;
+    border-color: @lightestGrey;
+}
+
+.btn-theme{
+    color: @themeColor;
+    border-color: @themeColor;
+}
+
+.btn-full-theme{
+    color: @white;
+    border-color: @themeColor;
+    background-color: @themeColor;
+}
+
+.btn {
+    .border-radius();
+    padding: 0 0.267rem;
+    border-width: 2px 2px 2px 2px;
+    border-style: solid;
+}
+
+.btn-square {
+    height: 100%;
+}
+
+.btn-square-theme {
+    color: @white;
+    background-color: @themeColor;
+    text-align: center;
+}
+
+.btn-square-lighterTheme {
+    color: @white;
+    background-color: @themeColor;
+    text-align: center;
+}

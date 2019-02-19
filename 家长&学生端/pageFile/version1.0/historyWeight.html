@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="../../js/flexible/flexible_css.js"></script>
+    <script src="../../js/flexible/flexible.js"></script>
+    <link rel="stylesheet" href="../../css/studentMain.css">
+    <script src="../../js/jquery.js"></script>
+    <title>动跃科技</title>
+</head>
+<body flex="dir:top">
+<header flex-box="0" flex="dir:left" font="16">
+    <a href="javascript:history.go(-1) " flex-box="0">返回</a>
+    <div class="title" flex-box="1">学校成绩</div>
+    <a href="javascript:void(0)" flex-box="0"></a>
+</header>
+<section flex-box="1" flex="dir:top">
+    <div class="weightIndex" flex="cross:center" font="14" flex-box="0">
+        <div>
+            50米跑
+            <span class="txt-green">
+                &emsp;
+                <span font="18">9.5</span>
+                秒（优秀）
+            </span>
+        </div>
+    </div>
+    <div class="indexBox can-scroll" flex-box="1">
+        <div class="boxChunk" style="height:auto" flex="dir:top">
+            <!-- <div class="information" flex="cross:center" font="16">
+                <div class="grade" flex-box="0">三年级</div>
+                <div class="point" flex-box="1">
+                    <span class="point-number" font="18">22</span>
+                    <span class="point-level" font="12">(超重:85分)</span>
+                </div>
+            </div> -->
+            <br>
+            <div class="relativeBox">
+                <div class="chartBox" flex="dir:top">
+                    <ul class="level" flex="dir:left box:mean">
+                       <li flex="main:center">低体重</li>
+                       <li flex="main:center">正常</li>
+                       <li flex="main:center">超重</li>
+                       <li flex="main:center">肥胖</li>
+                    </ul>
+                    <ul class="color" flex="dir:left box:mean" font="16">
+                        <li class="color_1 focus">
+                            <span class="category_1" font="12">18.5</span>
+                        </li>
+                        <li class="color_2">
+                            <span class="category_2" font="12">24</span>
+                        </li>
+                        <li class="color_3">
+                            <span class="category_3" font="12">28</span>
+                        </li>
+                        <li class="color_4"></li>
+                    </ul>
+                </div>
+
+                <br>
+                <h4 class="mt20">
+                    BMI的说明文字，文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字
+                </h4>
+
+                <div id="history-chart">
+
+                </div>
+            </div>
+        </div>
+        <!-- <div class="boxChunk" flex="dir:top">
+            <div class="information" flex="cross:center" font="16">
+                <div class="grade" flex-box="0">三年级</div>
+                <div class="point" flex-box="1">
+                    <span class="point-number" font="18">22</span>
+                    <span class="point-level" font="12">(超重:85分)</span>
+                </div>
+            </div>
+            <div class="relativeBox">
+                <div class="chartBox" flex="dir:top">
+                    <ul class="level" flex="dir:left box:mean">
+                        <li flex="main:center">低体重</li>
+                        <li flex="main:center">正常</li>
+                        <li flex="main:center">超重</li>
+                        <li flex="main:center">肥胖</li>
+                    </ul>
+                    <ul class="color" flex="dir:left box:mean" font="16">
+                        <li class="color_1 focus">
+                            <span class="category_1" font="12">18.5</span>
+                        </li>
+                        <li class="color_2">
+                            <span class="category_2" font="12">24</span>
+                        </li>
+                        <li class="color_3">
+                            <span class="category_3" font="12">28</span>
+                        </li>
+                        <li class="color_4"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="boxChunk" flex="dir:top">
+            <div class="information" flex="cross:center" font="16">
+                <div class="grade" flex-box="0">三年级</div>
+                <div class="point" flex-box="1">
+                    <span class="point-number" font="18">22</span>
+                    <span class="point-level" font="12">(超重:85分)</span>
+                </div>
+            </div>
+            <div class="relativeBox">
+                <div class="chartBox" flex="dir:top">
+                    <ul class="level" flex="dir:left box:mean">
+                        <li flex="main:center">低体重</li>
+                        <li flex="main:center">正常</li>
+                        <li flex="main:center">超重</li>
+                        <li flex="main:center">肥胖</li>
+                    </ul>
+                    <ul class="color" flex="dir:left box:mean" font="16">
+                        <li class="color_1 focus">
+                            <span class="category_1" font="12">18.5</span>
+                        </li>
+                        <li class="color_2">
+                            <span class="category_2" font="12">24</span>
+                        </li>
+                        <li class="color_3">
+                            <span class="category_3" font="12">28</span>
+                        </li>
+                        <li class="color_4"></li>
+                    </ul>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</section>
+<footer flex-box="0" flex="dir:left box:mean">
+    <a class="focus" href="" flex="main:center dir:top">
+        <i class="icon-home" font="24"></i>
+        <span>首页</span>
+    </a>
+    <a href="" flex="main:center dir:top">
+        <i class="icon-xsq" font="24"></i>
+        <span>学生圈</span>
+    </a>
+    <a href="" flex="main:center dir:top">
+        <i class="icon-gerzhongxin" font="24"></i>
+        <span>我的</span>
+    </a>
+</footer>
+<script src="../../js/studentMain.js"></script>
+<script src="../../js/echart/echart.js"></script>
+<script>
+    var myChart = echarts.init(document.getElementById('history-chart'));
+    var qujian = [65, 75, 85]; // 数据区间分界线，计算数据柱状图颜色
+    var colorList = new Array(); 
+
+    option = {
+        tooltip: {
+            trigger: 'axis',
+        },
+        xAxis: {
+            type: 'category',
+            data: ['一年级', '二年级', '三年级', '四年级', '五年级', '六年级']
+        },
+        yAxis: {
+            type: 'value'
+        },
+        series: [{
+            data: [60, 70, 80, 90, 100, 100],
+            name:'50米',
+            barWidth: '50%',
+            type: 'bar',
+            itemStyle: {
+                normal:{
+                    color: function(params) {
+                        // '#AEDB7C','#82b64a','#78C79A','#FAD54A' 区间颜色值
+                        if(params.data < qujian[0]) {
+                            colorList.push('#AEDB7C');
+                        }else if(params.data < qujian[1]) {
+                            colorList.push('#82b64a');
+                        }else if(params.data < qujian[2]) {
+                            colorList.push('#78C79A');
+                        }else{
+                            colorList.push('#FAD54A');
+                        }
+                        return colorList[params.dataIndex] 
+                    }
+                }
+            }
+        }]
+    };
+    myChart.setOption(option);
+</script>
+</body>
+</html>
