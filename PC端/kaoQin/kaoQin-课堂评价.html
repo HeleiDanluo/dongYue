@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta HTTP-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/icon.css">
+    <link rel="stylesheet" href="../plugins/animate.min.css">
+    <link rel="stylesheet" href="../css/scroll.css">
+    
+    <!-- 图片放大插件 -->
+    <link rel="stylesheet" href="../plugins/viewer/viewer.min.css">
+    
+    <script src="../js/jquery.min.js"></script>
+    <script src="../plugins/mousewheel.js"></script>
+    <script src="../plugins/jquery.slimscroll.js"></script>
+    <script src="../js/pageInit.js"></script>
+    <script src="../js/main.js"></script>
+    <title>教学管理</title>
+    <script>
+    </script>
+</head>
+<body>
+<div class="pageContent">
+    <div class="left-menu">
+        <a class="logo-box">
+        <span class="logo-img">
+        </span>
+        </a>
+        <ul class="menu-list f16">
+            <li class="current"><a href="" class=""><i class="icon-home">&nbsp;</i>主页</a></li>
+            <li class=""><a href="" class=""><i class="icon-group">&nbsp;</i>教研群组</a></li>
+            <li class=""><a href="" class=""><i class="icon-teachManage">&nbsp;</i>教学管理</a></li>
+            <li class=""><a href="" class=""><i class="icon-import">&nbsp;</i>数据录入</a></li>
+            <li class=""><a href="" class=""><i class="icon-homeWork">&nbsp;</i>家庭作业</a></li>
+        </ul>
+        <ul class="bottom-menu menu-list f16">
+            <li class=""><a href="" class=""><i class="icon-add">&nbsp;</i>收藏</a></li>
+            <li class=""><a href="" class=""><i class="icon-setting">&nbsp;</i>设置</a></li>
+            <li class=""><a href="" class=""><i class="icon-back">&nbsp;</i>返回启动页</a></li>
+        </ul>
+    </div>
+    <div class="rightPage">
+        <div class="page-head">
+            <div class="bread-nav-box txt_w">
+                <a href="javascript:;"><b>选择工作内容</b></a> >
+                <a href="javascript:;"><b>计划进度</b></a>
+            </div>
+            <div class="head-menu">
+                <ul class="head-menu-ul f16">
+                    <!-- <li class="head-menu-item"><a href="javascript:;" class="txt_w">退出</a></li> -->
+                    <li class="head-menu-item" id="dropDown-menu-head"><a href="javascript:;" class="txt_w">账户信息<i class="icon-hehe"></i></a>
+                        <div class="dropdown-content active-drop">
+                            <ul>
+                                <li id="cg-pass">修改密码</li>
+                                <li><a href="#">退出登录</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="head-menu-item"><a href="javascript:;" class="txt_w">欢迎页</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-section kaoqin">
+            <!-- 标题 -->
+            <div class="title f_l clearfix">
+                <!-- 一级标题 -->
+                <div class="title-first">
+                    <span><a>班级考勤统计</a></span>
+                    <span><a>月度考勤统计</a></span>
+                    <span><a>学生出勤明细</a></span>
+                    <span class=""><a>过往考勤</a></span>
+                    <span class="active"><a>课堂评价</a></span>
+                </div>
+            </div>
+            <div class="table-content">
+                    <div class="table-btn-group">
+                        <div class="table-row">
+                            <div class="col-16-16">
+                                <a href="">
+                                   <b>一年级（1）班</b> &nbsp;&nbsp;
+                                </a>
+                                <a href="">
+                                   一年级（2）班 &nbsp;&nbsp;
+                                </a>
+                                <a href="">
+                                   一年级（3）班&nbsp;&nbsp;
+                                </a>
+                                <a href="">
+                                   一年级（4）班&nbsp;&nbsp;
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-16-16 txt-fr">
+                        <div class="table-box excel-table">
+                            <div class="table-row f16">
+                                <div class="col-8-32">学号排序</div>
+                                <div class="col-4-32">姓名</div>
+                                <div class="col-7-32">优秀（8）</div>
+                                <div class="col-7-32">一般（16）</div>
+                                <div class="col-6-32">待改进（24）</div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    
+                    <!-- 列表 -->
+                    <div class="col-16-16 txt-fr showpj-dialog" style="height: 50px">
+                        <div class="table-box excel-table">
+                            <div class="table-row back_white table-item txt_b">
+                                <div class="col-8-32">123412341</div>
+                                <div class="col-4-32">王晓义</div>
+                                <div class="col-7-32">优秀（8）</div>
+                                <div class="col-7-32">一般（16）</div>
+                                <div class="col-6-32">待改进（24）</div>
+                            </div>	
+                        </div>
+                    </div>
+                    <div class="col-16-16 txt-fr showpj-dialog" style="height: 50px">
+                        <div class="table-box excel-table">
+                            <div class="table-row back_white table-item txt_b">
+                                <div class="col-8-32">123412341</div>
+                                <div class="col-4-32">王晓义</div>
+                                <div class="col-7-32">优秀（8）</div>
+                                <div class="col-7-32">一般（16）</div>
+                                <div class="col-6-32">待改进（24）</div>
+                            </div>	
+                        </div>
+                    </div>
+                    <div class="col-16-16 txt-fr showpj-dialog" style="height: 50px">
+                        <div class="table-box excel-table">
+                            <div class="table-row back_white table-item txt_b">
+                                <div class="col-8-32">123412341</div>
+                                <div class="col-4-32">王晓义</div>
+                                <div class="col-7-32">优秀（8）</div>
+                                <div class="col-7-32">一般（16）</div>
+                                <div class="col-6-32">待改进（24）</div>
+                            </div>	
+                        </div>
+                    </div>
+                    
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../plugins/alert.js"></script>
+
+<!-- 图片放大插件 -->
+<script src="../plugins/viewer/viewer.min.js"></script>
+
+<script>
+
+    // 弹窗
+    $('body').on('click', '.showpj-dialog', function() {
+        Alert.bigWindow({
+            callBack: function(){
+                // 点击弹出图片
+                $('.viewer').viewer({
+                    zIndex: '1000000000000000',
+                    movable: false,  // 拖动
+                });
+            },
+            data:`
+            <div class="t_c" style="padding:20px">
+                <div class="clearfix" style="height: 50px">
+                    <div class="col-4-32">日期</div>
+                    <div class="col-4-32">评价</div>
+                    <div class="col-13-32">评价内容</div>
+                    <div class="col-11-32">附件图片</div>
+                </div>
+
+                <div class="clearfix mt5">
+                    <div class="col-4-32">2018-12-12</div>
+                    <div class="col-4-32">优秀</div>
+                    <div class="col-13-32 t_l">这里是评价内容这里是评价内容这里是评价内容这里是评价内容这里是评价内容这里是评价内容这里是评价内容这里是评价内容这里是评价内容这里是评价内容这里是评价内容这里是评价内容这里是评价内容这里是评价内容这里是评价内容这里是评价内容这里是评价内容这里是评价内容</div>
+                    <div class="col-11-32">
+                        <ul class="viewer">
+                            <li><img class="alert-img-big" width="40px" height="40px" src="../images/startBackImg.jpg" alt="" srcset=""></li>
+                            <li><img class="alert-img-big" width="40px" height="40px" src="../images/startBackImg.jpg" alt="" srcset=""></li>
+                            <li><img class="alert-img-big" width="40px" height="40px" src="../images/startBackImg.jpg" alt="" srcset=""></li>
+                            <li><img class="alert-img-big" width="40px" height="40px" src="../images/startBackImg.jpg" alt="" srcset=""></li>
+                            <li><img class="alert-img-big" width="40px" height="40px" src="../images/startBackImg.jpg" alt="" srcset=""></li>
+                        </ul>
+                    </div>
+                </div>	
+
+                <div class="clearfix mt5">
+                    <div class="col-4-32">2018-12-12</div>
+                    <div class="col-4-32">优秀</div>
+                    <div class="col-13-32 t_l">恶趣味二群翁人情味儿洒水多</div>
+                    <div class="col-11-32">
+                        <ul class="viewer">
+                            <li><img class="alert-img-big" width="40px" height="40px" src="../images/sportVideo.png" alt="" srcset=""></li>
+                            <li><img class="alert-img-big" width="40px" height="40px" src="../images/sportVideo.png" alt="" srcset=""></li>
+                            <li><img class="alert-img-big" width="40px" height="40px" src="../images/sportVideo.png" alt="" srcset=""></li>
+                            <li><img class="alert-img-big" width="40px" height="40px" src="../images/sportVideo.png" alt="" srcset=""></li>
+                            <li><img class="alert-img-big" width="40px" height="40px" src="../images/sportVideo.png" alt="" srcset=""></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="clearfix mt5">
+                    <div class="col-4-32">2018-12-12</div>
+                    <div class="col-4-32">优秀</div>
+                    <div class="col-13-32 t_l">恶趣味二群翁人情味儿洒水多</div>
+                    <div class="col-11-32">
+                        <ul class="viewer">
+                            <li><img class="alert-img-big" width="40px" height="40px" src="../images/startBackImg.jpg" alt="" srcset=""></li>
+                            <li><img class="alert-img-big" width="40px" height="40px" src="../images/startBackImg.jpg" alt="" srcset=""></li>
+                            <li><img class="alert-img-big" width="40px" height="40px" src="../images/startBackImg.jpg" alt="" srcset=""></li>
+                            <li><img class="alert-img-big" width="40px" height="40px" src="../images/startBackImg.jpg" alt="" srcset=""></li>
+                            <li><img class="alert-img-big" width="40px" height="40px" src="../images/startBackImg.jpg" alt="" srcset=""></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>	
+            `
+        });
+    })
+
+</script>
+</body>
+</html>

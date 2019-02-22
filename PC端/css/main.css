@@ -954,6 +954,86 @@ img {
 .toolTips .tooltip-content {
   padding: 10px;
 }
+.form-control {
+  display: block;
+  height: 37px;
+  border: 1px solid #b4b4b4;
+  position: relative;
+}
+.form-control input {
+  border: none;
+  width: 100%;
+  height: 100%;
+  padding: 9px 5px;
+  float: left;
+}
+.caret {
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  text-align: center;
+  line-height: 34px !important;
+  right: 0;
+  top: 50%;
+  margin-top: -17px;
+}
+.form-control.select input {
+  cursor: pointer;
+}
+.form-control.select ul.select-list {
+  display: none;
+  z-index: 10000000000;
+  position: absolute;
+  top: 36px;
+  width: 100%;
+  border: 1px solid #ddd;
+  line-height: 2.0;
+  max-height: 200px;
+  overflow-y: auto;
+  background: #fff;
+}
+.form-control.select ul.select-list a {
+  padding: 0 10px;
+  display: block;
+  width: 100%;
+}
+.form-control.select ul.select-list a:hover {
+  background: #ffb444;
+  color: #fff;
+}
+.big-form {
+  width: 80%;
+  height: 90%;
+}
+.mid-form {
+  width: 60%;
+  height: 70%;
+}
+.small-form {
+  width: 500px;
+  min-height: 200px;
+}
+.form-line {
+  padding: 10px 0;
+}
+.form-line .title-tip {
+  line-height: 36px;
+}
+.form-line .form-inline {
+  width: 48%;
+  float: left;
+}
+.form-line .toLines {
+  width: 4%;
+  float: left;
+}
+.form-line .toLines > hr {
+  margin: 18px 0;
+  border: none;
+  border-top: 1px solid #969696;
+}
 .model-list {
   padding: 0 5px;
 }
@@ -11112,6 +11192,20 @@ table {
 }
 .my-print-content .print-body td {
   max-width: 50mm;
+}
+.showpj-dialog {
+  cursor: pointer;
+}
+.t_c {
+  text-align: center;
+}
+.viewer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 64px;
+}
+.alert-img-big {
+  cursor: pointer;
 }
 /*
 

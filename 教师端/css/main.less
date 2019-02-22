@@ -1152,6 +1152,70 @@ footer {
       }
     }
   }
+  .ping-jia-box{
+    .stu-name{
+      text-align: center;
+      margin-top: .2rem;
+    }
+    .choose-box{
+      display: flex;
+      justify-content: space-between;
+      .c-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: .2rem;
+        width: 2.2rem;
+        height: .8rem;
+        border: 1px solid #dedede;
+        &.active{
+          background: @green;
+          border: 1px solid @green;
+          color: #fff;
+        }
+        &.c-b-item{
+          border: 1px solid @blue;
+          background: @blue;
+          height: 1rem;
+          width: 4rem;
+          color: #fff;
+          border-radius: .1rem;
+        }
+      }
+    }
+    .ping-jia-box-tarea{
+      margin-top: .3rem;
+      padding: .1rem;
+      width: 100%;
+      height: 3rem;
+      border: 1px solid #dedede;
+    }
+    .pix-box{
+      .img-size{
+        position: relative;
+        float: left;
+        width: 2rem;
+        height: 2rem;
+        margin-right: .2rem;
+        border: 1px solid #dedede;
+        &.add-img{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: rgb(136, 136, 136);
+          i{
+            font-size: .8rem;
+          }
+          .up-img{
+            position: absolute;
+            width: 2rem;
+            height: 2rem;
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
 }
 //学生综合素质详情页
 .fw{

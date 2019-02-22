@@ -4800,6 +4800,66 @@ footer a:active {
 .studentlist-wrapper .student-list > li > a .grade-box .grade-bar.noGrade:before {
   content: "暂无成绩";
 }
+.studentlist-wrapper .ping-jia-box .stu-name {
+  text-align: center;
+  margin-top: .2rem;
+}
+.studentlist-wrapper .ping-jia-box .choose-box {
+  display: flex;
+  justify-content: space-between;
+}
+.studentlist-wrapper .ping-jia-box .choose-box .c-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: .2rem;
+  width: 2.2rem;
+  height: .8rem;
+  border: 1px solid #dedede;
+}
+.studentlist-wrapper .ping-jia-box .choose-box .c-item.active {
+  background: #85B351;
+  border: 1px solid #85B351;
+  color: #fff;
+}
+.studentlist-wrapper .ping-jia-box .choose-box .c-item.c-b-item {
+  border: 1px solid #00b7ff;
+  background: #00b7ff;
+  height: 1rem;
+  width: 4rem;
+  color: #fff;
+  border-radius: .1rem;
+}
+.studentlist-wrapper .ping-jia-box .ping-jia-box-tarea {
+  margin-top: .3rem;
+  padding: .1rem;
+  width: 100%;
+  height: 3rem;
+  border: 1px solid #dedede;
+}
+.studentlist-wrapper .ping-jia-box .pix-box .img-size {
+  position: relative;
+  float: left;
+  width: 2rem;
+  height: 2rem;
+  margin-right: .2rem;
+  border: 1px solid #dedede;
+}
+.studentlist-wrapper .ping-jia-box .pix-box .img-size.add-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #888888;
+}
+.studentlist-wrapper .ping-jia-box .pix-box .img-size.add-img i {
+  font-size: .8rem;
+}
+.studentlist-wrapper .ping-jia-box .pix-box .img-size.add-img .up-img {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  opacity: 0;
+}
 .fw {
   font-weight: bold;
 }
