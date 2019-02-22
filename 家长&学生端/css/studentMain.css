@@ -8743,6 +8743,10 @@ nav > a.focus:after {
   background: #82b64a;
   color: #fff;
 }
+.huo-jiang-ji-lu .pic-content .projects-box .pjc-item.pjc-item:last-child,
+.huo-jiang-ji-lu .pic-content .projects-box .see-more.pjc-item:last-child {
+  margin-right: 1.8rem;
+}
 .huo-jiang-ji-lu .pic-content .projects-box .see-more {
   position: absolute;
   width: 1.7rem;
@@ -8754,10 +8758,50 @@ nav > a.focus:after {
 .huo-jiang-ji-lu .pic-content .pic-box {
   position: relative;
 }
+.huo-jiang-ji-lu .pic-content .pic-box .shanchu-box {
+  position: relative;
+  width: 31%;
+  height: 2rem;
+  margin-right: 2%;
+  float: left;
+}
+.huo-jiang-ji-lu .pic-content .pic-box .shanchu-box .shanchu {
+  margin-top: .2rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: .5rem;
+  height: .5rem;
+  line-height: .5rem;
+  background: rgba(0, 0, 0, 0.233);
+  color: #fff;
+  text-align: center;
+}
+.huo-jiang-ji-lu .pic-content .pic-box .shanchu-box .img-item {
+  float: left;
+  width: 100%;
+  height: 2rem;
+  flex-shrink: 0;
+}
+.huo-jiang-ji-lu .pic-content .pic-box .shanchu-box .img-item:nth-child(3n + 1) {
+  margin-left: 0;
+}
+.huo-jiang-ji-lu .pic-content .pic-box .shanchu-box .img-item.add {
+  position: relative;
+  border: 0.01333333rem solid #dedede;
+  font-size: 20px;
+  color: #dedede;
+}
+.huo-jiang-ji-lu .pic-content .pic-box .shanchu-box .img-item.add input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
 .huo-jiang-ji-lu .pic-content .pic-box .img-item {
   float: left;
-  margin-top: .2rem;
   width: 32%;
+  margin-top: .2rem;
   height: 2rem;
   flex-shrink: 0;
   margin-left: 2%;
