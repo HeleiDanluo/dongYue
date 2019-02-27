@@ -88,7 +88,7 @@
                             <img src="../images/img-bj.jpg" alt="" srcset="">
                             <div class="row">
                                 <!-- 每个checkbox的id不能相同,紧邻的label的for属性必须和checkbox的id相同 -->
-                                <input type="checkbox" class="switch-btn" id="btn1">
+                                <input type="checkbox" checked="checked" class="switch-btn" id="btn1">
                                 <label for="btn1" class="red"></label>
                                 <div class="txt f_r nouse">无效奖项</div>
                                 <div class="txt f_r use">有效奖项</div>
@@ -132,7 +132,7 @@
                             <span class="txt-num"><sapn class="res-num">0</sapn>/200</span>
                         </div>
                     </div>
-
+                    <input type="checkbox" name="" id="">
                 </div>
             </div>
         </div>
@@ -148,6 +148,14 @@ $(document).on('input propertychange', '.text-area', function(){
     $(this).parent().find('.res-num').html(200 - txtLen);
   }
 });
+
+$('.switch-btn').click(function () {
+    if($('#btn1').is(':checked')) {
+        alert('选中')
+    } else {
+        alert('没选中')
+    }
+})
 </script>
 </body>
 </html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta HTTP-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/icon.css">
+    <link rel="stylesheet" href="http://web.jiankangtiyu.com/statics/plugins/animate.min.css">
+    <link rel="stylesheet" href="http://web.jiankangtiyu.com/statics/css/scroll.css">
+    <script src="http://web.jiankangtiyu.com/statics/js/jquery.min.js"></script>
+    <script src="http://web.jiankangtiyu.com/statics/plugins/mousewheel.js"></script>
+    <script src="http://web.jiankangtiyu.com/statics/plugins/jquery.slimscroll.js"></script>
+    <script src="http://web.jiankangtiyu.com/statics/js/pageInit.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../plugins/alert.js"></script>
+    <script src="../js/plan/teachPlanPreview.js"></script>
+    <title>教材内容预览</title>
+    <script>
+    </script>
+</head>
+
+<body>
+    <div class="pageContent">
+        <!-- 左侧菜单 -->
+        <div class="left-menu">
+            <a class="logo-box">
+                <span class="logo-img">
+                </span>
+            </a>
+            <div style="height:80%;overflow:auto;">
+                <ul class="menu-list f16">
+                    <li class="" id="homeIndex">
+                        <a href="/homeIndex/homeIndex.do" class=""><i class="icon-home">&nbsp;</i>主页</a>
+                    </li>
+                    <li id="teachGroup">
+                        <a href="/teachingGroup/teachingGroupList.do" class=""><i class="icon-group">&nbsp;</i>教研群组</a>
+                    </li>
+                    <li id="teachingContent">
+                        <a href="/teachManage/index.do" class=""><i class="icon-teachManage">&nbsp;</i>教学管理</a>
+                    </li>
+                    <li id="dataExcel">
+                        <a href="/dataExcelIndex/dataExcelIndex.do" class=""><i class="icon-left-tzsj">&nbsp;</i>体质数据</a>
+                    </li>
+                    <li id="searchPage">
+                        <a href="/searchModel/contentList.do" class=""><i class="icon-left-jxzy">&nbsp;</i>教学资源</a>
+                    </li>
+                    <li class="" id="training">
+                        <a href="/training/trainingList.do" class=""><i class="icon-left-zzpx">&nbsp;</i>在职培训</a>
+                    </li>
+                    <li id="heplMe">
+                        <a href="/teachManage/help.do" class=""><i class="icon-left-sybz">&nbsp;</i>使用帮助</a>
+                    </li>
+                    <li id="setting">
+                        <a href="/teachManage/setUp.do" class=""><i class="icon-setting">&nbsp;</i>设置</a>
+                    </li>
+                </ul>
+            </div>
+            <!--
+     <ul class="bottom-menu menu-list f16">
+ 
+     </ul>
+     -->
+        </div>
+        <div class="rightPage">
+            <div class="page-head">
+                <div class="bread-nav-box txt_w">
+                    <a href="/teachManage/index.do"><b>教学管理</b></a> >
+                    <a href="/plan/teachPlanList.do?classType=1"><b>教学计划</b></a> >
+                    <a href="javascript:;"><b>教材内容预览</b></a> >
+                </div>
+                <div class="head-menu">
+                    <!-- 1-修改密码  2-展示姓名  3-退出登录 -->
+                    <!-- 顶部个人信息 -->
+                    <ul class="head-menu-ul f16">
+                        <li class="head-menu-item" id="dropDown-menu-head">
+                            <!-- 头像照片 -->
+                            <img class="head-img" src="http://web.jiankangtiyu.com/statics/images/default-head.png" alt="">
+                            <!-- 覆盖显示的信息卡片 -->
+                            <div class="dropdown-content active-drop">
+                                <ul>
+                                    <li class="name">张老师</li>
+                                    <a href="/homeIndex/personalInformation.do">
+                                        <li>个人信息</li>
+                                    </a>
+                                    <li id="cg-pass">修改密码</li>
+                                    <a href="/login/logout.do">
+                                        <li>退出</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="head-menu-item"><a href="/teachManage/helpHome.do" class="txt_w">新手必看</a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="right-section">
+                <div class="class-exceil">
+                    <div class="form-inline l_h36 clearfix">
+                        <div class="col-8-16 f18 no-padding">教材内容预览</div>
+
+                        <div class="col-8-16 t_r no-padding">
+                            <a href="javascript:history.go(-1)" class="btn blueBtn">返回</a>
+                        </div>
+
+                    </div>
+
+                    <div class="teachPlan-content mt20">
+                        <div class="bixiu teachPlan-item back_white">
+                            <p class="f16">已选内容</p>
+                            <div class="teach-preview-list t_c">
+                                <div class="teach-preview-item l_h36 back_grayer mt10 clearfix">
+                                    <div class="col-2-16 back_gray">教材内容</div>
+                                    <div class="col-8-16">基本运动</div>
+                                    <div class="col-2-16 back_gray">课时</div>
+                                    <div class="col-4-16">20 课时</div>
+                                </div>
+                                <div class="teach-preview-item l_h36 back_grayer mt10 clearfix">
+                                    <div class="col-2-16 back_gray">教材内容</div>
+                                    <div class="col-8-16">田径</div>
+                                    <div class="col-2-16 back_gray">课时</div>
+                                    <div class="col-4-16">10 课时</div>
+                                </div>
+                                <div class="teach-preview-item l_h36 back_grayer mt10 clearfix">
+                                    <div class="col-2-16 back_gray">教材内容</div>
+                                    <div class="col-8-16">球类</div>
+                                    <div class="col-2-16 back_gray">课时</div>
+                                    <div class="col-4-16">30 课时</div>
+                                </div>
+                                <div class="teach-preview-item l_h36 back_grayer mt10 clearfix">
+                                    <div class="col-2-16 back_gray">教材内容</div>
+                                    <div class="col-8-16">体操武术</div>
+                                    <div class="col-2-16 back_gray">课时</div>
+                                    <div class="col-4-16">20 课时</div>
+                                </div>
+                                <div class="teach-preview-item l_h36 back_grayer mt10 clearfix">
+                                    <div class="col-2-16 back_gray">教材内容</div>
+                                    <div class="col-8-16">特色项目</div>
+                                    <div class="col-2-16 back_gray">课时</div>
+                                    <div class="col-4-16">20 课时</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- 2019-02-27 添加课时统计 开始 -->
+                    <!-- 添加的js代码在底部 -->
+                    <div class="form-inline l_h36 clearfix mt20">
+                        <div class="col-8-16 f18 no-padding">
+                            课时统计
+                            <span class="exchange-table f14">切换图表</span>
+                        </div>
+
+                        <div class="col-8-16 t_r no-padding">
+                            <a href="javascript:;" class="btn themeBtn">导出</a>
+                        </div>
+
+                    </div>
+
+                    <div class="teachPlan-content mt20">
+
+                        <!-- 饼图 -->
+                        <div class="clearfix teachPlan-item kstj-content back_white">
+                            <div id="circle-chart">
+                            </div>
+                        </div>
+
+                        <!-- 表格 -->
+                        <div class="clearfix teachPlan-item kstj-content back_white" style="display: none">
+                            
+
+                            <div class="col-8-16 mb20">
+                                <div class="col-3-16 kstj-title mid-center back_gray">
+                                    <p>基本运动</p>
+                                    <p>22%</p>
+                                </div>
+                                <div class="col-6-16 no-padding">
+                                    <div class="tstj-little-item mid-center back_grayer">走和跑</div>
+                                    <div class="tstj-little-item mid-center">队列队形</div>
+                                    <div class="tstj-little-item mid-center back_grayer">走和跑</div>
+                                </div>
+                                <div class="col-4-16 no-padding">
+                                    <div class="tstj-little-item mid-center back_grayer">5课时</div>
+                                    <div class="tstj-little-item mid-center">5课时</div>
+                                    <div class="tstj-little-item mid-center back_grayer">5课时</div>
+                                </div>
+                                <div class="col-3-16 no-padding">
+                                    <div class="tstj-little-item mid-center back_grayer">5%</div>
+                                    <div class="tstj-little-item mid-center">5%</div>
+                                    <div class="tstj-little-item mid-center back_grayer">5%</div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-8-16 mb20">
+                                <div class="col-3-16 kstj-title mid-center back_gray">
+                                    <p>足球</p>
+                                    <p>22%</p>
+                                </div>
+                                <div class="col-6-16 no-padding">
+                                    <div class="tstj-little-item mid-center back_grayer">走和跑</div>
+                                    <div class="tstj-little-item mid-center">队列队形</div>
+                                    <div class="tstj-little-item mid-center back_grayer">走和跑</div>
+                                </div>
+                                <div class="col-4-16 no-padding">
+                                    <div class="tstj-little-item mid-center back_grayer">5课时</div>
+                                    <div class="tstj-little-item mid-center">5课时</div>
+                                    <div class="tstj-little-item mid-center back_grayer">5课时</div>
+                                </div>
+                                <div class="col-3-16 no-padding">
+                                    <div class="tstj-little-item mid-center back_grayer">5%</div>
+                                    <div class="tstj-little-item mid-center">5%</div>
+                                    <div class="tstj-little-item mid-center back_grayer">5%</div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-8-16 mb20">
+                                <div class="col-3-16 kstj-title mid-center back_gray">
+                                    <p>足球</p>
+                                    <p>22%</p>
+                                </div>
+                                <div class="col-6-16 no-padding">
+                                    <div class="tstj-little-item mid-center back_grayer">走和跑</div>
+                                    <div class="tstj-little-item mid-center">队列队形</div>
+                                    <div class="tstj-little-item mid-center back_grayer">走和跑</div>
+                                </div>
+                                <div class="col-4-16 no-padding">
+                                    <div class="tstj-little-item mid-center back_grayer">5课时</div>
+                                    <div class="tstj-little-item mid-center">5课时</div>
+                                    <div class="tstj-little-item mid-center back_grayer">5课时</div>
+                                </div>
+                                <div class="col-3-16 no-padding">
+                                    <div class="tstj-little-item mid-center back_grayer">5%</div>
+                                    <div class="tstj-little-item mid-center">5%</div>
+                                    <div class="tstj-little-item mid-center back_grayer">5%</div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                    <!-- 2019-02-27 添加课时统计 结束 -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../plugins/echart.js"></script>
+    <script>
+        
+    // <!-- 2019-02-27 添加课时统计 开始 -->
+        // 点击切换图形图表
+        $('body').on('click', '.exchange-table', function () {
+            $('.kstj-content').toggle();
+            if($(this).text() == "切换列表") {
+                $(this).text("切换图表");
+            } else {
+                $(this).text("切换列表");
+            }
+        })
+        var Chart = {}
+        //总课时 内饼外环图 封装，此部分不动
+        Chart.pieCircle = function (options) {
+        var defaults = {
+            element: '',
+            datasmall: '',
+            databig: ''
+        };
+
+        var opts = $.extend({}, defaults, options);
+        // 表格数据
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById(opts.element));
+        // 指定图表的配置项和数据
+        var option = {
+            color: [
+            // '#fff1da',
+            '#ff9c00',
+            '#5181ff',
+            '#958bff',
+            '#c2e791',
+            // '#cfecfe',
+            '#ff688d',
+            '#fed100',
+            '#95d600',
+            '#00c8a8',
+            '#00d1ff'
+            ],
+            tooltip: {
+            trigger: 'item',
+            formatter: '{d}%  ',
+            },
+            series: [{
+                type: 'pie',
+                radius: ['0%', '40%'],
+                center: ['50%', '50%'],
+                data: opts.datasmall,
+                label: {
+                normal: {
+                    position: 'inner',
+                }
+                }
+            },
+            {
+                type: 'pie',
+                radius: ['45%', '65%'],
+                center: ['50%', '50%'],
+                data: opts.databig,
+                label: {
+                normal: {
+                    textStyle: {
+                    },
+                    formatter: '{b}\n{c}/{d}%  ',
+                }
+                },
+            }
+            ]
+        };
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+        };
+
+        //总课时 内饼外环图 调用 此处填充数据
+        if($('#circle-chart').length > 0){
+            Chart.pieCircle({
+                element:'circle-chart',
+                datasmall: [
+                {value:51,name:'基本运动'},
+                {value:46,name:'球类'},
+                {value:21,name:'体操'},
+                ],
+                databig: [
+                {value:51,name:'篮球'},
+                {value:46,name:'太极拳'},
+                {value:12,name:'健美操'},
+                {value:45,name:'广播操'},
+                {value:12,name:'软式排球'},
+                {value:21,name:'基本运动'},
+                {value:10,name:'足球'},
+                {value:21,name:'其他'},
+                ],
+            });
+        }
+    // <!-- 2019-02-27 添加课时统计 结束 -->
+
+
+        $(function () {
+            $("#teachingContent").addClass("current").siblings("li").removeClass("current");
+        });
+    </script>
+</body>
+
+</html>
