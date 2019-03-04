@@ -11216,7 +11216,9 @@ table {
   height: 108px;
 }
 .kstj-content .tstj-little-item {
+  text-align: center;
   height: 36px;
+  line-height: 36px;
   border-left: 1px solid #ffffff;
   background: #fafafa;
 }
