@@ -1228,6 +1228,9 @@ body {
 body {
   overflow: hidden;
 }
+.cursor_p {
+  cursor: pointer;
+}
 .zuo-ye-xiang-qing input,
 .zuo-ye-xiang-qing textarea {
   width: 100%;
@@ -11212,9 +11215,6 @@ table {
   user-select: none;
   color: #82b64a;
 }
-.kstj-content .kstj-title {
-  height: 108px;
-}
 .kstj-content .tstj-little-item {
   text-align: center;
   height: 36px;
@@ -11222,14 +11222,110 @@ table {
   border-left: 1px solid #ffffff;
   background: #fafafa;
 }
+.kstj-content .tstj-little-item:nth-child(odd) {
+  background: #e4eaf1;
+}
 .kstj-content #circle-chart {
   height: 500px;
+}
+.jxgl-mybd {
+  width: 100%;
+  overflow-x: auto;
+}
+.jxgl-mybd table {
+  background: #fff;
+  min-width: 100%;
+}
+.jxgl-mybd table tbody > tr:nth-child(odd) {
+  background: #f1f1f1;
 }
 .mid-center {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.display_flex {
+  display: flex;
+}
+.jxgl-my-cjbd .title-box {
+  height: 40px;
+  line-height: 40px;
+}
+.jxgl-my-cjbd .title-box input {
+  border: 1px solid #b4b4b4;
+  height: 30px;
+  padding: 0 5px;
+  width: 100%;
+}
+.jxgl-my-cjbd .add-box-block {
+  padding: 20px;
+  border-radius: 5px;
+  background: #fff;
+}
+.jxgl-my-cjbd .add-box-block .block-box-item > input {
+  border: 1px solid #b4b4b4;
+  height: 30px;
+  padding: 0 5px;
+}
+.jxgl-my-cjbd .add-box-block .block-box-item > input.readonly {
+  border: 1px dashed #f1f1f1;
+  background: #f1f1f1;
+}
+.jxgl-my-cjbd .add-box-block .block-box-item .delete {
+  color: red;
+  margin-left: 253px;
+  font-size: 14px;
+  cursor: pointer;
+  user-select: none;
+}
+.jxgl-my-cjbd .add-box-block .block-box-item .class-item-box .item {
+  position: relative;
+  display: inline-block;
+  padding: 5px 8px;
+  border: 1px solid #b4b4b4;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  min-width: 100px;
+  text-align: center;
+}
+.jxgl-my-cjbd .add-box-block .block-box-item .class-item-box .item.add {
+  cursor: pointer;
+}
+.jxgl-my-cjbd .add-box-block .block-box-item .class-item-box .item .del-this {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  color: red;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid red;
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+  background: #fff;
+  user-select: none;
+}
+.alert-class-box {
+  padding: 34px 34px 0;
+}
+.alert-class-box .item {
+  display: inline-block;
+  padding: 5px 8px;
+  border: 1px solid #b4b4b4;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  min-width: 100px;
+  text-align: center;
+  cursor: pointer;
+}
+.alert-class-box .item.active {
+  background: #82b64a;
+  color: #fff;
+}
+.alert-class-box .item.add {
+  cursor: pointer;
 }
 /*
 

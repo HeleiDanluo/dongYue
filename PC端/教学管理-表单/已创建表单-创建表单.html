@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta HTTP-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../plugins/animate.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/icon.css">
+    <link rel="stylesheet" href="../css/scroll.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../plugins/jquery.slimscroll.js"></script>
+    <script src="../js/pageInit.js"></script>
+    <script src="../js/main.js"></script>
+    <title>教学管理</title>
+    <script>
+    </script>
+</head>
+<body>
+<div class="pageContent">
+    <div class="left-menu">
+        <a class="logo-box">
+        <span class="logo-img">
+        </span>
+        </a>
+        <ul class="menu-list f16">
+            <li class="current"><a href="" class=""><i class="icon-home">&nbsp;</i>主页</a></li>
+            <li class=""><a href="" class=""><i class="icon-group">&nbsp;</i>教研群组</a></li>
+            <li class=""><a href="" class=""><i class="icon-teachManage">&nbsp;</i>教学管理</a></li>
+            <li class=""><a href="" class=""><i class="icon-import">&nbsp;</i>数据录入</a></li>
+            <li class=""><a href="" class=""><i class="icon-homeWork">&nbsp;</i>家庭作业</a></li>
+        </ul>
+        <ul class="bottom-menu menu-list f16">
+            <li class=""><a href="" class=""><i class="icon-add">&nbsp;</i>收藏</a></li>
+            <li class=""><a href="" class=""><i class="icon-setting">&nbsp;</i>设置</a></li>
+            <li class=""><a href="" class=""><i class="icon-back">&nbsp;</i>返回启动页</a></li>
+        </ul>
+    </div>
+    <div class="rightPage">
+        <div class="page-head">
+            <div class="bread-nav-box txt_w">
+                <a href="javascript:;"><b>教学管理</b></a> >
+                <a href="javascript:;"><b>表单</b></a>
+            </div>
+            <div class="head-menu">
+                <ul class="head-menu-ul f16">
+                    <!-- <li class="head-menu-item"><a href="javascript:;" class="txt_w">退出</a></li> -->
+                    <li class="head-menu-item" id="dropDown-menu-head"><a href="javascript:;" class="txt_w">账户信息<i class="icon-hehe"></i></a>
+                        <div class="dropdown-content active-drop">
+                            <ul>
+                                <li id="cg-pass">修改密码</li>
+                                <li><a href="#">退出登录</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="head-menu-item"><a href="javascript:;" class="txt_w">欢迎页</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="table-content">
+                <div class="table-btn-group">
+                    <div class="table-row">
+                        <div class="col-8-16 f18">创建表单</div>
+                        <div class="col-8-16 t_r">
+                            <a href="javascript:;" class="btn themeBtn">返回</a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="jxgl-my-cjbd">
+                    <div class="title-box">
+                        <div class="col-2-16 f18">
+                            名称
+                        </div>
+                        <div class="col-6-16 f18">
+                            <input type="text">
+                        </div>
+                        <div class="col-2-16 f18 t_r">
+                            日期
+                        </div>
+                        <div class="col-6-16 f18">
+                            <input type="text" id="my-date">
+                        </div>
+                    </div>
+
+                    <h3 class="t_r mt20 txt-green">
+                        <span id="add-fenzu" class=" cursor_p">
+                            创建分组
+                        </span>
+                    </h3>
+                    
+                    <div class="">
+                        <div class="col-2-16 f18 mt20">
+                            考核权限
+                        </div>
+                        <div class="col-14-16 f18 ">
+                            
+                            <div class="add-box-block mt20">
+                                <div class="block-box-item">
+                                    <input type="text" placeholder="分组名称">
+                                    <span class="txt-green save-fenzu cursor_p">保存</span>
+                                    <span class="txt-green change-fenzu cursor_p">修改</span>
+                                </div>
+                                <div class="block-box-item mt10">
+                                    <div>
+                                        <span>选择班级</span>
+                                        <span class="delete">删除班级</span>
+                                    </div>
+                                    <div class="class-item-box mt10">
+                                        <span class="item">
+                                            初一·一班
+                                        </span>
+                                        <span class="item">
+                                            初一·一班
+                                        </span>
+                                        <span class="item">
+                                            初一·一班
+                                        </span>
+                                        <span class="item">
+                                            初一·一班
+                                        </span>
+                                        <span class="item">
+                                            初一·一班
+                                        </span>
+                                        <span class="item add add-class txt-green">
+                                            + 添加班级
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="block-box-item mt10">
+                                    <div>
+                                        <span>指派教师</span>
+                                        <span class="delete">删除教师</span>
+                                    </div>
+                                    <div class="class-item-box mt10">
+                                        <span class="item">
+                                            张老师
+                                        </span>
+                                        <span class="item">
+                                            张老师
+                                        </span>
+                                        <span class="item">
+                                            张老师
+                                        </span>
+                                        <span class="item">
+                                            张老师
+                                        </span>
+                                        <span class="item">
+                                            张老师
+                                        </span>
+                                        <span class="item add add-teacher txt-green" id="add-teacher">
+                                            + 添加教师
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 时间选择插件 -->
+<script src="../plugins/laydate/laydate.js"></script>
+<script src="../plugins/alert.js"></script>
+<script>
+    //日期选择
+    laydate.render({
+    elem: '#my-date'
+    ,done: function(value, date){
+        alert('你选择的日期是：' + value + '\n获得的对象是' + JSON.stringify(date));
+    }
+    });
+
+    // 新增班级
+    $('body').on('click', '.add-class', function(){
+        let addContent = $(this);
+        Alert.smallWindow({
+            data:`<div class="alert-class-box">
+                    <span class="item">
+                        初一·一班
+                    </span>
+                    <span class="item">
+                        初一·二班
+                    </span>
+                    <span class="item">
+                        初一·三班
+                    </span>
+                    <span class="item">
+                        初一·四班
+                    </span>
+                    <span class="item">
+                        初一·五班
+                    </span>
+                    <span class="item">
+                        初一·六班
+                    </span>
+                    <span class="item">
+                        初一·七班
+                    </span>
+                    <span class="item">
+                        初一·八班
+                    </span>
+
+                    <div class="form-line submitBtn mt10 clearfix">
+                        <a href="javascript:;" class="blockBtn themeBtn" id="addclassok">确定</a>
+                    </div>
+                </div>
+                `,
+            callBack:function(){
+                // 选择班级
+                $('body').on('click','.item',function(){
+                    let _this = $(this);
+                    let thisTxt = _this.text();
+                    if(_this.hasClass('acitve')){
+                        _this.removeClass('active');
+                    } else {
+                        _this.addClass('active');
+                    }
+                    // addContent.before(`<span class="item">${thisTxt}</span>`)
+                });
+                
+                // 确认
+                $('body').on('click','#addclassok',function(){
+                    let _this = $(this);
+                    _this.parent().parent().find('.item.active');
+                    addContent.before(_this.parent().parent().find('.item.active').append("<div class='del-this'>×</div>"));
+                    Alert.removeDialog("alertType");//移除弹窗
+                });
+            }
+        })
+    })
+
+
+    // 新增教师
+    $('body').on('click', '#add-teacher', function(){
+        let addContent = $(this);
+        Alert.smallWindow({
+            data:`<div class="alert-class-box">
+                    <span class="item">
+                       张老师
+                    </span>
+                    <span class="item">
+                        刘老师
+                    </span>
+                    <span class="item">
+                        苍老师
+                    </span>
+                    <span class="item">
+                        666老师
+                    </span>
+                    <span class="item">
+                       张老师
+                    </span>
+                    <span class="item">
+                        刘老师
+                    </span>
+                    <span class="item">
+                        苍老师
+                    </span>
+                    <span class="item">
+                        666老师
+                    </span>
+
+                    <div class="form-line submitBtn mt10 clearfix">
+                        <a href="javascript:;" class="blockBtn themeBtn" id="addclassok">确定</a>
+                    </div>
+                </div>
+                `,
+            callBack:function(){
+                // 选择班级
+                $('body').on('click','.item',function(){
+                    let _this = $(this);
+                    let thisTxt = _this.text();
+                    if(_this.hasClass('acitve')){
+                        _this.removeClass('active');
+                    } else {
+                        _this.addClass('active');
+                    }
+                    // addContent.before(`<span class="item">${thisTxt}</span>`)
+                });
+                
+                // 确认
+                $('body').on('click','#addclassok',function(){
+                    let _this = $(this);
+                    _this.parent().parent().find('.item.active');
+                    addContent.before(_this.parent().parent().find('.item.active').append("<div class='del-this'>×</div>"));
+                    Alert.removeDialog("alertType");//移除弹窗
+                });
+            }
+        })
+    })
+
+
+    // 删除教师&班级
+    // 点击删除调出x按钮
+    $('body').on('click', '.delete', function() {
+        let _this = $(this);
+        if(_this.hasClass('active')){
+            _this.removeClass('active');
+            _this.text("删除班级")
+            _this.parent().parent().find('.class-item-box .item .del-this').remove();
+        } else {
+            _this.text("完成删除").addClass('active');
+            _this.parent().parent().find('.class-item-box .item:not(.add)').append("<div class='del-this'>×</div>");
+        }
+    })
+    // 点击x
+    $('body').on('click', '.del-this', function() {
+        let _this = $(this);
+        _this.parent().remove();
+    })
+
+
+    // 保存分组名称
+    $('body').on('click', '.save-fenzu', function() {
+        let _this = $(this);
+        _this.parent().find('input').addClass('readonly').attr('readonly','true');
+    })
+
+    //修改分组名称
+    $('body').on('click', '.change-fenzu', function() {
+        let _this = $(this);
+        _this.parent().find('input').removeClass('readonly').removeAttr('readonly').focus();
+    })
+
+
+    // 新增分组
+    $('body').on('click', '#add-fenzu', function() {
+        $('.add-box-block').after(`
+        <div class="add-box-block mt20">
+            <div class="block-box-item">
+                <input type="text" placeholder="分组名称">
+                <span class="txt-green">保存</span>
+                <span class="txt-green">修改</span>
+            </div>
+            <div class="block-box-item mt10">
+                <div>选择班级</div>
+                <div class="class-item-box mt10">
+                    <span class="item add add-class txt-green">
+                        + 添加班级
+                    </span>
+                </div>
+            </div>
+            <div class="block-box-item mt10">
+                <div>指派老师</div>
+                <div class="class-item-box mt10">
+                    <span class="item add add-teacher txt-green">
+                        + 添加教师
+                    </span>
+                </div>
+            </div>
+        </div>
+        `);
+    });
+</script>
+</body>
+</html>

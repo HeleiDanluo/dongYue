@@ -31,7 +31,9 @@ body {
     // overflow-y: hidden;
     overflow: hidden;
 }
-
+.cursor_p{
+    cursor: pointer;
+}
 .zuo-ye-xiang-qing{
     input,textarea{
         width: 100%;
@@ -11095,18 +11097,32 @@ left:0;
     color: @themeColor;
 }
 .kstj-content{
-    .kstj-title{
-        height: 108px;
-    }
+    // .kstj-title{
+    //     height: 108px;
+    // }
     .tstj-little-item{
         text-align: center;
         height: 36px;
         line-height: 36px;
         border-left: 1px solid rgb(255, 255, 255);
         background: #fafafa;
+        &:nth-child(odd){
+            background: #e4eaf1;
+        }
     }
     #circle-chart{
         height: 500px;
+    }
+}
+.jxgl-mybd{
+    width: 100%;
+    overflow-x: auto;
+    table{
+        background: #fff;
+        min-width: 100%;
+        tbody>tr:nth-child(odd){
+            background: #f1f1f1;
+        }
     }
 }
 .mid-center{
@@ -11114,6 +11130,94 @@ left:0;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.display_flex{
+    display: flex;
+}
+.jxgl-my-cjbd{
+    .title-box{
+        height: 40px;
+        line-height: 40px;
+        input{
+            border: 1px solid #b4b4b4;
+            height:30px;
+            padding: 0 5px;
+            width: 100%;
+        }
+    }
+    .add-box-block{
+        padding: 20px;
+        border-radius: 5px;
+        background:#fff;
+        .block-box-item{
+            >input{
+                border: 1px solid #b4b4b4;
+                height: 30px;
+                padding: 0 5px;
+                &.readonly{
+                    border:1px dashed #f1f1f1;
+                    background: #f1f1f1;
+                }
+            }
+            .delete{
+                color: red;
+                margin-left: 253px;
+                font-size: 14px;
+                cursor: pointer;
+                user-select: none;
+            }
+            .class-item-box{
+                .item{
+                    position: relative;
+                    display: inline-block;
+                    padding: 5px 8px;
+                    border: 1px solid #b4b4b4;
+                    margin-right: 5px;
+                    margin-bottom: 5px;
+                    min-width: 100px;
+                    text-align: center;
+                    &.add{
+                        cursor: pointer;
+                    }
+                    .del-this{
+                        position: absolute;
+                        top:-10px;
+                        right: -10px;
+                        color: red;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        border: 1px solid red;
+                        text-align: center;
+                        line-height: 20px;
+                        cursor: pointer;
+                        background: #fff;
+                        user-select: none;
+                    }
+                }
+            }
+        }
+    }
+}
+.alert-class-box{
+    padding: 34px 34px 0;
+    .item{
+        display: inline-block;
+        padding: 5px 8px;
+        border: 1px solid #b4b4b4;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        min-width: 100px;
+        text-align: center;
+        cursor: pointer;
+        &.active{
+            background: @themeColor;
+            color:#fff;
+        }
+        &.add{
+            cursor: pointer;
+        }
+    }
 }
 /*
 

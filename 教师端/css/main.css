@@ -7086,3 +7086,85 @@ footer a:active {
   padding: 0 .5rem;
   height: .7rem;
 }
+.kaohebiaodan-class-list-box {
+  height: 2rem;
+  width: 100%;
+  background: #f1f1f1;
+  padding: 0 .2rem;
+}
+.kaohebiaodan-class-list-box .class-box {
+  height: 100%;
+  display: flex;
+  overflow-x: auto;
+  position: relative;
+}
+.kaohebiaodan-class-list-box .class-box .class-item {
+  flex-direction: column;
+  margin: .2rem .1rem .2rem 0;
+  padding: 0 .5rem;
+  box-shadow: 0 0 .5rem #eeeeee;
+  background: #fff;
+  flex-shrink: 0;
+  border-radius: .1rem;
+  transition: 0.3s;
+}
+.kaohebiaodan-class-list-box .class-box .class-item.active {
+  background: #393A3F;
+  color: #fff;
+}
+.kaohebiaodan-class-list-box .class-box .class-item:active {
+  transform: scale(0.95);
+}
+.mid-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.kaohebiaodan-wenti-list-box {
+  padding: .2rem;
+  background: #f5f5f5;
+}
+.kaohebiaodan-wenti-list-box .wenti-box {
+  background: #fff;
+  padding: .2rem;
+  border-radius: .1rem;
+  margin-bottom: .3rem;
+}
+.kaohebiaodan-wenti-list-box .wenti-box > ul {
+  margin: .2rem .5rem .5rem .5rem;
+}
+.kaohebiaodan-wenti-list-box .wenti-box > ul .wenti-item {
+  display: flex;
+  justify-content: space-between;
+  background: #f1f1f1;
+  padding: .1rem .2rem;
+}
+.kaohebiaodan-wenti-list-box .wenti-box > ul .wenti-item > div {
+  flex-grow: 1;
+}
+.kaohebiaodan-wenti-list-box .wenti-box > ul .wenti-item:not(:first-child) {
+  border-top: 1px dashed #fff;
+}
+.kaohebiaodan-wenti-list-box .wenti-box > ul .wenti-item:first-child.active {
+  border-top: none;
+}
+.kaohebiaodan-wenti-list-box .wenti-box > ul .wenti-item.active {
+  background: #393A3F;
+  border-top: 1px dashed #fff;
+  color: #fff;
+}
+.kaohebiaodan-wenti-list-box .wenti-box > ul .wenti-item .opts-box {
+  width: 3rem;
+  text-align: center;
+  flex-grow: 0;
+  user-select: none;
+}
+.daitianbiaodan-btn-box {
+  background: #f5f5f5;
+  height: 1rem;
+  padding: 0 .2rem;
+  margin-bottom: 1rem;
+}
+.daitianbiaodan-btn-box > a {
+  margin-right: .5rem;
+}
