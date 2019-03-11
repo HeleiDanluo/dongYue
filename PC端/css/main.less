@@ -11136,13 +11136,39 @@ left:0;
 }
 .jxgl-my-cjbd{
     .title-box{
-        height: 40px;
+        min-height: 40px;
         line-height: 40px;
-        input{
+        input[type="text"]{
             border: 1px solid #b4b4b4;
             height:30px;
             padding: 0 5px;
             width: 100%;
+        }
+        .item-number{
+            border: 1px solid #b4b4b4;
+            height:30px;
+            padding: 0 5px;
+            width: 60px;
+        }
+        .item-name{
+            height: 30px;
+            line-height: 30px;
+        }
+        .del-item{
+            height: 40px;
+            line-height: 40px;
+            color: rgb(230, 21, 21);
+            cursor: pointer;
+            float: left;
+        }
+        .add-item{
+            margin-top: 10px;
+            height:30px;
+            line-height:30px;
+            background: #dedede;
+            text-align: center;
+            width: 100%;
+            cursor: pointer;
         }
     }
     .add-box-block{
@@ -11217,6 +11243,20 @@ left:0;
         &.add{
             cursor: pointer;
         }
+    }
+}
+.kqbd-right-menu{
+    position: fixed;
+    top: 30%;
+    right: 55px;
+    .menu-item{
+        width: 100px;
+        padding: 10px;
+        text-align: center;
+        background: @themeColor;
+        margin-top: 15px;
+        color:#fff;
+        cursor: pointer;
     }
 }
 /*

@@ -11249,14 +11249,40 @@ table {
   display: flex;
 }
 .jxgl-my-cjbd .title-box {
-  height: 40px;
+  min-height: 40px;
   line-height: 40px;
 }
-.jxgl-my-cjbd .title-box input {
+.jxgl-my-cjbd .title-box input[type="text"] {
   border: 1px solid #b4b4b4;
   height: 30px;
   padding: 0 5px;
   width: 100%;
+}
+.jxgl-my-cjbd .title-box .item-number {
+  border: 1px solid #b4b4b4;
+  height: 30px;
+  padding: 0 5px;
+  width: 60px;
+}
+.jxgl-my-cjbd .title-box .item-name {
+  height: 30px;
+  line-height: 30px;
+}
+.jxgl-my-cjbd .title-box .del-item {
+  height: 40px;
+  line-height: 40px;
+  color: #e61515;
+  cursor: pointer;
+  float: left;
+}
+.jxgl-my-cjbd .title-box .add-item {
+  margin-top: 10px;
+  height: 30px;
+  line-height: 30px;
+  background: #dedede;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
 }
 .jxgl-my-cjbd .add-box-block {
   padding: 20px;
@@ -11325,6 +11351,20 @@ table {
   color: #fff;
 }
 .alert-class-box .item.add {
+  cursor: pointer;
+}
+.kqbd-right-menu {
+  position: fixed;
+  top: 30%;
+  right: 55px;
+}
+.kqbd-right-menu .menu-item {
+  width: 100px;
+  padding: 10px;
+  text-align: center;
+  background: #82b64a;
+  margin-top: 15px;
+  color: #fff;
   cursor: pointer;
 }
 /*
