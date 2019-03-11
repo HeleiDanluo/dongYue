@@ -337,11 +337,14 @@
         <div class="add-box-block mt20">
             <div class="block-box-item">
                 <input type="text" placeholder="分组名称">
-                <span class="txt-green">保存</span>
-                <span class="txt-green">修改</span>
+                <span class="txt-green save-fenzu cursor_p">保存</span>
+                <span class="txt-green change-fenzu cursor_p">修改</span>
             </div>
             <div class="block-box-item mt10">
-                <div>选择班级</div>
+                <div>
+                    <span>选择班级</span>
+                    <span class="delete">删除</span>
+                </div>
                 <div class="class-item-box mt10">
                     <span class="item add add-class txt-green">
                         + 添加班级
@@ -349,9 +352,12 @@
                 </div>
             </div>
             <div class="block-box-item mt10">
-                <div>指派老师</div>
+                <div>
+                    <span>指派教师</span>
+                    <span class="delete">删除</span>
+                </div>
                 <div class="class-item-box mt10">
-                    <span class="item add add-teacher txt-green">
+                    <span class="item add add-teacher txt-green" id="add-teacher">
                         + 添加教师
                     </span>
                 </div>

@@ -75,7 +75,8 @@
                         </div>
                         <div class="opts-box" flex="box:mean">
                             <div class="jian">-</div>
-                            <div  class="value-box" add-val="0.5">0</div>
+                            <!-- add-val 是PC端设置的值，每次累加的值 -->
+                            <div  class="value-box" add-count="0" add-val="0.5">0</div>
                             <div class="jia">+</div>
                         </div>
                     </li>
@@ -85,7 +86,7 @@
                         </div>
                         <div class="opts-box" flex="box:mean">
                             <div class="jian">-</div>
-                            <div class="value-box" add-val="0.1">0</div>
+                            <div class="value-box" add-count="0" add-val="0.1">0</div>
                             <div class="jia">+</div>
                         </div>
                     </li>
@@ -95,7 +96,7 @@
                         </div>
                         <div class="opts-box" flex="box:mean">
                             <div class="jian">-</div>
-                            <div  class="value-box" add-val="0.2">0</div>
+                            <div  class="value-box" add-count="0" add-val="0.2">0</div>
                             <div class="jia">+</div>
                         </div>
                     </li>
@@ -105,7 +106,7 @@
                         </div>
                         <div class="opts-box" flex="box:mean">
                             <div class="jian">-</div>
-                            <div  class="value-box" add-val="0.3">0</div>
+                            <div  class="value-box" add-count="0" add-val="0.3">0</div>
                             <div class="jia">+</div>
                         </div>
                     </li>
@@ -169,8 +170,8 @@
 
         <!-- 提交按钮 -->
         <div class="daitianbiaodan-btn-box" flex="box:mean">
+            <a href="javascript:;" class="btn-full-theme mid-center">保存</a>
             <a href="javascript:;" class="btn-full-theme mid-center">提交</a>
-            <a href="javascript:;" class="btn-full-theme mid-center">下一步</a>
         </div>
         
     </div>
@@ -216,15 +217,24 @@
 
     // 点击加减
     $('body').on('click', '.opts-box>div', function() {
+
         let addValBox = $(this).parent().find('.value-box');
-        let addVal = +addValBox.attr('add-val');
+        let addVal = +addValBox.attr('add-val');// 每次的累加值
+        let addCount = +addValBox.attr('add-count');// 点击统计
         let currentVal = +addValBox.html();
+
         if($(this).hasClass('jian')){
             // 减
-            addValBox.html((currentVal * 10 - addVal *10)/10);
+            if(addCount > 0) {
+                addCount--;
+                addValBox.html((currentVal * 10 - addVal *10)/10)
+                .attr('add-count', addCount);
+            }
         } else if($(this).hasClass('jia')){
-            addValBox.html((currentVal * 10 + addVal *10)/10);
             // 加
+            addCount++;
+            addValBox.html((currentVal * 10 + addVal *10)/10)
+                     .attr('add-count', addCount);;
         }
     })
 </script>
