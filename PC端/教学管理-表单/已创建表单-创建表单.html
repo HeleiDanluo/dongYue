@@ -106,7 +106,7 @@
                                 <div class="block-box-item mt10">
                                     <div>
                                         <span>选择班级</span>
-                                        <span class="delete">删除班级</span>
+                                        <span class="delete">删除</span>
                                     </div>
                                     <div class="class-item-box mt10">
                                         <span class="item">
@@ -132,7 +132,7 @@
                                 <div class="block-box-item mt10">
                                     <div>
                                         <span>指派教师</span>
-                                        <span class="delete">删除教师</span>
+                                        <span class="delete">删除</span>
                                     </div>
                                     <div class="class-item-box mt10">
                                         <span class="item">
@@ -304,7 +304,7 @@
         let _this = $(this);
         if(_this.hasClass('active')){
             _this.removeClass('active');
-            _this.text("删除班级")
+            _this.text("删除")
             _this.parent().parent().find('.class-item-box .item .del-this').remove();
         } else {
             _this.text("完成删除").addClass('active');
