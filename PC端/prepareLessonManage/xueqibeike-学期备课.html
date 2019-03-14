@@ -11,9 +11,6 @@
     <link rel="stylesheet" href="../css/scroll.css">
     <link rel="stylesheet" href="../plugins/datepicker.css">
 
-    <!-- 拖动插件 -->
-    <link rel="stylesheet" href="../plugins/jquery-gridly-master/stylesheets/jquery.gridly.css">
-
     <script src="../js/jquery.min.js"></script>
     <script src="../plugins/mousewheel.js"></script>
     <script src="../plugins/jquery.slimscroll.js"></script>
@@ -137,36 +134,73 @@
                     </div>
                 </div>
 
+
                 <div class="box clearfix">
                     <span class="title clearfix">可拖动 =></span>
                     <div class="gridly">
                         <div class="content-box">
                             <div class="content clearfix">
-                                走和跑：111111111111111111111111111111
+                                走和跑：1
                             </div>  
                             <div class="close-content">×</div>
                         </div>
                         <div class="content-box">
                             <div class="content clearfix">
-                                走和跑：111111111111111111111111111111
+                                走和跑：2
                             </div>  
                             <div class="close-content">×</div>
                         </div>
                         <div class="content-box">
                             <div class="content clearfix">
-                                走和跑：111111111111111111111111111111
+                                走和跑：3
                             </div>  
                             <div class="close-content">×</div>
                         </div>
                         <div class="content-box">
                             <div class="content clearfix">
-                                走和跑：111111111111111111111111111111
+                                走和跑：4
                             </div>  
                             <div class="close-content">×</div>
                         </div>
                         <div class="content-box">
                             <div class="content clearfix">
-                                走和跑：111111111111111111111111111111
+                                走和跑：5
+                            </div>  
+                            <div class="close-content">×</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box clearfix">
+                    <span class="title clearfix">可拖动 =></span>
+                    <div class="gridly">
+                        <div class="content-box">
+                            <div class="content clearfix">
+                                走和跑：6
+                            </div>  
+                            <div class="close-content">×</div>
+                        </div>
+                        <div class="content-box">
+                            <div class="content clearfix">
+                                走和跑：7
+                            </div>  
+                            <div class="close-content">×</div>
+                        </div>
+                        <div class="content-box">
+                            <div class="content clearfix">
+                                走和跑：8
+                            </div>  
+                            <div class="close-content">×</div>
+                        </div>
+                        <div class="content-box">
+                            <div class="content clearfix">
+                                走和跑：9
+                            </div>  
+                            <div class="close-content">×</div>
+                        </div>
+                        <div class="content-box">
+                            <div class="content clearfix">
+                                走和跑：10
                             </div>  
                             <div class="close-content">×</div>
                         </div>
@@ -195,23 +229,12 @@
 <script src="../js/each/updateClassSchedule.js"></script>
 
 <!-- 拖动插件 -->
-<script src="../plugins/jquery-gridly-master/javascripts/jquery.gridly.js"></script>
+<script src="../plugins/Sortable.min.js"></script>
+<script src="../plugins/jquery-sortable.js"></script>
 <script>
-    var reordering = function($elements) {
-        console.table(`拖动开始`)
-        console.table(`${$elements}`)
-    };
-
-    var reordered = function($elements) {
-        console.log(`拖动结束`)
-        console.log(`${$elements}`)
-    };
-
-    $('.gridly').gridly({
-        base: 150, // px 
-        gutter: 15, // px
-        // columns: 20,
-        callbacks: { reordering: reordering , reordered: reordered }
+    $('.gridly').sortable({
+        group: 'shared',
+        animation: 150
     });
 </script>
 </body>
