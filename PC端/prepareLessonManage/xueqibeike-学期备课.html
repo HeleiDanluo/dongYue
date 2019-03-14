@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="../plugins/animate.min.css">
     <link rel="stylesheet" href="../css/scroll.css">
     <link rel="stylesheet" href="../plugins/datepicker.css">
+
+    <!-- 拖动插件 -->
+    <link rel="stylesheet" href="../plugins/jquery-gridly-master/stylesheets/jquery.gridly.css">
+
     <script src="../js/jquery.min.js"></script>
     <script src="../plugins/mousewheel.js"></script>
     <script src="../plugins/jquery.slimscroll.js"></script>
@@ -98,6 +102,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="box clearfix">
                     <span class="title clearfix">第一周</span>
                     <div class="content-box">
@@ -131,6 +136,44 @@
                         <div class="close-content">×</div>
                     </div>
                 </div>
+
+                <div class="box clearfix">
+                    <span class="title clearfix">可拖动 =></span>
+                    <div class="gridly">
+                        <div class="content-box">
+                            <div class="content clearfix">
+                                走和跑：111111111111111111111111111111
+                            </div>  
+                            <div class="close-content">×</div>
+                        </div>
+                        <div class="content-box">
+                            <div class="content clearfix">
+                                走和跑：111111111111111111111111111111
+                            </div>  
+                            <div class="close-content">×</div>
+                        </div>
+                        <div class="content-box">
+                            <div class="content clearfix">
+                                走和跑：111111111111111111111111111111
+                            </div>  
+                            <div class="close-content">×</div>
+                        </div>
+                        <div class="content-box">
+                            <div class="content clearfix">
+                                走和跑：111111111111111111111111111111
+                            </div>  
+                            <div class="close-content">×</div>
+                        </div>
+                        <div class="content-box">
+                            <div class="content clearfix">
+                                走和跑：111111111111111111111111111111
+                            </div>  
+                            <div class="close-content">×</div>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
             <div class="xueqi-list clearfix">
                 <div class="form-inline l_36 clearfix mb20 mr20">
@@ -150,5 +193,26 @@
 
 <script src="../plugins/alert.js"></script>
 <script src="../js/each/updateClassSchedule.js"></script>
+
+<!-- 拖动插件 -->
+<script src="../plugins/jquery-gridly-master/javascripts/jquery.gridly.js"></script>
+<script>
+    var reordering = function($elements) {
+        console.table(`拖动开始`)
+        console.table(`${$elements}`)
+    };
+
+    var reordered = function($elements) {
+        console.log(`拖动结束`)
+        console.log(`${$elements}`)
+    };
+
+    $('.gridly').gridly({
+        base: 150, // px 
+        gutter: 15, // px
+        // columns: 20,
+        callbacks: { reordering: reordering , reordered: reordered }
+    });
+</script>
 </body>
 </html>

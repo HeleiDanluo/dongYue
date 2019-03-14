@@ -9174,9 +9174,16 @@ table {
   border-top: 20px solid #e4eaf1;
   padding: 40px 0px;
 }
+.xueqi-list .box {
+  position: relative;
+}
+.xueqi-list .box .gridly {
+  margin-left: 145px;
+  position: relative;
+}
 .xueqi-list .box .title {
   display: inline-block;
-  width: 10%;
+  width: 120px;
   height: 50px;
   line-height: 50px;
   text-align: center;
@@ -9194,9 +9201,9 @@ table {
 }
 .xueqi-list .box .content-box {
   position: relative;
-  width: 15.65%;
+  width: 150px;
   height: 50px;
-  margin-left: 1.5%;
+  margin-left: 15px;
   margin-bottom: 20px;
   float: left;
 }
