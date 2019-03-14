@@ -81,7 +81,7 @@
                             日期
                         </div>
                         <div class="col-6-16 f18">
-                            <input type="text" id="my-date">
+                            <input type="text" readonly id="my-date">
                         </div>
                     </div>
 
@@ -124,7 +124,7 @@
                                         <span class="item">
                                             初一·一班
                                         </span>
-                                        <span class="item add add-class txt-green">
+                                        <span class="item add txt-green" id="add-class">
                                             + 添加班级
                                         </span>
                                     </div>
@@ -150,7 +150,7 @@
                                         <span class="item">
                                             张老师
                                         </span>
-                                        <span class="item add add-teacher txt-green" id="add-teacher">
+                                        <span class="item add txt-green" id="add-teacher">
                                             + 添加教师
                                         </span>
                                     </div>
@@ -187,7 +187,7 @@
     });
 
     // 新增班级
-    $('body').on('click', '.add-class', function(){
+    $('body').on('click', '#add-class', function(){
         let addContent = $(this);
         Alert.smallWindow({
             data:`<div class="alert-class-box">
@@ -231,14 +231,13 @@
                     } else {
                         _this.addClass('active');
                     }
-                    // addContent.before(`<span class="item">${thisTxt}</span>`)
                 });
                 
                 // 确认
-                $('body').on('click','#addclassok',function(){
+                $('body').one('click','#addclassok',function(){
                     let _this = $(this);
-                    _this.parent().parent().find('.item.active');
-                    addContent.before(_this.parent().parent().find('.item.active').append("<div class='del-this'>×</div>"));
+                    console.log(addContent);
+                    addContent.before(_this.parent().parent().find('.item.active').removeClass('active'));
                     Alert.removeDialog("alertType");//移除弹窗
                 });
             }
@@ -291,15 +290,15 @@
                     } else {
                         _this.addClass('active');
                     }
-                    // addContent.before(`<span class="item">${thisTxt}</span>`)
                 });
                 
                 // 确认
-                $('body').on('click','#addclassok',function(){
+                $('body').one('click','#addclassok',function(){
                     let _this = $(this);
-                    _this.parent().parent().find('.item.active');
-                    addContent.before(_this.parent().parent().find('.item.active').append("<div class='del-this'>×</div>"));
+                    console.log(addContent);
+                    addContent.before(_this.parent().parent().find('.item.active').removeClass('active'));
                     Alert.removeDialog("alertType");//移除弹窗
+                    addContent = null;
                 });
             }
         })
@@ -354,7 +353,7 @@
                     <span class="delete">删除</span>
                 </div>
                 <div class="class-item-box mt10">
-                    <span class="item add add-class txt-green">
+                    <span class="item add txt-green" id="add-class">
                         + 添加班级
                     </span>
                 </div>
@@ -365,7 +364,7 @@
                     <span class="delete">删除</span>
                 </div>
                 <div class="class-item-box mt10">
-                    <span class="item add add-teacher txt-green" id="add-teacher">
+                    <span class="item add txt-green" id="add-teacher">
                         + 添加教师
                     </span>
                 </div>
