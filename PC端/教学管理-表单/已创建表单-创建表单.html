@@ -244,13 +244,15 @@
         let strFilter = '';
         let longArr = [];
         let shortArr = [];
-        
-        
+        let filterArr = [];
+        let origiArr = [];
         if(resIdArr.length > checkedIdArr.length) {
             longArr = resIdArr;
+            origiArr = Array.from(longArr);
             shortArr = checkedIdArr;
         } else {
             longArr = checkedIdArr;
+            origiArr = Array.from(longArr);
             shortArr = resIdArr;
         }
         // 剔除重复项
@@ -262,10 +264,12 @@
           }
         }
         for (var k = 0; k < longArr.length; k++) {
-            if (longArr[k] != "") {
-                strFilter += $(resStr).find(`.item[classid="${longArr[k]}"]`).prop('outerHTML');
+            if (longArr[k] == "") {
+                strFilter += $(resStr).find(`.item[classid="${origiArr[k]}"]`).css("display","none").prop('outerHTML');
+            } else {
+                strFilter += $(resStr).find(`.item[classid="${origiArr[k]}"]`).prop('outerHTML');
             }
-          }
+        }
 
         // 拼接剔除重复项的班级
         strFilter = `<div class="alert-class-box">${strFilter}
