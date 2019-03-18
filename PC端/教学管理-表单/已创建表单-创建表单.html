@@ -109,10 +109,10 @@
                                         <span class="delete">删除</span>
                                     </div>
                                     <div class="class-item-box mt10">
-                                        <span class="item">
+                                        <span class="item" classid="1">
                                             初一·一班
                                         </span>
-                                        <span class="item">
+                                        <span class="item" classid="2">
                                             初一·一班
                                         </span>
                                         <span class="item">
@@ -134,7 +134,7 @@
                                         <span>指派教师</span>
                                         <span class="delete">删除</span>
                                     </div>
-                                    <div class="class-item-box mt10">
+                                    <div class="teacher-item-box mt10">
                                         <span class="item">
                                             张老师
                                         </span>
@@ -189,38 +189,94 @@
     // 新增班级
     $('body').on('click', '#add-class', function(){
         let addContent = $(this);
-        Alert.smallWindow({
-            data:`<div class="alert-class-box">
-                    <span class="item">
-                        初一·一班
-                    </span>
-                    <span class="item">
-                        初一·二班
-                    </span>
-                    <span class="item">
-                        初一·三班
-                    </span>
-                    <span class="item">
-                        初一·四班
-                    </span>
-                    <span class="item">
-                        初一·五班
-                    </span>
-                    <span class="item">
-                        初一·六班
-                    </span>
-                    <span class="item">
-                        初一·七班
-                    </span>
-                    <span class="item">
-                        初一·八班
-                    </span>
+        let checkedIdArr = [];
+        let resIdArr = [];
 
-                    <div class="form-line submitBtn mt10 clearfix">
-                        <a href="javascript:;" class="blockBtn themeBtn" id="addclassok">确定</a>
+
+        let resStr = `<div class="alert-class-box">
+                        <span class="item" classid="1">
+                            初一·一班
+                        </span>
+                        <span class="item" classid="2">
+                            初一·二班
+                        </span>
+                        <span class="item" classid="3">
+                            初一·三班
+                        </span>
+                        <span class="item" classid="4">
+                            初一·四班
+                        </span>
+                        <span class="item" classid="5">
+                            初一·五班
+                        </span>
+                        <span class="item" classid="6">
+                            初一·六班
+                        </span>
+                        <span class="item" classid="7">
+                            初一·七班
+                        </span>
+                        <span class="item" classid="8">
+                            初一·八班
+                        </span>
+
+                        <div class="form-line submitBtn mt10 clearfix">
+                            <a href="javascript:;" class="blockBtn themeBtn" id="addclassok">确定</a>
+                        </div>
                     </div>
-                </div>
-                `,
+                    `
+
+        // 获取页面班级id
+        if ($('.class-item-box .item').length > 0) {
+            $('.class-item-box .item').each(function(index, item){
+                let thisId = +$(item).attr('classid');
+                if(thisId) { checkedIdArr.push(thisId); }
+            });
+        }
+
+        // 获取回传班级id
+        if ($(resStr).find('.item').length > 0) {
+            $(resStr).find('.item').each(function(index, item){
+                let thisId = +$(item).attr('classid');
+                if(thisId) { resIdArr.push(thisId); }
+            });
+        }
+
+        let strFilter = '';
+        let longArr = [];
+        let shortArr = [];
+        
+        
+        if(resIdArr.length > checkedIdArr.length) {
+            longArr = resIdArr;
+            shortArr = checkedIdArr;
+        } else {
+            longArr = checkedIdArr;
+            shortArr = resIdArr;
+        }
+        // 剔除重复项
+        for (var i = 0; i < longArr.length; i++) {
+          for (var j = 0; j < shortArr.length; j++) {
+            if (longArr[i] == shortArr[j]) {
+                longArr[i] = "";
+            }
+          }
+        }
+        for (var k = 0; k < longArr.length; k++) {
+            if (longArr[k] != "") {
+                strFilter += $(resStr).find(`.item[classid="${longArr[k]}"]`).prop('outerHTML');
+            }
+          }
+
+        // 拼接剔除重复项的班级
+        strFilter = `<div class="alert-class-box">${strFilter}
+                        <div class="form-line submitBtn mt10 clearfix">
+                            <a href="javascript:;" class="blockBtn themeBtn" id="addclassok">确定</a>
+                        </div>
+                    </div>`
+
+
+        Alert.smallWindow({
+            data: strFilter,
             callBack:function(){
                 // 选择班级
                 $('body').on('click','.item',function(){
@@ -236,7 +292,6 @@
                 // 确认
                 $('body').one('click','#addclassok',function(){
                     let _this = $(this);
-                    console.log(addContent);
                     addContent.before(_this.parent().parent().find('.item.active').removeClass('active'));
                     Alert.removeDialog("alertType");//移除弹窗
                 });
@@ -295,7 +350,6 @@
                 // 确认
                 $('body').one('click','#addclassok',function(){
                     let _this = $(this);
-                    console.log(addContent);
                     addContent.before(_this.parent().parent().find('.item.active').removeClass('active'));
                     Alert.removeDialog("alertType");//移除弹窗
                     addContent = null;
@@ -372,6 +426,7 @@
         </div>
         `);
     });
+
 </script>
 </body>
 </html>

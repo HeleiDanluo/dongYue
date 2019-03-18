@@ -11312,7 +11312,8 @@ table {
   cursor: pointer;
   user-select: none;
 }
-.jxgl-my-cjbd .add-box-block .block-box-item .class-item-box .item {
+.jxgl-my-cjbd .add-box-block .block-box-item .class-item-box .item,
+.jxgl-my-cjbd .add-box-block .block-box-item .teacher-item-box .item {
   position: relative;
   display: inline-block;
   padding: 5px 8px;
@@ -11322,10 +11323,12 @@ table {
   min-width: 100px;
   text-align: center;
 }
-.jxgl-my-cjbd .add-box-block .block-box-item .class-item-box .item.add {
+.jxgl-my-cjbd .add-box-block .block-box-item .class-item-box .item.add,
+.jxgl-my-cjbd .add-box-block .block-box-item .teacher-item-box .item.add {
   cursor: pointer;
 }
-.jxgl-my-cjbd .add-box-block .block-box-item .class-item-box .item .del-this {
+.jxgl-my-cjbd .add-box-block .block-box-item .class-item-box .item .del-this,
+.jxgl-my-cjbd .add-box-block .block-box-item .teacher-item-box .item .del-this {
   position: absolute;
   top: -10px;
   right: -10px;
