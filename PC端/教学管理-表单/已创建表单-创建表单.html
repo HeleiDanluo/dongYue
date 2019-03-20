@@ -188,7 +188,7 @@
 
     // 新增班级
     $('body').on('click', '#add-class', function(){
-        let addContent = $(this);
+        addContent = $(this);
         let resStr = '<div class="alert-class-box">\
                         <div class=" clearfix">\
                             <div class="item f_l">\
@@ -244,10 +244,18 @@
                 
                 // 确认
                 $('body').one('click','#addclassok',function(){
-                    console.log(addContent);
+
+                    console.log(addContent)
                     let _this = $(this);
                     addContent.before(_this.parent().parent().find('.item.active').removeClass('active'));
                     Alert.removeDialog("alertType");//移除弹窗
+                    addContent = null;
+                });
+
+                // 取消
+                $('body').one('click','.close-btn',function(){
+                    Alert.removeDialog("alertType");//移除弹窗
+                    addContent = null;
                 });
             }
         })
@@ -256,7 +264,8 @@
 
     // 新增教师
     $('body').on('click', '#add-teacher', function(){
-        let addContent = $(this);
+        addContent = $(this);
+
         Alert.smallWindow({
             data:'<div class="alert-class-box">\
                     <span class="item">\
@@ -301,11 +310,19 @@
                 
                 // 确认
                 $('body').one('click','#addclassok',function(){
-                    console.log(addContent);
+                    console.log(addContent)
                     let _this = $(this);
                     addContent.before(_this.parent().parent().find('.item.active').removeClass('active'));
                     Alert.removeDialog("alertType");//移除弹窗
+                    addContent = null;
                 });
+
+                // 取消
+                $('body').one('click','.close-btn',function(){
+                    Alert.removeDialog("alertType");//移除弹窗
+                    addContent = null;
+                });
+
             }
         })
     })
