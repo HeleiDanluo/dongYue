@@ -313,13 +313,15 @@
     })
     
     // 点击 选项【选项可多洗选】
-    $('body').on('click', '.clickmulti', function() {
+    $('body').on('click', 'input', function() {
         let _this = $(this);
-        let checked = _this.parent().find('input[type="checkbox"]').is(':checked');
-        if(checked) {
-            _this.parent().parent().parent().find('.item-name').text("分值");
-        } else {
-            _this.parent().parent().parent().find('.item-name').text("每点击一次加分");
+        if(_this.siblings().hasClass('clickmulti')){
+            let checked = _this.parent().find('input[type="checkbox"]').is(':checked');
+            if(checked) {
+                _this.parent().parent().parent().find('.item-name').text("每点击一次加分");
+            } else {
+                _this.parent().parent().parent().find('.item-name').text("分值");
+            }
         }
     })
 </script>

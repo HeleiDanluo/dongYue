@@ -191,33 +191,18 @@
         addContent = $(this);
         let resStr = '<div class="alert-class-box">\
                         <div class=" clearfix">\
-                            <div class="item f_l">\
-                                <span classid="1">\
+                            <div class="f_l">\
+                                <span class="item" classid="1">\
                                     初一·一班\
                                 </span>\
                             </div>\
-                            <div class="item f_l">\
-                                <span classid="1">\
+                            <div class="f_l">\
+                                <span class="item" classid="1">\
                                     初一·一班\
                                 </span>\
                             </div>\
-                            <div class="item f_l">\
-                                <span classid="1">\
-                                    初一·一班\
-                                </span>\
-                            </div>\
-                            <div class="item f_l">\
-                                <span classid="1">\
-                                    初一·一班\
-                                </span>\
-                            </div>\
-                            <div class="item f_l">\
-                                <span classid="1">\
-                                    初一·一班\
-                                </span>\
-                            </div>\
-                            <div class="item f_l">\
-                                <span classid="1">\
+                            <div class="f_l">\
+                                <span class="item" classid="1">\
                                     初一·一班\
                                 </span>\
                             </div>\
@@ -249,13 +234,6 @@
                     let _this = $(this);
                     addContent.before(_this.parent().parent().find('.item.active').removeClass('active'));
                     Alert.removeDialog("alertType");//移除弹窗
-                    addContent = null;
-                });
-
-                // 取消
-                $('body').one('click','.close-btn',function(){
-                    Alert.removeDialog("alertType");//移除弹窗
-                    addContent = null;
                 });
             }
         })
@@ -268,30 +246,23 @@
 
         Alert.smallWindow({
             data:'<div class="alert-class-box">\
-                    <span class="item">\
-                       张老师\
-                    </span>\
-                    <span class="item">\
-                        刘老师\
-                    </span>\
-                    <span class="item">\
-                        苍老师\
-                    </span>\
-                    <span class="item">\
-                        666老师\
-                    </span>\
-                    <span class="item">\
-                       张老师\
-                    </span>\
-                    <span class="item">\
-                        刘老师\
-                    </span>\
-                    <span class="item">\
-                        苍老师\
-                    </span>\
-                    <span class="item">\
-                        666老师\
-                    </span>\
+                    <div class=" clearfix">\
+                        <div class="f_l">\
+                            <span class="item">\
+                            张老师\
+                            </span>\
+                        </div>\
+                        <div class="f_l">\
+                            <span class="item">\
+                            张老师\
+                            </span>\
+                        </div>\
+                        <div class="f_l">\
+                            <span class="item">\
+                            张老师\
+                            </span>\
+                        </div>\
+                    </div>\
                     <div class="form-line submitBtn mt10 clearfix">\
                         <a href="javascript:;" class="blockBtn themeBtn" id="addclassok">确定</a>\
                     </div>\
@@ -314,14 +285,8 @@
                     let _this = $(this);
                     addContent.before(_this.parent().parent().find('.item.active').removeClass('active'));
                     Alert.removeDialog("alertType");//移除弹窗
-                    addContent = null;
                 });
 
-                // 取消
-                $('body').one('click','.close-btn',function(){
-                    Alert.removeDialog("alertType");//移除弹窗
-                    addContent = null;
-                });
 
             }
         })
