@@ -189,10 +189,6 @@
     // 新增班级
     $('body').on('click', '#add-class', function(){
         let addContent = $(this);
-        let checkedIdArr = [];
-        let resIdArr = [];
-
-
         let resStr = '<div class="alert-class-box">\
                         <div class=" clearfix">\
                             <div class="item f_l">\
@@ -231,60 +227,6 @@
                         </div>\
                     </div>'
 
-        // 获取页面班级id
-        if ($('.class-item-box .item').length > 0) {
-            $('.class-item-box .item').each(function(index, item){
-                let thisId = +$(item).attr('classid');
-                if(thisId) { checkedIdArr.push(thisId); }
-            });
-        }
-
-        // 获取回传班级id
-        if ($(resStr).find('.item').length > 0) {
-            $(resStr).find('.item').each(function(index, item){
-                let thisId = +$(item).attr('classid');
-                if(thisId) { resIdArr.push(thisId); }
-            });
-        }
-
-        let strFilter = '';
-        let longArr = [];
-        let shortArr = [];
-        let filterArr = [];
-        let origiArr = [];
-        if(resIdArr.length > checkedIdArr.length) {
-            longArr = resIdArr;
-            origiArr = Array.from(longArr);
-            shortArr = checkedIdArr;
-        } else {
-            longArr = checkedIdArr;
-            origiArr = Array.from(longArr);
-            shortArr = resIdArr;
-        }
-        // 剔除重复项
-        for (var i = 0; i < longArr.length; i++) {
-          for (var j = 0; j < shortArr.length; j++) {
-            if (longArr[i] == shortArr[j]) {
-                longArr[i] = "";
-            }
-          }
-        }
-        for (var k = 0; k < longArr.length; k++) {
-            if (longArr[k] == "") {
-                strFilter += $(resStr).find('.item[classid='+origiArr[k]+']').css("display","none").prop('outerHTML');
-            } else {
-                strFilter += $(resStr).find('.item[classid='+origiArr[k]+']').prop('outerHTML');
-            }
-        }
-
-        // 拼接剔除重复项的班级
-        strFilter = '<div class="alert-class-box">'+strFilter+'\
-                        <div class="form-line submitBtn mt10 clearfix">\
-                            <a href="javascript:;" class="blockBtn themeBtn" id="addclassok">确定</a>\
-                        </div>\
-                    </div>';
-
-
         Alert.smallWindow({
             data: resStr,
             callBack:function(){
@@ -293,7 +235,6 @@
                     // debugger;
                     let _this = $(this);
                     let thisTxt = _this.text();
-                    console.log(_this.hasClass('acitve'))
                     if(_this.hasClass('acitve')){
                         _this.removeClass('active');
                     } else {
@@ -303,6 +244,7 @@
                 
                 // 确认
                 $('body').one('click','#addclassok',function(){
+                    console.log(addContent);
                     let _this = $(this);
                     addContent.before(_this.parent().parent().find('.item.active').removeClass('active'));
                     Alert.removeDialog("alertType");//移除弹窗
@@ -359,10 +301,10 @@
                 
                 // 确认
                 $('body').one('click','#addclassok',function(){
+                    console.log(addContent);
                     let _this = $(this);
                     addContent.before(_this.parent().parent().find('.item.active').removeClass('active'));
                     Alert.removeDialog("alertType");//移除弹窗
-                    addContent = null;
                 });
             }
         })

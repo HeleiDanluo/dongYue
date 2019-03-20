@@ -216,19 +216,36 @@
     
     // 添加小项
     $('body').on('click', '.add-item', function() {
-        $(this).parent().parent().before(`
-        <div class="col-16-16 f18">
-            <div class="col-1-16 f18">&nbsp;</div>
-            <div class="col-5-16 f18">
-                <input type="text" placeholder="选项">
+        let multiChecked = $(this).parent().parent().parent().find('.clickmulti').siblings().is(':checked');
+        if(multiChecked) {
+            $(this).parent().parent().before(`
+            <div class="col-16-16 f18">
+                <div class="col-1-16 f18">&nbsp;</div>
+                <div class="col-5-16 f18">
+                    <input type="text" placeholder="选项">
+                </div>
+                <div class="del-item icon-errorTip"></div>
+                <div class="col-4-16 f18">
+                    <input class="item-number ml10 f_r" type="number" type="" placeholder="">
+                    <span class="item-name f_r">每点击一次加分</span>
+                </div>
             </div>
-            <div class="del-item icon-errorTip"></div>
-            <div class="col-4-16 f18">
-                <input class="item-number ml10 f_r" type="number" type="" placeholder="">
-                <span class="item-name f_r">分值</span>
+            `);
+        } else {
+            $(this).parent().parent().before(`
+            <div class="col-16-16 f18">
+                <div class="col-1-16 f18">&nbsp;</div>
+                <div class="col-5-16 f18">
+                    <input type="text" placeholder="选项">
+                </div>
+                <div class="del-item icon-errorTip"></div>
+                <div class="col-4-16 f18">
+                    <input class="item-number ml10 f_r" type="number" type="" placeholder="">
+                    <span class="item-name f_r">分值</span>
+                </div>
             </div>
-        </div>
-        `);
+            `);
+        }
     })
 
     // 点击右侧 新题目
