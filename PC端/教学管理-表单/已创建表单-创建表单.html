@@ -109,10 +109,10 @@
                                         <span class="delete">删除</span>
                                     </div>
                                     <div class="class-item-box mt10">
-                                        <span class="item" classid="1">
+                                        <span class="item" classid="">
                                             初一·一班
                                         </span>
-                                        <span class="item" classid="2">
+                                        <span class="item" classid="">
                                             初一·一班
                                         </span>
                                         <span class="item">
@@ -194,30 +194,38 @@
 
 
         let resStr = '<div class="alert-class-box">\
-                        <span class="item" classid="1">\
-                            初一·一班\
-                        </span>\
-                        <span class="item" classid="2">\
-                            初一·二班\
-                        </span>\
-                        <span class="item" classid="3">\
-                            初一·三班\
-                        </span>\
-                        <span class="item" classid="4">\
-                            初一·四班\
-                        </span>\
-                        <span class="item" classid="5">\
-                            初一·五班\
-                        </span>\
-                        <span class="item" classid="6">\
-                            初一·六班\
-                        </span>\
-                        <span class="item" classid="7">\
-                            初一·七班\
-                        </span>\
-                        <span class="item" classid="8">\
-                            初一·八班\
-                        </span>\
+                        <div class=" clearfix">\
+                            <div class="item f_l">\
+                                <span classid="1">\
+                                    初一·一班\
+                                </span>\
+                            </div>\
+                            <div class="item f_l">\
+                                <span classid="1">\
+                                    初一·一班\
+                                </span>\
+                            </div>\
+                            <div class="item f_l">\
+                                <span classid="1">\
+                                    初一·一班\
+                                </span>\
+                            </div>\
+                            <div class="item f_l">\
+                                <span classid="1">\
+                                    初一·一班\
+                                </span>\
+                            </div>\
+                            <div class="item f_l">\
+                                <span classid="1">\
+                                    初一·一班\
+                                </span>\
+                            </div>\
+                            <div class="item f_l">\
+                                <span classid="1">\
+                                    初一·一班\
+                                </span>\
+                            </div>\
+                        </div>\
                         <div class="form-line submitBtn mt10 clearfix">\
                             <a href="javascript:;" class="blockBtn themeBtn" id="addclassok">确定</a>\
                         </div>\
@@ -278,12 +286,14 @@
 
 
         Alert.smallWindow({
-            data: strFilter,
+            data: resStr,
             callBack:function(){
                 // 选择班级
                 $('body').on('click','.item',function(){
+                    // debugger;
                     let _this = $(this);
                     let thisTxt = _this.text();
+                    console.log(_this.hasClass('acitve'))
                     if(_this.hasClass('acitve')){
                         _this.removeClass('active');
                     } else {
