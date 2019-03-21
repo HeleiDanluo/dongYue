@@ -78,75 +78,22 @@
                         <div class="col-10-16 f18">
                             <span class="ml10">
                                 <!-- input id须和label for的属性一致且不与页面重复 -->
-                                <input type="checkbox" name="aa" id="11">
-                                <label for="11">必选</label>
+                                <label>
+                                    <input type="checkbox" name="aa">
+                                    必选
+                                </label>
                             </span>
                             <span class="ml10">
-                                <input type="checkbox" name="aa" id="22">
-                                <label for="22">多选</label>
+                                <label>
+                                    <input type="checkbox" name="aa">
+                                    多选
+                                </label>
                             </span>
                             <span class="ml10">
-                                <input type="checkbox" name="aa" id="33">
-                                <label for="33" class="clickmulti">选项可多次选</label>
-                            </span>
-                            <span class="txt-green ml10 del-all-item cursor_p">删除</span>
-                        </div>
-
-
-                        <!-- 一个选项 -->
-                        <div class="col-16-16 f18">
-                            <div class="col-1-16 f18">&nbsp;</div>
-                            <div class="col-5-16 f18">
-                                <input type="text" placeholder="选项">
-                            </div>
-                            <div class="del-item icon-errorTip"></div>
-                            <div class="col-4-16 f18">
-                                <input class="item-number ml10 f_r" type="number" type="" placeholder="">
-                                <span class="item-name f_r">分值</span>
-                            </div>
-                        </div>
-                        
-                        <!-- 一个选项 -->
-                        <div class="col-16-16 f18">
-                            <div class="col-1-16 f18">&nbsp;</div>
-                            <div class="col-5-16 f18">
-                                <input type="text" placeholder="选项">
-                            </div>
-                            <div class="del-item icon-errorTip"></div>
-                            <div class="col-4-16 f18">
-                                <input class="item-number ml10 f_r" type="number" type="" placeholder="">
-                                <span class="item-name f_r">分值</span>
-                            </div>
-                        </div>
-
-                        <!-- 添加 -->
-                        <div class="col-16-16 f18">
-                            <div class="col-1-16 f18">&nbsp;</div>
-                            <div class="col-5-16 f18">
-                                <div class="add-item">+ 添加选项</div>
-                            </div>
-                            
-                        </div>
-
-                    </div>
-
-                    <div class="title-box clearfix mt20">
-                        <!-- 标题 -->
-                        <div class="col-6-16 f18">
-                            <input type="text" placeholder="题目/项目/标题">
-                        </div>
-                        <div class="col-10-16 f18">
-                            <span class="ml10">
-                                <input type="checkbox" name="aa" id="122">
-                                <label for="122">必选</label>
-                            </span>
-                            <span class="ml10">
-                                <input type="checkbox" name="aa" id="222">
-                                <label for="222">多选</label>
-                            </span>
-                            <span class="ml10">
-                                <input type="checkbox" name="aa" id="322">
-                                <label for="322" class="clickmulti">选项可多次选</label>
+                                <label class="clickmulti">
+                                    <input type="checkbox" name="aa">
+                                    选项可多次选
+                                </label>
                             </span>
                             <span class="txt-green ml10 del-all-item cursor_p">删除</span>
                         </div>
@@ -216,7 +163,7 @@
     
     // 添加小项
     $('body').on('click', '.add-item', function() {
-        let multiChecked = $(this).parent().parent().parent().find('.clickmulti').siblings().is(':checked');
+        let multiChecked = $(this).parent().parent().parent().find('.clickmulti').find('input').is(':checked');
         if(multiChecked) {
             $(this).parent().parent().before(`
             <div class="col-16-16 f18">
@@ -250,77 +197,73 @@
 
     // 点击右侧 新题目
     $('body').on('click', '.add-type', function() {
-        $('.jxgl-my-cjbd').append(`
-        <div class="title-box clearfix mt20">
-            <!-- 标题 -->
-            <div class="col-6-16 f18">
-                <input type="text" placeholder="题目/项目/标题">
-            </div>
-            <div class="col-10-16 f18">
-                <span class="ml10">
-                    <input type="checkbox" name="aa" id="1">
-                    <label for="1">必选</label>
-                </span>
-                <span class="ml10">
-                    <input type="checkbox" name="aa" id="2">
-                    <label for="2">多选</label>
-                </span>
-                <span class="ml10">
-                    <input type="checkbox" name="aa" id="3">
-                    <label for="3" class="clickmulti">选项可多次选</label>
-                </span>
-                <span class="txt-green ml10 del-all-item cursor_p">删除</span>
-            </div>
-
-
-            <!-- 一个选项 -->
-            <div class="col-16-16 f18">
-                <div class="col-1-16 f18">&nbsp;</div>
-                <div class="col-5-16 f18">
-                    <input type="text" placeholder="选项">
-                </div>
-                <div class="del-item icon-errorTip"></div>
-                <div class="col-4-16 f18">
-                    <input class="item-number ml10 f_r" type="number" type="" placeholder="">
-                    <span class="item-name f_r">分值</span>
-                </div>
-            </div>
-            
-            <!-- 一个选项 -->
-            <div class="col-16-16 f18">
-                <div class="col-1-16 f18">&nbsp;</div>
-                <div class="col-5-16 f18">
-                    <input type="text" placeholder="选项">
-                </div>
-                <div class="del-item icon-errorTip"></div>
-                <div class="col-4-16 f18">
-                    <input class="item-number ml10 f_r" type="number" type="" placeholder="">
-                    <span class="item-name f_r">分值</span>
-                </div>
-            </div>
-
-            <!-- 添加 -->
-            <div class="col-16-16 f18">
-                <div class="col-1-16 f18">&nbsp;</div>
-                <div class="col-5-16 f18">
-                    <div class="add-item">+ 添加选项</div>
-                </div>
-                
-            </div>
-
-        </div>
-        `);
+        $('.jxgl-my-cjbd').append('\
+        <div class="title-box clearfix mt20">\
+            <div class="col-6-16 f18">\
+                <input type="text" placeholder="题目/项目/标题">\
+            </div>\
+            <div class="col-10-16 f18">\
+                <span class="ml10">\
+                    <label>\
+                        <input type="checkbox" name="aa">\
+                        必选\
+                    </label>\
+                </span>\
+                <span class="ml10">\
+                    <label>\
+                        <input type="checkbox" name="aa">\
+                        多选\
+                    </label>\
+                </span>\
+                <span class="ml10">\
+                    <label class="clickmulti">\
+                        <input type="checkbox" name="aa">\
+                        选项可多次选\
+                    </label>\
+                </span>\
+                <span class="txt-green ml10 del-all-item cursor_p">删除</span>\
+            </div>\
+            <div class="col-16-16 f18">\
+                <div class="col-1-16 f18">&nbsp;</div>\
+                <div class="col-5-16 f18">\
+                    <input type="text" placeholder="选项">\
+                </div>\
+                <div class="del-item icon-errorTip"></div>\
+                <div class="col-4-16 f18">\
+                    <input class="item-number ml10 f_r" type="number" type="" placeholder="">\
+                    <span class="item-name f_r">分值</span>\
+                </div>\
+            </div>\
+            <div class="col-16-16 f18">\
+                <div class="col-1-16 f18">&nbsp;</div>\
+                <div class="col-5-16 f18">\
+                    <input type="text" placeholder="选项">\
+                </div>\
+                <div class="del-item icon-errorTip"></div>\
+                <div class="col-4-16 f18">\
+                    <input class="item-number ml10 f_r" type="number" type="" placeholder="">\
+                    <span class="item-name f_r">分值</span>\
+                </div>\
+            </div>\
+            <div class="col-16-16 f18">\
+                <div class="col-1-16 f18">&nbsp;</div>\
+                <div class="col-5-16 f18">\
+                    <div class="add-item">+ 添加选项</div>\
+                </div>\
+            </div>\
+        </div>')
     })
     
     // 点击 选项【选项可多洗选】
-    $('body').on('click', 'input', function() {
+    $('body').on('click', 'input', function(e) {
+        e.stopPropagation();
         let _this = $(this);
-        if(_this.siblings().hasClass('clickmulti')){
-            let checked = _this.parent().find('input[type="checkbox"]').is(':checked');
+        if(_this.parent().hasClass('clickmulti')){
+            let checked = _this.is(':checked');
             if(checked) {
-                _this.parent().parent().parent().find('.item-name').text("每点击一次加分");
+                _this.parent().parent().parent().parent().find('.item-name').text("每点击一次加分");
             } else {
-                _this.parent().parent().parent().find('.item-name').text("分值");
+                _this.parent().parent().parent().parent().find('.item-name').text("分值");
             }
         }
     })

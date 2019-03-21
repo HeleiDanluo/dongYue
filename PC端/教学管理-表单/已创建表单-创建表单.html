@@ -187,7 +187,7 @@
     });
 
     // 新增班级
-    $('body').on('click', '#add-class', function(){
+    $('body').off('click', '#add-class').on('click', '#add-class', function(){
         addContent = $(this);
         let resStr = '<div class="alert-class-box">\
                         <div class=" clearfix">\
@@ -229,7 +229,6 @@
                 
                 // 确认
                 $('body').one('click','#addclassok',function(){
-
                     console.log(addContent)
                     let _this = $(this);
                     addContent.before(_this.parent().parent().find('.item.active').removeClass('active'));
@@ -241,7 +240,7 @@
 
 
     // 新增教师
-    $('body').on('click', '#add-teacher', function(){
+    $('body').off('click', '#add-teacher').on('click', '#add-teacher', function(){
         addContent = $(this);
 
         Alert.smallWindow({
