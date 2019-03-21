@@ -107,7 +107,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="table-box excel-table">
+                        <div class="table-box excel-table" id="tongji">
                             <!-- 修改 比例为 3 3 3 7 去掉向上箭头 -->
                             <div class="table-row f16">
                                 <div class="col-2-16">学校名称</div>
@@ -151,7 +151,7 @@
                                 <div class="col-2-16">15</div>
                             </div>
 
-                            <div class="table-row back_white table-item color-pink zongfen-border">
+                            <!-- <div class="table-row back_white table-item color-pink zongfen-border">
                                 <div class="col-2-16"></div>
                                 <div class="col-2-16">平均得分</div>
                                 <div class="col-2-16">10</div>
@@ -160,8 +160,11 @@
                                 <div class="col-2-16">50</div>
                                 <div class="col-2-16">15</div>
                                 <div class="col-2-16">15</div>
-                            </div>
+                            </div> -->
 
+
+
+            
                         </div>
                     </div>
                 </div>
@@ -169,6 +172,35 @@
             </div>
         </div>
     </div>
+<script type="text/javascript">
+
+    $(function () {
+        var row = $("#tongji .table-row");
+        let totalArr = [];
+        let totalStr = '<div class="table-row back_white table-item color-pink zongfen-border"><div class="col-2-16"></div><div class="col-2-16">平均得分</div>';
+        
+        row.each(function(indexOuter, itemOuter){
+            $(itemOuter).find('div').each(function(indexInner, itemInner){
+                let thisTxt = +$(itemInner).text();
+                // 判断是数字
+                if( !isNaN(thisTxt) && indexOuter > 0) {
+                    totalArr[indexInner] += thisTxt;
+                } else {
+                    totalArr[indexInner] = 0;
+                }
+            })
+        })
+        
+        
+        for( let i=0; i<totalArr.length; i++) {
+            // 从第二列开始统计
+            if(i >= 2){
+                totalStr += '<div class="col-2-16">' + (totalArr[i] / (row.length - 1)).toFixed(2) + '</div>'
+            }
+        }
+        $("#tongji").append(totalStr);
+    });
+</script>  
 </body>
 
 </html>

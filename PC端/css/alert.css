@@ -466,7 +466,7 @@
 }
 .mid-form {
   width: 60%;
-  height: 70%;
+  max-height: 70%;
 }
 .small-form {
   width: 500px;
