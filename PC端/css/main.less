@@ -1683,10 +1683,11 @@ div[class^="col"]:before {
     .table-row{
         div{
             overflow:hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
     }
 }
-.table-title {}
 
 .excel-table {
     line-height: 40px;
@@ -8969,6 +8970,7 @@ table{
             margin-left: 26px;
             margin-bottom: 20px;
             float:left;
+            user-select: none;
             cursor: pointer;
             &.null{
                 width:90%;

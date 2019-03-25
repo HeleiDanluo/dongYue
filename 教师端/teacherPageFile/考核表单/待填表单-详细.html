@@ -114,9 +114,9 @@
             </div>
             <!-- 一个问题 -->
             <div class="wenti-box">
-                <h3>2. 问题一标题问题一标题问题一标题（单选）</h3>
+                <h3 class="require">2. 问题一标题问题一标题问题一标题（单选）</h3>
                 <ul>
-                    <li class="wenti-item">
+                    <li class="wenti-item active">
                         <div class="wenti-text">
                             问题1-选项一
                         </div>
@@ -140,7 +140,7 @@
             </div>
             <!-- 一个问题 -->
             <div class="wenti-box">
-                <h3>3. 问题一标题问题一标题问题一标题（可选）</h3>
+                <h3 class="require">3. 问题一标题问题一标题问题一标题（可选）</h3>
                 <ul>
                     <li class="wenti-item">
                         <div class="wenti-text">
@@ -191,7 +191,19 @@
     </a>
 </footer>
 <script>
-
+    //必选是否选择验证
+    requireChecke();
+    function requireChecke() {
+        let requireArr = $('.require');
+        requireArr.each(function(index, item) {
+            let activeLen = $(item).siblings().find('.active').length;
+            if(activeLen <=0 ) {
+                $.warning({words: "没选完"});
+            } else {
+                // 选完了
+            }
+        })
+    }
     // 选择顶部班级
     $('body').on('click', '.class-item', function() {
         if($(this).hasClass('active')){
@@ -208,7 +220,7 @@
             _this.removeClass('active');
         } else {
             if(_this.parent().hasClass('mult-choose')) {
-                _this.addClass('active');
+                // _this.addClass('active');
             } else {
                 _this.addClass('active').siblings().removeClass('active');
             }

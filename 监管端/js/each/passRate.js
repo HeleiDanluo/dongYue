@@ -44,8 +44,8 @@ $(function(){
   $('body').on('click','#sort-up', function(){
     var domList = $('#sort-box .once').get();
     domList.sort(function(a,b){
-      var elOne = $(a).find('.percent').text();
-      var elTwo = $(b).find('.percent').text();
+      var elOne = $(a).find('.percent').text().split('%')[0];
+      var elTwo = $(b).find('.percent').text().split('%')[0];
       if(elOne > elTwo) return 1;
       if(elOne < elTwo) return -1;
       return 0;
@@ -56,8 +56,8 @@ $(function(){
   $('body').on('click','#sort-down', function(){
     var domList = $('#sort-box .once').get();
     domList.sort(function(a,b){
-      var elOne = $(a).find('.percent').text();
-      var elTwo = $(b).find('.percent').text();
+      var elOne = +$(a).find('.percent').text().split('%')[0];
+      var elTwo = +$(b).find('.percent').text().split('%')[0];
       if(elOne > elTwo) return -1;
       if(elOne < elTwo) return 1;
       return 0;
