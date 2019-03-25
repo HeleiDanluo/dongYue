@@ -735,6 +735,9 @@ h1 {
 .icon-pinglun:before {
   content: "\e932";
 }
+.icon-biaodanguanli:before {
+  content: "\e933";
+}
 .animated {
   -webkit-animation-duration: 0.2s;
   animation-duration: 0.2s;
