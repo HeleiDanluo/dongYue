@@ -140,36 +140,63 @@
                     <div class="box clearfix">
                         <span class="title clearfix">可拖动 =></span>
                         <div class="gridly">
-                            <div class="content-box" ondrop="drop(event,this)" ondragover="allowDrop(event)"
-                                draggable="true" ondragstart="drag(event, this)">
+                            
+                            <div class="content-box" 
+                                lessonprivateplanid="1"
+                                ondrop="drop(event,this)" 
+                                ondragover="allowDrop(event)"
+                                draggable="true" 
+                                ondragstart="drag(event, this)">
                                 <div class="content clearfix">
                                     走和跑：6
                                 </div>
                                 <div class="close-content">×</div>
                             </div>
-                            <div class="content-box" ondrop="drop(event,this)" ondragover="allowDrop(event)"
-                                draggable="true" ondragstart="drag(event, this)">
+
+                            
+                            <div class="content-box" 
+                                lessonprivateplanid="2"
+                                ondrop="drop(event,this)" 
+                                ondragover="allowDrop(event)"
+                                draggable="true" 
+                                ondragstart="drag(event, this)">
                                 <div class="content clearfix">
                                     走和跑：7
                                 </div>
                                 <div class="close-content">×</div>
                             </div>
-                            <div class="content-box" ondrop="drop(event,this)" ondragover="allowDrop(event)"
-                                draggable="true" ondragstart="drag(event, this)">
+
+
+                            <div class="content-box" 
+                                lessonprivateplanid="3"
+                                ondrop="drop(event,this)" 
+                                ondragover="allowDrop(event)"
+                                draggable="true" 
+                                ondragstart="drag(event, this)">
                                 <div class="content clearfix">
                                     走和跑：8
                                 </div>
                                 <div class="close-content">×</div>
                             </div>
-                            <div class="content-box" ondrop="drop(event,this)" ondragover="allowDrop(event)"
-                                draggable="true" ondragstart="drag(event, this)">
+
+                            <div class="content-box" 
+                                lessonprivateplanid="4"
+                                ondrop="drop(event,this)" 
+                                ondragover="allowDrop(event)"
+                                draggable="true" 
+                                ondragstart="drag(event, this)">
                                 <div class="content clearfix">
                                     走和跑：9
                                 </div>
                                 <div class="close-content">×</div>
                             </div>
-                            <div class="content-box" ondrop="drop(event,this)" ondragover="allowDrop(event)"
-                                draggable="true" ondragstart="drag(event, this)">
+
+                            <div class="content-box" 
+                                lessonprivateplanid="5"
+                                ondrop="drop(event,this)" 
+                                ondragover="allowDrop(event)"
+                                draggable="true" 
+                                ondragstart="drag(event, this)">
                                 <div class="content clearfix">
                                     走和跑：10
                                 </div>
@@ -178,40 +205,66 @@
                         </div>
                     </div>
 
-
                     <div class="box clearfix">
                         <span class="title clearfix">可拖动 =></span>
                         <div class="gridly">
-                            <div class="content-box" ondrop="drop(event,this)" ondragover="allowDrop(event)"
-                                draggable="true" ondragstart="drag(event, this)">
+                            
+                            <div class="content-box" 
+                                lessonprivateplanid="11"
+                                ondrop="drop(event,this)" 
+                                ondragover="allowDrop(event)"
+                                draggable="true" 
+                                ondragstart="drag(event, this)">
                                 <div class="content clearfix">
                                     走和跑：6
                                 </div>
                                 <div class="close-content">×</div>
                             </div>
-                            <div class="content-box" ondrop="drop(event,this)" ondragover="allowDrop(event)"
-                                draggable="true" ondragstart="drag(event, this)">
+
+                            
+                            <div class="content-box" 
+                                lessonprivateplanid="22"
+                                ondrop="drop(event,this)" 
+                                ondragover="allowDrop(event)"
+                                draggable="true" 
+                                ondragstart="drag(event, this)">
                                 <div class="content clearfix">
                                     走和跑：7
                                 </div>
                                 <div class="close-content">×</div>
                             </div>
-                            <div class="content-box" ondrop="drop(event,this)" ondragover="allowDrop(event)"
-                                draggable="true" ondragstart="drag(event, this)">
+
+
+                            <div class="content-box" 
+                                lessonprivateplanid="33"
+                                ondrop="drop(event,this)" 
+                                ondragover="allowDrop(event)"
+                                draggable="true" 
+                                ondragstart="drag(event, this)">
                                 <div class="content clearfix">
                                     走和跑：8
                                 </div>
                                 <div class="close-content">×</div>
                             </div>
-                            <div class="content-box" ondrop="drop(event,this)" ondragover="allowDrop(event)"
-                                draggable="true" ondragstart="drag(event, this)">
+
+                            <div class="content-box" 
+                                lessonprivateplanid="44"
+                                ondrop="drop(event,this)" 
+                                ondragover="allowDrop(event)"
+                                draggable="true" 
+                                ondragstart="drag(event, this)">
                                 <div class="content clearfix">
                                     走和跑：9
                                 </div>
                                 <div class="close-content">×</div>
                             </div>
-                            <div class="content-box" ondrop="drop(event,this)" ondragover="allowDrop(event)"
-                                draggable="true" ondragstart="drag(event, this)">
+
+                            <div class="content-box" 
+                                lessonprivateplanid="55"
+                                ondrop="drop(event,this)" 
+                                ondragover="allowDrop(event)"
+                                draggable="true" 
+                                ondragstart="drag(event, this)">
                                 <div class="content clearfix">
                                     走和跑：10
                                 </div>
@@ -247,16 +300,26 @@
         }
 
         var srcdiv = null;
+        let srcLessonPrivatePlanId = null;
         function drag(ev, divdom) {
             srcdiv = divdom;
-            ev.dataTransfer.setData("text/html", divdom.innerHTML);
+
+            srcLessonPrivatePlanId = $(divdom).attr('lessonprivateplanid'); // 获取属性
+            ev.dataTransfer.setData('text', srcLessonPrivatePlanId); // 属性设置
+            ev.dataTransfer.setData("text/html", divdom.innerHTML);  // html设置
         }
 
         function drop(ev, divdom) {
             ev.preventDefault();
             if (srcdiv != divdom) {
+                // 交换html
                 srcdiv.innerHTML = divdom.innerHTML;
                 divdom.innerHTML = ev.dataTransfer.getData("text/html");
+
+                let thisSrcLessonPrivatePlanId = $(divdom).attr('lessonprivateplanid');// 当前thisSrcLessonPrivatePlanId
+                // 交换属性
+                $(divdom).attr('lessonprivateplanid', ev.dataTransfer.getData("text")); 
+                $(srcdiv).attr('lessonprivateplanid', thisSrcLessonPrivatePlanId);
             }
         }
     </script>
