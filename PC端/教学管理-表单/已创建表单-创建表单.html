@@ -206,6 +206,21 @@
                                     初一·一班\
                                 </span>\
                             </div>\
+                            <div class="f_l">\
+                                <span class="item" classid="1">\
+                                    初一·一班\
+                                </span>\
+                            </div>\
+                            <div class="f_l">\
+                                <span class="item" classid="1">\
+                                    初一·一班\
+                                </span>\
+                            </div>\
+                            <div class="f_l">\
+                                <span class="item" classid="1">\
+                                    初一·一班\
+                                </span>\
+                            </div>\
                         </div>\
                         <div class="form-line submitBtn mt10 clearfix">\
                             <a href="javascript:;" class="blockBtn themeBtn" id="addclassok">确定</a>\
@@ -216,7 +231,7 @@
             data: resStr,
             callBack:function(){
                 // 选择班级
-                $('body').on('click','.item',function(){
+                $('body').off('click', '.item').on('click','.item',function(){
                     // debugger;
                     let _this = $(this);
                     let thisTxt = _this.text();
