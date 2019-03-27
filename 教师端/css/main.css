@@ -6345,7 +6345,14 @@ footer a:active {
   top: .2rem !important;
 }
 .shuZiJiaoXue {
-  padding: 0.86666667rem 0.48rem 4rem;
+  padding: 0.86666667rem 0.48rem 0rem;
+}
+.shuZiJiaoXue::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 4rem;
 }
 .shuZiJiaoXue .content {
   padding-bottom: 1.26666667rem;

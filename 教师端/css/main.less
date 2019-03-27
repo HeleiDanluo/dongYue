@@ -2635,7 +2635,14 @@ footer {
    }
  }
  .shuZiJiaoXue{
-   padding:65/75rem 36/75rem 4rem;
+   padding:65/75rem 36/75rem 0rem;
+   &::after{
+     content: "";
+     display: block;
+     position: relative;
+     width: 100%;
+     height: 4rem;
+   } 
    .content{
     padding-bottom:95/75rem;     
      .list{
