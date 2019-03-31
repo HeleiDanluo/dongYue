@@ -553,8 +553,8 @@ $(function(){
     var max = +$this.attr('max') || 10000000000;
     var min = +$this.attr('min') || 0;
     var numValue = +$this.val();  
-    console.log(max)
-    console.log(min)
+    // console.log(max)
+    // console.log(min)
     if((/^\d+$/.test( numValue )) && numValue >= 0 && numValue != ''){
       if(numValue < min || numValue > max ){
         Alert.globalWarning({
@@ -582,4 +582,12 @@ $(function(){
       $chartCJTJT.parent().find('.center').width('65%');
     }
   })
+  
+
+  // 字数限制
+  $('body').on('input propertychange', '.', function(){
+    var $this = $(this);
+    
+  })
+  
 })

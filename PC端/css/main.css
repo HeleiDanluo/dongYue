@@ -11380,6 +11380,48 @@ table {
   color: #fff;
   cursor: pointer;
 }
+.my-alert-list {
+  padding: 40px 40px 0;
+}
+.my-alert-list .item-box {
+  max-height: 250px;
+  overflow-y: auto;
+}
+.my-alert-list .item-box .item {
+  position: relative;
+  display: inline-block;
+  padding: 0px 35px 0 25px;
+  border: 1px solid #b4b4b4;
+  margin: 6px;
+  height: 45px;
+  line-height: 45px;
+  user-select: none;
+  cursor: pointer;
+}
+.my-alert-list .item-box .item.active {
+  background: #82b64a;
+  color: #fff;
+}
+.my-alert-list .item-box .item.active i {
+  display: block;
+}
+.my-alert-list .item-box .item .name {
+  float: left;
+  height: 45px;
+  line-height: 45px;
+}
+.my-alert-list .item-box .item i {
+  display: none;
+  position: absolute;
+  left: 65px;
+  line-height: 45px;
+  font-size: 26px;
+  margin-left: 3px;
+  color: #fff;
+}
+.my-alert-list .item-box .item i.active {
+  color: #ffa011;
+}
 /*
 
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||

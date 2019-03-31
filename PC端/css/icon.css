@@ -24,308 +24,311 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-lianjie:before {
+.icon-rongyubang:before {
   content: "\e900";
 }
-.icon-bianji:before {
+.icon-lianjie:before {
   content: "\e901";
 }
-.icon-chakan:before {
+.icon-bianji:before {
   content: "\e902";
 }
-.icon-selected-gougou:before {
+.icon-chakan:before {
   content: "\e903";
 }
-.icon-toRight:before {
+.icon-selected-gougou:before {
   content: "\e904";
 }
-.icon-toLeft:before {
+.icon-toRight:before {
   content: "\e905";
 }
-.icon-beikeguanli:before {
+.icon-toLeft:before {
   content: "\e906";
 }
-.icon-jiaojuguanli:before {
+.icon-beikeguanli:before {
   content: "\e907";
 }
-.icon-zhongkaochengji:before {
+.icon-jiaojuguanli:before {
   content: "\e908";
 }
-.icon-addItem:before {
+.icon-zhongkaochengji:before {
   content: "\e909";
 }
-.icon-classManage:before {
+.icon-addItem:before {
   content: "\e90a";
 }
-.icon-costRegister:before {
+.icon-classManage:before {
   content: "\e90b";
 }
-.icon-delete:before {
+.icon-costRegister:before {
   content: "\e90c";
 }
-.icon-errorTip:before {
+.icon-delete:before {
   content: "\e90d";
 }
-.icon-gou-nocked:before {
+.icon-errorTip:before {
   content: "\e90e";
 }
-.icon-guanbi:before {
+.icon-gou-nocked:before {
   content: "\e90f";
 }
-.icon-jxgl-jtzy:before {
+.icon-guanbi:before {
   content: "\e910";
 }
-.icon-process:before {
+.icon-jxgl-jtzy:before {
   content: "\e911";
 }
-.icon-tzsj-xssjlr:before {
+.icon-process:before {
   content: "\e912";
 }
-.icon-unitPlan:before {
+.icon-tzsj-xssjlr:before {
   content: "\e913";
 }
-.icon-xinlv:before {
+.icon-unitPlan:before {
   content: "\e914";
 }
-.icon-jkda:before {
+.icon-xinlv:before {
   content: "\e915";
 }
-.icon-boyandgirl:before {
+.icon-jkda:before {
   content: "\e916";
 }
-.icon-ktbg:before {
+.icon-boyandgirl:before {
   content: "\e917";
 }
-.icon-girl:before {
+.icon-ktbg:before {
   content: "\e918";
 }
-.icon-boy:before {
+.icon-girl:before {
   content: "\e919";
 }
-.icon-banjiguanli:before {
+.icon-boy:before {
   content: "\e91a";
 }
-.icon-banjikebiao:before {
+.icon-banjiguanli:before {
   content: "\e91b";
 }
-.icon-baomingguanli:before {
+.icon-banjikebiao:before {
   content: "\e91c";
 }
-.icon-chengjiguanli:before {
+.icon-baomingguanli:before {
   content: "\e91d";
 }
-.icon-jihuajindu:before {
+.icon-chengjiguanli:before {
   content: "\e91e";
 }
-.icon-jiatingzuoye:before {
+.icon-jihuajindu:before {
   content: "\e91f";
 }
-.icon-jiaoxuejihua:before {
+.icon-jiatingzuoye:before {
   content: "\e920";
 }
-.icon-jiaoxuejiaoan:before {
+.icon-jiaoxuejihua:before {
   content: "\e921";
 }
-.icon-richangguanli:before {
+.icon-jiaoxuejiaoan:before {
   content: "\e922";
 }
-.icon-xueshengkaoqin:before {
+.icon-richangguanli:before {
   content: "\e923";
 }
-.icon-zhangkaochengji:before {
+.icon-xueshengkaoqin:before {
   content: "\e924";
 }
-.icon-default-head:before {
+.icon-zhangkaochengji:before {
   content: "\e925";
 }
-.icon-bjlr:before {
+.icon-default-head:before {
   content: "\e926";
 }
-.icon-left-jxzy:before {
+.icon-bjlr:before {
   content: "\e927";
 }
-.icon-left-sybz:before {
+.icon-left-jxzy:before {
   content: "\e928";
 }
-.icon-left-tzsj:before {
+.icon-left-sybz:before {
   content: "\e929";
 }
-.icon-left-zzpx:before {
+.icon-left-tzsj:before {
   content: "\e92a";
 }
-.icon-tzsj-bjsjtj:before {
+.icon-left-zzpx:before {
   content: "\e92b";
 }
-.icon-jxgl-bmgl:before {
+.icon-tzsj-bjsjtj:before {
   content: "\e92c";
 }
-.icon-tzsj-xssjtb:before {
+.icon-jxgl-bmgl:before {
   content: "\e92d";
 }
-.icon-tzsj-xstzsj:before {
+.icon-tzsj-xssjtb:before {
   content: "\e92e";
 }
-.icon-add:before {
+.icon-tzsj-xstzsj:before {
   content: "\e92f";
 }
-.icon-allSelect:before {
+.icon-add:before {
   content: "\e930";
 }
-.icon-back:before {
+.icon-allSelect:before {
   content: "\e931";
 }
-.icon-backComment:before {
+.icon-back:before {
   content: "\e932";
 }
-.icon-batchUpdate:before {
+.icon-backComment:before {
   content: "\e933";
 }
-.icon-borrow:before {
+.icon-batchUpdate:before {
   content: "\e934";
 }
-.icon-broken:before {
+.icon-borrow:before {
   content: "\e935";
 }
-.icon-classExcel:before {
+.icon-broken:before {
   content: "\e936";
 }
-.icon-commentTotal:before {
+.icon-classExcel:before {
   content: "\e937";
 }
-.icon-dec:before {
+.icon-commentTotal:before {
   content: "\e938";
 }
-.icon-edit:before {
+.icon-dec:before {
   content: "\e939";
 }
-.icon-gradeManage:before {
+.icon-edit:before {
   content: "\e93a";
 }
-.icon-group:before {
+.icon-gradeManage:before {
   content: "\e93b";
 }
-.icon-hehe:before {
+.icon-group:before {
   content: "\e93c";
 }
-.icon-history:before {
+.icon-hehe:before {
   content: "\e93d";
 }
-.icon-home:before {
+.icon-history:before {
   content: "\e93e";
 }
-.icon-homeWork:before {
+.icon-home:before {
   content: "\e93f";
 }
-.icon-import:before {
+.icon-homeWork:before {
   content: "\e940";
 }
-.icon-itemSelect:before {
+.icon-import:before {
   content: "\e941";
 }
-.icon-maintain:before {
+.icon-itemSelect:before {
   content: "\e942";
 }
-.icon-output:before {
+.icon-maintain:before {
   content: "\e943";
 }
-.icon-phone:before {
+.icon-output:before {
   content: "\e944";
 }
-.icon-save:before {
+.icon-phone:before {
   content: "\e945";
 }
-.icon-schedule:before {
+.icon-save:before {
   content: "\e946";
 }
-.icon-search:before {
+.icon-schedule:before {
   content: "\e947";
 }
-.icon-setting:before {
+.icon-search:before {
   content: "\e948";
 }
-.icon-stgList:before {
+.icon-setting:before {
   content: "\e949";
 }
-.icon-teachManage:before {
+.icon-stgList:before {
   content: "\e94a";
 }
-.icon-teachPlan:before {
+.icon-teachManage:before {
   content: "\e94b";
 }
-.icon-teachProject:before {
+.icon-teachPlan:before {
   content: "\e94c";
 }
-.icon-testOption:before {
+.icon-teachProject:before {
   content: "\e94d";
 }
-.icon-tips:before {
+.icon-testOption:before {
   content: "\e94e";
 }
-.icon-download:before {
+.icon-tips:before {
   content: "\e94f";
 }
-.icon-toolManage:before {
+.icon-download:before {
   content: "\e950";
 }
-.icon-top:before {
+.icon-toolManage:before {
   content: "\e951";
 }
-.icon-totalNum:before {
+.icon-top:before {
   content: "\e952";
 }
-.icon-uploadImg:before {
+.icon-totalNum:before {
   content: "\e953";
 }
-.icon-userHead:before {
+.icon-uploadImg:before {
   content: "\e954";
 }
-.icon-voliError:before {
+.icon-userHead:before {
   content: "\e955";
 }
-.icon-userName:before {
+.icon-voliError:before {
   content: "\e956";
 }
-.icon-voliCode:before {
+.icon-userName:before {
   content: "\e957";
 }
-.icon-voliPass:before {
+.icon-voliCode:before {
   content: "\e958";
 }
-.icon-bjxsgl:before {
+.icon-voliPass:before {
   content: "\e959";
 }
-.icon-tzsjshsb:before {
+.icon-bjxsgl:before {
   content: "\e95a";
 }
-.icon-passWord:before {
+.icon-tzsjshsb:before {
   content: "\e95b";
 }
-.icon-toolImport:before {
+.icon-passWord:before {
   content: "\e95c";
 }
-.icon-bjtzsj:before {
+.icon-toolImport:before {
   content: "\e95d";
 }
-.icon-bjsjbb:before {
+.icon-bjtzsj:before {
   content: "\e95e";
 }
-.icon-njsjdc:before {
+.icon-bjsjbb:before {
   content: "\e95f";
 }
-.icon-tzsjlrtjsh:before {
+.icon-njsjdc:before {
   content: "\e960";
 }
-.icon-gou-cked:before {
+.icon-tzsjlrtjsh:before {
   content: "\e961";
 }
-.icon-up:before {
+.icon-gou-cked:before {
   content: "\e962";
 }
-.icon-right:before {
+.icon-up:before {
   content: "\e963";
 }
-.icon-down:before {
+.icon-right:before {
   content: "\e964";
+}
+.icon-down:before {
+  content: "\e965";
 }
 .icon-spinner:before {
   content: "\e97a";

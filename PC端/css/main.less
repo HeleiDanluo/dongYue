@@ -434,8 +434,8 @@ textarea{
                 background: #6ebee2;
             }
         }
-        &:hover .dl-list {
-            display: block;
+        &:hover .dl-list { 
+            display: block; 
         }
     }
     .shebei-banji {
@@ -11265,6 +11265,48 @@ left:0;
         margin-top: 15px;
         color:#fff;
         cursor: pointer;
+    }
+}
+.my-alert-list{
+    padding: 40px 40px 0;
+    .item-box{
+        max-height: 250px;
+        overflow-y: auto;
+        .item{
+            position: relative;
+            display: inline-block;
+            padding: 0px 35px 0 25px;
+            border: 1px solid #b4b4b4;
+            margin: 6px;
+            height: 45px;
+            line-height: 45px;
+            user-select: none;
+            cursor: pointer;
+            &.active{
+                background: @themeColor;
+                color: #fff;
+                i{
+                    display: block;
+                }
+            }
+            .name{
+                float: left;
+                height: 45px;
+                line-height: 45px;
+            }
+            i{
+                display: none;
+                position: absolute;
+                left: 65px;
+                line-height: 45px;
+                font-size: 26px;
+                margin-left: 3px;
+                color: #fff;
+                &.active{
+                    color: @darkYellow;
+                }
+            }
+        }
     }
 }
 /*
