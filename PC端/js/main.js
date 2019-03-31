@@ -582,12 +582,4 @@ $(function(){
       $chartCJTJT.parent().find('.center').width('65%');
     }
   })
-  
-
-  // 字数限制
-  $('body').on('input propertychange', '.', function(){
-    var $this = $(this);
-    
-  })
-  
 })
