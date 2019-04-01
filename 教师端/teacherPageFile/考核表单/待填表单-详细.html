@@ -106,7 +106,7 @@
                         </div>
                         <div class="opts-box" flex="box:mean">
                             <div class="jian">-</div>
-                            <div  class="value-box" add-count="0" add-val="0.3">0</div>
+                            <div  class="value-box" add-count="0" add-val="-0.3">0</div>
                             <div class="jia">+</div>
                         </div>
                     </li>
@@ -237,18 +237,22 @@
 
         if($(this).hasClass('jian')){
             // 减
-            if(addCount > 0) {
-                addCount--;
-                addValBox.html((currentVal * 10 - addVal *10)/10)
-                .attr('add-count', addCount);
+            if(addVal >= 0) {
+                if((currentVal * 10 - addVal *10)/10 >=0) {
+                    addValBox.html((currentVal * 10 - addVal *10)/10)
+                }
+            } else {
+                if((currentVal * 10 - addVal *10)/10 <= 0) {
+                    addValBox.html((currentVal * 10 - addVal *10)/10)
+                }
             }
+            
         } else if($(this).hasClass('jia')){
             // 加
-            addCount++;
             addValBox.html((currentVal * 10 + addVal *10)/10)
-                     .attr('add-count', addCount);;
         }
     })
+
 </script>
 </body>
 </html>
