@@ -91,11 +91,15 @@ $(function(){
           // 取消
           if($this.hasClass('active')) {
             $this.removeClass('active')
-              .find('.icon-rongyubang').removeClass('active')
+              .find('.icon-rongyubang').removeClass('active');
           } 
           // 激活
           else {
-            $this.addClass('active')
+            if($this.index() == 0) {
+              $this.find('.icon-rongyubang').addClass('active')
+              .parent().siblings().find('.icon-rongyubang').removeClass('active');
+            }
+            $this.addClass('active');
           }
         })
 
@@ -113,7 +117,7 @@ $(function(){
             $this.addClass('active')
             .attr('title', '取消负责教师')
             .parent().siblings().find('.icon-rongyubang').removeClass('active')
-            .attr('title', '设置为负责教师');;
+            .attr('title', '设置为负责教师');
           }
         })
 
