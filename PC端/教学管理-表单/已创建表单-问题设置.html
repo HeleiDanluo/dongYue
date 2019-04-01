@@ -62,7 +62,13 @@
             <div class="table-content">
                 <div class="table-btn-group">
                     <div class="table-row">
-                        <div class="col-14-16 f14">题目默认为单选，未勾选“多选” 即认为为单选 单个选项默认只可以选择一次，即未勾选“选项可多次选”</div>
+                        <div class="col-14-16 f14">
+                            题目默认为单选，未勾选“多选” 即认为为单选 单个选项默认只可以选择一次，即未勾选“选项可多次选”
+                            <span class="f_r">
+                                设置总分：
+                                <input style="height: 34px" class="ml10 f_r set_min" min="0" type="number" placeholder="大等于0">
+                            </span>
+                        </div>
                         <div class="col-2-16 t_r">
                             <a href="javascript:;" class="btn themeBtn">返回</a>
                         </div>
@@ -107,7 +113,7 @@
                             </div>
                             <div class="del-item icon-errorTip"></div>
                             <div class="col-4-16 f18">
-                                <input class="item-number ml10 f_r" type="number" type="" placeholder="">
+                                <input class="item-number ml10 f_r" type="number" value="0">
                                 <span class="item-name f_r">分值</span>
                             </div>
                         </div>
@@ -120,7 +126,7 @@
                             </div>
                             <div class="del-item icon-errorTip"></div>
                             <div class="col-4-16 f18">
-                                <input class="item-number ml10 f_r" type="number" type="" placeholder="">
+                                <input class="item-number ml10 f_r" type="number" value="0">
                                 <span class="item-name f_r">分值</span>
                             </div>
                         </div>
@@ -150,6 +156,7 @@
         </div>
     </div>
 </div>
+<script src="../plugins/alert.js"></script>
 <script>
     // 点击绿色删除文字
     $('body').on('click', '.del-all-item', function() {
@@ -173,7 +180,7 @@
                 </div>
                 <div class="del-item icon-errorTip"></div>
                 <div class="col-4-16 f18">
-                    <input class="item-number ml10 f_r" type="number" type="" placeholder="">
+                    <input class="item-number ml10 f_r" type="number" value="0">
                     <span class="item-name f_r">每点击一次加分</span>
                 </div>
             </div>
@@ -187,7 +194,7 @@
                 </div>
                 <div class="del-item icon-errorTip"></div>
                 <div class="col-4-16 f18">
-                    <input class="item-number ml10 f_r" type="number" type="" placeholder="">
+                    <input class="item-number ml10 f_r" type="number" value="0">
                     <span class="item-name f_r">分值</span>
                 </div>
             </div>
@@ -230,7 +237,7 @@
                 </div>\
                 <div class="del-item icon-errorTip"></div>\
                 <div class="col-4-16 f18">\
-                    <input class="item-number ml10 f_r" type="number" type="" placeholder="">\
+                    <input class="item-number ml10 f_r" type="number" value="0">\
                     <span class="item-name f_r">分值</span>\
                 </div>\
             </div>\
@@ -241,7 +248,7 @@
                 </div>\
                 <div class="del-item icon-errorTip"></div>\
                 <div class="col-4-16 f18">\
-                    <input class="item-number ml10 f_r" type="number" type="" placeholder="">\
+                    <input class="item-number ml10 f_r" type="number" value="0">\
                     <span class="item-name f_r">分值</span>\
                 </div>\
             </div>\

@@ -550,15 +550,20 @@ $(function(){
 $(function(){
   $('body').on('input propertychange', '.just-int', function(){
     var $this = $(this);
-    var max = +$this.attr('max') || 10000000000;
+    var max = +$this.attr('max') || 100000000000000000000000;
     var min = +$this.attr('min') || 0;
     var numValue = +$this.val();  
-    // console.log(max)
-    // console.log(min)
     if((/^\d+$/.test( numValue )) && numValue >= 0 && numValue != ''){
-      if(numValue < min || numValue > max ){
+      if(numValue > max ){
         Alert.globalWarning({
-          'words':'请输入' + min + '~' + max + '整数',
+          'words':'请输入小于' + max + '的整数',
+          'callBack':function(){},
+        })
+        $this.val('');
+      }
+      if(numValue < min){
+        Alert.globalWarning({
+          'words':'请输入大于' + min+ '的整数',
           'callBack':function(){},
         })
         $this.val('');
@@ -570,6 +575,20 @@ $(function(){
       })
       $this.val('');
     }  
+  })
+
+  // 最小值验证
+  $('body').on('input propertychange', '.set_min', function(){
+    var $this = $(this);
+    var min = +$this.attr('min') || 0;
+    var numValue = +$this.val();  
+    if(numValue < min){
+      Alert.globalWarning({
+        'words':'请输入大于' + min+ '的整数',
+        'callBack':function(){},
+      })
+      $this.val('');
+    }
   })
   //阻止点击事件
   $('.ban-click,.ban-click *').attr('onclick','return false');//去除绑定事件
