@@ -115,13 +115,13 @@
                                         <th colspan="2" rowspan="2"></th>
                                         <th colspan="6">思维灵动</th>
                                         <th rowspan="2">合计</th>
-                                        
+
                                         <th colspan="6">身体运动</th>
                                         <th rowspan="2">合计</th>
-                                        
+
                                         <th colspan="3">心理活动</th>
                                         <th rowspan="2">合计</th>
-                                        
+
                                         <th rowspan="2">总分（102）</th>
                                     </tr>
                                     <tr>
@@ -131,14 +131,14 @@
                                         <th>教学过程<br>学生活动(5)</th>
                                         <th>教学过程<br>教学环节(5)</th>
                                         <th>目标达成(10)</th>
-                                        
+
                                         <th>目标设计（5）</th>
                                         <th>重、难点（5）</th>
                                         <th>教学过程<br>教师活动(5)</th>
                                         <th>教学过程<br>学生活动(5)</th>
                                         <th>教学过程<br>教学环节(5)</th>
                                         <th>目标达成(10)</th>
-                                        
+
                                         <th>教学过程<br>教师活动(5)</th>
                                         <th>教学过程<br>学生活动(5)</th>
                                         <th>目标达成(10)</th>
@@ -150,6 +150,7 @@
                                         <td>测试学校</td>
                                         <td>杨超越</td>
                                         <td>10</td>
+                                        <td>50</td>
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
@@ -165,8 +166,7 @@
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
-                                        <td>10</td>
-                                        <td>10</td>
+                                        <td>20</td>
                                         <td>50</td>
                                     </tr>
                                     <tr>
@@ -190,7 +190,7 @@
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
-                                        <td>50</td>
+                                        <td>20</td>
                                     </tr>
                                     <tr>
                                         <td>测试学校</td>
@@ -213,9 +213,9 @@
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
-                                        <td>50</td>
+                                        <td>30</td>
                                     </tr>
-                                    <tr class="color-pink">
+                                    <!-- <tr class="color-pink">
                                         <td></td>
                                         <td>平均得分</td>
                                         <td>10</td>
@@ -237,7 +237,7 @@
                                         <td>10</td>
                                         <td>10</td>
                                         <td>50</td>
-                                    </tr>
+                                    </tr> -->
                                 </tbody>
                             </table>
                         </div>
@@ -248,6 +248,24 @@
             </div>
         </div>
     </div>
+
+    <script type="text/javascript">
+
+        $(function () {
+            var tr = $("table tbody").find("tr").length;
+            var td = $("table tbody").find("tr")[0].cells.length;
+            var total = 0;
+            var str = '<td></td><td>平均得分</td>';
+            for (var i = 2; i < td; i++) {
+                for (var j = 0; j < tr; j++) {
+                    total = total + parseFloat($("table tbody").find("tr:eq(" + j + ")").find("td:eq(" + i + ")").text());
+                }
+                str = str + "<td>" + (total/tr).toFixed(2) + "</td>";
+                total = 0;
+            }
+            $("table tbody").append('<tr class="color-pink">' +str+ '</tr>')
+        });
+    </script>  
 </body>
 
 </html>
