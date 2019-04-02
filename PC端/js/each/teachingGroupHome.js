@@ -85,6 +85,8 @@ $(function(){
                 </div>\
             </div>',
       callBack:function(){
+        //弹窗高度自适应
+        $('.mid-form').css('height','auto');
         // 点击教师
         $('body').off('click','.item').on('click', '.item', function() {
           var $this = $(this);
