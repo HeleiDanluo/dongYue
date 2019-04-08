@@ -470,7 +470,7 @@
 }
 .small-form {
   width: 500px;
-  height: 200px;
+  min-height: 200px;
 }
 .form-line {
   padding: 10px 0;

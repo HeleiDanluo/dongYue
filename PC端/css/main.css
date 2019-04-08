@@ -7912,7 +7912,7 @@ input[type="button"] {
 }
 .small-form {
   width: 500px;
-  height: 200px;
+  min-height: 200px;
 }
 .small-alert-content {
   padding: 0 60px;
