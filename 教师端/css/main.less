@@ -148,7 +148,7 @@ header {
   position: relative;
   z-index: 1000000000000000000;
   a {
-    width: 1.333rem;
+    width: 1.333rem; 
     height: 1.333rem;
     line-height: 1.333rem;
     text-align: center;
@@ -156,6 +156,9 @@ header {
   .title {
     line-height: 1.333rem;
     text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
     > input {
       text-align: center !important;
     }
@@ -694,8 +697,18 @@ footer {
         margin-top: .3rem;
         display: flex;
         justify-content: space-between;
+        >span{
+          position: relative;
+          >label{
+            padding-left: 0.8rem;
+          }
+        }
         input[type="radio"]{
+          position: absolute;
           opacity: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 10000;
         }
         /* 默认样式 */
         input[type="radio"]+label::before{
@@ -2053,7 +2066,7 @@ footer {
 }
 
 .btn-tianjiafansi{
-  width:3rem;
+  // width:3rem;
   color:#95BF65;
 }
 

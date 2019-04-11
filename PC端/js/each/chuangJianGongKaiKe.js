@@ -1,14 +1,14 @@
 $(function () {
-  window.loadImage(
-    blob,
-    function (canvas) {
-      canvasToBlob(canvas, function (newBlob) {
-        expect(newBlob).to.be.a.instanceOf(Blob)
-        done()
-      })
-    },
-    { canvas: true }
-  )
+  // window.loadImage(
+  //   blob,
+  //   function (canvas) {
+  //     canvasToBlob(canvas, function (newBlob) {
+  //       expect(newBlob).to.be.a.instanceOf(Blob)
+  //       done()
+  //     })
+  //   },
+  //   { canvas: true }
+  // )
 
   selectNew();
   /* 日期控件 */

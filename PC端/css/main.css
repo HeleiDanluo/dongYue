@@ -1013,7 +1013,7 @@ img {
 }
 .small-form {
   width: 500px;
-  height: 200px;
+  min-height: 200px;
 }
 .form-line {
   padding: 10px 0;
@@ -1206,6 +1206,22 @@ img {
 html,
 body {
   height: 100%;
+}
+body table,
+body table tr th,
+body table tr td {
+  border: 1px solid #d5d5d2;
+  line-height: 30px;
+  white-space: nowrap;
+  padding: 0 20px;
+}
+body table {
+  text-align: center;
+  border-collapse: collapse;
+}
+.layui-laydate-content td,
+.layui-laydate-content th {
+  padding: 0px !important;
 }
 .color-blue {
   color: #0e97d9 !important;
@@ -5776,6 +5792,36 @@ input[type="button"] {
 .homeWork-complete-show {
   padding: 30px 40px;
 }
+.xiugai .xiugai-left-menu {
+  position: absolute;
+  width: 15%;
+  height: 100%;
+  background: #fff;
+  z-index: 200;
+}
+.xiugai .xiugai-page-head {
+  height: 55px;
+  position: absolute;
+  width: 85%;
+  background: #82b64a;
+  z-index: 300;
+  left: 15%;
+}
+.xiugai .xiugai-right-section {
+  top: 50px;
+  width: 100%;
+  position: absolute;
+  height: 700px;
+  left: 15%;
+  overflow: scroll;
+}
+.xiugai .imgBox {
+  cursor: pointer;
+  width: 100%;
+}
+.xiugai .imgBox > img {
+  width: 100%;
+}
 .homeWork-list-box .issue-item {
   height: 120px;
   margin-bottom: 20px;
@@ -9050,18 +9096,6 @@ input[type="button"] {
   border-collapse: collapse;
   width: 100%;
 }
-table,
-table tr th,
-table tr td {
-  border: 1px solid #d5d5d2;
-  line-height: 30px;
-  white-space: nowrap;
-  padding: 0 20px;
-}
-table {
-  text-align: center;
-  border-collapse: collapse;
-}
 #data table,
 #data table tr th,
 #data table tr td {
@@ -11421,6 +11455,21 @@ table {
 }
 .my-alert-list .item-box .item i.active {
   color: #ffa011;
+}
+.opacity-mask {
+  position: relative;
+}
+.opacity-mask::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+  display: block;
+  background: red;
+  opacity: 0;
 }
 /*
 
