@@ -603,6 +603,22 @@ footer {
   line-height: .9rem;
   padding: 0 30/75rem;
   z-index: 100;
+  overflow-x: auto;
+  display: flex;
+  align-items: center;
+  >span{
+    display: inline-block;
+    height: .6rem;
+    line-height: .6rem;
+    background: @themeColor;
+    padding: 0 0.1rem;
+    color: #fff;
+    margin-right: .4rem;
+    flex-wrap: nowrap;
+    &.txt-green{
+      background: #82B64A !important;
+    }
+  }
 }
 .mt0{
   margin-top: 0 !important;

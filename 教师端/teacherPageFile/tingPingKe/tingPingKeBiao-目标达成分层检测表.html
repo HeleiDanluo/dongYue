@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <script src="../../js/flexible/flexible_css.js"></script>
+    <script src="../../js/flexible/flexible.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/each/tingPingKe.js"></script>
+    <script type="text/javascript" src="//player.youku.com/jsapi"></script>
+    <title>动跃科技</title>
+</head>
+
+<body flex="dir:top">
+    <header flex-box="0" flex="dir:left" font="18">
+        <a href="javascript:history.go(-1)" flex-box="0">
+            <i class="icon-back"></i>
+        </a>
+        <div class="title" flex-box="1" font="14">听评课教学</div>
+        <a href="javascript:void(0)" flex-box="0"></a>
+    </header>
+    <section flex-box="1" flex="dir:top" class="hide-video tingpingke-body" >
+    <!-- 优酷 -->
+    <div class="tingpingke-video" flex-box="0">
+        <div id="youkuplayer"></div>
+    </div>
+        <!-- 菜单 -->
+        <div class="white-back header-link-menu" flex-box="0">
+            <ul>
+                <li font="12"><a href="javascript:void(0)">教学设计</a></li>
+                <li font="12"><a href="javascript:void(0)">教学教案</a></li>
+                <li font="12"><a href="javascript:void(0)">课堂报告</a></li>
+                <li font="12" class="current"><a href="javascript:void(0)">听评课表</a></li>
+                <li font="12"><a href="javascript:void(0)">讨论区</a></li>
+            </ul>
+        </div>
+        <div class="white-back sub-menu" flex-box="0">
+            <select id="" class="select-tpkb">
+                <option value="“有效课堂”评价表">"有效课堂"评价表</option>
+                <option value="授课评分">授课评分</option>
+                <option value="“三动课堂”评价表">"三动课堂"评价表</option>
+                <option value="“三动课堂”评价表">目标达成分层检测表</option>
+                <option value="“有效教学”评价表">"有效教学"评价表</option>
+                <option value="教学重难点及教法学法检测表">教学重难点及教法学法检测表</option>
+                <option value="教师讲解示范观察表">教师讲解示范观察表</option>
+                <option value="提问互动评价表" selected>提问互动评价表</option>
+            </select>
+        </div>
+        <!-- 内容 -->
+        <!-- 内容 -->
+        <div class="teachPlan-detail-wrapper can-scroll" flex-box="1">
+
+           
+            <div class="kebiao-item white-back teachPlan-content">
+                <div class="teachPlan-model mt0">
+                    <h1 font="18">1.课堂常规</h1>
+                    <h1 font="14">1.1 运动参与达成</h1>
+                    <div class="model-txt">
+                        <p class="txt-lterdark">学生乐于学习，主动参与，为本课学习与锻炼做好铺垫</p>
+                        <div class="radio-box">
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="good-mb">
+                                <label for="good-mb">较好</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="normal-mb">
+                                <label for="normal-mb">普通</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="bad-mb">
+                                <label for="bad-mb">未体现</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="kebiao-item white-back teachPlan-content">
+                <div class="teachPlan-model mt0">
+                    <h1 font="14">1.2 运动技能</h1>
+                    <div class="model-txt">
+                        <p class="txt-lterdark">为学习体育运动知识，掌握运动技能，增强安全意识和防范能力做好铺垫。</p>
+                        <div class="radio-box">
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="good-znd">
+                                <label for="good-znd">较好</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="normal-znd">
+                                <label for="normal-znd">普通</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="bad-znd">
+                                <label for="bad-znd">未体现</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="kebiao-item white-back teachPlan-content">
+                <div class="teachPlan-model mt0">
+                    <h1 font="14">1.3 身体健康达成</h1>
+                    <div class="model-txt">
+                        <p class="txt-lterdark">学生是否掌握健康知识与方法；是否为发展学生体能与健身能力做好铺垫。</p>
+                        <div class="radio-box">
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="good-jxjf">
+                                <label for="good-jxjf">较好</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="normal-jxjf">
+                                <label for="normal-jxjf">普通</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="bad-jxjf">
+                                <label for="bad-jxjf">未体现</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kebiao-item white-back teachPlan-content">
+                <div class="teachPlan-model mt0">
+                    <h1 font="14">1.4 心理健康与社会适应达成</h1>
+                    <div class="model-txt">
+                        <p class="txt-lterdark">学生是否在活动中表现出合作意识和良好的体育道德，能为完成学习任务做好铺垫。</p>
+                        <div class="radio-box">
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="good-jxjf">
+                                <label for="good-jxjf">较好</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="normal-jxjf">
+                                <label for="normal-jxjf">普通</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="bad-jxjf">
+                                <label for="bad-jxjf">未体现</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kebiao-item white-back teachPlan-content">
+                <div class="teachPlan-model mt0">
+                    <h1 font="18">2. 准备部分</h1>
+                    <h1 font="14">2.1 运动参与达成</h1>
+                    <div class="model-txt">
+                        <p class="txt-lterdark">学生乐于学习，主动参与，取得不同进步，为本课学习和锻炼做好准备。</p>
+                        <div class="radio-box">
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="good-jxjf">
+                                <label for="good-jxjf">较好</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="normal-jxjf">
+                                <label for="normal-jxjf">普通</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="bad-jxjf">
+                                <label for="bad-jxjf">未体现</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kebiao-item white-back teachPlan-content">
+                <div class="teachPlan-model mt0">
+                    <h1 font="14">2.2 运动技能</h1>
+                    <div class="model-txt">
+                        <p class="txt-lterdark">增强安全意识和防范能力，为学习体育运动知识，掌握运动技能做好准备。
+                    </p>
+                        <div class="radio-box">
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="good-jxjf">
+                                <label for="good-jxjf">较好</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="normal-jxjf">
+                                <label for="normal-jxjf">普通</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="bad-jxjf">
+                                <label for="bad-jxjf">未体现</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="kebiao-item white-back teachPlan-content">
+                <div class="teachPlan-model mt0">
+                    <h1 font="14">2.3 身体健康达成</h1>
+                    <div class="model-txt">
+                        <p class="txt-lterdark">是否发展学生体能与健身能力；为掌握健康知识与方法做好准备。</p>
+                        <div class="radio-box">
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="good-jxjf">
+                                <label for="good-jxjf">较好</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="normal-jxjf">
+                                <label for="normal-jxjf">普通</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="bad-jxjf">
+                                <label for="bad-jxjf">未体现</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kebiao-item white-back teachPlan-content">
+                <div class="teachPlan-model mt0">
+                    <h1 font="14">2.4 心理健康与社会适应达成
+                    </h1>
+                    <div class="model-txt">
+                        <p class="txt-lterdark">学生是否在活动中表现出合作意识和良好的体育道德，能为完成学习任务做好准备。</p>
+                        <div class="radio-box">
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="good-jxjf">
+                                <label for="good-jxjf">较好</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="normal-jxjf">
+                                <label for="normal-jxjf">普通</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="bad-jxjf">
+                                <label for="bad-jxjf">未体现</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kebiao-item white-back teachPlan-content">
+                <div class="teachPlan-model mt0">
+                    <h1 font="18">3. 基本部分</h1>
+                    <h1 font="14">3.1 运动参与达成</h1>
+                    <div class="model-txt">
+                        <p class="txt-lterdark">学生乐于学习，主动参与，取得不同进步。</p>
+                        <div class="radio-box">
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="good-jxjf">
+                                <label for="good-jxjf">较好</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="normal-jxjf">
+                                <label for="normal-jxjf">普通</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="bad-jxjf">
+                                <label for="bad-jxjf">未体现</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kebiao-item white-back teachPlan-content">
+                <div class="teachPlan-model mt0">
+                    <h1 font="14">3.2 运动技能</h1>
+                    <div class="model-txt">
+                        <p class="txt-lterdark">学习体育运动知识，掌握运动技能与方法，增强安全意识和防范能力。</p>
+                            </p>
+                        <div class="radio-box">
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="good-jxjf">
+                                <label for="good-jxjf">较好</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="normal-jxjf">
+                                <label for="normal-jxjf">普通</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="bad-jxjf">
+                                <label for="bad-jxjf">未体现</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kebiao-item white-back teachPlan-content">
+                <div class="teachPlan-model mt0">
+                    <h1 font="14">3.3 身体健康达成</h1>
+                    <div class="model-txt">
+                        <p class="txt-lterdark">学生是否掌握健康知识与方法；是否发展学生体能与健身能力。</p>
+                        <div class="radio-box">
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="good-jxjf">
+                                <label for="good-jxjf">较好</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="normal-jxjf">
+                                <label for="normal-jxjf">普通</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="bad-jxjf">
+                                <label for="bad-jxjf">未体现</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kebiao-item white-back teachPlan-content">
+                <div class="teachPlan-model mt0">
+                    <h1 font="14">3.4 心理健康与社会适应达成</h1>
+                    <div class="model-txt">
+                        <p class="txt-lterdark">学生是否能够完成学习任务，活动中表现出合作意识与能力；表现出良好的体育道德和坚强的意志品质。
+                        </p>
+                        <div class="radio-box">
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="good-jxjf">
+                                <label for="good-jxjf">较好</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="normal-jxjf">
+                                <label for="normal-jxjf">普通</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="bad-jxjf">
+                                <label for="bad-jxjf">未体现</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kebiao-item white-back teachPlan-content">
+                <div class="teachPlan-model mt0">
+                    <h1 font="18">4. 结束部分</h1>
+                    <h1 font="14">3.1 运动参与达成</h1>
+                    <div class="model-txt">
+                        <p class="txt-lterdark">学生乐于学习，主动参与，继续进步。</p>
+                        <div class="radio-box">
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="good-jxjf">
+                                <label for="good-jxjf">较好</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="normal-jxjf">
+                                <label for="normal-jxjf">普通</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="bad-jxjf">
+                                <label for="bad-jxjf">未体现</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kebiao-item white-back teachPlan-content">
+                <div class="teachPlan-model mt0">
+                    <h1 font="14">3.2 运动技能</h1>
+                    <div class="model-txt">
+                        <p class="txt-lterdark">巩固运动技能与方法，强化安全意识和防范能力。
+                        </p>
+                            </p>
+                        <div class="radio-box">
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="good-jxjf">
+                                <label for="good-jxjf">较好</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="normal-jxjf">
+                                <label for="normal-jxjf">普通</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="bad-jxjf">
+                                <label for="bad-jxjf">未体现</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kebiao-item white-back teachPlan-content">
+                <div class="teachPlan-model mt0">
+                    <h1 font="14">3.3 身体健康达成</h1>
+                    <div class="model-txt">
+                        <p class="txt-lterdark">学生是否巩固健康知识与方法；学生体能与健身能力发展得到延伸。</p>
+                        <div class="radio-box">
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="good-jxjf">
+                                <label for="good-jxjf">较好</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="normal-jxjf">
+                                <label for="normal-jxjf">普通</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="bad-jxjf">
+                                <label for="bad-jxjf">未体现</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kebiao-item white-back teachPlan-content">
+                <div class="teachPlan-model mt0">
+                    <h1 font="14">3.4 心理健康与社会适应达成</h1>
+                    <div class="model-txt">
+                        <p class="txt-lterdark">学生是否巩固学习任务，活动中强化合作意识与能力；表现出良好的体育道德。
+                        </p>
+                        <div class="radio-box">
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="good-jxjf">
+                                <label for="good-jxjf">较好</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="normal-jxjf">
+                                <label for="normal-jxjf">普通</label>
+                            </span>
+    
+                            <span>
+                                <input type="radio" name="tingpingkebiao" id="bad-jxjf">
+                                <label for="bad-jxjf">未体现</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="input-area white-back">
+                <a href="javascript:void(0)" style="display: inline-block; margin-top: 0.26666667rem; text-align: center; width: 100%; height: 1rem;line-height: 1rem;" font="14" class="jiaoxuejianyi-submit btn btn-full-theme">发布</a>
+            </div>
+
+
+        </div>
+        
+    
+    <!-- 播放按钮 -->
+    <div class="side-play-btn">
+        <i class="icon-xl paly-ctr-btn"></i>
+        <i class="icon-close paly-ctr-btn hidden"></i>
+    </div>
+    </section>
+    <footer flex-box="0" flex="dir:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           left box:mean" font="12">
+        <a href="" flex="main:center dir:top">
+            <i class="icon-sy" font="24"></i>
+            <span>首页</span>
+        </a>
+        <a href="" flex="main:center dir:top">
+            <i class="icon-xsq" font="24"></i>
+            <span>学生圈</span>
+        </a>
+        <a href="" flex="main:center dir:top">
+            <i class="icon-wode" font="24"></i>
+            <span>我的</span>
+        </a>
+    </footer>
+</body>
+<script>
+    // 移除问题
+    $('body').on('click', '.select-box-tpkb-delet-item', function () {
+        $(this).parent().remove();
+    });
+    // 添加问题
+    $('body').on('click', '.add-question', function () {
+        $('#submit-btn-box').before(`<div class="input-area white-back">
+                <h1 font="16">问题简述</h1><br>
+                <div font="16" class="select-box-tpkb-delet-item">删除</div>
+                <textarea name="" id="" ></textarea>
+                <div class="select-box-tpkb" style="padding:0;align-items:center">
+                    <span font="16">问题类型</span>
+                    <select id="" style="height: .8rem;">
+                        <option value="先讲解，再示范">先讲解，再示范</option>
+                        <option value="边讲解，边示范">边讲解，边示范</option>
+                        <option value="先示范，后讲解">先示范，后讲解</option>
+                    </select>
+                </div>
+                <div class="select-box-tpkb" style="padding:0;align-items:center">
+                    <span font="16">学生回答方式</span>
+                    <select id="" style="height: .8rem;">
+                        <option value="先讲解，再示范">先讲解，再示范</option>
+                        <option value="边讲解，边示范">边讲解，边示范</option>
+                        <option value="先示范，后讲解">先示范，后讲解</option>
+                    </select>
+                </div>
+                <div class="select-box-tpkb" style="padding:0;align-items:center">
+                    <span font="16">教师引导</span>
+                    <select id="" style="height: .8rem;">
+                        <option value="先讲解，再示范">先讲解，再示范</option>
+                        <option value="边讲解，边示范">边讲解，边示范</option>
+                        <option value="先示范，后讲解">先示范，后讲解</option>
+                    </select>
+                </div>
+                <div class="teachPlan-model" style="margin-top: .2rem">
+                    <span font="14">是否有效</span>
+                    &nbsp;&nbsp;&nbsp;
+                    <span>
+                        <input type="radio" name="tingpingkebiao" id="good-jxxg">
+                        <label for="good-jxxg">有效</label>
+                    </span>
+                    &nbsp;&nbsp;
+                    <span>
+                        <input type="radio" name="tingpingkebiao" id="normal-jxxg">
+                        <label for="normal-jxxg">无效</label>
+                    </span>
+                </div>
+                
+            </div>`);
+    });
+</script>
+
+</html>

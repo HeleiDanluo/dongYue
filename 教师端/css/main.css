@@ -4246,6 +4246,22 @@ footer a:active {
   line-height: .9rem;
   padding: 0 0.4rem;
   z-index: 100;
+  overflow-x: auto;
+  display: flex;
+  align-items: center;
+}
+.sub-menu > span {
+  display: inline-block;
+  height: .6rem;
+  line-height: .6rem;
+  background: #393A3F;
+  padding: 0 0.1rem;
+  color: #fff;
+  margin-right: .4rem;
+  flex-wrap: nowrap;
+}
+.sub-menu > span.txt-green {
+  background: #82B64A !important;
 }
 .mt0 {
   margin-top: 0 !important;
