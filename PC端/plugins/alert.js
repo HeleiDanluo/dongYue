@@ -931,6 +931,7 @@ Alert.middleWindow = function(options){
     data:'内容',
     callBack:null,
     ifClose:true,
+    autoHeight: false,
   }
   var opts = $.extend({}, defaults, options);
   var $modal = $(this.bgModal).addClass("alertType");
@@ -952,6 +953,10 @@ Alert.middleWindow = function(options){
     'margin-top': '-11%',
     // 'padding-bottom': '30px'
   })
+  // 高度自适应
+  if(opts.autoHeight) {
+    bigForm.css({height: 'auto'});
+  }
 
   $(".close-btn").click(function () {
     if(opts.ifClose){
