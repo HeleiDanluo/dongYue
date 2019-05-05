@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta HTTP-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../plugins/animate.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/icon.css">
+    <link rel="stylesheet" href="../css/scroll.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../plugins/jquery.slimscroll.js"></script>
+    <script src="../js/pageInit.js"></script>
+    <script src="../js/main.js"></script>
+    <title>教学管理</title>
+    <script>
+    </script>
+</head>
+<body>
+<div class="pageContent">
+    <div class="left-menu">
+        <a class="logo-box">
+        <span class="logo-img">
+        </span>
+        </a>
+        <ul class="menu-list f16">
+            <li class="current"><a href="" class=""><i class="icon-home">&nbsp;</i>主页</a></li>
+            <li class=""><a href="" class=""><i class="icon-group">&nbsp;</i>教研群组</a></li>
+            <li class=""><a href="" class=""><i class="icon-teachManage">&nbsp;</i>教学管理</a></li>
+            <li class=""><a href="" class=""><i class="icon-import">&nbsp;</i>数据录入</a></li>
+            <li class=""><a href="" class=""><i class="icon-homeWork">&nbsp;</i>家庭作业</a></li>
+        </ul>
+        <ul class="bottom-menu menu-list f16">
+            <li class=""><a href="" class=""><i class="icon-add">&nbsp;</i>收藏</a></li>
+            <li class=""><a href="" class=""><i class="icon-setting">&nbsp;</i>设置</a></li>
+            <li class=""><a href="" class=""><i class="icon-back">&nbsp;</i>返回启动页</a></li>
+        </ul>
+    </div>
+    <div class="rightPage">
+        <div class="page-head">
+            <div class="bread-nav-box txt_w">
+                <a href="javascript:;"><b>教学管理</b></a> >
+                <a href="javascript:;"><b>表单</b></a>
+            </div>
+            <div class="head-menu">
+                <ul class="head-menu-ul f16">
+                    <!-- <li class="head-menu-item"><a href="javascript:;" class="txt_w">退出</a></li> -->
+                    <li class="head-menu-item" id="dropDown-menu-head"><a href="javascript:;" class="txt_w">账户信息<i class="icon-hehe"></i></a>
+                        <div class="dropdown-content active-drop">
+                            <ul>
+                                <li id="cg-pass">修改密码</li>
+                                <li><a href="#">退出登录</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="head-menu-item"><a href="javascript:;" class="txt_w">欢迎页</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="table-content">
+                <div class="table-btn-group">
+                    <div class="table-row">
+                        <div class="col-8-16 f18">已创建表单</div>
+                        <div class="col-8-16 t_r">
+                            <a href="javascript:;" class="btn blueBtn">阶段统计</a>
+                            <a href="javascript:;" class="btn themeBtn">新建表单</a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="jieduan-box">
+                    <div class="table-btn-group">
+                        <div class="table-row">
+                            <a href="javascript:;" class="btn yellowBtn" show-tab="zhou">周统计</a>
+                            <a href="javascript:;" class="btn grayBtn"   show-tab="yue">月统计</a>
+                            <a href="javascript:;" class="btn grayBtn"   show-tab="xue-qi">学期统计</a>
+                        </div>
+                    </div>
+                    <!-- 周 -->
+                    <div class="select-box zhou">
+                        <select name="" id="">
+                            <option value="">2019.04.22~04.29</option>
+                            <option value="">2019.04.22~04.29</option>
+                            <option value="">2019.04.22~04.29</option>
+                            <option value="">2019.04.22~04.29</option>
+                            <option value="">2019.04.22~04.29</option>
+                        </select>
+                    </div>
+                    <!-- 月 -->
+                    <div class="select-box yue hidden">
+                        <select name="" id="">
+                            <option value="">一月</option>
+                            <option value="">一月</option>
+                            <option value="">一月</option>
+                            <option value="">一月</option>
+                        </select>
+                    </div>
+                    <!-- 学期 -->
+                    <div class="select-box xue-qi hidden">
+                        <select name="" id="">
+                            <option value="">2018~2019上学期</option>
+                            <option value="">2018~2019上学期</option>
+                            <option value="">2018~2019上学期</option>
+                            <option value="">2018~2019上学期</option>
+                            <option value="">2018~2019上学期</option>
+                        </select>
+                    </div>
+
+                    <div class="chart-box">
+                        <!-- 周 -->
+                        <div class="chart zhou" id="chart-one"></div>
+                        <!-- 月 -->
+                        <div class="chart yue hidden" id="chart-two"></div>
+                        <!-- 学期 -->
+                        <div class="chart xue-qi hidden" id="chart-three"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../plugins/echart.js"></script>
+<script>
+    // 点击切换统计
+    $('body').on('click', '.table-row .btn', function() {
+        var $this = $(this);
+        var showId = $this.attr('show-tab').trim();
+        $this.addClass('yellowBtn').siblings().removeClass('yellowBtn').addClass('grayBtn');
+        
+        $('.select-box').addClass('hidden');
+        $('.chart-box .chart-box').addClass('hidden');
+
+        $('.chart').addClass('hidden');
+        $('.' + showId).removeClass('hidden');
+    })
+    // 柱状图
+    var myChartOne = echarts.init(document.getElementById('chart-one'));
+    var myChartTwo = echarts.init(document.getElementById('chart-two'));
+    var myChartThr = echarts.init(document.getElementById('chart-three'));
+    var option = {
+            color: ['#3398DB'],
+            tooltip : {
+                trigger: 'axis',
+                axisPointer : {      
+                    type : 'shadow'      
+                }
+            },
+            xAxis: {
+                type: 'category',
+                data: ['初一一班', '初一二班', '初一三班', '初一四班', '初一五班', '初一六班']
+            },
+            yAxis: {
+                type: 'value',
+                barWidth: 50
+            },
+            series: [{
+                barWidth: '50',
+                data: [120, 200, 150, 80, 70, 110],
+                type: 'bar'
+            }]
+        };
+        myChartOne.setOption(option);
+        myChartTwo.setOption(option);
+        myChartThr.setOption(option);
+</script>
+</body>
+</html>

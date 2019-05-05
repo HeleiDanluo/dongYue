@@ -11471,6 +11471,63 @@ input[type="button"] {
   background: red;
   opacity: 0;
 }
+.teacher-box {
+  margin-bottom: 20px;
+}
+.teacher-box .teacher-list-box {
+  width: 30%;
+  float: left;
+  background: #fff;
+}
+.teacher-box .teacher-list-box:not(:first-child) {
+  margin-left: 5%;
+}
+.teacher-box .teacher-list-box .title {
+  padding: 10px 20px;
+  border-bottom: 1px solid #b8b8b8;
+}
+.teacher-box .teacher-list-box .content-box {
+  padding: 10px 20px;
+}
+.teacher-box .teacher-list-box .content-box .item {
+  float: left;
+  padding: 2px;
+  border: 1px solid #dedede;
+  margin: 5px 5px 0 0;
+}
+.chart {
+  background: #fff;
+}
+.chart #class-chart {
+  margin-top: 20px;
+  height: 300px;
+  width: 70%;
+}
+.jieduan-box {
+  padding: 10px 20px;
+}
+.jieduan-box .select-box select,
+.jieduan-box .select-box option {
+  width: 200px;
+  height: 36px;
+}
+.jieduan-box .chart-box {
+  background: #fff;
+  position: relative;
+  height: 320px;
+  margin-top: 20px;
+}
+.jieduan-box .chart-box .chart {
+  height: 300px;
+  z-index: 1;
+  width: 70%;
+  position: absolute;
+}
+.jieduan-box .chart-box .chart.hidden {
+  z-index: -1;
+  display: block !important;
+  opacity: 0;
+}
 /*
 
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||

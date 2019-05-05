@@ -11329,6 +11329,68 @@ left:0;
     background: red;
     opacity: 0;
 }
+.teacher-box{
+    margin-bottom: 20px;
+    .teacher-list-box{
+        width: 30%;
+        float: left;
+        background: #fff;
+        &:not(:first-child) {
+            margin-left: 5%;
+        }
+        .title{
+            padding: 10px 20px;
+            border-bottom: 1px solid #b8b8b8;
+        }
+        .content-box{
+            padding: 10px 20px;
+            .item{
+                float: left;
+                padding: 2px;
+                border: 1px solid #dedede;
+                margin: 5px 5px 0 0;
+            }
+        }
+    }
+}
+.chart{
+    background: #fff;
+    #class-chart{
+        margin-top: 20px;
+        height: 300px;
+        width: 70%;
+    }
+}
+.jieduan-box{
+    // background: #fff;
+    padding: 10px 20px;
+    .select-box{
+        select,option{
+            width: 200px;
+            height: 36px;
+        }
+    }
+    .chart-box{
+        background: #fff;
+        position: relative;
+        height: 320px;
+        margin-top: 20px;
+        .chart{
+            height: 300px;
+            z-index: 1;
+            width: 70%;
+            position: absolute;
+            &.hidden{
+                z-index: -1;
+                // top: 0;
+                display: block !important;
+                opacity: 0;
+            }
+        }
+    }
+}
+
+
 /*
 
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||
