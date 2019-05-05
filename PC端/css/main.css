@@ -1,5 +1,7 @@
 @charset "utf-8";
 /*=======Pisen创建2014.3.4========*/
+@import "../plugins/bootable/bootstrap-table.min.css";
+@import "../plugins/bootable/bootstrap-table-fixed-columns.css";
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
