@@ -8,13 +8,13 @@ $(function () {
     $(this).next().toggle();
   })
   //点击批量操作按钮
-$(".batchUpdate-btn").click(function () {
+$(".btn-drop-list-content").click(function () {
    if ($(".batch-box").is(":hidden")) {
      $(".batch-box").css("display", "inline-block");
      $(".checkBox-label").each(function () {
        $(this).show().addClass("fadeInLeftBig");
      });
-     $('.btn-drop-list-box').show();
+     $(this).find('.btn-drop-list-box').show();
     } else {
       $(".batch-box").hide();
       $(".checkBox-label").each(function () {
@@ -24,7 +24,7 @@ $(".batchUpdate-btn").click(function () {
         $(this).find(".checkSpan").removeClass("select").prev().prop("checked", false);
       })
       $(".allSelect").attr("data-select", "false");
-      $('.btn-drop-list-box').hide();
+      $(this).find('.btn-drop-list-box').hide();
    }
  });
   //阻止选项框的冒泡
