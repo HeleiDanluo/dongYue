@@ -98,9 +98,9 @@
                             </div>
                             <div class="content-box clearfix">
                                 <h3>教师:</h3>
-                                <div class="item">初一、一班</div>
-                                <div class="item">初一、一班</div>
-                                <div class="item">初一、一班</div>
+                                <div class="item">张老师</div>
+                                <div class="item">李老师</div>
+                                <div class="item">刘老师</div>
                             </div>
                         </div>
 
@@ -118,9 +118,9 @@
                             </div>
                             <div class="content-box clearfix">
                                 <h3>教师:</h3>
-                                <div class="item">初一、一班</div>
-                                <div class="item">初一、一班</div>
-                                <div class="item">初一、一班</div>
+                                <div class="item">张老师</div>
+                                <div class="item">李老师</div>
+                                <div class="item">刘老师</div>
                             </div>
                         </div>
 
@@ -138,9 +138,9 @@
                             </div>
                             <div class="content-box clearfix">
                                 <h3>教师:</h3>
-                                <div class="item">初一、一班</div>
-                                <div class="item">初一、一班</div>
-                                <div class="item">初一、一班</div>
+                                <div class="item">张老师</div>
+                                <div class="item">李老师</div>
+                                <div class="item">刘老师</div>
                             </div>
                         </div>
 
@@ -304,7 +304,8 @@
                 trigger: 'axis',
                 axisPointer : {      
                     type : 'shadow'      
-                }
+                },
+                formatter: '{b}: {c}'
             },
             xAxis: {
                 type: 'category',
@@ -315,6 +316,7 @@
                 barWidth: 50
             },
             series: [{
+                name:'',
                 barWidth: '50',
                 data: [120, 200, 150, 80, 70, 110],
                 type: 'bar'

@@ -146,7 +146,8 @@
                 trigger: 'axis',
                 axisPointer : {      
                     type : 'shadow'      
-                }
+                },
+                formatter: '{b}: {c}'
             },
             xAxis: {
                 type: 'category',
@@ -158,6 +159,7 @@
             },
             series: [{
                 barWidth: '50',
+                name:'',
                 data: [120, 200, 150, 80, 70, 110],
                 type: 'bar'
             }]
