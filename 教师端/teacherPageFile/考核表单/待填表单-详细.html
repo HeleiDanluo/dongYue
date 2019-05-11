@@ -167,6 +167,28 @@
 
 
         </div>
+        
+        <!-- 图片上传 -->
+        <div class="kaohebiaodan-wenti-list-box">
+            <div class="wenti-box">
+                <h3>图片附件(8张以内)</h3>
+                <div class="pic-box clearfix">
+                    <div class="shanchu-box">
+                        <img class="img-item" src="../../img/hm-bg.png" alt="" srcset="">
+                        <div class="shanchu icon-close"></div>
+                    </div>
+                    <div class="shanchu-box">
+                        <img class="img-item" src="../../img/hm-bg.png" alt="" srcset="">
+                        <div class="shanchu icon-close"></div>
+                    </div>
+                    <div class="img-item add icon-sczj mid-center">
+                        <input type="file" name="" id="imgfile" accept="image/*" multiple="multiple">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
 
         <!-- 提交按钮 -->
         <div class="daitianbiaodan-btn-box" flex="box:mean">
@@ -252,6 +274,42 @@
             addValBox.html((currentVal * 10 + addVal *10)/10)
         }
     })
+
+
+    // 图片上传
+    // 点击删除图片
+    $('body').on('click', '.shanchu', function () {
+        $(this).parent().remove();
+    })
+
+    // 图片回显
+    $(document).ready(function () {
+        $("#imgfile").change(function () {
+            var currentImgLength = $('.shanchu-box').length;
+            var fil = this.files;
+            if(currentImgLength + fil.length <= 8) {
+                for (var i = 0; i < fil.length; i++) {
+                    reads(fil[i]);
+                }
+            } else {
+                $.warning({words: "8张以内"});
+            }
+        });
+    });
+
+    function reads(fil) {
+        var reader = new FileReader();
+        reader.readAsDataURL(fil);
+        reader.onload = function () {
+            $('.img-item.add').before(`
+            <div class="shanchu-box">
+                <img class="img-item" src="` +reader.result+ `" alt="" srcset="">
+                <div class="shanchu icon-close"></div>
+            </div>
+            `);
+            console.log(reader.result)
+        };
+    }
 
 </script>
 </body>

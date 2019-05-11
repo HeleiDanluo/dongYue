@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="../css/icon.css">
     <link rel="stylesheet" href="../plugins/animate.min.css">
     <link rel="stylesheet" href="../css/scroll.css">
+
+    <!-- 图片放大插件 -->
+    <link rel="stylesheet" href="../plugins/viewer/viewer.min.css">
+
     <script src="../js/jquery.min.js"></script>
     <script src="../plugins/jquery.slimscroll.js"></script>
     <script src="../js/pageInit.js"></script>
@@ -65,7 +69,7 @@
 
                 <div class="table-btn-group">
                     <div class="table-row">
-                        <a class="col-8-16 f18">已创建表单</a>
+                        <a class="col-8-16 f18">< 已创建表单</a>
                         <div class="col-8-16 t_r">
                             <a href="javascript:;" class="btn pinkBtn">导出</a>
                             <a href="javascript:;" class="btn blueBtn">阶段统计</a>
@@ -74,7 +78,7 @@
                         
                     </div>
                 </div>
-
+                    
                 <div class="table-content">
                     <div class="teacher-box clearfix">
 
@@ -211,7 +215,6 @@
                         <div id="class-chart">
                         </div>
                     </div>
-                    
 
                 </div>
             </div>
@@ -220,13 +223,15 @@
 
     <script src="../plugins/echart.js"></script>
     <script src="../plugins/alert.js"></script>
+    <!-- 图片放大插件 -->
+    <script src="../plugins/viewer/viewer.min.js"></script>
     <script>
         // 点击查看班级详情
         $('body').on('click', '.see-detail', function () {
 
             Alert.middleWindow({
                 autoHeight: true,
-                data: '<div style="padding: 20px">\
+                data: '<div style="padding: 20px; width: 100%">\
                     <h3 class="t_c">评 分 详 情</h3><br>\
                     <table>\
                         <thead>\
@@ -284,8 +289,25 @@
                             </tr>\
                         </tbody>\
                     </table>\
+                    <div class="pic-wapper">\
+                        <ul class="viewer">\
+                            <li><img src="http://hackbinimg.luokangyuan.com/20181226151236/f3q5fum0di621.jpg" alt="" srcset=""></li>\
+                            <li><img src="http://hackbinimg.luokangyuan.com/20181226151236/f3q5fum0di621.jpg" alt="" srcset=""></li>\
+                            <li><img src="http://hackbinimg.luokangyuan.com/20181226151236/f3q5fum0di621.jpg" alt="" srcset=""></li>\
+                            <li><img src="http://hackbinimg.luokangyuan.com/20181226151236/f3q5fum0di621.jpg" alt="" srcset=""></li>\
+                            <li><img src="http://hackbinimg.luokangyuan.com/20181226151236/f3q5fum0di621.jpg" alt="" srcset=""></li>\
+                            <li><img src="http://hackbinimg.luokangyuan.com/20181226151236/f3q5fum0di621.jpg" alt="" srcset=""></li>\
+                            <li><img src="http://hackbinimg.luokangyuan.com/20181226151236/f3q5fum0di621.jpg" alt="" srcset=""></li>\
+                            <li><img src="http://hackbinimg.luokangyuan.com/20181226151236/f3q5fum0di621.jpg" alt="" srcset=""></li>\
+                        </ul>\
+                    </div>\
                 </div>',
                 callBack: function () {
+                    // 点击弹出图片
+                    $('.viewer').viewer({
+                        zIndex: '1000000000000000',
+                        movable: false,  // 拖动
+                    });
                 },
             })
         })

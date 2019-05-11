@@ -11555,6 +11555,22 @@ input[type="button"] {
 .btn-drop-group .drop-list-box .item:hover {
   background: #6b6b6b;
 }
+.pic-wapper {
+  display: flex;
+  margin-top: 20px;
+  overflow-x: auto;
+  padding: 5px;
+}
+.pic-wapper .viewer {
+  padding: 0;
+}
+.pic-wapper .viewer img {
+  margin-right: 20px;
+  height: 100px;
+  cursor: pointer;
+  border: 1px solid #dedede;
+  box-shadow: 0 0 20px #dedede;
+}
 /*
 
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||

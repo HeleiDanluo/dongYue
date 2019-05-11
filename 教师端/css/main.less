@@ -3532,3 +3532,79 @@ footer {
     margin-right: .5rem;
   }
 }
+.pic-box{
+  position: relative;
+  .shanchu-box{
+    position: relative;
+    width: 31%;
+    height: 2rem;
+    margin-right: 2%;
+    margin-top: .2rem;
+    float: left;
+    .shanchu{
+      margin-top: .2rem;
+      position: absolute;
+      right: 0;
+      top:0;
+      width: .5rem;
+      height: .5rem;
+      line-height: .5rem;
+      background: rgba(0, 0, 0, 0.233);
+      color: #fff;
+      text-align: center;
+    }
+    .img-item{
+      float: left;
+      width: 100%;
+      height: 2rem;
+      flex-shrink: 0;
+      &:nth-child(3n + 1){
+        margin-left: 0;
+      }
+      &.add{
+        position: relative;
+        border: 1/75rem solid #dedede;
+        font-size: 20px;
+        color: #dedede;
+        input{
+          position: absolute;
+          width:100%;
+          height:100%;
+          opacity: 0;
+        }
+      }
+    }
+  }
+  .img-item{
+    float: left;
+    width: 32%;
+    margin-top: .2rem;
+    height: 2rem;
+    flex-shrink: 0;
+    margin-left: 2%;
+    &:nth-child(3n + 1){
+      margin-left: 0;
+    }
+    &.add{
+      position: relative;
+      border: 1/75rem solid #dedede;
+      font-size: 20px;
+      color: #dedede;
+      margin-top: .4rem;
+      margin-left: 0;
+      input{
+        position: absolute;
+        width:100%;
+        height:100%;
+        opacity: 0;
+      }
+    }
+  }
+  .no-use{
+    position: absolute;
+    width:2rem;
+    transform: rotate(-30deg);
+    opacity: .8;
+    right: 0;
+  }
+}
