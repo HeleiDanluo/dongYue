@@ -709,17 +709,28 @@ footer {
       
       .radio-box{
         position: relative;
-        padding: 0 .4rem;
+        padding: 0 0 0 .4rem;
         margin-top: .3rem;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         >span{
           position: relative;
+          margin-bottom: .2rem;
+          display: inline-block;
+          min-width: 33.333%;
           >label{
             padding-left: 0.8rem;
           }
         }
         input[type="radio"]{
+          position: absolute;
+          opacity: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 10000;
+        }
+        input[type="checkbox"]{
           position: absolute;
           opacity: 0;
           width: 100%;
@@ -738,13 +749,36 @@ footer {
           height: 34/75rem;
           line-height: 34/75rem;
           text-align: center;
-          font-size: .1rem;
+          font-size: .4rem;
           color: #fff;
           border: solid 1px @grey;
           border-radius: 50%;
         }
         /* 选中以后 */
         input[type="radio"]:checked+label::before{
+          content: "\e915";
+          border: solid 1px #84b749;
+          background: #84b749;
+        }
+        /* 默认样式 */
+        input[type="checkbox"]+label::before{
+          font-family: 'icomoon' !important;
+          content: "";
+          position: absolute;
+          margin-left: -0.8rem;
+          margin-top: .05rem;
+          display: inline-block;
+          width: 34/75rem;
+          height: 34/75rem;
+          line-height: 34/75rem;
+          text-align: center;
+          font-size: .4rem;
+          color: #fff;
+          border: solid 1px @grey;
+          // border-radius: 50%;
+        }
+        /* 选中以后 */
+        input[type="checkbox"]:checked+label::before{
           content: "\e915";
           border: solid 1px #84b749;
           background: #84b749;
@@ -794,6 +828,7 @@ footer {
       width: 100%;
       height: 2rem;
       border:1px solid @line;
+      padding: .1rem;
     }
     .jiaoxuejianyi-submit{
       display: inline-block;

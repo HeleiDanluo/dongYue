@@ -194,46 +194,46 @@
         </div>
     </div>
     <script src="../plugins/alert.js"></script>
-<script type="text/javascript">
+    <script type="text/javascript">
 
-    $(function () {
-        var row = $("#tongji .table-row");
-        let totalArr = [];
-        let totalStr = '<div class="table-row back_white table-item color-pink zongfen-border"><div class="col-3-32"></div><div class="col-3-32">平均得分</div>';
-        
-        row.each(function(indexOuter, itemOuter){
-            $(itemOuter).find('div').each(function(indexInner, itemInner){
-                let thisTxt = +$(itemInner).text();
-                // 判断是数字
-                if( !isNaN(thisTxt) && indexOuter > 0) {
-                    totalArr[indexInner] += thisTxt;
-                } else {
-                    totalArr[indexInner] = 0;
+        $(function () {
+            var row = $("#tongji .table-row");
+            let totalArr = [];
+            let totalStr = '<div class="table-row back_white table-item color-pink zongfen-border"><div class="col-3-32"></div><div class="col-3-32">平均得分</div>';
+            
+            row.each(function(indexOuter, itemOuter){
+                $(itemOuter).find('div').each(function(indexInner, itemInner){
+                    let thisTxt = +$(itemInner).text();
+                    // 判断是数字
+                    if( !isNaN(thisTxt) && indexOuter > 0) {
+                        totalArr[indexInner] += thisTxt;
+                    } else {
+                        totalArr[indexInner] = 0;
+                    }
+                })
+            })
+            
+            
+            for( let i=0; i<totalArr.length - 2; i++) {
+                // 从第二列开始统计
+                if(i >= 2){
+                    totalStr += '<div class="col-3-32">' + (totalArr[i] / (row.length - 1)).toFixed(2) + '</div>'
                 }
-            })
-        })
-        
-        
-        for( let i=0; i<totalArr.length - 2; i++) {
-            // 从第二列开始统计
-            if(i >= 2){
-                totalStr += '<div class="col-3-32">' + (totalArr[i] / (row.length - 1)).toFixed(2) + '</div>'
             }
-        }
-        $("#tongji").append(totalStr);
+            $("#tongji").append(totalStr);
 
 
-        // 查看弹窗
-        $('body').on('click', '#tongji .color-blue', function() {
-            var alertTxt = $(this).parent().find('.window-detail').text();
-            Alert.middleWindow({
-                data:'<div><h3 class="t_c">教学建议</h3><div style="padding: 10px 20px;text-indent:2em">' +alertTxt+ '</div></div>',
-                autoHeight: true,
-                callBack:null,
+            // 查看弹窗
+            $('body').on('click', '#tongji .color-blue', function() {
+                var alertTxt = $(this).parent().find('.window-detail').text();
+                Alert.middleWindow({
+                    data:'<div><h3 class="t_c">教学建议</h3><div style="padding: 10px 20px;text-indent:2em">' +alertTxt+ '</div></div>',
+                    autoHeight: true,
+                    callBack:null,
+                })
             })
-        })
-    });
-</script>  
+        });
+    </script>  
 </body>
 
 </html>

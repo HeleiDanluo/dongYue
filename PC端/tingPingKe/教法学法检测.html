@@ -1,0 +1,1518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta HTTP-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/icon.css">
+    <link rel="stylesheet" href="../plugins/animate.min.css">
+    <link rel="stylesheet" href="../css/scroll.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../plugins/mousewheel.js"></script>
+    <script src="../plugins/jquery.slimscroll.js"></script>
+    <script src="../js/pageInit.js"></script>
+    <script src="../js/main.js"></script>
+
+
+
+    <title>听评课</title>
+    <script>
+
+
+    </script>
+</head>
+
+<body>
+    <div class="pageContent">
+        <div class="left-menu">
+            <a class="logo-box">
+                <span class="logo-img">
+                </span>
+            </a>
+            <ul class="menu-list f16">
+                <li class="">
+                    <a href="" class="">
+                        <i class="icon-home">&nbsp;</i>主页</a>
+                </li>
+                <li class="current">
+                    <a href="" class="">
+                        <i class="icon-group">&nbsp;</i>教研群组</a>
+                </li>
+                <li class="">
+                    <a href="" class="">
+                        <i class="icon-teachManage">&nbsp;</i>教学管理</a>
+                </li>
+                <li class="">
+                    <a href="" class="">
+                        <i class="icon-import">&nbsp;</i>数据录入</a>
+                </li>
+                <li class="">
+                    <a href="" class="">
+                        <i class="icon-homeWork">&nbsp;</i>家庭作业</a>
+                </li>
+            </ul>
+            <ul class="bottom-menu menu-list f16">
+                <li class="">
+                    <a href="" class="">
+                        <i class="icon-add">&nbsp;</i>收藏</a>
+                </li>
+                <li class="">
+                    <a href="" class="">
+                        <i class="icon-setting">&nbsp;</i>设置</a>
+                </li>
+                <li class="">
+                    <a href="" class="">
+                        <i class="icon-back">&nbsp;</i>返回启动页</a>
+                </li>
+            </ul>
+        </div>
+        <div class="rightPage">
+            <div class="page-head">
+                <div class="bread-nav-box txt_w">
+                    <a href="javascript:;">
+                        <b>教学管理</b>
+                    </a> >
+                    <a href="javascript:;">
+                        <b>听评课管理</b>
+                    </a>
+                </div>
+                <div class="head-menu">
+                    <ul class="head-menu-ul f16">
+                        <li class="head-menu-item">
+                            <a href="javascript:;" class="txt_w">退出</a>
+                        </li>
+                        <li class="head-menu-item">
+                            <a href="javascript:;" class="txt_w">账户信息
+                                <i class="icon-hehe"></i>
+                            </a>
+                        </li>
+                        <li class="head-menu-item">
+                            <a href="javascript:;" class="txt_w">欢迎页</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="setHomeWork-wrapper">
+                    <div class="hwork-head-menu">
+                        <a href="javascript:void(0)" class="current">公开课管理</a>
+                        <a href="javascript:void(0)" class="btn pinkBtn f_r mr20 mt10 chuang-jian-gkk">创建公开课</a>
+                    </div>
+                    <div class="tingpingke-box">
+                        <div class="table-btn-group">
+                            <div class="table-row">
+                                <div class="col-16-16">
+                                    <a href="/plan/teachPlanList.do?classType=1" class="btn grayBtn">有效课堂</a>
+                                    <a href="/plan/teachPlanList.do?classType=1" class="btn grayBtn">授课评分</a>
+                                    <a href="/plan/teachPlanList.do?classType=2" class="btn grayBtn">“三动课堂评分”</a>
+                                    <a href="/plan/teachPlanList.do?classType=2" class="btn grayBtn">目标达成分层检测</a>
+                                    <a href="/plan/teachPlanList.do?classType=2" class="btn yellowBtn">教法学法检测</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <table 
+                                id="table" 
+                                data-toggle="table" 
+                                data-height="460" 
+                                data-fixed-columns="true"
+                                data-fixed-number="2">
+                                <thead>
+                                    <tr>
+                                        <th style="border: none">&nbsp;</th>
+                                        <th style="border: none">&nbsp;</th>
+                                        <th colspan="3" class="show-dialog color-blue">准备部分</th>
+
+                                        <th colspan="3" class="show-dialog color-blue">基本部分</th>
+
+                                        <th colspan="3" class="show-dialog color-blue">结束部分</th>
+
+                                        <th rowspan="2">总分（120）</th>
+                                        <th rowspan="2">建议</th>
+                                    </tr>
+                                    <tr>
+                                        <th style="border: none">&nbsp;</th>
+                                        <th style="border: none">&nbsp;</th>
+                                        <th>教师教法20</th>
+                                        <th>学生学法20</th>
+                                        <th>合计得分40</th>
+
+                                        <th>教师教法20</th>
+                                        <th>学生学法20</th>
+                                        <th>合计得分40</th>
+
+                                        <th>教师教法20</th>
+                                        <th>学生学法20</th>
+                                        <th>合计得分40</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td class="color-blue">查看<div class="window-detail hidden">这里是弹sdfsdf窗内容</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td class="color-blue">查看<div class="window-detail hidden">这里是弹sdfsdf窗内容</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td class="color-blue">查看<div class="window-detail hidden">这里是弹sdfsdf窗内容</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td class="color-blue">查看<div class="window-detail hidden">这里是弹sdfsdf窗内容</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td class="color-blue">查看<div class="window-detail hidden">这里是弹sdfsdf窗内容</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td class="color-blue">查看<div class="window-detail hidden">这里是弹sdfsdf窗内容</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td class="color-blue">查看<div class="window-detail hidden">这里是弹sdfsdf窗内容</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td class="color-blue">查看<div class="window-detail hidden">这里是弹sdfsdf窗内容</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td class="color-blue">查看<div class="window-detail hidden">这里是弹sdfsdf窗内容</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td class="color-blue">查看<div class="window-detail hidden">这里是弹sdfsdf窗内容</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td class="color-blue">查看<div class="window-detail hidden">这里是弹sdfsdf窗内容</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td class="color-blue">查看<div class="window-detail hidden">这里是弹sdfsdf窗内容</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td class="color-blue">查看<div class="window-detail hidden">这里是弹sdfsdf窗内容</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td class="color-blue">查看<div class="window-detail hidden">这里是弹sdfsdf窗内容</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td class="color-blue">查看<div class="window-detail hidden">这里是弹sdfsdf窗内容</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td class="color-blue">查看<div class="window-detail hidden">这里是弹sdfsdf窗内容</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td class="color-blue">查看<div class="window-detail hidden">这里是弹sdfsdf窗内容</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td class="color-blue">查看<div class="window-detail hidden">这里是弹sdfsdf窗内容</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td class="color-blue">查看<div class="window-detail hidden">这里是弹sdfsdf窗内容</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td class="color-blue">查看<div class="window-detail hidden">这里是弹sdfsdf窗内容</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td class="color-blue">查看<div class="window-detail hidden">这里是弹sdfsdf窗内容</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td class="color-blue">查看<div class="window-detail hidden">这里是弹sdfsdf窗内容</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td class="color-blue">查看<div class="window-detail hidden">这里是弹sdfsdf窗内容</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td class="color-blue">查看<div class="window-detail hidden">这里是弹sdfsdf窗内容</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td class="color-blue">查看<div class="window-detail hidden">这里是弹sdfsdf窗内容</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td class="color-blue">查看<div class="window-detail hidden">这里是弹sdfsdf窗内容</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td class="color-blue">查看<div class="window-detail hidden">这里是弹sdfsdf窗内容</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td class="color-blue">查看<div class="window-detail hidden">这里是弹sdfsdf窗内容</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td class="color-blue">查看<div class="window-detail hidden">这里是弹sdfsdf窗内容</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td class="color-blue">查看<div class="window-detail hidden">这里是弹sdfsdf窗内容</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td class="color-blue">查看<div class="window-detail hidden">这里是弹sdfsdf窗内容</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td class="color-blue">查看<div class="window-detail hidden">这里是弹sdfsdf窗内容</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td class="color-blue">查看<div class="window-detail hidden">这里是弹sdfsdf窗内容</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td class="color-blue">查看<div class="window-detail hidden">这里是弹sdfsdf窗内容</div></td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td class="color-blue">查看<div class="window-detail hidden">这里是弹sdfsdf窗内容</div></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- 准备部分弹窗 -->
+                        <div class="hidden" id="zhunbei">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th rowspan="2"></th>
+                                        <th colspan="3">教师教法</th>
+                                        <th colspan="2">学生学法</th>
+                                    </tr>
+                                    <tr>
+                                        <th>讲解</th>
+                                        <th>示范</th>
+                                        <th>游戏与比赛</th>
+                                        <th>自主学习</th>
+                                        <th>游戏练习</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>教师A</td>
+                                        <td>√</td>
+                                        <td>√</td>
+                                        <td>－</td>
+                                        <td>√</td>
+                                        <td>√</td>
+                                    </tr>
+                                    <tr>
+                                        <td>教师A</td>
+                                        <td>√</td>
+                                        <td>√</td>
+                                        <td>－</td>
+                                        <td>√</td>
+                                        <td>√</td>
+                                    </tr>
+                                    <tr>
+                                        <td>教师A</td>
+                                        <td>√</td>
+                                        <td>√</td>
+                                        <td>－</td>
+                                        <td>√</td>
+                                        <td>√</td>
+                                    </tr>
+                                    <tr>
+                                        <td>教师A</td>
+                                        <td>√</td>
+                                        <td>√</td>
+                                        <td>－</td>
+                                        <td>√</td>
+                                        <td>√</td>
+                                    </tr>
+                                    <tr>
+                                        <td>教师A</td>
+                                        <td>√</td>
+                                        <td>√</td>
+                                        <td>－</td>
+                                        <td>√</td>
+                                        <td>√</td>
+                                    </tr>
+                                    <tr>
+                                        <td>总计</td>
+                                        <td>6/9</td>
+                                        <td>7/8</td>
+                                        <td>7/8</td>
+                                        <td>7/8</td>
+                                        <td>7/8</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- 基础部分弹窗 -->
+                        <div class="hidden" id="jichu">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th rowspan="3"></th>
+                                        <th colspan="12">教师教法</th>
+                                        <th colspan="5">学生学法</th>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="2">讲解</th>
+                                        <th colspan="2">示范</th>
+                                        <th colspan="4">示范面</th>
+                                        <th rowspan="2">问答</th>
+                                        <th rowspan="2">讨论</th>
+                                        <th rowspan="2">探究</th>
+                                        <th rowspan="2">预防与纠错</th>
+                                        <th rowspan="2">游戏与比赛</th>
+                                        <th rowspan="2">自主学习</th>
+                                        <th rowspan="2">游戏学习</th>
+                                        <th rowspan="2">游戏练习</th>
+                                        <th rowspan="2">游戏练习</th>
+                                        <th rowspan="2">游戏练习</th>
+                                    </tr>
+                                    <tr>
+                                        <th>完整</th>
+                                        <th>分解</th>
+                                        <th>正面</th>
+                                        <th>背面</th>
+                                        <th>侧面</th>
+                                        <th>镜面</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                            <td>教师A</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                        </tr>
+                                        <tr>
+                                            <td>教师A</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                        </tr>
+                                        <tr>
+                                            <td>教师A</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                        </tr>
+                                        <tr>
+                                            <td>教师A</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                        </tr>
+                                        <tr>
+                                            <td>教师A</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                        </tr>
+                                        <tr>
+                                            <td>教师A</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                        </tr>
+                                        <tr>
+                                            <td>教师A</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                        </tr>
+                                        <tr>
+                                            <td>教师A</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                        </tr>
+                                        <tr>
+                                            <td>教师A</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                        </tr>
+                                        <tr>
+                                            <td>教师A</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                        </tr>
+                                        <tr>
+                                            <td>教师A</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                        </tr>
+                                        <tr>
+                                            <td>教师A</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                        </tr>
+                                        <tr>
+                                            <td>教师A</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                        </tr>
+                                        <tr>
+                                            <td>教师A</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                        </tr>
+                                        <tr>
+                                            <td>教师A</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                        </tr>
+                                        <tr>
+                                            <td>教师A</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                        </tr>
+                                        <tr>
+                                            <td>教师A</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                        </tr>
+                                        <tr>
+                                            <td>教师A</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                        </tr>
+                                        <tr>
+                                            <td>教师A</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                        </tr>
+                                        <tr>
+                                            <td>教师A</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                        </tr>
+                                        <tr>
+                                            <td>教师A</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                        </tr>
+                                        <tr>
+                                            <td>教师A</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                        </tr>
+                                        <tr>
+                                            <td>教师A</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                        </tr>
+                                        <tr>
+                                            <td>教师A</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                        </tr>
+                                        <tr>
+                                            <td>教师A</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                        </tr>
+                                        <tr>
+                                            <td>教师A</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                        </tr>
+                                        <tr>
+                                            <td>教师A</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                        </tr>
+                                        <tr>
+                                            <td>教师A</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                        </tr>
+                                        <tr>
+                                            <td>教师A</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                        </tr>
+                                        <tr>
+                                            <td>教师A</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                            <td>－</td>
+                                            <td>√</td>
+                                            <td>√</td>
+                                        </tr>
+                                        <tr>
+                                            <td>总计</td>
+                                            <td>6/9</td>
+                                            <td>7/8</td>
+                                            <td>7/8</td>
+                                            <td>7/8</td>
+                                            <td>6/9</td>
+                                            <td>7/8</td>
+                                            <td>7/8</td>
+                                            <td>7/8</td>
+                                            <td>6/9</td>
+                                            <td>7/8</td>
+                                            <td>7/8</td>
+                                            <td>7/8</td>
+                                            <td>6/9</td>
+                                            <td>7/8</td>
+                                            <td>7/8</td>
+                                            <td>7/8</td>
+                                            <td>7/8</td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- 结束部分弹窗 -->
+                        <div class="hidden" id="jieshu">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th rowspan="2"></th>
+                                        <th colspan="2">教师教法</th>
+                                        <th>学生学法</th>
+                                    </tr>
+                                    <tr>
+                                        <th>讲解</th>
+                                        <th>示范</th>
+                                        <th>自主学习</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>教师A</td>
+                                        <td>√</td>
+                                        <td>－</td>
+                                        <td>√</td>
+                                    </tr>
+                                    <tr>
+                                        <td>教师A</td>
+                                        <td>√</td>
+                                        <td>－</td>
+                                        <td>√</td>
+                                    </tr>
+                                    <tr>
+                                        <td>教师A</td>
+                                        <td>√</td>
+                                        <td>－</td>
+                                        <td>√</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>总计</td>
+                                        <td>6/9</td>
+                                        <td>7/8</td>
+                                        <td>7/8</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="../plugins/alert.js"></script>
+
+    <script type="text/javascript">
+
+        $(function () {
+            var tr = $("#table tbody").find("tr").length;
+            var td = $("#table tbody").find("tr")[0].cells.length;
+            var total = 0;
+            var str = '<td></td><td>平均得分</td>';
+            for (var i = 2; i < td; i++) {
+                for (var j = 0; j < tr; j++) {
+                    total = total + parseFloat($("table tbody").find("tr:eq(" + j + ")").find("td:eq(" + i + ")").text());
+                }
+                var tmpAvrg = !isNaN((total/tr).toFixed(2)) ? (total/tr).toFixed(2) : '';
+                str = str + "<td>" + tmpAvrg + "</td>";
+                total = 0;
+            }
+            $("#table tbody").append('<tr>' +str+ '</tr>')
+            
+            
+            // 查看 弹窗
+            $('body').on('click', '#table .color-blue', function() {
+                var alertTxt = $(this).parent().find('.window-detail').text();
+                Alert.middleWindow({
+                    data:'<div><h3 class="t_c">教学建议</h3><div style="padding: 10px 20px;text-indent:2em">' +alertTxt+ '</div></div>',
+                    autoHeight: true,
+                    callBack:null,
+                })
+            })
+
+            // 表头弹窗
+            $('body').on('click', '.show-dialog', function () {
+                var _thisTxt = $(this).text();
+                var showId;
+                if(_thisTxt == "准备部分") {
+                    showId = 'zhunbei';
+                } else
+                if(_thisTxt == "基本部分") {
+                    showId = 'jichu';
+                } else
+                if(_thisTxt == "结束部分") {
+                    showId = 'jieshu';
+                }
+                var showTable = $('#' + showId).html();
+                Alert.middleWindow({
+                    data:'<div style="max-height:60vh; overflow:auto"><h3 class="t_c">' +_thisTxt+ '</h3><div style="padding: 10px 20px;text-indent:2em">' +showTable+ '</div></div>',
+                    autoHeight: true,
+                    callBack:null,
+                })
+            })
+        });
+
+    </script>  
+    
+    <script src="../plugins/bootable/bootstrap-table.min.js"></script>
+    <script src="../plugins/bootable/bootstrap-table-fixed-columns.js"></script>
+</body>
+
+</html>

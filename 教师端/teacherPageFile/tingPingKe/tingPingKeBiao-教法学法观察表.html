@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <script src="../../js/flexible/flexible_css.js"></script>
+    <script src="../../js/flexible/flexible.js"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/each/tingPingKe.js"></script>
+    <script type="text/javascript" src="//player.youku.com/jsapi"></script>
+    <title>动跃科技</title>
+</head>
+
+<body flex="dir:top">
+    <header flex-box="0" flex="dir:left" font="18">
+        <a href="javascript:history.go(-1)" flex-box="0">
+            <i class="icon-back"></i>
+        </a>
+        <div class="title" flex-box="1" font="14">听评课教学</div>
+        <a href="javascript:void(0)" flex-box="0"></a>
+    </header>
+    <section flex-box="1" flex="dir:top" class="hide-video tingpingke-body" >
+    <!-- 优酷 -->
+    <div class="tingpingke-video" flex-box="0">
+        <div id="youkuplayer"></div>
+    </div>
+        <!-- 菜单 -->
+        <div class="white-back header-link-menu" flex-box="0">
+            <ul>
+                <li font="12"><a href="javascript:void(0)">教学设计</a></li>
+                <li font="12"><a href="javascript:void(0)">教学教案</a></li>
+                <li font="12"><a href="javascript:void(0)">课堂报告</a></li>
+                <li font="12" class="current"><a href="javascript:void(0)">听评课表</a></li>
+                <li font="12"><a href="javascript:void(0)">讨论区</a></li>
+            </ul>
+        </div>
+        <div class="white-back sub-menu" flex-box="0">
+            <select id="" class="select-tpkb">
+                <option value="“有效课堂”评价表">"有效课堂"评价表</option>
+                <option value="授课评分">授课评分</option>
+                <option value="“三动课堂”评价表">"三动课堂"评价表</option>
+                <option value="“三动课堂”评价表">目标达成分层检测表</option>
+                <option value="“有效教学”评价表">"有效教学"评价表</option>
+                <option value="教学重难点及教法学法检测表">教学重难点及教法学法检测表</option>
+                <option value="教师讲解示范观察表">教师讲解示范观察表</option>
+                <option value="提问互动评价表" >提问互动评价表</option>
+                <option value="提问互动评价表" selected>教法学法观察表</option>
+            </select>
+        </div>
+        <div class="teachPlan-detail-wrapper can-scroll" flex-box="1">
+
+            <!-- 准备部分 -->
+            <div class="kebiao-item white-back teachPlan-content">
+                <div class="teachPlan-model mt0">
+                    <h1 font="18">1.准备部分</h1>
+                    <div class="model-txt">
+                        <h1 font="14">教师教法</h1>
+                        <div class="radio-box">
+                            <span>
+                                <input type="checkbox" name="1" id="zb-jfjj">
+                                <label for="zb-jfjj">讲解</label>
+                            </span>
+
+                            <span>
+                                <input type="checkbox" name="1" id="zb-jfsf">
+                                <label for="zb-jfsf">示范</label>
+                            </span>
+
+                            <span>
+                                <input type="checkbox" name="1" id="zb-jfbs">
+                                <label for="zb-jfbs">游戏与比赛</label>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="model-txt">
+                        <h1 font="14">达到效果</h1>
+                        <div class="radio-box">
+                            <span>
+                                <input type="radio" name="2" id="zb-xgjh">
+                                <label for="zb-xgjh">较好</label>
+                            </span>
+
+                            <span>
+                                <input type="radio" name="2" id="zb-jfpt">
+                                <label for="zb-jfpt">普通</label>
+                            </span>
+
+                            <span>
+                                <input type="radio" name="2" id="zb-jfgj">
+                                <label for="zb-jfgj">有待改进</label>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="model-txt">
+                        <h1 font="14">学生学法</h1>
+                        <div class="radio-box">
+                            <span>
+                                <input type="checkbox" name="3" id="zb-xfzz">
+                                <label for="zb-xfzz">自主学习</label>
+                            </span>
+
+                            <span>
+                                <input type="checkbox" name="3" id="zb-xfyx">
+                                <label for="zb-xfyx">游戏练习</label>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="model-txt">
+                        <h1 font="14">达到效果</h1>
+                        <div class="radio-box">
+                            <span>
+                                <input type="radio" name="4" id="zb-xglh">
+                                <label for="zb-xglh">良好</label>
+                            </span>
+
+                            <span>
+                                <input type="radio" name="4" id="zb-xgyb">
+                                <label for="zb-xgyb">一般</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        
+            <!-- 基本部分 -->
+            <div class="kebiao-item white-back teachPlan-content">
+                <div class="teachPlan-model mt0">
+                    <h1 font="18">2.基本部分</h1>
+                    <div class="model-txt">
+                        <h1 font="14">教师教法</h1>
+                        <div class="radio-box">
+                            <span>
+                                <input type="checkbox" name="5" id="good-mb">
+                                <label for="good-mb">讲解</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" name="5" id="good-mb">
+                                <label for="good-mb">问答</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" name="5" id="good-mb">
+                                <label for="good-mb">讨论</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" name="5" id="good-mb">
+                                <label for="good-mb">探究</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" name="5" id="good-mb">
+                                <label for="good-mb">完整示范</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" name="5" id="good-mb">
+                                <label for="good-mb">分解示范</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" name="5" id="good-mb">
+                                <label for="good-mb">正面示范</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" name="5" id="good-mb">
+                                <label for="good-mb">侧面示范</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" name="5" id="good-mb">
+                                <label for="good-mb">背面示范</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" name="5" id="good-mb">
+                                <label for="good-mb">镜面示范</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" name="5" id="good-mb">
+                                <label for="good-mb">预防与纠错</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" name="5" id="good-mb">
+                                <label for="good-mb">游戏与比赛</label>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="model-txt">
+                        <h1 font="14">达到效果</h1>
+                        <div class="radio-box">
+                            <span>
+                                <input type="radio" name="6" id="good-mb">
+                                <label for="good-mb">较好</label>
+                            </span>
+
+                            <span>
+                                <input type="radio" name="6" id="normal-mb">
+                                <label for="normal-mb">普通</label>
+                            </span>
+
+                            <span>
+                                <input type="radio" name="6" id="bad-mb">
+                                <label for="bad-mb">有待改进</label>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="model-txt">
+                        <h1 font="14">学生学法</h1>
+                        <div class="radio-box">
+                            <span>
+                                <input type="checkbox" name="7" id="good-mb">
+                                <label for="good-mb">自主学习</label>
+                            </span>
+
+                            <span>
+                                <input type="checkbox" name="7" id="normal-mb">
+                                <label for="normal-mb">重复练习</label>
+                            </span>
+
+                            <span>
+                                <input type="checkbox" name="7" id="normal-mb">
+                                <label for="normal-mb">循环练习</label>
+                            </span>
+
+                            <span>
+                                <input type="checkbox" name="7" id="normal-mb">
+                                <label for="normal-mb">游戏与比赛练习</label>
+                            </span>
+
+                            <span>
+                                <input type="checkbox" name="7" id="normal-mb">
+                                <label for="normal-mb">变换练习</label>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="model-txt">
+                        <h1 font="14">达到效果</h1>
+                        <div class="radio-box">
+                            <span>
+                                <input type="radio" name="8" id="good-mb">
+                                <label for="good-mb">良好</label>
+                            </span>
+
+                            <span>
+                                <input type="radio" name="8" id="normal-mb">
+                                <label for="normal-mb">一般</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 结束 -->
+            <div class="kebiao-item white-back teachPlan-content">
+                <div class="teachPlan-model mt0">
+                    <h1 font="18">3.结束部分</h1>
+                    <div class="model-txt">
+                        <h1 font="14">教师教法</h1>
+                        <div class="radio-box">
+                            <span>
+                                <input type="checkbox" name="9" id="good-mb">
+                                <label for="good-mb">讲解</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" name="9" id="good-mb">
+                                <label for="good-mb">示范</label>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="model-txt">
+                        <h1 font="14">达到效果</h1>
+                        <div class="radio-box">
+                            <span>
+                                <input type="radio" name="11" id="good-mb">
+                                <label for="good-mb">较好</label>
+                            </span>
+
+                            <span>
+                                <input type="radio" name="11" id="normal-mb">
+                                <label for="normal-mb">普通</label>
+                            </span>
+
+                            <span>
+                                <input type="radio" name="11" id="bad-mb">
+                                <label for="bad-mb">有待改进</label>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="model-txt">
+                        <h1 font="14">学生学法</h1>
+                        <div class="radio-box">
+                            <span>
+                                <input type="checkbox" name="12" id="good-mb">
+                                <label for="good-mb">自主学习</label>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="model-txt">
+                        <h1 font="14">达到效果</h1>
+                        <div class="radio-box">
+                            <span>
+                                <input type="radio" name="13" id="good-mb">
+                                <label for="good-mb">良好</label>
+                            </span>
+
+                            <span>
+                                <input type="radio" name="13" id="normal-mb">
+                                <label for="normal-mb">一般</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="input-area white-back">
+                <h1 font="14">建议、意见</h1><br>
+                <textarea name="" id="" maxlength="200" placeholder="200字以内"></textarea>
+            </div>
+            
+
+
+            <div class="input-area white-back">
+                <a href="javascript:void(0)" style="display: inline-block; margin-top: 0.26666667rem; text-align: center; width: 100%; height: 1rem;line-height: 1rem;" font="14" class="jiaoxuejianyi-submit btn btn-full-theme">发布</a>
+            </div>
+
+
+        </div>
+        
+    
+    <!-- 播放按钮 -->
+    <div class="side-play-btn">
+        <i class="icon-xl paly-ctr-btn"></i>
+        <i class="icon-close paly-ctr-btn hidden"></i>
+    </div>
+    </section>
+    <footer flex-box="0" flex="dir:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           left box:mean" font="12">
+        <a href="" flex="main:center dir:top">
+            <i class="icon-sy" font="24"></i>
+            <span>首页</span>
+        </a>
+        <a href="" flex="main:center dir:top">
+            <i class="icon-xsq" font="24"></i>
+            <span>学生圈</span>
+        </a>
+        <a href="" flex="main:center dir:top">
+            <i class="icon-wode" font="24"></i>
+            <span>我的</span>
+        </a>
+    </footer>
+</body>
+
+</html>

@@ -4360,20 +4360,33 @@ footer a:active {
 }
 .teachPlan-detail-wrapper .teachPlan-content .teachPlan-model .radio-box {
   position: relative;
-  padding: 0 .4rem;
+  padding: 0 0 0 .4rem;
   margin-top: .3rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  /* 默认样式 */
+  /* 选中以后 */
   /* 默认样式 */
   /* 选中以后 */
 }
 .teachPlan-detail-wrapper .teachPlan-content .teachPlan-model .radio-box > span {
   position: relative;
+  margin-bottom: .2rem;
+  display: inline-block;
+  min-width: 33.333%;
 }
 .teachPlan-detail-wrapper .teachPlan-content .teachPlan-model .radio-box > span > label {
   padding-left: 0.8rem;
 }
 .teachPlan-detail-wrapper .teachPlan-content .teachPlan-model .radio-box input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+}
+.teachPlan-detail-wrapper .teachPlan-content .teachPlan-model .radio-box input[type="checkbox"] {
   position: absolute;
   opacity: 0;
   width: 100%;
@@ -4391,12 +4404,32 @@ footer a:active {
   height: 0.45333333rem;
   line-height: 0.45333333rem;
   text-align: center;
-  font-size: .1rem;
+  font-size: .4rem;
   color: #fff;
   border: solid 1px #666;
   border-radius: 50%;
 }
 .teachPlan-detail-wrapper .teachPlan-content .teachPlan-model .radio-box input[type="radio"]:checked + label::before {
+  content: "\e915";
+  border: solid 1px #84b749;
+  background: #84b749;
+}
+.teachPlan-detail-wrapper .teachPlan-content .teachPlan-model .radio-box input[type="checkbox"] + label::before {
+  font-family: 'icomoon' !important;
+  content: "";
+  position: absolute;
+  margin-left: -0.8rem;
+  margin-top: .05rem;
+  display: inline-block;
+  width: 0.45333333rem;
+  height: 0.45333333rem;
+  line-height: 0.45333333rem;
+  text-align: center;
+  font-size: .4rem;
+  color: #fff;
+  border: solid 1px #666;
+}
+.teachPlan-detail-wrapper .teachPlan-content .teachPlan-model .radio-box input[type="checkbox"]:checked + label::before {
   content: "\e915";
   border: solid 1px #84b749;
   background: #84b749;
@@ -4443,6 +4476,7 @@ footer a:active {
   width: 100%;
   height: 2rem;
   border: 1px solid #eee;
+  padding: .1rem;
 }
 .teachPlan-detail-wrapper .input-area .jiaoxuejianyi-submit {
   display: inline-block;
