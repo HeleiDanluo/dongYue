@@ -144,36 +144,55 @@
                         <div class="input-item-box">
                             <span>&emsp;&emsp;&emsp;&emsp;&emsp;
                                 <label>
-                                    <input name="jxsj" type="radio" id="txt-format" checked>&nbsp;文字格式
+                                    <input name="jxsj" type="radio" class="change-formmat" id="txt-format" checked>&nbsp;文字格式
                                 </label>&emsp;&emsp;
                                 <label>
-                                    <input name="jxsj" type="radio" id="pic-format">&nbsp;图片格式
+                                    <input name="jxsj" type="radio" class="change-formmat" id="pic-format">&nbsp;图片格式 (4张以内)
                                 </label>
                             </span>
                         </div>
                         <!-- 文字格式 -->
-                        <div class="input-item-box">
+                        <div class="input-item-box" id="txt-content">
                             <span>&emsp;&emsp;&emsp;&emsp;&emsp;</span>
                             <textarea placeholder="请输入教学设计, 2000字以内" maxlength="2000" style="width:390px"></textarea>
                         </div>
                         <!-- 图片格式 -->
-                        <div class="input-item-box">
-                                <label class="form-control" style="width:120px">
-                                    <input id="upImgjxsj" type="button" class="btn themeBtn" value="点击上传">
-                                </label>
+                        <div class="input-item-box clearfix img-contnet hidden" id="pic-content">
+                            <div class="img-box">
+                                <img src="../images/helphome.png" alt="" srcset="">
+                                <i class="icon-guanbi del-img"></i>
+                            </div>
+                            <div class="img-box">
+                                <img src="../images/helphome.png" alt="" srcset="">
+                                <i class="icon-guanbi del-img"></i>
+                            </div>
+                            <div class="img-box add clearfix">
+                                <input type="file" name="" accept="image/*" multiple id="input-jxsj">
+                                <i class="icon-addItem"></i>
+                            </div>
                         </div>
 
                         <div class="input-item-box">
                             <span>自主教案&emsp;</span>
-                            <label class="form-control" style="width:120px">
-                                <input id="upImgGKK" type="button" class="btn themeBtn" value="点击上传">
-                            </label>
-                            <span>&emsp;选填, 上传图片格式教案, 否则默认匹配系统教案</span>
+                            <span>选填, 上传图片格式教案, 否则默认匹配系统教案 (10张以内)</span>
                         </div>
-                        <div>
-                            <img id="upImgGKKPreV" src="../images/img-bj.jpg" style="margin-left:70px" width="200px" height="135px" alt=""
-                            srcset="">
-                        </div><br>
+
+                        <!-- 自主教案图片上传 -->
+                        <div class="input-item-box clearfix img-contnet">
+                            <div class="img-box">
+                                <img src="../images/helphome.png" alt="" srcset="">
+                                <i class="icon-guanbi del-img"></i>
+                            </div>
+                            <div class="img-box">
+                                <img src="../images/helphome.png" alt="" srcset="">
+                                <i class="icon-guanbi del-img"></i>
+                            </div>
+                            <div class="img-box add clearfix">
+                                <input type="file" name="" accept="image/*" multiple id="input-zzja">
+                                <i class="icon-addItem"></i>
+                            </div>
+                        </div>
+
                         <div class="input-item-box">
                             <span>网评时间&emsp;</span>
                             <label class="form-control">
@@ -245,6 +264,94 @@
     <script src="../js/cropper/cropper.min.js"></script>
     <script src="../js/cropper/canvas-to-blob.min.js"></script>
     <script src="../js/each/chuangJianGongKaiKe.js"></script>
+
+    <script>
+    // 切换文字图片格式
+    $('body').on('click', '.change-formmat', function () {
+        var $this = $(this);
+        if($this.attr('id') == 'txt-format') {
+            $('#txt-content').removeClass('hidden');
+            $('#pic-content').addClass('hidden');
+        } else {
+            $('#pic-content').removeClass('hidden');
+            $('#txt-content').addClass('hidden');
+        }
+    })
+
+
+    // 点击删除图片
+    $('body').on('click', '.del-img', function () {
+        $(this).parent().remove();
+    })
+        
+    // 图片上传  教学设计
+    $(document).ready(function () {
+        $("#input-jxsj").change(function () {
+            var currentImgLength = $(this).parent().parent().find('.img-box').length - 1;
+            var fil = this.files;
+            if(currentImgLength + fil.length <= 4) {
+                for (var i = 0; i < fil.length; i++) {
+                    reads1(fil[i]);
+                }
+            } else {
+                Alert.globalWarning({
+                    times:1000,
+                    type:"warning",
+                    words:"4张以内",
+                    callBack:null
+                });
+            }
+        });
+    });
+
+    // 图片上传  自主教案
+    $(document).ready(function () {
+        $("#input-zzja").change(function () {
+            var currentImgLength = $(this).parent().parent().find('.img-box').length - 1;
+            var fil = this.files;
+            if(currentImgLength + fil.length <= 10) {
+                for (var i = 0; i < fil.length; i++) {
+                    reads2(fil[i]);
+                }
+            } else {
+                Alert.globalWarning({
+                    times:1000,
+                    type:"warning",
+                    words:"10张以内",
+                    callBack:null
+                });
+            }
+        });
+    });
+
+    function reads1(fil) {
+        var reader = new FileReader();
+        reader.readAsDataURL(fil);
+        reader.onload = function () {
+            $('#input-jxsj').parent().before(`
+            <div class="img-box">
+                <img  src="` +reader.result+ `" alt="" srcset="">
+                <i class="icon-guanbi del-img"></i>
+            </div>
+            `);
+            console.log(reader.result)
+        };
+    }
+    function reads2(fil) {
+        var reader = new FileReader();
+        reader.readAsDataURL(fil);
+        reader.onload = function () {
+            $('#input-zzja').parent().before(`
+            <div class="img-box">
+                <img  src="` +reader.result+ `" alt="" srcset="">
+                <i class="icon-guanbi del-img"></i>
+            </div>
+            `);
+            console.log(reader.result)
+        };
+    }
+
+    </script>
 </body>
 
 </html>

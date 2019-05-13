@@ -21,6 +21,29 @@
 </head>
 <body>
 <div id="tanchu">
+    <div class="alert-box formType animated fadeIn hidden">
+        <div class="alert-div form-box back_white animated fadeInDownBig" style="margin-top: -175.1px;">
+            <input id="beginYearTime" type="hidden" value="2019">
+            <div class="form-head t_r"><a class="close-btn f18" href="javascript:;">×</a></div>
+                <h3 class="form-title t_c">选择年级</h3>
+                    <div class="form-content">
+                <div class="form-inline clearfix">
+                    <label class="form-control classYear select">
+                        <input type="text" id="yearVal" placeholder="选择年级" readonly="">
+                        <span class="caret icon-hehe"></span>
+                        <ul class="select-list" style="display: none;">
+                            <li><a href="javascript:;" data-val="1" >一年级</a></li>
+                            <li><a href="javascript:;" data-val="2">二年级</a></li>
+                        </ul>
+                    </label>
+                </div>
+                
+                <div class="form-line submit clearfix">
+                    <a href="javascript:;" id="addBtn" class="blockBtn themeBtn form-confirm">导出</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <div class="pageContent">
     <div class="left-menu">
@@ -161,27 +184,7 @@
                     </div>
                     
                    
-                </div>
-
-
-                <!-- <div class="pages">
-                    <div class="goods-pages">
-                        <div class="tcd-page-code">
-                            <span class="pageB disabled"><em class="iconfont icon-left mr5"></em>上一页</span>
-                            <span class="current">1</span>
-                            <a href="javascript:void(0);" class="tcdNumber">2</a>
-                            <a href="javascript:void(0);" class="tcdNumber">3</a>
-                            <span>...</span>
-                            <a href="javascript:void(0);" class="tcdNumber">15</a>
-                            <a href="javascript:void(0);" class="pageB nextPage">下一页></a>
-                            <span class="turnpage3">共<span>15</span>页&nbsp;&nbsp;到第</span>
-                            <input class="turnpage0" type="text" maxlength="3" />
-                            <span>页</span>
-                            <a class="turnpage1 grayBtn">确定</a></div>
-                    </div>
-                </div> -->
-
-                
+                </div>                
             </div>
         </div>
     </div>
@@ -190,37 +193,11 @@
 <script src="../js/each/tablePageCommon.js"></script>
 <script>
     $('body').on('click', '#xue-nian-ji-hua-dao-chu', function() {
-        $('#tanchu').append(`
-        <div class="alert-box formType animated fadeIn">
-            <div class="alert-div form-box back_white animated fadeInDownBig" style="margin-top: -175.1px;">
-                <input id="beginYearTime" type="hidden" value="2019">
-                <div class="form-head t_r"><a class="close-btn f18" href="javascript:;">×</a></div>
-                    <h3 class="form-title t_c">选择年级</h3>
-                        <div class="form-content">
-                    <div class="form-inline clearfix">
-                        <label class="form-control classYear select">
-                            <input type="text" id="yearVal" placeholder="选择年级" readonly="">
-                            <span class="caret icon-hehe"></span>
-                            <ul class="select-list" style="display: none;">
-                                <li><a href="javascript:;" data-val="1" >一年级</a></li>
-                                <li><a href="javascript:;" data-val="2">二年级</a></li>
-                            </ul>
-                        </label>
-                    </div>
-                    
-                    <div class="form-line submit clearfix">
-                        <a href="javascript:;" id="addBtn" class="blockBtn themeBtn form-confirm">导出</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        `);
-
+        $('#tanchu .alert-box').removeClass('hidden');
         selectNew();
-
         // 关闭弹窗
         $(".close-btn").click(function () {
-            Alert.removeDialog("formType");
+            $('#tanchu .alert-box').addClass('hidden');
         });
     })
 </script>

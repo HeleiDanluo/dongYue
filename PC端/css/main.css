@@ -9179,7 +9179,7 @@ input[type="button"] {
   cursor: pointer;
 }
 .hidden {
-  display: none;
+  display: none !important;
 }
 .cjgl-table {
   overflow: auto;
@@ -10682,6 +10682,54 @@ input[type="button"] {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+}
+.tingpingke-box .input-item-box.img-contnet {
+  padding: 10px 0 10px 70px;
+  flex-wrap: wrap;
+}
+.tingpingke-box .input-item-box.img-contnet .img-box {
+  position: relative;
+  height: 100px;
+  min-width: 100px;
+  border: 1px solid #dedede;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.tingpingke-box .input-item-box.img-contnet .img-box > img {
+  height: 100px;
+}
+.tingpingke-box .input-item-box.img-contnet .img-box #input-jxsj,
+.tingpingke-box .input-item-box.img-contnet .img-box #input-zzja {
+  position: absolute;
+  z-index: 2;
+  width: 100px;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.tingpingke-box .input-item-box.img-contnet .img-box .icon-addItem {
+  position: absolute;
+  z-index: 1;
+  width: 100px;
+  height: 100%;
+  line-height: 100px;
+  text-align: center;
+  font-size: 40px;
+  color: #bdbdbd;
+}
+.tingpingke-box .input-item-box.img-contnet .img-box .del-img {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: #00000050;
+  color: #fff;
+  cursor: pointer;
 }
 .new-btn-tab {
   background-color: #fff;
