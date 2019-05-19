@@ -144,8 +144,15 @@
         $(document).ready(function () {
             $("#imgfile").change(function () {
                 var fil = this.files;
+                var currentImgLen = $('.shanchu-box').length;
                 for (var i = 0; i < fil.length; i++) {
+                    if(currentImgLen + i + 1 > 3) {
+                        $.warning({
+                            words: "图片3张以内",
+                        })
+                    } else {
                     reads(fil[i]);
+                    }
                 }
             });
         });
