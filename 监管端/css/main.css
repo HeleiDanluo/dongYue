@@ -4968,6 +4968,7 @@ i {
   width: 60%;
   display: inline-block;
   clear: both;
+  margin-right: 40px;
 }
 .healthyChart .healthyBox > .center .row .limit > span {
   height: 100%;
