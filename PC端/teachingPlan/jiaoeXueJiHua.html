@@ -196,9 +196,13 @@
 <script src="../plugins/alert.js"></script>
 <script src="../js/each/tablePageCommon.js"></script>
 <script>
+    var hasNew = false;
     $('body').on('click', '#xue-nian-ji-hua-dao-chu', function() {
         $('#tanchu .alert-box').removeClass('hidden');
-        selectNew();
+        if(!hasNew) {
+            hasNew = true;
+            new selectNew();
+        }
         // 关闭弹窗
         $(".close-btn").click(function () {
             $('#tanchu .alert-box').addClass('hidden');
