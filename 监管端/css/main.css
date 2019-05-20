@@ -4713,6 +4713,7 @@ i {
   height: 38px;
   width: 100%;
   line-height: 38px;
+  word-wrap: none;
 }
 .healthyList .healthyBox > .center .row > span {
   display: inline-block;
