@@ -701,6 +701,22 @@
                                     <tr>
                                         <td>教师A</td>
                                         <td>√</td>
+                                        <td>－</td>
+                                        <td>－</td>
+                                        <td>√</td>
+                                        <td>√</td>
+                                    </tr>
+                                    <tr>
+                                        <td>教师A</td>
+                                        <td>√</td>
+                                        <td>√</td>
+                                        <td>－</td>
+                                        <td>－</td>
+                                        <td>√</td>
+                                    </tr>
+                                    <tr>
+                                        <td>教师A</td>
+                                        <td>－</td>
                                         <td>√</td>
                                         <td>－</td>
                                         <td>√</td>
@@ -716,35 +732,11 @@
                                     </tr>
                                     <tr>
                                         <td>教师A</td>
-                                        <td>√</td>
+                                        <td>－</td>
                                         <td>√</td>
                                         <td>－</td>
                                         <td>√</td>
                                         <td>√</td>
-                                    </tr>
-                                    <tr>
-                                        <td>教师A</td>
-                                        <td>√</td>
-                                        <td>√</td>
-                                        <td>－</td>
-                                        <td>√</td>
-                                        <td>√</td>
-                                    </tr>
-                                    <tr>
-                                        <td>教师A</td>
-                                        <td>√</td>
-                                        <td>√</td>
-                                        <td>－</td>
-                                        <td>√</td>
-                                        <td>√</td>
-                                    </tr>
-                                    <tr>
-                                        <td>总计</td>
-                                        <td>6/9</td>
-                                        <td>7/8</td>
-                                        <td>7/8</td>
-                                        <td>7/8</td>
-                                        <td>7/8</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -1383,26 +1375,6 @@
                                             <td>√</td>
                                             <td>√</td>
                                         </tr>
-                                        <tr>
-                                            <td>总计</td>
-                                            <td>6/9</td>
-                                            <td>7/8</td>
-                                            <td>7/8</td>
-                                            <td>7/8</td>
-                                            <td>6/9</td>
-                                            <td>7/8</td>
-                                            <td>7/8</td>
-                                            <td>7/8</td>
-                                            <td>6/9</td>
-                                            <td>7/8</td>
-                                            <td>7/8</td>
-                                            <td>7/8</td>
-                                            <td>6/9</td>
-                                            <td>7/8</td>
-                                            <td>7/8</td>
-                                            <td>7/8</td>
-                                            <td>7/8</td>
-                                        </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -1439,13 +1411,6 @@
                                         <td>√</td>
                                         <td>－</td>
                                         <td>√</td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <td>总计</td>
-                                        <td>6/9</td>
-                                        <td>7/8</td>
-                                        <td>7/8</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -1509,6 +1474,28 @@
             })
         });
 
+
+        // 统计打钩
+        countRight('zhunbei');
+        countRight('jichu');
+        countRight('jieshu');
+
+        function countRight(tableId) {
+            var tr = $("#" + tableId).find("tbody tr").length;
+            var td = $("#" + tableId).find("tbody tr")[0].cells.length;
+            var total = 0;
+            var str = '<td>总计</td>';
+            debugger
+            for (var i = 1; i < td; i++) {
+                for (var j = 0; j < tr; j++) {
+                    var tdVar = $("#" + tableId).find("tbody tr:eq(" + j + ")").find("td:eq(" + i + ")").text();
+                    if( tdVar == "√") { total++; }
+                }
+                str = str + "<td>" + total + "/" +tr+ "</td>";
+                total = 0;
+            }
+            $("#" + tableId).find('tbody').append('<tr>' +str+ '</tr>')
+        }
     </script>  
     
     <script src="../plugins/bootable/bootstrap-table.min.js"></script>
