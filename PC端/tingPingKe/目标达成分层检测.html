@@ -163,7 +163,8 @@
                                         <th>心理健康与社会适应达成25%</th>
                                     </tr>
                                 </thead>
-                                <tbody>
+                                <tbody></tbody>
+                                <!-- <tbody>
                                     <tr>
                                         <td>测试学校</td>
                                         <td>杨超越</td>
@@ -689,7 +690,7 @@
                                         <td>10</td>
                                         <td>30</td>
                                     </tr>
-                                </tbody>
+                                </tbody> -->
                             </table>
                         </div>
 
@@ -707,14 +708,16 @@
             var td = $("#table tbody").find("tr")[0].cells.length;
             var total = 0;
             var str = '<td></td><td>平均得分</td>';
-            for (var i = 2; i < td; i++) {
-                for (var j = 0; j < tr; j++) {
-                    total = total + parseFloat($("table tbody").find("tr:eq(" + j + ")").find("td:eq(" + i + ")").text());
+            if(tr > 1) {
+                for (var i = 2; i < td; i++) {
+                    for (var j = 0; j < tr; j++) {
+                        total = total + parseFloat($("table tbody").find("tr:eq(" + j + ")").find("td:eq(" + i + ")").text());
+                    }
+                    str = str + "<td>" + (total/tr).toFixed(2) + "</td>";
+                    total = 0;
                 }
-                str = str + "<td>" + (total/tr).toFixed(2) + "</td>";
-                total = 0;
+                $("table tbody").append('<tr class="color-pink">' +str+ '</tr>')
             }
-            $("table tbody").append('<tr class="color-pink">' +str+ '</tr>')
         });
     </script>  
 </body>
