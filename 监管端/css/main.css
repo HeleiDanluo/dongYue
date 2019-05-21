@@ -4734,6 +4734,9 @@ i {
 }
 .healthyList .healthyBox > .center .row .school,
 .healthyList .healthyBox > .center .row .category {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   width: 14%;
   text-align: center;
 }
@@ -4966,7 +4969,7 @@ i {
 }
 .healthyChart .healthyBox > .center .row .limit {
   height: 100%;
-  width: 60%;
+  width: 50%;
   display: inline-block;
   clear: both;
   margin-right: 40px;
@@ -5911,6 +5914,9 @@ i {
 .studentEqipment .healthyBox .center .row .category {
   width: 15%;
   text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .studentEqipment .healthyBox .center .row .red {
   color: red;
@@ -6292,6 +6298,9 @@ i {
 }
 .equipmentDetails .center .row .school,
 .equipmentDetails .center .row .category {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   width: 15%;
   text-align: center;
 }

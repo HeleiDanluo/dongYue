@@ -113,7 +113,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div> 
                             <table 
                                 id="table" 
                                 data-toggle="table" 
@@ -742,8 +742,12 @@
                             </table>
                         </div>
                         <!-- 基础部分弹窗 -->
-                        <div class="hidden" id="jichu">
-                            <table>
+                        <div class="" id="jichu">
+                            <table
+                                data-toggle="table" 
+                                data-height="400" 
+                                data-fixed-columns="true"
+                                data-fixed-number="1">
                                 <thead>
                                     <tr>
                                         <th rowspan="3"></th>
@@ -1448,7 +1452,7 @@
                 Alert.middleWindow({
                     data:'<div><h3 class="t_c">教学建议</h3><div style="padding: 10px 20px;text-indent:2em">' +alertTxt+ '</div></div>',
                     autoHeight: true,
-                    callBack:null,
+                    callBack: function() {},
                 })
             })
 
@@ -1466,10 +1470,10 @@
                     showId = 'jieshu';
                 }
                 var showTable = $('#' + showId).html();
-                Alert.middleWindow({
+                Alert.bigWindow({
                     data:'<div style="max-height:60vh; overflow:auto"><h3 class="t_c">' +_thisTxt+ '</h3><div style="padding: 10px 20px;text-indent:2em">' +showTable+ '</div></div>',
                     autoHeight: true,
-                    callBack:null,
+                    callBack:function() {},
                 })
             })
         });
@@ -1485,7 +1489,6 @@
             var td = $("#" + tableId).find("tbody tr")[0].cells.length;
             var total = 0;
             var str = '<td>总计</td>';
-            debugger
             for (var i = 1; i < td; i++) {
                 for (var j = 0; j < tr; j++) {
                     var tdVar = $("#" + tableId).find("tbody tr:eq(" + j + ")").find("td:eq(" + i + ")").text();

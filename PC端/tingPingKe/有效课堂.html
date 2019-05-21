@@ -110,78 +110,36 @@
                         <div class="table-box excel-table" id="tongji">
                             <!-- 修改 比例为 3 3 3 7 去掉向上箭头 -->
                             <div class="table-row f16">
-                                <div class="col-3-32">学校名称</div>
-                                <div class="col-3-32">学生姓名</div>
-                                <div class="col-3-32">教学目标</div>
+                                <div class="col-2-32">单位名称</div>
+                                <div class="col-2-32">教师姓名</div>
+                                <div class="col-2-32">教学目标</div>
                                 <div class="col-3-32">教学重、难点</div>
                                 <div class="col-3-32">教学、学法</div>
-                                <div class="col-3-32">教师活动</div>
-                                <div class="col-3-32">学生活动</div>
-                                <div class="col-3-32">总分</div>
-                                <div class="col-3-32">建议</div>
+                                <div class="col-2-32">教师活动</div>
+                                <div class="col-2-32">学生活动</div>
+                                <div class="col-2-32">教学环节</div>
+                                <div class="col-2-32">教学环节</div>
+                                <div class="col-2-32">教学场地</div>
+                                <div class="col-2-32">教学效果</div>
+                                <div class="col-2-32">总分</div>
+                                <div class="col-2-32">建议</div>
                             </div>
 
                             <div class="table-row back_white table-item txt_b">
-                                <div class="col-3-32">学校名称</div>
-                                <div class="col-3-32">杨超越</div>
+                                <div class="col-2-32">学校名称</div>
+                                <div class="col-2-32">杨超越</div>
+                                <div class="col-2-32">10</div>
                                 <div class="col-3-32">10</div>
                                 <div class="col-3-32">10</div>
-                                <div class="col-3-32">10</div>
-                                <div class="col-3-32">50</div>
-                                <div class="col-3-32">15</div>
-                                <div class="col-3-32">15</div>
-                                <div class="col-3-32 color-blue">查看<div class="window-detail hidden">这里是弹窗内容</div></div>
+                                <div class="col-2-32">50</div>
+                                <div class="col-2-32">15</div>
+                                <div class="col-2-32">15</div>
+                                <div class="col-2-32">15</div>
+                                <div class="col-2-32">15</div>
+                                <div class="col-2-32">15</div>
+                                <div class="col-2-32">15</div>
+                                <div class="col-2-32 color-blue">查看<div class="window-detail hidden">这里是弹窗内容</div></div>
                             </div>
-
-                            <div class="table-row back_white table-item txt_b">
-                                <div class="col-3-32">学校名称</div>
-                                <div class="col-3-32">杨超越</div>
-                                <div class="col-3-32">10</div>
-                                <div class="col-3-32">10</div>
-                                <div class="col-3-32">10</div>
-                                <div class="col-3-32">50</div>
-                                <div class="col-3-32">15</div>
-                                <div class="col-3-32">15</div>
-                                <div class="col-3-32 color-blue">查看<div class="window-detail hidden">这里是弹窗内容</div></div>
-                            </div>
-
-                            <div class="table-row back_white table-item txt_b">
-                                <div class="col-3-32">学校名称</div>
-                                <div class="col-3-32">杨超越</div>
-                                <div class="col-3-32">10</div>
-                                <div class="col-3-32">10</div>
-                                <div class="col-3-32">10</div>
-                                <div class="col-3-32">50</div>
-                                <div class="col-3-32">15</div>
-                                <div class="col-3-32">15</div>
-                                <div class="col-3-32 color-blue">查看<div class="window-detail hidden">这里是弹窗内容</div></div>
-                            </div>
-
-                            <div class="table-row back_white table-item txt_b">
-                                <div class="col-3-32">学校名称</div>
-                                <div class="col-3-32">杨超越</div>
-                                <div class="col-3-32">10</div>
-                                <div class="col-3-32">10</div>
-                                <div class="col-3-32">10</div>
-                                <div class="col-3-32">50</div>
-                                <div class="col-3-32">15</div>
-                                <div class="col-3-32">15</div>
-                                <div class="col-3-32 color-blue">查看<div class="window-detail hidden">这里是弹sdfsdf窗内容</div></div>
-                            </div>
-                            
-                            
-                            
-
-                            <!-- <div class="table-row back_white table-item color-pink zongfen-border">
-                                <div class="col-3-32"></div>
-                                <div class="col-3-32">平均得分</div>
-                                <div class="col-3-32">10</div>
-                                <div class="col-3-32">10</div>
-                                <div class="col-3-32">10</div>
-                                <div class="col-3-32">50</div>
-                                <div class="col-3-32">15</div>
-                                <div class="col-3-32">15</div>
-                            </div> -->
 
 
 
@@ -199,7 +157,7 @@
         $(function () {
             var row = $("#tongji .table-row");
             let totalArr = [];
-            let totalStr = '<div class="table-row back_white table-item color-pink zongfen-border"><div class="col-3-32"></div><div class="col-3-32">平均得分</div>';
+            let totalStr = '<div class="table-row back_white table-item color-pink zongfen-border"><div class="col-2-32"></div><div class="col-2-32">平均得分</div>';
             
             row.each(function(indexOuter, itemOuter){
                 $(itemOuter).find('div').each(function(indexInner, itemInner){
@@ -217,7 +175,11 @@
             for( let i=0; i<totalArr.length - 2; i++) {
                 // 从第二列开始统计
                 if(i >= 2){
-                    totalStr += '<div class="col-3-32">' + (totalArr[i] / (row.length - 1)).toFixed(2) + '</div>'
+                    if(i==3 || i==4) {
+                        totalStr += '<div class="col-3-32">' + (totalArr[i] / (row.length - 1)).toFixed(2) + '</div>'
+                    } else {
+                        totalStr += '<div class="col-2-32">' + (totalArr[i] / (row.length - 1)).toFixed(2) + '</div>'
+                    }
                 }
             }
             $("#tongji").append(totalStr);
