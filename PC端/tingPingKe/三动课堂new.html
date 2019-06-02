@@ -16,8 +16,6 @@
     <script src="../js/pageInit.js"></script>
     <script src="../js/main.js"></script>
 
-    <script src="../plugins/bootable/bootstrap-table.min.js"></script>
-    <script src="../plugins/bootable/bootstrap-table-fixed-columns.js"></script>
 
 
     <title>听评课</title>
@@ -106,11 +104,12 @@
                     <div class="tingpingke-box">
                         <div class="table-btn-group">
                             <div class="table-row">
-                                <div class="col-8-16">
+                                <div class="col-16-16">
                                     <a href="/plan/teachPlanList.do?classType=1" class="btn grayBtn">有效课堂</a>
                                     <a href="/plan/teachPlanList.do?classType=1" class="btn grayBtn">授课评分</a>
-                                    <a href="/plan/teachPlanList.do?classType=2" class="btn grayBtn">“三动课堂评分”</a>
-                                    <a href="/plan/teachPlanList.do?classType=2" class="btn yellowBtn">目标达成分层检测</a>
+                                    <a href="/plan/teachPlanList.do?classType=2" class="btn yellowBtn">“三动课堂评分”</a>
+                                    <a href="/plan/teachPlanList.do?classType=2" class="btn grayBtn">目标达成分层检测</a>
+                                    <a href="/plan/teachPlanList.do?classType=2" class="btn grayBtn">教法学法检测</a>
                                 </div>
                             </div>
                         </div>
@@ -125,45 +124,52 @@
                                     <tr>
                                         <th style="border: none">&nbsp;</th>
                                         <th style="border: none">&nbsp;</th>
-                                        <th colspan="4">课堂常规(10)</th>
+                                        <th colspan="6" class="show-dialog color-blue">准备部分</th>
+                                        
+                                        <th rowspan="2">合计</th>
+                                        
+                                        <th colspan="6" class="show-dialog color-blue">身体运动</th>
+                                        
                                         <th rowspan="2">合计</th>
 
-                                        <th colspan="4">准备部分(20)</th>
-                                        <th rowspan="2">合计</th>
+                                        <th colspan="3" class="show-dialog color-blue">心理活动</th>
 
-                                        <th colspan="4">基本部分(50)</th>
                                         <th rowspan="2">合计</th>
-
-                                        <th colspan="4">结束部分(20)</th>
-                                        <th rowspan="2">合计</th>
-
-                                        <th rowspan="2">总分（100）</th>
+                                        <th rowspan="2">总分（102）</th>
                                     </tr>
                                     <tr>
                                         <th style="border: none">&nbsp;</th>
                                         <th style="border: none">&nbsp;</th>
-                                        <th>运动参与达成40%</th>
-                                        <th>运动技能10%</th>
-                                        <th>身体健康达成10%</th>
-                                        <th>心理健康与社会适应达成40%</th>
+                                        <th>目标设计（5）</th>
+                                        <th>重、难点（5）</th>
+                                        <th>教学过程
+                                            教师活动(5)</th>
+                                        <th>教学过程
+                                            学生活动(5)</th>
+                                        <th>教学过程
+                                            教学环节(5)</th>
+                                        <th>目标达成(10)</th>
 
-                                        <th>运动参与达成25%</th>
-                                        <th>运动技能25%</th>
-                                        <th>身体健康达成25%</th>
-                                        <th>心理健康与社会适应达成25%</th>
 
-                                        <th>运动参与达成25%</th>
-                                        <th>运动技能25%</th>
-                                        <th>身体健康达成25%</th>
-                                        <th>心理健康与社会适应达成25%</th>
+                                        <th>目标设计（5）</th>
+                                        <th>重、难点（5）</th>
+                                        <th>教学过程
+                                            教师活动(5)</th>
+                                        <th>教学过程
+                                            学生活动(5)</th>
+                                        <th>教学过程
+                                            教学环节(5)</th>
+                                        <th>目标达成(10)</th>
 
-                                        <th>运动参与达成25%</th>
-                                        <th>运动技能25%</th>
-                                        <th>身体健康达成25%</th>
-                                        <th>心理健康与社会适应达成25%</th>
+
+                                        <th>教学过程
+                                            教师活动(5)</th>
+                                        <th>教学过程
+                                            学生活动(5)</th>
+                                        <th>目标达成(10)</th>
+
                                     </tr>
                                 </thead>
-                                <tbody></tbody>
                                 <tbody>
                                     <tr>
                                         <td>测试学校</td>
@@ -186,14 +192,36 @@
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
-                                        <td>20</td>
-                                        <td>20</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
                                         <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
                                     </tr>
                                     <tr>
                                         <td>测试学校</td>
                                         <td>杨超越</td>
                                         <td>10</td>
+                                        <td>50</td>
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
@@ -211,14 +239,12 @@
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
-                                        <td>10</td>
-                                        <td>10</td>
-                                        <td>20</td>
                                     </tr>
                                     <tr>
                                         <td>测试学校</td>
                                         <td>杨超越</td>
                                         <td>10</td>
+                                        <td>50</td>
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
@@ -236,14 +262,12 @@
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
-                                        <td>10</td>
-                                        <td>10</td>
-                                        <td>20</td>
                                     </tr>
                                     <tr>
                                         <td>测试学校</td>
                                         <td>杨超越</td>
                                         <td>10</td>
+                                        <td>50</td>
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
@@ -261,14 +285,12 @@
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
-                                        <td>10</td>
-                                        <td>10</td>
-                                        <td>20</td>
                                     </tr>
                                     <tr>
                                         <td>测试学校</td>
                                         <td>杨超越</td>
                                         <td>10</td>
+                                        <td>50</td>
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
@@ -286,14 +308,12 @@
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
-                                        <td>10</td>
-                                        <td>10</td>
-                                        <td>20</td>
                                     </tr>
                                     <tr>
                                         <td>测试学校</td>
                                         <td>杨超越</td>
                                         <td>10</td>
+                                        <td>50</td>
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
@@ -311,14 +331,12 @@
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
-                                        <td>10</td>
-                                        <td>10</td>
-                                        <td>20</td>
                                     </tr>
                                     <tr>
                                         <td>测试学校</td>
                                         <td>杨超越</td>
                                         <td>10</td>
+                                        <td>50</td>
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
@@ -336,14 +354,12 @@
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
-                                        <td>10</td>
-                                        <td>10</td>
-                                        <td>20</td>
                                     </tr>
                                     <tr>
                                         <td>测试学校</td>
                                         <td>杨超越</td>
                                         <td>10</td>
+                                        <td>50</td>
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
@@ -361,14 +377,12 @@
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
-                                        <td>10</td>
-                                        <td>10</td>
-                                        <td>20</td>
                                     </tr>
                                     <tr>
                                         <td>测试学校</td>
                                         <td>杨超越</td>
                                         <td>10</td>
+                                        <td>50</td>
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
@@ -386,14 +400,12 @@
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
-                                        <td>10</td>
-                                        <td>10</td>
-                                        <td>20</td>
                                     </tr>
                                     <tr>
                                         <td>测试学校</td>
                                         <td>杨超越</td>
                                         <td>10</td>
+                                        <td>50</td>
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
@@ -411,14 +423,12 @@
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
-                                        <td>10</td>
-                                        <td>10</td>
-                                        <td>20</td>
                                     </tr>
                                     <tr>
                                         <td>测试学校</td>
                                         <td>杨超越</td>
                                         <td>10</td>
+                                        <td>50</td>
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
@@ -436,14 +446,12 @@
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
-                                        <td>10</td>
-                                        <td>10</td>
-                                        <td>20</td>
                                     </tr>
                                     <tr>
                                         <td>测试学校</td>
                                         <td>杨超越</td>
                                         <td>10</td>
+                                        <td>50</td>
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
@@ -461,14 +469,12 @@
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
-                                        <td>10</td>
-                                        <td>10</td>
-                                        <td>20</td>
                                     </tr>
                                     <tr>
                                         <td>测试学校</td>
                                         <td>杨超越</td>
                                         <td>10</td>
+                                        <td>50</td>
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
@@ -486,14 +492,12 @@
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
-                                        <td>10</td>
-                                        <td>10</td>
-                                        <td>20</td>
                                     </tr>
                                     <tr>
                                         <td>测试学校</td>
                                         <td>杨超越</td>
                                         <td>10</td>
+                                        <td>50</td>
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
@@ -511,14 +515,12 @@
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
-                                        <td>10</td>
-                                        <td>10</td>
-                                        <td>20</td>
                                     </tr>
                                     <tr>
                                         <td>测试学校</td>
                                         <td>杨超越</td>
                                         <td>10</td>
+                                        <td>50</td>
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
@@ -536,14 +538,12 @@
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
-                                        <td>10</td>
-                                        <td>10</td>
-                                        <td>20</td>
                                     </tr>
                                     <tr>
                                         <td>测试学校</td>
                                         <td>杨超越</td>
                                         <td>10</td>
+                                        <td>50</td>
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
@@ -561,14 +561,12 @@
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
-                                        <td>10</td>
-                                        <td>10</td>
-                                        <td>20</td>
                                     </tr>
                                     <tr>
                                         <td>测试学校</td>
                                         <td>杨超越</td>
                                         <td>10</td>
+                                        <td>50</td>
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
@@ -586,14 +584,12 @@
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
-                                        <td>10</td>
-                                        <td>10</td>
-                                        <td>20</td>
                                     </tr>
                                     <tr>
                                         <td>测试学校</td>
                                         <td>杨超越</td>
                                         <td>10</td>
+                                        <td>50</td>
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
@@ -611,14 +607,12 @@
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
-                                        <td>10</td>
-                                        <td>10</td>
-                                        <td>20</td>
                                     </tr>
                                     <tr>
                                         <td>测试学校</td>
                                         <td>杨超越</td>
                                         <td>10</td>
+                                        <td>50</td>
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
@@ -636,14 +630,12 @@
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
-                                        <td>10</td>
-                                        <td>10</td>
-                                        <td>20</td>
                                     </tr>
                                     <tr>
                                         <td>测试学校</td>
                                         <td>杨超越</td>
                                         <td>10</td>
+                                        <td>50</td>
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
@@ -661,14 +653,12 @@
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
-                                        <td>10</td>
-                                        <td>10</td>
-                                        <td>20</td>
                                     </tr>
                                     <tr>
                                         <td>测试学校</td>
                                         <td>杨超越</td>
                                         <td>10</td>
+                                        <td>50</td>
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
@@ -686,20 +676,411 @@
                                         <td>10</td>
                                         <td>10</td>
                                         <td>10</td>
-                                        <td>10</td>
-                                        <td>10</td>
-                                        <td>30</td>
                                     </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>测试学校</td>
+                                        <td>杨超越</td>
+                                        <td>10</td>
+                                        <td>50</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                        <td>10</td>
+                                    </tr>
+                                    
                                 </tbody>
                             </table>
                         </div>
 
+                      
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
+    <script src="../plugins/alert.js"></script>
 
     <script type="text/javascript">
 
@@ -708,18 +1089,21 @@
             var td = $("#table tbody").find("tr")[0].cells.length;
             var total = 0;
             var str = '<td></td><td>平均得分</td>';
-            if(tr > 1) {
-                for (var i = 2; i < td; i++) {
-                    for (var j = 0; j < tr; j++) {
-                        total = total + parseFloat($("table tbody").find("tr:eq(" + j + ")").find("td:eq(" + i + ")").text());
-                    }
-                    str = str + "<td>" + (total/tr).toFixed(2) + "</td>";
-                    total = 0;
+            for (var i = 2; i < td; i++) {
+                for (var j = 0; j < tr; j++) {
+                    total = total + parseFloat($("table tbody").find("tr:eq(" + j + ")").find("td:eq(" + i + ")").text());
                 }
-                $("table tbody").append('<tr class="color-pink">' +str+ '</tr>')
+                var tmpAvrg = !isNaN((total/tr).toFixed(2)) ? (total/tr).toFixed(2) : '';
+                str = str + "<td>" + tmpAvrg + "</td>";
+                total = 0;
             }
+            $("#table tbody").append('<tr>' +str+ '</tr>')
         });
+
     </script>  
+    
+    <script src="../plugins/bootable/bootstrap-table.min.js"></script>
+    <script src="../plugins/bootable/bootstrap-table-fixed-columns.js"></script>
 </body>
 
 </html>

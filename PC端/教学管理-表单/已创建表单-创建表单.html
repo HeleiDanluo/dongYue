@@ -103,6 +103,7 @@
                                     <input type="text" placeholder="分组名称（10字以内）" maxlength="10">
                                     <span class="txt-green save-fenzu cursor_p">保存</span>
                                     <span class="txt-green change-fenzu cursor_p">修改</span>
+                                    <span class="f_r cursor_p del-group" style="color: red">删除</span>
                                 </div>
                                 <div class="block-box-item mt10">
                                     <div>
@@ -349,6 +350,7 @@
                 <input type="text" placeholder="分组名称">\
                 <span class="txt-green save-fenzu cursor_p">保存</span>\
                 <span class="txt-green change-fenzu cursor_p">修改</span>\
+                <span class="f_r cursor_p del-group" style="color: red">删除</span>\
             </div>\
             <div class="block-box-item mt10">\
                 <div>\
@@ -375,6 +377,11 @@
         </div>');
     });
 
+
+    // 删除分组
+    $('body').on('click', '.del-group', function () {
+        $(this).parent().parent().remove();
+    })
 </script>
 </body>
 </html>
