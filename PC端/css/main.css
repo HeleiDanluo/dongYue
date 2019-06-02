@@ -2663,8 +2663,6 @@ div[class^="col"]:before > span.textArea {
   color: red;
 }
 .table-box .table-row div {
-  overflow: hidden;
-  text-overflow: ellipsis;
   white-space: nowrap;
 }
 .excel-table {
@@ -11523,14 +11521,15 @@ input[type="button"] {
 }
 .teacher-box {
   margin-bottom: 20px;
+  display: flex;
+  overflow-x: auto;
 }
 .teacher-box .teacher-list-box {
+  flex-shrink: 0;
   width: 30%;
-  float: left;
   background: #fff;
-}
-.teacher-box .teacher-list-box:not(:first-child) {
-  margin-left: 5%;
+  margin-bottom: 20px;
+  margin-right: 5%;
 }
 .teacher-box .teacher-list-box .title {
   padding: 10px 20px;
