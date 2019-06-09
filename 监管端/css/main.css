@@ -6635,3 +6635,14 @@ input[type=button] {
   margin-top: 20px;
   cursor: pointer;
 }
+.ping-jun {
+  display: flex;
+}
+.ping-jun > span,
+.ping-jun a {
+  margin-top: 5px;
+  width: 14.28571429%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

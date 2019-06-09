@@ -84,8 +84,20 @@ textarea{
     display: none;
 }
 
-.bg-yellow {
-    background: #ffb444 !important;
+.bg-yellow{
+    background: @yellowColor !important;
+}
+.bg-blue{
+    background: @blueColor !important;
+}
+.bg-theme{
+    background: @themeColor !important;
+}
+.bg-gray{
+    background: @grayColor !important;
+}
+.bg-pink{
+    background: @pinkColor !important;
 }
 
 .pageContent {
@@ -10487,19 +10499,24 @@ left:0;
 .tingpingke-box{
     padding: 20px 40px;
     .tpk-item-box{
+        position: relative;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
         .item{
-            width:50%;
+            position: relative;
+            width:49%;
             display: flex;
-            padding-right: 20px;
             margin-bottom: 30px;
+            border: 1px solid #dedede;
+            padding: 10px;
             .pre-img{
                 width:200px;
                 height: 135px;
             }
             .txt-cotent{
                 margin-left: 20px;
+                padding-right: 60px;
                 .erweima-box{
                     display: flex;
                     .ewm-item{
@@ -10512,6 +10529,12 @@ left:0;
                         }
                     }
                 }
+            }
+            .del-gongkaike,.del-gongkaike-chedi{
+                position: absolute;
+                right:10px;
+                height: 30px;
+                cursor: pointer;
             }
         }
     }

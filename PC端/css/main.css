@@ -1281,6 +1281,18 @@ textarea {
 .bg-yellow {
   background: #ffb444 !important;
 }
+.bg-blue {
+  background: #46c2fb !important;
+}
+.bg-theme {
+  background: #82b64a !important;
+}
+.bg-gray {
+  background: #969696 !important;
+}
+.bg-pink {
+  background: #fd7aa4 !important;
+}
 .pageContent {
   min-width: 1200px;
   height: 100%;
@@ -10648,14 +10660,18 @@ input[type="button"] {
   padding: 20px 40px;
 }
 .tingpingke-box .tpk-item-box {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .tingpingke-box .tpk-item-box .item {
-  width: 50%;
+  position: relative;
+  width: 49%;
   display: flex;
-  padding-right: 20px;
   margin-bottom: 30px;
+  border: 1px solid #dedede;
+  padding: 10px;
 }
 .tingpingke-box .tpk-item-box .item .pre-img {
   width: 200px;
@@ -10663,6 +10679,7 @@ input[type="button"] {
 }
 .tingpingke-box .tpk-item-box .item .txt-cotent {
   margin-left: 20px;
+  padding-right: 60px;
 }
 .tingpingke-box .tpk-item-box .item .txt-cotent .erweima-box {
   display: flex;
@@ -10675,6 +10692,13 @@ input[type="button"] {
 .tingpingke-box .tpk-item-box .item .txt-cotent .erweima-box .ewm-item > img {
   width: 25px;
   height: 25px;
+}
+.tingpingke-box .tpk-item-box .item .del-gongkaike,
+.tingpingke-box .tpk-item-box .item .del-gongkaike-chedi {
+  position: absolute;
+  right: 10px;
+  height: 30px;
+  cursor: pointer;
 }
 .tingpingke-box .input-item-box {
   display: flex;

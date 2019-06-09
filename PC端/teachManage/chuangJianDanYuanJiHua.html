@@ -15,6 +15,11 @@
     <script src="../plugins/jquery.slimscroll.js"></script>
     <script src="../js/pageInit.js"></script>
     <script src="../js/main.js"></script>
+
+    <!--  layui前端框架 -->
+    <link rel="stylesheet" href="../plugins/layui-v2.5.4/layui/css/layui.css">
+    <script src="../plugins/layui-v2.5.4/layui/layui.all.js"></script>
+
     <title>教学管理</title>
     <script>
     </script>
@@ -55,7 +60,7 @@
             </div>
         </div>
         <div class="right-section">
-            <div class="setHomeWork-wrapper">
+            <div class="setHomeWork-wrapper clearfix">
                 <div class="hwork-head-menu">
                     <a href="javascript:void(0)" class="current">基本运动</a>
                     <a href="javascript:void(0)">田径</a>
@@ -94,39 +99,188 @@
                         <span class="mr20 select-all">一键全选</span>
                     </div>
                 </div>
-                <div class="set-hwork-panel cjdyjh-box clearfix">
-                    
-                    <!-- 设置一个唯一itemId，用来和侧滑栏内容删除时同步 -->
-                    <div class="cjdyjh-item" itemId='0' title="少45674576（原地小工不走）">
-                        <a href="http://www.baidu.com" class="ke-cheng-lian-jie"></a>
-                        <span class="cjdyjh-item-txt color-blue" name="name" age="age" sex="sex" title="少45674576（原地小工不走）">少45674576（原地小工不走）</span>
-                        <div class="opts-btn add-status">
-                            <i>+</i>
-                        </div>
-                        <div class="opts-btn reduce-status">
-                            <i>-</i>
-                        </div>
 
-                        <div class="this-sum" sum='0'>0</div>
-                    </div>
-                    <!-- 设置一个唯一itemId，用来和侧滑栏内容删除时同步 -->
-                    <div class="cjdyjh-item" itemId='1000' title="原地小工不走）">
-                        <a href="http://www.baidu.com" class="ke-cheng-lian-jie"></a>
-                        <span class="cjdyjh-item-txt color-blue" name="name" age="age" sex="sex" title="原地小工不走）">原地小工不走）</span>
-                        <div class="opts-btn add-status">
-                            <i>+</i>
-                        </div>
-                        <div class="opts-btn reduce-status">
-                            <i>-</i>
-                        </div>
 
-                        <div class="this-sum" sum='0'>0</div>
+                <!-- 新增的 -->
+                <div class="layui-tab layui-tab-card" style="margin: 40px;">
+                    <ul class="layui-tab-title">
+                        <li class="layui-this">推荐教案</li>
+                        <li>全部教案</li>
+                    </ul>
+                    <div class="layui-tab-content">
+                        <div class="layui-tab-item layui-show clearfix">
+
+                            <!-- 之前的代码 直接挪进来-->
+                            <div class="set-hwork-panel cjdyjh-box clearfix">
+                                
+                                <!-- 设置一个唯一itemId，用来和侧滑栏内容删除时同步 -->
+                                <div class="cjdyjh-item" itemId='0' title="少45674576（原地小工不走）">
+                                    <a href="http://www.baidu.com" class="ke-cheng-lian-jie"></a>
+                                    <span class="cjdyjh-item-txt color-blue" name="name" age="age" sex="sex" title="少45674576（原地小工不走）">少45674576（原地小工不走）</span>
+                                    <div class="opts-btn add-status">
+                                        <i>+</i>
+                                    </div>
+                                    <div class="opts-btn reduce-status">
+                                        <i>-</i>
+                                    </div>
+            
+                                    <div class="this-sum" sum='0'>0</div>
+                                </div>
+                                <!-- 设置一个唯一itemId，用来和侧滑栏内容删除时同步 -->
+                                <div class="cjdyjh-item" itemId='1000' title="原地小工不走）">
+                                    <a href="http://www.baidu.com" class="ke-cheng-lian-jie"></a>
+                                    <span class="cjdyjh-item-txt color-blue" name="name" age="age" sex="sex" title="原地小工不走）">原地小工不走）</span>
+                                    <div class="opts-btn add-status">
+                                        <i>+</i>
+                                    </div>
+                                    <div class="opts-btn reduce-status">
+                                        <i>-</i>
+                                    </div>
+            
+                                    <div class="this-sum" sum='0'>0</div>
+                                </div>
+                                <!-- 设置一个唯一itemId，用来和侧滑栏内容删除时同步 -->
+                                <div class="cjdyjh-item" itemId='1000' title="原地小工不走）">
+                                    <a href="http://www.baidu.com" class="ke-cheng-lian-jie"></a>
+                                    <span class="cjdyjh-item-txt color-blue" name="name" age="age" sex="sex" title="原地小工不走）">原地小工不走）</span>
+                                    <div class="opts-btn add-status">
+                                        <i>+</i>
+                                    </div>
+                                    <div class="opts-btn reduce-status">
+                                        <i>-</i>
+                                    </div>
+            
+                                    <div class="this-sum" sum='0'>0</div>
+                                </div>
+                                <!-- 设置一个唯一itemId，用来和侧滑栏内容删除时同步 -->
+                                <div class="cjdyjh-item" itemId='1000' title="原地小工不走）">
+                                    <a href="http://www.baidu.com" class="ke-cheng-lian-jie"></a>
+                                    <span class="cjdyjh-item-txt color-blue" name="name" age="age" sex="sex" title="原地小工不走）">原地小工不走）</span>
+                                    <div class="opts-btn add-status">
+                                        <i>+</i>
+                                    </div>
+                                    <div class="opts-btn reduce-status">
+                                        <i>-</i>
+                                    </div>
+            
+                                    <div class="this-sum" sum='0'>0</div>
+                                </div>
+                                <!-- 设置一个唯一itemId，用来和侧滑栏内容删除时同步 -->
+                                <div class="cjdyjh-item" itemId='1000' title="原地小工不走）">
+                                    <a href="http://www.baidu.com" class="ke-cheng-lian-jie"></a>
+                                    <span class="cjdyjh-item-txt color-blue" name="name" age="age" sex="sex" title="原地小工不走）">原地小工不走）</span>
+                                    <div class="opts-btn add-status">
+                                        <i>+</i>
+                                    </div>
+                                    <div class="opts-btn reduce-status">
+                                        <i>-</i>
+                                    </div>
+            
+                                    <div class="this-sum" sum='0'>0</div>
+                                </div>
+                                <!-- 设置一个唯一itemId，用来和侧滑栏内容删除时同步 -->
+                                <div class="cjdyjh-item" itemId='1000' title="原地小工不走）">
+                                    <a href="http://www.baidu.com" class="ke-cheng-lian-jie"></a>
+                                    <span class="cjdyjh-item-txt color-blue" name="name" age="age" sex="sex" title="原地小工不走）">原地小工不走）</span>
+                                    <div class="opts-btn add-status">
+                                        <i>+</i>
+                                    </div>
+                                    <div class="opts-btn reduce-status">
+                                        <i>-</i>
+                                    </div>
+            
+                                    <div class="this-sum" sum='0'>0</div>
+                                </div>
+                                
+                               
+                                
+                                
+                            </div>
+                            <!-- 之前的代码 直接挪进来-->
+
+                        </div>
+                        <div class="layui-tab-item">
+
+                            <!-- 之前的代码 直接挪进来-->
+                            <div class="set-hwork-panel cjdyjh-box clearfix">
+                                
+                                <!-- 设置一个唯一itemId，用来和侧滑栏内容删除时同步 -->
+                                <div class="cjdyjh-item" itemId='0' title="少45674576（原地小工不走）">
+                                    <a href="http://www.baidu.com" class="ke-cheng-lian-jie"></a>
+                                    <span class="cjdyjh-item-txt color-blue" name="name" age="age" sex="sex" title="少45674576（原地小工不走）">少45674576（原地小工不走）</span>
+                                    <div class="opts-btn add-status">
+                                        <i>+</i>
+                                    </div>
+                                    <div class="opts-btn reduce-status">
+                                        <i>-</i>
+                                    </div>
+            
+                                    <div class="this-sum" sum='0'>0</div>
+                                </div>
+                                <!-- 设置一个唯一itemId，用来和侧滑栏内容删除时同步 -->
+                                <div class="cjdyjh-item" itemId='1000' title="原地小工不走）">
+                                    <a href="http://www.baidu.com" class="ke-cheng-lian-jie"></a>
+                                    <span class="cjdyjh-item-txt color-blue" name="name" age="age" sex="sex" title="原地小工不走）">原地小工不走）</span>
+                                    <div class="opts-btn add-status">
+                                        <i>+</i>
+                                    </div>
+                                    <div class="opts-btn reduce-status">
+                                        <i>-</i>
+                                    </div>
+            
+                                    <div class="this-sum" sum='0'>0</div>
+                                </div>
+                                <!-- 设置一个唯一itemId，用来和侧滑栏内容删除时同步 -->
+                                <div class="cjdyjh-item" itemId='1000' title="原地小工不走）">
+                                    <a href="http://www.baidu.com" class="ke-cheng-lian-jie"></a>
+                                    <span class="cjdyjh-item-txt color-blue" name="name" age="age" sex="sex" title="原地小工不走）">原地小工不走）</span>
+                                    <div class="opts-btn add-status">
+                                        <i>+</i>
+                                    </div>
+                                    <div class="opts-btn reduce-status">
+                                        <i>-</i>
+                                    </div>
+            
+                                    <div class="this-sum" sum='0'>0</div>
+                                </div>
+                                <!-- 设置一个唯一itemId，用来和侧滑栏内容删除时同步 -->
+                                <div class="cjdyjh-item" itemId='1000' title="原地小工不走）">
+                                    <a href="http://www.baidu.com" class="ke-cheng-lian-jie"></a>
+                                    <span class="cjdyjh-item-txt color-blue" name="name" age="age" sex="sex" title="原地小工不走）">原地小工不走）</span>
+                                    <div class="opts-btn add-status">
+                                        <i>+</i>
+                                    </div>
+                                    <div class="opts-btn reduce-status">
+                                        <i>-</i>
+                                    </div>
+            
+                                    <div class="this-sum" sum='0'>0</div>
+                                </div>
+                                <!-- 设置一个唯一itemId，用来和侧滑栏内容删除时同步 -->
+                                <div class="cjdyjh-item" itemId='1000' title="原地小工不走）">
+                                    <a href="http://www.baidu.com" class="ke-cheng-lian-jie"></a>
+                                    <span class="cjdyjh-item-txt color-blue" name="name" age="age" sex="sex" title="原地小工不走）">原地小工不走）</span>
+                                    <div class="opts-btn add-status">
+                                        <i>+</i>
+                                    </div>
+                                    <div class="opts-btn reduce-status">
+                                        <i>-</i>
+                                    </div>
+            
+                                    <div class="this-sum" sum='0'>0</div>
+                                </div>
+                                
+                                
+                                
+                                
+                            </div>
+                            <!-- 之前的代码 直接挪进来-->
+
+                        </div>
                     </div>
-                    
-                   
-                    
-                    
                 </div>
+
+
             </div>
         </div>
 
@@ -166,7 +320,7 @@
         </div>
 
         <div class="side-btn-box">
-            <div class="side-btn-item side-btn-save btn themeBtn">
+            <div class="side-btn-item side-btn-unit-design btn themeBtn">
                 <div>单元</div>设计
             </div>
             <div class="side-btn-item side-btn-status btn yellowBtn">
@@ -181,10 +335,43 @@
             <div class="side-btn-item side-btn-save btn blueBtn">退出</div>
         </div>
     </div>
+
 </div>
 <script src="../plugins/alert.js"></script>
+
+
 <!-- 拖动排序插件 -->
 <script src="../plugins/Sortable.min.js"></script>
+
+
 <script src="../js/each/chuanJianDanYuanJiHua.js"></script>
+
+<script>
+// 弹出单元设计弹窗
+Alert.smallWindow({
+    data: `<div class="edit-alert-box" style="padding: 20px">
+            <h3 style="text-align: center; margin-top: -25px;"><b>单元设计</b></h3>
+            <textarea class="unit-txt" readonly class="mt20" placeholder="请输入单元设计, 500字以内" style="width: 100%; height: 200px; padding: 8px" name="" id="" cols="60" rows="20" maxlength="500"></textarea>
+            <span id="alert-submit-unit" class="btn themeBtn f_r mt20">编辑</span>
+        </div>`,
+    callBack: function () {
+        var editable = false;
+        $('body').on('click', '#alert-submit-unit', function () {
+            if(editable) {
+                $(this).text('编辑');
+                $('.unit-txt').attr('readonly', true);
+                editable = false;
+                alert($('.unit-txt').val());
+            } else {
+                $(this).text('保存');
+                $('.unit-txt').removeAttr('readonly');
+                editable = true;
+            }
+        })
+    }
+});
+$('body').on('click', '.side-btn-unit-design', function () {
+});
+</script>
 </body>
 </html>

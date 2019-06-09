@@ -112,6 +112,11 @@
                                     <a href="/plan/teachPlanList.do?classType=2" class="btn yellowBtn">教法学法检测</a>
                                 </div>
                             </div>
+                            <div class="col-16-16 txt-fr">
+                                <a href="/plan/teachPlanList.do?classType=2" class="btn blueBtn">导出</a>
+                                <br>
+                                <br>
+                            </div>
                         </div>
                         <div> 
                             <table 
@@ -742,12 +747,14 @@
                             </table>
                         </div>
                         <!-- 基础部分弹窗 -->
-                        <div class="" id="jichu">
-                            <table
-                                data-toggle="table" 
-                                data-height="400" 
-                                data-fixed-columns="true"
-                                data-fixed-number="1">
+                        <div class="hidden" id="jichu">
+                            <div class="table-row">
+                                <a href="javascript:;" class="btn themeBtn">有效课堂</a>
+                                <a href="javascript:;" class="btn grayBtn">授课评分</a>
+                                <br>
+                                <br>
+                            </div>
+                            <table>
                                 <thead>
                                     <tr>
                                         <th rowspan="3"></th>
@@ -1471,7 +1478,7 @@
                 }
                 var showTable = $('#' + showId).html();
                 Alert.bigWindow({
-                    data:'<div style="max-height:60vh; overflow:auto"><h3 class="t_c">' +_thisTxt+ '</h3><div style="padding: 10px 20px;text-indent:2em">' +showTable+ '</div></div>',
+                    data:'<div style="overflow:auto"><h3 class="t_c">' +_thisTxt+ '</h3><div style="padding: 10px 20px;text-indent:2em">' +showTable+ '</div></div>',
                     autoHeight: true,
                     callBack:function() {},
                 })
